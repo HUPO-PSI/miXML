@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v5 rel. 4 U  -->
-<xs:schema targetNamespace="net:sf:psidev:mi" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="net:sf:psidev:mi" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by Swiss-Prot (EMBL OUTSTATION THE EBI WELLCOME TRUST GENOME CAMPUS) -->
+<xs:schema targetNamespace="net:sf:psidev:mi" xmlns="net:sf:psidev:mi" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:element name="entrySet">
 		<xs:annotation>
 			<xs:documentation>Root element of the Molecular Interaction Format</xs:documentation>
@@ -122,7 +122,7 @@
 						<xs:field xpath="@ref"/>
 					</xs:keyref>
 					<xs:key name="interactorKey">
-						<xs:selector xpath="interactorList/interactor"/>
+						<xs:selector xpath="interactorList/proteinInteractor"/>
 						<xs:field xpath="@id"/>
 					</xs:key>
 					<xs:keyref name="interactorRef" refer="interactorKey">
@@ -201,7 +201,7 @@
 					<xs:documentation>Reference to an external feature description, for example InterPro entry.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="featureDescription" type="openCvType" minOccurs="0">
+			<xs:element name="featureDescription" type="cvType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Description and classification of the feature</xs:documentation>
 				</xs:annotation>
@@ -386,23 +386,6 @@
 		<xs:annotation>
 			<xs:documentation>Allows to reference an external controlled vocabulary, or to directly include a value if no suitable external definition is available.</xs:documentation>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="names" type="namesType">
-				<xs:annotation>
-					<xs:documentation>This contains the controlled vocabulary terms, as a short and optionally as a long form.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="xref" type="xrefType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Refers to the term of the controlled vocabulary in an external database.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="attributeList" type="attributeListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>If no suitable external controlled vocabulary is available, this attributeList can be used to describe the term. Example: Attribute name: Mouse atlas tissue name; attribute value: spinal cord, day 30.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="proteinInteractorType">
 		<xs:annotation>
