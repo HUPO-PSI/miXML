@@ -259,8 +259,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 		</interactorList>
 		<interactionList>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0776"/>
@@ -271,7 +271,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="84"/>
@@ -291,7 +294,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="296"/>
 									<end position="569"/>
@@ -314,8 +320,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="E"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0776"/>
@@ -326,7 +332,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="84"/>
@@ -346,7 +355,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="60"/>
 									<end position="219"/>
@@ -369,8 +381,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="D"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0776"/>
@@ -381,7 +393,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="84"/>
@@ -401,7 +416,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="118"/>
 									<end position="356"/>
@@ -424,8 +442,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="E"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0776"/>
@@ -436,7 +454,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="84"/>
@@ -456,7 +477,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="188"/>
 									<end position="244"/>
@@ -479,8 +503,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="A"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0068"/>
@@ -491,7 +515,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="199"/>
@@ -511,7 +538,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="118"/>
 									<end position="395"/>
@@ -534,8 +564,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="A"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0070"/>
@@ -546,7 +576,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="170"/>
@@ -566,7 +599,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="36"/>
 									<end position="169"/>
@@ -589,8 +625,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="A"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0070"/>
@@ -601,7 +637,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="170"/>
@@ -621,7 +660,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="18"/>
 									<end position="183"/>
@@ -644,8 +686,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="A"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0067"/>
@@ -656,7 +698,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="265"/>
@@ -676,7 +721,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="49"/>
 									<end position="242"/>
@@ -699,8 +747,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="A"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0073"/>
@@ -711,7 +759,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="238"/>
@@ -731,7 +782,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="41"/>
 									<end position="264"/>
@@ -754,8 +808,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="D"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0073"/>
@@ -766,7 +820,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="238"/>
@@ -786,7 +843,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="10"/>
 									<end position="237"/>
@@ -809,8 +869,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="A"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0072"/>
@@ -821,7 +881,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="569"/>
@@ -841,7 +904,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="79"/>
 									<end position="289"/>
@@ -864,8 +930,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="D"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0072"/>
@@ -876,7 +942,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="569"/>
@@ -896,7 +965,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="222"/>
 									<end position="367"/>
@@ -919,8 +991,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="D"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0072"/>
@@ -931,7 +1003,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="569"/>
@@ -951,7 +1026,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="164"/>
@@ -974,8 +1052,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="A"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0935"/>
@@ -986,7 +1064,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="161"/>
@@ -1006,7 +1087,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="73"/>
 									<end position="431"/>
@@ -1029,8 +1113,8 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				<confidence unit="Hybrigenics PBS(r)" value="D"/>
 			</interaction>
 			<interaction>
-				<experimentRef ref="hgx_experiment"/>
-				<availabilityRef ref="hgx_license"/>
+							<availabilityRef ref="hgx_license"/>
+<experimentList> 	<experimentRef ref="hgx_experiment"/> </experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HP0935"/>
@@ -1041,7 +1125,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>bait</shortLabel>
 										<fullName>bait interacting domain</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="1"/>
 									<end position="161"/>
@@ -1061,7 +1148,10 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 										<shortLabel>prey</shortLabel>
 										<fullName>prey selected interacting domain (SID)</fullName>
 									</names>
-								</featureDescription>
+																	<xref>
+										<primaryRef db="PSI" id=""></primaryRef>
+									</xref>
+</featureDescription>
 								<location>
 									<begin position="448"/>
 									<end position="568"/>

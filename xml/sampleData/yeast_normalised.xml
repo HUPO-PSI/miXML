@@ -3601,8 +3601,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 		</interactorList>
 		<interactionList>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="MAK10"/>
 						<role>bait</role>
@@ -3626,8 +3627,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CDC12"/>
 						<role>neutral</role>
@@ -3657,8 +3659,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="BZZ1"/>
 						<role>neutral</role>
@@ -3802,8 +3805,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="END3"/>
 						<role>neutral</role>
@@ -3845,8 +3849,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YNL300W"/>
 						<role>bait</role>
@@ -3867,8 +3872,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ASC1"/>
 						<role>neutral</role>
@@ -3904,8 +3910,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YKR046C"/>
 						<role>bait</role>
@@ -3926,8 +3933,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YCR102C"/>
 						<role>bait</role>
@@ -3948,8 +3956,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YFR044C"/>
 						<role>bait</role>
@@ -3970,8 +3979,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YFR006W"/>
 						<role>bait</role>
@@ -4001,8 +4011,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YGL099W"/>
 						<role>bait</role>
@@ -4023,8 +4034,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YGR245C"/>
 						<role>bait</role>
@@ -4045,8 +4057,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YDL148C"/>
 						<role>bait</role>
@@ -4067,8 +4080,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="MAK10"/>
 						<role>neutral</role>
@@ -4104,8 +4118,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YNL132W"/>
 						<role>bait</role>
@@ -4126,8 +4141,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="RPN9"/>
 						<role>bait</role>
@@ -4148,8 +4164,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="PYC1"/>
 						<role>bait</role>
@@ -4179,8 +4196,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="TKL1"/>
 						<role>bait</role>
@@ -4210,8 +4228,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="MIP1"/>
 						<role>bait</role>
@@ -4232,8 +4251,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="LAT1"/>
 						<role>neutral</role>
@@ -4275,8 +4295,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ENO1"/>
 						<role>bait</role>
@@ -4306,8 +4327,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="LPD1"/>
 						<role>bait</role>
@@ -4331,8 +4353,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="PFK1"/>
 						<role>bait</role>
@@ -4362,8 +4385,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="TPI1"/>
 						<role>bait</role>
@@ -4393,8 +4417,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="MAK31"/>
 						<role>bait</role>
@@ -4415,8 +4440,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="TRP1"/>
 						<role>bait</role>
@@ -4437,8 +4463,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="SUR2"/>
 						<role>bait</role>
@@ -4459,8 +4486,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CLU1"/>
 						<role>neutral</role>
@@ -4580,8 +4608,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CDC34"/>
 						<role>bait</role>
@@ -4602,8 +4631,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CDC4"/>
 						<role>bait</role>
@@ -4627,8 +4657,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CDC53"/>
 						<role>bait</role>
@@ -4694,8 +4725,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CDC53"/>
 						<role>neutral</role>
@@ -4785,8 +4817,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ADR1"/>
 						<role>neutral</role>
@@ -4918,8 +4951,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="KEX2"/>
 						<role>bait</role>
@@ -4940,8 +4974,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CDC53"/>
 						<role>neutral</role>
@@ -5013,8 +5048,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="BUR2"/>
 						<role>neutral</role>
@@ -5152,8 +5188,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="SGT2"/>
 						<role>bait</role>
@@ -5174,8 +5211,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="BOP2"/>
 						<role>neutral</role>
@@ -5235,8 +5273,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CAR2"/>
 						<role>neutral</role>
@@ -5362,8 +5401,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ARC1"/>
 						<role>neutral</role>
@@ -5441,8 +5481,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CTF4"/>
 						<role>neutral</role>
@@ -5478,8 +5519,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ADH1"/>
 						<role>neutral</role>
@@ -5611,8 +5653,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="RAD17"/>
 						<role>bait</role>
@@ -5633,8 +5676,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="RAD18"/>
 						<role>bait</role>
@@ -5655,8 +5699,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="PEX15"/>
 						<role>neutral</role>
@@ -5683,8 +5728,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ECM29"/>
 						<role>neutral</role>
@@ -5810,8 +5856,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="MUD13"/>
 						<role>bait</role>
@@ -5832,8 +5879,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CCT3"/>
 						<role>neutral</role>
@@ -5911,8 +5959,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ACH1"/>
 						<role>neutral</role>
@@ -6020,8 +6069,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="POL30"/>
 						<role>neutral</role>
@@ -6048,8 +6098,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CCT6"/>
 						<role>neutral</role>
@@ -6085,8 +6136,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="AAC1"/>
 						<role>neutral</role>
@@ -6188,8 +6240,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="GPH1"/>
 						<role>neutral</role>
@@ -6216,8 +6269,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="RAD4"/>
 						<role>bait</role>
@@ -6238,8 +6292,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="RAD5"/>
 						<role>bait</role>
@@ -6260,8 +6315,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="MRE11"/>
 						<role>neutral</role>
@@ -6291,8 +6347,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ARO1"/>
 						<role>neutral</role>
@@ -6394,8 +6451,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="TCP1"/>
 						<role>bait</role>
@@ -6416,8 +6474,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ALD5"/>
 						<role>neutral</role>
@@ -6444,8 +6503,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ASF1"/>
 						<role>neutral</role>
@@ -6565,8 +6625,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="MGE1"/>
 						<role>neutral</role>
@@ -6593,8 +6654,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="PTC3"/>
 						<role>neutral</role>
@@ -6621,8 +6683,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="RAD57"/>
 						<role>bait</role>
@@ -6643,8 +6706,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="RAD59"/>
 						<role>bait</role>
@@ -6668,8 +6732,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="RAD6"/>
 						<role>bait</role>
@@ -6693,8 +6758,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="RAD7"/>
 						<role>bait</role>
@@ -6715,8 +6781,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="DUN1"/>
 						<role>neutral</role>
@@ -6743,8 +6810,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="BDF1"/>
 						<role>neutral</role>
@@ -6771,8 +6839,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="TFC1"/>
 						<role>bait</role>
@@ -6793,8 +6862,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ARP2"/>
 						<role>neutral</role>
@@ -6866,8 +6936,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="AUT2"/>
 						<role>neutral</role>
@@ -6897,8 +6968,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ADH4"/>
 						<role>neutral</role>
@@ -6982,8 +7054,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ESR1"/>
 						<role>bait</role>
@@ -7004,8 +7077,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="FZF1"/>
 						<role>bait</role>
@@ -7026,8 +7100,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="GDI1"/>
 						<role>bait</role>
@@ -7111,8 +7186,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="GUT1"/>
 						<role>bait</role>
@@ -7133,8 +7209,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="IRA2"/>
 						<role>bait</role>
@@ -7155,8 +7232,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="DNA2"/>
 						<role>neutral</role>
@@ -7288,8 +7366,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="DNA2"/>
 						<role>neutral</role>
@@ -7403,8 +7482,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ADE4"/>
 						<role>bait</role>
@@ -7446,8 +7526,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="HDA1"/>
 						<role>neutral</role>
@@ -7585,8 +7666,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="NCR1"/>
 						<role>bait</role>
@@ -7607,8 +7689,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="PMA1"/>
 						<role>bait</role>
@@ -7629,8 +7712,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="SCH9"/>
 						<role>bait</role>
@@ -7651,8 +7735,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="BRE2"/>
 						<role>neutral</role>
@@ -7679,8 +7764,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="SGS1"/>
 						<role>bait</role>
@@ -7701,8 +7787,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="SOD1"/>
 						<role>bait</role>
@@ -7723,8 +7810,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="CCL1"/>
 						<role>neutral</role>
@@ -7826,8 +7914,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="SSL2"/>
 						<role>bait</role>
@@ -7851,8 +7940,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="TEL1"/>
 						<role>bait</role>
@@ -7876,8 +7966,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="RVS161"/>
 						<role>neutral</role>
@@ -7907,8 +7998,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YDL085W"/>
 						<role>bait</role>
@@ -7929,8 +8021,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YMR145C"/>
 						<role>bait</role>
@@ -7951,8 +8044,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YPK1"/>
 						<role>bait</role>
@@ -7973,8 +8067,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="BAS1"/>
 						<role>bait</role>
@@ -7995,8 +8090,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="GRF10"/>
 						<role>bait</role>
@@ -8017,8 +8113,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="YOR155C"/>
 						<role>bait</role>
@@ -8039,8 +8136,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="BOI1"/>
 						<role>bait</role>
@@ -8061,8 +8159,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="BOI2"/>
 						<role>bait</role>
@@ -8083,8 +8182,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="SRA1"/>
 						<role>bait</role>
@@ -8105,8 +8205,9 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentRef ref="lcms-maldi"/>
-				<participantList>
+								<experimentList>
+<experimentRef ref="lcms-maldi"/>
+</experimentList>				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="ACT1"/>
 						<role>neutral</role>

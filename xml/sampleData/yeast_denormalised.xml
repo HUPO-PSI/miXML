@@ -4,7 +4,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 	<entry>
 		<interactionList>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -14,7 +14,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="MAK10">
@@ -57,7 +57,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -67,7 +67,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CDC12">
@@ -125,7 +125,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -135,7 +135,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="BZZ1">
@@ -478,7 +478,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -488,7 +488,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="END3">
@@ -576,7 +576,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -586,7 +586,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YNL300W">
@@ -621,7 +621,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -631,7 +631,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ASC1">
@@ -704,7 +704,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -714,7 +714,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YKR046C">
@@ -749,7 +749,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -759,7 +759,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YCR102C">
@@ -794,7 +794,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -804,7 +804,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YFR044C">
@@ -839,7 +839,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -849,7 +849,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YFR006W">
@@ -907,7 +907,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -917,7 +917,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YGL099W">
@@ -952,7 +952,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -962,7 +962,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YGR245C">
@@ -997,7 +997,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1007,7 +1007,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YDL148C">
@@ -1042,7 +1042,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1052,7 +1052,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="MAK10">
@@ -1125,7 +1125,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1135,7 +1135,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YNL132W">
@@ -1170,7 +1170,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1180,7 +1180,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="RPN9">
@@ -1215,7 +1215,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1225,7 +1225,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="PYC1">
@@ -1283,7 +1283,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1293,7 +1293,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="TKL1">
@@ -1351,7 +1351,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1361,7 +1361,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="MIP1">
@@ -1396,7 +1396,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1406,7 +1406,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="LAT1">
@@ -1494,7 +1494,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1504,7 +1504,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ENO1">
@@ -1562,7 +1562,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1572,7 +1572,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="LPD1">
@@ -1615,7 +1615,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1625,7 +1625,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="PFK1">
@@ -1683,7 +1683,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1693,7 +1693,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="TPI1">
@@ -1751,7 +1751,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1761,7 +1761,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="MAK31">
@@ -1796,7 +1796,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1806,7 +1806,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="TRP1">
@@ -1841,7 +1841,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1851,7 +1851,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="SUR2">
@@ -1886,7 +1886,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -1896,7 +1896,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CLU1">
@@ -2179,7 +2179,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -2189,7 +2189,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CDC34">
@@ -2224,7 +2224,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -2234,7 +2234,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CDC4">
@@ -2277,7 +2277,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -2287,7 +2287,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CDC53">
@@ -2435,7 +2435,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -2445,7 +2445,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CDC53">
@@ -2653,7 +2653,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -2663,7 +2663,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ADR1">
@@ -2976,7 +2976,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -2986,7 +2986,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="KEX2">
@@ -3021,7 +3021,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -3031,7 +3031,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CDC53">
@@ -3194,7 +3194,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -3204,7 +3204,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="BUR2">
@@ -3532,7 +3532,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -3542,7 +3542,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="SGT2">
@@ -3577,7 +3577,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -3587,7 +3587,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="BOP2">
@@ -3720,7 +3720,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -3730,7 +3730,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CAR2">
@@ -4028,7 +4028,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -4038,7 +4038,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ARC1">
@@ -4216,7 +4216,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -4226,7 +4226,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CTF4">
@@ -4299,7 +4299,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -4309,7 +4309,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ADH1">
@@ -4622,7 +4622,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -4632,7 +4632,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="RAD17">
@@ -4667,7 +4667,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -4677,7 +4677,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="RAD18">
@@ -4712,7 +4712,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -4722,7 +4722,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="PEX15">
@@ -4772,7 +4772,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -4782,7 +4782,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ECM29">
@@ -5080,7 +5080,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -5090,7 +5090,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="MUD13">
@@ -5125,7 +5125,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -5135,7 +5135,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CCT3">
@@ -5313,7 +5313,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -5323,7 +5323,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ACH1">
@@ -5576,7 +5576,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -5586,7 +5586,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="POL30">
@@ -5636,7 +5636,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -5646,7 +5646,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CCT6">
@@ -5719,7 +5719,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -5729,7 +5729,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="AAC1">
@@ -5967,7 +5967,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -5977,7 +5977,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="GPH1">
@@ -6027,7 +6027,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -6037,7 +6037,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="RAD4">
@@ -6072,7 +6072,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -6082,7 +6082,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="RAD5">
@@ -6117,7 +6117,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -6127,7 +6127,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="MRE11">
@@ -6185,7 +6185,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -6195,7 +6195,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ARO1">
@@ -6433,7 +6433,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -6443,7 +6443,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="TCP1">
@@ -6478,7 +6478,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -6488,7 +6488,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ALD5">
@@ -6538,7 +6538,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -6548,7 +6548,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ASF1">
@@ -6831,7 +6831,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -6841,7 +6841,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="MGE1">
@@ -6891,7 +6891,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -6901,7 +6901,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="PTC3">
@@ -6951,7 +6951,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -6961,7 +6961,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="RAD57">
@@ -6996,7 +6996,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7006,7 +7006,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="RAD59">
@@ -7049,7 +7049,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7059,7 +7059,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="RAD6">
@@ -7102,7 +7102,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7112,7 +7112,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="RAD7">
@@ -7147,7 +7147,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7157,7 +7157,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="DUN1">
@@ -7207,7 +7207,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7217,7 +7217,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="BDF1">
@@ -7267,7 +7267,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7277,7 +7277,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="TFC1">
@@ -7312,7 +7312,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7322,7 +7322,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ARP2">
@@ -7485,7 +7485,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7495,7 +7495,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="AUT2">
@@ -7553,7 +7553,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7563,7 +7563,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ADH4">
@@ -7756,7 +7756,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7766,7 +7766,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ESR1">
@@ -7801,7 +7801,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7811,7 +7811,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="FZF1">
@@ -7846,7 +7846,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -7856,7 +7856,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="GDI1">
@@ -8049,7 +8049,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -8059,7 +8059,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="GUT1">
@@ -8094,7 +8094,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -8104,7 +8104,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="IRA2">
@@ -8139,7 +8139,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -8149,7 +8149,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="DNA2">
@@ -8462,7 +8462,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -8472,7 +8472,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="DNA2">
@@ -8740,7 +8740,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -8750,7 +8750,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ADE4">
@@ -8838,7 +8838,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -8848,7 +8848,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="HDA1">
@@ -9176,7 +9176,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9186,7 +9186,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="NCR1">
@@ -9221,7 +9221,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9231,7 +9231,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="PMA1">
@@ -9266,7 +9266,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9276,7 +9276,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="SCH9">
@@ -9311,7 +9311,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9321,7 +9321,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="BRE2">
@@ -9371,7 +9371,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9381,7 +9381,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="SGS1">
@@ -9416,7 +9416,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9426,7 +9426,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="SOD1">
@@ -9461,7 +9461,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9471,7 +9471,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="CCL1">
@@ -9709,7 +9709,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9719,7 +9719,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="SSL2">
@@ -9762,7 +9762,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9772,7 +9772,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="TEL1">
@@ -9815,7 +9815,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9825,7 +9825,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="RVS161">
@@ -9883,7 +9883,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9893,7 +9893,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YDL085W">
@@ -9928,7 +9928,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9938,7 +9938,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YMR145C">
@@ -9973,7 +9973,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -9983,7 +9983,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YPK1">
@@ -10018,7 +10018,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -10028,7 +10028,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="BAS1">
@@ -10063,7 +10063,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -10073,7 +10073,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="GRF10">
@@ -10108,7 +10108,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -10118,7 +10118,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="YOR155C">
@@ -10153,7 +10153,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -10163,7 +10163,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="BOI1">
@@ -10198,7 +10198,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -10208,7 +10208,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="BOI2">
@@ -10243,7 +10243,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -10253,7 +10253,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="SRA1">
@@ -10288,7 +10288,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 				</interactionType>
 			</interaction>
 			<interaction>
-				<experimentDescription id="lcms-maldi">
+				<experimentList><experimentDescription id="lcms-maldi">
 					<interactionDetection>
 						<names>
 							<shortLabel>IX:0063,IX:0066</shortLabel>
@@ -10298,7 +10298,7 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 							<primaryRef id="0" db=""/>
 						</xref>
 					</interactionDetection>
-				</experimentDescription>
+				</experimentDescription></experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactor id="ACT1">

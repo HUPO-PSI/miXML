@@ -69,7 +69,9 @@
 		</interactorList>
 		<interactionList>
 			<interaction>
-				<experimentRef ref="xray"/>
+			      <experimentList>
+				       <experimentRef ref="xray"/>
+				</experimentList>
 				<participantList>
 					<proteinParticipant>
 						<interactorRef ref="hGHR"/>
