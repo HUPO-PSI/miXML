@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>HUPO Proteomics Standards Initiative Protein Interaction
+Specification Documentation</title>
+</head>
+<body>
+<a href="http://psidev.sourceforge.net"><img
+ src="http://psidev.sourceforge.net/images/psi.gif" width="113"
+ height="75" border="0" align="left"></a> <a
+ href="http://www.hupo.org/"><img
+ src="http://psidev.sourceforge.net/images/hupo.gif" width="113"
+ height="75" border="0" align="right"></a> <br clear="all">
+<center>
+<h2><a name="mozTocId916500" class="mozTocH2"></a><a
+ href="http://psidev.sourceforge.net">Proteomics Standards Initiative</a>
+<br>
+</h2>
+<h2><a name="mozTocId992260" class="mozTocH2"></a>Molecular Interaction
+XML Format Documentation</h2>
+<h2><a name="mozTocId863651" class="mozTocH2"></a><span
+ style="color: rgb(255, 0, 0);">Version 2.0</span></h2>
+<h4>October 20, 2004</h4>
+<br>
+<div style="text-align: left;">
+<h2>Table of Contents</h2>
+<ol>
+  <li><a href="#intro">Introduction</a></li>
+  <li><a href="#mi-purpose">Purpose of the PSI MI XML format</a></li>
+  <li><a href="#document-purpose">Purpose of this document</a></li>
+  <li><a href="#schedule">Release schedule</a></li>
+  <li><a href="#changes">Changes from PSI MI 1.0 to 2.0</a><br>
+  </li>
+  <li><a href="#structure">Structure of a PSI MI record</a></li>
+  <li><a href="#detailed-doc">Detailed Documentation</a></li>
+  <li><a href="#cv">Use of external controlled vocabularies<br>
+    </a></li>
+  <li><a href="#planned">List of planned features</a></li>
+  <li><a href="#comment">How to comment</a></li>
+  <li><a href="#data">Available data<br>
+    </a></li>
+  <li><a href="#tools">Tools</a></li>
+  <li><a href="#submission">Data submission</a><br>
+  </li>
+  <li><a href="#further-info">Further information and relevant links</a></li>
+</ol>
+</div>
+</center>
+<h2><a name="intro" class="mozTocH2"></a>Introduction</h2>
+The Proteomics Standards Initiative (PSI) aims to define community
+standards for data representation in proteomics to facilitate data
+comparison, exchange and verification. For detailed information on all
+PSI activities, please see <a href="http://psidev.sf.net">http://psidev.sf.net</a>.
+<p> This document decribes the molecular interaction data exchange
+format. PSI is following a leveled approach to building this
+specification. This document describes level 2.0. For documentation of
+the previous level 1.0 please see
+http://psidev.sourceforge.net/mi/xml/doc/user/. <span
+ style="font-weight: bold;"><br>
+</span></p>
+<p><span style="font-weight: bold;">From December 15, 2004, level 2 is
+the supported level.</span><br>
+</p>
+<p> PSI MI was designed by consortium of molecular interaction data
+providers from both academia and industry, including BIND, DIP,&nbsp;
+IntAct, MINT, MIPS, GlaxoSmithKline, CellZome, Hybrigenics,
+Universities of Bielefeld, Bordeaux, Cambridge, and others.<br>
+</p>
+<h2><a name="mi-purpose" class="mozTocH2"></a>Purpose of the PSI MI XML
+format</h2>
+<p>The PSI MI format is a data exchange format for molecular
+interactions. It is not a proposed database structure. Intended usages
+are described by the <a
+ href="http://psidev.sourceforge.net/mi/xml/doc/user/useCases.html">use
+cases documentation</a>.
+These use case descriptions also provide hints for future tools to be
+developed.<br>
+</p>
+<p> </p>
+<h2><a name="document-purpose" class="mozTocH2"></a>Purpose of this
+document</h2>
+The purpose of this document is to describe the general structure of
+the PSI MI XML specification in a more user-friendly manner than the
+specification does itself. For the detailed and most up-to-date
+description please see the<a href="auto/MIF2.html"> </a><a
+ href="auto/MIF2.html">auto-generated
+documentation</a><a href="auto/MIF2.html">.</a> This documentation also
+provides additional
+information, e.g. sample data files and use case descriptions. <br>
+The XML schema is located at <a
+ href="http://psidev.sourceforge.net/mi/rel2/src/MIF2.xsd">http://psidev.sourceforge.net/mi/rel2/src/MIF2.xsd</a><br>
+<br>
+<h2><a name="schedule"></a>Release schedule</h2>
+PSI MI 2.0 will be released in October/November 2004. From December 15,
+2004, level 2 will be the supported PSI-MI format.<br>
+<br>
+The next major PSI MI release is planned for autumn 2005.<br>
+<h2><a href="changes1To2.html">Changes from PSI MI 1.0 to 2.0</a></h2>
+<p> </p>
+<h2><a name="structure" class="mozTocH2"></a>Structure of a PSI MI
+record</h2>
+The root element of a PSI MI XML file is the entrySet. An entrySet
+contains one or more entries. Each entry is a self-contained unit. This
+allows to easily concatenate the contents of multiple files into a
+single file by simply adding all the entries into the entrySet.<br>
+<br>
+<img src="entry.png" title="" alt=""
+ style="width: 346px; height: 384px;"><br>
+<span style="font-weight: bold;">Figure 1: The entry top level element</span><br>
+<br>
+Each entry describes one or more protein interactions. The PSI MI
+format can be used in two forms, a compact and an expanded form. In the
+compact form, all interactors (proteins), experiments, and availability
+statements are described once in the respective list elements, and then
+only referred to by references from the individual interactions in the
+interactionList. The compact form allows a dense, non-repetitive
+representation of the data, in particular for large data sets. <br>
+In the expanded form, all proteins, experiments, and availability
+statements are described directly in the interaction element. As a
+result, each interaction is a self-contained element providing all
+necessary information. The expanded form results in larger files, but
+is
+more suitable for conversion to displayed data, e.g. HTML pages. The
+PSI
+MI consortium provides tools to convert the compact into the expanded
+form and back.<br>
+<br>
+In the next sections, the top level elements shown in Figure 1 and
+their function will be described. <br>
+<br>
+The source element describes the source of the entry, usually the
+organisation which provides it. It also contains a release (number) and
+a releaseDate. <br>
+<br>
+The availabilityList provides statements on the availability of the
+data, usually copyright statements. In the current version, the
+availability statements are free text. The PSI MI format might later be
+extended to provide predefined availability statements. <br>
+<br>
+The experimentList contains experimentDescriptions. Each
+experimentDescription describes one set of experimental parameters,
+usually associated with a single publication. In large-scale
+experiments, normally only one parameter is varied across a series of
+experiments, usually the bait. The PSI MI format describes the constant
+parameters, e.g. experimental techniques, in an experimentDescription,
+while the variable parameters, e.g. the bait, are described in the
+interaction element. <br>
+<br>
+The interactorList describes a set of interactors participating in an
+interaction. The interactor element describes
+the "normal" form of a protein, consisting of the "administrative" data
+like name and crossreferences, and organism and amino acid sequence.
+Attributes which are relevant for a specific interaction, in particular
+sequence features, are described in the participant element within an
+interaction. <br>
+<br>
+<img src="interaction.png" title="" alt=""
+ style="width: 489px; height: 1040px;"><br>
+<span style="font-weight: bold;">Figure 2: Interaction element<br>
+<br>
+</span>*** To be further detailed ***<br>
+<h2><a name="detailed-doc" class="mozTocH2"></a><a href="auto/MIF2.html">Detailed
+Documentation</a></h2>
+see <a href="http://psidev.sourceforge.net/mi/rel2/doc/auto/MIF2.html">http://psidev.sourceforge.net/mi/rel2/doc/auto/MIF2.html</a><br>
+<h2><a name="cv" class="mozTocH2"></a>Use of external controlled
+vocabularies<br>
+</h2>
+Where possible, external controlled vocabularies are referenced from
+PSI MI. External controlled vocabularies are used in two forms: <br>
+<ul>
+  <li><span style="font-weight: bold;">Open</span> controlled
+vocabularies: We think that no existing controlled vocabulary provides
+all necessary terms for the given attribute in the PSI MI format. In
+this case, it is up to the data provider to choose a controlled
+vocabulary, or to provide a free text string if no appropriate
+controlled vocabulary exists.</li>
+  <li><span style="font-weight: bold;">Closed </span>controlled
+vocabularies: We think that there is a controlled vocabulary which
+appropriately covers all necessary terms for the given attribute. In
+this case, only terms from the defined vocabulary should be used.</li>
+</ul>
+The closed controlled vocabularies referenced by PSI MI are listed in
+the table below. All vocabularies are contained in a pair of files in <a
+ href="http://www.geneontology.org">Gene
+Ontology</a> flat file format: <a href="../data/psi-mi2.dag">psi-mi2.dag</a>
+and <a href="../data/psi-mi2.def">psi-mi2.def</a>. The correctness of
+references to external controlled vocabularies is
+currently not enforced by the PSI MI schema. It is the responsibility
+of
+the data provider to ensure that only existing terms at an up-to-date
+data source are referenced. <br>
+<br>
+<table cellpadding="2" cellspacing="2" border="1"
+ style="text-align: left;">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold;">PSI MI XML
+level 2 data element<br>
+      </td>
+      <td style="vertical-align: top; font-weight: bold;">term name<br>
+      </td>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">PSI-MI
+identifier</span><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span class="elementHeader2">experimentType/participantIdentificationMethod</span></td>
+      <td style="vertical-align: top;">participant identification method</td>
+      <td style="vertical-align: top;">MI:0002</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span class="elementHeader2">experimentType/interactionDetectionMethod</span></td>
+      <td style="vertical-align: top;">interaction detection method</td>
+      <td style="vertical-align: top;">MI:0001</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span class="elementHeader"> </span>
+      <span class="elementHeader2">interactionElementType/interactionType</span></td>
+      <td style="vertical-align: top;">interaction type</td>
+      <td style="vertical-align: top;">MI:0190</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span class="elementHeader2">interactionElementType/participantList/*/participantRole</span></td>
+      <td style="vertical-align: top;">participant role<br>
+Example: enzyme<br>
+      </td>
+      <td style="vertical-align: top;">MI:0500<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span class="elementHeader2">interactionElementType/experimentalFormList/*/experimentalRole</span></td>
+      <td style="vertical-align: top;">experimental role<br>
+Example: bait<br>
+      </td>
+      <td style="vertical-align: top;">MI:0495<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"> <span class="elementHeader2">interactionElementType/experimentalFormList/*/experimentalForm</span><span
+ class="elementHeader"></span> </td>
+      <td style="vertical-align: top;">experimental form<br>
+Example: his-tagged<br>
+      </td>
+      <td style="vertical-align: top;">MI:0505<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">featureType/featureDetectionMethod<br>
+      </td>
+      <td style="vertical-align: top;">feature detection method<br>
+      </td>
+      <td style="vertical-align: top;">MI:0003<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">featureType/featureType<br>
+      </td>
+      <td style="vertical-align: top;">feature type<br>
+      </td>
+      <td style="vertical-align: top;">MI:0116</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      <span class="elementHeader2"></span></td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      <span class="elementHeader2"></span></td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span class="elementHeader2"><br>
+      </span></td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">deleted terms<br>
+      </td>
+      <td style="vertical-align: top;">obsolete<br>
+      </td>
+      <td style="vertical-align: top;">-<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h2><a name="planned" class="mozTocH2"></a>List of planned features</h2>
+Because we are following a leveled approach, we are interested in
+knowing what the community wishes to be included in the next level.<br>
+<br>
+The latest list of features to discuss/include in the future can be
+found here:<br>
+<a
+ href="http://sourceforge.net/tracker/?atid=511101&amp;group_id=65472&amp;func=browse">http://sourceforge.net/tracker/?atid=511101&amp;group_id=65472&amp;func=browse</a><br>
+<h2><a name="comment" class="mozTocH2"></a>How to comment</h2>
+If you would like to comment on this document, the PSI MI XML
+specification, please send a mail to:<br>
+<a href="mailto:psidev-mi-dev@lists.sourceforge.net">psidev-mi-dev@lists.sourceforge.net</a>&nbsp;
+<h2><a name="data" class="mozTocH2"></a>Available data</h2>
+No data in PSI-MI 2.0 is available yet. Sample data will be added soon.<br>
+<ul>
+</ul>
+<h2><a name="tools" class="mozTocH2"></a>Tools</h2>
+No PSI-MI 2.0 compatible tools are available yet. Will be added soon.<br>
+<ul>
+</ul>
+<h2><a name="submission" class="mozTocH2"></a>Data submission</h2>
+The following databases currently accept submissions of PSI MI
+formatted interaction data:<br>
+<ul>
+  <li><a href="http://www.bind.ca">BIND:</a> Contact and submission by
+email: <big><font size="2"><big><a href="mailto:info@bind.ca"><font
+ color="#0000ff">info@bind.ca</font></a></big></font></big></li>
+  <li><a href="http://dip.doe-mbi.ucla.edu/">DIP</a><big><font size="2"><big><font
+ color="#0000ff">:</font></big></font></big> Contact and submission by
+email: <a href="mailto:dip@mbi.ucla.edu">dip@mbi.ucla.edu</a></li>
+  <li><a href="http://www.hprd.org">HPRD</a>: Web-based submission
+tool: <a href="http://psimi.ibioinformatics.org/">http://psimi.ibioinformatics.org/</a><br>
+  </li>
+  <li><a href="http://www.ebi.ac.uk/intact">IntAct:</a> Contact and
+submission by email: <a href="mailto:datasubs@ebi.ac.uk">datasubs@ebi.ac.uk</a><br>
+  </li>
+  <li><a href="http://cbm.bio.uniroma2.it/mint/">MINT:</a> Contact and
+submission by email: <a href="mailto:cesareni@uniroma2.it">cesareni@uniroma2.it</a></li>
+</ul>
+<h2><a name="further-info" class="mozTocH2"></a>Further information and
+relevant links</h2>
+<p> Databases involved: </p>
+<ul>
+  <li><a href="http://www.bind.ca">BIND </a></li>
+  <li><a href="http://dip.doe-mbi.ucla.edu/">DIP</a></li>
+  <li><a href="http://www.hprd.org">HPRD</a></li>
+  <li><a href="http://www.ebi.ac.uk/intact">IntAct </a></li>
+  <li><a href="http://cbm.bio.uniroma2.it/mint/">MINT</a></li>
+  <li><a href="http://mips.gsf.de/">MIPS<br>
+    </a></li>
+</ul>
+Companies involved:
+<ul>
+  <li><a href="http://www.hybrigenics.com/">Hybrigenics</a></li>
+  <li><a href="http://www.cellzome.com/">Cellzome</a><br>
+  </li>
+</ul>
+Related Efforts:
+<ul>
+  <li><a href="http://biopax.org">BioPAX</a></li>
+</ul>
+<hr style="width: 100%; height: 2px;"><br>
+</body>
+</html>
