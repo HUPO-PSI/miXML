@@ -1,0 +1,364 @@
+<html>
+<head>
+  <title>XML maker and flattener documentation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<table width="100%" align="center">
+  <td><img src="images/titolo_mint.jpg" border=0></td>
+
+  <td><h1>XML maker/flattener documentation</h1></td>
+</table>
+  
+<ol>
+    
+
+  <li><a href="#presentation">Presentation</a></li>
+    <ol>
+  <li><a href="#software">The software</a></li>
+  <li><a href="#context">Context</a></li>
+ </ol>
+  
+  <li><a href="#overview">Overview</a></li>
+  <ol>
+  <li><a href="#commons">Common features</a></li>
+  <li><a href="#maker">The maker</a></li>
+  <li><a href="#flattener">The flattener</a></li>
+  </ol>
+     
+  <li><a href="#regexp">Regular Expressions</a></li>
+  <li><a href="#dictionnary">Dictionary</a></li> 
+  <li><a href="#contact">Contact</a></li>
+</ol>
+  
+  
+<ol>
+  <li><h2><a name="presentation">Presentation</a></h2>
+<ol>
+ <li><h3><a name="software">The software</a></h3>
+<p>This software contains two applications that produce an XML document 
+from a flat file, or a flat file from an XML document according to an XML schema. An XML schema 
+  (.xsd) is a file that describes the structure of an XML document.</p>
+  <img src="images/diag.png" align="middle" border=0>
+  <p>The first application (the maker) allows to load a flat file (e.g. a tab delimited file), 
+  to associate graphicaly
+  the fields (e.g. tab delimited) in a flat file to the elements of an XML schema.
+  The information in the flat file can then be processed and organized in an XML document.</p>
+  <p>The second application (the flattener) is used to graphically select some elements 
+  from a schema in order to produce a flat file containing the selected elements
+  extracted from an   XML document.</p></li>
+<li>  <h3><a name="context">Context</a></h3>
+  <p>This software was created with the purpose of facilitating the exchange of protein protein interaction
+  (PPI) data according to the recommendation put forward by 
+  <a href="http://psidev.sourceforge.net/">PSI (Protein Standard Initiative)</a>.
+  PSI provides an XML schema (MIF.xsd) that describes a structure for XML documents describing interactions
+  between proteins.</p>
+  <p>As a consequence many of the examples in the documentation and the tutorials make reference to the PSI 
+  schema.
+  During the development of the application, however, every effort was made to 
+  develop a tool that is as general as possible,and, in principle, can handle the transfer of information 
+  from a flat file to an XML format according to any XML schema.</p></li>
+  <li><h3><a name="tutorials">Tutorials:</a></h3>
+  <p>Two tutorials are available and describe how to use the maker and the flattener to create either 
+  an XML document that is compliant with PSI  or a flat file from a PSI:
+  <ul> 
+<li><a href="xmlMaker-tutorial.html">XML maker tutorial: how to create your PSI file</a></li>
+<li><a href="xmlFlattener-tutorial.html">XML Flattener tutorial: how to create a flat file from a PSI XML file</a></li>
+  </ul>
+  </p>
+  </li>
+</ol> </li>
+  
+  
+  <li><h2><a name="overview">Overview</a></h2>
+<ol>
+<li>    <h3><a name="commons">Common features</a></h3>
+  <h4>The menubar</h4>
+  <h5><b>File</b></h5>
+  <ul>
+  <li><b>Exit</b>: it exits the application</li>  
+  </ul>
+  <h5><b>Help</b></h5>
+  <ul>    
+  <li><b>Documentation</b>: it gives access to this page</li>
+  <li><b>About</b>: it provides information about the software</li>
+  </ul></li>
+
+<li>  <h3><a name="maker">The maker: from flat file to XML</a></h3>
+  <p>The window is divided into 3 parts:
+  <ul>  
+  <li>The flat files panel</li>
+  <li>The dictionnary panel</li>
+  <li>The schema panel</li>
+  </ul></p>
+<ol>
+
+<li>  <h4><a name="flatfile">The flat files panel</a></h4>
+  <p>This panel displays the flat files that have been opened. It is possible to
+  open more than one file by creating a new tab and then opening a file.</p>
+  
+  <ul>
+  	<li><b>Add a tab:</b> creates a new tab where another flat file can be opened.</li>
+    <li><b>Open a file:</b> opens a flat file and displays its first line in a list. If no separator
+	has been yet selected, the whole line will be written in the first cell. When choosing 
+	the file, it is possible to:
+	<ul>
+      <li><b>specify a separator for the line</b>: by default the lines in the flat file 
+	  are readed
+	  one by one. It is, however, possible to define a line separator, lines will then be read until 
+	  the separator is found. As a consequence the lines are defined by the separator.</li>
+	  <li><b>Skip the first line:</b> the first line of a flat 
+	  file often contains the titles of the columns. This feature is particularly useful, in the context of this 
+	  application, as the column titles will be displayed in the cells and will make easier the mapping to the tree.
+	  In this case you should check the box ‘first line for titles’ in order to prompt the application to ignore
+	  this line when writing the XML document.</li>
+    </ul>
+	</li>
+	<li><b>Choose the field separator:</b> chooses the separator that is used to split the fields in the flat file
+	lines.
+	 The separator must be provided  as a regular expression.</li>
+	Going through the file:
+	<li>You can ask to display the <b>next line</b> or to go <b>back to the first one</b>.</li>
+	<b>Splitting a field:</b> Splitting the lines in the flat file into fields, by defining a field 
+	separator wisth a regular expression,is sufficient for most purposes. It is sometimes useful, 
+	however, to split the information that is contained in a single field in the flat file. To this 
+	end the XML maker application permits to select a column and split it into a sublist.. Also in 
+	this case separators are defined with regual expressions.
+	<ul>
+      <li><b>Split cell:</b> creates a new sublist by splitting (according to a defined separator) 
+	  the values from the cells in the column defined by the selected cell. Alternatively. If the 
+	  cell had already been split, it displays the corresponding sublist </li>
+	  <li><b>Back to the parent list:</b> displays the parent list (the one that owns the cell that
+	  has been split into current list).</li>
+    </ul>
+  </ul></li>
+  
+ <li> <h4><a name="dictionnary">The panel for dictionnary (replacement values)</a></h4>
+  <p>The dictionnary panel is used to load a file that associates values in 
+  the flat file to a new set of values. The dictionnary can be used to replace values in the flat file 
+  with the new corresponding values, as defined in the dictionnary file.</p>
+  <h5>Structure of a dictionnary:</h5>
+  <p>A dictionnary file contains on each line a first word
+  (the key)  followed by a list of other words (the replacement values). Each word is separate from the 
+  others by a separator that can be specified while loading the file. A dictionnary
+  can be loaded from a flat file, a tab delimited file...</p>
+  <p>an example: <br>
+  Delition|deletion analysis|MI:0033<br>
+  Mutation|mutation analysis|MI:0074</p>
+  <p>The dictionnary tool can be used, for instance to replace values by an identifier,
+  for example, in the case of PSI, the species names by their taxId.
+  This dictionnary would be loaded from a file in which each line contains
+  a name and an identifier.
+  <p>When associating a node to a dictionnary, the user will the choice to replace 
+  the values from the associated field in the flat file with the values in the second or in the 
+  third column of the dictionnary. When a dictionnary does not find a
+  value, it behaves as if the field were empty.</p>
+  </li>
+
+
+
+<li>    <h4>The schema panel</h4>
+  <h5>The tree</h5>
+  <p>The main frame displays a tree that represents the loaded XML schema. 
+  Two different icons are used to represent an <b>attribute</b> <img src="images/ic-att.gif" border=0> 
+  or an <b>element</b> <img src="images/ic-elt.gif" border=0>. Text colors in node names give some 
+  indications about the association status of the nodes: 
+  <ul>
+  <li><b><font color="gray">grey: </font>(no association)</b> is the default color</li> 
+  <li><b><font color="red">red: </font> (error or warning)</b> indicates that something 
+  is wrong or missing. 
+  It could mean for example that an element that is mandatory according to the schema has 
+  not been associated 
+  to any field in the flat file or default value, or that a  children element is missing.</li>
+  <li><b><font color="black">black: </font> (association)</b> the node has been mapped, 
+  i.e. it is associated to   a field, or to a default value. Alternatively a value may be 
+  automatically generated for this element. </li>
+  </ul></p>
+  <p>The node names also provide  some information. They take the form <b>name (type, max: maxOccur)</b> 
+  where name is the <b>name</b> of the element or attribute, type is the XML type and <b>maxOccurs</b> the maximum
+  amount of this element allowed by the schema (only for elements).</p>
+  <p>When a <b>choice</b> is possible, (for instance beetwen an element description and an element reference),
+  it is displayed as <b>(choice1|choice2|choice3...)</b>.
+  When clicked, this type of node opens a window that allows to select  an element.</p>
+  
+  <h5>The button panel</h5>
+  The schema:
+  <ul>
+    <li><b>Open a schema:</b> loads an XML schema and displays a tree representation</li>
+	<li><b>Set your prefix:</b> you can choose a prefix that will be used as prefix 
+	for each <a href="#autogenerated">value generated</a> by the XML maker when you request it.</li>
+	<li><b>Check:</b> checks whether any  association or element is missing and displays 
+	errors and warning messages.</li>
+  </ul>
+  The node:
+  <ul>
+    <li><b>Duplicate:</b> creates a new node identical to the selected node and with the same parent.
+	It has no effect if the node is not supposed to 
+	be duplicated (for attributes, or if the maximum amount allowed by the schema is already
+	reached: for example if a node "basketball team" contains already five nodes "player on the field", 
+	a sixth "player on the field" would not be allowed).</li>
+	<li><b>About the node:</b> provides some information about the node such as its type and 
+	associations.</li>
+  </ul>
+  The associations:
+  <ul>
+    <li><b>Target of the association</b> the ’associate’ and ‘cancel associations’ buttons 
+	allow to establish or cancel an association.          
+	A set of radio buttons permits to indicate the item type that one wants to associate: 
+	<ul>
+     <li><b>to flat file:</b> specifies that the <a href="#flatfile">flat file</a> selected in the flat file
+	  panel has a content 
+	 that can be described by the selected node. Such an association should be done to a node 
+	 containing a list, and each line of the flat file is described by an element of the list. For example,
+	 if the flat file describes a list of interactions, this file would have to be associated
+	 to a node that contains a list of interactions.</li> 
+	 <li><b>to field: </b>the association will be made between the node selected on the tree and the field selected
+	 in the <a href="#flatfile">flat file panel</a>. When writing the XML document, the XML maker will look in
+	 this field to find the value for the element.</li>
+	 <li><b>to dictionnary:</b> associates <a href="#dictionnary">the dictionnary</a>
+	 selected in the dictionnary panel to the node 
+	 selected on the tree. When writing the XML document, the XML maker will look in the flat file 
+	 for terms that are defined in the dictionary and substitute them (in the associated XML element) 
+	 with the corresponding values as defined in the dictionary. If the term in the flat file is not defined 
+	 in the dictionary, no value will be present in the XML file. </li>
+	 <li><b>to default value:</b> associates a value to the node. A window is opened that allows to type 
+	 this value. When writing the XML document, the XML maker will always set the element
+	 or the attribute described by the node to this value.</li>
+	 <li><b><a name="autogenerated">to automatic value</a>:</b> a unique value will be genererated 
+	 each time the XML maker will try to marshall the selected node selected. The value will look like 
+	 "prefix-number" where prefix can be changed by clicking on the button <i>set your prefix</i> and number 
+	 is a number incremented each time such a value is generated. It can be used for example to 
+	 generate an identifier.</li>
+    </ul>
+	</li>
+	<li><b>Associate:</b> makes the association according to the checked radio button checked. An association 
+	of type field, default value or generated value will delete any previous association of one
+	of those types to the same node.</li>
+	<li><b>Cancel:</b> it cancels  an association (of the type selected by the radio button) 
+	to the selected node. </li>
+  </ul>
+  The output:
+  <ul>
+    <li><b>Preview:</b> opens a window displaying an overview of the XML code that will be generated
+	for the selected nodeusing the values of the current lines in the flat files.</li>
+	<li><b>Print:</b> creates the XML document.</li>
+  </ul></li>
+  
+  
+  
+
+</ol>
+</li>
+
+
+
+
+ 
+ <li> <h3><a name="flattener">The flattener: from XML to flat file</a></h3>
+  <p>The “flattener” applicationwas developed  to give the opportunity to organize 
+  a subset of the elements of an XML document in a flat file. The flattener can 
+  reckon the number of columns  that are needed to represent the information in the 
+  XML document. For example, if an element named list can contain, according to the XML schema,
+   an amount unbounded 
+  of another element called child, the ‘flattener’ will first check in every list for 
+  the maximum number of child elements
+  (and <a href="#refs">references</a> to this type of element) and The output flat file will 
+  then contain  have on each line the appropriate
+  amount of fields (even empty) (example: for a node describing an interaction, if each interaction
+  in the XML documents are interactions between two proteins, but one is an interaction 
+  between three proteins, each line in the flat file will have the number of fields 
+  necessary to describe three interactors.</p>
+  
+  <h4>The tree</h4>
+  <p>The main frame displays a tree that describes the loaded XML schema. 
+  The icon code is the same as used for the XML maker.
+  The colors are used as described here:
+  <ul>
+  <li><b><font color="gray">grey: </font>(default)</b> is the default color</li> 
+  <li><b><font color="red">red: </font> (error or warning)</b> indicates that the node in the 
+  XML document is assumed to contain a value ,according to the schema.</li>
+  <li><b><font color="black">black: </font> (association)</b> the node has been selected to 
+  appear in the final flat file.</li>
+  <li><b><font color="blue">blue: </font> (main node)</b> the node represents a line in the 
+  flat file. For example for an element interactionList containing interation elements, we would 
+  select the element interaction and each line in the output  will describe an interaction. 
+  If no node has been manually selected to represent a line in the flat file, the flattener chooses 
+  automatically the last node that contains every selected nodes.</li> 
+  </ul></p>
+  <p>When, according to the schema, a <b>choice</b> is possible it is displayed as 
+  <b>(choice1|choice2|choice3...)</b>.
+  When clicked, all possible choices are expanded, offering the possibility to get each of them
+  in the flat file (if the same choice is not made for each element in the XML document).</p>
+  
+  <h4>The button panel</h4>
+  The schema:
+  <ul>
+    <li><b>Open a schema:</b> loads an XML schema and displays its tree representation.</li>
+	<li><b>Open an XML document:</b> loads an XML document and displays a preview of the title
+	line that will be produced for the flat file. The preview is empty if no document has been
+	loaded yet.</li>
+	<li><b>Node describing a line:</b> when pressed, the node selected will be considered as 
+	the node describing a line of the flat file.</li>
+  </ul>
+  The node:
+  <ul>
+	<li><b>About the node:</b> gives some information about the node.</li>
+  </ul>
+  The associations:
+  <ul>
+	<li><b>Select this node:</b> the values for the element represented by the selected node 
+	will appear in the flat file.</li>
+	<li><b>Unselect the node:</b> it reverse the selection.</li>
+  </ul>
+  The output:
+  <ul>
+    <li><b>Choose the separator:</b> open a window that gives the possibility to choose the 
+	field separator in the flat file.</li>
+	<li><b>Print the flat file:</b> creates the flat file.</li>
+  </ul>
+  <h4>About the references and the behaviour of the flattener:</h4>
+<p>When the flattener encounters an element of type "refType", it behaves as if it had 
+encountered the element the “refType” is referring to. Thus when an element is selected, the flat file 
+will contain all those elements and all those that are referenced.	
+</p>
+</li>
+</ol> 
+
+
+</li> 
+  
+  <li><h2><a name="regexp">Regular Expressions</a></h2>
+  <p>Lot of documentation about regular expressions can be found on the web. I will
+  give here only some basic rules and examples of regular expressions that could be used 
+  to define the separators.</p>
+
+  <ul>
+    <li><u>single character</u>: such as <b>;</b> or <b>,</b> or <b>.</b>. The line will be split 
+	when the character is encountered.</li>
+  <li><u>the vertical bar "|"</u>: is a <b>boolean operator</b>. It means that the separator can
+  be either the character before or the character after the vertical bar (e.g.: ;|,|. the line will be
+  split each time a ".", a "," or a ";" will be encountered).</li> 
+	<li><u>special characters</u>: like "|". Such a caracter has a meaning in a regular expression
+	so it has to be protected if we want to use it as a separator. The protection is made by using 
+	the caracter"\".
+	For using the separator "|" we would have to write <b>\|</b>.</li>
+	<li><u>code for tabulation</u>: <b>\</b>t	</li>
+	<li><u>code for new line</u>:<b>\n</b>>/li>
+  </ul>
+ 
+  </li>
+  
+
+  
+ 
+  <li><h3><a name="contact">Contacts</a></h3></li>
+	<p>This software has been created at the University of Roma "Tor Vergata"</b> by 
+	Arnaud Ceol and the <a href="http://cbm.bio.uniroma2.it/mint/">Mint Group</a>.
+	For any information you can contact me at 
+	<a href="mailto:arnaud@cbm.bio.uniroma2.it">arnaud@cbm.bio.uniroma2.it</a>.</p>
+	<p>PSI: the <a href="http://psidev.sourceforge.net/">Proteomics Standards Initiative</a></p>
+ 
+</body>
+</ol>  
+</body>
+</html>

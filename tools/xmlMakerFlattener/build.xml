@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="XML Maker Flattener" default="compile">
+  
+    <property name="project.title" value="XML Maker Flattener"/>
+    <property name="project.version" value="0.1.0"/>
+  
+   
+    <property name="src.dir"  value="src"/>
+    <property name="dest.dir" value="classes"/>
+    <property name="jdoc.dir" value="doc/api"/>
+
+    <!-- Where the distribution files are going to be (jar) -->
+    <property name="dist.dir" value="dist"/>
+    <property name="xmlMakerFlattener.jar" value="xmlMakerFlattener.jar"/>   
+   
+   
+    <!-- Project classpath. -->
+    <path id="project.class.path">
+        <fileset dir="libs">
+            <include name="**/*.jar"/>
+        </fileset>
+        <pathelement path ="${dest.dir}"/>
+    </path>
+
+    <!-- exec classpath. -->
+    <path id="exec.class.path">
+        <fileset dir="libs">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
+
+    <!-- javadoc classpath. -->
+    <path id="javadoc.class.path">
+        <path refid="project.class.path"/>
+
+        <!-- Common jar files for applications -->
+        <fileset dir="libs">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+   
+   
+    <target name="compile">     
+        <!-- Delete the class directory. -->
+        <delete dir="${dest.dir}"/>
+
+        <!-- Just compile without copying config files to the class dir; exclude tests. -->
+        <mkdir dir="${dest.dir}" />
+
+        <javac destdir="classes" 
+        	srcdir="${src.dir}">
+            <classpath refid="project.class.path"/>
+        </javac>
+    </target>
+
+    <target name="run-xmlMaker" description="lauch the XML maker">
+        <java  fork="yes" classpath="dist/xmlMakerFlattener.jar:libs/xercesImpl.jar:libs/castor-0.9.5-xml.jar:libs/xml-apis.jar:libs/xmlParserAPIs.jar" classname="mint.filemakers.xmlMaker.XmlMaker"/>
+    </target>
+
+    <target name="run-xmlFlattener" description="lauch the flattener">
+        <java  fork="yes" classpath="dist/xmlMakerFlattener.jar:libs/xercesImpl.jar:libs/castor-0.9.5-xml.jar:libs/xml-apis.jar:libs/xmlParserAPIs.jar" classname="mint.filemakers.xmlFlattener.XmlFlattener"/>
+    </target>
+
+
+    <target name="jar">
+
+        <!-- Delete the class directory. -->
+        <delete dir="${dist.dir}"/>
+        <delete dir="${dest.dir}"/>
+
+        <!-- Just compile without copying config files to the class dir; exclude tests. -->
+        <mkdir dir="${dest.dir}" />
+        <mkdir dir="${dist.dir}" />
+
+         <javac destdir="${dest.dir}" 
+        	srcdir="${src.dir}" classpath="${project.class.path}">
+            <classpath refid="project.class.path"/>
+        </javac>
+ 
+        <mkdir dir="${dist.dir}" />
+
+        <!-- Delete the existing jar file. -->
+        <delete file="${dist.dir}/${intact.core.jar}" quiet="true"/>
+
+        <jar destfile="${dist.dir}/${xmlMakerFlattener.jar}" basedir="${basedir}/${dest.dir}" />
+    </target>
+
+
+    
+        <!-- Build javadocs -->
+    <target name="javadoc" depends="compile">
+
+        <!-- Start with a fresh directory. -->
+        <delete dir="${jdoc.dir}" quiet="true"/>
+        <mkdir dir="${jdoc.dir}" />
+
+        <javadoc destdir="${jdoc.dir}" author="true" version="true" use="true"
+            windowtitle="Intact core API Documentation"
+            doctitle="&lt;h1&gt;${project.title} Documentation (Version ${project.version})&lt;/h1&gt;"
+            bottom="&lt;i&gt;Arnaud Ceol, University of Rome Tor Vergata, Mint Group arnaud@cbm.bio.uniroma2.it&lt;/i&gt;">
+
+            <!-- Exclude javadoc for test packages. -->
+            <packageset dir="${src.dir}"/>
+            <classpath refid="javadoc.class.path"/>
+        </javadoc>
+    </target>
+    
+</project>

@@ -1,0 +1,61 @@
+/** Arnaud Ceol, arnaud@cbm.bio.uniroma2.it */
+
+About XML maker/flattener:
+
+
+Requirements: 
+this software is written in Java, you need a Java Virtual Machine installed to run the software. 
+Java 1.4 is requiered (there is a problem of xcompatibility with Swing in Java 1.3). 
+
+
+Documentation: (WARNING: the documentation has to be updated)
+3 files are available in the root directory of the application:
+* documentation.html : a general documentation about both applications, the XML maker and the XML flattener
+* xmlMaker-tutorial.html : a tutorial that describes how to create a PSI XML file from a flat file
+* xmlFlattener-tutorial.html : a tutorial that describes how to create a flat file containing informations from an XML PSI file.
+
+
+
+running the soft with graphical user interface:
+* Windows
+	xmlFlattener.bat and xmlMaker.bat
+* Linux, MacOS X (in a terminal)
+	xmlFlattener.sh and xmlMaker.sh
+
+
+running the soft without graphical user interface (with mapping file):
+* Windows
+	xmlFlattener-wo-gui.bat and xmlMaker-wo-gui.bat
+	
+* Linux, MacOS X (in a terminal)
+	xmlFlattener-wo-gui.sh and xmlMaker-wo-gui.sh
+
+	options for the maker:
+	    -mapping: the mapping file, created by the GUI application
+        -o: name of the XML document to write -log: name of the log file
+        -flatfiles: names of the flat files in the right order, separated by comma
+        -dictionaries: names of the dictionary files in the right order, separated by comma
+	
+	options for the flattener:
+		-mapping: the mapping file, created by the GUI application
+		-xmlDocument: the XML document location, either a local file or an URL
+		-o: name of the flat file to write
+		
+
+Warning: all those scripts are using the jar file in the dist directory, so if you want
+to change source code you have to rebuilt the jar file in order to use the scripts.
+
+	
+rebuilding the soft:
+targets of build file for Ant (:
+compile: compile sources
+javadoc: built javadoc
+jar: create the jar file and put it into the dist diretory
+run-xmlMaker and run-xmlFlattener: to run the applications
+
+
+
+
+
+contact me for any question or suggestion at arnaud@cbm.bio.uniroma2.it
+
