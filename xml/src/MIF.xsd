@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by Henning Hermjakob (EBI) -->
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by Henning Hermjakob (EMBL OUTSTATION THE EBI WELLCOME TRUST GENOME CAMPUS) -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:element name="entrySet">
 		<xs:annotation>
@@ -7,12 +7,200 @@
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="source" type="nameType" minOccurs="0">
-					<xs:annotation>
-						<xs:documentation>Describes the source of this entrySet, e.g. the source database.</xs:documentation>
-					</xs:annotation>
+				<xs:element name="entry">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="source" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Describes the source of this entrySet, e.g. the source database.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="nameType">
+											<xs:sequence>
+												<xs:annotation>
+													<xs:documentation>FIXME: One sequence</xs:documentation>
+												</xs:annotation>
+												<xs:element ref="bibref"/>
+											</xs:sequence>
+											<xs:attribute name="release" type="xs:string" use="optional"/>
+											<xs:attribute name="releaseDate" type="xs:date" use="optional">
+												<xs:annotation>
+													<xs:documentation>Recommended.</xs:documentation>
+												</xs:annotation>
+											</xs:attribute>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="interactorList">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="interactor" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="xref" type="xrefType" minOccurs="0"/>
+													<xs:element name="names" type="nameType"/>
+													<xs:element name="organism" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Problem: This makes an interactor specific to an organism. Not adequate for ligands. Make optional?</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:complexContent>
+																<xs:extension base="bioSourceType">
+																	<xs:attribute name="ncbiTaxId" type="xs:integer" use="required"/>
+																</xs:extension>
+															</xs:complexContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:choice>
+														<xs:annotation>
+															<xs:documentation>Will be extended to e.g. small molecules in the next level.</xs:documentation>
+														</xs:annotation>
+														<xs:element name="proteinseq">
+															<xs:complexType>
+																<xs:sequence>
+																	<xs:element name="sequence" type="xs:string" minOccurs="0"/>
+																</xs:sequence>
+															</xs:complexType>
+														</xs:element>
+													</xs:choice>
+												</xs:sequence>
+												<xs:attribute name="id" type="xs:string" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="interactionList">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="interaction" type="interactionType" maxOccurs="unbounded">
+											<xs:key name="interactorKey">
+												<xs:selector xpath="interactor"/>
+												<xs:field xpath="@id"/>
+											</xs:key>
+											<xs:key name="featureKey">
+												<xs:selector xpath="interactor/feature"/>
+												<xs:field xpath="@id"/>
+											</xs:key>
+											<xs:keyref name="interactorAref" refer="interactorKey">
+												<xs:selector xpath="topology"/>
+												<xs:field xpath="@interactorA"/>
+											</xs:keyref>
+											<xs:keyref name="interactorBref" refer="interactorKey">
+												<xs:selector xpath="topology"/>
+												<xs:field xpath="@interactorB"/>
+											</xs:keyref>
+											<xs:keyref name="featureAref" refer="featureKey">
+												<xs:selector xpath="topology"/>
+												<xs:field xpath="@featureA"/>
+											</xs:keyref>
+											<xs:keyref name="featureBref" refer="featureKey">
+												<xs:selector xpath="topology"/>
+												<xs:field xpath="@featureB"/>
+											</xs:keyref>
+										</xs:element>
+										<xs:element name="newINteraction">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="names" type="nameType" minOccurs="0"/>
+													<xs:choice>
+														<xs:element name="PointertoExperiment">
+															<xs:annotation>
+																<xs:documentation>FIXME</xs:documentation>
+															</xs:annotation>
+														</xs:element>
+														<xs:element name="Experiment">
+															<xs:annotation>
+																<xs:documentation>FIXME</xs:documentation>
+															</xs:annotation>
+														</xs:element>
+													</xs:choice>
+													<xs:element name="participantList">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="participant">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:choice>
+																				<xs:element name="PointertoInteractor">
+																					<xs:annotation>
+																						<xs:documentation>FIXME</xs:documentation>
+																					</xs:annotation>
+																				</xs:element>
+																				<xs:element name="Interactor">
+																					<xs:annotation>
+																						<xs:documentation>FIXME</xs:documentation>
+																					</xs:annotation>
+																				</xs:element>
+																			</xs:choice>
+																			<xs:element name="featureList" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>FIXME</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="confidence" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Confidence in participant detection.</xs:documentation>
+																				</xs:annotation>
+																				<xs:complexType>
+																					<xs:attribute name="unit" type="xs:string" use="required"/>
+																					<xs:attribute name="value" type="xs:string" use="required"/>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="role" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>FIXME: Add small CV.  Default is unspecified.</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="isTaggedProtein" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>The binary choice might be replaced by exact feature definition.</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="isOverexpressedProtein" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>The binary choice might be replaced by exact value.</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="confidence" minOccurs="0">
+														<xs:complexType>
+															<xs:attribute name="unit" type="xs:string" use="required"/>
+															<xs:attribute name="value" type="xs:string" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="interactionType">
+														<xs:annotation>
+															<xs:documentation>Externally controlled.</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="experimenList">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="experimentDescription" type="experimentType" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Describes one set of experimental parameters, usually associated with a single publication.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
 				</xs:element>
-				<xs:element name="entry" type="entryType" maxOccurs="unbounded"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -56,9 +244,13 @@
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="names" type="nameType" minOccurs="0"/>
-			<xs:element name="tissue" type="fullNameType" minOccurs="0"/>
 			<xs:element name="cellType" type="fullNameType" minOccurs="0"/>
-			<xs:element name="compartment" type="fullNameType" minOccurs="0"/>
+			<xs:element name="compartment" type="fullNameType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>FIXME: All like tissueType</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="tissue" type="tissueType" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="featureType">
@@ -70,9 +262,9 @@
 					<xs:documentation>TODO: This is the current EBI location structure derived from EMBL/Genbank. I don't know how similar this is t o the agreed NCBI standard. OK if replaced/updated. </xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="featureIdent" type="methodType" minOccurs="0">
+			<xs:element name="featureDetection" type="methodType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Experimental method used to  identify the feature. If present, this replaces the featureIdent given in the experiment description.</xs:documentation>
+					<xs:documentation>Experimental method used to  identify the feature. If present, this overrides the featureDetection given in the experiment description.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -178,58 +370,38 @@
 	<xs:complexType name="interactionType">
 		<xs:sequence>
 			<xs:annotation>
-				<xs:documentation>An interaction has one or more interactors, and thereby covers both binary and n-ary interactions. If specific pairwise interactions are known, they are described by topology  elements.</xs:documentation>
+				<xs:documentation>An interaction has one or more interactors, and thereby covers both binary and n-ary interactions. If specific pairwise interactions are known, they are described in the contactList.</xs:documentation>
 			</xs:annotation>
-			<xs:element name="names" type="nameType"/>
-			<xs:element name="interactor" maxOccurs="unbounded">
+			<xs:element name="pairwiseContactList" minOccurs="0">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="names" type="nameType"/>
-						<xs:element name="xref" type="xrefType" minOccurs="0"/>
-						<xs:element name="organism">
+						<xs:element name="pairwiseContact" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Describes experimentally determined physical proximity, usually a binding. </xs:documentation>
+							</xs:annotation>
 							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="bioSourceType">
-										<xs:attribute name="ncbiTaxId" type="xs:integer" use="required"/>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="sequence" type="xs:string" minOccurs="0"/>
-						<xs:element name="feature" minOccurs="0" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="featureType">
-										<xs:attribute name="id" type="xs:string" use="required"/>
-										<xs:attribute name="type" type="xs:string" use="required"/>
-									</xs:extension>
-								</xs:complexContent>
+								<xs:attribute name="interactorA" type="xs:IDREF" use="required"/>
+								<xs:attribute name="featureA" type="xs:IDREF" use="optional"/>
+								<xs:attribute name="interactorB" type="xs:IDREF" use="required"/>
+								<xs:attribute name="featureB" type="xs:IDREF" use="optional"/>
 							</xs:complexType>
 						</xs:element>
 					</xs:sequence>
-					<xs:attribute name="id" type="xs:string" use="required"/>
-					<xs:attribute name="moleculeType" use="required">
-						<xs:simpleType>
-							<xs:restriction base="xs:string">
-								<xs:enumeration value="AA"/>
-								<xs:enumeration value="DNA"/>
-								<xs:enumeration value="RNA"/>
-							</xs:restriction>
-						</xs:simpleType>
-					</xs:attribute>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="topology" minOccurs="0" maxOccurs="unbounded">
-				<xs:complexType>
-					<xs:attribute name="interactorA" type="xs:string" use="required"/>
-					<xs:attribute name="interactorB" type="xs:string" use="required"/>
-					<xs:attribute name="featureA" type="xs:string" use="optional"/>
-					<xs:attribute name="featureB" type="xs:string" use="optional"/>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="confidence" minOccurs="0">
+			<xs:element name="confidenceList" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>TODO: So far the confidence is a single value. We might have multiple values, one or more from each experiment. Should this be modeled?</xs:documentation>
+					<xs:documentation>The overall confidence of the interaction, may be summarised from several experiments.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence minOccurs="0"/>
+					<xs:attribute name="unit" type="xs:string" use="required"/>
+					<xs:attribute name="value" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="interaction" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The quality of the interaction, usually determined by an expert.</xs:documentation>
 				</xs:annotation>
 				<xs:complexType>
 					<xs:attribute name="unit" type="xs:string" use="required"/>
@@ -242,54 +414,25 @@
 	<xs:complexType name="entryType">
 		<xs:sequence>
 			<xs:annotation>
-				<xs:documentation>TODO: The semantics of experiment versus interaction  needs to be defined. If more than one experiment is given, are ALL the interactions described by all experiments?</xs:documentation>
+				<xs:documentation>If more than one experiment is given, all the interactions must be supported by all experiments.</xs:documentation>
 			</xs:annotation>
-			<xs:element name="interaction" type="interactionType" maxOccurs="unbounded">
-				<xs:key name="interactorKey">
-					<xs:selector xpath="interactor"/>
-					<xs:field xpath="@id"/>
-				</xs:key>
-				<xs:key name="featureKey">
-					<xs:selector xpath="interactor/feature"/>
-					<xs:field xpath="@id"/>
-				</xs:key>
-				<xs:keyref name="interactorAref" refer="interactorKey">
-					<xs:selector xpath="topology"/>
-					<xs:field xpath="@interactorA"/>
-				</xs:keyref>
-				<xs:keyref name="interactorBref" refer="interactorKey">
-					<xs:selector xpath="topology"/>
-					<xs:field xpath="@interactorB"/>
-				</xs:keyref>
-				<xs:keyref name="featureAref" refer="featureKey">
-					<xs:selector xpath="topology"/>
-					<xs:field xpath="@featureA"/>
-				</xs:keyref>
-				<xs:keyref name="featureBref" refer="featureKey">
-					<xs:selector xpath="topology"/>
-					<xs:field xpath="@featureB"/>
-				</xs:keyref>
-			</xs:element>
-			<xs:element name="experiment" type="experimentType" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="methodType">
 		<xs:annotation>
 			<xs:documentation>Describes an experimental method.</xs:documentation>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="names" type="nameType"/>
-		</xs:sequence>
 		<xs:attribute name="id" type="xs:string" use="required"/>
 	</xs:complexType>
 	<xs:complexType name="experimentType">
 		<xs:sequence>
-			<xs:element name="names" type="nameType"/>
-			<xs:element name="xref" type="xrefType">
+			<xs:element name="names" type="nameType" minOccurs="0"/>
+			<xs:element name="xref" type="xrefType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Refers to external description  of the experiment, usually by Pubmed IDs.</xs:documentation>
+					<xs:documentation>Refers to external description  of the experiment.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element ref="bibref" minOccurs="0"/>
 			<xs:element name="organism" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The host organism in which the experiment has been performed.</xs:documentation>
@@ -302,27 +445,39 @@
 					</xs:complexContent>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="interactionIdent" type="methodType">
+			<xs:element name="interactionDetection" type="methodType">
 				<xs:annotation>
-					<xs:documentation>Experimental method to determine the interaction. Value range externally controlled.</xs:documentation>
+					<xs:documentation>FIXME: CVTYPE Experimental method to determine the interaction. Value range externally controlled.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="interactorIdent" type="methodType" minOccurs="0">
+			<xs:element name="participantDetection" type="methodType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Experimental method to determine the interactors involved in the interaction. Value range externally controlled.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="featureIdent" type="methodType" minOccurs="0">
+			<xs:element name="featureDetection" type="methodType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Experimental method to determine the features of interactors. Value range externally controlled.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="condition" type="methodType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>TODO: Detailed specification.</xs:documentation>
-				</xs:annotation>
+			<xs:element name="confidence" minOccurs="0">
+				<xs:complexType>
+					<xs:attribute name="unit" type="xs:string" use="required"/>
+					<xs:attribute name="value" type="xs:string" use="required"/>
+				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
 		<xs:attribute name="id" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:element name="bibref" type="xrefType">
+		<xs:annotation>
+			<xs:documentation>Refers to external description  of the experiment, usually by Pubmed IDs.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="tissueType">
+		<xs:choice>
+			<xs:element name="xref" type="xrefType" minOccurs="0"/>
+			<xs:element name="description"/>
+		</xs:choice>
 	</xs:complexType>
 </xs:schema>
