@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by Swiss-Prot (EMBL OUTSTATION THE EBI WELLCOME TRUST GENOME CAMPUS) -->
-<xs:schema targetNamespace="net:sf:psidev:mi" xmlns="net:sf:psidev:mi" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema targetNamespace="net:sf:psidev:mi" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="net:sf:psidev:mi" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:element name="entrySet">
     <xs:annotation>
       <xs:documentation>Root element of the Molecular Interaction Format</xs:documentation>
@@ -52,7 +52,7 @@
                   <xs:sequence>
                     <xs:element name="availability" type="availabilityType" default="free" minOccurs="0" maxOccurs="unbounded">
                       <xs:annotation>
-                        <xs:documentation>Describes data availability, e.g. through a copyright statement.</xs:documentation>
+                        <xs:documentation>Describes data availability, e.g. through a copyright statement. If no availability is given, the data is assumed to be freely available.</xs:documentation>
                       </xs:annotation>
                     </xs:element>
                   </xs:sequence>
@@ -173,7 +173,11 @@
       <xs:documentation>Describes the biological source of an object, in simple form only the NCBI taxid.</xs:documentation>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="names" type="namesType" minOccurs="0"/>
+      <xs:element name="names" type="namesType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The names of the organism.  The short label should be a common name if it exists.  The full name should be the full name of the species (i.e. genus species).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="cellType" type="openCvType" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Description of the cell type. Currently no species-independent controlled vocabulary for cell types is available, therefore the choice of reference database(s) is open to the data provider.</xs:documentation>
@@ -181,7 +185,7 @@
       </xs:element>
       <xs:element name="compartment" type="openCvType" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The subcellular compartement of the object. It is strongly recommended to refer to the Gene Ontology in this element.</xs:documentation>
+          <xs:documentation>The subcellular compartement of the object. It is strongly recommended to refer to the Gene Ontology cellular component in this element.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="tissue" type="openCvType" minOccurs="0">
@@ -315,7 +319,7 @@
       </xs:element>
       <xs:element name="confidence" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>Confidence in this experiment.</xs:documentation>
+          <xs:documentation>Confidence in this experiment.  Usually a statistical measure.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
           <xs:attribute name="unit" type="xs:string" use="required"/>
@@ -324,7 +328,7 @@
       </xs:element>
       <xs:element name="attributeList" type="attributeListType" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>Semi-structured additional description of the data contained in the entry.</xs:documentation>
+          <xs:documentation>Semi-structured additional description of the experiment.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -383,8 +387,16 @@
       <xs:documentation>Reference to an external controlled vocabulary.</xs:documentation>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="names" type="namesType"/>
-      <xs:element name="xref" type="xrefType"/>
+      <xs:element name="names" type="namesType">
+        <xs:annotation>
+          <xs:documentation>Name of the controlled vocabulary term.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="xref" type="xrefType">
+        <xs:annotation>
+          <xs:documentation>Source of the controlled vocabulary term.  E.g. the name of the CV and the term ID.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="openCvType">
@@ -399,12 +411,12 @@
     <xs:sequence>
       <xs:element name="names" type="namesType">
         <xs:annotation>
-          <xs:documentation>Protein name(s)</xs:documentation>
+          <xs:documentation>Protein name(s).  The short label is typically a short name that could appear as a label on a diagram.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="xref" type="xrefType" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>An interactor should have an xref whenever possible. If the interactor is not available in external databases, it must be characterised e.g. by its sequence.</xs:documentation>
+          <xs:documentation>An interactor should have an xref whenever possible. If the interactor is not available in external databases, it must be characterised within this proteinInteractor object e.g. by its sequence.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="organism" minOccurs="0">
@@ -449,10 +461,18 @@
       </xs:element>
       <xs:choice minOccurs="0">
         <xs:annotation>
-          <xs:documentation>Describes the availability of the interaction data. If no availability is given, the data is assumed to be freely available.</xs:documentation>
+          <xs:documentation>Either refer to an already defined availability statement in this entry or insert description.</xs:documentation>
         </xs:annotation>
-        <xs:element name="availabilityRef" type="refType"/>
-        <xs:element name="availabilityDescription" type="availabilityType"/>
+        <xs:element name="availabilityRef" type="refType">
+          <xs:annotation>
+            <xs:documentation>References an availability statement already present in this entry.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="availabilityDescription" type="availabilityType">
+          <xs:annotation>
+            <xs:documentation>Describes the availability of the interaction data. If no availability is given, the data is assumed to be freely available.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
       </xs:choice>
       <xs:element name="experimentList">
         <xs:annotation>
@@ -461,10 +481,18 @@
         <xs:complexType>
           <xs:choice maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>Either refer to an experiment or insert description.</xs:documentation>
+              <xs:documentation>Either refer to an already defined experiment in this entry or insert description.</xs:documentation>
             </xs:annotation>
-            <xs:element name="experimentRef" type="refType"/>
-            <xs:element name="experimentDescription" type="experimentType"/>
+            <xs:element name="experimentRef" type="refType">
+              <xs:annotation>
+                <xs:documentation>References an experiment already present in this entry.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="experimentDescription" type="experimentType">
+              <xs:annotation>
+                <xs:documentation>An experiment in which this interaction has been determined.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
           </xs:choice>
         </xs:complexType>
       </xs:element>
@@ -475,7 +503,7 @@
         <xs:complexType>
           <xs:sequence>
             <xs:annotation>
-              <xs:documentation>Will be extended in future levels to include other types of molecules as participants.</xs:documentation>
+              <xs:documentation>Will be extended in future levels to include other types of participant molecules.</xs:documentation>
             </xs:annotation>
             <xs:element name="proteinParticipant" type="proteinParticipantType" minOccurs="2" maxOccurs="unbounded">
               <xs:annotation>
@@ -492,14 +520,18 @@
       </xs:element>
       <xs:element name="confidence" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>Confidence in the interaction.</xs:documentation>
+          <xs:documentation>Confidence in this experiment.  Usually a statistical measure.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
           <xs:attribute name="unit" type="xs:string" use="required"/>
           <xs:attribute name="value" type="xs:string" use="required"/>
         </xs:complexType>
       </xs:element>
-      <xs:element name="xref" type="xrefType" minOccurs="0"/>
+      <xs:element name="xref" type="xrefType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Interaction database ID</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="attributeList" type="attributeListType" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Semi-structured additional description of the data contained in the entry.</xs:documentation>
@@ -513,6 +545,9 @@
     </xs:annotation>
     <xs:sequence>
       <xs:choice>
+        <xs:annotation>
+          <xs:documentation>Either refer to an already defined protein interactor in this entry or insert description.</xs:documentation>
+        </xs:annotation>
         <xs:element name="proteinInteractorRef" type="refType">
           <xs:annotation>
             <xs:documentation>References an interactor described in the interactorList of the entry</xs:documentation>
@@ -545,7 +580,7 @@
       </xs:element>
       <xs:element name="role" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The role of the participant in the interaction, eg "bait".</xs:documentation>
+          <xs:documentation>The role of the participant in the interaction, e.g. "bait".  Choose an enumerated value.</xs:documentation>
         </xs:annotation>
         <xs:simpleType>
           <xs:restriction base="xs:string">
