@@ -1,180 +1,196 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:n1="net:sf:psidev:mi" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<xsl:output method="html" encoding="UTF-8" />
-	<xsl:template match="/">
-		<html>
-			<head>
-			<style>
-			TH {color: #0050B2;} 
-  			.R0 { text-align: left; 
-			      padding-left: 0.5em;} 
-			.R1 {text-align: left; 
-			     color:#000000; 
-			     padding-left: 2em;} 
-			.R2 {text-align: left; 
-			     color: red;
-			     padding-left: 3em;}
-			.parts {text-align: left; 
-			     color: black;
-			     font-size: 16pt;
-			     font-weight: bold;
-			     padding-left: 1em;
-			     padding-top: 1em;
-			     padding-bottom: 1em;}
-			</style>
-			</head>
+<xsl:stylesheet version="1.0"
+  xmlns:psi="net:sf:psidev:mi"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html" encoding="ISO-8859-1"/>
 
-			<body>
-			<br/>
-			<center>
-				<xsl:for-each select="n1:entrySet">
-					<xsl:for-each select="n1:entry">
-						<table width ="80%" border="0" cellpadding="0" cellspacing="0">
-						<tr align="center">
-								<td><a href="http://psidev.sourceforge.net"><img src="http://psidev.sourceforge.net/images/psi.gif" width="113" height="75" border="0" align="left"/></a></td> 
-								<td><xsl:call-template name="sources"/></td>
-								<td><a href="http://www.hupo.org/"><img src="http://psidev.sourceforge.net/images/hupo.gif" width="113" height="75" border="0" align="right"/></a></td>
-						</tr>
-						<br/>
+<!-- 
+This XSLT-Script was designed for generating HTML out of a PSI-MI-XML-File,
+which satisfies MIF.xsd.
+Its only a visualisation and does not show all details included in PSI !
 
-						<!-- AvailabilityList -->
+The implementation is highly recursive - a lot of templates are used at 
+different Levels.
+This XSLT-Script was developed and tested using SAXON 6.5.2.
+-->
+<xsl:template match="psi:entrySet">
+<html>
+  <head>
+  <title>HUPO Proteomics Standards Initiative Protein Interaction
+  Result Visualisation</title>
+  </head>
+  <body>
+  <a href="http://psidev.sourceforge.net"><img src="http://psidev.sourceforge.net/images/psi.gif" width="113" height="75" border="0" align="left"/></a>
+  <a href="http://www.hupo.org/"><img src="http://psidev.sourceforge.net/images/hupo.gif" width="113" height="75" border="0" align="right"/></a>
+  <br clear="all"/>
+		
+  <center>
+  <h2><a href="http://psidev.sourceforge.net">Proteomics Standards Initiative</a> </h2>
+  <h2>Result Visualisation</h2>
+  
+  <xsl:apply-templates/>
+  </center>
+  
+  </body>
+</html>
+</xsl:template>
+<!--Level 0 -->
+<xsl:template match="psi:entry">
+  <table border="1">
+    <xsl:apply-templates select="psi:source"/>
+    <xsl:apply-templates select="psi:interactionList"/>
+    <xsl:apply-templates select="psi:availabilityList"/>
+    <xsl:apply-templates select="psi:experimentList"/>
+    <xsl:apply-templates select="psi:interactorList"/>
+    <xsl:apply-templates select="psi:attributeList"/>
+  </table>
+</xsl:template>
 
-						<xsl:for-each select="n1:availabilityList">
-							<xsl:for-each select="n1:availability">
-								<xsl:if test="position()=1">									
-									<tr valign="center">
-										<td colspan="3" class="parts">Availability List</td>
-									</tr>
-								</xsl:if>
-								<tr valign="center">
-										<td colspan="3">
-											<xsl:value-of select="current()"/>
-										</td>
-								</tr>
-							</xsl:for-each>
-						</xsl:for-each>
-						
-						<!-- InteractionList -->
+<!--Level 1 -->
+<xsl:template match="psi:source">
+  <tr><td valign="top" bgcolor="#BBBBBB">Source:</td><td><table border="1">
+  <xsl:apply-templates/>
+  </table></td></tr>
+</xsl:template>
+<xsl:template match="psi:availabilityList">
+  <tr><td valign="top" bgcolor="#BBBBBB">Availabilities:</td><td><table border="1">
+  <xsl:apply-templates/>
+  </table></td></tr>
+</xsl:template>
+<xsl:template match="psi:experimentList">
+  <tr><td valign="top" bgcolor="#BBBBBB">Experiments:</td><td><table border="1">
+  <xsl:apply-templates/>
+  </table></td></tr>
+</xsl:template>
+<xsl:template match="psi:interactorList">
+  <tr><td valign="top" bgcolor="#BBBBBB">Interactors:</td><td><table border="1">
+  <xsl:apply-templates/>
+  </table></td></tr>
+</xsl:template>
+<xsl:template match="psi:interactionList">
+  <tr><td valign="top" bgcolor="#BBBBBB">Interactions:</td><td><table border="1">
+  <xsl:apply-templates/> 
+  </table></td></tr>
+</xsl:template>
+<xsl:template match="psi:attributeList">
+  <tr><td valign="top" bgcolor="#BBBBBB">Attributes:</td><td><table border="1">
+  <xsl:apply-templates/>
+  </table></td></tr>
+</xsl:template>
 
-						<xsl:for-each select="n1:interactionList">
-							<xsl:for-each select="n1:interaction">
-								<xsl:if test="position()=1">									
-									<tr valign="center">
-										<td colspan="3" class="parts">Interaction List</td>
-									</tr>
-								</xsl:if>
-								<tr>
-									<td colspan="3">
-										<xsl:for-each select="n1:participantList">
-											<xsl:for-each select="n1:participant">
-												<xsl:if test="position()=1">
-													<xsl:text disable-output-escaping="yes">&lt;table cellpadding="5" cellspacing="0" border="0"&gt;</xsl:text>
-												</xsl:if>
-												<xsl:if test="position()=1">
-													<thead>
-														<tr bgcolor="#CCCCCC" align="center">
-															<td width="300"/>
-															<td width="100">roles</td>
-															<td width="200">isTaggedProtein</td>
-															<td width="200">isOverexpressedProtein</td>
-															<td width="200">interactionType</td>
-														</tr>
-													</thead>
+<!--Level 2 -->
+<xsl:template match="psi:names">
+  <tr><td valign="top" bgcolor="#BBBBBB">Name:</td>
+  <td><b><xsl:value-of select="psi:shortLabel"/></b>
+  <xsl:choose>
+    <xsl:when test="psi:fullName!='' and psi:shortLabel!='' ">: <xsl:value-of select="psi:fullName"/></xsl:when>
+	<xsl:otherwise><xsl:value-of select="psi:fullName"/> </xsl:otherwise>
+  </xsl:choose>
+  </td></tr>
+</xsl:template>
+<xsl:template match="psi:bibref">
+  <tr><td>
+  <xsl:apply-templates/>
+  </td></tr>
+</xsl:template>
+<xsl:template match="psi:xref">
+  <tr><td valign="top" bgcolor="#BBBBBB">Reference:</td>
+  <xsl:if test="psi:primaryRef/@id != ''"><td><xsl:value-of select="psi:primaryRef/@db"/>,  <xsl:value-of select="psi:primaryRef/@id"/></td></xsl:if>
+  <xsl:if test="psi:secondaryRef/@id != ''"><td><xsl:value-of select="psi:secondaryRef/@db"/>, <xsl:value-of select="psi:secondaryRef/@id"/></td></xsl:if>
+  </tr>
+</xsl:template>
+<xsl:template match="psi:attributeList">
+  <tr><td valign="top" bgcolor="#BBBBBB">Attributes:</td><td>
+  <xsl:value-of select="psi:attributeList"/></td>
+  </tr>
+</xsl:template>
+<xsl:template match="psi:availability">
+  <xsl:param name="ref"><xsl:value-of select="@id"/></xsl:param>
+  <tr>
+    <td><a name="{$ref}"><xsl:value-of select="@id"/></a>: <xsl:value-of select="."/></td>
+  </tr>
+</xsl:template>
+<xsl:template match="psi:experimentDescription">
+  <xsl:param name="ref"><xsl:value-of select="@id"/></xsl:param>
+  <tr>
+    <td valign="top" bgcolor="#BBBBBB">Name:</td>
+    <td><a name="{$ref}"><xsl:value-of select="@id"/></a>: <xsl:value-of select="psi:names/psi:shortLabel"/> </td>
+	<td><xsl:apply-templates select="psi:bibref"/></td>
+  </tr>
+</xsl:template>
+<xsl:template match="psi:proteinInteractor">
+  <xsl:param name="ref"><xsl:value-of select="@id"/></xsl:param>
+  <tr>
+    <td><a name="{$ref}"><xsl:value-of select="@id"/></a>: <xsl:value-of select="psi:names/psi:shortLabel"/> </td>
+	<td><xsl:apply-templates select="psi:bibref"/></td>
+  </tr>
+</xsl:template>
+<xsl:template match="psi:interaction">
+  <tr><td><table border="3"> 
+  <xsl:if test="psi:experimentRef[1]/@ref != ''">
+    <tr><td valign="top" bgcolor="#BBBBBB">Experiments:</td><td><table boarder="1"><tr><xsl:apply-templates select="psi:experimentRef"/></tr></table></td></tr>
+  </xsl:if>
+  <xsl:if test="psi:experimentDescription[1]/@id != ''">
+    <tr><td valign="top" bgcolor="#BBBBBB">Experiments:</td><td><table boarder="1"><xsl:apply-templates select="psi:experimentDescription"/></table></td></tr>
+  </xsl:if>
+  <xsl:if test="psi:availabilityRef[1]/@ref != ''">
+    <tr><td valign="top" bgcolor="#BBBBBB">Availability:</td><td><table boarder="1"><tr><xsl:apply-templates select="psi:availabilityRef"/></tr></table></td></tr>
+  </xsl:if>
+  <tr><xsl:apply-templates select="psi:participantList"/></tr>
+  <tr><xsl:apply-templates select="psi:interactionType"/></tr>
+  </table></td></tr>
+</xsl:template>
 
-												</xsl:if>
-												<xsl:if test="position()=1">
-													<xsl:text disable-output-escaping="yes">&lt;tbody&gt;</xsl:text>
-												</xsl:if>
-												<xsl:element name="tr"><xsl:attribute name="bgcolor">
-												<xsl:choose>
-													<xsl:when test="position() mod 2 =1">
-														<xsl:text disable-output-escaping="yes">#FF0066</xsl:text>
-													</xsl:when>
-													<xsl:otherwise>
-														<xsl:text disable-output-escaping="yes">#00FF00</xsl:text>
-													</xsl:otherwise>
-												</xsl:choose>
-												</xsl:attribute><xsl:attribute name="align">center</xsl:attribute>
-												<td width="105">
-														<xsl:for-each select="n1:interactorRef">
-															<xsl:for-each select="@ref">
-																<xsl:value-of select="."/>
-															</xsl:for-each>
-														</xsl:for-each>
-														<br/>
-														<xsl:for-each select="n1:interactor">
-															<xsl:for-each select="n1:names">
-																<xsl:for-each select="n1:shortLabel">
-																	<xsl:apply-templates/>
-																</xsl:for-each>
-															</xsl:for-each>
-														</xsl:for-each>
-													</td>
-													<td>
-														<xsl:for-each select="n1:role">
-															<xsl:apply-templates/>
-														</xsl:for-each>
-													</td>
-													<td>
-														<xsl:for-each select="n1:isTaggedProtein">
-															<xsl:apply-templates/>
-														</xsl:for-each>
-													</td>
-													<td>
-														<xsl:for-each select="n1:isOverexpressedProtein">
-															<xsl:apply-templates/>
-														</xsl:for-each>
-													</td>
-													<xsl:if  test="position()=1">
-														<xsl:element name="td">
-															<xsl:attribute name="bgcolor">#3399FF</xsl:attribute>
-															<xsl:attribute name="rowspan"><xsl:value-of select="last()"/></xsl:attribute>
-															<xsl:for-each select="../../n1:interactionType">
-																<xsl:apply-templates/>
-															</xsl:for-each>
-														</xsl:element>
-													</xsl:if>
-												</xsl:element>
-												<xsl:if test="position()=last()">
-													<xsl:text disable-output-escaping="yes">&lt;/tbody&gt;</xsl:text>
-												</xsl:if>
-												<xsl:if test="position()=last()">
-													<xsl:text disable-output-escaping="yes">&lt;/table&gt;</xsl:text>
-												</xsl:if>
-											</xsl:for-each>
-										</xsl:for-each>
-									</td>
-									
-								</tr>
-								<xsl:if test="position()=last()">
-									<xsl:text disable-output-escaping="yes">&lt;/tbody&gt;</xsl:text>
-								</xsl:if>
-							</xsl:for-each>
-						</xsl:for-each>
-					</table>
-					</xsl:for-each>
-				</xsl:for-each>
-			</center>
-			</body>
-		</html>
-	</xsl:template>
+<!--Level 3 -->
+<xsl:template match="psi:interactionDetection">
+  <tr><td valign="top" bgcolor="#BBBBBB">Interactiondetection:</td><td><table border="1">
+  <xsl:apply-templates/> <!-- names, x-ray-->
+  </table></td></tr>
+</xsl:template>
+<xsl:template match="psi:organism">
+  <tr><td valign="top" bgcolor="#BBBBBB">Organisms:</td><td><table border="1">
+  <xsl:apply-templates/> <!-- names, x-ray-->
+  </table></td></tr>
+</xsl:template>
+<xsl:template match="psi:sequence">
+  <tr><td valign="top" bgcolor="#BBBBBB">Sequence:</td><td>
+  <xsl:value-of select="."/>
+  </td></tr>
+</xsl:template>
+<xsl:template match="psi:participantList">
+  <tr><td valign="top" bgcolor="#BBBBBB">Participants:</td><td><table border="1"><th bgcolor="#BBBBBB">Reference</th><th bgcolor="#BBBBBB">Role</th><th bgcolor="#BBBBBB">tagged</th><th bgcolor="#BBBBBB">overexpressed</th>
+  <xsl:apply-templates/> <!-- proteinParticipant -->     
+  </table></td> </tr>
+</xsl:template>
+<xsl:template match="psi:interactionType">
+  <tr><td valign="top" bgcolor="#BBBBBB">Interaction Type:</td><td><table border="1">
+  <xsl:apply-templates/> <!-- names, x-ray-->
+  </table></td></tr>
+</xsl:template>
+<xsl:template match="psi:experimentRef">
+  <xsl:param name="ref"><xsl:value-of select="@ref"/></xsl:param>
+  <td>
+  <a href="#{$ref}"><xsl:value-of select="@ref"/></a> 
+  </td>
+</xsl:template>
+<xsl:template match="psi:availabilityRef">
+  <xsl:param name="ref"><xsl:value-of select="@ref"/></xsl:param>
+  <td>
+  <a href="#{$ref}"><xsl:value-of select="@ref"/></a> 
+  </td>
+</xsl:template>
 
-	<xsl:template match="n1:shortLabel">
-		<b><xsl:value-of select="current()"></xsl:value-of></b>
-	</xsl:template>
-	
-	<xsl:template name="sources">
-		<xsl:for-each select="n1:source">
-			<xsl:for-each select="n1:names">
-				<h2><xsl:value-of select="n1:shortLabel"/></h2><br/>
-				<h2><xsl:value-of select="n1:fullName"/></h2>
-				
-			</xsl:for-each>
-		</xsl:for-each>
-	</xsl:template>
-
-	<xsl:template name="spaceline">
-		<tr><td>.</td></tr>
-	</xsl:template>
+<!--Level 4 -->
+<xsl:template match="psi:proteinParticipant">
+  <xsl:param name="ref"><xsl:value-of select="psi:interactorRef/@ref"/></xsl:param>
+  <tr>
+  <td align="center"><a href="#{$ref}"><xsl:value-of select="psi:interactorRef/@ref"/></a></td>
+  <td align="center"><xsl:value-of select="psi:role"/></td>
+  <td align="center"><xsl:value-of select="psi:isTaggedProtein"/></td>
+  <td align="center"><xsl:value-of select="psi:isOverexpressedProtein"/></td>
+  </tr>
+</xsl:template>
 
 </xsl:stylesheet>
+
+
