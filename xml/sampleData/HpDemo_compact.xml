@@ -1,0 +1,2448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<entrySet xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
+	
+   <entry>
+		
+      <source>
+			
+         <names>
+				
+            <shortLabel>Hybrigenics data set</shortLabel>
+				
+            <fullName>This interaction data set was produced by Hybrigenics SA. See http://www.hybrigenics.com</fullName>
+			
+         </names>
+			
+         <bibref>
+				
+            <xref>
+					
+               <primaryRef db="Pubmed" id="11196647"/>
+				
+            </xref>
+			
+         </bibref>
+		
+      </source>
+		
+      <availabilityList>
+			
+         <availability id="hgx_license">These interactions are the sole property of HYBRIGENICS, and shall not be used for any business or commercial purposes without the prior written license from HYBRIGENICS (http://www.hybrigenics.com)</availability>
+		
+      </availabilityList>
+		
+      <experimentList>
+			
+         <experimentDescription id="hgx_experiment">
+				
+            <names>
+					
+               <shortLabel>Hgx PIM techno</shortLabel>
+					
+               <fullName>Hybrigenics SA PIM(r) Technology</fullName>
+				
+            </names>
+				
+            <bibref>
+					
+               <xref>
+						
+                  <primaryRef db="Pubmed" id="11196647"/>
+					
+               </xref>
+				
+            </bibref>
+				
+            <hostOrganism ncbiTaxId="4932">
+					
+               <names>
+						
+                  <shortLabel>Baker's yeast</shortLabel>
+						
+                  <fullName>Saccharomices cerevisiae</fullName>
+					
+               </names>
+				
+            </hostOrganism>
+				
+            <interactionDetection>
+					
+               <names>
+						
+                  <shortLabel>classical two hybrid</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0018"/>
+						
+                  <secondaryRef db="Pubmed" id="11196647"/>
+					
+               </xref>
+				
+            </interactionDetection>
+				
+            <participantDetection>
+					
+               <names>
+						
+                  <shortLabel>nucleotide sequence identification</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0078"/>
+						
+                  <secondaryRef db="Pubmed" id="11196647"/>
+					
+               </xref>
+				
+            </participantDetection>
+				
+            <featureDetection>
+					
+               <names>
+						
+                  <shortLabel>deletion analysis</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0033"/>
+						
+                  <secondaryRef db="Pubmed" id="11196647"/>
+					
+               </xref>
+				
+            </featureDetection>
+			
+         </experimentDescription>
+		
+      </experimentList>
+		
+      <interactorList>
+			
+         <proteinInteractor id="HP0070">
+				
+            <names>
+					
+               <shortLabel>UREE</shortLabel>
+					
+               <fullName>Urease accessory protein ureE</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="Q09064"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MIIERLVGNLRDLNPLDFSVDHVDLEWFETRKKIARFKTRQGKDIAIRLKDAPKLGLSQGDILFKEEKEIIAVNILDSEVIHIQAKSVAEVAKICYEIGNRHAALYYGESQFEFKTPFEKPTLALLEKLGVQNRVLSSKLDSKERLTVSMPHSEPNFKVSLASDFKVVVK</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP0067">
+				
+            <names>
+					
+               <shortLabel>UREH</shortLabel>
+					
+               <fullName>Urease accessory protein ureH</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="Q09067"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MNTYAQESKLRLKTKIGADGRCVIEDNFFTPPFKLMAPFYPKDDLAEIMLLAVSPGMMRGDAQDVQLNIGPNCKLRITSQSFEKIHNTEDGFASRDMHIVVGENAFLDFAPFPLIPFENAHFKGNTTISLRSSSQLLYSEIIVAGRVARNELFKFNRLHTKISILQDEKPIYYDNTILDPKTTDLNNMCMFDGYTHYLNLVLVNCPIELSGVRECIEESEGVDGAVSETASSHLCVKALAKGSEPLLHLREKIARLVTQTTTQKV</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP0069">
+				
+            <names>
+					
+               <shortLabel>UREF</shortLabel>
+					
+               <fullName>Urease accessory protein ureF</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="Q09065"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MDKGKSVKSTEKSVGMPPKTPKTDNNAHVDNEFLILQVNDAVFPIGSYTHSFGLETYIQQKKVTNKESALEYLKANLSSQFLYTEMLSLKLTYESALQQDLKKILGVEEVIMLSTSPMELRLANQKLGNRFIKTLQAMNELDMGEFFNAYAQKTKDPTHATSYGVFAASLGIELKKALRHYLYAQTSNMVINCVKSVPLSQNDGQKILLSLQSPFNQLIEKTLELDESHLCTASVQNDIKAMQHESLYSRLYMS</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP0776">
+				
+            <names>
+					
+               <shortLabel>RPOZ</shortLabel>
+					
+               <fullName>Probable DNA-directed RNA polymerase omega chain</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Entrez Protein" id="NP_207569"/>
+					
+               <secondaryRef db="Swiss-Prot" id="O25467"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>LDRTQNKRISLKKERTESLVAQALKNIGNDRYMLDNLVFARVKQLNAGAKTLVNMDPKRHKLVDIAIREIAEGKIDIDRIDERN</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP0278">
+				
+            <names>
+					
+               <shortLabel>GPPA</shortLabel>
+					
+               <fullName>Guanosine pentaphosphate phosphohydrolase</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="O25055"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MAKITTVIDIGSNSVRLAVFKKTSQFGFYLLFETKSKVRISEGCYAFNGILQEIPMQRAVKALSEFKEIALKYKSKKILCVATSAVRDAPNRLEFVARVKKACGLQIKIIDGQKEALYGGIACANLLHKNSGITIDIGGGSTECALIEKGKIKDLISLDVGTIRIKEMFLDKDLEVKLAKAFIQKEVSKLPFKHKNAFGVGGTIRALSKVLMKRFCYPIDSLHGYEIDAHKNLAFIEKIVMLKEDQLRLLGVNEERLDSIRSGALILSVVLEHLKTSLMITSGVGVREGVFLSDLLRHHYHKFPPNINPSLISLKDRFLPHEKHSQKVKKECVKLFEALSPLHKIDEKYLFHLKIAGELASMGKILSVYLAHKHSAYFILNALSYGFSHQDRAIICLLAQFSHKKIPKDNAIAHMSAMMPSLLTLQWLSFILSLAENLCLTDSHHLKYTLEKNKLVIHSNDTLYLAKEMLPKLVKPIPLTIEFA</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP0072">
+				
+            <names>
+					
+               <shortLabel>UREB</shortLabel>
+					
+               <fullName>Urease beta subunit</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="P14917"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MKKISRKEYVSMYGPTTGDKVRLGDTDLIAEVEHDYTIYGEELKFGGGKTLREGMSQSNNPSKEELDLIITNALIVDYTGIYKADIGIKDGKIAGIGKGGNKDMQDGVKNNLSVGPATEALAGEGLIVTAGGIDTHIHFISPQQIPTAFASGVTTMIGGGTGPADGTNATTITPGRRNLKWMLRAAEEYSMNLGFLAKGNASNDASLADQIEAGAIGFKIHEDWGTTPSAINHALDVADKYDVQVAIHTDTLNEAGCVEDTMAAIAGRTMHTFHTEGAGGGHAPDIIKVAGEHNILPASTNPTIPFTVNTEAEHMDMLMVCHHLDKSIKEDVQFADSRIRPQTIAAEDTLHDMGIFSITSSDSQAMGRVGEVITRTWQTADKNKKEFGRLKEEKGDNDNFRIKRYLSKYTINPAIAHGISEYVGSVEVGKVADLVLWSPAFFGVKPNMIIKGGFIALSQMGDANASIPTPQPVYYREMFAHHGKAKYDANITFVSQAAYDKGIKEELGLERQVLPVKNCRNITKKDMQFNDTTAHIEVNPETYHVFVDGKEVTSKPANKVSLAQLFSIF</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP0216">
+				
+            <names>
+					
+               <shortLabel>DXR</shortLabel>
+					
+               <fullName>1-deoxy-D-xylulose 5-phosphate reductoisomerase</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="P56139"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MVVLGSTGSIGKNALKIAKKFGIEIEALSCGKNIALINEQIQVFKPKKVAILDPSDLNDLEPLGAEVFVGLEGIDAMIEECTSNLVLNAIVGVAGLKASFKSLQRNKKLALANKESLVSAGHLLDISQITPIDSEHFGLWALLQNKTLKPKSLIISASGGAFRDTPLEFIPIQNAQNALKHPNWSMGSKITIDSASMVNKLFEILETYWLFGASLKIDALIERSSIVHALVEFEDNSIIAHLASADMQLPISYAIDPKLASLSASIKPLDLYALSAIKFEPISMERYTLWCYKDLLLENPKLGVVLNASNEVAMEKFLNKEIAFGGLIQTISQALESYDKMPFKLSSLEEVLELDKEVRERFKNVAGV</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP0068">
+				
+            <names>
+					
+               <shortLabel>UREG</shortLabel>
+					
+               <fullName>Urease accessory protein ureG</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="Q09066"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MVKIGVCGPVGSGKTALIEALTRHMSKDYDMAVITNDIYTKEDAEFMCKNSVMPRERIIGVETGGCPHTAIREDASMNLEAVEEMHGRFPNLELLLIESGGDNLSATFNPELADFTIFVIDVAEGDKIPRKGGPGITRSDLLVINKIDLAPYVGADLKVMERDSKKMRGEKPFIFTNIRAKEGLDDVIAWIKRNALLED</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP1409">
+				
+            <names>
+					
+               <shortLabel>HP1409</shortLabel>
+					
+               <fullName>Hypothetical protein HP1409</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="O34810"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MMAKIDVELKKLHQILVDRDYFYQVPDYQRPYVWDKDHLGALIDDLVGSYTNNREDEYFCGSIVIVENQKDKRWDVVDGQQRLTSFIILACTILRLYKHSLGQESKDFIEDSIYDRYDKEKERLKFLTAQNYNSIFENTVLNHLEFEDNIKKSELNKKFEENTYLRNAYYFKELLNESVENGSISDIDDFVKWFYEHIVLTRIICFEQDSAMQIFQVLNDRGQPLSPIDILKSSLMQEIKQDSEKRKDFITTWDKLVEACKSVEGVDIDLEDFFNMYLEYADPSTSKKRADKGLKKVFKDSKKDACGFIYEISEFMKAYTALLKKQDRYVYLLRYLPSRYWASILTTALYVKYPDFDALKKLLVSYYYQTWIAGGTITRIKQTSINIIKNVKSNKSVETIKELILNSIDSYNTFDQYLYNLWDSSSVYHSKWVRPVLALANYFMADEEKPHFIAMDAETQVEHILPQTPKRGSQWNADFDKEKREEWVNNIANLTLLKRKKNAHALNGDFDEKRKIYGGKDTSKVISCYDITKELYSNYRKWNEKSLQERYKSLYNTITPVLHIEGQEDDFEDDFDLE</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP1378">
+				
+            <names>
+					
+               <shortLabel>COML</shortLabel>
+					
+               <fullName>Competence lipoprotein</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="O25930"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MRLKHFKTFLFITMAIIVIGTGCANKKKKKDEYNKPAIFWYQGILREILFANLETADNYYSSLQSEHINSPLVPEAMLALGQAHMKKKEYVLASFYFDEYIKRFGTKDNVDYLTFLKLQSHYYAFKNHSKDQEFISNSIVSLGEFIEKYPNSRYRPYVEYMQIKFILGQNELNRAIANVYKKRHKPEGVKRYLERIDETLEKETKPKPSHMPWYVLIFDW</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP0118">
+				
+            <names>
+					
+               <shortLabel>HP0118</shortLabel>
+					
+               <fullName>Hypothetical protein HP0118</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="O24937"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MESVKTGKTNKVGKNTEMANTKANKEXHFKQXSTITNIIRSXXGIFTKIAKKVRGLVKKHPKKSSAALVVLTHIACKKAKELDDKVQDKSKQAEKENQINWWKYSGLTIATSLLLAACSTGDVSEQIELEQEKQKTSNIETNNQIKVEQEKQKTSNIETNNQIKVEQEQQKTSNTQKDLVKEQKDLVKEQKDLVKEQKDLVKEQKDLVKTQKDFIKYVEQNCQENHNQFFIEKGGIKAGIGIEVEAECKTPKPAKTNQTPIQPKHLPNSKQPRSQRGSKAQELIAYLQKELEFLPYSQKAIAKQVDFYRPSSIAYLELDPRDFKVTEEWQKENLKIRSKAQAKMLEMRNPQAHLSNSQSLLFVQKIFADVNKEIEAVANTEKKAEKAGYGYSKRM</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP0073">
+				
+            <names>
+					
+               <shortLabel>UREA</shortLabel>
+					
+               <fullName>Urease alpha subunit</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="P14916"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MKLTPKELDKLMLHYAGELAKKRKEKGIKLNYVEAVALISAHIMEEARAGKKTAAELMQEGRTLLKPDDVMDGVASMIHEVGIEAMFPDGTKLVTVHTPIEANGKLVPGELFLKNEDITINEGKKAVSVKVKNVGDRPVQIGSHFHFFEVNRCLDFDREKTFGKRLDIASGTAVRFEPGEEKSVELIDIGGNRRIFGFNALVDRQADNESKKIALHRAKERGFHGAKSDDNYVKTIKE</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP1138">
+				
+            <names>
+					
+               <shortLabel>PARB</shortLabel>
+					
+               <fullName>Probable chromosome partitioning protein parB</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="O25758"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MAKNKVLGRGLADIFPEINEVYEQGLYERANRVVELGIDEVMPNPYQPRKVFSEDSLEELAQSIKEHGLLQPVLVVSENGRYHLIAGERRLRASKLAKMPTIKAIVVDIEQEKMREVALIENIQREDLNPLELARSYKELLESYQMTQEELSKIVKKSRAHVANIMRLLTLSSKVQNALLEEKITSGHAKVLVGLDGEKQELILNSIIGQKLSVRQTEDLARDFKINANFDNKKHGFKQTQTLIAGDELERLNQSLWDHYKLKAALKGNKIVLRCYENSLLEAFMKKMMS</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP0935">
+				
+            <names>
+					
+               <shortLabel>HP0935</shortLabel>
+					
+               <fullName>Hypothetical protein HP0935</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="O25758"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MTIKVFSPKYPTELEEFYAERIADNPLGFIQRLDLLPSISGFVQKLREHGGEFFEMREGNKLIGICGLNPINQTEAELCKFHINSAYQSQGLGQKLYESVEKYAFIKGYTKISLHVSKSQIKACNLYQKLGFVHIKEEDCVVELGEETLIFPTLFMEKILS</sequence>
+			
+         </proteinInteractor>
+			
+         <proteinInteractor id="HP0657">
+				
+            <names>
+					
+               <shortLabel>YMXG</shortLabel>
+					
+               <fullName>Hypothetical 48.8 kDa protein HP0657</fullName>
+				
+            </names>
+				
+            <xref>
+					
+               <primaryRef db="Swiss-Prot" id="O25371"/>
+				
+            </xref>
+				
+            <organism ncbiTaxId="85962">
+					
+               <names>
+						
+                  <shortLabel>Hp</shortLabel>
+						
+                  <fullName>Helicobacter pylori 26695</fullName>
+					
+               </names>
+				
+            </organism>
+				
+            <sequence>MKKFLITLLLGVFMGLQASALTHQEINQAKVPVIYEENHLLPMGFIHLAFRGGGSLSDKNQLGLAKLFAQVLNEGTKELGAVGFAQLLEQKAISLNVDTSTEDLQITLEFLKEYEDEAITRLKELLKSPNFTQNALEKVKTQMLAALLQKESDFDYLAKLTLKQELFANTPLANAALGTKESIQKIKLDDLKQQFAKVFELNKLVVVLGGDLKIDQTLKRLNNALNFLPQGKAYEEPYFETSDKKSEKVLYKDTEQAFVYFGAPFKIKDLKQDLAKSKVMMFVLGGGFGSRLMEKIRVQEGLAYSVYIRSNFSKVAHFASGYLQTKLSTQTKSVALVKKIVKEFIEKGMTQQELDDAKKFLLGSEPLRNETISSRLNTTYNYFYLGLPLNFNQTLLNQIQKMSLKEINDFIKAHTEINDLTFAIVSNKKKDK</sequence>
+			
+         </proteinInteractor>
+		
+      </interactorList>
+		
+      <interactionList>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0070"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="170"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0070"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="36"/>
+									
+                           <end position="169"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="A"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0067"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="265"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0069"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="49"/>
+									
+                           <end position="242"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="A"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0776"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="84"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0278"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="118"/>
+									
+                           <end position="356"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="E"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0072"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="569"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0216"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="222"/>
+									
+                           <end position="367"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="D"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0070"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="170"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0068"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="18"/>
+									
+                           <end position="183"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="A"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0776"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="84"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP1409"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="296"/>
+									
+                           <end position="569"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="E"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0776"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="84"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP1378"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="60"/>
+									
+                           <end position="219"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="D"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0776"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="84"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0067"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="188"/>
+									
+                           <end position="244"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="A"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0068"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="199"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0118"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="118"/>
+									
+                           <end position="395"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="A"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0073"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="238"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0067"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="41"/>
+									
+                           <end position="264"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="D"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0073"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="238"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0073"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="10"/>
+									
+                           <end position="237"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="A"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0072"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="569"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP1138"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="79"/>
+									
+                           <end position="289"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="D"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0072"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="569"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0073"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="164"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="A"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0935"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="161"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0657"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="73"/>
+									
+                           <end position="431"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="D"/>
+			
+         </interaction>
+			
+         <interaction>
+				
+            <availabilityRef ref="hgx_license"/>
+				
+            <experimentList>
+					
+               <experimentRef ref="hgx_experiment"/>
+				
+            </experimentList>
+				
+            <participantList>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0935"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="1"/>
+									
+                           <end position="161"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>bait</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+					
+               <proteinParticipant>
+						
+                  <proteinInteractorRef ref="HP0072"/>
+						
+                  <featureList>
+							
+                     <feature>
+								
+                        <featureDescription>
+									
+                           <names>
+										
+                              <shortLabel>binding site</shortLabel>
+									
+                           </names>
+									
+                           <xref>
+										
+                              <primaryRef db="PSI-MI" id="MI:0117"/>
+									
+                           </xref>
+								
+                        </featureDescription>
+								
+                        <location>
+									
+                           <begin position="448"/>
+									
+                           <end position="568"/>
+								
+                        </location>
+							
+                     </feature>
+						
+                  </featureList>
+						
+                  <role>prey</role>
+						
+                  <isTaggedProtein>true</isTaggedProtein>
+						
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+					
+               </proteinParticipant>
+				
+            </participantList>
+				
+            <interactionType>
+					
+               <names>
+						
+                  <shortLabel>aggregation</shortLabel>
+					
+               </names>
+					
+               <xref>
+						
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+					
+               </xref>
+				
+            </interactionType>
+				
+            <confidence unit="Hybrigenics PBS(r)" value="A"/>
+			
+         </interaction>
+		
+      </interactionList>
+	
+   </entry>
+
+</entrySet>

@@ -27,8 +27,8 @@ XML Format Documentation</h2>
   <li><a href="#mozTocId396538">Purpose of this document</a></li>
   <li><a href="#mozTocId240701">Structure of a PSI MI record</a></li>
   <li><a href="#mozTocId202864">Detailed Documentation</a></li>
-  <li><a href="#mozTocId66291">Use of external controlled vocabularies
-*** </a></li>
+  <li><a href="#mozTocId66291">Use of external controlled vocabularies<br>
+    </a></li>
   <li><a href="#mozTocId86952">List of planned features</a></li>
   <li><a href="#mozTocId545693">How to comment</a></li>
   <li><a href="#mozTocId254906">Sample data files</a></li>
@@ -92,20 +92,19 @@ single file by simply adding all the entries into the entrySet.<br>
 <span style="font-weight: bold;">Figure 1: The entry top level element</span><br>
 <br>
 Each entry describes one or more protein interactions. The PSI MI
-format can be used in two forms, a normalised and a denormalised form.
-In the normalised form, all interactors (proteins), experiments, and
-availability statements are described once in the respective list
-elements, and then only referred to by references from the individual
-interactions in the interactionList. The normalised form allows a
-compact, non-repetitive representation of the data, in particular for
-large data sets. <br>
-In the denormalised form, all proteins, experiments, and availability
+format can be used in two forms, a compact and an expanded form. In the
+compact form, all interactors (proteins), experiments, and availability
+statements are described once in the respective list elements, and then
+only referred to by references from the individual interactions in the
+interactionList. The compact form allows a dense, non-repetitive
+representation of the data, in particular for large data sets. <br>
+In the expanded form, all proteins, experiments, and availability
 statements are described directly in the interaction element. As a
 result, each interaction is a self-contained element providing all
-necessary information. The denormalised form results in larger files,
-but is more suitable for conversion to displayed data, e.g. HTML pages.
-The PSI MI consortium provides tools to convert the normalised into the
-denormalised form and back.<br>
+necessary information. The expanded form results in larger files, but is
+more suitable for conversion to displayed data, e.g. HTML pages. The
+PSI MI consortium provides tools to convert the compact into the
+expanded form and back.<br>
 <br>
 In the next sections, the top level elements shown in Figure 1 and
 their function will be described. <br>
@@ -146,8 +145,8 @@ interaction. <br>
 Each interaction contains a description of the data availability
 (copyright), and a desciption of the experimental conditions under which
 it has been determined. Both of these can either be integrated into the
-interaction element (denormalised form) or refer to the respective lists
-in the entry (normalised form) as described above. <br>
+interaction element (expanded form) or refer to the respective lists in
+the entry (compact form) as described above. <br>
 <br>
 <img src="MIF_participant.png" title="" alt="participant element"
  style="width: 419px; height: 429px;"><br>
@@ -172,7 +171,7 @@ pairs.<br>
 Documentation</a></h2>
 see <a href="http://psidev.sourceforge.net/mi/xml/doc/MIF.html">http://psidev.sourceforge.net/mi/xml/doc/MIF.html</a><br>
 <h2><a name="mozTocId66291" class="mozTocH2"></a>Use of external
-controlled vocabularies ***<br>
+controlled vocabularies<br>
 </h2>
 Where possible, external controlled vocabularies are referenced from
 PSI MI. External controlled vocabularies are used in two forms: <br>
@@ -204,10 +203,10 @@ The controlled vocabularies which have beed created specifically for
 PSI are represented in the <a href="http://www.geneontology.org">Gene
 Ontology</a> flat file format.<br>
 The correctness of references to external controlled vocabularies is
-currently not enforced by the PSI MI schema. It is the responsibility
-of the data provider to ensure that only existing terms at an
-up-to-date data source are referenced. The World Wide Web Consortium
-(W3C) has recently issued a new <a
+currently not enforced by the PSI MI schema. It is the responsibility of
+the data provider to ensure that only existing terms at an up-to-date
+data source are referenced. The World Wide Web Consortium (W3C) has
+recently issued a new <a
  href="http://www.w3.org/TR/2003/REC-xptr-framework-20030325/">recommendation
 for referencing between XML documents</a>. Once this recommendation is
 implemented by standard software, we will include it in the PSI MI
@@ -231,32 +230,31 @@ If you would like to comment on this document, the PSI MI XML
 specification, please send a mail to:<br>
 <a href="mailto:psidev-mi-dev@lists.sourceforge.net">psidev-mi-dev@lists.sourceforge.net</a>&nbsp;
 <h2><a name="mozTocId254906" class="mozTocH2"></a>Sample data files</h2>
-The following sample files contain authentic data, though we don't take
-any responsibility for the correctness of the data.<br>
+The <a href="../../sampleData/index.html">sample files</a> contain
+authentic data, though we don't take any responsibility for the
+correctness of the data.<br>
 <ul>
-  <li><a href="../..//sampleData/GHRComplexDataset_1PPI.xml">Complex
-interactions sample file (normalised)<br>
-    </a></li>
-  <li><a href="../../sampleData/HpDemoDataset_15PPI.xml">Binary
-interactions sample file (normalised)<br>
-    </a></li>
-  <li><a href="../../sampleData/yeast_normalised.xml">Yeast
-interactions sample file (normalised)</a></li>
-  <li><a href="../../sampleData/yeast_denormalised.xml">Yeast
-interactions sample file (denormalised)</a><br>
-  </li>
 </ul>
 <h2><a name="mozTocId343640" class="mozTocH2"></a>Tools</h2>
 We plan to provide a set of tools to support the PSI MI XML format. The
 following tools are currently available:<br>
 <ul>
-  <li><a href="../../src/MIF_fold.xsl">MIF_fold.xsl</a>: Transforms a
-file from the denormalised into the normalised form.</li>
-  <li><a href="../../src/MIF_unfold.xsl">MIF_unfold.xsl</a>: Transforms
-a file from the normalised into the denormalised form.<br>
+  <li><a href="../../src/MIF_compact.xsl">MIF_compact.xsl</a>:
+Transforms a file from the expanded into the compact form.</li>
+  <li><a href="../../src/MIF_expand.xsl">MIF_expand.xsl</a>: Transforms
+a file from the compact into the expanded form.<br>
   </li>
-  <li><a href="../../src/MIF_view.xsl">MIF_view.xsl</a>: Creates a simple HTML
-view of the PSI-MI file.  This does not show all details of the PSI-MI record.<br>
+  <li><a href="../../src/MIF_view.xsl">MIF_view.xsl</a>: Creates a
+simple HTML view of the PSI-MI file.  This does not show all details of
+the PSI-MI record.</li>
+  <li><a href="http://www.cytoscape.org">Cytoscape</a>: Tool for
+analysis of interaction networks with <a
+ href="http://www.cytoscape.org/plugins.html">plugin for PSI reading</a>.</li>
+  <li><a href="http://pim.hybrigenics.com/pimwalker/">PIMWalker</a>:
+Interaction network viewer with PSI reading.</li>
+  <li><a href="../../../tools/psimakers0908src.zip">Transformation tools</a>
+to convert PSI MI XML format into tab-delimited ASCII format and vice
+versa.<br>
   </li>
 </ul>
 <h2><a name="mozTocId580742" class="mozTocH2"></a>Further information
@@ -270,7 +268,9 @@ and relevant links</h2>
 </ul>
 Companies involved:
 <ul>
-  <li><a href="http://www.hybrigenics.com/">Hybrigenics </a></li>
+  <li><a href="http://www.hybrigenics.com/">Hybrigenics</a></li>
+  <li><a href="http://www.cellzome.com/">Cellzome</a><br>
+  </li>
 </ul>
 Related Efforts:
 <ul>

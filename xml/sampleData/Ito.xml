@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entrySet xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
+	<entry>
+		<interactorList>
+			<proteinInteractor id="YHR119W">
+				<names>
+					<shortLabel>YHR119W-SET1</shortLabel>
+					<fullName>SET domain protein 1</fullName>
+				</names>
+				<xref>
+					<primaryRef db="Entrez GI" id="529135"/>
+					<secondaryRef db="RefSeq GI" id="6321911"/>
+					<secondaryRef db="Entrez Protein_ID" id="AAB68867.1"/>
+					<secondaryRef db="CandidaDB" id="CA2985"/>
+					<secondaryRef db="InterPro" id="IPR001214"/>
+					<secondaryRef db="RefSeq Version" id="NP_011987.1"/>
+					<secondaryRef db="SwissProt" id="P38827"/>
+					<secondaryRef db="PIR" id="S48961"/>
+					<secondaryRef db="GenBank DNA Version" id="U00059.1"/>
+					<secondaryRef db="MIPS" id="YHR119W"/>
+				</xref>
+			</proteinInteractor>
+			<proteinInteractor id="YEL061C">
+				<names>
+					<shortLabel>YEL061C-CIN18</shortLabel>
+					<fullName>Kinesin-like protein CIN8</fullName>
+				</names>
+				<xref>
+					<primaryRef db="Entrez GI" id="603257"/>
+					<secondaryRef db="RefSeq GI" id="6320774"/>
+					<secondaryRef db="Entrez Protein_ID" id="AAB65026.1"/>
+					<secondaryRef db="PIR" id="B42641"/>
+					<secondaryRef db="CandidaDB" id="CA4985"/>
+					<secondaryRef db="InterPro" id="IPR001752"/>
+					<secondaryRef db="GenBank DNA Version" id="M90522.1"/>
+					<secondaryRef db="RefSeq Version" id="NP_010853.1"/>
+					<secondaryRef db="Swiss-Prot" id="P27895"/>
+					<secondaryRef db="GenBank DNA Version" id="U18795.1"/>
+					<secondaryRef db="MIPS" id="YEL061C"/>
+					<secondaryRef db="GenBank DNA Version" id="Z11859.1"/>
+				</xref>
+			</proteinInteractor>
+			<proteinInteractor id="YCR038C">
+				<names>
+					<shortLabel>YCR038C-BUD5</shortLabel>
+					<fullName>Bud site selection protein BUD5</fullName>
+				</names>
+				<xref>
+					<primaryRef db="RefSeq GI" id="10383799"/>
+					<secondaryRef db="Entrez GI" id="1907180"/>
+					<secondaryRef db="PIR" id="BWBYD5"/>
+					<secondaryRef db="CandidaDB" id="CA0382"/>
+					<secondaryRef db="Entrez Protein_ID" id="CAA42305.1"/>
+					<secondaryRef db="InterPro" id="IPR001895"/>
+					<secondaryRef db="GenBank DNA Version" id="M63552.1"/>
+					<secondaryRef db="GenBank DNA Version" id="M68938.1"/>
+					<secondaryRef db="RefSeq Version" id="NP_009967.2"/>
+					<secondaryRef db="Swiss-Prot" id="P25300"/>
+					<secondaryRef db="GenBank DNA Version" id="X56909.1"/>
+					<secondaryRef db="GenBank DNA Version" id="X59720.2"/>
+					<secondaryRef db="GenBank DNA Version" id="X63853.1"/>
+					<secondaryRef db="MIPS" id="YCR038C"/>
+				</xref>
+			</proteinInteractor>
+			<proteinInteractor id="YAL036C">
+				<names>
+					<shortLabel>YAL036C-FUN11</shortLabel>
+					<fullName>Hypothetical 40.7 kDa protein in PYK1-SNC1 intergenic region</fullName>
+				</names>
+				<xref>
+					<primaryRef db="Entrez GI" id="595548"/>
+					<secondaryRef db="RefSeq GI" id="6319281"/>
+					<secondaryRef db="Entrez Protein_ID" id="AAC04995.1"/>
+					<secondaryRef db="GenBank DNA Version" id="AQ876073.1"/>
+					<secondaryRef db="CandidaDB" id="CA3893"/>
+					<secondaryRef db="InterPro" id="IPR000765"/>
+					<secondaryRef db="RefSeq Version" id="NP_009364.1"/>
+					<secondaryRef db="Swiss-Prot" id="P39729"/>
+					<secondaryRef db="PIR" id="S51983"/>
+					<secondaryRef db="GenBank DNA Version" id="U12980.1"/>
+					<secondaryRef db="MIPS" id="YAL036C"/>
+				</xref>
+			</proteinInteractor>
+			<proteinInteractor id="YDL065C">
+				<names>
+					<shortLabel>YDL065C-PEX19</shortLabel>
+					<fullName>Farnesylated protein PEX19</fullName>
+				</names>
+				<xref>
+					<primaryRef db="Entrez GI" id="1431072"/>
+					<secondaryRef db="RefSeq GI" id="6320138"/>
+					<secondaryRef db="CandidaDB" id="CA5105"/>
+					<secondaryRef db="Entrez Protein_ID" id="CAA98630.1"/>
+					<secondaryRef db="RefSeq Version" id="NP_010218.1"/>
+					<secondaryRef db="Swiss-Prot" id="Q07418"/>
+					<secondaryRef db="PIR" id="S67600"/>
+					<secondaryRef db="MIPS" id="YDL065C"/>
+					<secondaryRef db="GenBank DNA Version" id="Z74113.1"/>
+				</xref>
+			</proteinInteractor>
+			<proteinInteractor id="YDR532C">
+				<names>
+					<shortLabel>YDR532C</shortLabel>
+					<fullName>Hypothetical protein YDR532C</fullName>
+				</names>
+				<xref>
+					<primaryRef db="RefSeq GI" id="6320741"/>
+					<secondaryRef db="Entrez GI" id="927799"/>
+					<secondaryRef db="Entrez Protein_ID" id="AAB64971.1"/>
+					<secondaryRef db="CandidaDB" id="CA0383"/>
+					<secondaryRef db="RefSeq Version" id="NP_010821.1"/>
+					<secondaryRef db="Swiss-Prot" id="Q04431"/>
+					<secondaryRef db="PIR" id="S69587"/>
+					<secondaryRef db="GenBank DNA Version" id="U33057.1"/>
+					<secondaryRef db="MIPS" id="YDR532C"/>
+				</xref>
+			</proteinInteractor>
+		</interactorList>
+		<experimentList>
+			<experimentDescription id="exp1">
+				<names>
+					<shortLabel>ito</shortLabel>
+					<fullName>Ito T. two hybrid analysis </fullName>
+				</names>
+				<bibref>
+					<xref>
+						<primaryRef db="pubmed" id="10655498"/>
+						<secondaryRef db="pubmed" id="11283351"/>
+					</xref>
+				</bibref>
+				<hostOrganism ncbiTaxId="4932"/>
+				<interactionDetection>
+					<names>
+						<shortLabel>classical two hybrid</shortLabel>
+					</names>
+					<xref>
+						<primaryRef db="PSI-MI" id="MI:0018"/>
+					</xref>
+				</interactionDetection>
+				<participantDetection>
+					<names>
+						<shortLabel>full identification by sequencing</shortLabel>
+					</names>
+					<xref>
+						<primaryRef db="PSI-MI" id="MI:0056"/>
+					</xref>
+				</participantDetection>
+			</experimentDescription>
+		</experimentList>
+		<interactionList>
+			<interaction>
+				<experimentList>
+					<experimentRef ref="exp1"/>
+				</experimentList>
+				<participantList>
+					<proteinParticipant>
+						<proteinInteractorRef ref="YCR038C"/>
+						<role>bait</role>
+					</proteinParticipant>
+					<proteinParticipant>
+						<proteinInteractorRef ref="YAL036C"/>
+						<role>prey</role>
+					</proteinParticipant>
+				</participantList>
+				<interactionType>
+					<names>
+						<shortLabel>aggregation</shortLabel>
+					</names>
+					<xref>
+						<primaryRef db="PSI-MI" id="MI:0191"/>
+					</xref>
+				</interactionType>
+				<confidence unit="number of hits" value="1"/>
+			</interaction>
+			<interaction>
+				<experimentList>
+					<experimentRef ref="exp1"/>
+				</experimentList>
+				<participantList>
+					<proteinParticipant>
+						<proteinInteractorRef ref="YCR038C"/>
+						<role>bait</role>
+					</proteinParticipant>
+					<proteinParticipant>
+						<proteinInteractorRef ref="YDL065C"/>
+						<role>prey</role>
+					</proteinParticipant>
+				</participantList>
+				<interactionType>
+					<names>
+						<shortLabel>aggregation</shortLabel>
+					</names>
+					<xref>
+						<primaryRef db="PSI-MI" id="MI:0191"/>
+					</xref>
+				</interactionType>
+				<confidence unit="number of hits" value="1"/>
+			</interaction>
+			<interaction>
+				<experimentList>
+					<experimentRef ref="exp1"/>
+				</experimentList>
+				<participantList>
+					<proteinParticipant>
+						<proteinInteractorRef ref="YCR038C"/>
+						<role>bait</role>
+					</proteinParticipant>
+					<proteinParticipant>
+						<proteinInteractorRef ref="YDR532C"/>
+						<role>prey</role>
+					</proteinParticipant>
+				</participantList>
+				<interactionType>
+					<names>
+						<shortLabel>aggregation</shortLabel>
+					</names>
+					<xref>
+						<primaryRef db="PSI-MI" id="MI:0191"/>
+					</xref>
+				</interactionType>
+				<confidence unit="number of hits" value="2"/>
+			</interaction>
+			<interaction>
+				<experimentList>
+					<experimentRef ref="exp1"/>
+				</experimentList>
+				<participantList>
+					<proteinParticipant>
+						<proteinInteractorRef ref="YCR038C"/>
+						<role>bait</role>
+					</proteinParticipant>
+					<proteinParticipant>
+						<proteinInteractorRef ref="YEL061C"/>
+						<role>prey</role>
+					</proteinParticipant>
+				</participantList>
+				<interactionType>
+					<names>
+						<shortLabel>aggregation</shortLabel>
+					</names>
+					<xref>
+						<primaryRef db="PSI-MI" id="MI:0191"/>
+					</xref>
+				</interactionType>
+				<confidence unit="number of hits" value="2"/>
+			</interaction>
+			<interaction>
+				<experimentList>
+					<experimentRef ref="exp1"/>
+				</experimentList>
+				<participantList>
+					<proteinParticipant>
+						<proteinInteractorRef ref="YCR038C"/>
+						<role>bait</role>
+					</proteinParticipant>
+					<proteinParticipant>
+						<proteinInteractorRef ref="YHR119W"/>
+						<role>prey</role>
+					</proteinParticipant>
+				</participantList>
+				<interactionType>
+					<names>
+						<shortLabel>aggregation</shortLabel>
+					</names>
+					<xref>
+						<primaryRef db="PSI-MI" id="MI:0191"/>
+					</xref>
+				</interactionType>
+				<confidence unit="number of hits" value="1"/>
+			</interaction>
+		</interactionList>
+	</entry>
+</entrySet>

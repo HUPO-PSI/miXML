@@ -101,13 +101,61 @@ Here we start with element entrySet - also giving out Header/Footer.
   <xsl:apply-templates/>
   </td></tr>
 </xsl:template>
+
 <!-- Element: xref-->
 <xsl:template match="psi:xref">
-  <tr><td valign="top" bgcolor="#BBBBBB">Reference:</td>
-  <xsl:if test="psi:primaryRef/@id != ''"><td><xsl:value-of select="psi:primaryRef/@db"/>,  <xsl:value-of select="psi:primaryRef/@id"/></td></xsl:if>
-  <xsl:if test="psi:secondaryRef/@id != ''"><td><xsl:value-of select="psi:secondaryRef/@db"/>, <xsl:value-of select="psi:secondaryRef/@id"/></td></xsl:if>
+  <xsl:apply-templates/>
+</xsl:template>
+
+<!-- Element: primaryRef-->
+<xsl:template match="psi:primaryRef">
+<xsl:param name="id"><xsl:value-of select="@id"/></xsl:param>
+  <tr>
+  <xsl:if test="@id != ''">
+    <td bgcolor="#BBBBBB"><xsl:value-of select="@db"/></td>  
+    <xsl:if test="@db = 'Swiss-Prot'">
+      <td><a href="http://www.expasy.org/cgi-bin/sprot-search-ac?{$id}">
+                  <xsl:value-of select="@id"/>
+          </a>
+      </td>
+    </xsl:if>
+    <xsl:if test="@db != 'Swiss-Prot'"> 
+      <td><xsl:value-of select="@id"/></td>
+    </xsl:if>
+  </xsl:if>
   </tr>
 </xsl:template>
+
+<!-- Element: secondaryRef-->
+<xsl:template match="psi:secondaryRef">
+<xsl:param name="id"><xsl:value-of select="@id"/></xsl:param>
+  <tr>
+  <xsl:if test="@id != ''">
+    <td bgcolor="#BBBBBB"><xsl:value-of select="@db"/></td>  
+    <xsl:if test="@db = 'Swiss-Prot'">
+      <td><a href="http://www.expasy.org/cgi-bin/sprot-search-ac?{$id}">
+                  <xsl:value-of select="@id"/>
+          </a>
+      </td>
+    </xsl:if>
+    <xsl:if test="@db != 'Swiss-Prot'"> 
+      <td><xsl:value-of select="@id"/></td>
+    </xsl:if>
+  </xsl:if>
+  </tr>
+</xsl:template>
+
+<!-- Element: confidence-->
+<xsl:template match="psi:confidence">
+  <tr>
+    <td bgcolor="#BBBBBB">Confidence</td>
+    <td><xsl:value-of select="./@unit"/>:
+        <xsl:value-of select="./@value"/>
+    </td>
+  </tr>
+</xsl:template>
+
+
 <!-- Element: attributeList-->
 <xsl:template match="psi:attributeList">
   <tr><td valign="top" bgcolor="#BBBBBB">Attributes:</td><td>
@@ -127,15 +175,21 @@ Here we start with element entrySet - also giving out Header/Footer.
   <tr>
     <td valign="top" bgcolor="#BBBBBB">Name:</td>
     <td><a name="{$ref}"><xsl:value-of select="@id"/></a>: <xsl:value-of select="psi:names/psi:shortLabel"/> </td>
-	<td><xsl:apply-templates select="psi:bibref"/></td>
   </tr>
+  <tr>
+    <td valign="top" bgcolor="#BBBBBB">Description:</td>
+    <td><a name="{$ref}"><xsl:value-of select="@id"/></a>: <xsl:value-of select="psi:names/psi:fullName"/> </td>
+    <td><xsl:apply-templates select="psi:bibref"/></td>
+  </tr>
+  <tr><xsl:apply-templates select="psi:interactionDetection"/></tr>
+  <tr><xsl:apply-templates select="psi:participantDetection"/></tr>
 </xsl:template>
 <!-- Element: proteinInteractor-->
 <xsl:template match="psi:proteinInteractor">
   <xsl:param name="ref"><xsl:value-of select="@id"/></xsl:param>
   <tr>
     <td><a name="{$ref}"><xsl:value-of select="@id"/></a>: <xsl:value-of select="psi:names/psi:shortLabel"/> </td>
-	<td><xsl:apply-templates select="psi:bibref"/></td>
+	<td><xsl:apply-templates select="psi:xref"/></td>
   </tr>
 </xsl:template>
 <!-- Element: interaction-->
@@ -152,13 +206,21 @@ Here we start with element entrySet - also giving out Header/Footer.
   </xsl:if>
   <tr><xsl:apply-templates select="psi:participantList"/></tr>
   <tr><xsl:apply-templates select="psi:interactionType"/></tr>
+  <tr><xsl:apply-templates select="psi:confidence"/></tr>
+
   </table></td></tr>
 </xsl:template>
 
 <!--Level 3 -->
 <!-- Element: interactionDetection-->
 <xsl:template match="psi:interactionDetection">
-  <tr><td valign="top" bgcolor="#BBBBBB">Interactiondetection:</td><td><table border="1">
+  <tr><td valign="top" bgcolor="#BBBBBB">Interaction detection:</td><td><table border="1">
+  <xsl:apply-templates/> <!-- names, x-ray-->
+  </table></td></tr>
+</xsl:template>
+<!-- Element: participantDetection-->
+<xsl:template match="psi:participantDetection">
+  <tr><td valign="top" bgcolor="#BBBBBB">Participant detection:</td><td><table border="1">
   <xsl:apply-templates/> <!-- names, x-ray-->
   </table></td></tr>
 </xsl:template>

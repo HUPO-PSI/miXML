@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?><!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Chris Sander (Memorial Sloan Kettering) -->
+<entrySet xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
+   
+   <entry>
+      
+      <source>
+         
+         <names>
+            
+            <shortLabel>GHR-GH-GHR complex</shortLabel>
+            
+            <fullName>Crystal structure of the GHR-GH-GHR complex</fullName>
+         
+         </names>
+         
+         <bibref>
+            
+            <xref>
+               
+               <primaryRef db="Pubmed" id="1549776"/>
+            
+            </xref>
+         
+         </bibref>
+      
+      </source>
+      
+      <experimentList>
+         
+         <experimentDescription id="xray">
+            
+            <names>
+               
+               <shortLabel>X-Ray cristallography</shortLabel>
+            
+            </names>
+            
+            <bibref>
+               
+               <xref>
+                  
+                  <primaryRef db="Pubmed" id="1549776"/>
+               
+               </xref>
+            
+            </bibref>
+            
+            <interactionDetection>
+               
+               <names>
+                  
+                  <shortLabel>X-Ray</shortLabel>
+               
+               </names>
+               
+               <xref>
+                  
+                  <primaryRef db="PSI-MI" id="MI:0018"/>
+               
+               </xref>
+            
+            </interactionDetection>
+         
+         </experimentDescription>
+      
+      </experimentList>
+      
+      <interactorList>
+         
+         <proteinInteractor id="hGHR">
+            
+            <names>
+               
+               <shortLabel>hGHR</shortLabel>
+               
+               <fullName>Human growth hormone receptor</fullName>
+            
+            </names>
+            
+            <xref>
+               
+               <primaryRef db="Swiss-Prot" id="P10912"/>
+            
+            </xref>
+            
+            <organism ncbiTaxId="9606">
+               
+               <names>
+                  
+                  <shortLabel>Human</shortLabel>
+                  
+                  <fullName>Homo sapiens</fullName>
+               
+               </names>
+            
+            </organism>
+            
+            <sequence>MDLWQLLLTLALAGSSDAFSGSEATAAILSRAPWSLQSVNPGLKTNSSKEPKFTKCRSPERETFSCHWTDEVHHGTKNLGPIQLFYTRRNTQEWTQEWKECPDYVSAGENSCYFNSSFTSIWIPYCIKLTSNGGTVDEKCFSVDEIVQPDPPIALNWTLLNVSLTGIHADIQVRWEAPRNADIQKGWMVLEYELQYKEVNETKWKMMDPILTTSVPVYSLKVDKEYEVRVRSKQRNSGNYGEFSEVLYVTLPQMSQFTCEEDFYFPWLLIIIFGIFGLTVMLFVFLFSKQQRIKMLILPPVPVPKIKGIDPDLLKEGKLEEVNTILAIHDSYKPEFHSDDSWVEFIELDIDEPDEKTEESDTDRLLSSDHEKSHSNLGVKDGDSGRTSCCEPDILETDFNANDIHEGTSEVAQPQRLKGEADLLCLDQKNQNNSPYHDACPATQQPSVIQAEKNKPQPLPTEGAESTHQAAHIQLSNPSSLSNIDFYAQVSDITPAGSVVLSPGQKNKAGMSQCDMHPEMVSLCQENFLMDNAYFCEADAKKCIPVAPHIKVESHIQPSLNQEDIYITTESLTTAAGRPGTGEHVPGSEMPVPDYTSIHIVQSPQGLILNATALPLPDKEFLSSCGYVSTDQLNKIMP</sequence>
+         
+         </proteinInteractor>
+         
+         <proteinInteractor id="hGH">
+            
+            <names>
+               
+               <shortLabel>hGH</shortLabel>
+               
+               <fullName>Human growth hormone, somatotropin</fullName>
+            
+            </names>
+            
+            <xref>
+               
+               <primaryRef db="Swiss-Prot" id="P01241"/>
+            
+            </xref>
+            
+            <organism ncbiTaxId="9606">
+               
+               <names>
+                  
+                  <shortLabel>Human</shortLabel>
+                  
+                  <fullName>Homo sapiens</fullName>
+               
+               </names>
+            
+            </organism>
+            
+            <sequence>MATGSRTSLLLAFGLLCLPWLQEGSAFPTIPLSRLFDNAMLRAHRLHQLAFDTYQEFEEAYIPKEQKYSFLQNPQTSLCFSESIPTPSNREETQQKSNLELLRISLLLIQSWLEPVQFLRSVFANSLVYGASDSNVYDLLKDLEEGIQTLMGRLEDGSPRTGQIFKQTYSKFDTNSHNDDALLKNYGLLYCFRKDMDKVETFLRIVQCRSVEGSCGF</sequence>
+         
+         </proteinInteractor>
+      
+      </interactorList>
+      
+      <interactionList>
+         
+         <interaction>
+            
+            <experimentList>
+               
+               <experimentDescription id="xray">
+            
+                  <names>
+               
+                     <shortLabel>X-Ray cristallography</shortLabel>
+            
+                  </names>
+            
+                  <bibref>
+               
+                     <xref>
+                  
+                        <primaryRef db="Pubmed" id="1549776"/>
+               
+                     </xref>
+            
+                  </bibref>
+            
+                  <interactionDetection>
+               
+                     <names>
+                  
+                        <shortLabel>X-Ray</shortLabel>
+               
+                     </names>
+               
+                     <xref>
+                  
+                        <primaryRef db="PSI-MI" id="MI:0018"/>
+               
+                     </xref>
+            
+                  </interactionDetection>
+         
+               </experimentDescription>
+            
+            </experimentList>
+            
+            <participantList>
+               
+               <proteinParticipant>
+                  
+                  <proteinInteractor id="hGHR">
+            
+                     <names>
+               
+                        <shortLabel>hGHR</shortLabel>
+               
+                        <fullName>Human growth hormone receptor</fullName>
+            
+                     </names>
+            
+                     <xref>
+               
+                        <primaryRef db="Swiss-Prot" id="P10912"/>
+            
+                     </xref>
+            
+                     <organism ncbiTaxId="9606">
+               
+                        <names>
+                  
+                           <shortLabel>Human</shortLabel>
+                  
+                           <fullName>Homo sapiens</fullName>
+               
+                        </names>
+            
+                     </organism>
+            
+                     <sequence>MDLWQLLLTLALAGSSDAFSGSEATAAILSRAPWSLQSVNPGLKTNSSKEPKFTKCRSPERETFSCHWTDEVHHGTKNLGPIQLFYTRRNTQEWTQEWKECPDYVSAGENSCYFNSSFTSIWIPYCIKLTSNGGTVDEKCFSVDEIVQPDPPIALNWTLLNVSLTGIHADIQVRWEAPRNADIQKGWMVLEYELQYKEVNETKWKMMDPILTTSVPVYSLKVDKEYEVRVRSKQRNSGNYGEFSEVLYVTLPQMSQFTCEEDFYFPWLLIIIFGIFGLTVMLFVFLFSKQQRIKMLILPPVPVPKIKGIDPDLLKEGKLEEVNTILAIHDSYKPEFHSDDSWVEFIELDIDEPDEKTEESDTDRLLSSDHEKSHSNLGVKDGDSGRTSCCEPDILETDFNANDIHEGTSEVAQPQRLKGEADLLCLDQKNQNNSPYHDACPATQQPSVIQAEKNKPQPLPTEGAESTHQAAHIQLSNPSSLSNIDFYAQVSDITPAGSVVLSPGQKNKAGMSQCDMHPEMVSLCQENFLMDNAYFCEADAKKCIPVAPHIKVESHIQPSLNQEDIYITTESLTTAAGRPGTGEHVPGSEMPVPDYTSIHIVQSPQGLILNATALPLPDKEFLSSCGYVSTDQLNKIMP</sequence>
+         
+                  </proteinInteractor>
+                  
+                  <role>neutral</role>
+                  
+                  <isTaggedProtein>false</isTaggedProtein>
+                  
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+               
+               </proteinParticipant>
+               
+               <proteinParticipant>
+                  
+                  <proteinInteractor id="hGHR">
+            
+                     <names>
+               
+                        <shortLabel>hGHR</shortLabel>
+               
+                        <fullName>Human growth hormone receptor</fullName>
+            
+                     </names>
+            
+                     <xref>
+               
+                        <primaryRef db="Swiss-Prot" id="P10912"/>
+            
+                     </xref>
+            
+                     <organism ncbiTaxId="9606">
+               
+                        <names>
+                  
+                           <shortLabel>Human</shortLabel>
+                  
+                           <fullName>Homo sapiens</fullName>
+               
+                        </names>
+            
+                     </organism>
+            
+                     <sequence>MDLWQLLLTLALAGSSDAFSGSEATAAILSRAPWSLQSVNPGLKTNSSKEPKFTKCRSPERETFSCHWTDEVHHGTKNLGPIQLFYTRRNTQEWTQEWKECPDYVSAGENSCYFNSSFTSIWIPYCIKLTSNGGTVDEKCFSVDEIVQPDPPIALNWTLLNVSLTGIHADIQVRWEAPRNADIQKGWMVLEYELQYKEVNETKWKMMDPILTTSVPVYSLKVDKEYEVRVRSKQRNSGNYGEFSEVLYVTLPQMSQFTCEEDFYFPWLLIIIFGIFGLTVMLFVFLFSKQQRIKMLILPPVPVPKIKGIDPDLLKEGKLEEVNTILAIHDSYKPEFHSDDSWVEFIELDIDEPDEKTEESDTDRLLSSDHEKSHSNLGVKDGDSGRTSCCEPDILETDFNANDIHEGTSEVAQPQRLKGEADLLCLDQKNQNNSPYHDACPATQQPSVIQAEKNKPQPLPTEGAESTHQAAHIQLSNPSSLSNIDFYAQVSDITPAGSVVLSPGQKNKAGMSQCDMHPEMVSLCQENFLMDNAYFCEADAKKCIPVAPHIKVESHIQPSLNQEDIYITTESLTTAAGRPGTGEHVPGSEMPVPDYTSIHIVQSPQGLILNATALPLPDKEFLSSCGYVSTDQLNKIMP</sequence>
+         
+                  </proteinInteractor>
+                  
+                  <role>neutral</role>
+                  
+                  <isTaggedProtein>false</isTaggedProtein>
+                  
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+               
+               </proteinParticipant>
+               
+               <proteinParticipant>
+                  
+                  <proteinInteractor id="hGH">
+            
+                     <names>
+               
+                        <shortLabel>hGH</shortLabel>
+               
+                        <fullName>Human growth hormone, somatotropin</fullName>
+            
+                     </names>
+            
+                     <xref>
+               
+                        <primaryRef db="Swiss-Prot" id="P01241"/>
+            
+                     </xref>
+            
+                     <organism ncbiTaxId="9606">
+               
+                        <names>
+                  
+                           <shortLabel>Human</shortLabel>
+                  
+                           <fullName>Homo sapiens</fullName>
+               
+                        </names>
+            
+                     </organism>
+            
+                     <sequence>MATGSRTSLLLAFGLLCLPWLQEGSAFPTIPLSRLFDNAMLRAHRLHQLAFDTYQEFEEAYIPKEQKYSFLQNPQTSLCFSESIPTPSNREETQQKSNLELLRISLLLIQSWLEPVQFLRSVFANSLVYGASDSNVYDLLKDLEEGIQTLMGRLEDGSPRTGQIFKQTYSKFDTNSHNDDALLKNYGLLYCFRKDMDKVETFLRIVQCRSVEGSCGF</sequence>
+         
+                  </proteinInteractor>
+                  
+                  <role>neutral</role>
+                  
+                  <isTaggedProtein>false</isTaggedProtein>
+                  
+                  <isOverexpressedProtein>true</isOverexpressedProtein>
+               
+               </proteinParticipant>
+            
+            </participantList>
+            
+            <interactionType>
+               
+               <names>
+                  
+                  <shortLabel>aggregation</shortLabel>
+               
+               </names>
+               
+               <xref>
+                  
+                  <primaryRef db="PSI-MI" id="MI:0191"/>
+               
+               </xref>
+            
+            </interactionType>
+         
+         </interaction>
+      
+      </interactionList>
+   
+   </entry>
+
+</entrySet>
