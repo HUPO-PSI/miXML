@@ -50,7 +50,7 @@
 								</xs:annotation>
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="availability" type="availabilityType" default="free" maxOccurs="unbounded">
+										<xs:element name="availability" type="availabilityType" default="free" minOccurs="0" maxOccurs="unbounded">
 											<xs:annotation>
 												<xs:documentation>Describes data availability, e.g. through a copyright statement.</xs:documentation>
 											</xs:annotation>
@@ -64,7 +64,7 @@
 								</xs:annotation>
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="experimentDescription" type="experimentType" maxOccurs="unbounded">
+										<xs:element name="experimentDescription" type="experimentType" minOccurs="0" maxOccurs="unbounded">
 											<xs:annotation>
 												<xs:documentation>Describes one set of experimental parameters, usually associated with a single publication.</xs:documentation>
 											</xs:annotation>
@@ -78,7 +78,7 @@
 								</xs:annotation>
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="interactor" type="interactorType" maxOccurs="unbounded">
+										<xs:element name="interactor" type="interactorType" minOccurs="0" maxOccurs="unbounded">
 											<xs:annotation>
 												<xs:documentation>An object, usually a protein, participating in an interaction.</xs:documentation>
 											</xs:annotation>
