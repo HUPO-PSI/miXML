@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by Swiss-Prot (EMBL OUTSTATION THE EBI WELLCOME TRUST GENOME CAMPUS) -->
-<xs:schema targetNamespace="net:sf:psidev:mi" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="net:sf:psidev:mi" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema targetNamespace="net:sf:psidev:mi" xmlns="net:sf:psidev:mi" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:element name="entrySet">
 		<xs:annotation>
 			<xs:documentation>Root element of the Molecular Interaction Format</xs:documentation>
@@ -58,7 +58,7 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-							<xs:element name="experimentList">
+							<xs:element name="experimentList" minOccurs="0">
 								<xs:annotation>
 									<xs:documentation>All experiments in which the interactions of this entry have been determined</xs:documentation>
 								</xs:annotation>
@@ -72,7 +72,7 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-							<xs:element name="interactorList">
+							<xs:element name="interactorList" minOccurs="0">
 								<xs:annotation>
 									<xs:documentation>List of all interactors  occurring in the entry</xs:documentation>
 								</xs:annotation>
