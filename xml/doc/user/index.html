@@ -19,7 +19,8 @@ Specification Documentation</title>
 XML Format Documentation</h2>
 <h2><a name="mozTocId863651" class="mozTocH2"></a>Version 1.0</h2>
 <div style="text-align: left;">
-<h2><a name="mozTocId1355" class="mozTocH2"></a>Table of contents</h2>
+<h2>Table of Contents</h2>
+<a href="#mozTocId916500"></a>
 <ol>
   <li><a href="#mozTocId869940">Introduction</a></li>
   <li><a href="#mozTocId248390">Purpose of the PSI MI XML format</a></li>
@@ -27,14 +28,13 @@ XML Format Documentation</h2>
   <li><a href="#mozTocId240701">Structure of a PSI MI record</a></li>
   <li><a href="#mozTocId202864">Detailed Documentation</a></li>
   <li><a href="#mozTocId66291">Use of external controlled vocabularies
-***</a></li>
+*** </a></li>
   <li><a href="#mozTocId86952">List of planned features</a></li>
   <li><a href="#mozTocId545693">How to comment</a></li>
-  <li><a href="#mozTocId580742">Further information and relevant links</a></li>
   <li><a href="#mozTocId254906">Sample data files</a></li>
+  <li><a href="#mozTocId343640">Tools</a></li>
+  <li><a href="#mozTocId580742">Further information and relevant links</a></li>
 </ol>
-<br>
-<br>
 </div>
 </center>
 <a href="#mozTocId916500"></a>
@@ -52,12 +52,12 @@ interaction</a> data. </p>
 <p> This document decribes the molecular interaction data exchange
 format. PSI is following a leveled approach to building this
 specification. Level 1 will describe protein interactions at a basic
-level that covers a large amount of currently available data.
-Subsequent levels will add capability to represent new molecular
-interaction information that the community wishes to exchange. </p>
+level that covers a large amount of currently available data. Subsequent
+levels will add capability to represent new molecular interaction
+information that the community wishes to exchange. </p>
 <p> The scope of PSI MI is currently limited to protein-protein
-interactions. Other molecules, such as small molecules, DNA and RNA
-may be taken into account in the future.</p>
+interactions. Other molecules, such as small molecules, DNA and RNA may
+be taken into account in the future.</p>
 <p> PSI MI was designed by a group of people including representatives
 from database providers and users in both academia and industry. PSI MI
 is expected to be supported by the DIP, MINT, IntAct and BIND databases.<br>
@@ -76,8 +76,7 @@ document</h2>
 The purpose of this document is to describe the general structure of
 the PSI MI XML specification in a more user-friendly manner than the
 specification does itself. For the detailed and most up-to-date
-description please see the <a
- href="../MIF.html">auto-generated
+description please see the <a href="../MIF.html">auto-generated
 documentation</a>. This documentation also provides additional
 information, e.g. sample data files and use case descriptions.<br>
 <p> </p>
@@ -105,8 +104,8 @@ statements are described directly in the interaction element. As a
 result, each interaction is a self-contained element providing all
 necessary information. The denormalised form results in larger files,
 but is more suitable for conversion to displayed data, e.g. HTML pages.
-The PSI MI consortium plans to provide tools to convert the normalised
-into the denormalised form.<br>
+The PSI MI consortium provides tools to convert the normalised into the
+denormalised form and back.<br>
 <br>
 In the next sections, the top level elements shown in Figure 1 and
 their function will be described. <br>
@@ -145,10 +144,10 @@ interaction. <br>
 <br>
 </span> The interactionList contains one or more interaction elements.
 Each interaction contains a description of the data availability
-(copyright), and a desciption of the experimental conditions under
-which it has been determined. Both of these can either be integrated
-into the interaction element (denormalised form) or refer to the
-respective lists in the entry (normalised form) as described above. <br>
+(copyright), and a desciption of the experimental conditions under which
+it has been determined. Both of these can either be integrated into the
+interaction element (denormalised form) or refer to the respective lists
+in the entry (normalised form) as described above. <br>
 <br>
 <img src="MIF_participant.png" title="" alt="participant element"
  style="width: 419px; height: 429px;"><br>
@@ -156,9 +155,8 @@ respective lists in the entry (normalised form) as described above. <br>
 <br>
 Each interaction contains two or more participants, the molecules
 participating in the interaction. Each participant element contains a
-description of the molecule in its "normal" form, either by reference
-to an element of the interactorList, or directly in an interactor
-element. <br>
+description of the molecule in its "normal" form, either by reference to
+an element of the interactorList, or directly in an interactor element. <br>
 Additional elements of the participant element describe the specific
 form of the molecule in which it participated in the interaction. The
 featureList describes sequence features of the protein, for example
@@ -172,19 +170,48 @@ pairs.<br>
 <br>
 <h2><a name="mozTocId202864" class="mozTocH2"></a><a href="../MIF.html">Detailed
 Documentation</a></h2>
-see http://psidev.sf.net/***<br>
+see <a href="http://psidev.sourceforge.net/mi/xml/doc/MIF.html">http://psidev.sourceforge.net/mi/xml/doc/MIF.html</a><br>
 <h2><a name="mozTocId66291" class="mozTocH2"></a>Use of external
 controlled vocabularies ***<br>
 </h2>
 Where possible, external controlled vocabularies are referenced from
-PSI MI.  Specifically, controlled vocabularies are used to describe:<br>
+PSI MI. External controlled vocabularies are used in two forms: <br>
 <ul>
-  <li>Protein interaction determining experimental methods (from
-IntAct) </li>
-  <li>Protein identification experimental methods (from IntAct) </li>
-  <li>Protein function (from Gene Ontology 'molecular function' and
-'biological process' ontologies) </li>
+  <li><span style="font-weight: bold;">Open</span> controlled
+vocabularies: We think that no existing controlled vocabulary provides
+all necessary terms for the given attribute in the PSI MI format. In
+this case, it is up to the data provider to choose a controlled
+vocabulary, or to provide a free text string if no appropriate
+controlled vocabulary exists.</li>
+  <li><span style="font-weight: bold;">Closed </span>controlled
+vocabularies: We think that there is a controlled vocabulary which
+appropriately covers all necessary terms for the given attribute. In
+this case, only terms from the defined vocabulary should be used.</li>
 </ul>
+The following closed controlled vocabularies are referenced by PSI MI:<br>
+<ul>
+  <li>Protein interaction determining experimental methods: <a
+ href="../../../controlledVocab/interactionDetectionDef.txt">interactionDetectionDef.txt</a><br>
+  </li>
+  <li>Protein identification experimental methods: <a
+ href="../../../controlledVocab/participantDetectionDef.txt">participantDetectionDef.txt</a></li>
+  <li>Experimentat methods to identify protein sequence features,
+normally the binding domain: <a
+ href="../../../controlledVocab/featureIdentificationDef.txt">featureIdentificationDef.txt</a><br>
+  </li>
+</ul>
+The controlled vocabularies which have beed created specifically for
+PSI are represented in the <a href="http://www.geneontology.org">Gene
+Ontology</a> flat file format.<br>
+The correctness of references to external controlled vocabularies is
+currently not enforced by the PSI MI schema. It is the responsibility
+of the data provider to ensure that only existing terms at an
+up-to-date data source are referenced. The World Wide Web Consortium
+(W3C) has recently issued a new <a
+ href="http://www.w3.org/TR/2003/REC-xptr-framework-20030325/">recommendation
+for referencing between XML documents</a>. Once this recommendation is
+implemented by standard software, we will include it in the PSI MI
+schema.<br>
 <h2><a name="mozTocId86952" class="mozTocH2"></a>List of planned
 features</h2>
 Because we are following a leveled approach, we are interested in
@@ -203,6 +230,32 @@ The latest list of features to include in the future can be found here:<br>
 If you would like to comment on this document, the PSI MI XML
 specification, please send a mail to:<br>
 <a href="mailto:psidev-mi-dev@lists.sourceforge.net">psidev-mi-dev@lists.sourceforge.net</a>&nbsp;
+<h2><a name="mozTocId254906" class="mozTocH2"></a>Sample data files</h2>
+The following sample files contain authentic data, though we don't take
+any responsibility for the correctness of the data.<br>
+<ul>
+  <li><a href="../..//sampleData/GHRComplexDataset_1PPI.xml">Complex
+interactions sample file (normalised)<br>
+    </a></li>
+  <li><a href="../../sampleData/HpDemoDataset_15PPI.xml">Binary
+interactions sample file (normalised)<br>
+    </a></li>
+  <li><a href="../../sampleData/yeast_normalised.xml">Yeast
+interactions sample file (normalised)</a></li>
+  <li><a href="../../sampleData/yeast_denormalised.xml">Yeast
+interactions sample file (denormalised)</a><br>
+  </li>
+</ul>
+<h2><a name="mozTocId343640" class="mozTocH2"></a>Tools</h2>
+We plan to provide a set of tools to support the PSI MI XML format. The
+following tools are currently available:<br>
+<ul>
+  <li><a href="../../src/MIF_fold.xsl">MIF_fold.xsl</a>: Transforms a
+file from the denormalised into the normalised form.</li>
+  <li><a href="../../src/MIF_unfold.xsl">MIF_unfold.xsl</a>: Transforms
+a file from the normalised into the denormalised form.<br>
+  </li>
+</ul>
 <h2><a name="mozTocId580742" class="mozTocH2"></a>Further information
 and relevant links</h2>
 <p> Databases involved: </p>
@@ -219,16 +272,6 @@ Companies involved:
 Related Efforts:
 <ul>
   <li><a href="http://biopax.org">BioPAX</a></li>
-</ul>
-<h2><a name="mozTocId254906" class="mozTocH2"></a>Sample data files</h2>
-The following sample files contain authentic data, though we don't take
-any responsibility for the correctness of the data.<br>
-<ul>
-  <li><a
- href="../../sampleData/GHRComplexDataset_1PPI.xml">Complex
-interactions sample file</a></li>
-  <li><a href="../../sampleData/HpDemoDataset_15PPI.xml">Binary
-interactions sample file</a></li>
 </ul>
 <hr style="width: 100%; height: 2px;"><br>
 </body>
