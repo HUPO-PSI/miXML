@@ -1,96 +1,180 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <title>HUPO Proteomics Standards Initiative Protein Interaction Specification Documentation</title>
+  <title>HUPO Proteomics Standards Initiative Protein Interaction
+Specification Documentation</title>
 </head>
 <body>
-      <a href="http://psidev.sourceforge.net"><img src="http://psidev.sourceforge.net/images/psi.gif"
- width="113" height="75" border="0" align="left"></a>      <a
- href="http://www.hupo.org/"><img src="http://psidev.sourceforge.net/images/hupo.gif" width="113"
- height="75" border="0" align="right"></a>        <br clear="all">
+<a href="http://psidev.sourceforge.net"><img
+ src="http://psidev.sourceforge.net/images/psi.gif" width="113"
+ height="75" border="0" align="left"></a> <a href="http://www.hupo.org/"><img
+ src="http://psidev.sourceforge.net/images/hupo.gif" width="113"
+ height="75" border="0" align="right"></a> <br clear="all">
 	
 <center>
-<h2><a href="http://psidev.sourceforge.net">Proteomics Standards Initiative</a> Protein Interaction Documentation</h2>
+<h2><a href="http://psidev.sourceforge.net">Proteomics Standards
+Initiative</a> <br>
+</h2>
+<h2>Molecular Interaction XML Format Documentation</h2>
+<h2>Version 1.0</h2>
+<br>
 </center>
-
 <h2>Introduction</h2>
-The Proteomics Standards Initiative (PSI) aims to define community standards for data representation in proteomics to
-facilitate data comparision, exchange and verification.<P>
-The Proteomics Standards Initiative was founded at the HUPO meeting in Washington, April 28-29, 2002 (see <a
+The Proteomics Standards Initiative (PSI) aims to define community
+standards for data representation in proteomics to facilitate data
+comparision, exchange and verification.
+<p> The Proteomics Standards Initiative was founded at the HUPO meeting
+in Washington, April 28-29, 2002 (see <a
  href="http://www.sciencemag.org/cgi/content/summary/296/5569/827?maxtoshow=&amp;HITS=10&amp;hits=10&amp;RESULTFORMAT=&amp;searchid=1027414274815_1591&amp;stored_search=&amp;FIRSTINDEX=0&amp;volume=296&amp;firstpage=827&amp;fdate=10/1/1995&amp;tdate=7/31/2002">Science
-296, 827</a>). As a first step, the PSI is developing standards for two key areas of proteomics:
-<a href="http://psidev.sourceforge.net#ms">mass spectrometry</a> and <a href="http://psidev.sourceforge.net#ppi">protein-protein interaction</a> data.
-<P>
-This document decribes the protein-protein interaction data exchange format.  PSI is following a leveled approach to building this specification.
-Level 1 will describe protein interactions at a basic level that covers a large amount of currently available data.  Subsequent levels will add
-capability to represent new protein interaction information that the community wishes to exchange.
-<P>
-The scope of PSI PI is currently only protein-protein interactions.  Other molecules, such as small molecules, DNA and RNA
-may be taken into account in the future.
-<P>
-PSI PI was designed by a group of people including representatives from database providers and users in both academia and industry.
-PSI PI is expected to be supported by the DIP, MINT, IntAct and BIND databases.
-<P>
-
+296, 827</a>). As a first step, the PSI is developing standards for two
+key areas of proteomics: <a href="http://psidev.sourceforge.net#ms">mass
+spectrometry</a> and <a href="http://psidev.sourceforge.net#ppi">protein-protein
+interaction</a> data. </p>
+<p> This document decribes the molecular interaction data exchange
+format. PSI is following a leveled approach to building this
+specification. Level 1 will describe protein interactions at a basic
+level that covers a large amount of currently available data.
+Subsequent levels will add capability to represent new molecular
+interaction information that the community wishes to exchange. </p>
+<p> The scope of PSI MI is currently limited to protein-protein
+interactions. Other molecules, such as small molecules, DNA and RNA
+may be taken into account in the future. </p>
+<p> PSI MI was designed by a group of people including representatives
+from database providers and users in both academia and industry. PSI MI
+is expected to be supported by the DIP, MINT, IntAct and BIND databases. </p>
+<p> </p>
 <h2>Purpose of this document</h2>
-The purpose of this document is to describe the PSI protein interaction specification in a more user-friendly manner than the
-specification does itself.  The specification contains XML Schema annotation and is the most up-to-date reference.<p>
-
-<h2>Outline of a PSI PI record</h2>
-<img src="MIF_Entry.png"><BR>
-Insert user-friendly documentation and rationale behind decisions here.
-
+The purpose of this document is to describe the general structure of
+the PSI MI XML specification in a more user-friendly manner than the
+specification does itself. For the detailed and most up-to-date
+description please see the <a
+ href="file:///C:/Documents%20and%20Settings/hhe/My%20Documents/pro/psi/mi/xml/doc/MIF.html">auto-generated
+documentation</a>.<br>
+<p> </p>
+<h2>Outline of a PSI MI record<br>
+</h2>
+<img src="MIF_topLevel.png" title="" alt=""
+ style="width: 508px; height: 394px;"><br>
+<span style="font-weight: bold;">Fig: 1: Top level elements</span><br>
+<br>
+The root element of a PSI MI XML file is the entrySet. An entrySet
+contains one or more entries. Each entry is a self-contained unit. This
+allows to easily concatenate the contents of multiple files into a
+single file by simply adding all the entries into the entrySet.<br>
+<br>
+Each entry describes one or more protein interactions. The PSI MI
+format can be used in two forms, a normalised and a denormalised form.
+In the normalised form, all interactors (proteins), experiments, and
+availability statements are described once in the respective list
+elements, and then only referred to by references from the individual
+interactions in the interactionList. The normalised form allows a
+compact, non-repetitive representation of the data, in particular for
+large data sets. <br>
+In the denormalised form, all proteins, experiments, and availability
+statements are described directly in the interaction element. As a
+result, each interaction is a self-contained element providing all
+necessary information. The denormalised form results in larger files,
+but is more suitable for conversion to displayed data, e.g. HTML pages.
+The PSI MI consortium plans to provide tools to convert the normalised
+into the denormalised form.<br>
+<br>
+In the next sections, the top level elements shown in Fig. x and their
+function will be described. <br>
+<br>
+The source element describes the source of the entry, usually the
+organisation which provides it. It also contains a release (number) and
+a releaseDate. <br>
+<br>
+The availabilityList provides statements on the availability of the
+data, usually copyright statements. In the current version, the
+availability statements are free text. The PSI MI format might later be
+extended to provide predefined availability statements. <br>
+<br>
+The experimentList contains experimentDescriptions. Each
+experimentDescription describes one set of experimental parameters,
+usually associated with a single publication. In large-scale
+experiments, normally only one parameter is varied across a series of
+experiments, usually the bait. The PSI MI format describes the constant
+parameters, e.g. experimental techniques, in an experimentDescription,
+while the variable parameters, e.g. the bait, are described in the
+interaction element. <br>
+<br>
+The interactorList describes a set of interactors participating in an
+interaction. In the current version of the PSI MI standard, interactors
+are proteins. It is planned to extend this to other types, for example
+small molecules, in future versions. The interactor element describes
+the "normal" form of a protein, consisting of the "administrative" data
+like name and crossreferences, and organism and amino acid sequence.
+Attributes which are relevant for a specific interaction, in particular
+sequence features, are described in the participant element within an
+interaction. <br>
+<br>
+The interactionList contains one or more interaction elements. Each
+interaction contains a description of the data availability
+(copyright), and a desciption of the experimental conditions under
+which it has been determined. Both of these can either be integrated
+into the interaction element (denormalised form) or refer to the
+respective lists in the entry (normalised form) as described above. <br>
+Each interaction contains two or more participants, the molecules
+participating in the interaction. Each participant element contains a
+description of the molecule in its "normal" form, either by reference
+to an element of the interactorList, or directly in an interactor
+element. <br>
+Additional elements of the participant element describe the specific
+form of the molecule in which it participated in the interaction. The
+featureList describes sequence features of the protein, for example
+binding domains relevant for the interaction. The role describes the
+particular role of the protein in the experiment, usually whether the
+protein was a bait or prey.<br>
+<br>
+The attributeList is a placeholder for semi-structured additional data
+the data provider might want to transmit. In contains simple tag-value
+pairs.<br>
+<br>
 <h2>Use of external controlled vocabularies</h2>
-Where possible, external controlled vocabularies have been referenced from PSI PI.  Specifically controlled vocabularies have
-been used to describe:<BR>
+Where possible, external controlled vocabularies have been referenced
+from PSI MI.  Specifically controlled vocabularies have been used to
+describe:<br>
 <ul>
-<li>Protein interaction determining experimental methods (from IntAct)
-<li>Protein identification experimental methods (from IntAct)
-<li>Protein function (from Gene Ontology 'molecular function' and 'biological process' ontologies)
+  <li>Protein interaction determining experimental methods (from
+IntAct) </li>
+  <li>Protein identification experimental methods (from IntAct) </li>
+  <li>Protein function (from Gene Ontology 'molecular function' and
+'biological process' ontologies) </li>
 </ul>
-
-<h2>Detailed description of PSI PI</h2>
--Probably best to point to the XMLSpy generated docs here.<BR>
--Detailed description of all fields (use XML documentation as a base and XML Spy pictures as figures)<BR>
-
+<h2>Detailed description of PSI MI</h2>
+-Probably best to point to the XMLSpy generated docs here.<br>
+-Detailed description of all fields (use XML documentation as a base
+and XML Spy pictures as figures)<br>
 <h2>List of planned features</h2>
-Because we are following a leveled approach, we are interested in knowing what the community
-wishes to be included in the next level.<P>
-The following items have been tagged for inclusion in the next level:
+Because we are following a leveled approach, we are interested in
+knowing what the community wishes to be included in the next level.
+<p> The following items have been tagged for inclusion in the next
+level: </p>
 <ul>
-<li>Intramolecular interactions
+  <li>Intramolecular interactions </li>
 </ul>
 <br>
-The latest list of features to include in the future can be found here: 
-
-
+The latest list of features to include in the future can be found here:
 <h2>How to comment</h2>
-If you would like to comment on this document, the PSI PI specification please use the following discussion list on
-SourceForge:
-<BR>
-
+If you would like to comment on this document, the PSI MI specification
+please use the following discussion list on SourceForge: <br>
 <h2>Further information and relevant links</h2>
-
-TODO: create and briefly annotate links<P>
-
-Databases involved:
+TODO: create and briefly annotate links
+<p> Databases involved: </p>
 <ul>
-<LI>BIND
-<LI>DIP
-<LI>IntAct
-<LI>MINT
+  <li>BIND </li>
+  <li>DIP </li>
+  <li>IntAct </li>
+  <li>MINT </li>
 </ul>
-
 Companies involved:
 <ul>
-<li>Hybrigenics
+  <li>Hybrigenics </li>
 </ul>
-
 Related Efforts:
 <ul>
-<li><a href="http://biopax.org">BioPAX</a>
+  <li><a href="http://biopax.org">BioPAX</a> </li>
 </ul>
-
-
 </body>
 </html>
