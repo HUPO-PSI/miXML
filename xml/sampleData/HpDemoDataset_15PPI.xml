@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by Swiss-Prot (EMBL OUTSTATION THE EBI WELLCOME TRUST GENOME CAMPUS) -->
-<entrySet xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/xml/src/MIF.xsd">
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Chris Sander (Memorial Sloan Kettering) -->
+<entrySet xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi
+http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 	<entry>
 		<source>
 			<names>
@@ -60,7 +61,7 @@
 			</experimentDescription>
 		</experimentList>
 		<interactorList>
-			<interactor id="HP0776">
+			<proteinInteractor id="HP0776">
 				<names>
 					<shortLabel>HP0776</shortLabel>
 					<fullName>HP0776</fullName>
@@ -71,11 +72,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>LDRTQNKRISLKKERTESLVAQALKNIGNDRYMLDNLVFARVKQLNAGAKTLVNMDPKRHKLVDIAIREIAEGKIDIDRIDERN</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP1409">
+				<sequence>LDRTQNKRISLKKERTESLVAQALKNIGNDRYMLDNLVFARVKQLNAGAKTLVNMDPKRHKLVDIAIREIAEGKIDIDRIDERN</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP1409">
 				<names>
 					<shortLabel>HP1409</shortLabel>
 					<fullName>HP1409</fullName>
@@ -86,11 +85,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MMAKIDVELKKLHQILVDRDYFYQVPDYQRPYVWDKDHLGALIDDLVGSYTNNREDEYFCGSIVIVENQKDKRWDVVDGQQRLTSFIILACTILRLYKHSLGQESKDFIEDSIYDRYDKEKERLKFLTAQNYNSIFENTVLNHLEFEDNIKKSELNKKFEENTYLRNAYYFKELLNESVENGSISDIDDFVKWFYEHIVLTRIICFEQDSAMQIFQVLNDRGQPLSPIDILKSSLMQEIKQDSEKRKDFITTWDKLVEACKSVEGVDIDLEDFFNMYLEYADPSTSKKRADKGLKKVFKDSKKDACGFIYEISEFMKAYTALLKKQDRYVYLLRYLPSRYWASILTTALYVKYPDFDALKKLLVSYYYQTWIAGGTITRIKQTSINIIKNVKSNKSVETIKELILNSIDSYNTFDQYLYNLWDSSSVYHSKWVRPVLALANYFMADEEKPHFIAMDAETQVEHILPQTPKRGSQWNADFDKEKREEWVNNIANLTLLKRKKNAHALNGDFDEKRKIYGGKDTSKVISCYDITKELYSNYRKWNEKSLQERYKSLYNTITPVLHIEGQEDDFEDDFDLE</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP1378">
+				<sequence>MMAKIDVELKKLHQILVDRDYFYQVPDYQRPYVWDKDHLGALIDDLVGSYTNNREDEYFCGSIVIVENQKDKRWDVVDGQQRLTSFIILACTILRLYKHSLGQESKDFIEDSIYDRYDKEKERLKFLTAQNYNSIFENTVLNHLEFEDNIKKSELNKKFEENTYLRNAYYFKELLNESVENGSISDIDDFVKWFYEHIVLTRIICFEQDSAMQIFQVLNDRGQPLSPIDILKSSLMQEIKQDSEKRKDFITTWDKLVEACKSVEGVDIDLEDFFNMYLEYADPSTSKKRADKGLKKVFKDSKKDACGFIYEISEFMKAYTALLKKQDRYVYLLRYLPSRYWASILTTALYVKYPDFDALKKLLVSYYYQTWIAGGTITRIKQTSINIIKNVKSNKSVETIKELILNSIDSYNTFDQYLYNLWDSSSVYHSKWVRPVLALANYFMADEEKPHFIAMDAETQVEHILPQTPKRGSQWNADFDKEKREEWVNNIANLTLLKRKKNAHALNGDFDEKRKIYGGKDTSKVISCYDITKELYSNYRKWNEKSLQERYKSLYNTITPVLHIEGQEDDFEDDFDLE</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP1378">
 				<names>
 					<shortLabel>HP1378</shortLabel>
 					<fullName>HP1378 (comL)</fullName>
@@ -101,11 +98,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MRLKHFKTFLFITMAIIVIGTGCANKKKKKDEYNKPAIFWYQGILREILFANLETADNYYSSLQSEHINSPLVPEAMLALGQAHMKKKEYVLASFYFDEYIKRFGTKDNVDYLTFLKLQSHYYAFKNHSKDQEFISNSIVSLGEFIEKYPNSRYRPYVEYMQIKFILGQNELNRAIANVYKKRHKPEGVKRYLERIDETLEKETKPKPSHMPWYVLIFDW</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP0278">
+				<sequence>MRLKHFKTFLFITMAIIVIGTGCANKKKKKDEYNKPAIFWYQGILREILFANLETADNYYSSLQSEHINSPLVPEAMLALGQAHMKKKEYVLASFYFDEYIKRFGTKDNVDYLTFLKLQSHYYAFKNHSKDQEFISNSIVSLGEFIEKYPNSRYRPYVEYMQIKFILGQNELNRAIANVYKKRHKPEGVKRYLERIDETLEKETKPKPSHMPWYVLIFDW</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP0278">
 				<names>
 					<shortLabel>HP0278</shortLabel>
 					<fullName>HP0278 (gppA)</fullName>
@@ -116,11 +111,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MAKITTVIDIGSNSVRLAVFKKTSQFGFYLLFETKSKVRISEGCYAFNGILQEIPMQRAVKALSEFKEIALKYKSKKILCVATSAVRDAPNRLEFVARVKKACGLQIKIIDGQKEALYGGIACANLLHKNSGITIDIGGGSTECALIEKGKIKDLISLDVGTIRIKEMFLDKDLEVKLAKAFIQKEVSKLPFKHKNAFGVGGTIRALSKVLMKRFCYPIDSLHGYEIDAHKNLAFIEKIVMLKEDQLRLLGVNEERLDSIRSGALILSVVLEHLKTSLMITSGVGVREGVFLSDLLRHHYHKFPPNINPSLISLKDRFLPHEKHSQKVKKECVKLFEALSPLHKIDEKYLFHLKIAGELASMGKILSVYLAHKHSAYFILNALSYGFSHQDRAIICLLAQFSHKKIPKDNAIAHMSAMMPSLLTLQWLSFILSLAENLCLTDSHHLKYTLEKNKLVIHSNDTLYLAKEMLPKLVKPIPLTIEFA</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP0067">
+				<sequence>MAKITTVIDIGSNSVRLAVFKKTSQFGFYLLFETKSKVRISEGCYAFNGILQEIPMQRAVKALSEFKEIALKYKSKKILCVATSAVRDAPNRLEFVARVKKACGLQIKIIDGQKEALYGGIACANLLHKNSGITIDIGGGSTECALIEKGKIKDLISLDVGTIRIKEMFLDKDLEVKLAKAFIQKEVSKLPFKHKNAFGVGGTIRALSKVLMKRFCYPIDSLHGYEIDAHKNLAFIEKIVMLKEDQLRLLGVNEERLDSIRSGALILSVVLEHLKTSLMITSGVGVREGVFLSDLLRHHYHKFPPNINPSLISLKDRFLPHEKHSQKVKKECVKLFEALSPLHKIDEKYLFHLKIAGELASMGKILSVYLAHKHSAYFILNALSYGFSHQDRAIICLLAQFSHKKIPKDNAIAHMSAMMPSLLTLQWLSFILSLAENLCLTDSHHLKYTLEKNKLVIHSNDTLYLAKEMLPKLVKPIPLTIEFA</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP0067">
 				<names>
 					<shortLabel>HP0067</shortLabel>
 					<fullName>HP0067 (ureH)</fullName>
@@ -131,11 +124,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MNTYAQESKLRLKTKIGADGRCVIEDNFFTPPFKLMAPFYPKDDLAEIMLLAVSPGMMRGDAQDVQLNIGPNCKLRITSQSFEKIHNTEDGFASRDMHIVVGENAFLDFAPFPLIPFENAHFKGNTTISLRSSSQLLYSEIIVAGRVARNELFKFNRLHTKISILQDEKPIYYDNTILDPKTTDLNNMCMFDGYTHYLNLVLVNCPIELSGVRECIEESEGVDGAVSETASSHLCVKALAKGSEPLLHLREKIARLVTQTTTQKV</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP0068">
+				<sequence>MNTYAQESKLRLKTKIGADGRCVIEDNFFTPPFKLMAPFYPKDDLAEIMLLAVSPGMMRGDAQDVQLNIGPNCKLRITSQSFEKIHNTEDGFASRDMHIVVGENAFLDFAPFPLIPFENAHFKGNTTISLRSSSQLLYSEIIVAGRVARNELFKFNRLHTKISILQDEKPIYYDNTILDPKTTDLNNMCMFDGYTHYLNLVLVNCPIELSGVRECIEESEGVDGAVSETASSHLCVKALAKGSEPLLHLREKIARLVTQTTTQKV</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP0068">
 				<names>
 					<shortLabel>HP0068</shortLabel>
 					<fullName>HP0068 (ureG)</fullName>
@@ -146,11 +137,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MVKIGVCGPVGSGKTALIEALTRHMSKDYDMAVITNDIYTKEDAEFMCKNSVMPRERIIGVETGGCPHTAIREDASMNLEAVEEMHGRFPNLELLLIESGGDNLSATFNPELADFTIFVIDVAEGDKIPRKGGPGITRSDLLVINKIDLAPYVGADLKVMERDSKKMRGEKPFIFTNIRAKEGLDDVIAWIKRNALLED</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP0118">
+				<sequence>MVKIGVCGPVGSGKTALIEALTRHMSKDYDMAVITNDIYTKEDAEFMCKNSVMPRERIIGVETGGCPHTAIREDASMNLEAVEEMHGRFPNLELLLIESGGDNLSATFNPELADFTIFVIDVAEGDKIPRKGGPGITRSDLLVINKIDLAPYVGADLKVMERDSKKMRGEKPFIFTNIRAKEGLDDVIAWIKRNALLED</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP0118">
 				<names>
 					<shortLabel>HP0118</shortLabel>
 					<fullName>HP0118</fullName>
@@ -161,11 +150,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MESVKTGKTNKVGKNTEMANTKANKEXHFKQXSTITNIIRSXXGIFTKIAKKVRGLVKKHPKKSSAALVVLTHIACKKAKELDDKVQDKSKQAEKENQINWWKYSGLTIATSLLLAACSTGDVSEQIELEQEKQKTSNIETNNQIKVEQEKQKTSNIETNNQIKVEQEQQKTSNTQKDLVKEQKDLVKEQKDLVKEQKDLVKEQKDLVKTQKDFIKYVEQNCQENHNQFFIEKGGIKAGIGIEVEAECKTPKPAKTNQTPIQPKHLPNSKQPRSQRGSKAQELIAYLQKELEFLPYSQKAIAKQVDFYRPSSIAYLELDPRDFKVTEEWQKENLKIRSKAQAKMLEMRNPQAHLSNSQSLLFVQKIFADVNKEIEAVANTEKKAEKAGYGYSKRM</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP0070">
+				<sequence>MESVKTGKTNKVGKNTEMANTKANKEXHFKQXSTITNIIRSXXGIFTKIAKKVRGLVKKHPKKSSAALVVLTHIACKKAKELDDKVQDKSKQAEKENQINWWKYSGLTIATSLLLAACSTGDVSEQIELEQEKQKTSNIETNNQIKVEQEKQKTSNIETNNQIKVEQEQQKTSNTQKDLVKEQKDLVKEQKDLVKEQKDLVKEQKDLVKTQKDFIKYVEQNCQENHNQFFIEKGGIKAGIGIEVEAECKTPKPAKTNQTPIQPKHLPNSKQPRSQRGSKAQELIAYLQKELEFLPYSQKAIAKQVDFYRPSSIAYLELDPRDFKVTEEWQKENLKIRSKAQAKMLEMRNPQAHLSNSQSLLFVQKIFADVNKEIEAVANTEKKAEKAGYGYSKRM</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP0070">
 				<names>
 					<shortLabel>HP0070</shortLabel>
 					<fullName>HP0070 (ureE)</fullName>
@@ -176,11 +163,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MIIERLVGNLRDLNPLDFSVDHVDLEWFETRKKIARFKTRQGKDIAIRLKDAPKLGLSQGDILFKEEKEIIAVNILDSEVIHIQAKSVAEVAKICYEIGNRHAALYYGESQFEFKTPFEKPTLALLEKLGVQNRVLSSKLDSKERLTVSMPHSEPNFKVSLASDFKVVVK</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP0069">
+				<sequence>MIIERLVGNLRDLNPLDFSVDHVDLEWFETRKKIARFKTRQGKDIAIRLKDAPKLGLSQGDILFKEEKEIIAVNILDSEVIHIQAKSVAEVAKICYEIGNRHAALYYGESQFEFKTPFEKPTLALLEKLGVQNRVLSSKLDSKERLTVSMPHSEPNFKVSLASDFKVVVK</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP0069">
 				<names>
 					<shortLabel>HP0069</shortLabel>
 					<fullName>HP0069 (ureF)</fullName>
@@ -191,11 +176,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MDKGKSVKSTEKSVGMPPKTPKTDNNAHVDNEFLILQVNDAVFPIGSYTHSFGLETYIQQKKVTNKESALEYLKANLSSQFLYTEMLSLKLTYESALQQDLKKILGVEEVIMLSTSPMELRLANQKLGNRFIKTLQAMNELDMGEFFNAYAQKTKDPTHATSYGVFAASLGIELKKALRHYLYAQTSNMVINCVKSVPLSQNDGQKILLSLQSPFNQLIEKTLELDESHLCTASVQNDIKAMQHESLYSRLYMS</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP0073">
+				<sequence>MDKGKSVKSTEKSVGMPPKTPKTDNNAHVDNEFLILQVNDAVFPIGSYTHSFGLETYIQQKKVTNKESALEYLKANLSSQFLYTEMLSLKLTYESALQQDLKKILGVEEVIMLSTSPMELRLANQKLGNRFIKTLQAMNELDMGEFFNAYAQKTKDPTHATSYGVFAASLGIELKKALRHYLYAQTSNMVINCVKSVPLSQNDGQKILLSLQSPFNQLIEKTLELDESHLCTASVQNDIKAMQHESLYSRLYMS</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP0073">
 				<names>
 					<shortLabel>HP0073</shortLabel>
 					<fullName>HP0073 (urea amidohydrolase)</fullName>
@@ -206,11 +189,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MKLTPKELDKLMLHYAGELAKKRKEKGIKLNYVEAVALISAHIMEEARAGKKTAAELMQEGRTLLKPDDVMDGVASMIHEVGIEAMFPDGTKLVTVHTPIEANGKLVPGELFLKNEDITINEGKKAVSVKVKNVGDRPVQIGSHFHFFEVNRCLDFDREKTFGKRLDIASGTAVRFEPGEEKSVELIDIGGNRRIFGFNALVDRQADNESKKIALHRAKERGFHGAKSDDNYVKTIKE</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP0072">
+				<sequence>MKLTPKELDKLMLHYAGELAKKRKEKGIKLNYVEAVALISAHIMEEARAGKKTAAELMQEGRTLLKPDDVMDGVASMIHEVGIEAMFPDGTKLVTVHTPIEANGKLVPGELFLKNEDITINEGKKAVSVKVKNVGDRPVQIGSHFHFFEVNRCLDFDREKTFGKRLDIASGTAVRFEPGEEKSVELIDIGGNRRIFGFNALVDRQADNESKKIALHRAKERGFHGAKSDDNYVKTIKE</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP0072">
 				<names>
 					<shortLabel>HP0072</shortLabel>
 					<fullName>HP0072 (ureB)</fullName>
@@ -221,11 +202,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MKKISRKEYVSMYGPTTGDKVRLGDTDLIAEVEHDYTIYGEELKFGGGKTLREGMSQSNNPSKEELDLIITNALIVDYTGIYKADIGIKDGKIAGIGKGGNKDMQDGVKNNLSVGPATEALAGEGLIVTAGGIDTHIHFISPQQIPTAFASGVTTMIGGGTGPADGTNATTITPGRRNLKWMLRAAEEYSMNLGFLAKGNASNDASLADQIEAGAIGFKIHEDWGTTPSAINHALDVADKYDVQVAIHTDTLNEAGCVEDTMAAIAGRTMHTFHTEGAGGGHAPDIIKVAGEHNILPASTNPTIPFTVNTEAEHMDMLMVCHHLDKSIKEDVQFADSRIRPQTIAAEDTLHDMGIFSITSSDSQAMGRVGEVITRTWQTADKNKKEFGRLKEEKGDNDNFRIKRYLSKYTINPAIAHGISEYVGSVEVGKVADLVLWSPAFFGVKPNMIIKGGFIALSQMGDANASIPTPQPVYYREMFAHHGKAKYDANITFVSQAAYDKGIKEELGLERQVLPVKNCRNITKKDMQFNDTTAHIEVNPETYHVFVDGKEVTSKPANKVSLAQLFSIF</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP1138">
+				<sequence>MKKISRKEYVSMYGPTTGDKVRLGDTDLIAEVEHDYTIYGEELKFGGGKTLREGMSQSNNPSKEELDLIITNALIVDYTGIYKADIGIKDGKIAGIGKGGNKDMQDGVKNNLSVGPATEALAGEGLIVTAGGIDTHIHFISPQQIPTAFASGVTTMIGGGTGPADGTNATTITPGRRNLKWMLRAAEEYSMNLGFLAKGNASNDASLADQIEAGAIGFKIHEDWGTTPSAINHALDVADKYDVQVAIHTDTLNEAGCVEDTMAAIAGRTMHTFHTEGAGGGHAPDIIKVAGEHNILPASTNPTIPFTVNTEAEHMDMLMVCHHLDKSIKEDVQFADSRIRPQTIAAEDTLHDMGIFSITSSDSQAMGRVGEVITRTWQTADKNKKEFGRLKEEKGDNDNFRIKRYLSKYTINPAIAHGISEYVGSVEVGKVADLVLWSPAFFGVKPNMIIKGGFIALSQMGDANASIPTPQPVYYREMFAHHGKAKYDANITFVSQAAYDKGIKEELGLERQVLPVKNCRNITKKDMQFNDTTAHIEVNPETYHVFVDGKEVTSKPANKVSLAQLFSIF</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP1138">
 				<names>
 					<shortLabel>HP1138</shortLabel>
 					<fullName>HP1138</fullName>
@@ -236,11 +215,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MAKNKVLGRGLADIFPEINEVYEQGLYERANRVVELGIDEVMPNPYQPRKVFSEDSLEELAQSIKEHGLLQPVLVVSENGRYHLIAGERRLRASKLAKMPTIKAIVVDIEQEKMREVALIENIQREDLNPLELARSYKELLESYQMTQEELSKIVKKSRAHVANIMRLLTLSSKVQNALLEEKITSGHAKVLVGLDGEKQELILNSIIGQKLSVRQTEDLARDFKINANFDNKKHGFKQTQTLIAGDELERLNQSLWDHYKLKAALKGNKIVLRCYENSLLEAFMKKMMS</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP0216">
+				<sequence>MAKNKVLGRGLADIFPEINEVYEQGLYERANRVVELGIDEVMPNPYQPRKVFSEDSLEELAQSIKEHGLLQPVLVVSENGRYHLIAGERRLRASKLAKMPTIKAIVVDIEQEKMREVALIENIQREDLNPLELARSYKELLESYQMTQEELSKIVKKSRAHVANIMRLLTLSSKVQNALLEEKITSGHAKVLVGLDGEKQELILNSIIGQKLSVRQTEDLARDFKINANFDNKKHGFKQTQTLIAGDELERLNQSLWDHYKLKAALKGNKIVLRCYENSLLEAFMKKMMS</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP0216">
 				<names>
 					<shortLabel>HP0216</shortLabel>
 					<fullName>HP0216</fullName>
@@ -251,11 +228,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MVVLGSTGSIGKNALKIAKKFGIEIEALSCGKNIALINEQIQVFKPKKVAILDPSDLNDLEPLGAEVFVGLEGIDAMIEECTSNLVLNAIVGVAGLKASFKSLQRNKKLALANKESLVSAGHLLDISQITPIDSEHFGLWALLQNKTLKPKSLIISASGGAFRDTPLEFIPIQNAQNALKHPNWSMGSKITIDSASMVNKLFEILETYWLFGASLKIDALIERSSIVHALVEFEDNSIIAHLASADMQLPISYAIDPKLASLSASIKPLDLYALSAIKFEPISMERYTLWCYKDLLLENPKLGVVLNASNEVAMEKFLNKEIAFGGLIQTISQALESYDKMPFKLSSLEEVLELDKEVRERFKNVAGV</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP0935">
+				<sequence>MVVLGSTGSIGKNALKIAKKFGIEIEALSCGKNIALINEQIQVFKPKKVAILDPSDLNDLEPLGAEVFVGLEGIDAMIEECTSNLVLNAIVGVAGLKASFKSLQRNKKLALANKESLVSAGHLLDISQITPIDSEHFGLWALLQNKTLKPKSLIISASGGAFRDTPLEFIPIQNAQNALKHPNWSMGSKITIDSASMVNKLFEILETYWLFGASLKIDALIERSSIVHALVEFEDNSIIAHLASADMQLPISYAIDPKLASLSASIKPLDLYALSAIKFEPISMERYTLWCYKDLLLENPKLGVVLNASNEVAMEKFLNKEIAFGGLIQTISQALESYDKMPFKLSSLEEVLELDKEVRERFKNVAGV</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP0935">
 				<names>
 					<shortLabel>HP0935</shortLabel>
 					<fullName>HP0935</fullName>
@@ -266,11 +241,9 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MTIKVFSPKYPTELEEFYAERIADNPLGFIQRLDLLPSISGFVQKLREHGGEFFEMREGNKLIGICGLNPINQTEAELCKFHINSAYQSQGLGQKLYESVEKYAFIKGYTKISLHVSKSQIKACNLYQKLGFVHIKEEDCVVELGEETLIFPTLFMEKILS</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="HP0657">
+				<sequence>MTIKVFSPKYPTELEEFYAERIADNPLGFIQRLDLLPSISGFVQKLREHGGEFFEMREGNKLIGICGLNPINQTEAELCKFHINSAYQSQGLGQKLYESVEKYAFIKGYTKISLHVSKSQIKACNLYQKLGFVHIKEEDCVVELGEETLIFPTLFMEKILS</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="HP0657">
 				<names>
 					<shortLabel>HP0657</shortLabel>
 					<fullName>HP0657 (ymxG)</fullName>
@@ -281,17 +254,15 @@
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MKKFLITLLLGVFMGLQASALTHQEINQAKVPVIYEENHLLPMGFIHLAFRGGGSLSDKNQLGLAKLFAQVLNEGTKELGAVGFAQLLEQKAISLNVDTSTEDLQITLEFLKEYEDEAITRLKELLKSPNFTQNALEKVKTQMLAALLQKESDFDYLAKLTLKQELFANTPLANAALGTKESIQKIKLDDLKQQFAKVFELNKLVVVLGGDLKIDQTLKRLNNALNFLPQGKAYEEPYFETSDKKSEKVLYKDTEQAFVYFGAPFKIKDLKQDLAKSKVMMFVLGGGFGSRLMEKIRVQEGLAYSVYIRSNFSKVAHFASGYLQTKLSTQTKSVALVKKIVKEFIEKGMTQQELDDAKKFLLGSEPLRNETISSRLNTTYNYFYLGLPLNFNQTLLNQIQKMSLKEINDFIKAHTEINDLTFAIVSNKKKDK</sequence>
-				</proteinseq>
-			</interactor>
+				<sequence>MKKFLITLLLGVFMGLQASALTHQEINQAKVPVIYEENHLLPMGFIHLAFRGGGSLSDKNQLGLAKLFAQVLNEGTKELGAVGFAQLLEQKAISLNVDTSTEDLQITLEFLKEYEDEAITRLKELLKSPNFTQNALEKVKTQMLAALLQKESDFDYLAKLTLKQELFANTPLANAALGTKESIQKIKLDDLKQQFAKVFELNKLVVVLGGDLKIDQTLKRLNNALNFLPQGKAYEEPYFETSDKKSEKVLYKDTEQAFVYFGAPFKIKDLKQDLAKSKVMMFVLGGGFGSRLMEKIRVQEGLAYSVYIRSNFSKVAHFASGYLQTKLSTQTKSVALVKKIVKEFIEKGMTQQELDDAKKFLLGSEPLRNETISSRLNTTYNYFYLGLPLNFNQTLLNQIQKMSLKEINDFIKAHTEINDLTFAIVSNKKKDK</sequence>
+			</proteinInteractor>
 		</interactorList>
 		<interactionList>
 			<interaction>
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0776"/>
 						<featureList>
 							<feature>
@@ -310,8 +281,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP1409"/>
 						<featureList>
 							<feature>
@@ -330,7 +301,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -346,7 +317,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0776"/>
 						<featureList>
 							<feature>
@@ -365,8 +336,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP1378"/>
 						<featureList>
 							<feature>
@@ -385,7 +356,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -401,7 +372,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0776"/>
 						<featureList>
 							<feature>
@@ -420,8 +391,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0278"/>
 						<featureList>
 							<feature>
@@ -440,7 +411,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -456,7 +427,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0776"/>
 						<featureList>
 							<feature>
@@ -475,8 +446,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0067"/>
 						<featureList>
 							<feature>
@@ -495,7 +466,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -511,7 +482,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0068"/>
 						<featureList>
 							<feature>
@@ -530,8 +501,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0118"/>
 						<featureList>
 							<feature>
@@ -550,7 +521,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -566,7 +537,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0070"/>
 						<featureList>
 							<feature>
@@ -585,8 +556,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0070"/>
 						<featureList>
 							<feature>
@@ -605,7 +576,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -621,7 +592,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0070"/>
 						<featureList>
 							<feature>
@@ -640,8 +611,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0068"/>
 						<featureList>
 							<feature>
@@ -660,7 +631,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -676,7 +647,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0067"/>
 						<featureList>
 							<feature>
@@ -695,8 +666,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0069"/>
 						<featureList>
 							<feature>
@@ -715,7 +686,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -731,7 +702,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0073"/>
 						<featureList>
 							<feature>
@@ -750,8 +721,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0067"/>
 						<featureList>
 							<feature>
@@ -770,7 +741,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -786,7 +757,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0073"/>
 						<featureList>
 							<feature>
@@ -805,8 +776,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0073"/>
 						<featureList>
 							<feature>
@@ -825,7 +796,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -841,7 +812,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0072"/>
 						<featureList>
 							<feature>
@@ -860,8 +831,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP1138"/>
 						<featureList>
 							<feature>
@@ -880,7 +851,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -896,7 +867,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0072"/>
 						<featureList>
 							<feature>
@@ -915,8 +886,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0216"/>
 						<featureList>
 							<feature>
@@ -935,7 +906,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -951,7 +922,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0072"/>
 						<featureList>
 							<feature>
@@ -970,8 +941,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0073"/>
 						<featureList>
 							<feature>
@@ -990,7 +961,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -1006,7 +977,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0935"/>
 						<featureList>
 							<feature>
@@ -1025,8 +996,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0657"/>
 						<featureList>
 							<feature>
@@ -1045,7 +1016,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
@@ -1061,7 +1032,7 @@
 				<experimentRef ref="hgx_experiment"/>
 				<availabilityRef ref="hgx_license"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="HP0935"/>
 						<featureList>
 							<feature>
@@ -1080,8 +1051,8 @@
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="HP0072"/>
 						<featureList>
 							<feature>
@@ -1100,7 +1071,7 @@
 						<role>prey</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>

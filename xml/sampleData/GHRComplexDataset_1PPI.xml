@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by Swiss-Prot (EMBL OUTSTATION THE EBI WELLCOME TRUST GENOME CAMPUS) -->
-<entrySet xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/xml/src/MIF.xsd">
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Chris Sander (Memorial Sloan Kettering) -->
+<entrySet xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 	<entry>
 		<source>
 			<names>
@@ -34,7 +34,7 @@
 			</experimentDescription>
 		</experimentList>
 		<interactorList>
-			<interactor id="hGHR">
+			<proteinInteractor id="hGHR">
 				<names>
 					<shortLabel>hGHR</shortLabel>
 					<fullName>Human growth hormone receptor</fullName>
@@ -48,11 +48,9 @@
 						<fullName>Homo sapiens</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MDLWQLLLTLALAGSSDAFSGSEATAAILSRAPWSLQSVNPGLKTNSSKEPKFTKCRSPERETFSCHWTDEVHHGTKNLGPIQLFYTRRNTQEWTQEWKECPDYVSAGENSCYFNSSFTSIWIPYCIKLTSNGGTVDEKCFSVDEIVQPDPPIALNWTLLNVSLTGIHADIQVRWEAPRNADIQKGWMVLEYELQYKEVNETKWKMMDPILTTSVPVYSLKVDKEYEVRVRSKQRNSGNYGEFSEVLYVTLPQMSQFTCEEDFYFPWLLIIIFGIFGLTVMLFVFLFSKQQRIKMLILPPVPVPKIKGIDPDLLKEGKLEEVNTILAIHDSYKPEFHSDDSWVEFIELDIDEPDEKTEESDTDRLLSSDHEKSHSNLGVKDGDSGRTSCCEPDILETDFNANDIHEGTSEVAQPQRLKGEADLLCLDQKNQNNSPYHDACPATQQPSVIQAEKNKPQPLPTEGAESTHQAAHIQLSNPSSLSNIDFYAQVSDITPAGSVVLSPGQKNKAGMSQCDMHPEMVSLCQENFLMDNAYFCEADAKKCIPVAPHIKVESHIQPSLNQEDIYITTESLTTAAGRPGTGEHVPGSEMPVPDYTSIHIVQSPQGLILNATALPLPDKEFLSSCGYVSTDQLNKIMP</sequence>
-				</proteinseq>
-			</interactor>
-			<interactor id="hGH">
+				<sequence>MDLWQLLLTLALAGSSDAFSGSEATAAILSRAPWSLQSVNPGLKTNSSKEPKFTKCRSPERETFSCHWTDEVHHGTKNLGPIQLFYTRRNTQEWTQEWKECPDYVSAGENSCYFNSSFTSIWIPYCIKLTSNGGTVDEKCFSVDEIVQPDPPIALNWTLLNVSLTGIHADIQVRWEAPRNADIQKGWMVLEYELQYKEVNETKWKMMDPILTTSVPVYSLKVDKEYEVRVRSKQRNSGNYGEFSEVLYVTLPQMSQFTCEEDFYFPWLLIIIFGIFGLTVMLFVFLFSKQQRIKMLILPPVPVPKIKGIDPDLLKEGKLEEVNTILAIHDSYKPEFHSDDSWVEFIELDIDEPDEKTEESDTDRLLSSDHEKSHSNLGVKDGDSGRTSCCEPDILETDFNANDIHEGTSEVAQPQRLKGEADLLCLDQKNQNNSPYHDACPATQQPSVIQAEKNKPQPLPTEGAESTHQAAHIQLSNPSSLSNIDFYAQVSDITPAGSVVLSPGQKNKAGMSQCDMHPEMVSLCQENFLMDNAYFCEADAKKCIPVAPHIKVESHIQPSLNQEDIYITTESLTTAAGRPGTGEHVPGSEMPVPDYTSIHIVQSPQGLILNATALPLPDKEFLSSCGYVSTDQLNKIMP</sequence>
+			</proteinInteractor>
+			<proteinInteractor id="hGH">
 				<names>
 					<shortLabel>hGH</shortLabel>
 					<fullName>Human growth hormone, somatotropin</fullName>
@@ -66,33 +64,31 @@
 						<fullName>Homo sapiens</fullName>
 					</names>
 				</organism>
-				<proteinseq>
-					<sequence>MATGSRTSLLLAFGLLCLPWLQEGSAFPTIPLSRLFDNAMLRAHRLHQLAFDTYQEFEEAYIPKEQKYSFLQNPQTSLCFSESIPTPSNREETQQKSNLELLRISLLLIQSWLEPVQFLRSVFANSLVYGASDSNVYDLLKDLEEGIQTLMGRLEDGSPRTGQIFKQTYSKFDTNSHNDDALLKNYGLLYCFRKDMDKVETFLRIVQCRSVEGSCGF</sequence>
-				</proteinseq>
-			</interactor>
+				<sequence>MATGSRTSLLLAFGLLCLPWLQEGSAFPTIPLSRLFDNAMLRAHRLHQLAFDTYQEFEEAYIPKEQKYSFLQNPQTSLCFSESIPTPSNREETQQKSNLELLRISLLLIQSWLEPVQFLRSVFANSLVYGASDSNVYDLLKDLEEGIQTLMGRLEDGSPRTGQIFKQTYSKFDTNSHNDDALLKNYGLLYCFRKDMDKVETFLRIVQCRSVEGSCGF</sequence>
+			</proteinInteractor>
 		</interactorList>
 		<interactionList>
 			<interaction>
 				<experimentRef ref="xray"/>
 				<participantList>
-					<participant>
+					<proteinParticipant>
 						<interactorRef ref="hGHR"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="hGHR"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
-					<participant>
+					</proteinParticipant>
+					<proteinParticipant>
 						<interactorRef ref="hGH"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
-					</participant>
+					</proteinParticipant>
 				</participantList>
 				<interactionType>
 					<names>
