@@ -7,13 +7,14 @@ Specification Documentation</title>
 <body>
 <a href="http://psidev.sourceforge.net"><img
  src="http://psidev.sourceforge.net/images/psi.gif" width="113"
- height="75" border="0" align="left"></a> <a href="http://www.hupo.org/"><img
+ height="75" border="0" align="left"></a> <a
+ href="http://www.hupo.org/"><img
  src="http://psidev.sourceforge.net/images/hupo.gif" width="113"
  height="75" border="0" align="right"></a> <br clear="all">
-	
 <center>
 <h2><a name="mozTocId916500" class="mozTocH2"></a><a
- href="http://psidev.sourceforge.net">Proteomics Standards Initiative</a> <br>
+ href="http://psidev.sourceforge.net">Proteomics Standards Initiative</a>
+<br>
 </h2>
 <h2><a name="mozTocId992260" class="mozTocH2"></a>Molecular Interaction
 XML Format Documentation</h2>
@@ -53,7 +54,8 @@ interaction</a> data. </p>
 <p> This document decribes the molecular interaction data exchange
 format. PSI is following a leveled approach to building this
 specification. Level 1 will describe protein interactions at a basic
-level that covers a large amount of currently available data. Subsequent
+level that covers a large amount of currently available data.
+Subsequent
 levels will add capability to represent new molecular interaction
 information that the community wishes to exchange. </p>
 <p> The scope of PSI MI is currently limited to protein-protein
@@ -102,8 +104,10 @@ representation of the data, in particular for large data sets. <br>
 In the expanded form, all proteins, experiments, and availability
 statements are described directly in the interaction element. As a
 result, each interaction is a self-contained element providing all
-necessary information. The expanded form results in larger files, but is
-more suitable for conversion to displayed data, e.g. HTML pages. The PSI
+necessary information. The expanded form results in larger files, but
+is
+more suitable for conversion to displayed data, e.g. HTML pages. The
+PSI
 MI consortium provides tools to convert the compact into the expanded
 form and back.<br>
 <br>
@@ -144,7 +148,8 @@ interaction. <br>
 <br>
 </span> The interactionList contains one or more interaction elements.
 Each interaction contains a description of the data availability
-(copyright), and a desciption of the experimental conditions under which
+(copyright), and a desciption of the experimental conditions under
+which
 it has been determined. Both of these can either be integrated into the
 interaction element (expanded form) or refer to the respective lists in
 the entry (compact form) as described above. <br>
@@ -155,8 +160,10 @@ the entry (compact form) as described above. <br>
 <br>
 Each interaction contains two or more participants, the molecules
 participating in the interaction. Each participant element contains a
-description of the molecule in its "normal" form, either by reference to
-an element of the interactorList, or directly in an interactor element. <br>
+description of the molecule in its "normal" form, either by reference
+to
+an element of the interactorList, or directly in an interactor element.
+<br>
 Additional elements of the participant element describe the specific
 form of the molecule in which it participated in the interaction. The
 featureList describes sequence features of the protein, for example
@@ -188,25 +195,26 @@ vocabularies: We think that there is a controlled vocabulary which
 appropriately covers all necessary terms for the given attribute. In
 this case, only terms from the defined vocabulary should be used.</li>
 </ul>
-The following closed controlled vocabularies are referenced by PSI MI.
-Please not the files linked are sample files only, the full vocabularies
-will be available as soon as the PSI MI schema has been publised.<br>
+The following closed controlled vocabularies are referenced by PSI MI:<br>
 <ul>
-  <li>Protein interaction determining experimental methods: <a
- href="../../../controlledVocab/interactionDetectionDef.txt">interactionDetectionDef.txt</a><br>
-  </li>
-  <li>Protein identification experimental methods: <a
- href="../../../controlledVocab/participantDetectionDef.txt">participantDetectionDef.txt</a></li>
-  <li>Experimentat methods to identify protein sequence features,
-normally the binding domain: <a
- href="../../../controlledVocab/featureIdentificationDef.txt">featureIdentificationDef.txt</a><br>
+  <li><span lang="EN-US" style="">interaction type</span></li>
+  <li><span lang="EN-US" style="">sequence
+feature type</span></li>
+  <li><span lang="EN-US" style="">feature detection</span></li>
+  <li><span lang="EN-US" style="">participant detection</span></li>
+  <li><span lang="EN-US" style="">interaction detection<o:p></o:p></span>
   </li>
 </ul>
-The controlled vocabularies which have beed created specifically for
-PSI are represented in the <a href="http://www.geneontology.org">Gene
-Ontology</a> flat file format.<br>
+These CVs are grouped together in one pair of *.dag (hierarchy) and
+*.def (definitions) files in <a href="http://www.geneontology.org">Gene
+Ontology</a> flat file format. (<a href="../../../controlledVocab/">all
+files</a>, GO format: <a href="../../../controlledVocab/psi-mi.dag">psi-mi.dag</a>,
+<a href="../../../controlledVocab/psi-mi.def">psi-mi.def</a>, <a
+ href="../../../controlledVocab/psi-mi.dag.html">HTML version</a> of GO
+format). <br>
 The correctness of references to external controlled vocabularies is
-currently not enforced by the PSI MI schema. It is the responsibility of
+currently not enforced by the PSI MI schema. It is the responsibility
+of
 the data provider to ensure that only existing terms at an up-to-date
 data source are referenced. The World Wide Web Consortium (W3C) has
 recently issued a new <a
@@ -270,7 +278,7 @@ Transforms a file from the expanded into the compact form.</li>
 a file from the compact into the expanded form.<br>
   </li>
   <li><a href="../../src/MIF_view.xsl">MIF_view.xsl</a>: Creates a
-simple HTML view of the PSI-MI file.  This does not show all details of
+simple HTML view of the PSI-MI file. This does not show all details of
 the PSI-MI record.</li>
   <li><a href="http://www.cytoscape.org">Cytoscape</a>: Tool for
 analysis of interaction networks with <a
