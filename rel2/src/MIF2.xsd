@@ -605,9 +605,14 @@
            <xs:documentation>True if the protein has been overexpressed in the experiment.</xs:documentation>
           </xs:annotation>
          </xs:element>
+         <xs:element name="experimentalForm" type="cvType" minOccurs="0">
+          <xs:annotation>
+           <xs:documentation>The form of the participant in the interaction, e.g. protein tags.</xs:documentation>
+          </xs:annotation>
+         </xs:element>
          <xs:element name="experimentalRole" type="cvType" minOccurs="0">
           <xs:annotation>
-           <xs:documentation>The role of the participant in the interaction.</xs:documentation>
+           <xs:documentation>The role of the participant in the interaction, e.g. bait.</xs:documentation>
           </xs:annotation>
          </xs:element>
         </xs:sequence>
@@ -627,6 +632,11 @@
          <xs:element name="dnaParticipantRef" type="refType">
           <xs:annotation>
            <xs:documentation>A reference to the experimental form of the participant.</xs:documentation>
+          </xs:annotation>
+         </xs:element>
+         <xs:element name="experimentalForm" type="cvType" minOccurs="0">
+          <xs:annotation>
+           <xs:documentation>The form of the participant in the interaction.</xs:documentation>
           </xs:annotation>
          </xs:element>
          <xs:element name="experimentalRole" type="cvType" minOccurs="0">
@@ -656,6 +666,11 @@
          <xs:element name="isOverexpressed" type="xs:boolean" minOccurs="0">
           <xs:annotation>
            <xs:documentation>True if the RNA has been overexpressed in the experiment.</xs:documentation>
+          </xs:annotation>
+         </xs:element>
+         <xs:element name="experimentalForm" type="cvType" minOccurs="0">
+          <xs:annotation>
+           <xs:documentation>The form of the participant in the interaction.</xs:documentation>
           </xs:annotation>
          </xs:element>
          <xs:element name="experimentalRole" type="cvType" minOccurs="0">
