@@ -332,7 +332,7 @@
         </xs:annotation>
       </xs:element>
     </xs:sequence>
-    <xs:attribute name="id" type="xs:string" use="required"/>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
   </xs:complexType>
   <xs:complexType name="refType">
     <xs:annotation>
@@ -454,7 +454,7 @@
         </xs:annotation>
       </xs:element>
     </xs:sequence>
-    <xs:attribute name="id" type="xs:string" use="required"/>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
   </xs:complexType>
   <xs:complexType name="availabilityType">
     <xs:annotation>
@@ -462,7 +462,7 @@
     </xs:annotation>
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
