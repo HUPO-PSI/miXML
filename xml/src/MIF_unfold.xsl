@@ -22,14 +22,20 @@
      stylesheet-prefix = "xsi"
      result-prefix="psi"/>
  
+<!-- We empty the interactorList, experimentList and availabilityList  -->
+<!-- values in the output file.                                        -->
 
-<!-- We replace an experimentRef node by the experimentDescription  -->
-<!-- node whose id attribute is the same as the ref attribute here. -->
-
-<xsl:template match="psi:experimentRef">
-  <xsl:copy-of select="/psi:entrySet/psi:entry/psi:experimentList/psi:experimentDescription[@id=current()/@ref]"/>
+<xsl:template match="psi:interactorList">
+    <xsl:copy/>
 </xsl:template>
 
+<xsl:template match="psi:experimentList">
+    <xsl:copy/>
+</xsl:template>
+
+<xsl:template match="psi:availabilityList">
+    <xsl:copy/>
+</xsl:template>
 
 <!-- We replace an availabilityRef node by an availabilityDescription -->
 <!-- node with the same contents as the availabilityList/availability -->
@@ -44,12 +50,19 @@
   </xsl:element>
 </xsl:template>
 
+<!-- We replace an experimentRef node by the experimentDescription  -->
+<!-- node whose id attribute is the same as the ref attribute here. -->
+
+<xsl:template match="psi:experimentRef">
+  <xsl:copy-of select="/psi:entrySet/psi:entry/psi:experimentList/psi:experimentDescription[@id=current()/@ref]"/>
+</xsl:template>
+
 
 <!-- We replace an interactorRef node by the interactorDescription  -->
 <!-- node whose id attribute is the same as the ref attribute here. -->
 
 <xsl:template match="psi:interactorRef">
-  <xsl:copy-of select="/psi:entrySet/psi:entry/psi:interactorList/psi:interactor[@id=current()/@ref]"/>
+  <xsl:copy-of select="/psi:entrySet/psi:entry/psi:interactorList/psi:proteinInteractor[@id=current()/@ref]"/>
 </xsl:template>
 
 
