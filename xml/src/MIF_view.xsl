@@ -182,9 +182,12 @@ This XSLT-Script was developed and tested using SAXON 6.5.2.
 
 <!--Level 4 -->
 <xsl:template match="psi:proteinParticipant">
-  <xsl:param name="ref"><xsl:value-of select="psi:interactorRef/@ref"/></xsl:param>
+  <xsl:param name="ref"><xsl:value-of select="psi:proteinInteractorRef/@ref"/></xsl:param>
   <tr>
-  <td align="center"><a href="#{$ref}"><xsl:value-of select="psi:interactorRef/@ref"/></a></td>
+  <xsl:choose>
+    <xsl:when test="psi:proteinInteractorRef/@ref != ''"><td align="center"><a href="#{$ref}"><xsl:value-of select="psi:proteinInteractorRef/@ref"/></a></td></xsl:when>
+	<xsl:otherwise><td align="center"><xsl:value-of select="psi:proteinInteractor/@id"/></td></xsl:otherwise>
+  </xsl:choose>
   <td align="center"><xsl:value-of select="psi:role"/></td>
   <td align="center"><xsl:value-of select="psi:isTaggedProtein"/></td>
   <td align="center"><xsl:value-of select="psi:isOverexpressedProtein"/></td>

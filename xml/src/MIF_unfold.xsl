@@ -25,15 +25,15 @@
 <!-- We empty the interactorList, experimentList and availabilityList  -->
 <!-- values in the output file.                                        -->
 
-<xsl:template match="psi:interactorList">
+<xsl:template match="psi:/interactorList">
     <xsl:copy/>
 </xsl:template>
 
-<xsl:template match="psi:experimentList">
+<xsl:template match="psi:/experimentList">
     <xsl:copy/>
 </xsl:template>
 
-<xsl:template match="psi:availabilityList">
+<xsl:template match="psi:/availabilityList">
     <xsl:copy/>
 </xsl:template>
 
@@ -42,7 +42,7 @@
 <!-- node whose id attribute is the same as the ref attribute here.   -->
 
 <xsl:template match="psi:availabilityRef">
-  <xsl:element name="availabilityDescription">
+  <xsl:element name="psi:availabilityDescription">
     <xsl:attribute name="id">
       <xsl:value-of select="@ref"/>
     </xsl:attribute>
@@ -61,7 +61,7 @@
 <!-- We replace an interactorRef node by the interactorDescription  -->
 <!-- node whose id attribute is the same as the ref attribute here. -->
 
-<xsl:template match="psi:interactorRef">
+<xsl:template match="psi:proteinInteractorRef">
   <xsl:copy-of select="/psi:entrySet/psi:entry/psi:interactorList/psi:proteinInteractor[@id=current()/@ref]"/>
 </xsl:template>
 

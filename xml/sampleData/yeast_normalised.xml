@@ -3605,13 +3605,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="MAK10"/>
+						<proteinInteractorRef ref="MAK10"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MAK3"/>
+						<proteinInteractorRef ref="MAK3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -3631,19 +3631,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CDC12"/>
+						<proteinInteractorRef ref="CDC12"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MKK2"/>
+						<proteinInteractorRef ref="MKK2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RGD1"/>
+						<proteinInteractorRef ref="RGD1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
@@ -3663,133 +3663,133 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="BZZ1"/>
+						<proteinInteractorRef ref="BZZ1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CHC1"/>
+						<proteinInteractorRef ref="CHC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ECM25"/>
+						<proteinInteractorRef ref="ECM25"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="END3"/>
+						<proteinInteractorRef ref="END3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HXT6"/>
+						<proteinInteractorRef ref="HXT6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HXT7"/>
+						<proteinInteractorRef ref="HXT7"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="LAS17"/>
+						<proteinInteractorRef ref="LAS17"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="LAS17"/>
+						<proteinInteractorRef ref="LAS17"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MYO4"/>
+						<proteinInteractorRef ref="MYO4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PHO84"/>
+						<proteinInteractorRef ref="PHO84"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD51"/>
+						<proteinInteractorRef ref="RAD51"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPN1"/>
+						<proteinInteractorRef ref="RPN1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPN12"/>
+						<proteinInteractorRef ref="RPN12"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RVS167"/>
+						<proteinInteractorRef ref="RVS167"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SLA1"/>
+						<proteinInteractorRef ref="SLA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SLA2"/>
+						<proteinInteractorRef ref="SLA2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="STM1"/>
+						<proteinInteractorRef ref="STM1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="VMA1"/>
+						<proteinInteractorRef ref="VMA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="VRP1"/>
+						<proteinInteractorRef ref="VRP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YCR030C"/>
+						<proteinInteractorRef ref="YCR030C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YHM2"/>
+						<proteinInteractorRef ref="YHM2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPT7"/>
+						<proteinInteractorRef ref="YPT7"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -3809,31 +3809,31 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="END3"/>
+						<proteinInteractorRef ref="END3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SLA1"/>
+						<proteinInteractorRef ref="SLA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="VRP1"/>
+						<proteinInteractorRef ref="VRP1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPT7"/>
+						<proteinInteractorRef ref="YPT7"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YSC84"/>
+						<proteinInteractorRef ref="YSC84"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -3853,13 +3853,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YNL300W"/>
+						<proteinInteractorRef ref="YNL300W"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -3876,25 +3876,25 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ASC1"/>
+						<proteinInteractorRef ref="ASC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFA1"/>
+						<proteinInteractorRef ref="TFA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YER007C-A"/>
+						<proteinInteractorRef ref="YER007C-A"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YER007C-A"/>
+						<proteinInteractorRef ref="YER007C-A"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -3914,13 +3914,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YKR046C"/>
+						<proteinInteractorRef ref="YKR046C"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -3937,13 +3937,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YCR102C"/>
+						<proteinInteractorRef ref="YCR102C"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -3960,13 +3960,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YFR044C"/>
+						<proteinInteractorRef ref="YFR044C"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -3983,19 +3983,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YFR006W"/>
+						<proteinInteractorRef ref="YFR006W"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YFR006W"/>
+						<proteinInteractorRef ref="YFR006W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YFR006W"/>
+						<proteinInteractorRef ref="YFR006W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4015,13 +4015,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YGL099W"/>
+						<proteinInteractorRef ref="YGL099W"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -4038,13 +4038,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YGR245C"/>
+						<proteinInteractorRef ref="YGR245C"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -4061,13 +4061,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YDL148C"/>
+						<proteinInteractorRef ref="YDL148C"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -4084,25 +4084,25 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="MAK10"/>
+						<proteinInteractorRef ref="MAK10"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MAK3"/>
+						<proteinInteractorRef ref="MAK3"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MAK3"/>
+						<proteinInteractorRef ref="MAK3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MAK31"/>
+						<proteinInteractorRef ref="MAK31"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4122,13 +4122,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YNL132W"/>
+						<proteinInteractorRef ref="YNL132W"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -4145,13 +4145,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="RPN9"/>
+						<proteinInteractorRef ref="RPN9"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -4168,19 +4168,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="PYC1"/>
+						<proteinInteractorRef ref="PYC1"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PYC1"/>
+						<proteinInteractorRef ref="PYC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PYC2"/>
+						<proteinInteractorRef ref="PYC2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4200,19 +4200,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="TKL1"/>
+						<proteinInteractorRef ref="TKL1"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TKL1"/>
+						<proteinInteractorRef ref="TKL1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TKL1"/>
+						<proteinInteractorRef ref="TKL1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4232,13 +4232,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="MIP1"/>
+						<proteinInteractorRef ref="MIP1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -4255,31 +4255,31 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="LAT1"/>
+						<proteinInteractorRef ref="LAT1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PDA1"/>
+						<proteinInteractorRef ref="PDA1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PFK1"/>
+						<proteinInteractorRef ref="PFK1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PFK2"/>
+						<proteinInteractorRef ref="PFK2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TIF2"/>
+						<proteinInteractorRef ref="TIF2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4299,19 +4299,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ENO1"/>
+						<proteinInteractorRef ref="ENO1"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ENO1"/>
+						<proteinInteractorRef ref="ENO1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SSC1"/>
+						<proteinInteractorRef ref="SSC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4331,13 +4331,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="LPD1"/>
+						<proteinInteractorRef ref="LPD1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TKL1"/>
+						<proteinInteractorRef ref="TKL1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4357,19 +4357,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="PFK1"/>
+						<proteinInteractorRef ref="PFK1"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PFK1"/>
+						<proteinInteractorRef ref="PFK1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PFK2"/>
+						<proteinInteractorRef ref="PFK2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4389,19 +4389,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="TPI1"/>
+						<proteinInteractorRef ref="TPI1"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TPI1"/>
+						<proteinInteractorRef ref="TPI1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TPI1"/>
+						<proteinInteractorRef ref="TPI1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4421,13 +4421,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="MAK31"/>
+						<proteinInteractorRef ref="MAK31"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -4444,13 +4444,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="TRP1"/>
+						<proteinInteractorRef ref="TRP1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -4467,13 +4467,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="SUR2"/>
+						<proteinInteractorRef ref="SUR2"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -4490,109 +4490,109 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CLU1"/>
+						<proteinInteractorRef ref="CLU1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ECM29"/>
+						<proteinInteractorRef ref="ECM29"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="KAP123"/>
+						<proteinInteractorRef ref="KAP123"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MEC1"/>
+						<proteinInteractorRef ref="MEC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MIS1"/>
+						<proteinInteractorRef ref="MIS1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MRPL23"/>
+						<proteinInteractorRef ref="MRPL23"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="NAB3"/>
+						<proteinInteractorRef ref="NAB3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="NRD1"/>
+						<proteinInteractorRef ref="NRD1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ROM2"/>
+						<proteinInteractorRef ref="ROM2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPA135"/>
+						<proteinInteractorRef ref="RPA135"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SUI3"/>
+						<proteinInteractorRef ref="SUI3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SUP35"/>
+						<proteinInteractorRef ref="SUP35"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SUP35"/>
+						<proteinInteractorRef ref="SUP35"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SUP45"/>
+						<proteinInteractorRef ref="SUP45"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TAO3"/>
+						<proteinInteractorRef ref="TAO3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="VPS5"/>
+						<proteinInteractorRef ref="VPS5"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YJL017W"/>
+						<proteinInteractorRef ref="YJL017W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YML117W"/>
+						<proteinInteractorRef ref="YML117W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4612,13 +4612,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CDC34"/>
+						<proteinInteractorRef ref="CDC34"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -4635,13 +4635,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CDC4"/>
+						<proteinInteractorRef ref="CDC4"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SKP1"/>
+						<proteinInteractorRef ref="SKP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4661,55 +4661,55 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CDC53"/>
+						<proteinInteractorRef ref="CDC53"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PDC6"/>
+						<proteinInteractorRef ref="PDC6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="POR1"/>
+						<proteinInteractorRef ref="POR1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PRB1"/>
+						<proteinInteractorRef ref="PRB1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PTC1"/>
+						<proteinInteractorRef ref="PTC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SKP1"/>
+						<proteinInteractorRef ref="SKP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="THI21"/>
+						<proteinInteractorRef ref="THI21"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YBR280C"/>
+						<proteinInteractorRef ref="YBR280C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YLR352W"/>
+						<proteinInteractorRef ref="YLR352W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4729,79 +4729,79 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CDC53"/>
+						<proteinInteractorRef ref="CDC53"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="COF1"/>
+						<proteinInteractorRef ref="COF1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CPH1"/>
+						<proteinInteractorRef ref="CPH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="FOL2"/>
+						<proteinInteractorRef ref="FOL2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="GRR1"/>
+						<proteinInteractorRef ref="GRR1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HTB2"/>
+						<proteinInteractorRef ref="HTB2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PDC5"/>
+						<proteinInteractorRef ref="PDC5"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PDC6"/>
+						<proteinInteractorRef ref="PDC6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PFK1"/>
+						<proteinInteractorRef ref="PFK1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="POR1"/>
+						<proteinInteractorRef ref="POR1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SAH1"/>
+						<proteinInteractorRef ref="SAH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SKP1"/>
+						<proteinInteractorRef ref="SKP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="UBI4"/>
+						<proteinInteractorRef ref="UBI4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4821,121 +4821,121 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ADR1"/>
+						<proteinInteractorRef ref="ADR1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="BBC1"/>
+						<proteinInteractorRef ref="BBC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CDC39"/>
+						<proteinInteractorRef ref="CDC39"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CDC53"/>
+						<proteinInteractorRef ref="CDC53"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CRM1"/>
+						<proteinInteractorRef ref="CRM1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ECM33"/>
+						<proteinInteractorRef ref="ECM33"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="GCN1"/>
+						<proteinInteractorRef ref="GCN1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HRT1"/>
+						<proteinInteractorRef ref="HRT1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HYP2"/>
+						<proteinInteractorRef ref="HYP2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="KIM3"/>
+						<proteinInteractorRef ref="KIM3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PFK1"/>
+						<proteinInteractorRef ref="PFK1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PMA2"/>
+						<proteinInteractorRef ref="PMA2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPN1"/>
+						<proteinInteractorRef ref="RPN1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RTT101"/>
+						<proteinInteractorRef ref="RTT101"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SEC27"/>
+						<proteinInteractorRef ref="SEC27"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="UBI4"/>
+						<proteinInteractorRef ref="UBI4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YAR009C"/>
+						<proteinInteractorRef ref="YAR009C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YGP1"/>
+						<proteinInteractorRef ref="YGP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YLR035C-A"/>
+						<proteinInteractorRef ref="YLR035C-A"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YLR106C"/>
+						<proteinInteractorRef ref="YLR106C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -4955,13 +4955,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="KEX2"/>
+						<proteinInteractorRef ref="KEX2"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -4978,61 +4978,61 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CDC53"/>
+						<proteinInteractorRef ref="CDC53"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HRT1"/>
+						<proteinInteractorRef ref="HRT1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MET30"/>
+						<proteinInteractorRef ref="MET30"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MET31"/>
+						<proteinInteractorRef ref="MET31"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MET4"/>
+						<proteinInteractorRef ref="MET4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RUB1"/>
+						<proteinInteractorRef ref="RUB1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SIS1"/>
+						<proteinInteractorRef ref="SIS1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SKP1"/>
+						<proteinInteractorRef ref="SKP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TEF4"/>
+						<proteinInteractorRef ref="TEF4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="UBI4"/>
+						<proteinInteractorRef ref="UBI4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -5052,127 +5052,127 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="BUR2"/>
+						<proteinInteractorRef ref="BUR2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HTA1"/>
+						<proteinInteractorRef ref="HTA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MSH4"/>
+						<proteinInteractorRef ref="MSH4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="NAB3"/>
+						<proteinInteractorRef ref="NAB3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="NPL3"/>
+						<proteinInteractorRef ref="NPL3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="NRD1"/>
+						<proteinInteractorRef ref="NRD1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PRP40"/>
+						<proteinInteractorRef ref="PRP40"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PRP42"/>
+						<proteinInteractorRef ref="PRP42"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RLR1"/>
+						<proteinInteractorRef ref="RLR1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RSE1"/>
+						<proteinInteractorRef ref="RSE1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SCP160"/>
+						<proteinInteractorRef ref="SCP160"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SEN1"/>
+						<proteinInteractorRef ref="SEN1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SGV1"/>
+						<proteinInteractorRef ref="SGV1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SNP1"/>
+						<proteinInteractorRef ref="SNP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SNU56"/>
+						<proteinInteractorRef ref="SNU56"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SRO9"/>
+						<proteinInteractorRef ref="SRO9"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SRP1"/>
+						<proteinInteractorRef ref="SRP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="STO1"/>
+						<proteinInteractorRef ref="STO1"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="STO1"/>
+						<proteinInteractorRef ref="STO1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YDL175C"/>
+						<proteinInteractorRef ref="YDL175C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YKL214C"/>
+						<proteinInteractorRef ref="YKL214C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -5192,13 +5192,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="SGT2"/>
+						<proteinInteractorRef ref="SGT2"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -5215,49 +5215,49 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="BOP2"/>
+						<proteinInteractorRef ref="BOP2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CDC4"/>
+						<proteinInteractorRef ref="CDC4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CDC53"/>
+						<proteinInteractorRef ref="CDC53"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PRB1"/>
+						<proteinInteractorRef ref="PRB1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SGT1"/>
+						<proteinInteractorRef ref="SGT1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SKP1"/>
+						<proteinInteractorRef ref="SKP1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="UFO1"/>
+						<proteinInteractorRef ref="UFO1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YDR131C"/>
+						<proteinInteractorRef ref="YDR131C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -5277,115 +5277,115 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CAR2"/>
+						<proteinInteractorRef ref="CAR2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="DUN1"/>
+						<proteinInteractorRef ref="DUN1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="FAR1"/>
+						<proteinInteractorRef ref="FAR1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="GPD1"/>
+						<proteinInteractorRef ref="GPD1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="GPD2"/>
+						<proteinInteractorRef ref="GPD2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MSI1"/>
+						<proteinInteractorRef ref="MSI1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PDC6"/>
+						<proteinInteractorRef ref="PDC6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD1"/>
+						<proteinInteractorRef ref="RAD1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SEC6"/>
+						<proteinInteractorRef ref="SEC6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SEN1"/>
+						<proteinInteractorRef ref="SEN1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="STE20"/>
+						<proteinInteractorRef ref="STE20"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="UBI4"/>
+						<proteinInteractorRef ref="UBI4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YAL027W"/>
+						<proteinInteractorRef ref="YAL027W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YDR324C"/>
+						<proteinInteractorRef ref="YDR324C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YGR086C"/>
+						<proteinInteractorRef ref="YGR086C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YHR033W"/>
+						<proteinInteractorRef ref="YHR033W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YLR368W"/>
+						<proteinInteractorRef ref="YLR368W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YNL116W"/>
+						<proteinInteractorRef ref="YNL116W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPL004C"/>
+						<proteinInteractorRef ref="YPL004C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -5405,67 +5405,67 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ARC1"/>
+						<proteinInteractorRef ref="ARC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CPH1"/>
+						<proteinInteractorRef ref="CPH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="FUM1"/>
+						<proteinInteractorRef ref="FUM1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PRO1"/>
+						<proteinInteractorRef ref="PRO1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD1"/>
+						<proteinInteractorRef ref="RAD1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD10"/>
+						<proteinInteractorRef ref="RAD10"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RNR2"/>
+						<proteinInteractorRef ref="RNR2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SAH1"/>
+						<proteinInteractorRef ref="SAH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SOD2"/>
+						<proteinInteractorRef ref="SOD2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFP1"/>
+						<proteinInteractorRef ref="TFP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TIF2"/>
+						<proteinInteractorRef ref="TIF2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -5485,25 +5485,25 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CTF4"/>
+						<proteinInteractorRef ref="CTF4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD14"/>
+						<proteinInteractorRef ref="RAD14"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD16"/>
+						<proteinInteractorRef ref="RAD16"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD4"/>
+						<proteinInteractorRef ref="RAD4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -5523,121 +5523,121 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ADH1"/>
+						<proteinInteractorRef ref="ADH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="GND1"/>
+						<proteinInteractorRef ref="GND1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HHF1"/>
+						<proteinInteractorRef ref="HHF1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HTB2"/>
+						<proteinInteractorRef ref="HTB2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HTZ1"/>
+						<proteinInteractorRef ref="HTZ1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MIR1"/>
+						<proteinInteractorRef ref="MIR1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PDC1"/>
+						<proteinInteractorRef ref="PDC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PDX1"/>
+						<proteinInteractorRef ref="PDX1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PEP4"/>
+						<proteinInteractorRef ref="PEP4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD16"/>
+						<proteinInteractorRef ref="RAD16"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD16"/>
+						<proteinInteractorRef ref="RAD16"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD7"/>
+						<proteinInteractorRef ref="RAD7"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RIM1"/>
+						<proteinInteractorRef ref="RIM1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SHP1"/>
+						<proteinInteractorRef ref="SHP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TDH3"/>
+						<proteinInteractorRef ref="TDH3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="VPS1"/>
+						<proteinInteractorRef ref="VPS1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="WRS1"/>
+						<proteinInteractorRef ref="WRS1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YDR453C"/>
+						<proteinInteractorRef ref="YDR453C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YMR226C"/>
+						<proteinInteractorRef ref="YMR226C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YMR315W"/>
+						<proteinInteractorRef ref="YMR315W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -5657,13 +5657,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="RAD17"/>
+						<proteinInteractorRef ref="RAD17"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -5680,13 +5680,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="RAD18"/>
+						<proteinInteractorRef ref="RAD18"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -5703,19 +5703,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="PEX15"/>
+						<proteinInteractorRef ref="PEX15"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD2"/>
+						<proteinInteractorRef ref="RAD2"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -5732,115 +5732,115 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ECM29"/>
+						<proteinInteractorRef ref="ECM29"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="KAP95"/>
+						<proteinInteractorRef ref="KAP95"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MEC1"/>
+						<proteinInteractorRef ref="MEC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PGK1"/>
+						<proteinInteractorRef ref="PGK1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD23"/>
+						<proteinInteractorRef ref="RAD23"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD4"/>
+						<proteinInteractorRef ref="RAD4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD52"/>
+						<proteinInteractorRef ref="RAD52"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RFA1"/>
+						<proteinInteractorRef ref="RFA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPN10"/>
+						<proteinInteractorRef ref="RPN10"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPN12"/>
+						<proteinInteractorRef ref="RPN12"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPN3"/>
+						<proteinInteractorRef ref="RPN3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPN6"/>
+						<proteinInteractorRef ref="RPN6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPT2"/>
+						<proteinInteractorRef ref="RPT2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPT3"/>
+						<proteinInteractorRef ref="RPT3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPT6"/>
+						<proteinInteractorRef ref="RPT6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SRO7"/>
+						<proteinInteractorRef ref="SRO7"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFA1"/>
+						<proteinInteractorRef ref="TFA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFB1"/>
+						<proteinInteractorRef ref="TFB1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFB4"/>
+						<proteinInteractorRef ref="TFB4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -5860,13 +5860,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="MUD13"/>
+						<proteinInteractorRef ref="MUD13"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -5883,67 +5883,67 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CCT3"/>
+						<proteinInteractorRef ref="CCT3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="DUN1"/>
+						<proteinInteractorRef ref="DUN1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD24"/>
+						<proteinInteractorRef ref="RAD24"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RFC2"/>
+						<proteinInteractorRef ref="RFC2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RFC3"/>
+						<proteinInteractorRef ref="RFC3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RFC5"/>
+						<proteinInteractorRef ref="RFC5"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPT3"/>
+						<proteinInteractorRef ref="RPT3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TCP1"/>
+						<proteinInteractorRef ref="TCP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YDR214W"/>
+						<proteinInteractorRef ref="YDR214W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YJR072C"/>
+						<proteinInteractorRef ref="YJR072C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YLR413W"/>
+						<proteinInteractorRef ref="YLR413W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -5963,97 +5963,97 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ACH1"/>
+						<proteinInteractorRef ref="ACH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ACO1"/>
+						<proteinInteractorRef ref="ACO1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ADH4"/>
+						<proteinInteractorRef ref="ADH4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="BIO3"/>
+						<proteinInteractorRef ref="BIO3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CDC33"/>
+						<proteinInteractorRef ref="CDC33"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ECM10"/>
+						<proteinInteractorRef ref="ECM10"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MDH1"/>
+						<proteinInteractorRef ref="MDH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="QCR2"/>
+						<proteinInteractorRef ref="QCR2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD26"/>
+						<proteinInteractorRef ref="RAD26"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD3"/>
+						<proteinInteractorRef ref="RAD3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RHR2"/>
+						<proteinInteractorRef ref="RHR2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SEC53"/>
+						<proteinInteractorRef ref="SEC53"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TEF4"/>
+						<proteinInteractorRef ref="TEF4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFP1"/>
+						<proteinInteractorRef ref="TFP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YDR326C"/>
+						<proteinInteractorRef ref="YDR326C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YMR318C"/>
+						<proteinInteractorRef ref="YMR318C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -6073,19 +6073,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="POL30"/>
+						<proteinInteractorRef ref="POL30"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD27"/>
+						<proteinInteractorRef ref="RAD27"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6102,25 +6102,25 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CCT6"/>
+						<proteinInteractorRef ref="CCT6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="DUN1"/>
+						<proteinInteractorRef ref="DUN1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD28"/>
+						<proteinInteractorRef ref="RAD28"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TCP1"/>
+						<proteinInteractorRef ref="TCP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -6140,91 +6140,91 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="AAC1"/>
+						<proteinInteractorRef ref="AAC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="AAC3"/>
+						<proteinInteractorRef ref="AAC3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ACO1"/>
+						<proteinInteractorRef ref="ACO1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ASC1"/>
+						<proteinInteractorRef ref="ASC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CCL1"/>
+						<proteinInteractorRef ref="CCL1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="GCN1"/>
+						<proteinInteractorRef ref="GCN1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="LSC1"/>
+						<proteinInteractorRef ref="LSC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MET18"/>
+						<proteinInteractorRef ref="MET18"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD3"/>
+						<proteinInteractorRef ref="RAD3"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD3"/>
+						<proteinInteractorRef ref="RAD3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPT3"/>
+						<proteinInteractorRef ref="RPT3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPT6"/>
+						<proteinInteractorRef ref="RPT6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFB3"/>
+						<proteinInteractorRef ref="TFB3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TUB3"/>
+						<proteinInteractorRef ref="TUB3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YDJ1"/>
+						<proteinInteractorRef ref="YDJ1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -6244,19 +6244,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="GPH1"/>
+						<proteinInteractorRef ref="GPH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD30"/>
+						<proteinInteractorRef ref="RAD30"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6273,13 +6273,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="RAD4"/>
+						<proteinInteractorRef ref="RAD4"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6296,13 +6296,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="RAD5"/>
+						<proteinInteractorRef ref="RAD5"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6319,19 +6319,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="MRE11"/>
+						<proteinInteractorRef ref="MRE11"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD50"/>
+						<proteinInteractorRef ref="RAD50"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SEC27"/>
+						<proteinInteractorRef ref="SEC27"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -6351,91 +6351,91 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ARO1"/>
+						<proteinInteractorRef ref="ARO1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CCT8"/>
+						<proteinInteractorRef ref="CCT8"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CLU1"/>
+						<proteinInteractorRef ref="CLU1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="GCN20"/>
+						<proteinInteractorRef ref="GCN20"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="GFA1"/>
+						<proteinInteractorRef ref="GFA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MLH1"/>
+						<proteinInteractorRef ref="MLH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PFK1"/>
+						<proteinInteractorRef ref="PFK1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD51"/>
+						<proteinInteractorRef ref="RAD51"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD51"/>
+						<proteinInteractorRef ref="RAD51"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD52"/>
+						<proteinInteractorRef ref="RAD52"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPA135"/>
+						<proteinInteractorRef ref="RPA135"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RPT6"/>
+						<proteinInteractorRef ref="RPT6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RVB2"/>
+						<proteinInteractorRef ref="RVB2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YGL245W"/>
+						<proteinInteractorRef ref="YGL245W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YHB1"/>
+						<proteinInteractorRef ref="YHB1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -6455,13 +6455,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="TCP1"/>
+						<proteinInteractorRef ref="TCP1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6478,19 +6478,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ALD5"/>
+						<proteinInteractorRef ref="ALD5"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD52"/>
+						<proteinInteractorRef ref="RAD52"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6507,109 +6507,109 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ASF1"/>
+						<proteinInteractorRef ref="ASF1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CDC13"/>
+						<proteinInteractorRef ref="CDC13"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="DUN1"/>
+						<proteinInteractorRef ref="DUN1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="EDE1"/>
+						<proteinInteractorRef ref="EDE1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HTA2"/>
+						<proteinInteractorRef ref="HTA2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="IPP1"/>
+						<proteinInteractorRef ref="IPP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="KAP95"/>
+						<proteinInteractorRef ref="KAP95"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MDH1"/>
+						<proteinInteractorRef ref="MDH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PTC2"/>
+						<proteinInteractorRef ref="PTC2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD53"/>
+						<proteinInteractorRef ref="RAD53"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SMC3"/>
+						<proteinInteractorRef ref="SMC3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SRP1"/>
+						<proteinInteractorRef ref="SRP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SWI4"/>
+						<proteinInteractorRef ref="SWI4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TBF1"/>
+						<proteinInteractorRef ref="TBF1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YDR071C"/>
+						<proteinInteractorRef ref="YDR071C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YGR090W"/>
+						<proteinInteractorRef ref="YGR090W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YMR135C"/>
+						<proteinInteractorRef ref="YMR135C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YTA7"/>
+						<proteinInteractorRef ref="YTA7"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -6629,19 +6629,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="MGE1"/>
+						<proteinInteractorRef ref="MGE1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD54"/>
+						<proteinInteractorRef ref="RAD54"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6658,19 +6658,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="PTC3"/>
+						<proteinInteractorRef ref="PTC3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD55"/>
+						<proteinInteractorRef ref="RAD55"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6687,13 +6687,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="RAD57"/>
+						<proteinInteractorRef ref="RAD57"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6710,13 +6710,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="RAD59"/>
+						<proteinInteractorRef ref="RAD59"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SEC27"/>
+						<proteinInteractorRef ref="SEC27"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -6736,13 +6736,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="RAD6"/>
+						<proteinInteractorRef ref="RAD6"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="UBA1"/>
+						<proteinInteractorRef ref="UBA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -6762,13 +6762,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="RAD7"/>
+						<proteinInteractorRef ref="RAD7"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6785,19 +6785,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="DUN1"/>
+						<proteinInteractorRef ref="DUN1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD9"/>
+						<proteinInteractorRef ref="RAD9"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6814,19 +6814,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="BDF1"/>
+						<proteinInteractorRef ref="BDF1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="BDF2"/>
+						<proteinInteractorRef ref="BDF2"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6843,13 +6843,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="TFC1"/>
+						<proteinInteractorRef ref="TFC1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -6866,61 +6866,61 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ARP2"/>
+						<proteinInteractorRef ref="ARP2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CBK1"/>
+						<proteinInteractorRef ref="CBK1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ECM10"/>
+						<proteinInteractorRef ref="ECM10"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MOB2"/>
+						<proteinInteractorRef ref="MOB2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PRB1"/>
+						<proteinInteractorRef ref="PRB1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SGT2"/>
+						<proteinInteractorRef ref="SGT2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SIS1"/>
+						<proteinInteractorRef ref="SIS1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TAO3"/>
+						<proteinInteractorRef ref="TAO3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="UBP15"/>
+						<proteinInteractorRef ref="UBP15"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="VMA6"/>
+						<proteinInteractorRef ref="VMA6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -6940,19 +6940,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="AUT2"/>
+						<proteinInteractorRef ref="AUT2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CDC15"/>
+						<proteinInteractorRef ref="CDC15"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFP1"/>
+						<proteinInteractorRef ref="TFP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -6972,73 +6972,73 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ADH4"/>
+						<proteinInteractorRef ref="ADH4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CDC33"/>
+						<proteinInteractorRef ref="CDC33"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CPH1"/>
+						<proteinInteractorRef ref="CPH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="DUN1"/>
+						<proteinInteractorRef ref="DUN1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HOM2"/>
+						<proteinInteractorRef ref="HOM2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PDX3"/>
+						<proteinInteractorRef ref="PDX3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PGM2"/>
+						<proteinInteractorRef ref="PGM2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SOD1"/>
+						<proteinInteractorRef ref="SOD1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="VMA4"/>
+						<proteinInteractorRef ref="VMA4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YDR214W"/>
+						<proteinInteractorRef ref="YDR214W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YFL030W"/>
+						<proteinInteractorRef ref="YFL030W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YMR226C"/>
+						<proteinInteractorRef ref="YMR226C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -7058,13 +7058,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ESR1"/>
+						<proteinInteractorRef ref="ESR1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -7081,13 +7081,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="FZF1"/>
+						<proteinInteractorRef ref="FZF1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -7104,73 +7104,73 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="GDI1"/>
+						<proteinInteractorRef ref="GDI1"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="GDI1"/>
+						<proteinInteractorRef ref="GDI1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SEC4"/>
+						<proteinInteractorRef ref="SEC4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="STE11"/>
+						<proteinInteractorRef ref="STE11"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="VPS21"/>
+						<proteinInteractorRef ref="VPS21"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPT1"/>
+						<proteinInteractorRef ref="YPT1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPT10"/>
+						<proteinInteractorRef ref="YPT10"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPT31"/>
+						<proteinInteractorRef ref="YPT31"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPT32"/>
+						<proteinInteractorRef ref="YPT32"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPT52"/>
+						<proteinInteractorRef ref="YPT52"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPT6"/>
+						<proteinInteractorRef ref="YPT6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPT7"/>
+						<proteinInteractorRef ref="YPT7"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -7190,13 +7190,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="GUT1"/>
+						<proteinInteractorRef ref="GUT1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -7213,13 +7213,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="IRA2"/>
+						<proteinInteractorRef ref="IRA2"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -7236,121 +7236,121 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="DNA2"/>
+						<proteinInteractorRef ref="DNA2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HDA1"/>
+						<proteinInteractorRef ref="HDA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MGE1"/>
+						<proteinInteractorRef ref="MGE1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MGM101"/>
+						<proteinInteractorRef ref="MGM101"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MLH1"/>
+						<proteinInteractorRef ref="MLH1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MSH2"/>
+						<proteinInteractorRef ref="MSH2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PMS1"/>
+						<proteinInteractorRef ref="PMS1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RAD52"/>
+						<proteinInteractorRef ref="RAD52"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RFA1"/>
+						<proteinInteractorRef ref="RFA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RFA2"/>
+						<proteinInteractorRef ref="RFA2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RFA3"/>
+						<proteinInteractorRef ref="RFA3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RIM1"/>
+						<proteinInteractorRef ref="RIM1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RNH1"/>
+						<proteinInteractorRef ref="RNH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SGS1"/>
+						<proteinInteractorRef ref="SGS1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TIF2"/>
+						<proteinInteractorRef ref="TIF2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TOP3"/>
+						<proteinInteractorRef ref="TOP3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="VAS1"/>
+						<proteinInteractorRef ref="VAS1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YDL156W"/>
+						<proteinInteractorRef ref="YDL156W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YHR122W"/>
+						<proteinInteractorRef ref="YHR122W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YOR155C"/>
+						<proteinInteractorRef ref="YOR155C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -7370,103 +7370,103 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="DNA2"/>
+						<proteinInteractorRef ref="DNA2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HSC82"/>
+						<proteinInteractorRef ref="HSC82"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="KAP95"/>
+						<proteinInteractorRef ref="KAP95"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="LCD1"/>
+						<proteinInteractorRef ref="LCD1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MGM101"/>
+						<proteinInteractorRef ref="MGM101"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MLH1"/>
+						<proteinInteractorRef ref="MLH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MSH2"/>
+						<proteinInteractorRef ref="MSH2"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MSH2"/>
+						<proteinInteractorRef ref="MSH2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MSH3"/>
+						<proteinInteractorRef ref="MSH3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MSH6"/>
+						<proteinInteractorRef ref="MSH6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PGK1"/>
+						<proteinInteractorRef ref="PGK1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PLO1"/>
+						<proteinInteractorRef ref="PLO1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PLO2"/>
+						<proteinInteractorRef ref="PLO2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RNH1"/>
+						<proteinInteractorRef ref="RNH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RSC8"/>
+						<proteinInteractorRef ref="RSC8"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TIF2"/>
+						<proteinInteractorRef ref="TIF2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YHR122W"/>
+						<proteinInteractorRef ref="YHR122W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -7486,31 +7486,31 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ADE4"/>
+						<proteinInteractorRef ref="ADE4"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ADE4"/>
+						<proteinInteractorRef ref="ADE4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ADE4"/>
+						<proteinInteractorRef ref="ADE4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ADE4"/>
+						<proteinInteractorRef ref="ADE4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="ADE4"/>
+						<proteinInteractorRef ref="ADE4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -7530,127 +7530,127 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="HDA1"/>
+						<proteinInteractorRef ref="HDA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="HSC82"/>
+						<proteinInteractorRef ref="HSC82"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="LCD1"/>
+						<proteinInteractorRef ref="LCD1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MEC1"/>
+						<proteinInteractorRef ref="MEC1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MGM101"/>
+						<proteinInteractorRef ref="MGM101"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MLH1"/>
+						<proteinInteractorRef ref="MLH1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MSH3"/>
+						<proteinInteractorRef ref="MSH3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MSH6"/>
+						<proteinInteractorRef ref="MSH6"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MSH6"/>
+						<proteinInteractorRef ref="MSH6"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PGK1"/>
+						<proteinInteractorRef ref="PGK1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PLO1"/>
+						<proteinInteractorRef ref="PLO1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PLO2"/>
+						<proteinInteractorRef ref="PLO2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PMS1"/>
+						<proteinInteractorRef ref="PMS1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RFA3"/>
+						<proteinInteractorRef ref="RFA3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RIM1"/>
+						<proteinInteractorRef ref="RIM1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RSC8"/>
+						<proteinInteractorRef ref="RSC8"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RVB2"/>
+						<proteinInteractorRef ref="RVB2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SGS1"/>
+						<proteinInteractorRef ref="SGS1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TOP3"/>
+						<proteinInteractorRef ref="TOP3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="VAS1"/>
+						<proteinInteractorRef ref="VAS1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YDL156W"/>
+						<proteinInteractorRef ref="YDL156W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -7670,13 +7670,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="NCR1"/>
+						<proteinInteractorRef ref="NCR1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -7693,13 +7693,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="PMA1"/>
+						<proteinInteractorRef ref="PMA1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -7716,13 +7716,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="SCH9"/>
+						<proteinInteractorRef ref="SCH9"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -7739,19 +7739,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="BRE2"/>
+						<proteinInteractorRef ref="BRE2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SET1"/>
+						<proteinInteractorRef ref="SET1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -7768,13 +7768,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="SGS1"/>
+						<proteinInteractorRef ref="SGS1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -7791,13 +7791,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="SOD1"/>
+						<proteinInteractorRef ref="SOD1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -7814,91 +7814,91 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="CCL1"/>
+						<proteinInteractorRef ref="CCL1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CDC95"/>
+						<proteinInteractorRef ref="CDC95"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="FAP1"/>
+						<proteinInteractorRef ref="FAP1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="FPR1"/>
+						<proteinInteractorRef ref="FPR1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="KAP95"/>
+						<proteinInteractorRef ref="KAP95"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="KIN28"/>
+						<proteinInteractorRef ref="KIN28"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="MRPS28"/>
+						<proteinInteractorRef ref="MRPS28"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SPT7"/>
+						<proteinInteractorRef ref="SPT7"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SSL1"/>
+						<proteinInteractorRef ref="SSL1"/>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SSL1"/>
+						<proteinInteractorRef ref="SSL1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFA1"/>
+						<proteinInteractorRef ref="TFA1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFB1"/>
+						<proteinInteractorRef ref="TFB1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFB3"/>
+						<proteinInteractorRef ref="TFB3"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="TFB4"/>
+						<proteinInteractorRef ref="TFB4"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YOR173W"/>
+						<proteinInteractorRef ref="YOR173W"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -7918,13 +7918,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="SSL2"/>
+						<proteinInteractorRef ref="SSL2"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="STI1"/>
+						<proteinInteractorRef ref="STI1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -7944,13 +7944,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="TEL1"/>
+						<proteinInteractorRef ref="TEL1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPL110C"/>
+						<proteinInteractorRef ref="YPL110C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -7970,19 +7970,19 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="RVS161"/>
+						<proteinInteractorRef ref="RVS161"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RVS167"/>
+						<proteinInteractorRef ref="RVS167"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="YPL249C"/>
+						<proteinInteractorRef ref="YPL249C"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
@@ -8002,13 +8002,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YDL085W"/>
+						<proteinInteractorRef ref="YDL085W"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -8025,13 +8025,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YMR145C"/>
+						<proteinInteractorRef ref="YMR145C"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -8048,13 +8048,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YPK1"/>
+						<proteinInteractorRef ref="YPK1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -8071,13 +8071,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="BAS1"/>
+						<proteinInteractorRef ref="BAS1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -8094,13 +8094,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="GRF10"/>
+						<proteinInteractorRef ref="GRF10"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -8117,13 +8117,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="YOR155C"/>
+						<proteinInteractorRef ref="YOR155C"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -8140,13 +8140,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="BOI1"/>
+						<proteinInteractorRef ref="BOI1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -8163,13 +8163,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="BOI2"/>
+						<proteinInteractorRef ref="BOI2"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -8186,13 +8186,13 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="SRA1"/>
+						<proteinInteractorRef ref="SRA1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="dummy"/>
+						<proteinInteractorRef ref="dummy"/>
 					</proteinParticipant>
 				</participantList>
 				<interactionType>
@@ -8209,31 +8209,31 @@ http://psidev.sourceforge.net/mi/xml/src/MIF.xsd" level="1" version="1">
 <experimentRef ref="lcms-maldi"/>
 </experimentList>				<participantList>
 					<proteinParticipant>
-						<interactorRef ref="ACT1"/>
+						<proteinInteractorRef ref="ACT1"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="CYR1"/>
+						<proteinInteractorRef ref="CYR1"/>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
 						<isOverexpressedProtein>true</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="PHO81"/>
+						<proteinInteractorRef ref="PHO81"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="RNR2"/>
+						<proteinInteractorRef ref="RNR2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>
 					</proteinParticipant>
 					<proteinParticipant>
-						<interactorRef ref="SRV2"/>
+						<proteinInteractorRef ref="SRV2"/>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
 						<isOverexpressedProtein>false</isOverexpressedProtein>

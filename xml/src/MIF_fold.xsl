@@ -33,13 +33,13 @@
 
 <!-- Copy availability description for each distinct availability id to availabilityList -->
 <xsl:template match="psi:availabilityList" >
-  <xsl:element name="availabilityList">  
+  <xsl:element name="psi:availabilityList">  
     <xsl:for-each select="//psi:availability[generate-id(.)=
                    generate-id(key('avail-ids', @id)[1])]
                         | //psi:availabilityDescription[generate-id(.)=
                    generate-id(key('avail-ids', @id)[1])]">
       <xsl:sort select="@id"/>
-      <xsl:element name="availability">
+      <xsl:element name="psi:availability">
 <xsl:attribute name="id">
           <xsl:value-of select="@id"/>
 </xsl:attribute>
@@ -51,7 +51,7 @@
 
 <!-- Replace every availability in the interactionList with a reference -->
 <xsl:template match="psi:interactionList//psi:availabilityDescription">
-  <xsl:element name="availabilityRef">  
+  <xsl:element name="psi:availabilityRef">  
     <xsl:attribute name="ref">
       <xsl:value-of select="@id"/>
     </xsl:attribute>
@@ -66,7 +66,7 @@
 
 <!-- Copy experiment description for each distinct experiment id to experimentList -->
 <xsl:template match="psi:experimentList" >
-  <xsl:element name="experimentList">  
+  <xsl:element name="psi:experimentList">  
     <xsl:for-each select="//psi:experimentDescription[generate-id(.)=
                            generate-id(key('exp-ids', @id)[1])]">
       <xsl:sort select="@id"/>
@@ -77,7 +77,7 @@
 
 <!-- Replace every experiment in the interactionList with a reference -->
 <xsl:template match="psi:interactionList//psi:experimentDescription" >
-  <xsl:element name="experimentRef">  
+  <xsl:element name="psi:experimentRef">  
     <xsl:attribute name="ref">
     <xsl:value-of select="@id"/>
   </xsl:attribute>
@@ -92,7 +92,7 @@
 
 <!-- Copy interactor for each distinct interactor id to interactorList -->
 <xsl:template match="psi:interactorList" >
-  <xsl:element name="interactorList">  
+  <xsl:element name="psi:interactorList">  
     <xsl:for-each select="//psi:proteinInteractor[generate-id(.)=
                            generate-id(key('int-ids', @id)[1])]">
       <xsl:sort select="@id"/>
@@ -103,7 +103,7 @@
 
 <!-- Replace every interaction in the interactionList with a reference -->
 <xsl:template match="psi:interactionList//psi:ProteinInteractor" >
-  <xsl:element name="interactorRef">  
+  <xsl:element name="psi:proteinInteractorRef">  
     <xsl:attribute name="ref">
       <xsl:value-of select="@id"/>
     </xsl:attribute>
