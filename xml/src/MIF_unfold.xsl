@@ -13,27 +13,25 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <xsl:stylesheet version="1.0"
+  xmlns="net:sf:psidev:mi"
   xmlns:psi="net:sf:psidev:mi" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:output method="xml" indent="yes"/>
-<xsl:namespace-alias
-     stylesheet-prefix = "xsi"
-     result-prefix="psi"/>
  
 <!-- We empty the interactorList, experimentList and availabilityList  -->
 <!-- values in the output file.                                        -->
 
-<xsl:template match="psi:/interactorList">
+<xsl:template match="/interactorList">
     <xsl:copy/>
 </xsl:template>
 
-<xsl:template match="psi:/experimentList">
+<xsl:template match="/experimentList">
     <xsl:copy/>
 </xsl:template>
 
-<xsl:template match="psi:/availabilityList">
+<xsl:template match="/availabilityList">
     <xsl:copy/>
 </xsl:template>
 
@@ -42,7 +40,7 @@
 <!-- node whose id attribute is the same as the ref attribute here.   -->
 
 <xsl:template match="psi:availabilityRef">
-  <xsl:element name="psi:availabilityDescription">
+  <xsl:element name="availabilityDescription">
     <xsl:attribute name="id">
       <xsl:value-of select="@ref"/>
     </xsl:attribute>
