@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>HUPO Proteomics Standards Initiative Protein Interaction
+Specification Documentation</title>
+</head>
+<body>
+<a href="http://psidev.sourceforge.net"><img src="psi.gif" width="113"
+ height="75" border="0" align="left"></a> <a
+ href="http://www.hupo.org/"><img src="hupo.gif" width="113" height="75"
+ border="0" align="right"></a> <br clear="all">
+<center>
+<h2><a name="mozTocId916500" class="mozTocH2"></a><a
+ href="http://psidev.sourceforge.net">Proteomics Standards Initiative</a>
+<br>
+</h2>
+<h2><a name="mozTocId992260" class="mozTocH2"></a>Molecular Interaction
+XML Format 2.0<br>
+</h2>
+<h2><a name="mozTocId863651" class="mozTocH2"></a>Documentation of
+changes from version 1.0 to 2.0<br>
+</h2>
+<div style="text-align: left;">
+<ol>
+  <li>id attributes</li>
+  <ol>
+    <li>The type of id attributes has been changed from xs:ID to
+xs:int. xs:ID requires that any id is unique in the file. This was
+incompatible with the denormalised form of MIF 1.0, where e.g. the same
+protein may be listed more than once.<br>
+Ids are now defined to be arbibrary integers, unique to each
+&lt;entry&gt;.<br>
+The type xs:int has been chosen to provide an easy mapping to standard
+data types, as it provides a limited range of integers, while
+xs:integer represents the mathmatical concept of integers with an
+unlimited value range.</li>
+    <li>All major objects now have an id attribute, namely
+&lt;experiment&gt;, &lt;interaction&gt;, and all interactor and
+participant types.</li>
+  </ol>
+  <li>Method-related elements have been renamed for clarity: </li>
+  <ol>
+    <li>ParticipantDetection -&gt;
+ParticipantIdentificationMethod</li>
+    <li>InteractionDetection -&gt; InteractionDetectionMethod</li>
+    <li>FeatureDetection -&gt; FeatureDetectionMethod<o:p></o:p></li>
+  </ol>
+  <li>Feature element</li>
+  <ol>
+    <li>renamed featureDescription -&gt; featureType</li>
+    <li>added a &lt;names&gt; element to featureType</li>
+    <li>location:</li>
+    <ol>
+      <li>each feature now has a list of location elements, to allow
+representation of discontinuous features, e.g. structural domains.</li>
+      <li>added an element &lt;undetermined&gt; to featureLocation to
+allow representation of know features with undetermined position.</li>
+    </ol>
+  </ol>
+  <li>namesType extended by addition of an optional list of aliases.</li>
+  <li>created a new complex type confidenceType and inserted it in all
+previous occurrences of confidence elements.</li>
+  <li>Ordered sequence of standard elements. New order is:</li>
+  <ol>
+    <li>names</li>
+    <li>bibref</li>
+    <li>xref</li>
+    <li>other</li>
+    <li>attributeList</li>
+  </ol>
+  <li>experimentDescription.bibref is now mandatory. Submissions are
+considered bibrefs.</li>
+  <li>Negative interactions: Added a mandatory flag "negative" with
+default value false. If set to "true", it indicates that the
+interaction has explicitely been described as NOT being observed in the
+experiment.</li>
+  <li>New element interaction.inferredInteractionList has been added to
+allow correct description of complex topology, with supporting
+experimental evidence.</li>
+  <li>New element interaction.proteinExperimentalForm has been added to
+allow correct description of experimental form of proteins if one
+interaction is show as supported by multiple experiments.</li>
+  <li>New interactor types have been added, together with the
+corresponding additions of participantTypes and participantRefs:</li>
+  <ol>
+    <li>DNA</li>
+    <li>RNA</li>
+    <li>Small molecule</li>
+  </ol>
+</ol>
+</div>
+</center>
+<hr style="width: 100%; height: 2px;"><span style="font-style: italic;">Henning
+Hermjakob, 24-Apr-2004</span><br>
+</body>
+</html>
