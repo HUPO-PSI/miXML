@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Re: RE : RE : PSI MI paper</title>
+  <link rel="important stylesheet"
+ href="chrome://messenger/skin/messageBody.css">
+</head>
+<body>
+<a href="http://psidev.sourceforge.net"><img
+ src="http://psidev.sourceforge.net/images/psi.gif" width="113"
+ height="75" border="0" align="left"></a> <a href="http://www.hupo.org/"><img
+ src="http://psidev.sourceforge.net/images/hupo.gif" width="113"
+ height="75" border="0" align="right"></a> <br clear="all">
+	
+<center>
+<h2><a name="mozTocId916500" class="mozTocH2"></a><a
+ href="http://psidev.sourceforge.net">Proteomics Standards Initiative</a> <br>
+</h2>
+<h2><a name="mozTocId992260" class="mozTocH2"></a>Molecular Interaction
+XML Format <br>
+</h2>
+<h2><a name="mozTocId863651" class="mozTocH2"></a>Use cases
+documentation<br>
+</h2>
+<div style="text-align: left;">
+<h2>Table of contents<br>
+</h2>
+</div>
+</center>
+<div class="moz-text-html" lang="x-western">
+<ol>
+  <li><a href="#actors">Actors</a></li>
+  <li><a href="#usecases1">Use Cases 1 - peer-to-peer data exchange</a></li>
+  <li><a href="#usecases2">Use Cases 2 - data submission and curation</a></li>
+  <li><a href="#usecases3">Use Cases 3 - formal publication</a></li>
+</ol>
+<h1><a name="actors">Actors</a></h1>
+<h2>Database</h2>
+<p> A Database of molecular interactions stores relations between
+proteins, DNA and other molecules. </p>
+<h2>Database 2</h2>
+<p> Same as Database </p>
+<h2>Database Publisher</h2>
+<p> A Database Publisher maintains and distributes a database of
+molecular interactions. </p>
+<h2>High-throughput Data Producer</h2>
+<p> A High-throughput Data Producer uses large-scale techniques such as
+systematic screens to produce interaction data in large quantities. </p>
+<p> A High-throughput Data Producer works in a large structure and is
+assumed to benefit from a laboratory information management system
+(LIMS) with standardized operating procedures and quality assurance
+methods, as well as from the presence of bioinformatics support staff. </p>
+<h2>Curator</h2>
+<p> A Curator reviews, verifies and edits data in a database in order to
+improve the quality of the information that is made available to data
+consumers. </p>
+<h2>Biologist</h2>
+<p> A Biologist consults a database to extract data in a useful form for
+his or her scientific activity. The can happen as soon as the data are
+deposited in the database (and once any embargo is lifted), and need not
+wait for formal publication of the results in a peer-reviewed journal. </p>
+<h2>Investigator</h2>
+<p> An Investigator is an individual researcher (and his or her research
+team), who uses small-scale techniques to analyze interactions of
+proteins of interest. </p>
+<p> An Investigator works in a small, independant structure, without
+necessarily benefiting from a laboratory information system (LIMS) or
+bioinformatics support personnel. Data will most often be initially
+created using ad hoc tools such as spreadsheets. </p>
+<h2>Journal Publisher</h2>
+<p> A Journal Publisher receives submitted articles, verifies that the
+associated interaction data was indeed submitted to a public Database,
+and transmits the article to the Reviewer for evaluation. </p>
+<h2>Reviewer</h2>
+<p> A Reviewer evaluates an article for a Journal Publisher. This
+evaluation may include consultation of the submitted experimental data. </p>
+<hr>
+<h1><a name="usecases1">Use Case 1</a> - peer-to-peer data exchange</h1>
+<img src="PSI-MI.uc1.gif" title="" alt=""
+ style="width: 519px; height: 312px;">&nbsp;
+<h2>Describe DB</h2>
+<p> Describe source database, so that importers understand how we
+(Database Publisher) use the PSI-MI format to represent our data. </p>
+<h2>Import data</h2>
+<p> Database Publisher imports data from Database 2, interpreting PSI-MI
+records according to his understanding of the use of PSI-MI by Database
+2. </p>
+<h2>Export data</h2>
+<p> We (Database Publisher) export data from Database. Note that there
+is no association to Database 2 or its Database Publisher, since we
+don't know who will do the importing or indeed that it will be imported
+anywhere at all. </p>
+<hr>
+<h1><a name="usecases2">Use Cases 2</a> - data submission and curation</h1>
+<img src="PSI-MI.uc2.gif" title="" alt=""
+ style="width: 711px; height: 472px;">
+<h2>Submit data</h2>
+<p> The Investigator submits finished data sets to the database using
+the PSI-MI format. </p>
+<h2>Describe Experiment</h2>
+<p> In order to provide a conforming submission, the Investigator must
+describe the experimental procedure and the kind of interactions that
+were detected, using appropriate controlled vocabularies. </p>
+<h2>Create PSI</h2>
+<p> The Investigator creates an initial PSI-format file, typically from
+a CSV-formatted spreadsheet file. This initial PSI file need not be
+canonical, we anticipate that only "interaction" records will be
+present. Tools must be provided to convert this initial, minimal, PSI
+file to canonical form. </p>
+<h2>Merge PSI</h2>
+<p> An Investigator can generate separate PSI files, one for each
+spreadsheet. Tools must be provided to merge these files into a
+coherent, submittable PSI file. </p>
+<h2>Complete PSI</h2>
+<p> Initial PSI files do not necessarily contain all the information
+related to the experiments, interators, and interactions that are needed
+for submittable PSI files. The Investigator completes the information in
+the initial file, using tools for manipulating PSI data. </p>
+<h2>Curate data</h2>
+<p> Curation involves modifying records, adding or deleting parts of the
+record; merging database records to produce nonredundant data sources;
+and deleting records that are judged to be false or inaccurate. This
+curation may use standalone tools using PSI-MI as an interchange format,
+or database-specific tools. In both cases PSI concepts and controlled
+vocabularies should be used. </p>
+<h2>Query database</h2>
+<p> In extracting data from databases, Investigators, Biologists and
+other data consumers formulate queries. These queries should use PSI-MI
+concepts and controlled vocabularies. </p>
+<hr>
+<h1><a name="usecases3">Use Cases 3</a> - formal publication</h1>
+<img src="PSI-MI.uc3.gif" title="" alt=""
+ style="width: 537px; height: 376px;">
+<h2>Receive ticket</h2>
+<p> An Investigator submits his or her experimental data to a Database,
+and receives a deposit ticket that justifies that the data were indeed
+received. </p>
+<h2>Verify ticket</h2>
+<p> A Journal Publisher verifies that the data associated with an
+article under consideration for publication were indeed deposited, by
+querying the Database with the deposit ticket that the Investigator
+provides. </p>
+<h2>Submit article</h2>
+<p> An Investigator submits an article to a Journal Publisher for
+consideration, and supplies the deposit ticket that permits the Journal
+Publisher to verify that the associated experimental data were indeed
+deposited. </p>
+<h2>Extract data</h2>
+<p> Investigators, Biologists and other data consumers can extract data
+in PSI-MI format from databases. </p>
+<p> Extraction for Reviewers should be allowed even when the data are
+under embargo pending publication. </p>
+</div>
+</body>
+</html>

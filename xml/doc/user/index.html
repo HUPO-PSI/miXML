@@ -12,14 +12,33 @@ Specification Documentation</title>
  height="75" border="0" align="right"></a> <br clear="all">
 	
 <center>
-<h2><a href="http://psidev.sourceforge.net">Proteomics Standards
-Initiative</a> <br>
+<h2><a name="mozTocId916500" class="mozTocH2"></a><a
+ href="http://psidev.sourceforge.net">Proteomics Standards Initiative</a> <br>
 </h2>
-<h2>Molecular Interaction XML Format Documentation</h2>
-<h2>Version 1.0</h2>
+<h2><a name="mozTocId992260" class="mozTocH2"></a>Molecular Interaction
+XML Format Documentation</h2>
+<h2><a name="mozTocId863651" class="mozTocH2"></a>Version 1.0</h2>
+<div style="text-align: left;">
+<h2><a name="mozTocId1355" class="mozTocH2"></a>Table of contents</h2>
+<ol>
+  <li><a href="#mozTocId869940">Introduction</a></li>
+  <li><a href="#mozTocId248390">Purpose of the PSI MI XML format</a></li>
+  <li><a href="#mozTocId396538">Purpose of this document</a></li>
+  <li><a href="#mozTocId240701">Structure of a PSI MI record</a></li>
+  <li><a href="#mozTocId202864">Detailed Documentation</a></li>
+  <li><a href="#mozTocId66291">Use of external controlled vocabularies
+***</a></li>
+  <li><a href="#mozTocId86952">List of planned features</a></li>
+  <li><a href="#mozTocId545693">How to comment</a></li>
+  <li><a href="#mozTocId580742">Further information and relevant links</a></li>
+  <li><a href="#mozTocId254906">Sample data files</a></li>
+</ol>
 <br>
+<br>
+</div>
 </center>
-<h2>Introduction</h2>
+<a href="#mozTocId916500"></a>
+<h2><a name="mozTocId869940" class="mozTocH2"></a>Introduction</h2>
 The Proteomics Standards Initiative (PSI) aims to define community
 standards for data representation in proteomics to facilitate data
 comparision, exchange and verification.
@@ -38,29 +57,40 @@ Subsequent levels will add capability to represent new molecular
 interaction information that the community wishes to exchange. </p>
 <p> The scope of PSI MI is currently limited to protein-protein
 interactions. Other molecules, such as small molecules, DNA and RNA
-may be taken into account in the future. </p>
+may be taken into account in the future.</p>
 <p> PSI MI was designed by a group of people including representatives
 from database providers and users in both academia and industry. PSI MI
-is expected to be supported by the DIP, MINT, IntAct and BIND databases. </p>
+is expected to be supported by the DIP, MINT, IntAct and BIND databases.<br>
+</p>
+<h2><a name="mozTocId248390" class="mozTocH2"></a>Purpose of the PSI MI
+XML format</h2>
+<p>The PSI MI format is a data exchange format for protein-protein
+interactions. It is not a proposed database structure. Intended usages
+are described by the <a href="useCases.html">use cases documentation</a>.
+These use case descriptions also provide hints for future tools to be
+developed.<br>
+</p>
 <p> </p>
-<h2>Purpose of this document</h2>
+<h2><a name="mozTocId396538" class="mozTocH2"></a>Purpose of this
+document</h2>
 The purpose of this document is to describe the general structure of
 the PSI MI XML specification in a more user-friendly manner than the
 specification does itself. For the detailed and most up-to-date
 description please see the <a
  href="file:///C:/Documents%20and%20Settings/hhe/My%20Documents/pro/psi/mi/xml/doc/MIF.html">auto-generated
-documentation</a>.<br>
+documentation</a>. This documentation also provides additional
+information, e.g. sample data files and use case descriptions.<br>
 <p> </p>
-<h2>Outline of a PSI MI record<br>
-</h2>
-<img src="MIF_topLevel.png" title="" alt=""
- style="width: 508px; height: 394px;"><br>
-<span style="font-weight: bold;">Fig: 1: Top level elements</span><br>
-<br>
+<h2><a name="mozTocId240701" class="mozTocH2"></a>Structure of a PSI MI
+record</h2>
 The root element of a PSI MI XML file is the entrySet. An entrySet
 contains one or more entries. Each entry is a self-contained unit. This
 allows to easily concatenate the contents of multiple files into a
 single file by simply adding all the entries into the entrySet.<br>
+<br>
+<img src="MIF_topLevel.png" title="" alt=""
+ style="width: 354px; height: 380px;"><br>
+<span style="font-weight: bold;">Figure 1: The entry top level element</span><br>
 <br>
 Each entry describes one or more protein interactions. The PSI MI
 format can be used in two forms, a normalised and a denormalised form.
@@ -78,8 +108,8 @@ but is more suitable for conversion to displayed data, e.g. HTML pages.
 The PSI MI consortium plans to provide tools to convert the normalised
 into the denormalised form.<br>
 <br>
-In the next sections, the top level elements shown in Fig. x and their
-function will be described. <br>
+In the next sections, the top level elements shown in Figure 1 and
+their function will be described. <br>
 <br>
 The source element describes the source of the entry, usually the
 organisation which provides it. It also contains a release (number) and
@@ -109,12 +139,21 @@ Attributes which are relevant for a specific interaction, in particular
 sequence features, are described in the participant element within an
 interaction. <br>
 <br>
-The interactionList contains one or more interaction elements. Each
-interaction contains a description of the data availability
+<img src="MIF_interaction.png" title="" alt=""
+ style="width: 491px; height: 378px;"><br>
+<span style="font-weight: bold;">Figure 2: Interaction element<br>
+<br>
+</span> The interactionList contains one or more interaction elements.
+Each interaction contains a description of the data availability
 (copyright), and a desciption of the experimental conditions under
 which it has been determined. Both of these can either be integrated
 into the interaction element (denormalised form) or refer to the
 respective lists in the entry (normalised form) as described above. <br>
+<br>
+<img src="MIF_participant.png" title="" alt="participant element"
+ style="width: 419px; height: 429px;"><br>
+<span style="font-weight: bold;">Figure 3: Participant element</span><br>
+<br>
 Each interaction contains two or more participants, the molecules
 participating in the interaction. Each participant element contains a
 description of the molecule in its "normal" form, either by reference
@@ -127,14 +166,18 @@ binding domains relevant for the interaction. The role describes the
 particular role of the protein in the experiment, usually whether the
 protein was a bait or prey.<br>
 <br>
-The attributeList is a placeholder for semi-structured additional data
-the data provider might want to transmit. In contains simple tag-value
+The attributeLists are placeholders for semi-structured additional data
+the data provider might want to transmit. They contain simple tag-value
 pairs.<br>
 <br>
-<h2>Use of external controlled vocabularies</h2>
-Where possible, external controlled vocabularies have been referenced
-from PSI MI.  Specifically controlled vocabularies have been used to
-describe:<br>
+<h2><a name="mozTocId202864" class="mozTocH2"></a><a href="../MIF.html">Detailed
+Documentation</a></h2>
+see http://psidev.sf.net/***<br>
+<h2><a name="mozTocId66291" class="mozTocH2"></a>Use of external
+controlled vocabularies ***<br>
+</h2>
+Where possible, external controlled vocabularies are referenced from
+PSI MI.  Specifically, controlled vocabularies are used to describe:<br>
 <ul>
   <li>Protein interaction determining experimental methods (from
 IntAct) </li>
@@ -142,39 +185,51 @@ IntAct) </li>
   <li>Protein function (from Gene Ontology 'molecular function' and
 'biological process' ontologies) </li>
 </ul>
-<h2>Detailed description of PSI MI</h2>
--Probably best to point to the XMLSpy generated docs here.<br>
--Detailed description of all fields (use XML documentation as a base
-and XML Spy pictures as figures)<br>
-<h2>List of planned features</h2>
+<h2><a name="mozTocId86952" class="mozTocH2"></a>List of planned
+features</h2>
 Because we are following a leveled approach, we are interested in
 knowing what the community wishes to be included in the next level.
 <p> The following items have been tagged for inclusion in the next
 level: </p>
 <ul>
-  <li>Intramolecular interactions </li>
+  <li>Intramolecular interactions</li>
+  <li>Inclusion of other molecule types, e.g. DNA, RNA, small molecules<br>
+  </li>
 </ul>
-<br>
-The latest list of features to include in the future can be found here:
-<h2>How to comment</h2>
-If you would like to comment on this document, the PSI MI specification
-please use the following discussion list on SourceForge: <br>
-<h2>Further information and relevant links</h2>
-TODO: create and briefly annotate links
+The latest list of features to include in the future can be found here:<br>
+<a
+ href="http://sourceforge.net/tracker/?atid=511101&amp;group_id=65472&amp;func=browse">http://sourceforge.net/tracker/?atid=511101&amp;group_id=65472&amp;func=browse</a><br>
+<h2><a name="mozTocId545693" class="mozTocH2"></a>How to comment</h2>
+If you would like to comment on this document, the PSI MI XML
+specification, please send a mail to:<br>
+<a href="mailto:psidev-mi-dev@lists.sourceforge.net">psidev-mi-dev@lists.sourceforge.net</a>&nbsp;
+<h2><a name="mozTocId580742" class="mozTocH2"></a>Further information
+and relevant links</h2>
 <p> Databases involved: </p>
 <ul>
-  <li>BIND </li>
-  <li>DIP </li>
-  <li>IntAct </li>
-  <li>MINT </li>
+  <li><a href="http://www.bind.ca">BIND </a></li>
+  <li><a href="http://dip.doe-mbi.ucla.edu/">DIP </a></li>
+  <li><a href="http://www.ebi.ac.uk/intact">IntAct </a></li>
+  <li><a href="http://cbm.bio.uniroma2.it/mint/">MINT </a></li>
 </ul>
 Companies involved:
 <ul>
-  <li>Hybrigenics </li>
+  <li><a href="http://www.hybrigenics.com/">Hybrigenics </a></li>
 </ul>
 Related Efforts:
 <ul>
-  <li><a href="http://biopax.org">BioPAX</a> </li>
+  <li><a href="http://biopax.org">BioPAX</a></li>
 </ul>
+<h2><a name="mozTocId254906" class="mozTocH2"></a>Sample data files</h2>
+The following sample files contain authentic data, though we don't take
+any responsibility for the correctness of the data.<br>
+<ul>
+  <li><a
+ href="file:///C:/Documents%20and%20Settings/hhe/My%20Documents/pro/psi/mi/xml/sampleData/GHRComplexDataset_1PPI.xml">Complex
+interactions sample file</a></li>
+  <li><a href="../../sampleData/HpDemoDataset_15PPI.xml">Binary
+interactions sample file</a></li>
+</ul>
+<hr style="width: 100%; height: 2px;"><br>
 </body>
 </html>
