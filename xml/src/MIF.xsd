@@ -513,12 +513,12 @@
 		</xs:annotation>
 		<xs:sequence>
 			<xs:choice>
-				<xs:element name="interactorRef" type="refType">
+				<xs:element name="proteinInteractorRef" type="refType">
 					<xs:annotation>
 						<xs:documentation>References an interactor described in the interactorList of the entry</xs:documentation>
 					</xs:annotation>
 				</xs:element>
-				<xs:element name="interactor" type="proteinInteractorType">
+				<xs:element name="proteinInteractor" type="proteinInteractorType">
 					<xs:annotation>
 						<xs:documentation>Fully describes an interactor</xs:documentation>
 					</xs:annotation>
