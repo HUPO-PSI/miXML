@@ -12,6 +12,11 @@ Its only a visualisation and does not show all details included in PSI !
 The implementation is highly recursive - a lot of templates are used at 
 different Levels.
 This XSLT-Script was developed and tested using SAXON 6.5.2.
+
+Author: Henning Mersch (hmersch@ebi.ac.uk)
+-->
+<!-- Element: entrySet
+Here we start with element entrySet - also giving out Header/Footer.
 -->
 <xsl:template match="psi:entrySet">
 <html>
@@ -35,6 +40,7 @@ This XSLT-Script was developed and tested using SAXON 6.5.2.
 </html>
 </xsl:template>
 <!--Level 0 -->
+<!-- Element: entry -->
 <xsl:template match="psi:entry">
   <table border="1">
     <xsl:apply-templates select="psi:source"/>
@@ -47,6 +53,7 @@ This XSLT-Script was developed and tested using SAXON 6.5.2.
 </xsl:template>
 
 <!--Level 1 -->
+<!-- Element: source -->
 <xsl:template match="psi:source">
   <tr><td valign="top" bgcolor="#BBBBBB">Source:</td><td><table border="1">
   <xsl:apply-templates/>
@@ -79,6 +86,7 @@ This XSLT-Script was developed and tested using SAXON 6.5.2.
 </xsl:template>
 
 <!--Level 2 -->
+<!-- Element: names-->
 <xsl:template match="psi:names">
   <tr><td valign="top" bgcolor="#BBBBBB">Name:</td>
   <td><b><xsl:value-of select="psi:shortLabel"/></b>
@@ -93,23 +101,27 @@ This XSLT-Script was developed and tested using SAXON 6.5.2.
   <xsl:apply-templates/>
   </td></tr>
 </xsl:template>
+<!-- Element: xref-->
 <xsl:template match="psi:xref">
   <tr><td valign="top" bgcolor="#BBBBBB">Reference:</td>
   <xsl:if test="psi:primaryRef/@id != ''"><td><xsl:value-of select="psi:primaryRef/@db"/>,  <xsl:value-of select="psi:primaryRef/@id"/></td></xsl:if>
   <xsl:if test="psi:secondaryRef/@id != ''"><td><xsl:value-of select="psi:secondaryRef/@db"/>, <xsl:value-of select="psi:secondaryRef/@id"/></td></xsl:if>
   </tr>
 </xsl:template>
+<!-- Element: attributeList-->
 <xsl:template match="psi:attributeList">
   <tr><td valign="top" bgcolor="#BBBBBB">Attributes:</td><td>
   <xsl:value-of select="psi:attributeList"/></td>
   </tr>
 </xsl:template>
+<!-- Element: availability-->
 <xsl:template match="psi:availability">
   <xsl:param name="ref"><xsl:value-of select="@id"/></xsl:param>
   <tr>
     <td><a name="{$ref}"><xsl:value-of select="@id"/></a>: <xsl:value-of select="."/></td>
   </tr>
 </xsl:template>
+<!-- Element: experimentDescription-->
 <xsl:template match="psi:experimentDescription">
   <xsl:param name="ref"><xsl:value-of select="@id"/></xsl:param>
   <tr>
@@ -118,6 +130,7 @@ This XSLT-Script was developed and tested using SAXON 6.5.2.
 	<td><xsl:apply-templates select="psi:bibref"/></td>
   </tr>
 </xsl:template>
+<!-- Element: proteinInteractor-->
 <xsl:template match="psi:proteinInteractor">
   <xsl:param name="ref"><xsl:value-of select="@id"/></xsl:param>
   <tr>
@@ -125,6 +138,7 @@ This XSLT-Script was developed and tested using SAXON 6.5.2.
 	<td><xsl:apply-templates select="psi:bibref"/></td>
   </tr>
 </xsl:template>
+<!-- Element: interaction-->
 <xsl:template match="psi:interaction">
   <tr><td><table border="3"> 
   <xsl:if test="psi:experimentRef[1]/@ref != ''">
@@ -142,37 +156,44 @@ This XSLT-Script was developed and tested using SAXON 6.5.2.
 </xsl:template>
 
 <!--Level 3 -->
+<!-- Element: interactionDetection-->
 <xsl:template match="psi:interactionDetection">
   <tr><td valign="top" bgcolor="#BBBBBB">Interactiondetection:</td><td><table border="1">
   <xsl:apply-templates/> <!-- names, x-ray-->
   </table></td></tr>
 </xsl:template>
+<!-- Element: organism-->
 <xsl:template match="psi:organism">
   <tr><td valign="top" bgcolor="#BBBBBB">Organisms:</td><td><table border="1">
   <xsl:apply-templates/> <!-- names, x-ray-->
   </table></td></tr>
 </xsl:template>
+<!-- Element: sequence-->
 <xsl:template match="psi:sequence">
   <tr><td valign="top" bgcolor="#BBBBBB">Sequence:</td><td>
   <xsl:value-of select="."/>
   </td></tr>
 </xsl:template>
+<!-- Element: participantList-->
 <xsl:template match="psi:participantList">
   <tr><td valign="top" bgcolor="#BBBBBB">Participants:</td><td><table border="1"><th bgcolor="#BBBBBB">Reference</th><th bgcolor="#BBBBBB">Role</th><th bgcolor="#BBBBBB">tagged</th><th bgcolor="#BBBBBB">overexpressed</th>
   <xsl:apply-templates/> <!-- proteinParticipant -->     
   </table></td> </tr>
 </xsl:template>
+<!-- Element: interactionType-->
 <xsl:template match="psi:interactionType">
   <tr><td valign="top" bgcolor="#BBBBBB">Interaction Type:</td><td><table border="1">
   <xsl:apply-templates/> <!-- names, x-ray-->
   </table></td></tr>
 </xsl:template>
+<!-- Element: experimentRef-->
 <xsl:template match="psi:experimentRef">
   <xsl:param name="ref"><xsl:value-of select="@ref"/></xsl:param>
   <td>
   <a href="#{$ref}"><xsl:value-of select="@ref"/></a> 
   </td>
 </xsl:template>
+<!-- Element: availabilityRef-->
 <xsl:template match="psi:availabilityRef">
   <xsl:param name="ref"><xsl:value-of select="@ref"/></xsl:param>
   <td>
@@ -181,6 +202,7 @@ This XSLT-Script was developed and tested using SAXON 6.5.2.
 </xsl:template>
 
 <!--Level 4 -->
+<!-- Element: proteinParticipant-->
 <xsl:template match="psi:proteinParticipant">
   <xsl:param name="ref"><xsl:value-of select="psi:proteinInteractorRef/@ref"/></xsl:param>
   <tr>
