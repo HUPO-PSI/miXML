@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by Swiss-Prot (EMBL OUTSTATION THE EBI WELLCOME TRUST GENOME CAMPUS) -->
-<xs:schema targetNamespace="net:sf:psidev:mi" xmlns="net:sf:psidev:mi" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema targetNamespace="net:sf:psidev:mi" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="net:sf:psidev:mi" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:element name="entrySet">
 		<xs:annotation>
 			<xs:documentation>Root element of the Molecular Interaction Format</xs:documentation>
@@ -21,7 +21,7 @@
 									<xs:sequence>
 										<xs:element name="names" type="namesType" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Name(s) of the data source</xs:documentation>
+												<xs:documentation>Name(s) of the data source, for example the organisation name.</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="bibref" type="bibrefType" minOccurs="0">
@@ -31,7 +31,7 @@
 										</xs:element>
 										<xs:element name="xref" type="xrefType" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Crossreference for the data source. Example: Entry in a database of databases. </xs:documentation>
+												<xs:documentation>Cross reference for the data source. Example: Entry in a database of databases. </xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="attributeList" type="attributeListType" minOccurs="0">
@@ -92,110 +92,7 @@
 								</xs:annotation>
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="interaction" maxOccurs="unbounded">
-											<xs:complexType>
-												<xs:sequence>
-													<xs:element name="names" type="namesType" minOccurs="0"/>
-													<xs:choice>
-														<xs:annotation>
-															<xs:documentation>Either refer to an experiment  or insert description.</xs:documentation>
-														</xs:annotation>
-														<xs:element name="experimentRef" type="refType"/>
-														<xs:element name="experimentDescription" type="experimentType"/>
-													</xs:choice>
-													<xs:choice minOccurs="0">
-														<xs:annotation>
-															<xs:documentation>Describes the availability of the interaction data. If no availability is given, the data is assumed to be freely available.</xs:documentation>
-														</xs:annotation>
-														<xs:element name="availabilityRef" type="refType"/>
-														<xs:element name="availabilityDescription" type="availabilityType"/>
-													</xs:choice>
-													<xs:element name="participantList">
-														<xs:complexType>
-															<xs:sequence>
-																<xs:element name="participant" minOccurs="2" maxOccurs="unbounded">
-																	<xs:annotation>
-																		<xs:documentation>An interaction has two or more participants, thereby covering binary and n-ary interactions.</xs:documentation>
-																	</xs:annotation>
-																	<xs:complexType>
-																		<xs:sequence>
-																			<xs:choice>
-																				<xs:element name="interactorRef" type="refType">
-																					<xs:annotation>
-																						<xs:documentation>References an interactor described in the interactorList of the entry</xs:documentation>
-																					</xs:annotation>
-																				</xs:element>
-																				<xs:element name="interactor" type="interactorType">
-																					<xs:annotation>
-																						<xs:documentation>Fully describes an interactor</xs:documentation>
-																					</xs:annotation>
-																				</xs:element>
-																			</xs:choice>
-																			<xs:element name="featureList" minOccurs="0">
-																				<xs:annotation>
-																					<xs:documentation>Sequence features relevant for the interaction, for example binding domains</xs:documentation>
-																				</xs:annotation>
-																				<xs:complexType>
-																					<xs:sequence>
-																						<xs:element name="feature" type="featureType" maxOccurs="unbounded"/>
-																					</xs:sequence>
-																				</xs:complexType>
-																			</xs:element>
-																			<xs:element name="confidence" minOccurs="0">
-																				<xs:annotation>
-																					<xs:documentation>Confidence in participant detection.</xs:documentation>
-																				</xs:annotation>
-																				<xs:complexType>
-																					<xs:attribute name="unit" type="xs:string" use="required"/>
-																					<xs:attribute name="value" type="xs:string" use="required"/>
-																				</xs:complexType>
-																			</xs:element>
-																			<xs:element name="role" minOccurs="0">
-																				<xs:annotation>
-																					<xs:documentation>The role of the participant in the interaction, eg "bait".</xs:documentation>
-																				</xs:annotation>
-																				<xs:simpleType>
-																					<xs:restriction base="xs:string">
-																						<xs:enumeration value="bait"/>
-																						<xs:enumeration value="prey"/>
-																						<xs:enumeration value="neutral"/>
-																						<xs:enumeration value="unspecified"/>
-																					</xs:restriction>
-																				</xs:simpleType>
-																			</xs:element>
-																			<xs:element name="isTaggedProtein" type="xs:boolean" minOccurs="0">
-																				<xs:annotation>
-																					<xs:documentation>True if the protein has been tagged in the experiment.</xs:documentation>
-																				</xs:annotation>
-																			</xs:element>
-																			<xs:element name="isOverexpressedProtein" type="xs:boolean" minOccurs="0">
-																				<xs:annotation>
-																					<xs:documentation>True if the protein has been overexpressed in the experiment.</xs:documentation>
-																				</xs:annotation>
-																			</xs:element>
-																		</xs:sequence>
-																	</xs:complexType>
-																</xs:element>
-															</xs:sequence>
-														</xs:complexType>
-													</xs:element>
-													<xs:element name="interactionType" type="cvType">
-														<xs:annotation>
-															<xs:documentation>External controlled vocabulary characterising the interaction type, for example "aggregation".</xs:documentation>
-														</xs:annotation>
-													</xs:element>
-													<xs:element name="confidence" minOccurs="0">
-														<xs:annotation>
-															<xs:documentation>Confidence in the interaction.</xs:documentation>
-														</xs:annotation>
-														<xs:complexType>
-															<xs:attribute name="unit" type="xs:string" use="required"/>
-															<xs:attribute name="value" type="xs:string" use="required"/>
-														</xs:complexType>
-													</xs:element>
-												</xs:sequence>
-											</xs:complexType>
-										</xs:element>
+										<xs:element name="interaction" type="interactionElementType" maxOccurs="unbounded"/>
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
@@ -374,10 +271,10 @@
 			</xs:element>
 			<xs:element name="xref" type="xrefType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Refers to external database description  of the experiment.</xs:documentation>
+					<xs:documentation>Refers to external database description of the experiment.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="organism" minOccurs="0">
+			<xs:element name="hostOrganism" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The host organism in which the experiment has been performed.</xs:documentation>
 				</xs:annotation>
@@ -450,7 +347,7 @@
 			</xs:element>
 			<xs:element name="attributeList" type="attributeListType">
 				<xs:annotation>
-					<xs:documentation>Alternative description of bioliographic reference if no external database entry is available.</xs:documentation>
+					<xs:documentation>Alternative description of bibliographic reference if no external database entry is available.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:choice>
@@ -460,8 +357,8 @@
 			<xs:documentation>Names for an object.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="shortLabel" type="labelType"/>
-			<xs:element name="fullName" type="fullNameType" minOccurs="0"/>
+			<xs:element name="shortLabel" type="xs:string"/>
+			<xs:element name="fullName" type="xs:string" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="cvType">
@@ -478,12 +375,21 @@
 			<xs:documentation>Allows to reference an external controlled vocabulary, or to directly include a value if no suitable external definition is available.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:annotation>
-				<xs:documentation>Normally refers to an external controlled vocabulary, but allows free attibute-value description if no suitable external description is available. </xs:documentation>
-			</xs:annotation>
-			<xs:element name="names" type="namesType"/>
-			<xs:element name="xref" type="xrefType" minOccurs="0"/>
-			<xs:element name="attributeList" type="attributeListType" minOccurs="0"/>
+			<xs:element name="names" type="namesType">
+				<xs:annotation>
+					<xs:documentation>This contains the controlled vocabulary terms, as a short and optionally as a long form.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="xref" type="xrefType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Refers to the term of the controlled vocabulary in an external database.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="attributeList" type="attributeListType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>If no suitable external controlled vocabulary is available, this attributeList can be used to describe the term. Example: Attribute name: Mouse atlas tissue name; attribute value: spinal cord, day 30.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="interactorType">
@@ -498,12 +404,12 @@
 			</xs:element>
 			<xs:element name="xref" type="xrefType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>An interactor should have an  xref whenever possible. If the interactor is not available in external databases, it must be characterised e.g. by its sequence.</xs:documentation>
+					<xs:documentation>An interactor should have an xref whenever possible. If the interactor is not available in external databases, it must be characterised e.g. by its sequence.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="organism" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The normal source organism of the interactor. If a human protein has been expressed in yeast, this attribute would  describe human.</xs:documentation>
+					<xs:documentation>The normal source organism of the interactor. If a human protein has been expressed in yeast, this attribute would describe human.</xs:documentation>
 				</xs:annotation>
 				<xs:complexType>
 					<xs:complexContent>
@@ -540,5 +446,111 @@
 				<xs:attribute name="id" type="xs:string" use="required"/>
 			</xs:extension>
 		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="interactionElementType">
+		<xs:sequence>
+			<xs:element name="names" type="namesType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Name(s) of the interacion.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:annotation>
+					<xs:documentation>Either refer to an experiment  or insert description.</xs:documentation>
+				</xs:annotation>
+				<xs:element name="experimentRef" type="refType"/>
+				<xs:element name="experimentDescription" type="experimentType"/>
+			</xs:choice>
+			<xs:choice minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Describes the availability of the interaction data. If no availability is given, the data is assumed to be freely available.</xs:documentation>
+				</xs:annotation>
+				<xs:element name="availabilityRef" type="refType"/>
+				<xs:element name="availabilityDescription" type="availabilityType"/>
+			</xs:choice>
+			<xs:element name="participantList">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="participant" minOccurs="2" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>An interaction has two or more participants, thereby covering binary and n-ary interactions.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:choice>
+										<xs:element name="interactorRef" type="refType">
+											<xs:annotation>
+												<xs:documentation>References an interactor described in the interactorList of the entry</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="interactor" type="interactorType">
+											<xs:annotation>
+												<xs:documentation>Fully describes an interactor</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:choice>
+									<xs:element name="featureList" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Sequence features relevant for the interaction, for example binding domains</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="feature" type="featureType" maxOccurs="unbounded"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="confidence" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Confidence in participant detection.</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:attribute name="unit" type="xs:string" use="required"/>
+											<xs:attribute name="value" type="xs:string" use="required"/>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="role" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>The role of the participant in the interaction, eg "bait".</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="bait"/>
+												<xs:enumeration value="prey"/>
+												<xs:enumeration value="neutral"/>
+												<xs:enumeration value="unspecified"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+									<xs:element name="isTaggedProtein" type="xs:boolean" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>True if the protein has been tagged in the experiment.</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="isOverexpressedProtein" type="xs:boolean" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>True if the protein has been overexpressed in the experiment.</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="interactionType" type="cvType">
+				<xs:annotation>
+					<xs:documentation>External controlled vocabulary characterising the interaction type, for example "aggregation".</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="confidence" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Confidence in the interaction.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="unit" type="xs:string" use="required"/>
+					<xs:attribute name="value" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 </xs:schema>
