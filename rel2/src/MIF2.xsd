@@ -314,7 +314,7 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
  </xs:complexType>
  <xs:complexType name="xrefType">
   <xs:annotation>
-   <xs:documentation>Crossreference to an external database.</xs:documentation>
+   <xs:documentation>Crossreference to an external database. Crossreferences to literature databases, e.g. PubMed, should not be put into this structure, but into the bibRef element where possible.</xs:documentation>
   </xs:annotation>
   <xs:sequence>
    <xs:element name="primaryRef" type="dbReferenceType">
@@ -336,7 +336,7 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
   <xs:sequence>
    <xs:element name="shortLabel" type="xs:string"/>
    <xs:element name="fullName" type="xs:string" minOccurs="0"/>
-   <xs:element name="alias" minOccurs="0" maxOccurs="unbounded"/>
+   <xs:element name="alias" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
   </xs:sequence>
  </xs:complexType>
  <!--Feature descrition-->
@@ -363,16 +363,10 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
    </xs:element>
    <xs:element name="location" type="baseLocationType" maxOccurs="unbounded">
     <xs:annotation>
-     <xs:documentation>Location of the feature on the sequence of the interactor</xs:documentation>
+     <xs:documentation>Location of the feature on the sequence of the interactor. On feature may have more than one location, used e.g. for features which involve sequence positions close in the folded, three-dimensional state of a protein, but non-continuous along the sequence.</xs:documentation>
     </xs:annotation>
    </xs:element>
   </xs:sequence>
- </xs:complexType>
- <xs:complexType name="positionType">
-  <xs:annotation>
-   <xs:documentation>A specified position a a sequence.</xs:documentation>
-  </xs:annotation>
-  <xs:attribute name="position" type="xs:unsignedLong" use="required"/>
  </xs:complexType>
  <xs:complexType name="intervalType">
   <xs:annotation>
@@ -383,24 +377,62 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
  </xs:complexType>
  <xs:complexType name="baseLocationType">
   <xs:annotation>
-   <xs:documentation>A location can be either a position, site or have a start and end, only start, only end or is an empty element if the position is unknown.</xs:documentation>
+   <xs:documentation>A location on a sequence. Both begin and end can be a defined position, a fuzzy position, or undetermined.</xs:documentation>
   </xs:annotation>
-  <xs:choice>
-   <xs:sequence>
-    <xs:choice minOccurs="0">
-     <xs:element name="begin" type="positionType"/>
-     <xs:element name="beginInterval" type="intervalType"/>
-    </xs:choice>
-    <xs:choice minOccurs="0">
-     <xs:element name="end" type="positionType"/>
-     <xs:element name="endInterval" type="intervalType"/>
-    </xs:choice>
-   </xs:sequence>
-   <xs:element name="position" type="positionType"/>
-   <xs:element name="positionInterval" type="intervalType"/>
-   <xs:element name="site" type="positionType"/>
-   <xs:element name="undetermined"/>
-  </xs:choice>
+  <xs:sequence>
+   <xs:choice>
+    <xs:element name="begin" type="positionType">
+     <xs:annotation>
+      <xs:documentation>The integer position gives the begin position of the feature. The first base or amino acid is position 1. In combination with the numeric value, the attribute 'status' allows to express fuzzy positions, e.g. 'less than 4'.</xs:documentation>
+     </xs:annotation>
+    </xs:element>
+    <xs:element name="beginInterval" type="intervalType">
+     <xs:annotation>
+      <xs:documentation>The begin position may be varying or unclear, but localisable to a certain range. Usually written as e.g. 3..5.</xs:documentation>
+     </xs:annotation>
+    </xs:element>
+    <xs:element name="beginUndetermined" type="xs:string">
+     <xs:annotation>
+      <xs:documentation>Set if the begin postion of the feature is undetermined. If the entire feature position is unknown, both beginUndetermined and endUndetermined are set.</xs:documentation>
+     </xs:annotation>
+    </xs:element>
+   </xs:choice>
+   <xs:choice>
+    <xs:element name="end" type="positionType">
+     <xs:annotation>
+      <xs:documentation>The integer position gives the end position of the feature. The first base or amino acid is position 1. In combination with the numeric value, the attribute 'status' allows to express fuzzy positions, e.g. 'less than 4'.</xs:documentation>
+     </xs:annotation>
+    </xs:element>
+    <xs:element name="endInterval" type="intervalType">
+     <xs:annotation>
+      <xs:documentation>The end position may be varying or unclear, but localisable to a certain range. Usually written as e.g. 3..5.</xs:documentation>
+     </xs:annotation>
+    </xs:element>
+    <xs:element name="endUndetermined" type="xs:string">
+     <xs:annotation>
+      <xs:documentation>Set if the end postion of the feature is undetermined. If the entire feature position is unknown, both beginUndetermined and endUndetermined are set.</xs:documentation>
+     </xs:annotation>
+    </xs:element>
+   </xs:choice>
+   <xs:element name="isLink" type="xs:boolean" default="false" minOccurs="0">
+    <xs:annotation>
+     <xs:documentation>True if the described feature is a linking feature connecting two amino acids rather than extending along the sequence. Standard example is a disulfide bridge.</xs:documentation>
+    </xs:annotation>
+   </xs:element>
+  </xs:sequence>
+ </xs:complexType>
+ <xs:complexType name="positionType">
+  <xs:attribute name="position" type="xs:unsignedLong" use="required"/>
+  <xs:attribute name="status" use="optional" default="certain">
+   <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:enumeration value="certain"/>
+     <xs:enumeration value="uncertain"/>
+     <xs:enumeration value="less than"/>
+     <xs:enumeration value="greater than"/>
+    </xs:restriction>
+   </xs:simpleType>
+  </xs:attribute>
  </xs:complexType>
  <!--Top level types-->
  <xs:complexType name="availabilityType">
@@ -499,35 +531,6 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
      </xs:annotation>
     </xs:element>
    </xs:choice>
-   <xs:element name="participantList">
-    <xs:annotation>
-     <xs:documentation>A list of molecules participating in this interaction. An interaction has one (intramolecular), two (binary), or more (n-ary, complexes)  participants.</xs:documentation>
-    </xs:annotation>
-    <xs:complexType>
-     <xs:sequence>
-      <xs:element name="proteinParticipant" minOccurs="0" maxOccurs="unbounded">
-       <xs:complexType>
-        <xs:complexContent>
-         <xs:extension base="proteinParticipantType"/>
-        </xs:complexContent>
-       </xs:complexType>
-      </xs:element>
-      <xs:element name="dnaParticipant" type="dnaParticipantType" minOccurs="0" maxOccurs="unbounded"/>
-      <xs:element name="rnaParticipant" type="rnaParticipantType" minOccurs="0" maxOccurs="unbounded"/>
-      <xs:element name="smallMoleculeParticipant" type="smallMoleculeParticipantType" minOccurs="0" maxOccurs="unbounded"/>
-     </xs:sequence>
-    </xs:complexType>
-   </xs:element>
-   <xs:element name="interactionType" type="cvType" minOccurs="0" maxOccurs="unbounded">
-    <xs:annotation>
-     <xs:documentation>External controlled vocabulary characterising the interaction type, for example "aggregation".</xs:documentation>
-    </xs:annotation>
-   </xs:element>
-   <xs:element name="negative" type="xs:boolean" default="false">
-    <xs:annotation>
-     <xs:documentation>If true, this interaction has been shown NOT to occur under the described experimental conditions. Default false.</xs:documentation>
-    </xs:annotation>
-   </xs:element>
    <xs:element name="experimentList">
     <xs:annotation>
      <xs:documentation>List of experiments in which this interaction has been determined.</xs:documentation>
@@ -550,13 +553,106 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
      </xs:choice>
     </xs:complexType>
    </xs:element>
+   <xs:element name="participantList">
+    <xs:annotation>
+     <xs:documentation>A list of molecules participating in this interaction. An interaction has one (intramolecular), two (binary), or more (n-ary, complexes)  participants.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+     <xs:sequence>
+      <xs:element name="proteinParticipant" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+        <xs:complexContent>
+         <xs:extension base="proteinParticipantType"/>
+        </xs:complexContent>
+       </xs:complexType>
+      </xs:element>
+      <xs:element name="dnaParticipant" type="dnaParticipantType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="rnaParticipant" type="rnaParticipantType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="smallMoleculeParticipant" type="smallMoleculeParticipantType" minOccurs="0" maxOccurs="unbounded"/>
+     </xs:sequence>
+    </xs:complexType>
+   </xs:element>
+   <xs:element name="experimentalFormList" minOccurs="0">
+    <xs:annotation>
+     <xs:documentation>The specific experimental form of molecules in an experiment, e.g. chemical modifications and added 'tags'.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+     <xs:sequence>
+      <xs:element name="proteinExperimentalForm" maxOccurs="unbounded">
+       <xs:annotation>
+        <xs:documentation>Describes the experimental form of a protein in a specific experiment. </xs:documentation>
+       </xs:annotation>
+       <xs:complexType>
+        <xs:sequence>
+         <xs:element name="expRef" type="refType"/>
+         <xs:element name="proteinParticipantRef" type="refType"/>
+         <xs:element name="isTagged" type="xs:boolean" minOccurs="0">
+          <xs:annotation>
+           <xs:documentation>True if the protein has been tagged in the experiment.</xs:documentation>
+          </xs:annotation>
+         </xs:element>
+         <xs:element name="isOverexpressed" type="xs:boolean" minOccurs="0">
+          <xs:annotation>
+           <xs:documentation>True if the protein has been overexpressed in the experiment.</xs:documentation>
+          </xs:annotation>
+         </xs:element>
+         <xs:element name="experimentalRole" type="cvType" minOccurs="0">
+          <xs:annotation>
+           <xs:documentation>The role of the participant in the interaction.</xs:documentation>
+          </xs:annotation>
+         </xs:element>
+        </xs:sequence>
+       </xs:complexType>
+      </xs:element>
+      <xs:element name="dnaExperimentalForm" maxOccurs="unbounded">
+       <xs:complexType>
+        <xs:sequence>
+         <xs:element name="expRef" type="refType"/>
+         <xs:element name="dnaParticipantRef" type="refType"/>
+         <xs:element name="isOverexpressed" type="xs:boolean" minOccurs="0">
+          <xs:annotation>
+           <xs:documentation>True if the DNA has been overexpressed in the experiment.</xs:documentation>
+          </xs:annotation>
+         </xs:element>
+         <xs:element name="experimentalRole" type="cvType" minOccurs="0">
+          <xs:annotation>
+           <xs:documentation>The role of the participant in the interaction.</xs:documentation>
+          </xs:annotation>
+         </xs:element>
+        </xs:sequence>
+       </xs:complexType>
+      </xs:element>
+      <xs:element name="rnaExperimentalForm" maxOccurs="unbounded">
+       <xs:complexType>
+        <xs:sequence>
+         <xs:element name="expRef" type="refType"/>
+         <xs:element name="rnaParticipantRef" type="refType"/>
+         <xs:element name="isOverexpressed" type="xs:boolean" minOccurs="0">
+          <xs:annotation>
+           <xs:documentation>True if the RNA has been overexpressed in the experiment.</xs:documentation>
+          </xs:annotation>
+         </xs:element>
+         <xs:element name="experimentalRole" type="cvType" minOccurs="0">
+          <xs:annotation>
+           <xs:documentation>The role of the participant in the interaction.</xs:documentation>
+          </xs:annotation>
+         </xs:element>
+        </xs:sequence>
+       </xs:complexType>
+      </xs:element>
+     </xs:sequence>
+    </xs:complexType>
+   </xs:element>
    <xs:element name="inferredInteractionList" minOccurs="0">
+    <xs:annotation>
+     <xs:documentation>Describes inferred interactions, usually combining data from more than one experiment. This might be e.g. the binary interactions within a complex.</xs:documentation>
+    </xs:annotation>
     <xs:complexType>
      <xs:sequence>
       <xs:element name="inferredInteraction" maxOccurs="unbounded">
        <xs:complexType>
         <xs:sequence>
-         <xs:element name="expRef" maxOccurs="unbounded"/>
+         <xs:element name="expRef" type="refType" maxOccurs="unbounded"/>
          <xs:element name="participant" minOccurs="2" maxOccurs="unbounded">
           <xs:complexType>
            <xs:choice>
@@ -576,34 +672,15 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
      </xs:sequence>
     </xs:complexType>
    </xs:element>
-   <xs:element name="experimentalFormList" minOccurs="0">
-    <xs:complexType>
-     <xs:sequence>
-      <xs:element name="proteinExperimentalForm" maxOccurs="unbounded">
-       <xs:complexType>
-        <xs:sequence>
-         <xs:element name="expRef" type="refType"/>
-         <xs:element name="proteinParticipantRef" type="refType"/>
-         <xs:element name="isTaggedProtein" type="xs:boolean" minOccurs="0">
-          <xs:annotation>
-           <xs:documentation>True if the protein has been tagged in the experiment.</xs:documentation>
-          </xs:annotation>
-         </xs:element>
-         <xs:element name="isOverexpressedProtein" type="xs:boolean" minOccurs="0">
-          <xs:annotation>
-           <xs:documentation>True if the protein has been overexpressed in the experiment.</xs:documentation>
-          </xs:annotation>
-         </xs:element>
-         <xs:element name="experimentalRole" type="cvType" minOccurs="0">
-          <xs:annotation>
-           <xs:documentation>The role of the participant in the interaction.</xs:documentation>
-          </xs:annotation>
-         </xs:element>
-        </xs:sequence>
-       </xs:complexType>
-      </xs:element>
-     </xs:sequence>
-    </xs:complexType>
+   <xs:element name="interactionType" type="cvType" minOccurs="0" maxOccurs="unbounded">
+    <xs:annotation>
+     <xs:documentation>External controlled vocabulary characterising the interaction type, for example "aggregation".</xs:documentation>
+    </xs:annotation>
+   </xs:element>
+   <xs:element name="negative" type="xs:boolean" default="false">
+    <xs:annotation>
+     <xs:documentation>If true, this interaction has been shown NOT to occur under the described experimental conditions. Default false.</xs:documentation>
+    </xs:annotation>
    </xs:element>
    <xs:element name="confidenceList" type="confidenceListType" minOccurs="0">
     <xs:annotation>
@@ -645,16 +722,16 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
      </xs:complexContent>
     </xs:complexType>
    </xs:element>
-   <xs:element name="sequence" minOccurs="0">
+   <xs:element name="sequence" type="xs:token" minOccurs="0">
     <xs:annotation>
      <xs:documentation>Sequence in uppercase</xs:documentation>
      <xs:documentation>Usage:</xs:documentation>
     </xs:annotation>
-    <xs:complexType>
-     <xs:simpleContent>
-      <xs:extension base="xs:string"/>
-     </xs:simpleContent>
-    </xs:complexType>
+   </xs:element>
+   <xs:element name="attributeList" type="attributeListType">
+    <xs:annotation>
+     <xs:documentation>Allows semi-structured additional annotation of the interactor.</xs:documentation>
+    </xs:annotation>
    </xs:element>
   </xs:sequence>
   <xs:attribute name="id" type="xs:int" use="required"/>
@@ -704,7 +781,7 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
    </xs:element>
    <xs:element name="participantRole" type="cvType" minOccurs="0">
     <xs:annotation>
-     <xs:documentation>The role of the participant in the interaction.</xs:documentation>
+     <xs:documentation>The role of the participant in the interaction. This describes the biological role, e.g. ***. The experimental role of the participant, e.g. 'bait', is shown in proteinExperimentalForm.</xs:documentation>
     </xs:annotation>
    </xs:element>
   </xs:sequence>
@@ -789,9 +866,14 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
      </xs:complexContent>
     </xs:complexType>
    </xs:element>
-   <xs:element name="sequence" type="xs:string" minOccurs="0">
+   <xs:element name="sequence" type="xs:token" minOccurs="0">
     <xs:annotation>
      <xs:documentation>Sequence in uppercase</xs:documentation>
+    </xs:annotation>
+   </xs:element>
+   <xs:element name="attributeList" type="attributeListType">
+    <xs:annotation>
+     <xs:documentation>Allows semi-structured additional annotation of the interactor.</xs:documentation>
     </xs:annotation>
    </xs:element>
   </xs:sequence>
@@ -811,7 +893,7 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
       <xs:documentation>References an interactor described in the interactorList of the entry</xs:documentation>
      </xs:annotation>
     </xs:element>
-    <xs:element name="dnaInteractor" type="proteinInteractorType">
+    <xs:element name="dnaInteractor" type="dnaInteractorType">
      <xs:annotation>
       <xs:documentation>Fully describes an interactor</xs:documentation>
      </xs:annotation>
@@ -875,9 +957,14 @@ A protein interactor must contain an xref to UniProt and NCBI-GI where possible.
      </xs:complexContent>
     </xs:complexType>
    </xs:element>
-   <xs:element name="sequence" type="xs:string" minOccurs="0">
+   <xs:element name="sequence" type="xs:token" minOccurs="0">
     <xs:annotation>
      <xs:documentation>Sequence in uppercase</xs:documentation>
+    </xs:annotation>
+   </xs:element>
+   <xs:element name="attributeList" type="attributeListType">
+    <xs:annotation>
+     <xs:documentation>Allows semi-structured additional annotation of the interactor.</xs:documentation>
     </xs:annotation>
    </xs:element>
   </xs:sequence>
