@@ -115,30 +115,4 @@ public class Commons {
 		return s;
 	}
 
-	//	public static URI relativizeURI(URI uri) {
-	//		try {
-	//			return (new URI("file://"
-	//					+ System.getProperty("user.dir").replaceAll("\\\\", "/")))
-	//					.relativize(uri);
-	//		} catch (URISyntaxException urie) {
-	//			return uri;
-	//		} catch (NullPointerException npe) {
-	//			return uri;
-	//		}
-	//	}
-
-	//	public static URI absolutizeURI(URI uri) {
-	//		try {
-	//			if (!uri.isAbsolute()) {
-	//				uri = new URI("file://"
-	//						+ System.getProperty("user.dir")
-	//								.replaceAll("\\\\", "/") + "/" + uri.getPath());
-	//			}
-	//			return uri;
-	//		} catch (URISyntaxException urie) {
-	//			return uri;
-	//		} catch (NullPointerException npe) {
-	//			return uri;
-	//		}
-	//	}
 }

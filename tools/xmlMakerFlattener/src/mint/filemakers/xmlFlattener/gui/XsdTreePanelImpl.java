@@ -250,6 +250,7 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 		numerotationButtons.add(numericb);
 		numerotationButtons.add(highAlphabeticb);
 		numerotationButtons.add(lowAlphabeticb);
+		numerotationButtons.add(noneb);
 
 		switch (((XsdTreeStructImpl) xsdTree).numerotation_type) {
 		case XsdTreeStructImpl.HIGH_ALPHABETIC_NUMEROTATION:
@@ -512,6 +513,15 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 			} else {
 				filter.setText("no filter");
 			}
+			if (e.getClickCount() == 2) {
+				XsdNode node = (XsdNode) ((XsdTreeStructImpl) xsdTree).tree
+				.getLastSelectedPathComponent();
+				if (((XsdTreeStructImpl) xsdTree).selections.contains(node)) {
+					unselectNode();
+				} else {
+					selectNode();
+				}
+			}
 		}
 	}
 
@@ -563,24 +573,9 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 				setText(node.getName() + " *");
 			else
 				setText(node.getName());
-			//            switch (((Annotated) node.getUserObject()).getStructureType()) {
-			//            case Structure.ATTRIBUTE:
-			//                setText(getText()
-			//                        + " ("
-			//                        + ((AttributeDecl) node.getUserObject())
-			//                                .getSimpleType().getName() + ")");
-			//                break;
-			//            case Structure.ELEMENT:
-			//                setText(getText()
-			//                        + " ("
-			//                        + ((ElementDecl) node.getUserObject()).getType()
-			//                                .getName() + ")");
-			//            }
 
 			setForeground(Color.GRAY);
-			//			if (node.isRequired)
-			//				setForeground(Color.RED);
-
+			
 			if (node.isUsed)
 				setForeground(Color.BLACK);
 

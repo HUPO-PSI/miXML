@@ -34,6 +34,9 @@ import org.exolab.castor.xml.schema.Structure;
  */
 public class XsdNode extends DefaultMutableTreeNode {
 
+	/* a node is transparent, ie its father will directly look at the children */
+	public boolean transparent = false;
+
 	public int cpt = 0;
 
 	public int nextNumber() {
@@ -191,6 +194,8 @@ public class XsdNode extends DefaultMutableTreeNode {
 	 */
 	public String toString() {
 		//        if (name != null) return name;
+		//if (transparent) return "choice done";
+
 		switch (((Annotated) this.getUserObject()).getStructureType()) {
 		case Structure.ATTRIBUTE:
 			return ((AttributeDecl) this.getUserObject()).getName();

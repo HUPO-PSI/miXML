@@ -257,7 +257,7 @@ public abstract class AbstractXsdTreePanel extends JPanel {
 				break;
 			case Structure.ELEMENT:
 				setText(getText()
-						+ " ("
+						+ ".... ("
 						+ ((ElementDecl) node.getUserObject()).getType()
 								.getName() + ")");
 			}
@@ -418,11 +418,12 @@ public abstract class AbstractXsdTreePanel extends JPanel {
 
 				xsdTree.expendChoices.add(path);
 				xsdTree.expendChoices.add(choice);
+				System.out.println("add " + path + ", " + choice);
 			} else if (g.getOrder().getType() == Order.CHOICE) {
 				xsdTree.expendChoices.add(path);
 			}
-		} // extendPath
-
+		}
+		// extendPath
 		xsdTree.extendPath(node);
 	}
 }

@@ -124,7 +124,7 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 	public ArrayList expendChoices = new ArrayList();
 
 	/**
-	 * if this variable is setted to true (by the constructor) while expanding a
+	 * if this variable is set to true (by the constructor) while expanding a
 	 * node that discribe a choice, the tree will give to the user the
 	 * possibility to choose what element to expand. Else all possibility is
 	 * displayed
@@ -350,35 +350,41 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 	 *            a string describing the indexes, e.g. 1.1.2.1
 	 */
 	public XsdNode getNodeByPath(String indexes) {
-		String nextIndexes = indexes;
-		XsdNode currentNode = null; //rootNode;
-		int index = 0;
-		while (nextIndexes.indexOf(".") >= 0) {
-			index = Integer.parseInt(nextIndexes.substring(0, nextIndexes
-					.indexOf(".")));
-			nextIndexes = nextIndexes.substring(nextIndexes.indexOf(".") + 1);
-			if (currentNode == null) {
-				currentNode = rootNode;
-			} else {
-				/** TODO : check if it really can be commented */
-				if (!currentNode.isExtended) {
-					extendPath(currentNode);
+		try {
+			String nextIndexes = indexes;
+			XsdNode currentNode = null; //rootNode;
+			int index = 0;
+			while (nextIndexes.indexOf(".") >= 0) {
+				index = Integer.parseInt(nextIndexes.substring(0, nextIndexes
+						.indexOf(".")));
+				nextIndexes = nextIndexes
+						.substring(nextIndexes.indexOf(".") + 1);
+				if (currentNode == null) {
+					currentNode = rootNode;
+				} else {
+					/** TODO : check if it really can be commented */
+					if (!currentNode.isExtended) {
+						extendPath(currentNode);
+					}
+					currentNode = (XsdNode) currentNode.getChildAt(index);
 				}
-				currentNode = (XsdNode) currentNode.getChildAt(index);
+				if (!currentNode.isExtended)
+					extendPath(currentNode);
 			}
-			if (!currentNode.isExtended)
-				extendPath(currentNode);
-		}
-		index = Integer.parseInt(nextIndexes);
-		/* no more "." in the path just a last index */
-		if (currentNode == null)
-			return rootNode;
+			index = Integer.parseInt(nextIndexes);
+			/* no more "." in the path just a last index */
+			if (currentNode == null)
+				return rootNode;
 
-		if (!currentNode.isExtended) {
-			extendPath(currentNode);
+			if (!currentNode.isExtended) {
+				extendPath(currentNode);
+			}
+			currentNode = (XsdNode) currentNode.getChildAt(index);
+			return currentNode;
+		} catch (ArrayIndexOutOfBoundsException aoobe) {
+			System.out.println("Path not found: " + indexes);
+			return null;
 		}
-		currentNode = (XsdNode) currentNode.getChildAt(index);
-		return currentNode;
 	}
 
 	/**
@@ -600,68 +606,36 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 		this.manageChoices = manageChoices;
 	}
 
-	public void redoChoice(String path, String choice) {
-		XsdNode currentNode = rootNode;
-		/* never a choice on rootNode */
-		String nextIndexes = path.substring(path.indexOf(".") + 1);
-		int index = 0;
-
-		/* for each element on the path */
-		while (nextIndexes.length() > 0) {
-			/* if choice do it */
-			Annotated annotated = (Annotated) (currentNode.getUserObject());
-			if (annotated.getStructureType() == Structure.GROUP) {
-				/* if it's a complex type, look inside */
-
-				Group g = (Group) annotated;
-				try {
-					if (g.getOrder().getType() == Order.CHOICE && manageChoices) {
-						XsdNode parent = (XsdNode) currentNode.getParent();
-						int position = parent.getIndex(currentNode);
-						ArrayList choices = getChoices(g);
-						ArrayList possibilities = new ArrayList();
-						for (int i = 0; i < choices.size(); i++) {
-							try {
-								possibilities
-										.add(((ElementDecl) choices.get(i))
-												.getName());
-							} catch (ClassCastException e) {
-								/* a group: give an overview */
-								possibilities
-										.add(XsdNode
-												.choiceToString((Group) choices
-														.get(i)));
-							}
-						}
-						//						String choice = (String) expendChoices.get(path);
-						((XsdNode) currentNode.getParent()).remove(parent
-								.getIndex(currentNode));
-						XsdNode newNode;
-						newNode = new XsdNode((Annotated) choices
-								.get(possibilities.indexOf(choice)));
-						newNode.isRequired = currentNode.isRequired;
-						newNode.min = currentNode.min;
-						newNode.max = currentNode.max;
-						newNode.originalParent = currentNode;
-						parent.insert(newNode, position);
-						currentNode = newNode;
-					} else {
-						/* if not extended, do it */
-						if (!currentNode.isExtended) {
-							extendPath(currentNode);
-						} else {
-							index = Integer.parseInt(nextIndexes.substring(0,
-									nextIndexes.indexOf(".")));
-							nextIndexes = nextIndexes.substring(nextIndexes
-									.indexOf(".") + 1);
-							currentNode = (XsdNode) currentNode
-									.getChildAt(index);
-						}
-					}
-				} catch (StringIndexOutOfBoundsException e) {
-					return;
-				}
+	public void undoChoice(XsdNode node) {
+		String path = getPathForNode(node);
+		int i = 0;
+		while (i < this.expendChoices.size()) {
+			String current_path = (String) this.expendChoices.get(i);
+			if (current_path.startsWith(path)) {
+				/* remove path and choice, ie two elements */
+				this.expendChoices.remove(i);
+				this.expendChoices.remove(i);
 			} else {
+				i = i + 2;
+			}
+		}
+		node.isExtended = false;
+		node.transparent = false;
+
+		node.removeAllChildren();
+	}
+
+	public void redoChoice(String path, String choice) {
+		try {
+			XsdNode currentNode = rootNode;
+			/* never a choice on rootNode */
+			String nextIndexes = path.substring(path.indexOf(".") + 1);
+			int index = 0;
+			Annotated annotated = (Annotated) (currentNode.getUserObject());
+			/* for each element on the path */
+			while (nextIndexes.length() > 0) {
+				/* if choice do it */
+				annotated = (Annotated) (currentNode.getUserObject());
 				/* if not extended, do it */
 				if (!currentNode.isExtended) {
 					extendPath(currentNode);
@@ -685,7 +659,46 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 					}
 				}
 			}
+
+			/* add choice */
+			Group g = (Group) annotated;
+			try {
+				if (g.getOrder().getType() == Order.CHOICE && manageChoices) {
+					XsdNode parent = (XsdNode) currentNode.getParent();
+					int position = parent.getIndex(currentNode);
+					ArrayList choices = getChoices(g);
+					ArrayList possibilities = new ArrayList();
+					for (int i = 0; i < choices.size(); i++) {
+						try {
+							possibilities.add(((ElementDecl) choices.get(i))
+									.getName());
+						} catch (ClassCastException e) {
+							/* a group: give an overview */
+							possibilities.add(XsdNode
+									.choiceToString((Group) choices.get(i)));
+						}
+					}
+					XsdNode newNode;
+					newNode = new XsdNode((Annotated) choices.get(possibilities
+							.indexOf(choice)));
+					newNode.isRequired = currentNode.isRequired;
+					newNode.min = currentNode.min;
+					newNode.max = currentNode.max;
+					newNode.originalParent = currentNode;
+
+					currentNode.transparent = true;
+					currentNode.add(newNode);
+
+					currentNode = newNode;
+				}
+			} catch (StringIndexOutOfBoundsException e) {
+				return;
+			}
+		} catch (ArrayIndexOutOfBoundsException aioobe) {
+			System.out.println("path not found: " + path);
+			throw aioobe;
 		}
+
 	}
 
 	/**
@@ -791,8 +804,6 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 			 * if a sequence: add all childs if a choice, ask user
 			 */
 			if (g.getOrder().getType() == Order.CHOICE && manageChoices) {
-				((XsdNode) node.getParent()).remove(parent.getIndex(node));
-
 				XsdNode newNode;
 
 				String choice = (String) expendChoices.get(expendChoices
@@ -810,18 +821,17 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 								.choiceToString((Group) choices.get(i)));
 					}
 				}
-
+				//				for (int i = 0; i < possibilities.size(); i++) {
+				//					System.out.println(possibilities.get(i));
+				//				}
 				newNode = new XsdNode((Annotated) choices.get(possibilities
 						.indexOf(choice)));
-
-				expendChoices.add(path);
-				expendChoices.add(choice);
-
 				newNode.isRequired = node.isRequired;
 				newNode.min = node.min;
 				newNode.max = node.max;
 				newNode.originalParent = node;
-				parent.insert(newNode, position);
+				node.transparent = true;
+				node.add(newNode);
 
 				if (((Annotated) newNode.getUserObject()).getStructureType() != Structure.GROUP)
 					extendPath(newNode);

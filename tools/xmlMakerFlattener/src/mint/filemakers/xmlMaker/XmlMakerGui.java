@@ -41,6 +41,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
+import javax.swing.UIManager;
 import javax.swing.border.TitledBorder;
 
 import mint.filemakers.xmlMaker.gui.DictionaryPanel;
@@ -53,7 +54,10 @@ import mint.filemakers.xmlMaker.mapping.TreeMapping;
 import mint.filemakers.xmlMaker.structure.Dictionary;
 import mint.filemakers.xmlMaker.structure.FlatFile;
 import mint.filemakers.xmlMaker.structure.XsdTreeStructImpl;
+import mint.filemakers.xsd.Utils;
 import mint.filemakers.xsd.XsdNode;
+
+import com.digitprop.tonic.TonicLookAndFeel;
 
 /**
  * Main class for the PSI files maker: this class displays a graphical interface
@@ -72,7 +76,12 @@ import mint.filemakers.xsd.XsdNode;
  */
 public class XmlMakerGui extends JFrame {
 	public void load() {
-		JFileChooser fc = new JFileChooser(".");
+
+		String directory = Utils.lastVisitedMappingDirectory;
+		if (directory == null)
+			directory = Utils.lastVisitedDirectory;
+
+		JFileChooser fc = new JFileChooser(directory);
 
 		int returnVal = fc.showOpenDialog(new JFrame());
 		if (returnVal != JFileChooser.APPROVE_OPTION) {
@@ -80,6 +89,9 @@ public class XmlMakerGui extends JFrame {
 		}
 
 		try {
+			Utils.lastVisitedDirectory = fc.getSelectedFile().getPath();
+			Utils.lastVisitedMappingDirectory = fc.getSelectedFile().getPath();
+
 			FileInputStream fin = new FileInputStream(fc.getSelectedFile());
 
 			// Create XML encoder.
@@ -282,10 +294,17 @@ public class XmlMakerGui extends JFrame {
 	public XmlMakerGui() {
 		super("XML Maker");
 
-		xsdTree = new XsdTreeStructImpl();
-		treePanel = new XsdTreePanelImpl(xsdTree);
+		/* look n'feel */
+		try {
+			UIManager.setLookAndFeel(new TonicLookAndFeel());
+		} catch (Exception e) {
+			System.out.println("Unable to load look'n feel");
+		}
 
 		getContentPane().setLayout(new BorderLayout());
+
+		xsdTree = new XsdTreeStructImpl();
+		treePanel = new XsdTreePanelImpl(xsdTree);
 
 		flatFileTabbedPanel = new FlatFileTabbedPanel(xsdTree.flatFiles);
 		flatFileTabbedPanel.setBorder(new TitledBorder("Flat files"));

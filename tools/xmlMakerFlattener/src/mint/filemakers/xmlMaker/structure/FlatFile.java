@@ -197,11 +197,7 @@ public class FlatFile {
 		this.fileURL = url;
 		this.input = new BufferedReader(new InputStreamReader((fileURL
 				.openStream())));
-
 		nextLine();
-
-		Utils.lastVisitedDirectory = url.getPath();
-		Utils.lastVisitedFlatFileDirectory = url.getPath();
 	}
 
 	/**

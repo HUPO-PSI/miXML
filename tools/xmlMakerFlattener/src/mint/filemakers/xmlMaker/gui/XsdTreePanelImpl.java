@@ -86,48 +86,52 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 
 	public class GenericAssociationListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			XsdNode selectedNode = (XsdNode) ((XsdTreeStructImpl) xsdTree).tree
-					.getLastSelectedPathComponent();
-
-			if (selectedNode == null) {
-				displayMessage("No node selected", "[XML maker]");
-				return;
-			}
-
-			if (flatFileAssociation.isSelected()) {
-				associateFlatFile(selectedNode, flatFileTabbedPanel
-						.getSelectedIndex());
-				return;
-			}
-
-			if (duplicableFieldAssociation.isSelected()) {
-				String path = flatFileTabbedPanel.getSelectedPath();
-				((XsdTreeStructImpl) xsdTree).associateDuplicableField(
-						selectedNode, path);
-				return;
-			}
-
-			if (!((XsdTreeStructImpl) xsdTree)
-					.canHaveValue((XsdNode) ((XsdTreeStructImpl) xsdTree).tree
-							.getLastSelectedPathComponent())) {
-				displayMessage("No value can be associated to this node",
-						"[XML maker]");
-				return;
-			}
-
-			if (fieldAssociation.isSelected()) {
-				//                String path = flatFileTabbedPanel.getSelectedPath();
-				//                ((XsdTreeStructImpl) xsdTree)
-				//                        .associateField(selectedNode, path);
-				associateField(selectedNode);
-			} else if (dictionnaryAssociation.isSelected())
-				associateDictionnary(selectedNode);
-			else if (defaultAssociation.isSelected())
-				associateDefaultValue(selectedNode);
-			else if (autoGenerationAssociationButton.isSelected())
-				((XsdTreeStructImpl) xsdTree)
-						.associateAutoGenerateValue(selectedNode);
+			doAssociation();
 		}
+	}
+
+	public void doAssociation() {
+		XsdNode selectedNode = (XsdNode) ((XsdTreeStructImpl) xsdTree).tree
+				.getLastSelectedPathComponent();
+
+		if (selectedNode == null) {
+			displayMessage("No node selected", "[XML maker]");
+			return;
+		}
+
+		if (flatFileAssociation.isSelected()) {
+			associateFlatFile(selectedNode, flatFileTabbedPanel
+					.getSelectedIndex());
+			return;
+		}
+
+		if (duplicableFieldAssociation.isSelected()) {
+			String path = flatFileTabbedPanel.getSelectedPath();
+			((XsdTreeStructImpl) xsdTree).associateDuplicableField(
+					selectedNode, path);
+			return;
+		}
+
+		if (!((XsdTreeStructImpl) xsdTree)
+				.canHaveValue((XsdNode) ((XsdTreeStructImpl) xsdTree).tree
+						.getLastSelectedPathComponent())) {
+			displayMessage("No value can be associated to this node",
+					"[XML maker]");
+			return;
+		}
+
+		if (fieldAssociation.isSelected()) {
+			//                String path = flatFileTabbedPanel.getSelectedPath();
+			//                ((XsdTreeStructImpl) xsdTree)
+			//                        .associateField(selectedNode, path);
+			associateField(selectedNode);
+		} else if (dictionnaryAssociation.isSelected())
+			associateDictionnary(selectedNode);
+		else if (defaultAssociation.isSelected())
+			associateDefaultValue(selectedNode);
+		else if (autoGenerationAssociationButton.isSelected())
+			((XsdTreeStructImpl) xsdTree)
+					.associateAutoGenerateValue(selectedNode);
 	}
 
 	/** use as default value when the user is asked for a default value */
@@ -304,6 +308,11 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 	 */
 	public XsdTreePanelImpl(XsdTreeStructImpl xsdTree) {
 		super(xsdTree, BorderLayout.SOUTH);
+		//		try {
+		//			UIManager.setLookAndFeel(
+		// "com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+		//		}
+		//		catch (Exception e) {System.out.println("beurk");}
 		MouseListener mouseListener = new TreeMouseAdapter();
 		xsdTree.tree.addMouseListener(mouseListener);
 	}
@@ -478,18 +487,12 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 		associationb1Box.add(duplicableFieldAssociation);
 
 		associationb1Box.add(fieldAssociation);
-		JButton editFieldb = new JButton("...");
+		JButton editFieldb = new JButton("validation");
 		editFieldb.addActionListener(new EditFieldAssociationListener());
-		editFieldb.setMaximumSize(new Dimension(20, 5));
-		//		editFieldb.setMaximumSize(buttonsDimension);
 		associationb1Box.add(editFieldb);
-
 		associationb1Box.add(dictionnaryAssociation);
-
 		associationb1Box.add(defaultAssociation);
-
 		associationb1Box.add(defaultAssociation);
-
 		associationb1Box.add(autoGenerationAssociationButton);
 
 		JScrollPane scrollPane = new JScrollPane(associationLabel);
@@ -707,12 +710,6 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 
 				FileInputStream fis = new FileInputStream(fc.getSelectedFile());
 				XMLDecoder xdec = new XMLDecoder(fis);
-				//				flatFileTabbedPanel.load(xdec);
-				//				dictionnaryPanel.load(xdec);
-				//				load(xdec);
-				//treePanel.loadFileb.doClick();
-				//setTabFileTabbedPanel(flatFileTabbedPanel);
-				//setDictionnaryPanel(dictionnaryLists);
 				xdec.close();
 				fis.close();
 				((XsdTreeStructImpl) xsdTree).check();
@@ -777,7 +774,8 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 				return;
 			}
 
-			if (node.originalParent == null) {
+			//			if (node.originalParent == null) {
+			if (!node.transparent) {
 				displayMessage("No choice has been done for this node.",
 						"[XML maker]");
 				return;
@@ -787,9 +785,11 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 
 			int position = parent.getIndex(node);
 
-			parent.insert(node.originalParent, position);
-			parent.remove(position + 1);
-			node.originalParent.isExtended = false;
+			//			parent.insert(node.originalParent, position);
+			//			parent.remove(position + 1);
+			xsdTree.undoChoice(node);
+
+			//			node.originalParent.isExtended = false;
 			((XsdTreeStructImpl) xsdTree).treeModel.reload(parent);
 		}
 	}
@@ -798,20 +798,21 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 		public void mouseClicked(MouseEvent e) {
 			XsdNode selectedNode = (XsdNode) ((XsdTreeStructImpl) xsdTree).tree
 					.getLastSelectedPathComponent();
+			if (selectedNode == null)
+				return;
 			String value;
 			String text = ((XsdTreeStructImpl) xsdTree)
 					.getAssociationInfo(selectedNode);
 			if ((value = ((XsdTreeStructImpl) xsdTree).getValue(selectedNode)) != "") {
 				text += "\nvalue: " + value;
 			}
+
+			if (e.getClickCount() == 2) {
+				doAssociation();
+			}
+
 			if (selectedNode != null) {
 				associationLabel.setText(text);
-
-				//                if
-				// (((XsdTreeStructImpl)xsdTree).validationRegexps.containsKey(selectedNode))
-				//                	validationRegexpLbl.setText((String)
-				// ((XsdTreeStructImpl)xsdTree).validationRegexps.get(selectedNode));
-				//                else validationRegexpLbl.setText("");
 			}
 		}
 	}
@@ -911,35 +912,40 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 
 	public void associateField(XsdNode node) {
 		String path = flatFileTabbedPanel.getSelectedPath();
-
-		AssociateFieldPanel afp = new AssociateFieldPanel();
-		int confirm = JOptionPane.showConfirmDialog(null, afp,
-				"[XML maker] field association", JOptionPane.OK_CANCEL_OPTION,
-				JOptionPane.QUESTION_MESSAGE);
-
-		if (confirm != JOptionPane.OK_OPTION)
+		if (!path.matches("([0-9]\\.)*[0-9]+")) {
+			displayMessage("No field selected", "[XML maker]");
 			return;
+		}
+		//		AssociateFieldPanel afp = new AssociateFieldPanel();
+		//		int confirm = JOptionPane.showConfirmDialog(null, afp,
+		//				"[XML maker] field association", JOptionPane.OK_CANCEL_OPTION,
+		//				JOptionPane.QUESTION_MESSAGE);
+		//
+		//		if (confirm != JOptionPane.OK_OPTION)
+		//			return;
 
 		if (node == null) {
 			displayMessage("No node selected", "[XML maker]");
 			return;
 		}
 
-		if (afp.regexp.getText().trim().length() > 0) {
-			try {
-				Pattern.compile(afp.regexp.getText().trim());
-			} catch (java.util.regex.PatternSyntaxException pse) {
-				displayMessage("unvalid regular expression", "[XML Maker]");
-				return;
-			}
-		}
+		//		if (afp.regexp.getText().trim().length() > 0) {
+		//			try {
+		//				Pattern.compile(afp.regexp.getText().trim());
+		//			} catch (java.util.regex.PatternSyntaxException pse) {
+		//				displayMessage("unvalid regular expression", "[XML Maker]");
+		//				return;
+		//			}
+		//		}
 
-		((XsdTreeStructImpl) xsdTree).associateField(node, path,
-				afp.unduplicableAssociation.isSelected());
+		//		((XsdTreeStructImpl) xsdTree).associateField(node, path,
+		//				afp.unduplicableAssociation.isSelected());
 
-		if (afp.regexp.getText().trim().length() > 0)
-			((XsdTreeStructImpl) xsdTree).associateValidationRegexp(node,
-					afp.regexp.getText().trim());
+		((XsdTreeStructImpl) xsdTree).associateField(node, path, false);
+
+		//		if (afp.regexp.getText().trim().length() > 0)
+		//			((XsdTreeStructImpl) xsdTree).associateValidationRegexp(node,
+		//					afp.regexp.getText().trim());
 
 	}
 
@@ -1176,6 +1182,9 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 			if (((XsdTreeStructImpl) xsdTree).associatedFlatFiles
 					.contains(node))
 				setForeground(Color.GREEN);
+
+			if (node.transparent)
+				setForeground(Color.LIGHT_GRAY);
 
 			return this;
 		}

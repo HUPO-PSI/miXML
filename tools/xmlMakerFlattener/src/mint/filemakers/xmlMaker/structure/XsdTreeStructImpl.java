@@ -62,7 +62,9 @@ public class XsdTreeStructImpl extends
 	/**
 	 * if set to false, XML code will not been checked
 	 */
-	public boolean checkXml = true;
+	public boolean checkXml = false;
+
+	/** TODO: give choice for checkin' XML */
 
 	/**
 	 * current indentation in the XML document: a string containing only
@@ -766,11 +768,112 @@ public class XsdTreeStructImpl extends
 	 * means user has to make a choice
 	 */
 	public ArrayList checkGroup(XsdNode node) {
+
 		ArrayList errorMessages = new ArrayList();
+		if (node.transparent) {
+			{ /* complexType, ie: attributes + group */
 
-		errorMessages.add(printPath(node.getPath())
-				+ ": WARNING: maybe something is missing.");
+				boolean errors = false;
+				/* check if number of subelts is correct */
+				HashMap maxOccurs = new HashMap();
+				HashMap minOccurs = new HashMap();
 
+				Enumeration children = node.children();
+
+				while (children.hasMoreElements()) {
+					XsdNode child = (XsdNode) children.nextElement();
+					ArrayList subMessages = check(child);
+
+					switch (((Annotated) child.getUserObject())
+							.getStructureType()) {
+					case Structure.ATTRIBUTE:
+						if (subMessages.size() != 0)
+							errors = true;
+						for (int i = 0; i < subMessages.size(); i++) {
+							errorMessages.add(subMessages.get(i));
+						}
+						break;
+					case Structure.GROUP:
+						if (subMessages.size() != 0)
+							errors = true;
+						for (int i = 0; i < subMessages.size(); i++) {
+							errorMessages.add(subMessages.get(i));
+						}
+						break;
+					case Structure.ELEMENT:
+
+						/* initialisation if first occurence of the element */
+						if (!maxOccurs.containsKey(child.toString())) {
+							int max = child.max;
+							if (max != -1) {
+								maxOccurs.put(child.toString(),
+										new Integer(max));
+							} else {
+								maxOccurs.put(child.toString(), "UNBOUNDED");
+							}
+							minOccurs.put(child.toString(), new Integer(
+									child.min));
+						}
+
+						for (int i = 0; i < subMessages.size(); i++) {
+							errorMessages.add(subMessages.get(i));
+						}
+
+						if (child.isCheckedOk) {
+							try {
+								maxOccurs.put(child.toString(), new Integer(
+										((Integer) maxOccurs.get(child
+												.toString())).intValue() - 1));
+							} catch (ClassCastException e) {
+								/*
+								 * ok, max is unbounded and exception is throws
+								 * when trying to cast String to Integer
+								 */
+							}
+							minOccurs.put(child.toString(), new Integer(
+									((Integer) minOccurs.get(child.toString()))
+											.intValue() - 1));
+						}
+					}
+				}
+
+				Iterator names = minOccurs.keySet().iterator();
+
+				Iterator mins = minOccurs.values().iterator();
+				Iterator maxs = maxOccurs.values().iterator();
+				while (names.hasNext()) {
+					String name = (String) names.next();
+					// if a min is > 0, it means that an element is missing
+					if (((Integer) mins.next()).intValue() > 0) {
+						errorMessages.add(printPath(node.getPath())
+								+ "ERROR: a " + name + " is missing");
+						errors = true;
+					}
+
+					/* if a max is < 0, it means there are too much elements */
+					try {
+						if (((Integer) maxs.next()).intValue() < 0) {
+							errorMessages.add(printPath(node.getPath())
+									+ " ERROR: a " + name
+									+ " should be removed");
+							errors = true;
+						}
+
+					} catch (ClassCastException e) {
+						/*
+						 * ok, max is unbounded and exception is throws when
+						 * trying to cast String to Integer
+						 */
+					}
+				}
+
+				node.isCheckedOk = !errors;
+			}
+
+		} else {
+			errorMessages.add(printPath(node.getPath())
+					+ ": WARNING: maybe something is missing.");
+		}
 		return errorMessages;
 	}
 
@@ -1910,7 +2013,6 @@ public class XsdTreeStructImpl extends
 					.get(i));
 			unduplicableNodes.add(node);
 		}
-
 	}
 
 	/**

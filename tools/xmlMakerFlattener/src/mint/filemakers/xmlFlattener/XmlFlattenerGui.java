@@ -36,13 +36,17 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
+import javax.swing.UIManager;
 import javax.swing.border.TitledBorder;
 
 import mint.filemakers.xmlFlattener.gui.XsdTreePanelImpl;
 import mint.filemakers.xmlFlattener.mapping.TreeMapping;
 import mint.filemakers.xmlFlattener.structure.XsdTreeStructImpl;
+import mint.filemakers.xsd.Utils;
 
 import org.xml.sax.SAXException;
+
+import com.digitprop.tonic.TonicLookAndFeel;
 
 /**
  * Main class for the flattener: this class displays a graphical interface that
@@ -67,6 +71,13 @@ public class XmlFlattenerGui extends JFrame {
 
 	public XmlFlattenerGui() {
 		super("XML flattener");
+
+		/* look n'feel */
+		try {
+			UIManager.setLookAndFeel(new TonicLookAndFeel());
+		} catch (Exception e) {
+			System.out.println("Unable to load look'n feel");
+		}
 
 		getContentPane().setLayout(new BorderLayout());
 
@@ -245,12 +256,19 @@ public class XmlFlattenerGui extends JFrame {
 
 	public void load() {
 		try {
-			JFileChooser fc = new JFileChooser(".");
+			String directory = Utils.lastVisitedMappingDirectory;
+			if (directory == null)
+				directory = Utils.lastVisitedDirectory;
+
+			JFileChooser fc = new JFileChooser(directory);
 
 			int returnVal = fc.showOpenDialog(new JFrame());
 			if (returnVal != JFileChooser.APPROVE_OPTION) {
 				return;
 			}
+
+			Utils.lastVisitedDirectory = fc.getSelectedFile().getPath();
+			Utils.lastVisitedMappingDirectory = fc.getSelectedFile().getPath();
 
 			FileInputStream fin = new FileInputStream(fc.getSelectedFile());
 

@@ -266,6 +266,9 @@ public class FlatFilePanel extends JPanel {
 
 			flatFile.load(fileURL);
 
+			Utils.lastVisitedDirectory = fileURL.getPath();
+			Utils.lastVisitedFlatFileDirectory = fileURL.getPath();
+
 			updateList();
 			skipFirstLineb.setSelected(flatFile.firstLineForTitles());
 		} catch (FileNotFoundException fe) {
