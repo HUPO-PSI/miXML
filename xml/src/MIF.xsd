@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by Henning Hermjakob (EMBL OUTSTATION THE EBI WELLCOME TRUST GENOME CAMPUS) -->
-<xs:schema targetNamespace="net:sf:psidev:mi" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="net:sf:psidev:mi" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema targetNamespace="net:sf:psidev:mi" xmlns="net:sf:psidev:mi" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:element name="entrySet">
 		<xs:annotation>
 			<xs:documentation>Root element of the Molecular Interaction Format</xs:documentation>
@@ -29,7 +29,10 @@
 									<xs:attribute name="releaseDate" type="xs:date" use="optional"/>
 								</xs:complexType>
 							</xs:element>
-							<xs:element name="availabilityList">
+							<xs:element name="availabilityList" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Data availability statements,  for example copyrights</xs:documentation>
+								</xs:annotation>
 								<xs:complexType>
 									<xs:sequence>
 										<xs:element name="availability" type="availabilityType" default="free" maxOccurs="unbounded">
@@ -41,6 +44,9 @@
 								</xs:complexType>
 							</xs:element>
 							<xs:element name="experimentList">
+								<xs:annotation>
+									<xs:documentation>All experiments in which the interactions of this entry have been determined</xs:documentation>
+								</xs:annotation>
 								<xs:complexType>
 									<xs:sequence>
 										<xs:element name="experimentDescription" type="experimentType" maxOccurs="unbounded">
@@ -66,14 +72,14 @@
 								</xs:complexType>
 							</xs:element>
 							<xs:element name="interactionList">
+								<xs:annotation>
+									<xs:documentation>List of interactions</xs:documentation>
+								</xs:annotation>
 								<xs:complexType>
 									<xs:sequence>
 										<xs:element name="interaction" maxOccurs="unbounded">
 											<xs:complexType>
 												<xs:sequence>
-													<xs:annotation>
-														<xs:documentation>An interaction has one or more participants, thereby covering binary and n-ary interactions.</xs:documentation>
-													</xs:annotation>
 													<xs:element name="names" type="namesType" minOccurs="0"/>
 													<xs:choice>
 														<xs:annotation>
@@ -84,7 +90,7 @@
 													</xs:choice>
 													<xs:choice minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>Describes the availability of the interaction data. Default is "freely available".</xs:documentation>
+															<xs:documentation>Describes the availability of the interaction data. If no availability is given, the data is assumed to be freely available.</xs:documentation>
 														</xs:annotation>
 														<xs:element name="availabilityRef" type="refType"/>
 														<xs:element name="availabilityDescription" type="availabilityType"/>
@@ -92,7 +98,10 @@
 													<xs:element name="participantList">
 														<xs:complexType>
 															<xs:sequence>
-																<xs:element name="participant">
+																<xs:element name="participant" minOccurs="2" maxOccurs="unbounded">
+																	<xs:annotation>
+																		<xs:documentation>An interaction has two or more participants, thereby covering binary and n-ary interactions.</xs:documentation>
+																	</xs:annotation>
 																	<xs:complexType>
 																		<xs:sequence>
 																			<xs:choice>
@@ -236,6 +245,9 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="featureType">
+		<xs:annotation>
+			<xs:documentation>A feature, e.g. domain, on a sequence.</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="xref" type="xrefType" minOccurs="0">
 				<xs:annotation>
@@ -252,6 +264,9 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="xrefType">
+		<xs:annotation>
+			<xs:documentation>Crossreference to an external database.</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="primaryRef" type="dbReferenceType">
 				<xs:annotation>
@@ -267,9 +282,15 @@
 	</xs:complexType>
 	<!--  Feature location definition begins  -->
 	<xs:complexType name="positionType">
+		<xs:annotation>
+			<xs:documentation>A specified position a a sequence.</xs:documentation>
+		</xs:annotation>
 		<xs:attribute name="position" type="xs:unsignedLong" use="required"/>
 	</xs:complexType>
 	<xs:complexType name="intervalType">
+		<xs:annotation>
+			<xs:documentation>A interval on a sequence.</xs:documentation>
+		</xs:annotation>
 		<xs:attribute name="begin" type="xs:unsignedLong" use="required"/>
 		<xs:attribute name="end" type="xs:unsignedLong" use="required"/>
 	</xs:complexType>
@@ -298,6 +319,9 @@
 	</xs:complexType>
 	<!--  Feature location definition ends  -->
 	<xs:complexType name="experimentType">
+		<xs:annotation>
+			<xs:documentation>Describes one set of experimental parameters.</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="names" type="namesType" minOccurs="0"/>
 			<xs:element name="bibref" type="bibrefType" minOccurs="0">
@@ -338,6 +362,9 @@
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="confidence" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Confidence in this experiment.</xs:documentation>
+				</xs:annotation>
 				<xs:complexType>
 					<xs:attribute name="unit" type="xs:string" use="required"/>
 					<xs:attribute name="value" type="xs:string" use="required"/>
@@ -347,14 +374,31 @@
 		<xs:attribute name="id" type="xs:string" use="required"/>
 	</xs:complexType>
 	<xs:complexType name="refType">
+		<xs:annotation>
+			<xs:documentation>Refers to an object within the same file by its id.</xs:documentation>
+		</xs:annotation>
 		<xs:attribute name="ref" type="xs:string" use="required"/>
 	</xs:complexType>
 	<xs:complexType name="attributeListType">
+		<xs:annotation>
+			<xs:documentation>A list of additional attributes. Open tag-value list to allow the inclusion of additional data.</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="attribute" maxOccurs="unbounded"/>
+			<xs:element name="attribute" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="name" type="xs:string" use="required"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="bibrefType">
+		<xs:annotation>
+			<xs:documentation>Bibliographic reference.</xs:documentation>
+		</xs:annotation>
 		<xs:choice>
 			<xs:element name="xref" type="xrefType">
 				<xs:annotation>
@@ -369,18 +413,27 @@
 		</xs:choice>
 	</xs:complexType>
 	<xs:complexType name="namesType">
+		<xs:annotation>
+			<xs:documentation>Namesfor an object.</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="shortLabel" type="labelType"/>
 			<xs:element name="fullName" type="fullNameType" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="cvType">
+		<xs:annotation>
+			<xs:documentation>Reference to an external controlled vocabulary.</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="names" type="namesType"/>
 			<xs:element name="xref" type="xrefType"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="openCvType">
+		<xs:annotation>
+			<xs:documentation>Allows to reference an external controlled vocabulary, or to directly include a value if no suitable external definition is available.</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:annotation>
 				<xs:documentation>Normally refers to an external controlled vocabulary, but allows free attibute-value description if no suitable external description is available. </xs:documentation>
@@ -391,6 +444,9 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="interactorType">
+		<xs:annotation>
+			<xs:documentation>Describes an interactor, usually a protein</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="names" type="namesType"/>
 			<xs:element name="xref" type="xrefType" minOccurs="0">
@@ -426,6 +482,9 @@
 		<xs:attribute name="id" type="xs:string" use="required"/>
 	</xs:complexType>
 	<xs:complexType name="availabilityType">
+		<xs:annotation>
+			<xs:documentation>A text describing the availability of data, e.g. a copyright statement.</xs:documentation>
+		</xs:annotation>
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
 				<xs:attribute name="id" type="xs:string" use="required"/>
