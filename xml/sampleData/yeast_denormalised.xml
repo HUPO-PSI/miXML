@@ -20,11 +20,11 @@
 							<names>
 								<shortLabel>MAK10</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -35,11 +35,11 @@
 							<names>
 								<shortLabel>MAK3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -73,11 +73,11 @@
 							<names>
 								<shortLabel>CDC12</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -88,11 +88,11 @@
 							<names>
 								<shortLabel>MKK2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -103,11 +103,11 @@
 							<names>
 								<shortLabel>RGD1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -141,11 +141,11 @@
 							<names>
 								<shortLabel>BZZ1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -156,11 +156,11 @@
 							<names>
 								<shortLabel>CHC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -171,11 +171,11 @@
 							<names>
 								<shortLabel>ECM25</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -186,11 +186,11 @@
 							<names>
 								<shortLabel>END3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -201,11 +201,11 @@
 							<names>
 								<shortLabel>HXT6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -216,11 +216,11 @@
 							<names>
 								<shortLabel>HXT7</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -231,11 +231,11 @@
 							<names>
 								<shortLabel>LAS17</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -246,11 +246,11 @@
 							<names>
 								<shortLabel>LAS17</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -261,11 +261,11 @@
 							<names>
 								<shortLabel>MYO4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -276,11 +276,11 @@
 							<names>
 								<shortLabel>PHO84</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -291,11 +291,11 @@
 							<names>
 								<shortLabel>RAD51</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -306,11 +306,11 @@
 							<names>
 								<shortLabel>RPN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -321,11 +321,11 @@
 							<names>
 								<shortLabel>RPN12</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -336,11 +336,11 @@
 							<names>
 								<shortLabel>RVS167</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -351,11 +351,11 @@
 							<names>
 								<shortLabel>SLA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -366,11 +366,11 @@
 							<names>
 								<shortLabel>SLA2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -381,11 +381,11 @@
 							<names>
 								<shortLabel>STM1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -396,11 +396,11 @@
 							<names>
 								<shortLabel>VMA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -411,11 +411,11 @@
 							<names>
 								<shortLabel>VRP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -426,11 +426,11 @@
 							<names>
 								<shortLabel>YCR030C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -441,11 +441,11 @@
 							<names>
 								<shortLabel>YHM2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -456,11 +456,11 @@
 							<names>
 								<shortLabel>YPT7</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -494,11 +494,11 @@
 							<names>
 								<shortLabel>END3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -509,11 +509,11 @@
 							<names>
 								<shortLabel>SLA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -524,11 +524,11 @@
 							<names>
 								<shortLabel>VRP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -539,11 +539,11 @@
 							<names>
 								<shortLabel>YPT7</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -554,11 +554,11 @@
 							<names>
 								<shortLabel>YSC84</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -592,11 +592,11 @@
 							<names>
 								<shortLabel>YNL300W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -637,11 +637,11 @@
 							<names>
 								<shortLabel>ASC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -652,11 +652,11 @@
 							<names>
 								<shortLabel>TFA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -667,11 +667,11 @@
 							<names>
 								<shortLabel>YER007C-A</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -682,11 +682,11 @@
 							<names>
 								<shortLabel>YER007C-A</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -720,11 +720,11 @@
 							<names>
 								<shortLabel>YKR046C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -765,11 +765,11 @@
 							<names>
 								<shortLabel>YCR102C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -810,11 +810,11 @@
 							<names>
 								<shortLabel>YFR044C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -855,11 +855,11 @@
 							<names>
 								<shortLabel>YFR006W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -870,11 +870,11 @@
 							<names>
 								<shortLabel>YFR006W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -885,11 +885,11 @@
 							<names>
 								<shortLabel>YFR006W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -923,11 +923,11 @@
 							<names>
 								<shortLabel>YGL099W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -968,11 +968,11 @@
 							<names>
 								<shortLabel>YGR245C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -1013,11 +1013,11 @@
 							<names>
 								<shortLabel>YDL148C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -1058,11 +1058,11 @@
 							<names>
 								<shortLabel>MAK10</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1073,11 +1073,11 @@
 							<names>
 								<shortLabel>MAK3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1088,11 +1088,11 @@
 							<names>
 								<shortLabel>MAK3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1103,11 +1103,11 @@
 							<names>
 								<shortLabel>MAK31</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1141,11 +1141,11 @@
 							<names>
 								<shortLabel>YNL132W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -1186,11 +1186,11 @@
 							<names>
 								<shortLabel>RPN9</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -1231,11 +1231,11 @@
 							<names>
 								<shortLabel>PYC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1246,11 +1246,11 @@
 							<names>
 								<shortLabel>PYC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1261,11 +1261,11 @@
 							<names>
 								<shortLabel>PYC2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1299,11 +1299,11 @@
 							<names>
 								<shortLabel>TKL1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1314,11 +1314,11 @@
 							<names>
 								<shortLabel>TKL1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1329,11 +1329,11 @@
 							<names>
 								<shortLabel>TKL1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1367,11 +1367,11 @@
 							<names>
 								<shortLabel>MIP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -1412,11 +1412,11 @@
 							<names>
 								<shortLabel>LAT1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1427,11 +1427,11 @@
 							<names>
 								<shortLabel>PDA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -1442,11 +1442,11 @@
 							<names>
 								<shortLabel>PFK1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1457,11 +1457,11 @@
 							<names>
 								<shortLabel>PFK2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1472,11 +1472,11 @@
 							<names>
 								<shortLabel>TIF2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1510,11 +1510,11 @@
 							<names>
 								<shortLabel>ENO1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1525,11 +1525,11 @@
 							<names>
 								<shortLabel>ENO1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1540,11 +1540,11 @@
 							<names>
 								<shortLabel>SSC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1578,11 +1578,11 @@
 							<names>
 								<shortLabel>LPD1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -1593,11 +1593,11 @@
 							<names>
 								<shortLabel>TKL1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1631,11 +1631,11 @@
 							<names>
 								<shortLabel>PFK1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1646,11 +1646,11 @@
 							<names>
 								<shortLabel>PFK1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1661,11 +1661,11 @@
 							<names>
 								<shortLabel>PFK2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1699,11 +1699,11 @@
 							<names>
 								<shortLabel>TPI1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1714,11 +1714,11 @@
 							<names>
 								<shortLabel>TPI1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1729,11 +1729,11 @@
 							<names>
 								<shortLabel>TPI1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1767,11 +1767,11 @@
 							<names>
 								<shortLabel>MAK31</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -1812,11 +1812,11 @@
 							<names>
 								<shortLabel>TRP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -1857,11 +1857,11 @@
 							<names>
 								<shortLabel>SUR2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -1902,11 +1902,11 @@
 							<names>
 								<shortLabel>CLU1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1917,11 +1917,11 @@
 							<names>
 								<shortLabel>ECM29</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1932,11 +1932,11 @@
 							<names>
 								<shortLabel>KAP123</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1947,11 +1947,11 @@
 							<names>
 								<shortLabel>MEC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1962,11 +1962,11 @@
 							<names>
 								<shortLabel>MIS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1977,11 +1977,11 @@
 							<names>
 								<shortLabel>MRPL23</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -1992,11 +1992,11 @@
 							<names>
 								<shortLabel>NAB3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2007,11 +2007,11 @@
 							<names>
 								<shortLabel>NRD1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2022,11 +2022,11 @@
 							<names>
 								<shortLabel>ROM2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2037,11 +2037,11 @@
 							<names>
 								<shortLabel>RPA135</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2052,11 +2052,11 @@
 							<names>
 								<shortLabel>SUI3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2067,11 +2067,11 @@
 							<names>
 								<shortLabel>SUP35</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2082,11 +2082,11 @@
 							<names>
 								<shortLabel>SUP35</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2097,11 +2097,11 @@
 							<names>
 								<shortLabel>SUP45</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2112,11 +2112,11 @@
 							<names>
 								<shortLabel>TAO3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2127,11 +2127,11 @@
 							<names>
 								<shortLabel>VPS5</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2142,11 +2142,11 @@
 							<names>
 								<shortLabel>YJL017W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2157,11 +2157,11 @@
 							<names>
 								<shortLabel>YML117W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2195,11 +2195,11 @@
 							<names>
 								<shortLabel>CDC34</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -2240,11 +2240,11 @@
 							<names>
 								<shortLabel>CDC4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -2255,11 +2255,11 @@
 							<names>
 								<shortLabel>SKP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2293,11 +2293,11 @@
 							<names>
 								<shortLabel>CDC53</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -2308,11 +2308,11 @@
 							<names>
 								<shortLabel>PDC6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2323,11 +2323,11 @@
 							<names>
 								<shortLabel>POR1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2338,11 +2338,11 @@
 							<names>
 								<shortLabel>PRB1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2353,11 +2353,11 @@
 							<names>
 								<shortLabel>PTC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2368,11 +2368,11 @@
 							<names>
 								<shortLabel>SKP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2383,11 +2383,11 @@
 							<names>
 								<shortLabel>THI21</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2398,11 +2398,11 @@
 							<names>
 								<shortLabel>YBR280C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2413,11 +2413,11 @@
 							<names>
 								<shortLabel>YLR352W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2451,11 +2451,11 @@
 							<names>
 								<shortLabel>CDC53</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2466,11 +2466,11 @@
 							<names>
 								<shortLabel>COF1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2481,11 +2481,11 @@
 							<names>
 								<shortLabel>CPH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2496,11 +2496,11 @@
 							<names>
 								<shortLabel>FOL2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2511,11 +2511,11 @@
 							<names>
 								<shortLabel>GRR1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -2526,11 +2526,11 @@
 							<names>
 								<shortLabel>HTB2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2541,11 +2541,11 @@
 							<names>
 								<shortLabel>PDC5</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2556,11 +2556,11 @@
 							<names>
 								<shortLabel>PDC6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2571,11 +2571,11 @@
 							<names>
 								<shortLabel>PFK1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2586,11 +2586,11 @@
 							<names>
 								<shortLabel>POR1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2601,11 +2601,11 @@
 							<names>
 								<shortLabel>SAH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2616,11 +2616,11 @@
 							<names>
 								<shortLabel>SKP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2631,11 +2631,11 @@
 							<names>
 								<shortLabel>UBI4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2669,11 +2669,11 @@
 							<names>
 								<shortLabel>ADR1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2684,11 +2684,11 @@
 							<names>
 								<shortLabel>BBC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2699,11 +2699,11 @@
 							<names>
 								<shortLabel>CDC39</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2714,11 +2714,11 @@
 							<names>
 								<shortLabel>CDC53</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2729,11 +2729,11 @@
 							<names>
 								<shortLabel>CRM1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2744,11 +2744,11 @@
 							<names>
 								<shortLabel>ECM33</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2759,11 +2759,11 @@
 							<names>
 								<shortLabel>GCN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2774,11 +2774,11 @@
 							<names>
 								<shortLabel>HRT1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -2789,11 +2789,11 @@
 							<names>
 								<shortLabel>HYP2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2804,11 +2804,11 @@
 							<names>
 								<shortLabel>KIM3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2819,11 +2819,11 @@
 							<names>
 								<shortLabel>PFK1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2834,11 +2834,11 @@
 							<names>
 								<shortLabel>PMA2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2849,11 +2849,11 @@
 							<names>
 								<shortLabel>RPN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2864,11 +2864,11 @@
 							<names>
 								<shortLabel>RTT101</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2879,11 +2879,11 @@
 							<names>
 								<shortLabel>SEC27</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2894,11 +2894,11 @@
 							<names>
 								<shortLabel>UBI4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2909,11 +2909,11 @@
 							<names>
 								<shortLabel>YAR009C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2924,11 +2924,11 @@
 							<names>
 								<shortLabel>YGP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2939,11 +2939,11 @@
 							<names>
 								<shortLabel>YLR035C-A</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2954,11 +2954,11 @@
 							<names>
 								<shortLabel>YLR106C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -2992,11 +2992,11 @@
 							<names>
 								<shortLabel>KEX2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -3037,11 +3037,11 @@
 							<names>
 								<shortLabel>CDC53</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3052,11 +3052,11 @@
 							<names>
 								<shortLabel>HRT1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3067,11 +3067,11 @@
 							<names>
 								<shortLabel>MET30</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -3082,11 +3082,11 @@
 							<names>
 								<shortLabel>MET31</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3097,11 +3097,11 @@
 							<names>
 								<shortLabel>MET4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3112,11 +3112,11 @@
 							<names>
 								<shortLabel>RUB1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3127,11 +3127,11 @@
 							<names>
 								<shortLabel>SIS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3142,11 +3142,11 @@
 							<names>
 								<shortLabel>SKP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3157,11 +3157,11 @@
 							<names>
 								<shortLabel>TEF4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3172,11 +3172,11 @@
 							<names>
 								<shortLabel>UBI4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3210,11 +3210,11 @@
 							<names>
 								<shortLabel>BUR2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3225,11 +3225,11 @@
 							<names>
 								<shortLabel>HTA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3240,11 +3240,11 @@
 							<names>
 								<shortLabel>MSH4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3255,11 +3255,11 @@
 							<names>
 								<shortLabel>NAB3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3270,11 +3270,11 @@
 							<names>
 								<shortLabel>NPL3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3285,11 +3285,11 @@
 							<names>
 								<shortLabel>NRD1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3300,11 +3300,11 @@
 							<names>
 								<shortLabel>PRP40</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3315,11 +3315,11 @@
 							<names>
 								<shortLabel>PRP42</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3330,11 +3330,11 @@
 							<names>
 								<shortLabel>RLR1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3345,11 +3345,11 @@
 							<names>
 								<shortLabel>RSE1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3360,11 +3360,11 @@
 							<names>
 								<shortLabel>SCP160</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3375,11 +3375,11 @@
 							<names>
 								<shortLabel>SEN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3390,11 +3390,11 @@
 							<names>
 								<shortLabel>SGV1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3405,11 +3405,11 @@
 							<names>
 								<shortLabel>SNP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3420,11 +3420,11 @@
 							<names>
 								<shortLabel>SNU56</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3435,11 +3435,11 @@
 							<names>
 								<shortLabel>SRO9</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3450,11 +3450,11 @@
 							<names>
 								<shortLabel>SRP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3465,11 +3465,11 @@
 							<names>
 								<shortLabel>STO1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3480,11 +3480,11 @@
 							<names>
 								<shortLabel>STO1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3495,11 +3495,11 @@
 							<names>
 								<shortLabel>YDL175C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3510,11 +3510,11 @@
 							<names>
 								<shortLabel>YKL214C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3548,11 +3548,11 @@
 							<names>
 								<shortLabel>SGT2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -3593,11 +3593,11 @@
 							<names>
 								<shortLabel>BOP2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3608,11 +3608,11 @@
 							<names>
 								<shortLabel>CDC4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3623,11 +3623,11 @@
 							<names>
 								<shortLabel>CDC53</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3638,11 +3638,11 @@
 							<names>
 								<shortLabel>PRB1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3653,11 +3653,11 @@
 							<names>
 								<shortLabel>SGT1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3668,11 +3668,11 @@
 							<names>
 								<shortLabel>SKP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -3683,11 +3683,11 @@
 							<names>
 								<shortLabel>UFO1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3698,11 +3698,11 @@
 							<names>
 								<shortLabel>YDR131C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3736,11 +3736,11 @@
 							<names>
 								<shortLabel>CAR2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3751,11 +3751,11 @@
 							<names>
 								<shortLabel>DUN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3766,11 +3766,11 @@
 							<names>
 								<shortLabel>FAR1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3781,11 +3781,11 @@
 							<names>
 								<shortLabel>GPD1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3796,11 +3796,11 @@
 							<names>
 								<shortLabel>GPD2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3811,11 +3811,11 @@
 							<names>
 								<shortLabel>MSI1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3826,11 +3826,11 @@
 							<names>
 								<shortLabel>PDC6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3841,11 +3841,11 @@
 							<names>
 								<shortLabel>RAD1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -3856,11 +3856,11 @@
 							<names>
 								<shortLabel>SEC6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3871,11 +3871,11 @@
 							<names>
 								<shortLabel>SEN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3886,11 +3886,11 @@
 							<names>
 								<shortLabel>STE20</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3901,11 +3901,11 @@
 							<names>
 								<shortLabel>UBI4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3916,11 +3916,11 @@
 							<names>
 								<shortLabel>YAL027W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3931,11 +3931,11 @@
 							<names>
 								<shortLabel>YDR324C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3946,11 +3946,11 @@
 							<names>
 								<shortLabel>YGR086C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3961,11 +3961,11 @@
 							<names>
 								<shortLabel>YHR033W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3976,11 +3976,11 @@
 							<names>
 								<shortLabel>YLR368W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -3991,11 +3991,11 @@
 							<names>
 								<shortLabel>YNL116W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4006,11 +4006,11 @@
 							<names>
 								<shortLabel>YPL004C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4044,11 +4044,11 @@
 							<names>
 								<shortLabel>ARC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4059,11 +4059,11 @@
 							<names>
 								<shortLabel>CPH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4074,11 +4074,11 @@
 							<names>
 								<shortLabel>FUM1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4089,11 +4089,11 @@
 							<names>
 								<shortLabel>PRO1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4104,11 +4104,11 @@
 							<names>
 								<shortLabel>RAD1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4119,11 +4119,11 @@
 							<names>
 								<shortLabel>RAD10</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -4134,11 +4134,11 @@
 							<names>
 								<shortLabel>RNR2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4149,11 +4149,11 @@
 							<names>
 								<shortLabel>SAH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4164,11 +4164,11 @@
 							<names>
 								<shortLabel>SOD2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4179,11 +4179,11 @@
 							<names>
 								<shortLabel>TFP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4194,11 +4194,11 @@
 							<names>
 								<shortLabel>TIF2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4232,11 +4232,11 @@
 							<names>
 								<shortLabel>CTF4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4247,11 +4247,11 @@
 							<names>
 								<shortLabel>RAD14</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -4262,11 +4262,11 @@
 							<names>
 								<shortLabel>RAD16</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4277,11 +4277,11 @@
 							<names>
 								<shortLabel>RAD4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4315,11 +4315,11 @@
 							<names>
 								<shortLabel>ADH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4330,11 +4330,11 @@
 							<names>
 								<shortLabel>GND1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4345,11 +4345,11 @@
 							<names>
 								<shortLabel>HHF1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4360,11 +4360,11 @@
 							<names>
 								<shortLabel>HTB2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4375,11 +4375,11 @@
 							<names>
 								<shortLabel>HTZ1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4390,11 +4390,11 @@
 							<names>
 								<shortLabel>MIR1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4405,11 +4405,11 @@
 							<names>
 								<shortLabel>PDC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4420,11 +4420,11 @@
 							<names>
 								<shortLabel>PDX1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4435,11 +4435,11 @@
 							<names>
 								<shortLabel>PEP4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4450,11 +4450,11 @@
 							<names>
 								<shortLabel>RAD16</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4465,11 +4465,11 @@
 							<names>
 								<shortLabel>RAD16</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4480,11 +4480,11 @@
 							<names>
 								<shortLabel>RAD7</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4495,11 +4495,11 @@
 							<names>
 								<shortLabel>RIM1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4510,11 +4510,11 @@
 							<names>
 								<shortLabel>SHP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4525,11 +4525,11 @@
 							<names>
 								<shortLabel>TDH3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4540,11 +4540,11 @@
 							<names>
 								<shortLabel>VPS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4555,11 +4555,11 @@
 							<names>
 								<shortLabel>WRS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4570,11 +4570,11 @@
 							<names>
 								<shortLabel>YDR453C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4585,11 +4585,11 @@
 							<names>
 								<shortLabel>YMR226C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4600,11 +4600,11 @@
 							<names>
 								<shortLabel>YMR315W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4638,11 +4638,11 @@
 							<names>
 								<shortLabel>RAD17</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -4683,11 +4683,11 @@
 							<names>
 								<shortLabel>RAD18</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -4728,11 +4728,11 @@
 							<names>
 								<shortLabel>PEX15</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4743,11 +4743,11 @@
 							<names>
 								<shortLabel>RAD2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -4788,11 +4788,11 @@
 							<names>
 								<shortLabel>ECM29</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4803,11 +4803,11 @@
 							<names>
 								<shortLabel>KAP95</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4818,11 +4818,11 @@
 							<names>
 								<shortLabel>MEC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4833,11 +4833,11 @@
 							<names>
 								<shortLabel>PGK1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4848,11 +4848,11 @@
 							<names>
 								<shortLabel>RAD23</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -4863,11 +4863,11 @@
 							<names>
 								<shortLabel>RAD4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4878,11 +4878,11 @@
 							<names>
 								<shortLabel>RAD52</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4893,11 +4893,11 @@
 							<names>
 								<shortLabel>RFA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4908,11 +4908,11 @@
 							<names>
 								<shortLabel>RPN10</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4923,11 +4923,11 @@
 							<names>
 								<shortLabel>RPN12</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4938,11 +4938,11 @@
 							<names>
 								<shortLabel>RPN3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4953,11 +4953,11 @@
 							<names>
 								<shortLabel>RPN6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4968,11 +4968,11 @@
 							<names>
 								<shortLabel>RPT2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4983,11 +4983,11 @@
 							<names>
 								<shortLabel>RPT3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -4998,11 +4998,11 @@
 							<names>
 								<shortLabel>RPT6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5013,11 +5013,11 @@
 							<names>
 								<shortLabel>SRO7</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5028,11 +5028,11 @@
 							<names>
 								<shortLabel>TFA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5043,11 +5043,11 @@
 							<names>
 								<shortLabel>TFB1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5058,11 +5058,11 @@
 							<names>
 								<shortLabel>TFB4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5096,11 +5096,11 @@
 							<names>
 								<shortLabel>MUD13</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -5141,11 +5141,11 @@
 							<names>
 								<shortLabel>CCT3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5156,11 +5156,11 @@
 							<names>
 								<shortLabel>DUN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5171,11 +5171,11 @@
 							<names>
 								<shortLabel>RAD24</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -5186,11 +5186,11 @@
 							<names>
 								<shortLabel>RFC2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5201,11 +5201,11 @@
 							<names>
 								<shortLabel>RFC3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5216,11 +5216,11 @@
 							<names>
 								<shortLabel>RFC5</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5231,11 +5231,11 @@
 							<names>
 								<shortLabel>RPT3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5246,11 +5246,11 @@
 							<names>
 								<shortLabel>TCP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5261,11 +5261,11 @@
 							<names>
 								<shortLabel>YDR214W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5276,11 +5276,11 @@
 							<names>
 								<shortLabel>YJR072C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5291,11 +5291,11 @@
 							<names>
 								<shortLabel>YLR413W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5329,11 +5329,11 @@
 							<names>
 								<shortLabel>ACH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5344,11 +5344,11 @@
 							<names>
 								<shortLabel>ACO1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5359,11 +5359,11 @@
 							<names>
 								<shortLabel>ADH4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5374,11 +5374,11 @@
 							<names>
 								<shortLabel>BIO3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5389,11 +5389,11 @@
 							<names>
 								<shortLabel>CDC33</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5404,11 +5404,11 @@
 							<names>
 								<shortLabel>ECM10</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5419,11 +5419,11 @@
 							<names>
 								<shortLabel>MDH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5434,11 +5434,11 @@
 							<names>
 								<shortLabel>QCR2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5449,11 +5449,11 @@
 							<names>
 								<shortLabel>RAD26</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -5464,11 +5464,11 @@
 							<names>
 								<shortLabel>RAD3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5479,11 +5479,11 @@
 							<names>
 								<shortLabel>RHR2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5494,11 +5494,11 @@
 							<names>
 								<shortLabel>SEC53</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5509,11 +5509,11 @@
 							<names>
 								<shortLabel>TEF4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5524,11 +5524,11 @@
 							<names>
 								<shortLabel>TFP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5539,11 +5539,11 @@
 							<names>
 								<shortLabel>YDR326C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5554,11 +5554,11 @@
 							<names>
 								<shortLabel>YMR318C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5592,11 +5592,11 @@
 							<names>
 								<shortLabel>POL30</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5607,11 +5607,11 @@
 							<names>
 								<shortLabel>RAD27</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -5652,11 +5652,11 @@
 							<names>
 								<shortLabel>CCT6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5667,11 +5667,11 @@
 							<names>
 								<shortLabel>DUN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5682,11 +5682,11 @@
 							<names>
 								<shortLabel>RAD28</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -5697,11 +5697,11 @@
 							<names>
 								<shortLabel>TCP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5735,11 +5735,11 @@
 							<names>
 								<shortLabel>AAC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5750,11 +5750,11 @@
 							<names>
 								<shortLabel>AAC3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5765,11 +5765,11 @@
 							<names>
 								<shortLabel>ACO1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5780,11 +5780,11 @@
 							<names>
 								<shortLabel>ASC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5795,11 +5795,11 @@
 							<names>
 								<shortLabel>CCL1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5810,11 +5810,11 @@
 							<names>
 								<shortLabel>GCN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5825,11 +5825,11 @@
 							<names>
 								<shortLabel>LSC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5840,11 +5840,11 @@
 							<names>
 								<shortLabel>MET18</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5855,11 +5855,11 @@
 							<names>
 								<shortLabel>RAD3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5870,11 +5870,11 @@
 							<names>
 								<shortLabel>RAD3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5885,11 +5885,11 @@
 							<names>
 								<shortLabel>RPT3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5900,11 +5900,11 @@
 							<names>
 								<shortLabel>RPT6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5915,11 +5915,11 @@
 							<names>
 								<shortLabel>TFB3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5930,11 +5930,11 @@
 							<names>
 								<shortLabel>TUB3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5945,11 +5945,11 @@
 							<names>
 								<shortLabel>YDJ1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5983,11 +5983,11 @@
 							<names>
 								<shortLabel>GPH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -5998,11 +5998,11 @@
 							<names>
 								<shortLabel>RAD30</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -6043,11 +6043,11 @@
 							<names>
 								<shortLabel>RAD4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -6088,11 +6088,11 @@
 							<names>
 								<shortLabel>RAD5</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -6133,11 +6133,11 @@
 							<names>
 								<shortLabel>MRE11</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6148,11 +6148,11 @@
 							<names>
 								<shortLabel>RAD50</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -6163,11 +6163,11 @@
 							<names>
 								<shortLabel>SEC27</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6201,11 +6201,11 @@
 							<names>
 								<shortLabel>ARO1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6216,11 +6216,11 @@
 							<names>
 								<shortLabel>CCT8</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6231,11 +6231,11 @@
 							<names>
 								<shortLabel>CLU1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6246,11 +6246,11 @@
 							<names>
 								<shortLabel>GCN20</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6261,11 +6261,11 @@
 							<names>
 								<shortLabel>GFA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6276,11 +6276,11 @@
 							<names>
 								<shortLabel>MLH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6291,11 +6291,11 @@
 							<names>
 								<shortLabel>PFK1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6306,11 +6306,11 @@
 							<names>
 								<shortLabel>RAD51</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6321,11 +6321,11 @@
 							<names>
 								<shortLabel>RAD51</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6336,11 +6336,11 @@
 							<names>
 								<shortLabel>RAD52</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6351,11 +6351,11 @@
 							<names>
 								<shortLabel>RPA135</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6366,11 +6366,11 @@
 							<names>
 								<shortLabel>RPT6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6381,11 +6381,11 @@
 							<names>
 								<shortLabel>RVB2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6396,11 +6396,11 @@
 							<names>
 								<shortLabel>YGL245W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6411,11 +6411,11 @@
 							<names>
 								<shortLabel>YHB1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6449,11 +6449,11 @@
 							<names>
 								<shortLabel>TCP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -6494,11 +6494,11 @@
 							<names>
 								<shortLabel>ALD5</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6509,11 +6509,11 @@
 							<names>
 								<shortLabel>RAD52</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -6554,11 +6554,11 @@
 							<names>
 								<shortLabel>ASF1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6569,11 +6569,11 @@
 							<names>
 								<shortLabel>CDC13</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6584,11 +6584,11 @@
 							<names>
 								<shortLabel>DUN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6599,11 +6599,11 @@
 							<names>
 								<shortLabel>EDE1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6614,11 +6614,11 @@
 							<names>
 								<shortLabel>HTA2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6629,11 +6629,11 @@
 							<names>
 								<shortLabel>IPP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6644,11 +6644,11 @@
 							<names>
 								<shortLabel>KAP95</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6659,11 +6659,11 @@
 							<names>
 								<shortLabel>MDH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6674,11 +6674,11 @@
 							<names>
 								<shortLabel>PTC2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6689,11 +6689,11 @@
 							<names>
 								<shortLabel>RAD53</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -6704,11 +6704,11 @@
 							<names>
 								<shortLabel>SMC3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6719,11 +6719,11 @@
 							<names>
 								<shortLabel>SRP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6734,11 +6734,11 @@
 							<names>
 								<shortLabel>SWI4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6749,11 +6749,11 @@
 							<names>
 								<shortLabel>TBF1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6764,11 +6764,11 @@
 							<names>
 								<shortLabel>YDR071C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6779,11 +6779,11 @@
 							<names>
 								<shortLabel>YGR090W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6794,11 +6794,11 @@
 							<names>
 								<shortLabel>YMR135C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6809,11 +6809,11 @@
 							<names>
 								<shortLabel>YTA7</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6847,11 +6847,11 @@
 							<names>
 								<shortLabel>MGE1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6862,11 +6862,11 @@
 							<names>
 								<shortLabel>RAD54</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -6907,11 +6907,11 @@
 							<names>
 								<shortLabel>PTC3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -6922,11 +6922,11 @@
 							<names>
 								<shortLabel>RAD55</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -6967,11 +6967,11 @@
 							<names>
 								<shortLabel>RAD57</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7012,11 +7012,11 @@
 							<names>
 								<shortLabel>RAD59</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7027,11 +7027,11 @@
 							<names>
 								<shortLabel>SEC27</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7065,11 +7065,11 @@
 							<names>
 								<shortLabel>RAD6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7080,11 +7080,11 @@
 							<names>
 								<shortLabel>UBA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7118,11 +7118,11 @@
 							<names>
 								<shortLabel>RAD7</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7163,11 +7163,11 @@
 							<names>
 								<shortLabel>DUN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7178,11 +7178,11 @@
 							<names>
 								<shortLabel>RAD9</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7223,11 +7223,11 @@
 							<names>
 								<shortLabel>BDF1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7238,11 +7238,11 @@
 							<names>
 								<shortLabel>BDF2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7283,11 +7283,11 @@
 							<names>
 								<shortLabel>TFC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7328,11 +7328,11 @@
 							<names>
 								<shortLabel>ARP2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7343,11 +7343,11 @@
 							<names>
 								<shortLabel>CBK1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7358,11 +7358,11 @@
 							<names>
 								<shortLabel>ECM10</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7373,11 +7373,11 @@
 							<names>
 								<shortLabel>MOB2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7388,11 +7388,11 @@
 							<names>
 								<shortLabel>PRB1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7403,11 +7403,11 @@
 							<names>
 								<shortLabel>SGT2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7418,11 +7418,11 @@
 							<names>
 								<shortLabel>SIS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7433,11 +7433,11 @@
 							<names>
 								<shortLabel>TAO3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7448,11 +7448,11 @@
 							<names>
 								<shortLabel>UBP15</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7463,11 +7463,11 @@
 							<names>
 								<shortLabel>VMA6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7501,11 +7501,11 @@
 							<names>
 								<shortLabel>AUT2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7516,11 +7516,11 @@
 							<names>
 								<shortLabel>CDC15</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7531,11 +7531,11 @@
 							<names>
 								<shortLabel>TFP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7569,11 +7569,11 @@
 							<names>
 								<shortLabel>ADH4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7584,11 +7584,11 @@
 							<names>
 								<shortLabel>CDC33</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7599,11 +7599,11 @@
 							<names>
 								<shortLabel>CPH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7614,11 +7614,11 @@
 							<names>
 								<shortLabel>DUN1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7629,11 +7629,11 @@
 							<names>
 								<shortLabel>HOM2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7644,11 +7644,11 @@
 							<names>
 								<shortLabel>PDX3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7659,11 +7659,11 @@
 							<names>
 								<shortLabel>PGM2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7674,11 +7674,11 @@
 							<names>
 								<shortLabel>SOD1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7689,11 +7689,11 @@
 							<names>
 								<shortLabel>VMA4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7704,11 +7704,11 @@
 							<names>
 								<shortLabel>YDR214W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7719,11 +7719,11 @@
 							<names>
 								<shortLabel>YFL030W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7734,11 +7734,11 @@
 							<names>
 								<shortLabel>YMR226C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7772,11 +7772,11 @@
 							<names>
 								<shortLabel>ESR1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7817,11 +7817,11 @@
 							<names>
 								<shortLabel>FZF1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -7862,11 +7862,11 @@
 							<names>
 								<shortLabel>GDI1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7877,11 +7877,11 @@
 							<names>
 								<shortLabel>GDI1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7892,11 +7892,11 @@
 							<names>
 								<shortLabel>SEC4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7907,11 +7907,11 @@
 							<names>
 								<shortLabel>STE11</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7922,11 +7922,11 @@
 							<names>
 								<shortLabel>VPS21</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7937,11 +7937,11 @@
 							<names>
 								<shortLabel>YPT1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7952,11 +7952,11 @@
 							<names>
 								<shortLabel>YPT10</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7967,11 +7967,11 @@
 							<names>
 								<shortLabel>YPT31</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7982,11 +7982,11 @@
 							<names>
 								<shortLabel>YPT32</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -7997,11 +7997,11 @@
 							<names>
 								<shortLabel>YPT52</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8012,11 +8012,11 @@
 							<names>
 								<shortLabel>YPT6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8027,11 +8027,11 @@
 							<names>
 								<shortLabel>YPT7</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8065,11 +8065,11 @@
 							<names>
 								<shortLabel>GUT1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -8110,11 +8110,11 @@
 							<names>
 								<shortLabel>IRA2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -8155,11 +8155,11 @@
 							<names>
 								<shortLabel>DNA2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8170,11 +8170,11 @@
 							<names>
 								<shortLabel>HDA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8185,11 +8185,11 @@
 							<names>
 								<shortLabel>MGE1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8200,11 +8200,11 @@
 							<names>
 								<shortLabel>MGM101</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8215,11 +8215,11 @@
 							<names>
 								<shortLabel>MLH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -8230,11 +8230,11 @@
 							<names>
 								<shortLabel>MSH2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8245,11 +8245,11 @@
 							<names>
 								<shortLabel>PMS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8260,11 +8260,11 @@
 							<names>
 								<shortLabel>RAD52</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8275,11 +8275,11 @@
 							<names>
 								<shortLabel>RFA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8290,11 +8290,11 @@
 							<names>
 								<shortLabel>RFA2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8305,11 +8305,11 @@
 							<names>
 								<shortLabel>RFA3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8320,11 +8320,11 @@
 							<names>
 								<shortLabel>RIM1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8335,11 +8335,11 @@
 							<names>
 								<shortLabel>RNH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8350,11 +8350,11 @@
 							<names>
 								<shortLabel>SGS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8365,11 +8365,11 @@
 							<names>
 								<shortLabel>TIF2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8380,11 +8380,11 @@
 							<names>
 								<shortLabel>TOP3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8395,11 +8395,11 @@
 							<names>
 								<shortLabel>VAS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8410,11 +8410,11 @@
 							<names>
 								<shortLabel>YDL156W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8425,11 +8425,11 @@
 							<names>
 								<shortLabel>YHR122W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8440,11 +8440,11 @@
 							<names>
 								<shortLabel>YOR155C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8478,11 +8478,11 @@
 							<names>
 								<shortLabel>DNA2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8493,11 +8493,11 @@
 							<names>
 								<shortLabel>HSC82</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8508,11 +8508,11 @@
 							<names>
 								<shortLabel>KAP95</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8523,11 +8523,11 @@
 							<names>
 								<shortLabel>LCD1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8538,11 +8538,11 @@
 							<names>
 								<shortLabel>MGM101</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8553,11 +8553,11 @@
 							<names>
 								<shortLabel>MLH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8568,11 +8568,11 @@
 							<names>
 								<shortLabel>MSH2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8583,11 +8583,11 @@
 							<names>
 								<shortLabel>MSH2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8598,11 +8598,11 @@
 							<names>
 								<shortLabel>MSH3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8613,11 +8613,11 @@
 							<names>
 								<shortLabel>MSH6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8628,11 +8628,11 @@
 							<names>
 								<shortLabel>PGK1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8643,11 +8643,11 @@
 							<names>
 								<shortLabel>PLO1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8658,11 +8658,11 @@
 							<names>
 								<shortLabel>PLO2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8673,11 +8673,11 @@
 							<names>
 								<shortLabel>RNH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8688,11 +8688,11 @@
 							<names>
 								<shortLabel>RSC8</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8703,11 +8703,11 @@
 							<names>
 								<shortLabel>TIF2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8718,11 +8718,11 @@
 							<names>
 								<shortLabel>YHR122W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8756,11 +8756,11 @@
 							<names>
 								<shortLabel>ADE4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8771,11 +8771,11 @@
 							<names>
 								<shortLabel>ADE4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8786,11 +8786,11 @@
 							<names>
 								<shortLabel>ADE4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8801,11 +8801,11 @@
 							<names>
 								<shortLabel>ADE4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8816,11 +8816,11 @@
 							<names>
 								<shortLabel>ADE4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8854,11 +8854,11 @@
 							<names>
 								<shortLabel>HDA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8869,11 +8869,11 @@
 							<names>
 								<shortLabel>HSC82</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8884,11 +8884,11 @@
 							<names>
 								<shortLabel>LCD1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8899,11 +8899,11 @@
 							<names>
 								<shortLabel>MEC1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8914,11 +8914,11 @@
 							<names>
 								<shortLabel>MGM101</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8929,11 +8929,11 @@
 							<names>
 								<shortLabel>MLH1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8944,11 +8944,11 @@
 							<names>
 								<shortLabel>MSH3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8959,11 +8959,11 @@
 							<names>
 								<shortLabel>MSH6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8974,11 +8974,11 @@
 							<names>
 								<shortLabel>MSH6</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -8989,11 +8989,11 @@
 							<names>
 								<shortLabel>PGK1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9004,11 +9004,11 @@
 							<names>
 								<shortLabel>PLO1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9019,11 +9019,11 @@
 							<names>
 								<shortLabel>PLO2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9034,11 +9034,11 @@
 							<names>
 								<shortLabel>PMS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9049,11 +9049,11 @@
 							<names>
 								<shortLabel>RFA3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9064,11 +9064,11 @@
 							<names>
 								<shortLabel>RIM1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9079,11 +9079,11 @@
 							<names>
 								<shortLabel>RSC8</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9094,11 +9094,11 @@
 							<names>
 								<shortLabel>RVB2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9109,11 +9109,11 @@
 							<names>
 								<shortLabel>SGS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9124,11 +9124,11 @@
 							<names>
 								<shortLabel>TOP3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9139,11 +9139,11 @@
 							<names>
 								<shortLabel>VAS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9154,11 +9154,11 @@
 							<names>
 								<shortLabel>YDL156W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9192,11 +9192,11 @@
 							<names>
 								<shortLabel>NCR1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -9237,11 +9237,11 @@
 							<names>
 								<shortLabel>PMA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -9282,11 +9282,11 @@
 							<names>
 								<shortLabel>SCH9</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -9327,11 +9327,11 @@
 							<names>
 								<shortLabel>BRE2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9342,11 +9342,11 @@
 							<names>
 								<shortLabel>SET1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -9387,11 +9387,11 @@
 							<names>
 								<shortLabel>SGS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -9432,11 +9432,11 @@
 							<names>
 								<shortLabel>SOD1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -9477,11 +9477,11 @@
 							<names>
 								<shortLabel>CCL1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9492,11 +9492,11 @@
 							<names>
 								<shortLabel>CDC95</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9507,11 +9507,11 @@
 							<names>
 								<shortLabel>FAP1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9522,11 +9522,11 @@
 							<names>
 								<shortLabel>FPR1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9537,11 +9537,11 @@
 							<names>
 								<shortLabel>KAP95</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9552,11 +9552,11 @@
 							<names>
 								<shortLabel>KIN28</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9567,11 +9567,11 @@
 							<names>
 								<shortLabel>MRPS28</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9582,11 +9582,11 @@
 							<names>
 								<shortLabel>SPT7</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9597,11 +9597,11 @@
 							<names>
 								<shortLabel>SSL1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9612,11 +9612,11 @@
 							<names>
 								<shortLabel>SSL1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9627,11 +9627,11 @@
 							<names>
 								<shortLabel>TFA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9642,11 +9642,11 @@
 							<names>
 								<shortLabel>TFB1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9657,11 +9657,11 @@
 							<names>
 								<shortLabel>TFB3</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9672,11 +9672,11 @@
 							<names>
 								<shortLabel>TFB4</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9687,11 +9687,11 @@
 							<names>
 								<shortLabel>YOR173W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9725,11 +9725,11 @@
 							<names>
 								<shortLabel>SSL2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -9740,11 +9740,11 @@
 							<names>
 								<shortLabel>STI1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9778,11 +9778,11 @@
 							<names>
 								<shortLabel>TEL1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -9793,11 +9793,11 @@
 							<names>
 								<shortLabel>YPL110C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9831,11 +9831,11 @@
 							<names>
 								<shortLabel>RVS161</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9846,11 +9846,11 @@
 							<names>
 								<shortLabel>RVS167</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -9861,11 +9861,11 @@
 							<names>
 								<shortLabel>YPL249C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -9899,11 +9899,11 @@
 							<names>
 								<shortLabel>YDL085W</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -9944,11 +9944,11 @@
 							<names>
 								<shortLabel>YMR145C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -9989,11 +9989,11 @@
 							<names>
 								<shortLabel>YPK1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -10034,11 +10034,11 @@
 							<names>
 								<shortLabel>BAS1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -10079,11 +10079,11 @@
 							<names>
 								<shortLabel>GRF10</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -10124,11 +10124,11 @@
 							<names>
 								<shortLabel>YOR155C</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -10169,11 +10169,11 @@
 							<names>
 								<shortLabel>BOI1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -10214,11 +10214,11 @@
 							<names>
 								<shortLabel>BOI2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -10259,11 +10259,11 @@
 							<names>
 								<shortLabel>SRA1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -10304,11 +10304,11 @@
 							<names>
 								<shortLabel>ACT1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -10319,11 +10319,11 @@
 							<names>
 								<shortLabel>CYR1</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>bait</role>
 						<isTaggedProtein>true</isTaggedProtein>
@@ -10334,11 +10334,11 @@
 							<names>
 								<shortLabel>PHO81</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -10349,11 +10349,11 @@
 							<names>
 								<shortLabel>RNR2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>
@@ -10364,11 +10364,11 @@
 							<names>
 								<shortLabel>SRV2</shortLabel>
 							</names>
-							<organism ncbiTaxId="4932">
+							<hostOrganism ncbiTaxId="4932">
 								<names>
 									<shortLabel>Sce</shortLabel>
 								</names>
-							</organism>
+							</hostOrganism>
 						</interactor>
 						<role>neutral</role>
 						<isTaggedProtein>false</isTaggedProtein>

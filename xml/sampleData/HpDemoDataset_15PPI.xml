@@ -27,12 +27,12 @@
 						<primaryRef db="Pubmed" id="11196647"/>
 					</xref>
 				</bibref>
-				<organism ncbiTaxId="4932">
+				<hostOrganism ncbiTaxId="4932">
 					<names>
 						<shortLabel>Sc</shortLabel>
 						<fullName>Saccharomices cerevisiae</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<interactionDetection>
 					<names>
 						<shortLabel>Hybrigenics 2-hybrid in yeast</shortLabel>
@@ -65,12 +65,12 @@
 					<shortLabel>HP0776</shortLabel>
 					<fullName>HP0776</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>LDRTQNKRISLKKERTESLVAQALKNIGNDRYMLDNLVFARVKQLNAGAKTLVNMDPKRHKLVDIAIREIAEGKIDIDRIDERN</sequence>
 				</proteinseq>
@@ -80,12 +80,12 @@
 					<shortLabel>HP1409</shortLabel>
 					<fullName>HP1409</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MMAKIDVELKKLHQILVDRDYFYQVPDYQRPYVWDKDHLGALIDDLVGSYTNNREDEYFCGSIVIVENQKDKRWDVVDGQQRLTSFIILACTILRLYKHSLGQESKDFIEDSIYDRYDKEKERLKFLTAQNYNSIFENTVLNHLEFEDNIKKSELNKKFEENTYLRNAYYFKELLNESVENGSISDIDDFVKWFYEHIVLTRIICFEQDSAMQIFQVLNDRGQPLSPIDILKSSLMQEIKQDSEKRKDFITTWDKLVEACKSVEGVDIDLEDFFNMYLEYADPSTSKKRADKGLKKVFKDSKKDACGFIYEISEFMKAYTALLKKQDRYVYLLRYLPSRYWASILTTALYVKYPDFDALKKLLVSYYYQTWIAGGTITRIKQTSINIIKNVKSNKSVETIKELILNSIDSYNTFDQYLYNLWDSSSVYHSKWVRPVLALANYFMADEEKPHFIAMDAETQVEHILPQTPKRGSQWNADFDKEKREEWVNNIANLTLLKRKKNAHALNGDFDEKRKIYGGKDTSKVISCYDITKELYSNYRKWNEKSLQERYKSLYNTITPVLHIEGQEDDFEDDFDLE</sequence>
 				</proteinseq>
@@ -95,12 +95,12 @@
 					<shortLabel>HP1378</shortLabel>
 					<fullName>HP1378 (comL)</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MRLKHFKTFLFITMAIIVIGTGCANKKKKKDEYNKPAIFWYQGILREILFANLETADNYYSSLQSEHINSPLVPEAMLALGQAHMKKKEYVLASFYFDEYIKRFGTKDNVDYLTFLKLQSHYYAFKNHSKDQEFISNSIVSLGEFIEKYPNSRYRPYVEYMQIKFILGQNELNRAIANVYKKRHKPEGVKRYLERIDETLEKETKPKPSHMPWYVLIFDW</sequence>
 				</proteinseq>
@@ -110,12 +110,12 @@
 					<shortLabel>HP0278</shortLabel>
 					<fullName>HP0278 (gppA)</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MAKITTVIDIGSNSVRLAVFKKTSQFGFYLLFETKSKVRISEGCYAFNGILQEIPMQRAVKALSEFKEIALKYKSKKILCVATSAVRDAPNRLEFVARVKKACGLQIKIIDGQKEALYGGIACANLLHKNSGITIDIGGGSTECALIEKGKIKDLISLDVGTIRIKEMFLDKDLEVKLAKAFIQKEVSKLPFKHKNAFGVGGTIRALSKVLMKRFCYPIDSLHGYEIDAHKNLAFIEKIVMLKEDQLRLLGVNEERLDSIRSGALILSVVLEHLKTSLMITSGVGVREGVFLSDLLRHHYHKFPPNINPSLISLKDRFLPHEKHSQKVKKECVKLFEALSPLHKIDEKYLFHLKIAGELASMGKILSVYLAHKHSAYFILNALSYGFSHQDRAIICLLAQFSHKKIPKDNAIAHMSAMMPSLLTLQWLSFILSLAENLCLTDSHHLKYTLEKNKLVIHSNDTLYLAKEMLPKLVKPIPLTIEFA</sequence>
 				</proteinseq>
@@ -125,12 +125,12 @@
 					<shortLabel>HP0067</shortLabel>
 					<fullName>HP0067 (ureH)</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MNTYAQESKLRLKTKIGADGRCVIEDNFFTPPFKLMAPFYPKDDLAEIMLLAVSPGMMRGDAQDVQLNIGPNCKLRITSQSFEKIHNTEDGFASRDMHIVVGENAFLDFAPFPLIPFENAHFKGNTTISLRSSSQLLYSEIIVAGRVARNELFKFNRLHTKISILQDEKPIYYDNTILDPKTTDLNNMCMFDGYTHYLNLVLVNCPIELSGVRECIEESEGVDGAVSETASSHLCVKALAKGSEPLLHLREKIARLVTQTTTQKV</sequence>
 				</proteinseq>
@@ -140,12 +140,12 @@
 					<shortLabel>HP0068</shortLabel>
 					<fullName>HP0068 (ureG)</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MVKIGVCGPVGSGKTALIEALTRHMSKDYDMAVITNDIYTKEDAEFMCKNSVMPRERIIGVETGGCPHTAIREDASMNLEAVEEMHGRFPNLELLLIESGGDNLSATFNPELADFTIFVIDVAEGDKIPRKGGPGITRSDLLVINKIDLAPYVGADLKVMERDSKKMRGEKPFIFTNIRAKEGLDDVIAWIKRNALLED</sequence>
 				</proteinseq>
@@ -155,12 +155,12 @@
 					<shortLabel>HP0118</shortLabel>
 					<fullName>HP0118</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MESVKTGKTNKVGKNTEMANTKANKEXHFKQXSTITNIIRSXXGIFTKIAKKVRGLVKKHPKKSSAALVVLTHIACKKAKELDDKVQDKSKQAEKENQINWWKYSGLTIATSLLLAACSTGDVSEQIELEQEKQKTSNIETNNQIKVEQEKQKTSNIETNNQIKVEQEQQKTSNTQKDLVKEQKDLVKEQKDLVKEQKDLVKEQKDLVKTQKDFIKYVEQNCQENHNQFFIEKGGIKAGIGIEVEAECKTPKPAKTNQTPIQPKHLPNSKQPRSQRGSKAQELIAYLQKELEFLPYSQKAIAKQVDFYRPSSIAYLELDPRDFKVTEEWQKENLKIRSKAQAKMLEMRNPQAHLSNSQSLLFVQKIFADVNKEIEAVANTEKKAEKAGYGYSKRM</sequence>
 				</proteinseq>
@@ -170,12 +170,12 @@
 					<shortLabel>HP0070</shortLabel>
 					<fullName>HP0070 (ureE)</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MIIERLVGNLRDLNPLDFSVDHVDLEWFETRKKIARFKTRQGKDIAIRLKDAPKLGLSQGDILFKEEKEIIAVNILDSEVIHIQAKSVAEVAKICYEIGNRHAALYYGESQFEFKTPFEKPTLALLEKLGVQNRVLSSKLDSKERLTVSMPHSEPNFKVSLASDFKVVVK</sequence>
 				</proteinseq>
@@ -185,12 +185,12 @@
 					<shortLabel>HP0069</shortLabel>
 					<fullName>HP0069 (ureF)</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MDKGKSVKSTEKSVGMPPKTPKTDNNAHVDNEFLILQVNDAVFPIGSYTHSFGLETYIQQKKVTNKESALEYLKANLSSQFLYTEMLSLKLTYESALQQDLKKILGVEEVIMLSTSPMELRLANQKLGNRFIKTLQAMNELDMGEFFNAYAQKTKDPTHATSYGVFAASLGIELKKALRHYLYAQTSNMVINCVKSVPLSQNDGQKILLSLQSPFNQLIEKTLELDESHLCTASVQNDIKAMQHESLYSRLYMS</sequence>
 				</proteinseq>
@@ -200,12 +200,12 @@
 					<shortLabel>HP0073</shortLabel>
 					<fullName>HP0073 (urea amidohydrolase)</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MKLTPKELDKLMLHYAGELAKKRKEKGIKLNYVEAVALISAHIMEEARAGKKTAAELMQEGRTLLKPDDVMDGVASMIHEVGIEAMFPDGTKLVTVHTPIEANGKLVPGELFLKNEDITINEGKKAVSVKVKNVGDRPVQIGSHFHFFEVNRCLDFDREKTFGKRLDIASGTAVRFEPGEEKSVELIDIGGNRRIFGFNALVDRQADNESKKIALHRAKERGFHGAKSDDNYVKTIKE</sequence>
 				</proteinseq>
@@ -215,12 +215,12 @@
 					<shortLabel>HP0072</shortLabel>
 					<fullName>HP0072 (ureB)</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MKKISRKEYVSMYGPTTGDKVRLGDTDLIAEVEHDYTIYGEELKFGGGKTLREGMSQSNNPSKEELDLIITNALIVDYTGIYKADIGIKDGKIAGIGKGGNKDMQDGVKNNLSVGPATEALAGEGLIVTAGGIDTHIHFISPQQIPTAFASGVTTMIGGGTGPADGTNATTITPGRRNLKWMLRAAEEYSMNLGFLAKGNASNDASLADQIEAGAIGFKIHEDWGTTPSAINHALDVADKYDVQVAIHTDTLNEAGCVEDTMAAIAGRTMHTFHTEGAGGGHAPDIIKVAGEHNILPASTNPTIPFTVNTEAEHMDMLMVCHHLDKSIKEDVQFADSRIRPQTIAAEDTLHDMGIFSITSSDSQAMGRVGEVITRTWQTADKNKKEFGRLKEEKGDNDNFRIKRYLSKYTINPAIAHGISEYVGSVEVGKVADLVLWSPAFFGVKPNMIIKGGFIALSQMGDANASIPTPQPVYYREMFAHHGKAKYDANITFVSQAAYDKGIKEELGLERQVLPVKNCRNITKKDMQFNDTTAHIEVNPETYHVFVDGKEVTSKPANKVSLAQLFSIF</sequence>
 				</proteinseq>
@@ -230,12 +230,12 @@
 					<shortLabel>HP1138</shortLabel>
 					<fullName>HP1138</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MAKNKVLGRGLADIFPEINEVYEQGLYERANRVVELGIDEVMPNPYQPRKVFSEDSLEELAQSIKEHGLLQPVLVVSENGRYHLIAGERRLRASKLAKMPTIKAIVVDIEQEKMREVALIENIQREDLNPLELARSYKELLESYQMTQEELSKIVKKSRAHVANIMRLLTLSSKVQNALLEEKITSGHAKVLVGLDGEKQELILNSIIGQKLSVRQTEDLARDFKINANFDNKKHGFKQTQTLIAGDELERLNQSLWDHYKLKAALKGNKIVLRCYENSLLEAFMKKMMS</sequence>
 				</proteinseq>
@@ -245,12 +245,12 @@
 					<shortLabel>HP0216</shortLabel>
 					<fullName>HP0216</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MVVLGSTGSIGKNALKIAKKFGIEIEALSCGKNIALINEQIQVFKPKKVAILDPSDLNDLEPLGAEVFVGLEGIDAMIEECTSNLVLNAIVGVAGLKASFKSLQRNKKLALANKESLVSAGHLLDISQITPIDSEHFGLWALLQNKTLKPKSLIISASGGAFRDTPLEFIPIQNAQNALKHPNWSMGSKITIDSASMVNKLFEILETYWLFGASLKIDALIERSSIVHALVEFEDNSIIAHLASADMQLPISYAIDPKLASLSASIKPLDLYALSAIKFEPISMERYTLWCYKDLLLENPKLGVVLNASNEVAMEKFLNKEIAFGGLIQTISQALESYDKMPFKLSSLEEVLELDKEVRERFKNVAGV</sequence>
 				</proteinseq>
@@ -260,12 +260,12 @@
 					<shortLabel>HP0935</shortLabel>
 					<fullName>HP0935</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MTIKVFSPKYPTELEEFYAERIADNPLGFIQRLDLLPSISGFVQKLREHGGEFFEMREGNKLIGICGLNPINQTEAELCKFHINSAYQSQGLGQKLYESVEKYAFIKGYTKISLHVSKSQIKACNLYQKLGFVHIKEEDCVVELGEETLIFPTLFMEKILS</sequence>
 				</proteinseq>
@@ -275,12 +275,12 @@
 					<shortLabel>HP0657</shortLabel>
 					<fullName>HP0657 (ymxG)</fullName>
 				</names>
-				<organism ncbiTaxId="85962">
+				<hostOrganism ncbiTaxId="85962">
 					<names>
 						<shortLabel>Hp</shortLabel>
 						<fullName>Helicobacter pylori 26695</fullName>
 					</names>
-				</organism>
+				</hostOrganism>
 				<proteinseq>
 					<sequence>MKKFLITLLLGVFMGLQASALTHQEINQAKVPVIYEENHLLPMGFIHLAFRGGGSLSDKNQLGLAKLFAQVLNEGTKELGAVGFAQLLEQKAISLNVDTSTEDLQITLEFLKEYEDEAITRLKELLKSPNFTQNALEKVKTQMLAALLQKESDFDYLAKLTLKQELFANTPLANAALGTKESIQKIKLDDLKQQFAKVFELNKLVVVLGGDLKIDQTLKRLNNALNFLPQGKAYEEPYFETSDKKSEKVLYKDTEQAFVYFGAPFKIKDLKQDLAKSKVMMFVLGGGFGSRLMEKIRVQEGLAYSVYIRSNFSKVAHFASGYLQTKLSTQTKSVALVKKIVKEFIEKGMTQQELDDAKKFLLGSEPLRNETISSRLNTTYNYFYLGLPLNFNQTLLNQIQKMSLKEINDFIKAHTEINDLTFAIVSNKKKDK</sequence>
 				</proteinseq>
