@@ -20,25 +20,26 @@ XML Format Documentation</h2>
 <h2><a name="mozTocId863651" class="mozTocH2"></a>Version 1.0</h2>
 <div style="text-align: left;">
 <h2>Table of Contents</h2>
-<a href="#mozTocId916500"></a>
 <ol>
-  <li><a href="#mozTocId869940">Introduction</a></li>
-  <li><a href="#mozTocId248390">Purpose of the PSI MI XML format</a></li>
-  <li><a href="#mozTocId396538">Purpose of this document</a></li>
-  <li><a href="#mozTocId240701">Structure of a PSI MI record</a></li>
-  <li><a href="#mozTocId202864">Detailed Documentation</a></li>
-  <li><a href="#mozTocId66291">Use of external controlled vocabularies<br>
+  <li><a href="#intro">Introduction</a></li>
+  <li><a href="#mi-purpose">Purpose of the PSI MI XML format</a></li>
+  <li><a href="#document-purpose">Purpose of this document</a></li>
+  <li><a href="#structure">Structure of a PSI MI record</a></li>
+  <li><a href="#detailed-doc">Detailed Documentation</a></li>
+  <li><a href="#cv">Use of external controlled vocabularies<br>
     </a></li>
-  <li><a href="#mozTocId86952">List of planned features</a></li>
-  <li><a href="#mozTocId545693">How to comment</a></li>
-  <li><a href="#mozTocId254906">Sample data files</a></li>
-  <li><a href="#mozTocId343640">Tools</a></li>
-  <li><a href="#mozTocId580742">Further information and relevant links</a></li>
+  <li><a href="#planned">List of planned features</a></li>
+  <li><a href="#comment">How to comment</a></li>
+  <li><a href="#data">Available data<br>
+    </a></li>
+  <li><a href="#tools">Tools</a></li>
+  <li><a href="#submission">Data submission</a><br>
+  </li>
+  <li><a href="#further-info">Further information and relevant links</a></li>
 </ol>
 </div>
 </center>
-<a href="#mozTocId916500"></a>
-<h2><a name="mozTocId869940" class="mozTocH2"></a>Introduction</h2>
+<h2><a name="intro" class="mozTocH2"></a>Introduction</h2>
 The Proteomics Standards Initiative (PSI) aims to define community
 standards for data representation in proteomics to facilitate data
 comparison, exchange and verification.
@@ -62,8 +63,8 @@ be taken into account in the future.</p>
 from database providers and users in both academia and industry. PSI MI
 is expected to be supported by the DIP, MINT, IntAct and BIND databases.<br>
 </p>
-<h2><a name="mozTocId248390" class="mozTocH2"></a>Purpose of the PSI MI
-XML format</h2>
+<h2><a name="mi-purpose" class="mozTocH2"></a>Purpose of the PSI MI XML
+format</h2>
 <p>The PSI MI format is a data exchange format for protein-protein
 interactions. It is not a proposed database structure. Intended usages
 are described by the <a href="useCases.html">use cases documentation</a>.
@@ -71,7 +72,7 @@ These use case descriptions also provide hints for future tools to be
 developed.<br>
 </p>
 <p> </p>
-<h2><a name="mozTocId396538" class="mozTocH2"></a>Purpose of this
+<h2><a name="document-purpose" class="mozTocH2"></a>Purpose of this
 document</h2>
 The purpose of this document is to describe the general structure of
 the PSI MI XML specification in a more user-friendly manner than the
@@ -80,7 +81,7 @@ description please see the <a href="../MIF.html">auto-generated
 documentation</a>. This documentation also provides additional
 information, e.g. sample data files and use case descriptions.<br>
 <p> </p>
-<h2><a name="mozTocId240701" class="mozTocH2"></a>Structure of a PSI MI
+<h2><a name="structure" class="mozTocH2"></a>Structure of a PSI MI
 record</h2>
 The root element of a PSI MI XML file is the entrySet. An entrySet
 contains one or more entries. Each entry is a self-contained unit. This
@@ -102,9 +103,9 @@ In the expanded form, all proteins, experiments, and availability
 statements are described directly in the interaction element. As a
 result, each interaction is a self-contained element providing all
 necessary information. The expanded form results in larger files, but is
-more suitable for conversion to displayed data, e.g. HTML pages. The
-PSI MI consortium provides tools to convert the compact into the
-expanded form and back.<br>
+more suitable for conversion to displayed data, e.g. HTML pages. The PSI
+MI consortium provides tools to convert the compact into the expanded
+form and back.<br>
 <br>
 In the next sections, the top level elements shown in Figure 1 and
 their function will be described. <br>
@@ -167,11 +168,11 @@ The attributeLists are placeholders for semi-structured additional data
 the data provider might want to transmit. They contain simple tag-value
 pairs.<br>
 <br>
-<h2><a name="mozTocId202864" class="mozTocH2"></a><a href="../MIF.html">Detailed
+<h2><a name="detailed-doc" class="mozTocH2"></a><a href="../MIF.html">Detailed
 Documentation</a></h2>
 see <a href="http://psidev.sourceforge.net/mi/xml/doc/MIF.html">http://psidev.sourceforge.net/mi/xml/doc/MIF.html</a><br>
-<h2><a name="mozTocId66291" class="mozTocH2"></a>Use of external
-controlled vocabularies<br>
+<h2><a name="cv" class="mozTocH2"></a>Use of external controlled
+vocabularies<br>
 </h2>
 Where possible, external controlled vocabularies are referenced from
 PSI MI. External controlled vocabularies are used in two forms: <br>
@@ -187,7 +188,10 @@ vocabularies: We think that there is a controlled vocabulary which
 appropriately covers all necessary terms for the given attribute. In
 this case, only terms from the defined vocabulary should be used.</li>
 </ul>
-The following closed controlled vocabularies are referenced by PSI MI:<br>
+The following closed controlled vocabularies are referenced by PSI MI.
+Please not the files linked are sample files only, the full
+vocabularies will be available as soon as the PSI MI schema has been
+publised.<br>
 <ul>
   <li>Protein interaction determining experimental methods: <a
  href="../../../controlledVocab/interactionDetectionDef.txt">interactionDetectionDef.txt</a><br>
@@ -211,8 +215,7 @@ recently issued a new <a
 for referencing between XML documents</a>. Once this recommendation is
 implemented by standard software, we will include it in the PSI MI
 schema.<br>
-<h2><a name="mozTocId86952" class="mozTocH2"></a>List of planned
-features</h2>
+<h2><a name="planned" class="mozTocH2"></a>List of planned features</h2>
 Because we are following a leveled approach, we are interested in
 knowing what the community wishes to be included in the next level.
 <p> The following items have been tagged for inclusion in the next
@@ -222,22 +225,45 @@ level: </p>
   <li>Inclusion of other molecule types, e.g. DNA, RNA, small molecules<br>
   </li>
 </ul>
-The latest list of features to include in the future can be found here:<br>
+The latest list of features to discuss/include in the future can be
+found here:<br>
 <a
  href="http://sourceforge.net/tracker/?atid=511101&amp;group_id=65472&amp;func=browse">http://sourceforge.net/tracker/?atid=511101&amp;group_id=65472&amp;func=browse</a><br>
-<h2><a name="mozTocId545693" class="mozTocH2"></a>How to comment</h2>
+<h2><a name="comment" class="mozTocH2"></a>How to comment</h2>
 If you would like to comment on this document, the PSI MI XML
 specification, please send a mail to:<br>
 <a href="mailto:psidev-mi-dev@lists.sourceforge.net">psidev-mi-dev@lists.sourceforge.net</a>&nbsp;
-<h2><a name="mozTocId254906" class="mozTocH2"></a>Sample data files</h2>
-The <a href="../../sampleData/index.html">sample files</a> contain
-authentic data, though we don't take any responsibility for the
-correctness of the data.<br>
+<h2><a name="data" class="mozTocH2"></a>Available data</h2>
 <ul>
+  <li>The <a href="../../sampleData/index.html">sample files</a>
+contain authentic data, though we don't take any responsibility for the
+correctness of the data. </li>
+  <li><a href="http://www.hprd.org">HPRD</a> provides PSI MI formatted
+downloads of interaction data by adding /psimi to a standard molecule
+view URL. Sample URL:<br>
+    <a class="moz-txt-link-freetext"
+ href="http://www.hprd.org/genes/164875/psimi">http://www.hprd.org/genes/164875/psimi</a></li>
+  <li><a href="http://www.hybrigenics.com">Hybrigenics </a>H.pylori
+dataset from <br>
+    <cite>Rain JC, Selig L, De Reuse H, Battaglia V, Reverdy C, Simon
+S, Lenzen G, Petel F, Wojcik J, Schachter V, Chemama Y, Labigne A,
+Legrain P.: The protein-protein interaction map of Helicobacter pylori.
+Nature. 2001 Jan 11;409(6817):211-5. PMID: <a
+ href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=11196647&amp;dopt=Abstract">11196647</a>.</cite><br>
+Available after registration from <a href="http://pim.hybrigenics.com">http://pim.hybrigenics.com</a>.</li>
+  <li><a href="http://www.ebi.ac.uk/intact">IntAct</a> offers a
+graphical interaction network viewer and allows to download the
+displayed network in PSI MI format, for example for further analysis in
+one of the tools listed below. Sample URL:<br>
+    <a class="moz-txt-link-freetext"
+ href="http://www.ebi.ac.uk/intact/graph2mif/getXML?ac=EBI-367&amp;depth=1&amp;strict=false">http://www.ebi.ac.uk/intact/graph2mif/getXML?ac=EBI-367&amp;depth=1&amp;strict=false</a></li>
+  <li><a href="http://cbm.bio.uniroma2.it/mint/">MINT</a> offers the
+complete dataset in PSI MI format.<br>
+  </li>
 </ul>
-<h2><a name="mozTocId343640" class="mozTocH2"></a>Tools</h2>
-We plan to provide a set of tools to support the PSI MI XML format. The
-following tools are currently available:<br>
+<h2><a name="tools" class="mozTocH2"></a>Tools</h2>
+PSI MI XML format is supported by a growing list of tools. Currently
+available are:<br>
 <ul>
   <li><a href="../../src/MIF_compact.xsl">MIF_compact.xsl</a>:
 Transforms a file from the expanded into the compact form.</li>
@@ -254,15 +280,31 @@ analysis of interaction networks with <a
 Interaction network viewer with PSI reading.</li>
   <li><a href="../../../tools/psimakers0908src.zip">Transformation tools</a>
 to convert PSI MI XML format into tab-delimited ASCII format and vice
-versa.<br>
-  </li>
+versa.</li>
 </ul>
-<h2><a name="mozTocId580742" class="mozTocH2"></a>Further information
-and relevant links</h2>
+<h2><a name="submission" class="mozTocH2"></a>Data submission</h2>
+The following databases currently accept submissions of PSI MI
+formatted interaction data:<br>
+<ul>
+  <li><a href="http://www.bind.ca">BIND:</a> Contact and submission by
+email: <a href="http://www.bind.ca"><big><font size="2"><big><a
+ href="mailto:info@bind.ca"><font color="#0000ff">info@bind.ca</font></a></big></font></big></a></li>
+  <li><a href="http://www.hprd.org">HPRD</a>: Web-based submission
+tool: <a href="http://203.200.58.139/PSI">http://203.200.58.139/PSI</a><br>
+  </li>
+  <li><a href="http://www.ebi.ac.uk/intact">IntAct:</a> Contact and
+submission by email: <a href="mailto:datasubs@ebi.ac.uk">datasubs@ebi.ac.uk</a><br>
+  </li>
+  <li><a href="http://cbm.bio.uniroma2.it/mint/">MINT:</a> Contact and
+submission by email: <a href="mailto:cesareni@uniroma2.it">cesareni@uniroma2.it</a></li>
+</ul>
+<h2><a name="further-info" class="mozTocH2"></a>Further information and
+relevant links</h2>
 <p> Databases involved: </p>
 <ul>
   <li><a href="http://www.bind.ca">BIND </a></li>
-  <li><a href="http://dip.doe-mbi.ucla.edu/">DIP </a></li>
+  <li><a href="http://dip.doe-mbi.ucla.edu/">DIP</a></li>
+  <li><a href="file:///X:/pro6/psi/mi/xml/doc/user/www.hprd.org">HPRD</a></li>
   <li><a href="http://www.ebi.ac.uk/intact">IntAct </a></li>
   <li><a href="http://cbm.bio.uniroma2.it/mint/">MINT </a></li>
 </ul>
