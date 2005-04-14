@@ -14,6 +14,8 @@
  */
 package mint.filemakers.xmlMaker;
 
+import org.apache.commons.cli.*;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -75,25 +77,36 @@ import com.digitprop.tonic.TonicLookAndFeel;
  *  
  */
 public class XmlMakerGui extends JFrame {
+	
+	static String mappingFileName = null;
+	
+	private static void displayUsage(Options options) {
+        HelpFormatter formatter = new HelpFormatter();
+        formatter.printHelp("java -classpath dist/xmlMakerFlattener.jar -Djava.ext.dirs=libs mint.filemakers.xmlMaker.XmlMaker [-mapping mapping.xml] "
+        		, options);
+	}	
+	
 	public void load() {
-
-		String directory = Utils.lastVisitedMappingDirectory;
-		if (directory == null)
-			directory = Utils.lastVisitedDirectory;
-
-		JFileChooser fc = new JFileChooser(directory);
-
+		JFileChooser fc;
+		if (Utils.lastVisitedMappingDirectory != null) { 
+			fc = new JFileChooser(Utils.lastVisitedMappingDirectory);
+		} else fc = new JFileChooser(".");
+		
 		int returnVal = fc.showOpenDialog(new JFrame());
 		if (returnVal != JFileChooser.APPROVE_OPTION) {
 			return;
 		}
-
+		load(fc.getSelectedFile());
+	}
+	
+	
+	private void load(File mappingFile) {
 		try {
-			Utils.lastVisitedDirectory = fc.getSelectedFile().getPath();
-			Utils.lastVisitedMappingDirectory = fc.getSelectedFile().getPath();
-
-			FileInputStream fin = new FileInputStream(fc.getSelectedFile());
-
+			FileInputStream fin = new FileInputStream(mappingFile);
+			
+			Utils.lastVisitedDirectory = mappingFile.getPath();
+			Utils.lastVisitedMappingDirectory = mappingFile.getPath();
+			//Utils.lastMappingFile = mappingFile.getName();
 			// Create XML encoder.
 			XMLDecoder xdec = new XMLDecoder(fin);
 
@@ -191,7 +204,7 @@ public class XmlMakerGui extends JFrame {
 			fin.close();
 		} catch (FileNotFoundException fe) {
 			JOptionPane.showMessageDialog(new JFrame(),
-					"Unable to load mapping" + fc.getSelectedFile().getName(),
+					"Unable to load mapping" + mappingFile.getName(),
 					"[PSI makers: PSI maker] load mapping",
 					JOptionPane.ERROR_MESSAGE);
 		} catch (IOException ioe) {
@@ -209,8 +222,11 @@ public class XmlMakerGui extends JFrame {
 
 	public void save() {
 		try {
-			JFileChooser fc = new JFileChooser(".");
-
+			JFileChooser fc;
+			if (Utils.lastVisitedMappingDirectory != null) { 
+				fc = new JFileChooser(Utils.lastVisitedMappingDirectory);
+			} else fc = new JFileChooser(".");
+		
 			int returnVal = fc.showSaveDialog(new JFrame());
 			if (returnVal != JFileChooser.APPROVE_OPTION) {
 				return;
@@ -329,6 +345,10 @@ public class XmlMakerGui extends JFrame {
 		setJMenuBar(new XmlMakerMenu());
 		setSize(800, 600);
 		setVisible(true);
+		
+		if (mappingFileName != null) {
+			load(new File(mappingFileName));
+		}
 	}
 
 	/**
@@ -441,6 +461,44 @@ public class XmlMakerGui extends JFrame {
 	}
 
 	public static void main(String[] args) {
+		// create Option objects
+		Option helpOpt = new Option("help", "print this message.");
+
+		Option mappingOpt = OptionBuilder.withArgName("mapping").hasArg()
+				.withDescription(
+						"the mapping file, created by the GUI application")
+				.create("mapping");
+		mappingOpt.setRequired(false);
+		
+		Options options = new Options();
+
+		options.addOption(helpOpt);
+		options.addOption(mappingOpt);
+		
+		// create the parser
+		CommandLineParser parser = new BasicParser();
+		CommandLine line = null;
+		try {
+			// parse the command line arguments
+			line = parser.parse(options, args, true);
+		} catch (ParseException exp) {
+			// Oops, something went wrong
+
+			displayUsage(options);
+
+			System.err.println("Parsing failed.  Reason: "
+					+ exp.getMessage());
+			System.exit(1);
+		}
+
+		if (line.hasOption("help")) {
+			displayUsage(options);
+			System.exit(0);
+		}
+		
+		// These argument are mandatory.
+		mappingFileName = line.getOptionValue("mapping");
+		System.out.println("mapping: " + mappingFileName);
 		XmlMakerGui f = new XmlMakerGui();
 	}
 

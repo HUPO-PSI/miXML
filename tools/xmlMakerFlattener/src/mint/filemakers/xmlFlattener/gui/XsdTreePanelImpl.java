@@ -412,16 +412,16 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 
 	public class CheckListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			ArrayList paths = xsdTree.check((XsdNode) xsdTree.treeModel
-					.getRoot());
-			String errors = paths.size() + " errors found: \n";
-			for (int i = 0; i < paths.size(); i++) {
-				errors += paths.get(i) + "\n";
-			}
-
-			JOptionPane.showMessageDialog(new JFrame(), errors,
-					"[PSI makers: flattener] checking associations",
-					JOptionPane.ERROR_MESSAGE);
+//			ArrayList paths = xsdTree.check((XsdNode) xsdTree.treeModel
+//					.getRoot());
+//			String errors = paths.size() + " errors found: \n";
+//			for (int i = 0; i < paths.size(); i++) {
+//				errors += paths.get(i) + "\n";
+//			}
+//
+//			JOptionPane.showMessageDialog(new JFrame(), errors,
+//					"[PSI makers: flattener] checking associations",
+//					JOptionPane.ERROR_MESSAGE);
 		}
 	}
 

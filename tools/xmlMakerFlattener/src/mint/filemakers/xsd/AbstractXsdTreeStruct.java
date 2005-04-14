@@ -287,6 +287,8 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 		default:
 			infos += "not XML\n";
 		}
+		if (node.transparent) infos += "TRANSPARENT";
+		infos += "\nchecked ok: "+node.isCheckedOk;
 		return infos;
 	}
 
@@ -337,9 +339,9 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 	 *            the node to check
 	 * @return an array of Strings describing the errors found
 	 */
-	public abstract ArrayList check(XsdNode node);
+	public abstract boolean check(XsdNode node);
 
-	public ArrayList check() {
+	public boolean check() {
 		return check(rootNode);
 	}
 
@@ -881,7 +883,7 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 					}
 				}
 			}
-			check((XsdNode) treeModel.getRoot());
+//			check((XsdNode) treeModel.getRoot());
 			treeModel.reload(parent);
 			break;
 		case Structure.ELEMENT:

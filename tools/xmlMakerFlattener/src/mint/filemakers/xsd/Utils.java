@@ -28,7 +28,7 @@ public class Utils {
 	public static String lastVisitedDirectory = ".";
 
 	public static String lastVisitedMappingDirectory = null;
-
+	public static String lastMappingFile = null;
 	public static String lastVisitedSchemaDirectory = null;
 
 	public static String lastVisitedDictionaryDirectory = null;

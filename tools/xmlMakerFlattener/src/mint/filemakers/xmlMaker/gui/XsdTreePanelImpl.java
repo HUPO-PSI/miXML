@@ -58,8 +58,7 @@ import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreeNode;
 
 import mint.filemakers.xmlMaker.structure.XsdTreeStructImpl;
-import mint.filemakers.xsd.Utils;
-import mint.filemakers.xsd.XsdNode;
+import mint.filemakers.xsd.*;
 
 import org.exolab.castor.xml.schema.Annotated;
 import org.exolab.castor.xml.schema.Annotation;
@@ -629,18 +628,26 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 	 */
 	public class CheckListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			XsdNode node = (XsdNode) ((XsdTreeStructImpl) xsdTree).treeModel
-					.getRoot();
+//			XsdNode node = (XsdNode) ((XsdTreeStructImpl) xsdTree).treeModel
+//					.getRoot();
+			XsdNode node = (XsdNode) ((XsdTreeStructImpl) xsdTree).tree
+			.getLastSelectedPathComponent();
 			String errors;
-
+			if (node == null) {
+				node = (XsdNode) ((XsdTreeStructImpl) xsdTree).treeModel
+				.getRoot();
+			}	
 			if (node == null) {
 				errors = "No schema loaded!";
 			} else {
-				ArrayList paths = ((XsdTreeStructImpl) xsdTree).check(node);
-				errors = paths.size() + " errors found: \n";
-				for (int i = 0; i < paths.size(); i++) {
-					errors += paths.get(i) + "\n";
-				}
+//				ArrayList paths = ((XsdTreeStructImpl) xsdTree).check(node);
+//				errors = paths.size() + " errors found: \n";
+//				for (int i = 0; i < paths.size(); i++) {
+//					errors += paths.get(i) + "\n";
+//				}
+				((XsdTreeStructImpl) xsdTree).check(node);
+				errors = ((XsdTreeStructImpl) xsdTree).errorManager.getAllErrors((XsdTreeStructImpl) xsdTree, node, ErrorManager.warning);
+				errors += ((XsdTreeStructImpl) xsdTree).errorManager.getAllErrors((XsdTreeStructImpl) xsdTree, node, ErrorManager.error);
 			}
 
 			JEditorPane editorPane = new JEditorPane();
@@ -912,8 +919,8 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 
 	public void associateField(XsdNode node) {
 		String path = flatFileTabbedPanel.getSelectedPath();
-		if (!path.matches("([0-9]\\.)*[0-9]+")) {
-			displayMessage("No field selected", "[XML maker]");
+		if (!path.matches("([0-9]+\\.)*[0-9]+")) {
+			displayMessage("No field selected " + path, "[XML maker]");
 			return;
 		}
 		//		AssociateFieldPanel afp = new AssociateFieldPanel();
@@ -1247,7 +1254,7 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 				//                    logoutFile = new File("log.out");
 				//                }
 				//                
-				logoutFile = new File(out.getName() + ".log");
+//				logoutFile = new File(out.getName() + ".log");
 
 				//                logoutPrintWriter = new PrintWriter(new BufferedWriter(
 				//                        new FileWriter(logoutFile)));
@@ -1257,8 +1264,8 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 				//              new FileWriter(logoutFile)));
 				//              logoutFileName.setText(logoutFile.getName());
 
-				logoutPrintWriter = new PrintWriter(new BufferedWriter(
-						new FileWriter(logoutFile)));
+//				logoutPrintWriter = new PrintWriter(new BufferedWriter(
+//						new FileWriter(logoutFile)));
 				//                logoutFileName.setText(logoutFile.getName());
 
 				//              logoutPrintWriter = new PrintWriter(new BufferedWriter(
@@ -1272,9 +1279,12 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 
 				//                new Thread(observer).start();
 				//                javax.swing.SwingUtilities.invokeLater(observer);
-				observer.start();
-				((XsdTreeStructImpl) xsdTree).print(out, logoutFile);
-
+//				observer.start();
+				((XsdTreeStructImpl) xsdTree).print2(out);
+//				observer.dispose();
+				
+//				logoutPrintWriter.flush();
+//				logoutPrintWriter.close();
 				//                JPanel panel = new JPanel();
 				//                JButton displayMessages = new JButton(
 				//                        "Click here to display error messages");

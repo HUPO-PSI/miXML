@@ -22,6 +22,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
+import mint.filemakers.xmlMaker.gui.MarshallingObserver;
 import mint.filemakers.xmlMaker.mapping.DictionaryMapping;
 import mint.filemakers.xmlMaker.mapping.FlatFileMapping;
 import mint.filemakers.xmlMaker.mapping.Mapping;
@@ -31,6 +32,15 @@ import mint.filemakers.xmlMaker.structure.FlatFile;
 import mint.filemakers.xmlMaker.structure.XsdTreeStructImpl;
 import mint.filemakers.xsd.FileMakersException;
 import mint.filemakers.xsd.Utils;
+
+import org.apache.commons.cli.BasicParser;
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.HelpFormatter;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.OptionBuilder;
+import org.apache.commons.cli.Options;
+import org.apache.commons.cli.ParseException;
 
 /**
  * 
@@ -56,6 +66,13 @@ import mint.filemakers.xsd.Utils;
  *  
  */
 public class XmlMaker {
+	
+	private static void displayUsage(Options options) {
+        HelpFormatter formatter = new HelpFormatter();
+        formatter.printHelp("java -classpath classes/ -Djava.ext.dirs=libs mint.filemakers.xmlFlattener.XmlMaker -mapping mapping.xml [-flatfiles flatfile1[,flatfile2]] [-dictionaries [dictionary1[,dictionary2]] [-o xmlDocument] [-log logfile]"
+    		, options);
+	}
+	
 	public void load(Mapping mapping) throws MalformedURLException,
 			FileMakersException {
 		xsdTree.flatFiles.flatFiles = new ArrayList();
@@ -131,36 +148,84 @@ public class XmlMaker {
 		try {
 			System.setProperty("java.awt.headless", "true");
 			XmlMaker f = new XmlMaker();
-			String mappingFileName = "";
-			String flatFiles = null;
-			String dictionaries = null;
-			String schema = null;
-			String xmlFile = null;
-			String logFile = "log.out";
+			// create Option objects
+			Option helpOpt = new Option("help", "print this message.");
 
-			int i = 0;
-			while (i < args.length) {
-				if (args[i].compareTo("-mapping") == 0) {
-					mappingFileName = args[i + 1];
-					i = i + 2;
-				} else if (args[i].compareTo("-flatfiles") == 0) {
-					flatFiles = args[i + 1];
-					i = i + 2;
-				} else if (args[i].compareTo("-dictionaries") == 0) {
-					dictionaries = args[i + 1];
-					i = i + 2;
-				} else if (args[i].compareTo("-schema") == 0) {
-					schema = args[i + 1];
-					i = i + 2;
-				} else if (args[i].compareTo("-o") == 0) {
-					xmlFile = args[i + 1];
-					i = i + 2;
-				} else if (args[i].compareTo("-log") == 0) {
-					logFile = args[i + 1];
-					i = i + 2;
-				} else
-					i = i + 1;
+			Option mappingOpt = OptionBuilder.withArgName("mapping").hasArg()
+					.withDescription(
+							"the mapping file, created by the GUI application")
+					.create("mapping");
+			mappingOpt.setRequired(true);
+
+			Option oOpt = OptionBuilder.withArgName("xml document").hasArg()
+					.withDescription("name of the log file").create("o");
+			oOpt.setRequired(true);
+
+			Option logOpt = OptionBuilder.withArgName("log").hasArg()
+					.withDescription(
+							"the mapping file, created by the GUI application")
+					.create("log");
+			oOpt.setRequired(false);
+
+			Option flatfilesOpt = OptionBuilder
+					.withArgName("flat files")
+					.hasArg()
+					.withDescription(
+							"names of the flat files in the right order, separated by comma")
+					.create("flatfiles");
+			oOpt.setRequired(false);
+
+			Option dictionariesOpt = OptionBuilder
+					.withArgName("dictionaries")
+					.hasArg()
+					.withDescription(
+							"names of the dictionary files in the right order, separated by comma")
+					.create("dictionaries");
+			oOpt.setRequired(false);
+
+			Option schemaOpt = OptionBuilder.withArgName("schema").hasArg()
+					.withDescription("the XML schema").create("schema");
+			schemaOpt.setRequired(false);
+
+			Options options = new Options();
+
+			options.addOption(helpOpt);
+			options.addOption(mappingOpt);
+			options.addOption(oOpt);
+			options.addOption(logOpt);
+			options.addOption(flatfilesOpt);
+			options.addOption(dictionariesOpt);
+			options.addOption(schemaOpt);
+
+			// create the parser
+			CommandLineParser parser = new BasicParser();
+			CommandLine line = null;
+			try {
+				// parse the command line arguments
+				line = parser.parse(options, args, true);
+			} catch (ParseException exp) {
+				// Oops, something went wrong
+
+				displayUsage(options);
+
+				System.err.println("Parsing failed.  Reason: "
+						+ exp.getMessage());
+				System.exit(1);
 			}
+
+			if (line.hasOption("help")) {
+				displayUsage(options);
+				System.exit(0);
+			}
+
+			String mappingFileName = line.getOptionValue("mapping");
+			String flatFiles = line.getOptionValue("flatfiles");
+			String dictionaries = line.getOptionValue("dictionaries");
+			String schema = line.getOptionValue("schema");
+			String xmlFile= line.getOptionValue("o");
+			String logFile = line.getOptionValue("log");
+
+			if (logFile == null) logFile = xmlFile+".log";
 
 			System.out.println("mapping = " + mappingFileName + ", output = "
 					+ xmlFile);
@@ -212,8 +277,12 @@ public class XmlMaker {
 						.println("exit from program: unable to load the mapping");
 				return;
 			}
-			f.xsdTree.print(new File(xmlFile), new File(logFile));
-
+//			MarshallingObserver observer = new MarshallingObserver();
+//			observer
+//					.setObservable(f.xsdTree.observable);
+//			(f.xsdTree).observable.addObserver(observer);
+			//f.xsdTree.print(new File(xmlFile), new File(logFile));
+			f.xsdTree.print2(new File(xmlFile));
 			System.out.println("done");
 			return;
 		} catch (Exception e) {

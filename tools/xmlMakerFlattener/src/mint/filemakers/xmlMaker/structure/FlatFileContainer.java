@@ -109,8 +109,16 @@ public class FlatFileContainer {
 
 	public int nbElements(String path) {
 		/** TODO: check it out */
-		String sparator = getSeparator(path);
+		/* use the path filter */
+		
+		
+//		String sparator = getSeparator(path);
+		try {
 		return (getValue(path, null).split(getSeparator(path))).length;
+		} catch (Exception e) {
+			System.out.println("separator not yet defined");
+			return 1;
+		}
 	}
 
 }

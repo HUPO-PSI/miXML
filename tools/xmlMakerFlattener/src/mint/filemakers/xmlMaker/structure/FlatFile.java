@@ -121,6 +121,7 @@ public class FlatFile {
 	public String lineSeparator = null;
 
 	public String getElementAt(String path, String modelPath) {
+//		System.out.println(path + "," + modelPath);
 		if (path.length() == 0)
 			return line;
 		if (modelPath == null)

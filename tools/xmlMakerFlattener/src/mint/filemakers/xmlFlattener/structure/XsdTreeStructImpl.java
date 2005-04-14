@@ -152,8 +152,8 @@ public class XsdTreeStructImpl extends AbstractXsdTreeStruct {
 	 *            the node to check
 	 * @return an array of Strings describing the errors found
 	 */
-	public ArrayList check(XsdNode node) {
-		return null;
+	public boolean check(XsdNode node) {
+		return true;
 	}
 
 	/**
