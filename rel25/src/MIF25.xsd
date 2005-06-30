@@ -101,9 +101,7 @@
 											</xs:annotation>
 											<xs:complexType>
 												<xs:complexContent>
-													<xs:extension base="interactionElementType">
-														<xs:attribute name="id" type="xs:int" use="required"/>
-													</xs:extension>
+													<xs:extension base="interactionElementType"/>
 												</xs:complexContent>
 											</xs:complexType>
 										</xs:element>
@@ -122,15 +120,15 @@
 						<xs:field xpath="@id"/>
 					</xs:key>
 					<xs:keyref name="experimentRef" refer="experimentKey">
-						<xs:selector xpath="interactionList/interaction/experimentsList/experimentRef"/>
+						<xs:selector xpath="interactionList/interaction/experimentList/experimentRef"/>
 						<xs:field xpath="@ref"/>
 					</xs:keyref>
 					<xs:key name="interactorKey">
-						<xs:selector xpath="interactorList/proteinInteractor"/>
+						<xs:selector xpath="interactorList/interactor"/>
 						<xs:field xpath="@id"/>
 					</xs:key>
 					<xs:keyref name="interactorRef" refer="interactorKey">
-						<xs:selector xpath="interactionList/interaction/participantList/proteinParticipant/proteinInteractorRef"/>
+						<xs:selector xpath="interactionList/interaction/participantList/participant/interactorRef"/>
 						<xs:field xpath="@ref"/>
 					</xs:keyref>
 					<xs:key name="availabilityKey">
@@ -143,8 +141,16 @@
 					</xs:keyref>
 				</xs:element>
 			</xs:sequence>
-			<xs:attribute name="level" type="xs:int" use="required" fixed="2"/>
-			<xs:attribute name="version" type="xs:int" use="required" fixed="5"/>
+			<xs:attribute name="level" type="xs:int" use="required" fixed="2">
+				<xs:annotation>
+					<xs:documentation>PSI MI level</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="version" type="xs:int" use="required" fixed="5">
+				<xs:annotation>
+					<xs:documentation>PSI MI version within given level</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
 		</xs:complexType>
 	</xs:element>
 	<!--aministrative elements-->
@@ -362,10 +368,15 @@
 	</xs:complexType>
 	<xs:complexType name="experimentRefListType">
 		<xs:sequence>
-			<xs:element name="experimentRef" type="refType" maxOccurs="unbounded">
+			<xs:element name="experimentRef" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>References an experiment already present in this entry.</xs:documentation>
 				</xs:annotation>
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="refType"/>
+					</xs:complexContent>
+				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
@@ -389,7 +400,7 @@
 					<xs:simpleContent>
 						<xs:extension base="xs:string">
 							<xs:attribute name="typeAc" type="xs:string"/>
-							<xs:attribute name="type"/>
+							<xs:attribute name="type" type="xs:string"/>
 						</xs:extension>
 					</xs:simpleContent>
 				</xs:complexType>
@@ -419,7 +430,7 @@
 			</xs:element>
 			<xs:element name="featureDetectionMethod" type="cvType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Experimental method used to identify the feature.</xs:documentation>
+					<xs:documentation>Experimental method used to identify the feature. A setting here overrides the global setting given in the experimentDescription. External controlled vocabulary. </xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="experimentRefList" type="experimentRefListType" minOccurs="0">
@@ -528,12 +539,12 @@
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="hostOrganismList" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The host organism(s) in which the experiment has been performed.</xs:documentation>
+				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element name="hostOrganism" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:documentation>The host organism in which the experiment has been performed.</xs:documentation>
-							</xs:annotation>
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="bioSourceType">
@@ -547,20 +558,19 @@
 			</xs:element>
 			<xs:element name="interactionDetectionMethod" type="cvType">
 				<xs:annotation>
-					<xs:documentation>Experimental method to determine the interaction. External controlled vocabulary.</xs:documentation>
+					<xs:documentation>Experimental method to determine the interaction. This element is controlled by the PSI-MI controlled vocabulary "interaction detection method", root term id MI:0001.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="participantIdentificationMethod" type="cvType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Experimental method to determine the interactors involved in the interaction. External controlled vocabulary.</xs:documentation>
+					<xs:documentation>Experimental method to determine the interactors involved in the interaction. This element is controlled by the PSI-MI controlled vocabulary "participant identification method", root term id MI:0002.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="featureDetectionMethod" type="cvType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Experimental method to determine the features of interactors. External controlled vocabulary.</xs:documentation>
+					<xs:documentation>Experimental method to determine the features of interactors. If this element is filled it is assumed to apply to all features described in the experiment. But can be overridden by the featureDetectionMethod given in the individual feature. This element is controlled by the PSI-MI controlled vocabulary "feature detection method", root term id MI:0003.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="sampleProcess" type="cvType" minOccurs="0"/>
 			<xs:element name="confidenceList" type="confidenceListType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Confidence in this experiment.  Usually a statistical measure.</xs:documentation>
@@ -572,7 +582,11 @@
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
-		<xs:attribute name="id" type="xs:int" use="required"/>
+		<xs:attribute name="id" type="xs:int" use="required">
+			<xs:annotation>
+				<xs:documentation>All major objects have a numerical id which is unique to that object within a PSI MI file. The object may be repeated, though, e.g. in the denormalised representation.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
 	</xs:complexType>
 	<xs:complexType name="interactionElementType">
 		<xs:annotation>
@@ -633,78 +647,6 @@
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element name="participant" type="participantType" maxOccurs="unbounded"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="experimentalFormList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The specific experimental form of molecules in an experiment, e.g. chemical modifications and added 'tags'.</xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="dnaExperimentalForm" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:documentation>Describes the experimental form of DNA in a specific experiment.</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="experimentRef" type="refType">
-										<xs:annotation>
-											<xs:documentation>This experimental form has been used in the experiment referred to.</xs:documentation>
-										</xs:annotation>
-									</xs:element>
-									<xs:element name="dnaParticipantRef" type="refType">
-										<xs:annotation>
-											<xs:documentation>A reference to the experimental form of the participant.</xs:documentation>
-										</xs:annotation>
-									</xs:element>
-									<xs:element name="experimentalForm" type="cvType" minOccurs="0">
-										<xs:annotation>
-											<xs:documentation>The form of the participant in the interaction.</xs:documentation>
-										</xs:annotation>
-									</xs:element>
-									<xs:element name="experimentalRole" type="cvType" minOccurs="0">
-										<xs:annotation>
-											<xs:documentation>The role of the participant in the interaction.</xs:documentation>
-										</xs:annotation>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="rnaExperimentalForm" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:documentation>Describes the experimental form of RNA in a specific experiment.</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="experimentRef" type="refType">
-										<xs:annotation>
-											<xs:documentation>This experimental form has been used in the experiment referred to.</xs:documentation>
-										</xs:annotation>
-									</xs:element>
-									<xs:element name="rnaParticipantRef" type="refType">
-										<xs:annotation>
-											<xs:documentation>A reference to the experimental form of the participant.</xs:documentation>
-										</xs:annotation>
-									</xs:element>
-									<xs:element name="isOverexpressed" type="xs:boolean" minOccurs="0">
-										<xs:annotation>
-											<xs:documentation>True if the RNA has been overexpressed in the experiment.</xs:documentation>
-										</xs:annotation>
-									</xs:element>
-									<xs:element name="experimentalForm" type="cvType" minOccurs="0">
-										<xs:annotation>
-											<xs:documentation>The form of the participant in the interaction.</xs:documentation>
-										</xs:annotation>
-									</xs:element>
-									<xs:element name="experimentalRole" type="cvType" minOccurs="0">
-										<xs:annotation>
-											<xs:documentation>The role of the participant in the interaction.</xs:documentation>
-										</xs:annotation>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
@@ -770,9 +712,26 @@
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="parameterList" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Lists parameters which are relevant for the Interaction, e.g. kinetics.</xs:documentation>
+				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="parameter" type="parameterType" maxOccurs="unbounded"/>
+						<xs:element name="parameter" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="parameterType">
+										<xs:sequence>
+											<xs:element name="experimentRef" type="refType">
+												<xs:annotation>
+													<xs:documentation>Reference to the experiment in which this parameter has been determined. If not given, it is assumed that this is valid for all experiments attached to the interaction.</xs:documentation>
+												</xs:annotation>
+											</xs:element>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
@@ -780,6 +739,11 @@
 		<xs:attribute name="imexId" type="xs:int">
 			<xs:annotation>
 				<xs:documentation>Interaction identifier assigned by the IMEx consortium. Will be unique for an interaction determined in one publication. Details defined in the IMEx documents.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="id" use="required">
+			<xs:annotation>
+				<xs:documentation>All major objects have a numerical id which is unique to that object within a PSI MI file. The object may be repeated, though, e.g. in the denormalised representation.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
@@ -828,7 +792,11 @@
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
-		<xs:attribute name="id" type="xs:int" use="required"/>
+		<xs:attribute name="id" type="xs:int" use="required">
+			<xs:annotation>
+				<xs:documentation>All major objects have a numerical id which is unique to that object within a PSI MI file. The object may be repeated, though, e.g. in the denormalised representation.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
 	</xs:complexType>
 	<xs:complexType name="participantType">
 		<xs:annotation>
@@ -847,7 +815,7 @@
 			</xs:element>
 			<xs:choice>
 				<xs:annotation>
-					<xs:documentation>Either refer to an already defined interactor in this entry or insert description.</xs:documentation>
+					<xs:documentation>Description of the Interactor. Refers to an already defined interactor in this entry, fully describes an interactor, or references another interaction defined in this entry, to allow the hierarchical building up of complexes from subunits. </xs:documentation>
 				</xs:annotation>
 				<xs:element name="interactorRef" type="refType">
 					<xs:annotation>
@@ -867,20 +835,23 @@
 			</xs:choice>
 			<xs:element name="interactorType" type="cvType">
 				<xs:annotation>
-					<xs:documentation>The type of the participant, e.g. protein.</xs:documentation>
+					<xs:documentation>The type of the participant, e.g. protein. This element is controlled by the PSI-MI controlled vocabulary "interactorType", root term id MI:0313.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="biologicalRole" type="cvType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The role of the participant in the interaction. This describes the biological role, e.g. enzyme or enzyme target. The experimental role of the participant, e.g. 'bait', is shown in experimentalForm.</xs:documentation>
+					<xs:documentation>The role of the participant in the interaction. This describes the biological role, e.g. enzyme or enzyme target. The experimental role of the participant, e.g. 'bait', is shown in experimentalForm. This element is controlled by the PSI-MI controlled vocabulary "biologicalRole", root term id MI:0500.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="experimentalFormList" minOccurs="0">
+			<xs:element name="experimentalRoleList" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The role(s) of the participant in the interaction, e.g. bait. </xs:documentation>
+				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="experimentalForm" maxOccurs="unbounded">
+						<xs:element name="experimentalRole" maxOccurs="unbounded">
 							<xs:annotation>
-								<xs:documentation>The form of the participant in the interaction, e.g. protein tags.</xs:documentation>
+								<xs:documentation>This element is controlled by the PSI-MI controlled vocabulary "experimentalRole", root term id MI:0495.</xs:documentation>
 							</xs:annotation>
 							<xs:complexType>
 								<xs:complexContent>
@@ -899,12 +870,15 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="experimentalRoleList" minOccurs="0">
+			<xs:element name="experimentalFormList" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The form(s) of the participant in the interaction, e.g. protein tags. </xs:documentation>
+				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="experimentalRole" maxOccurs="unbounded">
+						<xs:element name="experimentalForm" maxOccurs="unbounded">
 							<xs:annotation>
-								<xs:documentation>The role of the participant in the interaction, e.g. bait.</xs:documentation>
+								<xs:documentation>This element is controlled by the PSI-MI controlled vocabulary "experimentalForm", root term id MI:0505.</xs:documentation>
 							</xs:annotation>
 							<xs:complexType>
 								<xs:complexContent>
@@ -918,6 +892,68 @@
 										</xs:sequence>
 									</xs:extension>
 								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="experimentalPreparationList" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Terms describing the experimental sample preparation. </xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="experimentalPreparation" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>This element is controlled by the PSI-MI controlled vocabulary "experimentalPreparation", root term id MI:0346.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cvType">
+										<xs:sequence minOccurs="0">
+											<xs:element name="experimentRefList" type="experimentRefListType" minOccurs="0">
+												<xs:annotation>
+													<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
+												</xs:annotation>
+											</xs:element>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="experimentalInteractorList" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Describes molecules which have been used in specific experiments if these moelcules are different from the one listed as interactors. Example: The author of a paper makes a statement about human proteins, but has really worked with mouse proteins. In this case the human protein would be the main interactor, while the experimentalForm would be the mouse protein listed in this element. Optionally this can refer to the experiment(s) in which this form has been used. </xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="experimentalInteractor">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:choice>
+										<xs:annotation>
+											<xs:documentation>Either refer to an already defined protein interactor in this entry or insert description.</xs:documentation>
+										</xs:annotation>
+										<xs:element name="interactorRef" type="refType">
+											<xs:annotation>
+												<xs:documentation>References an interactor described in the interactorList of the entry</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="interactor" type="interactorType">
+											<xs:annotation>
+												<xs:documentation>Fully describes an interactor</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:choice>
+									<xs:element name="experimentRefList" type="experimentRefListType" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
 					</xs:sequence>
@@ -941,43 +977,13 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="experimentalInteractor" minOccurs="0">
+			<xs:element name="hostOrganismList" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Describes moelcules which have been used in specific experiments if these moelcules are different from the one listed as interactors. Example: The author of a paper makes a statement about human proteins, but has really worked with mouse proteins. In this case the human protein would be the main interactor, while the experimentalForm would be the mouse protein listed in this element. Optionally this can refer to the experiment(s) in which this form has been used. </xs:documentation>
+					<xs:documentation>The host organism(s) in which the protein has been expressed. In not given, it is assumed to be the native species of the protein.</xs:documentation>
 				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
-						<xs:choice>
-							<xs:annotation>
-								<xs:documentation>Either refer to an already defined protein interactor in this entry or insert description.</xs:documentation>
-							</xs:annotation>
-							<xs:element name="interactorRef" type="refType">
-								<xs:annotation>
-									<xs:documentation>References an interactor described in the interactorList of the entry</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-							<xs:element name="interactor" type="participantType">
-								<xs:annotation>
-									<xs:documentation>Fully describes an interactor</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-						</xs:choice>
-						<xs:element name="experimentRefList" type="experimentRefListType" minOccurs="0">
-							<xs:annotation>
-								<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
-							</xs:annotation>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="experimentalPreparationList" type="cvType" minOccurs="0"/>
-			<xs:element name="hostOrganismList" minOccurs="0">
-				<xs:complexType>
-					<xs:sequence>
 						<xs:element name="hostOrganism" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:documentation>The host organism in which the protein has been expressed. In not given, it is assumed to be the native species of the protein.</xs:documentation>
-							</xs:annotation>
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="bioSourceType">
@@ -1041,11 +1047,6 @@
 		<xs:attribute name="factor" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>The "main" value of the parameter.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="experimentRef">
-			<xs:annotation>
-				<xs:documentation>Reference to the experiment in which this parameter has been determined. If not given, it is assumed that this is valid for all experiments attached to the interaction.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
