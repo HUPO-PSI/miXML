@@ -1,6 +1,6 @@
 format-version: 1.0
-date: 24:05:2005 10:41
-saved-by: luisa@ebi.ac.uk
+date: 04:07:2005 16:28
+saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: psi-mi25.dag
 
@@ -750,7 +750,7 @@ is_a: MI:0013 ! biophysical
 [Term]
 id: MI:0115
 name: yeast display
-def: "The proteins are displayed on the surface of the yeast S. cerevisiae by fusion to signal sequences for protein secretion. This method is limited by the low efficiency of the yeast display system but can take full advantage of the possibility of exploiting cell sorting methods (FACS) to isolate cells that display molecules with desired binding properties." [PMID:9181578]
+def: "The proteins are displayed on the surface of the yeast S. cerevisiae by fusion to signal sequences for protein secretion. This method is limited by the low efficiency of the yeast display system but can take full advantage ofexploiting cell sorting methods (FACS) to isolate cells that display molecules with desired binding properties." [PMID:9181578]
 is_a: MI:0034 ! display technologies
 is_a: MI:0054 ! facs: fluorescence-activated cell sorting
 
@@ -774,9 +774,10 @@ is_a: MI:0116 ! feature type
 
 [Term]
 id: MI:0119
-name: hotspot
-def: "Residue of a protein whose identity modifies significantly interaction properties" [PMID:14755292]
-is_a: MI:0116 ! feature type
+name: mutation decreasing: mutation decreasing interaction
+def: "Residue of a protein whose identity mutation or deletion decreases significantly interaction strength." [PMID:14755292]
+synonym: "hotspot" []
+is_a: MI:0118 ! mutation
 
 [Term]
 id: MI:0120
@@ -1135,7 +1136,7 @@ def: "residue modification" [PMID:11125103, RESID:AA0059]
 synonym: "GMY" []
 synonym: "N-myristoyl-glycine" []
 synonym: "\[G\:myr\]" []
-is_a: MI:0560 ! mytistoylated aa: mytistoylated residue
+is_a: MI:0560 ! myristoylated aa: myristoylated residue
 
 [Term]
 id: MI:0156
@@ -1148,7 +1149,7 @@ synonym: "N6-(1-oxotetradecyl)-L-lysine" []
 synonym: "N6-myristoyl-L-lysine" []
 synonym: "\[K\:myr\]" []
 synonym: "epsilon-myristoyllysine" []
-is_a: MI:0560 ! mytistoylated aa: mytistoylated residue
+is_a: MI:0560 ! myristoylated aa: myristoylated residue
 
 [Term]
 id: MI:0157
@@ -1638,7 +1639,7 @@ is_a: MI:0414 ! enzymatic reaction
 [Term]
 id: MI:0205
 name: disaggregation
-def: "Dissociation of partners interacting via non-covalent bound.\nOBSOLETE because considered misleading." [PMID:14755292]
+def: "Dissociation of partners interacting via non-covalent bond.\nOBSOLETE because considered misleading." [PMID:14755292]
 is_a: MI:0431 ! obsolete
 
 [Term]
@@ -1661,7 +1662,7 @@ is_a: MI:0190 ! interaction type
 
 [Term]
 id: MI:0209
-name: geranylation: geranylation reaction
+name: geranylgeranylation: geranylgeranylation reaction
 def: "Reversible reaction that can affect C residue." [RESID:AA0104]
 is_a: MI:0211 ! lipid addition
 
@@ -2039,13 +2040,12 @@ is_a: MI:0313 ! interactor type
 id: MI:0318
 name: nucleic acid
 def: "Linear polymers of nucleotides\, linked by 3'\,5' phosphodiester linkages" [PMID:14755292]
-is_a: MI:0313 ! interactor type
+is_a: MI:0383 ! biopolymer
 
 [Term]
 id: MI:0319
 name: dna: deoxyribonucleic acid
 def: "Polymer formed by the deoxyribose sugar group\, and the nucleotides bases adenine\, guanine\, thymine and cytosine" [PMID:14755292]
-synonym: "<new synonym>" []
 synonym: "DNA" []
 synonym: "deoxyribonucleic acid" []
 is_a: MI:0318 ! nucleic acid
@@ -2100,7 +2100,7 @@ is_a: MI:0320 ! rna: ribonucleic acid
 id: MI:0326
 name: protein
 def: "A linear polymer of amino acids joined by peptide bonds in a specific sequence." [PMID:14755292]
-is_a: MI:0313 ! interactor type
+is_a: MI:0383 ! biopolymer
 
 [Term]
 id: MI:0327
@@ -2205,7 +2205,7 @@ is_a: MI:0333 ! feature range status
 
 [Term]
 id: MI:0341
-name: ragged n-terminal
+name: ragged n-terminus
 def: "Mixture of protein forms where N-terminus has been progressively truncated" [PMID:14755292]
 is_a: MI:0340 ! n-terminal : n-terminal position
 
@@ -2410,6 +2410,129 @@ def: "Cell lysates are partially fractionated to isolate a specific subcellular 
 is_a: MI:0344 ! cell lysate
 
 [Term]
+id: MI:0373
+name: dye labelled: dye labelled molecule
+def: "Molecules coupled with a dye  which aids identification isolation and monitoring." [PMID:14577292]
+is_a: MI:0505 ! experimental form
+
+[Term]
+id: MI:0374
+name: cyanine labelled
+def: "The organic cyanine dyes emit in the red range (>550 nm)\, offer a number of advantages. Their emission range is such that background fluorescence is often reduced. In addition these molecules can be linked directly to specific locations in synthetically produced nucleic acids. " [PMID:14577292]
+is_a: MI:0373 ! dye labelled: dye labelled molecule
+
+[Term]
+id: MI:0375
+name: cy3 labelled
+def: "The organic cyanine  Cy3 emits maximally at 570 nm." [PMID:14577292]
+is_a: MI:0374 ! cyanine labelled
+
+[Term]
+id: MI:0376
+name: cy5 labelled
+def: "The organic cyanine  Cy5 emits maximally at 670 nm" [PMID:14577292]
+is_a: MI:0374 ! cyanine labelled
+
+[Term]
+id: MI:0377
+name: fitc labelled: fluorescein isothiocyanate labelled
+def: "Fluorescein isothiocyanate is a yellow-green coloured low molecular weight dye which couples to proteins via reaction with primary amine groups at high pH. FITC is excitable at 488nm\, close to its absorption maximum at 494nm\, and produces maximum fluorescence emission around 520nm." [PMID:14577292]
+synonym: "FITC labelled" []
+synonym: "fluorescein isothiocyanate labbeled" []
+is_a: MI:0373 ! dye labelled: dye labelled molecule
+
+[Term]
+id: MI:0378
+name: rare isotope label: rare isotope labelled molecule
+def: "Molecule that has rare isotopes among its constituent atoms that can be used to identify\, localize or quantify the full molecule.  " [PMID:14577292]
+is_a: MI:0505 ! experimental form
+
+[Term]
+id: MI:0379
+name: 13c labelled
+def: "Molecules labelled with isotope 13 of carbon atoms." [PMID:14577292]
+synonym: "13C" []
+synonym: "C13" []
+is_a: MI:0378 ! rare isotope label: rare isotope labelled molecule
+
+[Term]
+id: MI:0380
+name: 15n labelled
+def: "Molecules labelled with isotope 15 of nytrogen atoms." [PMID:14577292]
+synonym: "15N" []
+synonym: "N15" []
+is_a: MI:0378 ! rare isotope label: rare isotope labelled molecule
+
+[Term]
+id: MI:0381
+name: 2h labelled
+def: "Molecules labelled with isotope 2 of hydrogen atoms." [PMID:14577292]
+synonym: "2H2" []
+synonym: "D2" []
+synonym: "deuterium" []
+is_a: MI:0378 ! rare isotope label: rare isotope labelled molecule
+
+[Term]
+id: MI:0382
+name: mutation increasing: mutation increasing interaction
+def: "Residue of a protein whose identity mutation or deletion increases significantly interaction strength." [PMID:14577292]
+is_a: MI:0118 ! mutation
+
+[Term]
+id: MI:0383
+name: biopolymer
+def: "Molecule consisting of a specific sequence of amino acidic or nucleotidic monomers strung together through chemical bonds." [PMID:14577292]
+is_a: MI:0313 ! interactor type
+
+[Term]
+id: MI:0384
+name: alexa labelled
+def: "All Alexa dyes are fluorescent iodoacetamide dyes that can be conjugated with the primary amines of biomolecules. All Alexa dyes and their conjugates are more fluorescent and more photostable than the commonly used dyes. The numbers in the Alexa names indicate the approximate excitation wavelength maximum in nm)." [PMID:10449539]
+is_a: MI:0373 ! dye labelled: dye labelled molecule
+
+[Term]
+id: MI:0385
+name: alexa 350 labelled
+def: "Alexa fluorescent dye analogue to AMCA (7-amino-4-methylcoumarin-3-acetic acid) with an approximate excitation wavelength maximum of 350 nm." [PMID:10449539]
+is_a: MI:0384 ! alexa labelled
+
+[Term]
+id: MI:0386
+name: alexa 430 labelled
+def: "Alexa fluorescent dye analogue to Lucifer Yellow  with an approximate excitation wavelength maximum of 430 nm." [PMID:10449539]
+is_a: MI:0384 ! alexa labelled
+
+[Term]
+id: MI:0387
+name: alexa 488 labelled
+def: "Alexa fluorescent dye analogue to Oregon Green 488  with an approximate excitation wavelength maximum of 488 nm." [PMID:10449539]
+is_a: MI:0384 ! alexa labelled
+
+[Term]
+id: MI:0388
+name: alexa 532 labelled
+def: "Alexa fluorescent dye analogue to Rhodamine 6G  with an approximate excitation wavelength maximum of 532nm." [PMID:10449539]
+is_a: MI:0384 ! alexa labelled
+
+[Term]
+id: MI:0389
+name: alexa 546 labelled
+def: "Alexa fluorescent dye analogue to Cy3  with an approximate excitation wavelength maximum of 546nm." [PMID:10449539]
+is_a: MI:0384 ! alexa labelled
+
+[Term]
+id: MI:0390
+name: alexa 568 labelled
+def: "Alexa fluorescent dye analogue to Rhodamine Red-X  with an approximate excitation wavelength maximum of 568nm." [PMID:10449539]
+is_a: MI:0384 ! alexa labelled
+
+[Term]
+id: MI:0391
+name: alexa 594 labelled
+def: "Alexa fluorescent dye analogue to Texas Red-X  with an approximate excitation wavelength maximum of 594nm." [PMID:10449539]
+is_a: MI:0384 ! alexa labelled
+
+[Term]
 id: MI:0396
 name: predetermined: predetermined participant
 def: "Molecule whose sequence identity is not checked and has been assumed from external or previous experimental evidence(s)." [PMID:14755292]
@@ -2484,7 +2607,7 @@ is_a: MI:0218 ! physical interaction
 [Term]
 id: MI:0408
 name: disulfide bond
-def: "Covalent bound mediated by 2 sulfur atoms." [PMID:14755292]
+def: "Covalent bond mediated by 2 sulfur atoms." [PMID:14755292]
 is_a: MI:0195 ! covalent binding
 
 [Term]
@@ -3532,7 +3655,7 @@ is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0560
-name: mytistoylated aa: mytistoylated residue
+name: myristoylated aa: myristoylated residue
 def: "residue modification" [PMID:14755292]
 is_a: MI:0150 ! lipid modification
 
