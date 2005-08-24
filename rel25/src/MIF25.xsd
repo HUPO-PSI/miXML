@@ -168,7 +168,7 @@
 		</xs:attribute>
 		<xs:attribute name="dbAc">
 			<xs:annotation>
-				<xs:documentation>Accession number of the database in the database CV.</xs:documentation>
+				<xs:documentation>Accession number of the database in the database CV. This element is controlled by the PSI-MI controlled vocabulary "database citation", root term id MI:0444.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="id" type="xs:string" use="required">
@@ -193,7 +193,7 @@
 		</xs:attribute>
 		<xs:attribute name="refTypeAc">
 			<xs:annotation>
-				<xs:documentation>Reference type accession number from the CV of reference types.</xs:documentation>
+				<xs:documentation>Reference type accession number from the CV of reference types. This element is controlled by the PSI-MI controlled vocabulary "xref type", root term id MI:0353. </xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
@@ -269,7 +269,7 @@
 			</xs:element>
 			<xs:element name="compartment" type="openCvType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The subcellular compartement of the object. It is strongly recommended to refer to the Gene Ontology cellular component in this element.</xs:documentation>
+					<xs:documentation>The subcellular compartment of the object. It is strongly recommended to refer to the Gene Ontology cellular component in this element.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="tissue" type="openCvType" minOccurs="0">
@@ -300,7 +300,7 @@
 							<xs:sequence minOccurs="0">
 								<xs:element name="experimentRefList" type="experimentRefListType" minOccurs="0">
 									<xs:annotation>
-										<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
+										<xs:documentation>Each experiment might assign a different confidence to this object. If no experimentRef is given, it is assumed this confidence refers to all experiments linked to the object.</xs:documentation>
 									</xs:annotation>
 								</xs:element>
 							</xs:sequence>
@@ -765,7 +765,7 @@
 			</xs:element>
 			<xs:element name="interactorType" type="cvType">
 				<xs:annotation>
-					<xs:documentation>The molecule type of the participant, e.g. protein.</xs:documentation>
+					<xs:documentation>The molecule type of the participant, e.g. protein. This element is controlled by the PSI-MI controlled vocabulary "interactorType", root term id MI:0313.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="organism" minOccurs="0">
@@ -833,9 +833,9 @@
 					</xs:annotation>
 				</xs:element>
 			</xs:choice>
-			<xs:element name="interactorType" type="cvType">
+			<xs:element name="interactorType" type="cvType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The type of the participant, e.g. protein. This element is controlled by the PSI-MI controlled vocabulary "interactorType", root term id MI:0313.</xs:documentation>
+					<xs:documentation>The type of the participant, e.g. protein. This element is controlled by the PSI-MI controlled vocabulary "interactorType", root term id MI:0313.  This element is DEPRECATED here, the interactor type is only necessary in the interactor element itself.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="biologicalRole" type="cvType" minOccurs="0">
@@ -926,7 +926,7 @@
 			</xs:element>
 			<xs:element name="experimentalInteractorList" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Describes molecules which have been used in specific experiments if these moelcules are different from the one listed as interactors. Example: The author of a paper makes a statement about human proteins, but has really worked with mouse proteins. In this case the human protein would be the main interactor, while the experimentalForm would be the mouse protein listed in this element. Optionally this can refer to the experiment(s) in which this form has been used. </xs:documentation>
+					<xs:documentation>Describes molecules which have been used in specific experiments if these molecules are different from the one listed as interactors. Example: The author of a paper makes a statement about human proteins, but has really worked with mouse proteins. In this case the human protein would be the main interactor, while the experimentalForm would be the mouse protein listed in this element. Optionally this can refer to the experiment(s) in which this form has been used. </xs:documentation>
 				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
@@ -979,7 +979,7 @@
 			</xs:element>
 			<xs:element name="hostOrganismList" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The host organism(s) in which the protein has been expressed. In not given, it is assumed to be the native species of the protein.</xs:documentation>
+					<xs:documentation>The host organism(s) in which the protein has been expressed. If not given, it is assumed to be the native species of the protein.</xs:documentation>
 				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
