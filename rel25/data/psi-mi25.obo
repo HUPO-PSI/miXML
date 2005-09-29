@@ -1,5 +1,5 @@
 format-version: 1.0
-date: 22:09:2005 15:43
+date: 29:09:2005 12:33
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: psi-mi25.dag
@@ -3531,7 +3531,7 @@ is_a: MI:0253 ! isotope labelled
 [Term]
 id: MI:0518
 name: flag tagged
-def: "The protein of interest is expressed as a fusion to the peptide DYKDDDDKV for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem." [PSI:PMID]
+def: "The protein of interest is expressed as a fusion to the peptide DYKDDDDKV for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem." [PMID:14755292]
 synonym: "FLAG" []
 synonym: "FLAG-tagged" []
 is_a: MI:0507 ! tagged molecule
@@ -3539,7 +3539,7 @@ is_a: MI:0507 ! tagged molecule
 [Term]
 id: MI:0519
 name: gst tagged
-def: "The protein is expressed and purified as a fusion to the glutathione S-tranferase protein." [PSI:PMID]
+def: "The protein is expressed and purified as a fusion to the glutathione S-tranferase protein." [PMID:14755292]
 synonym: "glutathione S-tranferase tag" []
 is_a: MI:0240 ! fusion proteins
 
@@ -3561,7 +3561,7 @@ is_a: MI:0507 ! tagged molecule
 [Term]
 id: MI:0522
 name: myc tagged
-def: "The protein of interest is expressed as a fusion to the peptide EUKLISEED (a fragment of the Myc oncogene protein) for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem." [PSI:PMID]
+def: "The protein of interest is expressed as a fusion to the peptide EUKLISEED (a fragment of the Myc oncogene protein) for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem." [PMID:14755292]
 is_a: MI:0507 ! tagged molecule
 
 [Term]
@@ -4103,4 +4103,11 @@ id: MI:0600
 name: nutrition synt letal: conditional synthetic lethal nutrition-sensitivity
 def: "Two silent mutations  show a nutrition sensitive lethal phenotype  when  they co-occur on the same cell." [PMID:15608217]
 is_a: MI:0270 ! cond syntetic lethal: conditional synthetic lethal
+
+[Term]
+id: MI:0601
+name: so: sequence ontology
+def: "The Sequence Ontology (SO) is a structured controlled vocabulary for the parts of a genomic annotation. SO provides a common set of terms and definitions that will facilitate the exchange\, analysis and management of genomic data. " [PMID:15892872]
+is_a: MI:0447 ! feature xref: feature database xref
+is_a: MI:0473 ! participant xref: participant database xref
 
