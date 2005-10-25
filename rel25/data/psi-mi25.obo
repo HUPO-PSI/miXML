@@ -1,5 +1,5 @@
 format-version: 1.0
-date: 29:09:2005 12:33
+date: 25:10:2005 15:55
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: psi-mi25.dag
@@ -1973,13 +1973,13 @@ is_a: MI:0418 ! genetic
 
 [Term]
 id: MI:0256
-name: RNAi: RNA interference
+name: rnai: rna interference
 def: "RNA interference (RNAi) is a post-translational gene silencing method reproducing a naturally occurring phenomena. RNAi is the process whereby double-stranded RNA (dsRNA) induces the sequence-specific degradation of homologous mRNA. RNAi or dsRNA-induced silencing phenomena are present in evolutionarily diverse\norganisms\, e.g.\, nematodes\, plants\, fungi\, and trypanosomes. The mechanisms by which RNAi works is initiated by a processive cleavage of dsRNA into 21 to 23 nucleotide (nt) short interfering RNAs (siRNAs). These native siRNA duplexes are then incorporated into a protein complex called RNA-induced silencing complex\n(RISC). ATP-dependent unwinding of the siRNA duplex generates an active RISC complex. Guided by the antisense strand of siRNA\, the active RISC complex\nrecognizes and cleaves the corresponding mRNA. " [PMID:12408823, PMID:12110901]
 is_a: MI:0255 ! expression interfer: gene expression interference
 
 [Term]
 id: MI:0257
-name: antisense RNA
+name: antisense rna
 def: "This approach is based on the observation that expression of RNA that is complementary to a specific mRNA can decrease the synthesis of its gene product either by increasing the degradation of the targeted mRNA or by interfering with\nits translation." [PMID:1340158]
 is_a: MI:0255 ! expression interfer: gene expression interference
 
@@ -3330,8 +3330,8 @@ is_a: MI:0473 ! participant xref: participant database xref
 
 [Term]
 id: MI:0486
-name: uniprot
-def: " UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot\, TrEMBL\, and PIR.\nhttp\://www.uniprot.org/" [PMID:14681372]
+name: uniprotkb: uniprot knowledge base
+def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot\, TrEMBL\, and PIR.\nhttp\://www.expasy.uniprot.org/" [PMID:14681372]
 synonym: "UniProt" []
 is_a: MI:0473 ! participant xref: participant database xref
 
