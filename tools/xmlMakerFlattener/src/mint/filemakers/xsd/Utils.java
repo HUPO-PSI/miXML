@@ -14,24 +14,90 @@
  */
 package mint.filemakers.xsd;
 
+import java.awt.Dimension;
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JButton;
 
 import org.apache.cocoon.util.NetUtils;
-
 /**
  * @author Arnaud Ceol, University of Rome "Tor Vergata", Mint group,
  *         arnaud@cbm.bio.uniroma2.it
  *  
  */
 public class Utils {
+	/** dimension for buttons */
+	private static final Dimension buttonsDimension = new Dimension(60, 17);
+		
 	public static String lastVisitedDirectory = ".";
 
+	public static void setDefaultSize(JButton button) {
+		button.setPreferredSize(Utils.buttonsDimension);
+		button.setMinimumSize(Utils.buttonsDimension);
+		button.setMaximumSize(new Dimension(Short.MAX_VALUE, (short)Utils.buttonsDimension.getHeight()));	
+	}
+	
+	
 	public static String lastVisitedMappingDirectory = null;
+	/**
+	 * break a path down into individual elements and add to a list. example :
+	 * if a path is /a/b/c/d.txt, the breakdown will be [d.txt,c,b,a]
+	 * 
+	 * @param f
+	 *            input file
+	 * @return a List collection with the individual elements of the path in
+	 *         reverse order
+	 */
+	private static List getPathList(File f) {
+		List l = new ArrayList();
+		File r;
+		try {
+			r = f.getCanonicalFile();
+			while (r != null) {
+				l.add(r.getName());
+				r = r.getParentFile();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+			l = null;
+		}
+		return l;
+	}
+
 	public static String lastMappingFile = null;
 	public static String lastVisitedSchemaDirectory = null;
 
 	public static String lastVisitedDictionaryDirectory = null;
+
+	/**
+	 * get relative path of File 'f' with respect to 'home' directory example :
+	 * home = /a/b/c f = /a/d/e/x.txt s = getRelativePath(home,f) =
+	 * ../../d/e/x.txt
+	 * 
+	 * @param home
+	 *            base path, should be a directory, not a file, or it doesn't
+	 *            make sense
+	 * @param f
+	 *            file to generate path for
+	 * @return path from home to f as a string
+	 */
+	public static String getRelativePath(File home, File f) {
+		File r;
+		List homelist;
+		List filelist;
+		String s;
+	
+		homelist = getPathList(home);
+		filelist = getPathList(f);
+		s = matchPathLists(homelist, filelist);
+	
+		return s;
+	}
 
 	public static String lastVisitedFlatFileDirectory = null;
 
@@ -91,6 +157,46 @@ public class Utils {
 		} catch (MalformedURLException e) {
 			return url;
 		}
+	}
+
+	/**
+	 * figure out a string representing the relative path of 'f' with respect to
+	 * 'r'
+	 * 
+	 * @param r
+	 *            home path
+	 * @param f
+	 *            path of file
+	 */
+	private static String matchPathLists(List r, List f) {
+		int i;
+		int j;
+		String s;
+		// start at the beginning of the lists
+		// iterate while both lists are equal
+		s = "";
+		i = r.size() - 1;
+		j = f.size() - 1;
+	
+		// first eliminate common root
+		while ((i >= 0) && (j >= 0) && (r.get(i).equals(f.get(j)))) {
+			i--;
+			j--;
+		}
+	
+		// for each remaining level in the home path, add a ..
+		for (; i >= 0; i--) {
+			s += ".." + File.separator;
+		}
+	
+		// for each level in the file path, add the path
+		for (; j >= 1; j--) {
+			s += f.get(j) + File.separator;
+		}
+	
+		// file name
+		s += f.get(j);
+		return s;
 	}
 
 	public static URL absolutizeURL(String url) {

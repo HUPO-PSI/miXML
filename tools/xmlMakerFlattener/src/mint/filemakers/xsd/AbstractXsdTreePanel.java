@@ -25,7 +25,6 @@ import java.util.ArrayList;
 
 import javax.swing.Box;
 import javax.swing.ImageIcon;
-import javax.swing.JEditorPane;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -55,12 +54,9 @@ import org.exolab.castor.xml.schema.Structure;
  */
 
 public abstract class AbstractXsdTreePanel extends JPanel {
-	/** dimension for buttons */
-	public final Dimension buttonsDimension = new Dimension(200, 30);
-
 	public AbstractXsdTreeStruct xsdTree;
 
-	public JEditorPane associationLabel = new JEditorPane();
+//	public JEditorPane associationLabel = new JEditorPane();
 
 	public void loadSchema(File file) throws FileNotFoundException, IOException {
 		xsdTree.loadSchema(file);
@@ -72,7 +68,7 @@ public abstract class AbstractXsdTreePanel extends JPanel {
 	}
 
 	public JScrollPane scrollPane;
-
+//	public JTextPane messagesPane;
 	/**
 	 * Returns an instance of <code>AbstractXslTree</code>
 	 * 
@@ -86,11 +82,31 @@ public abstract class AbstractXsdTreePanel extends JPanel {
 		this.xsdTree = xsdTree;
 		xsdTree.tree = new JTree(xsdTree.treeModel);
 		scrollPane = new JScrollPane(xsdTree.tree);
-
+		
 		add(scrollPane, BorderLayout.CENTER);
 		add(getButtonPanel(), position);
 	}
 
+	/**
+	 * Returns an instance of <code>AbstractXslTree</code>
+	 * 
+	 * @param autoduplicate
+	 *            indicates that new nodes will be automaticly created according
+	 *            to the minimum defined in the schema (minOccurs)
+	 */
+	public AbstractXsdTreePanel(AbstractXsdTreeStruct xsdTree) {
+		super(new BorderLayout());
+
+		this.xsdTree = xsdTree;
+		xsdTree.tree = new JTree(xsdTree.treeModel);
+		xsdTree.tree.setPreferredSize(new Dimension(300,300));
+		scrollPane = new JScrollPane(xsdTree.tree);
+		scrollPane.setPreferredSize(new Dimension(300,300));
+		add(scrollPane, BorderLayout.CENTER);
+	}	
+	
+	
+	
 	/**
 	 * create a panel for buttons: her have to be added every buttons such as
 	 * the ones that allows to load a schema
@@ -118,20 +134,19 @@ public abstract class AbstractXsdTreePanel extends JPanel {
 		}
 		try {
 			loadSchema(fileChooser.getSelectedFile());
-			displayMessage("XML schema "
+			xsdTree.getMessageManager().sendMessage("XML schema "
 					+ fileChooser.getSelectedFile().getName()
-					+ " successfully loaded.");
+					+ " successfully loaded.", MessageManagerInt.simpleMessage);
 		} catch (FileNotFoundException fe) {
-			displayMessage("File " + fileChooser.getSelectedFile().getName()
-					+ " not fount");
+			xsdTree.getMessageManager().sendMessage("File " + fileChooser.getSelectedFile().getName()
+					+ " not fount", MessageManagerInt.errorMessage);
 		} catch (IOException ioe) {
-			displayMessage("Unable to load file "
-					+ fileChooser.getSelectedFile().getName());
+			xsdTree.getMessageManager().sendMessage("Unable to load file "
+					+ fileChooser.getSelectedFile().getName(), MessageManagerInt.errorMessage);
 		}
-
 	}
 
-	public abstract void displayMessage(String errorMessage);
+
 
 	/**
 	 * when a node is clicked by the mouse, deploy it using th
@@ -168,37 +183,6 @@ public abstract class AbstractXsdTreePanel extends JPanel {
 	 *  
 	 */
 	public abstract void setCellRenderer();
-
-	/**
-	 * create a copy of the node and add it to the parent of this node if the
-	 * node is not duplicable or if the maximum amount of this type of node
-	 * according to the schema has been reached, do nothing
-	 * 
-	 * @param node
-	 *            the node to duplicate
-	 */
-	public void duplicateNode(XsdNode node) {
-		if (!node.isDuplicable())
-			return;
-		if (node.max == xsdTree.getChildrenCount((XsdNode) node.getParent(),
-				node.toString()))
-			return;
-		XsdNode child = node.createBrother();
-
-		XsdNode parentNode = (XsdNode) node.getParent();
-
-		/* add it to the end for not corrupting maping */
-		xsdTree.treeModel.insertNodeInto(child, parentNode, parentNode
-				.getChildCount());
-
-		/* be sure that this node is not already used */
-		child.init();
-
-		if (((Annotated) child.getUserObject()).getStructureType() != Structure.GROUP)
-			extendPath(child);
-		else if (((Group) child.getUserObject()).getOrder().getType() != Order.CHOICE)
-			extendPath(child);
-	}
 
 	/**
 	 * @author arnaud
@@ -300,7 +284,6 @@ public abstract class AbstractXsdTreePanel extends JPanel {
 														.get(i)));
 							}
 						}
-						//						String choice = (String) expendChoices.get(path);
 						((XsdNode) currentNode.getParent()).remove(parent
 								.getIndex(currentNode));
 						XsdNode newNode;
@@ -355,17 +338,16 @@ public abstract class AbstractXsdTreePanel extends JPanel {
 		}
 	}
 
-	public void displayMessage(String message, String title) {
-
-		JEditorPane editorPane = new JEditorPane();
-		editorPane.setEditable(false);
-		editorPane.setText(message);
-		JScrollPane errorScrollPane = new JScrollPane(editorPane);
-		JFrame frame = new JFrame();
-		frame.setSize(400, 300);
-		frame.getContentPane().add(errorScrollPane);
-		frame.show();
-	}
+//	public void xsdTree.getMessageManager().sendMessage(String message, String title) {
+//		JEditorPane editorPane = new JEditorPane();
+//		editorPane.setEditable(false);
+//		editorPane.setText(message);
+//		JScrollPane errorScrollPane = new JScrollPane(editorPane);
+//		JFrame frame = new JFrame();
+//		frame.setSize(400, 300);
+//		frame.getContentPane().add(errorScrollPane);
+//		frame.show();
+//	}
 
 	public void reload() {
 		xsdTree.treeModel.reload();
@@ -418,7 +400,6 @@ public abstract class AbstractXsdTreePanel extends JPanel {
 
 				xsdTree.expendChoices.add(path);
 				xsdTree.expendChoices.add(choice);
-				System.out.println("add " + path + ", " + choice);
 			} else if (g.getOrder().getType() == Order.CHOICE) {
 				xsdTree.expendChoices.add(path);
 			}
@@ -426,4 +407,26 @@ public abstract class AbstractXsdTreePanel extends JPanel {
 		// extendPath
 		xsdTree.extendPath(node);
 	}
+//
+//	public void xsdTree.getMessageManager().sendMessage(String message, int errorType) {
+//			StyledDocument doc = (StyledDocument)messagesPane.getDocument();
+//			Style style;
+//			try {
+//			if (errorType == MessageManagerInt.errorMessage) {
+//				style = doc.addStyle("error", null);       
+//				StyleConstants.setForeground(style, Color.RED);
+//	//			messagesPane.setForeground(Color.RED);
+//				message = "[ERROR] "+message;
+//			} else { 
+//				style = doc.addStyle("simple", null);       
+//				StyleConstants.setForeground(style, Color.BLUE);
+//	//			messagesPane.setForeground(Color.RED);
+//	//			messagesPane.setForeground(Color.BLUE);
+//			}
+//		
+//			messagesPane.getDocument().insertString(messagesPane.getDocument().getLength(),  message+"\n", style );
+//		 } catch (BadLocationException e) {
+//		    }
+//	//		..setText(messagesPane.getText() + message+"\n");
+//		}
 }

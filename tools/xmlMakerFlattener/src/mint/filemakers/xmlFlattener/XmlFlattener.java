@@ -23,6 +23,7 @@ import java.util.Iterator;
 
 import mint.filemakers.xmlFlattener.mapping.TreeMapping;
 import mint.filemakers.xmlFlattener.structure.XsdTreeStructImpl;
+import mint.filemakers.xsd.SimpleMessageManager;
 
 /**
  * Executable class for the flattener, without graphical user interface
@@ -47,7 +48,8 @@ import mint.filemakers.xmlFlattener.structure.XsdTreeStructImpl;
 public class XmlFlattener {
 
 	public XmlFlattener() {
-		xsdTree = new XsdTreeStructImpl();
+		xsdTree = new XsdTreeStructImpl();		
+		xsdTree.setMessageManager(new SimpleMessageManager());
 	}
 
 	public static void main(String[] args) throws Exception {

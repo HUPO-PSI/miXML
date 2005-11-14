@@ -14,8 +14,6 @@
  */
 package mint.filemakers.xmlMaker;
 
-import org.apache.commons.cli.*;
-
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -43,7 +41,6 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
-import javax.swing.UIManager;
 import javax.swing.border.TitledBorder;
 
 import mint.filemakers.xmlMaker.gui.DictionaryPanel;
@@ -56,10 +53,19 @@ import mint.filemakers.xmlMaker.mapping.TreeMapping;
 import mint.filemakers.xmlMaker.structure.Dictionary;
 import mint.filemakers.xmlMaker.structure.FlatFile;
 import mint.filemakers.xmlMaker.structure.XsdTreeStructImpl;
+import mint.filemakers.xsd.JTextPaneMessageManager;
 import mint.filemakers.xsd.Utils;
 import mint.filemakers.xsd.XsdNode;
 
-import com.digitprop.tonic.TonicLookAndFeel;
+import org.apache.commons.cli.BasicParser;
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.HelpFormatter;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.OptionBuilder;
+import org.apache.commons.cli.Options;
+import org.apache.commons.cli.ParseException;
+//import com.digitprop.tonic.TonicLookAndFeel;
 
 /**
  * Main class for the PSI files maker: this class displays a graphical interface
@@ -215,7 +221,6 @@ public class XmlMakerGui extends JFrame {
 		} catch (NoSuchElementException nsee) {
 			JOptionPane.showMessageDialog(new JFrame(), "Unable to load file",
 					"[PSI makers]", JOptionPane.ERROR_MESSAGE);
-
 		}
 
 	}
@@ -312,7 +317,7 @@ public class XmlMakerGui extends JFrame {
 
 		/* look n'feel */
 		try {
-			UIManager.setLookAndFeel(new TonicLookAndFeel());
+//			UIManager.setLookAndFeel(new TonicLookAndFeel());
 		} catch (Exception e) {
 			System.out.println("Unable to load look'n feel");
 		}
@@ -320,8 +325,13 @@ public class XmlMakerGui extends JFrame {
 		getContentPane().setLayout(new BorderLayout());
 
 		xsdTree = new XsdTreeStructImpl();
-		treePanel = new XsdTreePanelImpl(xsdTree);
+		JTextPaneMessageManager messageManager = new JTextPaneMessageManager();
+		xsdTree.setMessageManager(messageManager);
+		treePanel = new XsdTreePanelImpl(xsdTree, messageManager);
+		
 
+		
+		
 		flatFileTabbedPanel = new FlatFileTabbedPanel(xsdTree.flatFiles);
 		flatFileTabbedPanel.setBorder(new TitledBorder("Flat files"));
 
@@ -339,16 +349,17 @@ public class XmlMakerGui extends JFrame {
 
 		treePanel.setTabFileTabbedPanel(flatFileTabbedPanel);
 		treePanel.setDictionnaryPanel(dictionnaryLists);
-
 		final CloseView fv = new CloseView();
 		addWindowListener(fv);
 		setJMenuBar(new XmlMakerMenu());
-		setSize(800, 600);
+//		setSize(800, 600);
+		this.pack();
 		setVisible(true);
 		
 		if (mappingFileName != null) {
 			load(new File(mappingFileName));
 		}
+		
 	}
 
 	/**
@@ -518,8 +529,11 @@ public class XmlMakerGui extends JFrame {
 		treePanel.dictionaryPanel.reload();
 
 		getContentPane().remove(treePanel);
+		
 		xsdTree = new XsdTreeStructImpl();
-		treePanel = new XsdTreePanelImpl(xsdTree);
+		JTextPaneMessageManager messageManager = new JTextPaneMessageManager();
+		xsdTree.setMessageManager(messageManager);
+		treePanel = new XsdTreePanelImpl(xsdTree, messageManager);
 
 		getContentPane().add(treePanel, BorderLayout.CENTER);
 

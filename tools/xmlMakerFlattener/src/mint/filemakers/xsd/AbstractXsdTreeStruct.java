@@ -49,6 +49,9 @@ import org.xml.sax.InputSource;
  */
 public abstract class AbstractXsdTreeStruct extends Observable {
 
+	private MessageManagerInt messageManager = new NullMessageManager();
+	
+	
 	/**
 	 * XML attributes
 	 */
@@ -381,7 +384,18 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 			if (!currentNode.isExtended) {
 				extendPath(currentNode);
 			}
-			currentNode = (XsdNode) currentNode.getChildAt(index);
+			try {
+				currentNode = (XsdNode) currentNode.getChildAt(index);
+			} catch ( java.lang.ArrayIndexOutOfBoundsException aiobe ) {
+				/* to keep compatibility: if mapping done without auto-duplication of nodes
+				 * and applied without this option, an exception will be rised if the node
+				 * has not been manually duplicated.
+				 * In this case try to duplicate "upper" node.
+				 */
+				/* get upper node's index */
+				duplicateNode((XsdNode) currentNode.getChildAt(index -1));
+				currentNode = (XsdNode) currentNode.getChildAt(index);
+			}
 			return currentNode;
 		} catch (ArrayIndexOutOfBoundsException aoobe) {
 			System.out.println("Path not found: " + indexes);
@@ -647,7 +661,18 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 								nextIndexes.indexOf(".")));
 						nextIndexes = nextIndexes.substring(nextIndexes
 								.indexOf(".") + 1);
-						currentNode = (XsdNode) currentNode.getChildAt(index);
+						try {
+							currentNode = (XsdNode) currentNode.getChildAt(index);
+						} catch ( java.lang.ArrayIndexOutOfBoundsException aiobe ) {
+							/* to keep compatibility: if mapping done without auto-duplication of nodes
+							 * and applied without this option, an exception will be rised if the node
+							 * has not been manually duplicated.
+							 * In this case try to duplicate "upper" node.
+							 */
+							/* get upper node's index */
+							duplicateNode((XsdNode) currentNode.getChildAt(index -1));
+							currentNode = (XsdNode) currentNode.getChildAt(index);
+						}
 					} else {
 
 						index = Integer.parseInt(nextIndexes);
@@ -823,9 +848,6 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 								.choiceToString((Group) choices.get(i)));
 					}
 				}
-				//				for (int i = 0; i < possibilities.size(); i++) {
-				//					System.out.println(possibilities.get(i));
-				//				}
 				newNode = new XsdNode((Annotated) choices.get(possibilities
 						.indexOf(choice)));
 				newNode.isRequired = node.isRequired;
@@ -941,5 +963,49 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 		}
 		node.isExtended = true;
 	} // extendPath
+
+	public MessageManagerInt getMessageManager() {
+		return messageManager;
+	}
+
+	public void setMessageManager(MessageManagerInt messageManager) {
+		this.messageManager = messageManager;
+	}
+
+	/**
+	 * create a copy of the node and add it to the parent of this node if the
+	 * node is not duplicable or if the maximum amount of this type of node
+	 * according to the schema has been reached, do nothing
+	 * 
+	 * @param node
+	 *            the node to duplicate
+	 */
+	public void duplicateNode(XsdNode node) {
+		if (!node.isDuplicable())
+			return;
+		if (node.max == getChildrenCount((XsdNode) node.getParent(),
+				node.toString()))
+			return;
+		XsdNode child = node.createBrother();
+	
+		XsdNode parentNode = (XsdNode) node.getParent();
+	
+		/* add it to the end for not corrupting maping */
+		treeModel.insertNodeInto(child, parentNode, parentNode
+				.getChildCount());
+	
+		/* be sure that this node is not already used */
+		child.init();
+
+		if (((Annotated) child.getUserObject()).getStructureType() != Structure.GROUP)
+			extendPath(child);
+		else if (((Group) child.getUserObject()).getOrder().getType() != Order.CHOICE)
+			extendPath(child);
+
+		expendChoices.add(node
+				.getPath2String());
+		expendChoices.add(null);
+	
+	}
 
 }

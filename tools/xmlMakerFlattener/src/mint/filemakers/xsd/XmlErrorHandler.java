@@ -28,6 +28,9 @@ import org.xml.sax.SAXParseException;
 public class XmlErrorHandler implements ErrorHandler {
 	public ArrayList errors = new ArrayList();
 
+	public final static int error = 0;
+	public final static int warning = 1;
+	
 	public void warning(SAXParseException exception) throws SAXException {
 		errors.add("Warning	" + "  Line:    " + exception.getLineNumber() + "	"
 				+ "  URI:     " + exception.getSystemId() + "	" + "  Message: "

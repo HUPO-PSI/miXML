@@ -15,7 +15,6 @@
 package mint.filemakers.xmlMaker.gui;
 
 import java.awt.BorderLayout;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -60,9 +59,6 @@ public class FlatFileTabbedPanel extends JPanel {
 	 */
 	public FlatFileContainer flatFileContainer;
 
-	/** dimension for buttons */
-	public final Dimension buttonsDimension = new Dimension(90, 25);
-
 	/**
 	 * 
 	 * @uml.property name="flatFilePanel"
@@ -84,7 +80,7 @@ public class FlatFileTabbedPanel extends JPanel {
 		Box buttonBox = new Box(BoxLayout.X_AXIS);
 
 		JButton addTabb = new JButton("New");
-		addTabb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(addTabb);
 		addTabb.addActionListener(new addFlatFileListener());
 
 		buttonBox.add(addTabb);

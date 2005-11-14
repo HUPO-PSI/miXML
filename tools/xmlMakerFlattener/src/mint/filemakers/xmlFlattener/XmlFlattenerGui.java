@@ -36,17 +36,17 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
-import javax.swing.UIManager;
 import javax.swing.border.TitledBorder;
 
 import mint.filemakers.xmlFlattener.gui.XsdTreePanelImpl;
 import mint.filemakers.xmlFlattener.mapping.TreeMapping;
 import mint.filemakers.xmlFlattener.structure.XsdTreeStructImpl;
+import mint.filemakers.xsd.JTextPaneMessageManager;
+import mint.filemakers.xsd.MessageManagerInt;
 import mint.filemakers.xsd.Utils;
 
 import org.xml.sax.SAXException;
-
-import com.digitprop.tonic.TonicLookAndFeel;
+//import com.digitprop.tonic.TonicLookAndFeel;
 
 /**
  * Main class for the flattener: this class displays a graphical interface that
@@ -74,15 +74,22 @@ public class XmlFlattenerGui extends JFrame {
 
 		/* look n'feel */
 		try {
-			UIManager.setLookAndFeel(new TonicLookAndFeel());
+//			UIManager.setLookAndFeel(new TonicLookAndFeel());
 		} catch (Exception e) {
 			System.out.println("Unable to load look'n feel");
 		}
 
+		XsdTreeStructImpl xsdTree = new XsdTreeStructImpl();
 		getContentPane().setLayout(new BorderLayout());
 
-		treePanel = new XsdTreePanelImpl(new XsdTreeStructImpl());
+		JTextPaneMessageManager messageManager = new JTextPaneMessageManager();
+		xsdTree.setMessageManager(messageManager);
+		
+		treePanel = new XsdTreePanelImpl(xsdTree, messageManager);
+		
 		treePanel.setBorder(new TitledBorder("Schema"));
+	
+		
 		getContentPane().add(treePanel, BorderLayout.CENTER);
 
 		final CloseView fv = new CloseView();
@@ -290,40 +297,35 @@ public class XmlFlattenerGui extends JFrame {
 			xdec.close();
 			fin.close();
 		} catch (FileNotFoundException fe) {
-			treePanel
-					.displayMessage("unable to load mapping file (file not found)");
+			treePanel.xsdTree.getMessageManager().sendMessage("unable to load mapping file (file not found)", MessageManagerInt.errorMessage);
 			System.out.println("unable to load mapping file");
 			StackTraceElement[] s = fe.getStackTrace();
 			for (int i = 0; i < s.length; i++) {
 				System.out.println(s[i]);
 			}
 		} catch (IOException ex) {
-			treePanel
-					.displayMessage("unable to load mapping file (unable to read the file, IO exception)");
+			treePanel.xsdTree.getMessageManager().sendMessage("unable to load mapping file (unable to read the file, IO exception)", MessageManagerInt.errorMessage);
 			System.out.println("unable to load mapping file");
 			StackTraceElement[] s = ex.getStackTrace();
 			for (int i = 0; i < s.length; i++) {
 				System.out.println(s[i]);
 			}
 		} catch (SAXException ex) {
-			treePanel
-					.displayMessage("unable to load mapping file (problem for parsing the XML file)");
+			treePanel.xsdTree.getMessageManager().sendMessage("unable to load mapping file (problem for parsing the XML file)", MessageManagerInt.errorMessage);
 			System.out.println("xml pb: " + ex);
 			StackTraceElement[] s = ex.getStackTrace();
 			for (int i = 0; i < s.length; i++) {
 				System.out.println(s[i]);
 			}
 		} catch (NoSuchElementException ex) {
-			treePanel
-					.displayMessage("unable to load mapping file (an element is missing in the mapping file, maybe this file is too old and not compatible anymore)");
+			treePanel.xsdTree.getMessageManager().sendMessage("unable to load mapping file (an element is missing in the mapping file, maybe this file is too old and not compatible anymore)", MessageManagerInt.errorMessage);
 			System.out.println("xml pb: " + ex);
 			StackTraceElement[] s = ex.getStackTrace();
 			for (int i = 0; i < s.length; i++) {
 				System.out.println(s[i]);
 			}
 		} catch (ClassCastException ex) {
-			treePanel
-					.displayMessage("unable to load mapping file (it doesn't seem to be a mapping file)");
+			treePanel.xsdTree.getMessageManager().sendMessage("unable to load mapping file (it doesn't seem to be a mapping file)", MessageManagerInt.errorMessage);
 			System.out.println("xml pb: " + ex);
 			StackTraceElement[] s = ex.getStackTrace();
 			for (int i = 0; i < s.length; i++) {

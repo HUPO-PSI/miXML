@@ -15,7 +15,6 @@
 package mint.filemakers.xmlMaker.gui;
 
 import java.awt.BorderLayout;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
@@ -140,8 +139,6 @@ public class DictionaryPanel extends JPanel {
 	 */
 	public JList list = new JList(listModel);
 
-	/** dimension for buttons */
-	public final Dimension buttonsDimension = new Dimension(180, 25);
 
 	/**
 	 * 
@@ -180,22 +177,22 @@ public class DictionaryPanel extends JPanel {
 		line2Panel.setBorder(new TitledBorder(""));
 
 		JButton newDicob = new JButton("New");
-		newDicob.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(newDicob);
 		newDicob.addActionListener(new addDictionnaryListener());
 		line1Panel.add(newDicob);
 
 		JButton loadDicob = new JButton("Edit");
-		loadDicob.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(loadDicob);
 		loadDicob.addActionListener(new editDictionnaryListener());
 		line1Panel.add(loadDicob);
 
 		JButton displayDicob = new JButton("View");
-		displayDicob.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(displayDicob);
 		displayDicob.addActionListener(new displayALineListener());
 		line1Panel.add(displayDicob);
 
 		JButton separatorb = new JButton("Separator");
-		separatorb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(separatorb);
 		separatorb.addActionListener(new separatorListener());
 		line2Panel.add(separatorb);
 
@@ -459,7 +456,8 @@ public class DictionaryPanel extends JPanel {
 		box.add(scrollList);
 		frame.getContentPane().add(box);
 		frame.setTitle("dictionnary: " + list.getSelectedValue());
-		frame.setSize(600, 300);
+//		frame.setSize(600, 300);
+		frame.pack();
 		frame.show();
 	}
 

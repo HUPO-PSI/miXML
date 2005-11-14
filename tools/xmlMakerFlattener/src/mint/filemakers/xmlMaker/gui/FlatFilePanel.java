@@ -16,7 +16,6 @@ package mint.filemakers.xmlMaker.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
-import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -121,8 +120,6 @@ public class FlatFilePanel extends JPanel {
 		}
 	}
 
-	/** dimension for buttons */
-	public final Dimension buttonsDimension = new Dimension(180, 25);
 
 	public String currentPath = "";
 
@@ -165,19 +162,19 @@ public class FlatFilePanel extends JPanel {
 		JPanel cellBox = new JPanel(new GridLayout(3, 2));
 
 		JButton firstLineb = new JButton("<<");
-		firstLineb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(firstLineb);
 		firstLineb.addActionListener(new firstLineListener());
 
 		nextLineBox.add(firstLineb);
 
 		JButton nextLineb = new JButton(">");
-		nextLineb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(nextLineb);
 		nextLineb.addActionListener(new nextLineListener());
 
 		nextLineBox.add(nextLineb);
 
 		JButton nextLineWithFieldb = new JButton(">>");
-		nextLineWithFieldb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(nextLineWithFieldb);
 		nextLineWithFieldb.addActionListener(new nextLineWithFieldListener());
 
 		nextLineBox.add(nextLineWithFieldb);
@@ -194,26 +191,26 @@ public class FlatFilePanel extends JPanel {
 		list.setVisible(true);
 
 		JButton fileb = new JButton("Open");
-		fileb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(fileb);
 		fileb.addActionListener(new loadFileListener());
 		cellBox.add(fileb);
 		skipFirstLineb.addItemListener(new skipFirstLineListener());
 		cellBox.add(skipFirstLineb);
 
 		JButton setSeparatorb = new JButton("Separator");
-		setSeparatorb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(setSeparatorb);
 		setSeparatorb.addActionListener(new setSeparatorListener());
 		cellBox.add(setSeparatorb);
 		cellBox.add(separatorLbl);
 
 		JButton enterb = new JButton("Split");
-		enterb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(enterb);
 		enterb.addActionListener(new enterListener());
 
 		cellBox.add(enterb);
 
 		JButton backb = new JButton("Back");
-		backb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(backb);
 		backb.addActionListener(new backListener());
 
 		cellBox.add(backb);

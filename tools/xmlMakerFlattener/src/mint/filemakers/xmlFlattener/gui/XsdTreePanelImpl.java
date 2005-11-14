@@ -17,6 +17,7 @@ package mint.filemakers.xmlFlattener.gui;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -28,7 +29,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Iterator;
 
 import javax.swing.Box;
@@ -37,20 +37,20 @@ import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
-import javax.swing.JEditorPane;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
+import javax.swing.JTextPane;
 import javax.swing.JTree;
 import javax.swing.border.TitledBorder;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreeNode;
 
 import mint.filemakers.xmlFlattener.structure.XsdTreeStructImpl;
+import mint.filemakers.xsd.MessageManagerInt;
 import mint.filemakers.xsd.Utils;
 import mint.filemakers.xsd.XsdNode;
 
@@ -83,7 +83,7 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 					.getLastSelectedPathComponent();
 
 			if (selectedNode == null) {
-				displayMessage("No node selected", "[XML maker]");
+				xsdTree.getMessageManager().sendMessage("no node selected", MessageManagerInt.errorMessage);
 				return;
 			}
 
@@ -105,12 +105,6 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 			updatePreview();
 		}
 	}
-
-	/**
-	 * used to display an overview of title line of the flat line
-	 *  
-	 */
-	public JTextArea titlesPreviewPane;
 
 	public ButtonGroup numerotationButtons;
 
@@ -135,16 +129,16 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 	 * duplicated even if the schema specify that more than one element of this
 	 * type is mandatory
 	 */
-	public XsdTreePanelImpl(XsdTreeStructImpl xsdTree) {
+	public XsdTreePanelImpl(XsdTreeStructImpl xsdTree, JTextPane messagePane) {
 		super(xsdTree, BorderLayout.EAST);
-		titlesPreviewPane = new JTextArea("\n\n");
-		titlesPreviewPane.setEditable(false);
 
 		MouseListener mouseListener = new TreeMouseAdapter();
 		xsdTree.tree.addMouseListener(mouseListener);
 
-		JScrollPane scrollpane = new JScrollPane(titlesPreviewPane);
-
+		JScrollPane scrollpane = new JScrollPane(messagePane);
+		scrollpane.setMaximumSize(new Dimension(Short.MAX_VALUE, 150));	
+		scrollpane.setMinimumSize(new Dimension(200, 150));	
+		scrollpane.setPreferredSize(new Dimension(200, 150));
 		scrollpane
 				.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		scrollpane
@@ -176,7 +170,7 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 		numerotationBox.setBorder(new TitledBorder("Numerotation"));
 		/* add a button for loading a XML Schema */
 		JButton loadFileb = new JButton("Open schema");
-		loadFileb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(loadFileb);
 		loadFileb.addActionListener(new LoadSchemaListener());
 
 		/*
@@ -184,27 +178,27 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 		 * flat file
 		 */
 		JButton selectLineNodeb = new JButton("Main node");
-		selectLineNodeb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(selectLineNodeb);
 		selectLineNodeb.addActionListener(new SelectLineNodeListener());
 
 		JButton selectNodeb = new JButton("Select");
-		selectNodeb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(selectNodeb);
 		selectNodeb.addActionListener(new SelectNodeListener());
 
 		JButton unselectNodeb = new JButton("Unselect");
-		unselectNodeb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(unselectNodeb);
 		unselectNodeb.addActionListener(new UnselectNodeListener());
 
 		JButton nameb = new JButton("Name");
-		nameb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(nameb);
 		nameb.addActionListener(new associateNameListener());
 
 		JButton filterb = new JButton("Filter");
-		filterb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(filterb);
 		filterb.addActionListener(new AssociateFilterListener());
 
 		JButton infosb = new JButton("About");
-		infosb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(infosb);
 		infosb.addActionListener(new InfosListener());
 
 		associationBox.add(selectNodeb);
@@ -219,15 +213,15 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 		associationBox.add(infosb);
 
 		JButton loadXmlFileb = new JButton("Open document (XML)");
-		loadXmlFileb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(loadXmlFileb);
 		loadXmlFileb.addActionListener(new LoadDocumentListener());
 
 		JButton setSeparatorb = new JButton("Separator");
-		setSeparatorb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(setSeparatorb);
 		setSeparatorb.addActionListener(new SetSeparatorListener());
 
 		JButton printTabFileb = new JButton("Print");
-		printTabFileb.setMaximumSize(buttonsDimension);
+		Utils.setDefaultSize(printTabFileb);
 		printTabFileb.addActionListener(new PrintFlatFileListener());
 
 		treeBox.add(loadXmlFileb);
@@ -303,8 +297,8 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 	public class LoadDocumentListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 			if (xsdTree.schema == null) {
-				displayMessage("please load a XML schema first");
-				//                displayMessage("Please load a XML schema first",
+				xsdTree.getMessageManager().sendMessage("please load a XML schema first", MessageManagerInt.errorMessage);
+				//                xsdTree.getMessageManager().sendMessage("Please load a XML schema first",
 				//                        "[PSI makers: flattener] loading document");
 				return;
 			}
@@ -316,7 +310,7 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 			Iterator it = xsdTree.xmlErrorHandler.errors.iterator();
 			//            String message = "\n";
 			while (it.hasNext()) {
-				displayMessage((String) it.next());
+				xsdTree.getMessageManager().sendMessage((String) it.next(), MessageManagerInt.errorMessage);
 				//                titlesPreviewPane.setText(titlesPreviewPane.getText()
 				//                        + it.next() + "\n");
 			}
@@ -354,7 +348,7 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 			URL fileURL = fileChooser.getSelectedFile().toURL();
 
 			((XsdTreeStructImpl) xsdTree).loadDocument(fileURL);
-			displayMessage("XML document " + fileURL + " loaded.");
+			xsdTree.getMessageManager().sendMessage("XML document " + fileURL + " loaded.", MessageManagerInt.simpleMessage);
 		} catch (IOException urie) {
 
 		} catch (SAXException saxe) {
@@ -368,12 +362,12 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 		public void actionPerformed(ActionEvent e) {
 
 			if (xsdTree.rootNode == null) {
-				displayMessage("No schema loaded", "[PSI makers: flattener]");
+				xsdTree.getMessageManager().sendMessage("no schema loaded", MessageManagerInt.errorMessage);
 				return;
 			}
 
 			if (((XsdTreeStructImpl) xsdTree).document == null) {
-				displayMessage("No document loaded", "[PSI makers: flattener]");
+				xsdTree.getMessageManager().sendMessage("no document loaded", MessageManagerInt.errorMessage);
 				return;
 			}
 
@@ -403,9 +397,10 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 				out.flush();
 				out.close();
 			} catch (IOException ex) {
-				JOptionPane.showMessageDialog(new JFrame(),
-						"unable to write file", "PSI-Tab makers: Tab Maker",
-						JOptionPane.ERROR_MESSAGE);
+//				JOptionPane.showMessageDialog(new JFrame(),
+//						"unable to write file", "PSI-Tab makers: Tab Maker",
+//						JOptionPane.ERROR_MESSAGE);
+				xsdTree.getMessageManager().sendMessage("unable to write file", MessageManagerInt.errorMessage);
 			}
 		}
 	}
@@ -446,19 +441,20 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 					.getLastSelectedPathComponent();
 
 			if (node == null) {
-				displayMessage("No node selected", "[PSI makers: flattener]");
+				xsdTree.getMessageManager().sendMessage("no node selected", MessageManagerInt.errorMessage);
 				return;
 			}
 
-			JEditorPane editorPane = new JEditorPane();
-			editorPane.setEditable(false);
-			editorPane.setText(xsdTree.getInfos(node));
-
-			JScrollPane scrollPane = new JScrollPane(editorPane);
-			scrollPane
-					.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-
-			JOptionPane.showMessageDialog(new JFrame(), scrollPane);
+			xsdTree.getMessageManager().sendMessage(xsdTree.getInfos(node), MessageManagerInt.simpleMessage);
+//			JEditorPane editorPane = new JEditorPane();
+//			editorPane.setEditable(false);
+//			editorPane.setText(xsdTree.getInfos(node));
+//
+//			JScrollPane scrollPane = new JScrollPane(editorPane);
+//			scrollPane
+//					.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+//
+//			JOptionPane.showMessageDialog(new JFrame(), scrollPane);
 		}
 	}
 
@@ -480,7 +476,7 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 		public void actionPerformed(ActionEvent e) {
 			/** TODO: commented : no more dcument necessary for selection */
 			//            if (((XsdTreeStructImpl) xsdTree).document == null) {
-			//                displayMessage("Please load a XML document first",
+			//                xsdTree.getMessageManager().sendMessage("Please load a XML document first",
 			//                        "[PSI makers: flattener] node selection for a line");
 			//                return;
 			//            }
@@ -492,7 +488,7 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 				((XsdTreeStructImpl) xsdTree)
 						.setLineNode(((XsdTreeStructImpl) xsdTree).lineNode);
 			} catch (NullPointerException npe) {
-				displayMessage("No node selected", "[PSI makers: flattener]");
+				xsdTree.getMessageManager().sendMessage("no node selected", MessageManagerInt.errorMessage);
 			}
 			exampleLine = null;
 			updatePreview();
@@ -504,7 +500,7 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 			XsdNode selectedNode = (XsdNode) ((XsdTreeStructImpl) xsdTree).tree
 					.getLastSelectedPathComponent();
 
-			String value;
+//			String value;
 			if (((XsdTreeStructImpl) xsdTree).elementFilters
 					.containsKey(selectedNode)) {
 				filter
@@ -609,16 +605,15 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 				.getLastSelectedPathComponent();
 
 		if (node == null) {
-			displayMessage("No node selected", "[PSI makers: flattener]");
+			xsdTree.getMessageManager().sendMessage("no node selected", MessageManagerInt.errorMessage);
 			return;
 		}
 
 		if (!((XsdTreeStructImpl) xsdTree)
 				.canHaveValue((XsdNode) ((XsdTreeStructImpl) xsdTree).tree
 						.getLastSelectedPathComponent())) {
-			displayMessage(
-					"No value should  have been associated to this node",
-					"[PSI makers: flattener]");
+			xsdTree.getMessageManager().sendMessage(
+					"no value should  have been associated to this node", MessageManagerInt.errorMessage);
 			return;
 		}
 
@@ -665,9 +660,9 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 					preview += "not enougth memory to perform preview\n";
 				}
 			}
-			displayMessage(preview);
+			xsdTree.getMessageManager().sendMessage(preview, MessageManagerInt.simpleMessage);
 		} else {
-			displayMessage("No document loaded");
+			xsdTree.getMessageManager().sendMessage("no document loaded", MessageManagerInt.errorMessage);
 		}
 	}
 
@@ -676,7 +671,7 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 				.getLastSelectedPathComponent();
 
 		if (node == null) {
-			displayMessage("No node selected", "[PSI makers: flattener]");
+			xsdTree.getMessageManager().sendMessage("no node selected", MessageManagerInt.errorMessage);
 			return;
 		}
 
@@ -708,13 +703,6 @@ public class XsdTreePanelImpl extends mint.filemakers.xsd.AbstractXsdTreePanel {
 		((XsdTreeStructImpl) xsdTree).treeModel.reload(node);
 	}
 
-	public void displayMessage(String errorMessage) {
-		String previousMessage = this.titlesPreviewPane.getText().trim();
-		if (previousMessage.length() > 0)
-			previousMessage += "\n";
-		this.titlesPreviewPane.setText(previousMessage + errorMessage);// +
-		// this.titlesPreviewPane.getText());
-	}
 
 	public class AssociateFilterListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {

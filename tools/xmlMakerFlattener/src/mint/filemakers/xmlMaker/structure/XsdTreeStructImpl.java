@@ -33,8 +33,9 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import mint.filemakers.xmlMaker.mapping.TreeMapping;
 import mint.filemakers.xsd.FileMakersException;
+import mint.filemakers.xsd.MessageManagerInt;
 import mint.filemakers.xsd.Utils;
-import mint.filemakers.xsd.*;
+import mint.filemakers.xsd.XsdNode;
 
 import org.exolab.castor.xml.schema.Annotated;
 import org.exolab.castor.xml.schema.AttributeDecl;
@@ -73,7 +74,7 @@ public class XsdTreeStructImpl extends
 	 */
 	private static int checkMode = checking;
 
-	public ErrorManager errorManager = new ErrorManager();
+//	public ErrorManager errorManager = new ErrorManager();
 
 	/**
 	 * if set to false, XML code will not been checked
@@ -241,12 +242,12 @@ public class XsdTreeStructImpl extends
 	 *            a FlatFile
 	 */
 	public void pushFlatFile(FlatFile f) {
-		//        System.out.println("push " + f.fileURL.toString());
+		//        getMessageManager().sendMessage("push " + f.fileURL.toString());
 		flatFilesStack.add(f);
 	}
 
 	public void popFlatFile() {
-		//        System.out.println("pop ");
+		//        getMessageManager().sendMessage("pop ");
 		flatFilesStack.remove(flatFilesStack.size() - 1);
 	}
 
@@ -513,7 +514,7 @@ public class XsdTreeStructImpl extends
 				filteredPath += paths[paths.length - 1];
 				path = filteredPath;
 			}
-//			System.out.println("filtered path: "+ path + ", " + node);
+//			getMessageManager().sendMessage("filtered path: "+ path + ", " + node);
 			String value = flatFiles.getValue(path, modelPath);
 			if (value == null) {
 				return null;
@@ -533,9 +534,9 @@ public class XsdTreeStructImpl extends
 
 				if (replacementValue == null) { // || replacementValue.length()
 					// == 0) {
-					System.out.println("[WARNING] " + printPath(node.getPath()) 
+					getMessageManager().sendMessage(printPath(node.getPath()) 
 							+ ": no value found for " + value 
-							+ " in dictionary! (line : " + lineNumber + ")");
+							+ " in dictionary! (line : " + lineNumber + ")", MessageManagerInt.warningMessage);
 					return null;
 				}
 				return getXmlValue(replacementValue.trim());
@@ -669,8 +670,9 @@ public class XsdTreeStructImpl extends
 	public boolean checkAttribute(XsdNode node) {
 		if (node.isRequired && !isAffected(node) && !hasDefaultValue(node)
 				&& !associatedAutogeneration.contains(node)
-				&& getValue(node) == null) {
+				&& (getValue(node) == null || getValue(node).length()==0)) {
 			node.isCheckedOk = false;
+			getMessageManager().sendMessage(printPath(node.getPath()) + " missing value", MessageManagerInt.errorMessage);
 			return false;
 		} else {
 			node.isCheckedOk = true;
@@ -691,6 +693,7 @@ public class XsdTreeStructImpl extends
 			while (children.hasMoreElements()) {
 				XsdNode child = (XsdNode) children.nextElement();
 				if (!check(child)) {
+					getMessageManager().sendMessage(printPath(child.getPath()) +" missing value", MessageManagerInt.errorMessage);
 					checkedOk = false;
 				}
 			}
@@ -701,10 +704,8 @@ public class XsdTreeStructImpl extends
 		XMLType type = ((ElementDecl) node.getUserObject()).getType();
 
 		if (type == null) {
-			errorManager.addMessage(node, "no type declaration for element",
-					ErrorManager.warning);
-			System.out.println("WARNING: no type declaration for element "
-					+ node.toString());
+			getMessageManager().sendMessage(printPath(node.getPath()) +" no type declaration"
+					+ node.toString(), MessageManagerInt.warningMessage);
 			return true;
 		}
 
@@ -712,9 +713,10 @@ public class XsdTreeStructImpl extends
 		if (type.isSimpleType()) {
 			if (node.isRequired && !isAffected(node) && !hasDefaultValue(node)
 					&& !associatedAutogeneration.contains(node)) {
-				errorManager.addMessage(node, "toto cannot be empty",
-						ErrorManager.error);
-				node.isCheckedOk = false;
+				node.isCheckedOk = false;			
+				getMessageManager().sendMessage(printPath(node.getPath()) +" missing value"
+						, MessageManagerInt.errorMessage);
+				
 				return false;
 			} else {
 				node.isCheckedOk = true;
@@ -722,98 +724,7 @@ public class XsdTreeStructImpl extends
 			}
 		} else { /* complexType, ie: attributes + group */
 			return checkGroup(node);
-			//			boolean errors = false;
-			//			/* check if number of subelts is correct */
-			//			HashMap maxOccurs = new HashMap();
-			//			HashMap minOccurs = new HashMap();
-			//
-			//			Enumeration children = node.children();
-			//
-			//			while (children.hasMoreElements()) {
-			//				XsdNode child = (XsdNode) children.nextElement();
-			//				boolean isChildOk = check(child);
-			//				
-			//				switch (((Annotated) child.getUserObject()).getStructureType()) {
-			//				case Structure.ATTRIBUTE:
-			//					if (!isChildOk)
-			//						errors = true;
-			//					break;
-			//				case Structure.GROUP:
-			//					if (!isChildOk)
-			//						errors = true;
-			//					break;
-			//				case Structure.ELEMENT:
-			//					/* initialisation if first occurence of the element */
-			//					if (!maxOccurs.containsKey(child.toString())) {
-			//						int max = child.max;
-			//						if (max != -1) {
-			//							maxOccurs.put(child.toString(), new Integer(max));
-			//						} else {
-			//							maxOccurs.put(child.toString(), "UNBOUNDED");
-			//						}
-			//						minOccurs.put(child.toString(), new Integer(child.min));
-			//					}
-			//
-			//// for (int i = 0; i < subMessages.size(); i++) {
-			//// errorMessages.add(subMessages.get(i));
-			//// }
-			//
-			//					if (child.isCheckedOk) {
-			//						try {
-			//							maxOccurs.put(child.toString(), new Integer(
-			//									((Integer) maxOccurs.get(child.toString()))
-			//											.intValue() - 1));
-			//						} catch (ClassCastException e) {
-			//							/*
-			//							 * ok, max is unbounded and exception is throws when
-			//							 * trying to cast String to Integer
-			//							 */
-			//						}
-			//// minOccurs.put(child.toString(), new Integer(
-			//// ((Integer) minOccurs.get(child.toString()))
-			//// .intValue() - 1));
-			//						minOccurs.put(child.toString(), new Integer(0 ));
-			//					}
-			//				}
-			//			}
-			//
-			//			Iterator names = maxOccurs.keySet().iterator();
-			//
-			//			Iterator mins = minOccurs.values().iterator();
-			//			Iterator maxs = maxOccurs.values().iterator();
-			//			while (names.hasNext()) {
-			//				String name = (String) names.next();
-			//				// if a min is > 0, it means that an element is missing
-			//				if (((Integer) mins.next()).intValue() > 0) {
-			//// errorMessages.add(printPath(node.getPath()) + "ERROR: a "
-			//// + name + " is missing");
-			//				errorManager.addMessage(node, "a "
-			//						+ name + " is missing", ErrorManager.error);
-			//				errors = true;
-			//				}
-			//
-			//				/* if a max is < 0, it means there are too much elements */
-			//				try {
-			//					if (((Integer) maxs.next()).intValue() < 0) {
-			//						errorManager.addMessage(node, "a " + name + " should be removed",
-			// ErrorManager.error);
-			//// errorMessages.add(printPath(node.getPath())
-			//// + " ERROR: a " + name + " should be removed");
-			//						errors = true;
-			//					}
-			//
-			//				} catch (ClassCastException e) {
-			//					/*
-			//					 * ok, max is unbounded and exception is throws when trying
-			//					 * to cast String to Integer
-			//					 */
-			//				}
-			//			}
-			//
-			//			node.isCheckedOk = !errors;
-			//			return !errors;
 		}
-		//return !errors;;
 	}
 
 	/*
@@ -829,12 +740,11 @@ public class XsdTreeStructImpl extends
 			while (children.hasMoreElements()) {
 				XsdNode child = (XsdNode) children.nextElement();
 				if (!check(child)) {
-					System.out.println("pb with " + child);
+					getMessageManager().sendMessage(printPath(node.getPath()) +" missing value", MessageManagerInt.errorMessage);
 					checkedOk = false;
 				}
 			}
 			node.isCheckedOk = checkedOk;
-			//System.out.println("check " + node + ":" + checkedOk);
 			return checkedOk;
 		}
 
@@ -853,9 +763,6 @@ public class XsdTreeStructImpl extends
 			String filter = "";
 
 			if (associatedDuplicableFields.containsKey(child)) {
-				//				sSystem.out.println(child + ", " + getPathForNode(child) + ":
-				// " +(String) associatedDuplicableFields
-				//						.get(child));
 				nbDuplications = flatFiles
 						.nbElements((String) associatedDuplicableFields
 								.get(child));
@@ -881,17 +788,18 @@ public class XsdTreeStructImpl extends
 
 				switch (((Annotated) child.getUserObject()).getStructureType()) {
 				case Structure.ATTRIBUTE:
-					if (!isChildOk)
+					if (!isChildOk) 
 						errors = true;
 					break;
 				case Structure.GROUP:
-					if (!isChildOk) {
-						System.out.println("oups:" + node + ", " + child);
+					if (((Group) child.getUserObject()).getOrder().getType() == Order.CHOICE && !child.isExtended) {
+						getMessageManager().sendMessage(printPath(child.getPath()) +" please expand this node ", MessageManagerInt.errorMessage);
+						errors = true;
+					} else if (!isChildOk) {
 						errors = true;
 					}
 					break;
 				case Structure.ELEMENT:
-
 					/* initialisation if first occurence of the element */
 					if (!maxOccurs.containsKey(child.toString())) {
 						int max = child.max;
@@ -917,7 +825,6 @@ public class XsdTreeStructImpl extends
 						minOccurs.put(child.toString(), new Integer(
 								((Integer) minOccurs.get(child.toString()))
 										.intValue() - 1));
-						//												minOccurs.put(child.toString(), new Integer(0));
 					}
 				}
 
@@ -934,16 +841,16 @@ public class XsdTreeStructImpl extends
 			// if a min is > 0, it means that an element is missing
 			/////////////////////// dat one
 			if (((Integer) mins.next()).intValue() > 0) {
-				errorManager.addMessage(node, "a " + name + " is missing!",
-						ErrorManager.error);
+				getMessageManager().sendMessage(printPath(node.getPath()) +" a " + name
+						+ " is missing", MessageManagerInt.errorMessage);
 				errors = true;
 			}
 
 			/* if a max is < 0, it means there are too much elements */
 			try {
 				if (((Integer) maxs.next()).intValue() < 0) {
-					errorManager.addMessage(node, "a " + name
-							+ " should be removed", ErrorManager.error);
+					getMessageManager().sendMessage(printPath(node.getPath()) +" a " + name
+									+ " should be removed", MessageManagerInt.errorMessage);
 					errors = true;
 				}
 
@@ -956,10 +863,6 @@ public class XsdTreeStructImpl extends
 		}
 		node.isCheckedOk = !errors;
 
-		//		} else {
-		//			errorManager.addMessage(node, "-->maybe something is missing",
-		// ErrorManager.warning);
-		//		}
 		return node.isCheckedOk;
 	}
 
@@ -1018,54 +921,13 @@ public class XsdTreeStructImpl extends
 			return checkElement(node);
 		case Structure.GROUP:
 			return checkGroup(node);
-		//			return checkElement(node);
 		default:
-			System.out.println("type not found: "
-					+ ((Annotated) node.getUserObject()).getStructureType());
+			getMessageManager().sendMessage(printPath(node.getPath()) +" type not found: "
+					+ ((Annotated) node.getUserObject()).getStructureType(), MessageManagerInt.errorMessage);
 			return false;
 		}
 	}
 
-//	/**
-//	 * write the whole XML file
-//	 * 
-//	 * @param out
-//	 *            the writer used to write the file
-//	 * @throws IOException
-//	 */
-//	public void marshall(Writer out, Writer logoutPrintWriter)
-//			throws IOException, FileMakersException {
-//		marshallNode((XsdNode) treeModel.getRoot(), out, logoutPrintWriter);
-//	}
-//
-//	public void print(File outFile, File logoutFile) throws IOException {
-//		Writer out = new BufferedWriter(new FileWriter(outFile));
-//		Writer logoutPrintWriter = new BufferedWriter(
-//				new FileWriter(logoutFile));
-//
-//		observable.setMessage("output file: " + outFile.getName());
-//		out.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-//		out
-//				.write("<!-- created using XmlMakerFlattener v1.0 (http://cvs.sourceforge.net/viewcvs.py/psidev/psi/mi/tools/psimakers0908src.zip) -->");
-//		logoutPrintWriter.write("start marshalling to file :"
-//				+ outFile.getName() + " at " + new Date() + "\n");
-//		try {
-//			marshall(out, logoutPrintWriter);
-//		} catch (FileMakersException fme) {
-//			System.out.println("Exception in main loop: " + fme);
-//			/** TODO : manage exception */
-//		}
-//
-//		logoutPrintWriter.write("\nmarshalling done, finished at " + new Date()
-//				+ "\n");
-//
-//		out.flush();
-//		out.close();
-//		logoutPrintWriter.flush();
-//		logoutPrintWriter.close();
-//		observable.setMessage("marshalling done");
-//		observable.notifyObservers(observable.getMessage());
-//	}
 
 	public void validateXml(File xmlFile, Writer log) {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -1089,322 +951,72 @@ public class XsdTreeStructImpl extends
 			} catch (IOException e3) {
 				/** TODO: manage excepton */
 			}
-			System.out
-					.println("ERROR: not enougth memory to perform XML validation");
+			getMessageManager().sendMessage("ERROR: not enougth memory to perform XML validation", MessageManagerInt.errorMessage);
 		} catch (IOException e3) {
 			/** TODO: manage excepton */
 		}
 
 	}
 
-	public void logoutPrintErrors(XsdNode node, Writer logoutPrintWriter)
-			throws IOException {
-		if (!node.isRequired)
-			return;
-
-		String errorType;
-		if (node.isRequired)
-			errorType = "[ERROR]";
-		else
-			errorType = "[WARNING]";
-
-		switch (((Annotated) node.getUserObject()).getStructureType()) {
-		case Structure.ATTRIBUTE:
-			if (!node.isCheckedOk) {
-				logoutPrintWriter.write("\n 	" + errorType + " in element "
-						+ printPath(node.getPath()));
-				logoutPrintWriter.write("\n 	" + errorType + " attribute "
-						+ node.toString() + " ignored (" + getNodeProblem(node)
-						+ ")");
-			}
-			break;
-		case Structure.ELEMENT:
-			XMLType type = ((ElementDecl) node.getUserObject()).getType();
-			if (type == null) {
-				logoutPrintWriter
-						.write("\n WARNING: no type declaration for element "
-								+ node.toString());
-				return;
-			}
-			/* simpleType */
-			if (type.isSimpleType()) {
-				if (!node.isCheckedOk) {
-					logoutPrintWriter.write("\n 	" + errorType + " in element "
-							+ printPath(node.getPath()));
-					logoutPrintWriter.write("\n	" + errorType + " element "
-							+ node.toString() + " ignored ("
-							+ getNodeProblem(node) + ")");
-				}
-			} else { /* complex type: go deeper */
-				Enumeration children = node.children();
-
-				while (children.hasMoreElements()) {
-					logoutPrintErrors((XsdNode) children.nextElement(),
-							logoutPrintWriter);
-				}
-			}
-			break;
-		case Structure.GROUP:
-			logoutPrintWriter
-					.write("	[WARNING] maybe something is missing in  "
-							+ node.toString()
-							+ " (you have to click on the node and make a choice).\n");
-			break;
-		default:
-			System.out.println("type not found "
-					+ ((Annotated) node.getUserObject()).getStructureType());
-			node.isCheckedOk = false;
-		}
-	}
-
-//	/**
-//	 * write the XML code for a node
-//	 *  
-//	 */
-//	public void marshall(XsdNode node, Writer out, Writer logoutPrintWriter)
-//			throws IOException, FileMakersException {
-//		lastId = 0;
-//		marshallNode(node, out, logoutPrintWriter);
-//
-//		/* to reinitialize the display */
-//		check(node);
-//	}
-//
-//	public String marshallAttribute(XsdNode node, Writer out,
-//			Writer logoutPrintWriter) throws IOException {
-//
-//		if (!node.isUsed)
-//			return "";
-//
-//		if (!node.isCheckedOk && node.isRequired) {
-//			return "";
-//		}
-//
-//		String value = getValue(node);
-//
-//		if (value == null || value.length() == 0) {
-//			return "";
-//		}
-//
-//		//		out.write(" " + ((AttributeDecl) node.getUserObject()).getName()
-//		//				+ "=\"" + value + "\"");
-//		return " " + ((AttributeDecl) node.getUserObject()).getName() + "=\""
-//				+ value + "\"";
-//	}
-//
-//	public void marshallElement(XsdNode node, Writer out,
-//			Writer logoutPrintWriter) throws IOException, FileMakersException {
-//
-//		//		marshallingCheckElement(node, logoutPrintWriter);
-//
-//		if (!node.isUsed || !node.isCheckedOk)
+//	public void logoutPrintErrors(XsdNode node, Writer logoutPrintWriter)
+//			throws IOException {
+//		if (!node.isRequired)
 //			return;
 //
-//		ArrayList attributeList = new ArrayList();
-//		ArrayList elementList = new ArrayList();
-//		ArrayList groupList = new ArrayList();
-//		String value = null;
-//
-//		/*
-//		 * get every childs of the node get the structureType of the userElement
-//		 * and use the apropriate marshaller
-//		 */
-//		Enumeration children = node.children();
-//		while (children.hasMoreElements()) {
-//			XsdNode child = (XsdNode) children.nextElement();
-//
-//			switch (((Annotated) child.getUserObject()).getStructureType()) {
-//			case Structure.ATTRIBUTE:
-//				attributeList.add(child);
-//				break;
-//			case Structure.ELEMENT:
-//				if (child.isUsed)
-//					elementList.add(child);
-//				break;
-//			case Structure.GROUP:
-//				if (child.isUsed)
-//					groupList.add(child);
-//				break;
-//			}
-//		}
-//
-//		/* get the value affected to this element */
-//		value = getValue(node);
-//
-//		boolean isEmptyElement = ((value == null || value.length() == 0)
-//				&& elementList.size() == 0 && groupList.size() == 0);
-//
-//		openElement(node, attributeList, isEmptyElement, out, logoutPrintWriter);
-//
-//		indentation += "\t";
-//
-//		if (value != null && value.length() > 0)
-//			out.write(value);
-//		for (int i = 0; i < elementList.size(); i++) {
-//			if (associatedDuplicableFields.get((XsdNode) elementList.get(i)) != null) {
-//
-//				marshallDuplicableElement((XsdNode) elementList.get(i), out,
-//						logoutPrintWriter);
-//				//            else
-//				//                marshallElement((XsdNode) elementList.get(i), out,
-//				//                        logoutPrintWriter);
-//			} else {
-//				boolean isFlattened = false;
-//				for (int j = 0; j < associatedFlatFiles.size(); j++) {
-//					if (((XsdNode) associatedFlatFiles.get(j)) == (XsdNode) elementList
-//							.get(i)) {
-//						pushFlatFile(flatFiles.getFlatFile(associatedFlatFiles
-//								.indexOf((XsdNode) elementList.get(i))));
-//
-//						observable
-//								.setCurrentFlatFile(getCurrentFlatFile().fileURL
-//										.getFile());
-//						observable.setElement(node.toString());
-//						observable.indentation++;
-//
-//						isFlattened = true;
-//						marshallFlatFileElement((XsdNode) elementList.get(i),
-//								out, logoutPrintWriter);
-//						popFlatFile();
-//
-//						try {
-//							//                            observable.setElement(node.toString());
-//							observable.indentation--;
-//							if (getCurrentFlatFile() != null)
-//								observable
-//										.setCurrentFlatFile(getCurrentFlatFile().fileURL
-//												.getFile());
-//							else
-//								observable.setCurrentFlatFile("");
-//
-//						} catch (ArrayIndexOutOfBoundsException aoobe) {
-//							/* ok, no more flat file in stack */
-//						}
-//
-//						//     return;
-//					}
-//				}
-//				if (!isFlattened)
-//					marshallElement((XsdNode) elementList.get(i), out,
-//							logoutPrintWriter);
-//			}
-//		}
-//		for (int i = 0; i < groupList.size(); i++)
-//			marshallGroup((XsdNode) groupList.get(i), out, logoutPrintWriter);
-//
-//		indentation = indentation.substring(1);
-//		if (elementList.size() != 0 || groupList.size() != 0) {
-//			out.write("\n" + indentation);
-//		}
-//		//out.flush();
-//		closeElement(node, isEmptyElement, out);
-//		//		out.flush();
-//	}
-//
-//	public void marshallGroup(XsdNode node, Writer out, Writer logoutPrintWriter)
-//			throws IOException, FileMakersException {
-//		Enumeration elements = node.children();
-//		while (elements.hasMoreElements()) {
-//			marshallNode((XsdNode) elements.nextElement(), out,
-//					logoutPrintWriter);
-//		}
-//	}
-//
-//	public void marshallNode(XsdNode node, Writer out, Writer logoutPrintWriter)
-//			throws IOException, FileMakersException {
-//		if (!node.isUsed || !node.isCheckedOk)
-//			return;
+//		int errorType;
+//		if (node.isRequired)
+//			errorType =MessageManagerInt.errorMessage;
+//		else
+//			errorType = MessageManagerInt.warningMessage;
 //
 //		switch (((Annotated) node.getUserObject()).getStructureType()) {
 //		case Structure.ATTRIBUTE:
-//			marshallAttribute(node, out, logoutPrintWriter);
-//			break;
-//		case Structure.GROUP:
-//			if (!node.isUsed) {
-//				return;
+//			if (!node.isCheckedOk) {
+//				getMessageManager().sendMessage("in element "
+//						+ printPath(node.getPath()), errorType);
+//				getMessageManager().sendMessage("attribute "
+//						+ node.toString() + " ignored (" + getNodeProblem(node)
+//						+ ")", errorType);
 //			}
-//			marshallGroup(node, out, logoutPrintWriter);
 //			break;
 //		case Structure.ELEMENT:
-//			if (!node.isUsed) {
+//			XMLType type = ((ElementDecl) node.getUserObject()).getType();
+//			if (type == null) {
+//				getMessageManager().sendMessage("no type declaration for element "
+//								+ node.toString(), MessageManagerInt.warningMessage);
 //				return;
 //			}
-//			marshallElement(node, out, logoutPrintWriter);
+//			/* simpleType */
+//			if (type.isSimpleType()) {
+//				if (!node.isCheckedOk) {
+//					getMessageManager().sendMessage("in element "
+//							+ printPath(node.getPath()), errorType);
+//					getMessageManager().sendMessage("element "
+//							+ node.toString() + " ignored ("
+//							+ getNodeProblem(node) + ")",errorType);
+//				}
+//			} else { /* complex type: go deeper */
+//				Enumeration children = node.children();
+//
+//				while (children.hasMoreElements()) {
+//					logoutPrintErrors((XsdNode) children.nextElement(),
+//							logoutPrintWriter);
+//				}
+//			}
+//			break;
+//		case Structure.GROUP:
+//			logoutPrintWriter
+//					.write("	[WARNING] maybe something is missing in  "
+//							+ node.toString()
+//							+ " (you have to click on the node and make a choice).\n");
 //			break;
 //		default:
-//			out.write("<error: unmanaged element/>");
+//			getMessageManager().sendMessage("type not found "
+//					+ ((Annotated) node.getUserObject()).getStructureType(), errorType);
+//			node.isCheckedOk = false;
 //		}
-//		//		out.flush();
 //	}
 
-//	/**
-//	 * write XML code to open the element
-//	 * 
-//	 * @param out
-//	 *            the writer used to write the code
-//	 * @param node
-//	 *            a node
-//	 * @param isEmptyElement
-//	 *            if the node does not have neither attribute nor value or sub
-//	 *            elements
-//	 * @param attributes
-//	 *            a string containing the XML code for the attributes of this
-//	 *            element
-//	 */
-//	public void openElement(XsdNode node, ArrayList attributes,
-//			boolean isEmptyElement, Writer out, Writer logoutPrintWriter)
-//			throws IOException {
-//		String marshalledAttributes = "";
-//
-//		//		/* open */
-//		//		out.write("\n" + indentation + "<" + node.toString());
-//		//
-//		//		/* if root node of the tree */
-//		//		if (node == rootNode) {
-//		//			out.write(" xmlns=\"" + schema.getTargetNamespace() + "\" ");
-//		//			out
-//		//					.write("xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ");
-//		//		}
-//		//
-//		//		/* attributes */
-//		//		for (int i = 0; i < attributes.size(); i++)
-//		//			marshallAttribute((XsdNode) attributes.get(i), out,
-//		//					logoutPrintWriter);
-//		//
-//		//		if (isEmptyElement)
-//		//			out.write(" />");
-//		//		else
-//		//			out.write(">");
-//
-//		/* if root node of the tree */
-//		if (node == rootNode) {
-//			out.write(" xmlns=\"" + schema.getTargetNamespace() + "\" ");
-//			out
-//					.write("xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ");
-//		}
-//
-//		/* attributes */
-//		for (int i = 0; i < attributes.size(); i++)
-//			marshalledAttributes += marshallAttribute((XsdNode) attributes
-//					.get(i), out, logoutPrintWriter);
-//
-//		//		System.out.println("attr: isEmptyElement"+ isEmptyElement + ", "
-//		// +node + "-"+marshalledAttributes+"-");
-//		if ((marshalledAttributes == "" || marshalledAttributes.length() <= 0)
-//				&& isEmptyElement) {
-//			return;
-//		}
-//
-//		/* open */
-//		out.write("\n" + indentation + "<" + node.toString());
-//		out.write(marshalledAttributes);
-//
-//		if (isEmptyElement)
-//			out.write(" />");
-//		else
-//			out.write(">");
-//
-//	}
 
 	/**
 	 * return XML code to open the element
@@ -1428,9 +1040,6 @@ public class XsdTreeStructImpl extends
 
 	public String openElement(XsdNode node, ArrayList attributes,
 			boolean isEmptyElement) {
-		
-//		if(isEmptyElement && attributes.size() == 0)
-//			return "";
 		
 		String attributesString = "";
 		Iterator it = attributes.iterator();
@@ -1579,422 +1188,6 @@ public class XsdTreeStructImpl extends
 		treeModel.reload(node);
 	}
 
-	//	/**
-	//	 * check if these are enough associations according to the shema
-	//	 *
-	//	 * condition for being "checkedOK": attributes: if is associated to a
-	// value
-	//	 * or not required simpleType elements: if is associated to a value
-	// element,
-	//	 * complex type: if all sub Elements are checkedOk group: if the count of
-	//	 * subElements "checkedOk" is good
-	//	 *
-	//	 * condition for errors: elements or group is not "checkedOk"
-	//	 *
-	//	 */
-	//	public boolean marshallingCheck(XsdNode node, Writer logoutPrintWriter)
-	// throws IOException{
-	//		if (node.isSuperChecked)
-	//			return node.isCheckedOk;
-	//
-	//		switch (((Annotated) node.getUserObject()).getStructureType()) {
-	//		case Structure.ATTRIBUTE:
-	//			return marshallingCheckAttribute(node, logoutPrintWriter);
-	//		case Structure.ELEMENT:
-	//			return marshallingCheckElement(node, logoutPrintWriter);
-	//		case Structure.GROUP:
-	//			return marshallingCheckGroup(node, logoutPrintWriter);
-	//		default:
-	//			System.out.println("not found type"
-	//					+ ((Annotated) node.getUserObject()).getStructureType());
-	//			node.isCheckedOk = false;
-	//			return false;
-	//		}
-	//	}
-
-	//	public boolean marshallingCheckAttribute(XsdNode node, Writer
-	// logoutPrintWriter) throws IOException{
-	//		if (getValue(node) == null) {
-	//			System.out.println("missing value for " + node);
-	//			node.isCheckedOk = false;
-	//			if (node.isRequired) {
-	//				logoutPrintWriter.write(printPath(node.getPath())
-	//						+ "ERROR: cannot be empty");
-	//				return false;
-	//			} else {
-	//				return true;
-	//			}
-	//		} else {
-	//			node.isCheckedOk = true;
-	//			return true;
-	//		}
-	//	}
-
-	//	public boolean marshallingCheckElement(XsdNode node, Writer
-	// logoutPrintWriter) throws IOException{
-	//		XMLType type = ((ElementDecl) node.getUserObject()).getType();
-	//		if (type == null) {
-	//			System.out.println("WARNING: no type declaration for element "
-	//					+ node.toString());
-	//			return true;
-	//		}
-	//
-	//		/* simpleType */
-	//		if (type.isSimpleType()) {
-	//			if (getValue(node) == null) {
-	//				node.isCheckedOk = false;
-	//				if (node.isRequired)
-	//					return false;
-	//				else
-	//					return true;
-	//			} else {
-	//				node.isCheckedOk = true;
-	//				return true;
-	//			}
-	//		} else { /* complexType, ie: attributes + group */
-	//
-	//			boolean ok = true;
-	//			/* check if number of subelts is correct */
-	//			HashMap maxOccurs = new HashMap();
-	//			HashMap minOccurs = new HashMap();
-	//
-	//			Enumeration children = node.children();
-	//
-	//			while (children.hasMoreElements()) {
-	//				XsdNode child = (XsdNode) children.nextElement();
-	//				/**
-	//				 * TODO: i assume a node associated to a flat file is ok (we
-	//				 * can't check every line...). Check it later
-	//				 */
-	//				if (associatedFlatFiles.contains(child)) {
-	//					child.isCheckedOk = true;
-	//				} else {
-	//					marshallingCheck(child, logoutPrintWriter);
-	//				}
-	//				boolean childCheckedOk = child.isCheckedOk;
-	//
-	//				switch (((Annotated) child.getUserObject()).getStructureType()) {
-	//				case Structure.ATTRIBUTE:
-	//					if (!childCheckedOk && child.isRequired) {
-	//						ok = false;
-	//					}
-	//					break;
-	//				case Structure.GROUP:
-	//					ok = false;
-	//					// should not be groups anymore
-	//// return false;
-	//				case Structure.ELEMENT:
-	//
-	//					/* initialisation if first occurence of the element */
-	//					if (!maxOccurs.containsKey(child.toString())) {
-	//						int max = child.max;
-	//						if (max != -1) {
-	//							maxOccurs.put(child.toString(), new Integer(max));
-	//						} else {
-	//							maxOccurs.put(child.toString(), "UNBOUNDED");
-	//						}
-	//						minOccurs.put(child.toString(), new Integer(child.min));
-	//					}
-	//
-	//					if (childCheckedOk) {
-	//						try {
-	//							maxOccurs.put(child.toString(), new Integer(
-	//									((Integer) maxOccurs.get(child.toString()))
-	//											.intValue() - 1));
-	//							maxOccurs.put(child.toString(), new Integer(0));
-	//						} catch (ClassCastException e) {
-	//							/*
-	//							 * ok, max is unbounded and exception is thrown when
-	//							 * trying to cast String to Integer
-	//							 */
-	//						}
-	//// minOccurs.put(child.toString(), new Integer(
-	//// ((Integer) minOccurs.get(child.toString()))
-	//// .intValue() - 1));
-	//						minOccurs.put(child.toString(), new Integer(0));
-	//					}
-	//				}
-	//
-	//			}
-	//
-	//			Iterator names = minOccurs.keySet().iterator();
-	//
-	//			Iterator mins = minOccurs.values().iterator();
-	//			Iterator maxs = maxOccurs.values().iterator();
-	//			while (names.hasNext()) {
-	//				String name = (String) names.next();
-	//				// if a min is > 0, it means that an element is missing
-	//				if (((Integer) mins.next()).intValue() > 0) {
-	//					ok = false;
-	//				}
-	//
-	//				/* if a max is < 0, it means there are too much elements */
-	//				try {
-	//					if (((Integer) maxs.next()).intValue() < 0) {
-	//						ok = false;
-	//					}
-	//				} catch (ClassCastException e) {
-	//					/*
-	//					 * ok, max is unbounded and exception is throws when trying
-	//					 * to cast String to Integer
-	//					 */
-	//				}
-	//			}
-	//
-	//			node.isCheckedOk = ok;
-	//			if (node.isRequired && !ok) {
-	//				return false;
-	//			} else {
-	//				return true;
-	//			}
-	//		}
-	//	}
-
-	//	public boolean checkDuplicableElement(XsdNode node) throws
-	// FileMakersException {
-	//		ArrayList attributeList = new ArrayList();
-	//		ArrayList elementList = new ArrayList();
-	//		ArrayList groupList = new ArrayList();
-	//		String value = null;
-	//
-	//		/* how many sub elements */
-	//		String p1 = getPathForNode(node);
-	//		HashMap h = associatedDuplicableFields;
-	//		int nbDuplications = flatFiles
-	//				.nbElements((String) associatedDuplicableFields.get(node));
-	//
-	//		String filter = "";
-	//
-	//		for (int i = 0; i < nbDuplications; i++) {
-	//			filter += "0.";
-	//		}
-	//		filter += "0";
-	//		pathFilter = filter;
-	//		/*
-	//		 * get every childs of the node get the structureType of the userElement
-	//		 * and use the apropriate marshaller
-	//		 */
-	//		Enumeration children = node.children();
-	//		while (children.hasMoreElements()) {
-	//			XsdNode child = (XsdNode) children.nextElement();
-	//
-	//			switch (((Annotated) child.getUserObject()).getStructureType()) {
-	//			case Structure.ATTRIBUTE:
-	//				if (child.isUsed)
-	//					attributeList.add(child);
-	//				break;
-	//			case Structure.ELEMENT:
-	//				if (child.isUsed)
-	//					elementList.add(child);
-	//				break;
-	//			case Structure.GROUP:
-	//				if (child.isUsed)
-	//					groupList.add(child);
-	//				break;
-	//			}
-	//		}
-	//
-	//		for (int j = 0; j < nbDuplications; j++) {
-	//			int lastFilterIdx = Integer.parseInt(filter.substring(filter
-	//					.lastIndexOf(".") + 1))
-	//					+ j;
-	//			pathFilter = filter.substring(0, filter.lastIndexOf(".") + 1)
-	//					+ lastFilterIdx;
-	//			/* get the value affected to this element */
-	//
-	//			value = getValue(node);
-	//
-	//			boolean isEmptyElement = (value == null && elementList.size() == 0 &&
-	// groupList
-	//					.size() == 0);
-	//
-	//			openElement(node, attributeList, isEmptyElement, out,
-	//					logoutPrintWriter);
-	//			if (value != null) {
-	//				out.write(value);
-	//			}
-	//
-	//			marshallingCheck(node, logoutPrintWriter);
-	//
-	//			/* marshall the line */
-	//			for (int i = 0; i < elementList.size(); i++)
-	//				marshallElement((XsdNode) elementList.get(i), out,
-	//						logoutPrintWriter);
-	//			for (int i = 0; i < groupList.size(); i++)
-	//				marshallGroup((XsdNode) groupList.get(i), out,
-	//						logoutPrintWriter);
-	//
-	//			/* get warnings for empty fields and unfound replacement values */
-	//			String emptyFields = "";
-	//			String unfound = "";
-	//			String unmarshallableElements = "";
-	//			Iterator fieldsIt = associatedFields.keySet().iterator();
-	//			while (fieldsIt.hasNext()) {
-	//				XsdNode key = (XsdNode) fieldsIt.next();
-	//
-	//				String path = ((String) associatedFields.get(key));
-	//
-	//				String fieldValue = getValue(node);
-	//
-	//				if (key.isNodeAncestor(node)) {
-	//					/* only node that requires fields from current file */
-	//					if (fieldValue == null || fieldValue.length() == 0) {
-	//						emptyFields += path.substring(path.indexOf(".") + 1)
-	//								+ ", ";
-	//						unmarshallableElements += key.toString() + ", ";
-	//					} else {
-	//						if (associatedClosedDictionary.containsKey(key)) {
-	//							String replacementValue = dictionaries
-	//									.getReplacementValue(
-	//											((Integer) associatedClosedDictionary
-	//													.get(key)).intValue(),
-	//											fieldValue,
-	//											((Integer) associatedDictionaryColumn
-	//													.get(key)).intValue());
-	//
-	//							if (replacementValue == null
-	//									|| replacementValue.length() == 0) {
-	//								unfound += fieldValue + ", ";
-	//								unmarshallableElements += key.toString() + ", ";
-	//							}
-	//						}
-	//						/*
-	//						 * nuthin to do for opening dictionary as at least the
-	//						 * original value will be kept
-	//						 */
-	//					}
-	//				}
-	//			}
-	//
-	//			pathFilter = null;
-	//			check(node);
-	//
-	//			if (elementList.size() == 0 && groupList.size() == 0) {
-	//				out.write("\n");
-	//			}
-	//
-	//			closeElement(node, isEmptyElement, out);
-	//		}
-	//	}
-
-	/*
-	 * a group can only be a choice (else it would be expanded) if we find it,
-	 * it means user has to make a choice
-	 */
-	//	public boolean marshallingCheckGroup(XsdNode node, Writer
-	// logoutPrintWriter) throws IOException{
-	//		ArrayList errorMessages = new ArrayList();
-	//		
-	//		if (node.transparent) {
-	//			/* complexType, ie: attributes + group */
-	//				boolean errors = false;
-	//				/* check if number of subelts is correct */
-	//				HashMap maxOccurs = new HashMap();
-	//				HashMap minOccurs = new HashMap();
-	//
-	//				Enumeration children = node.children();
-	//
-	//				while (children.hasMoreElements()) {
-	//					XsdNode child = (XsdNode) children.nextElement();
-	//					ArrayList subMessages = check(child);
-	//
-	//					switch (((Annotated) child.getUserObject())
-	//							.getStructureType()) {
-	//					case Structure.ATTRIBUTE:
-	//						if (subMessages.size() != 0)
-	//							errors = true;
-	//						for (int i = 0; i < subMessages.size(); i++) {
-	//							errorMessages.add(subMessages.get(i));
-	//						}
-	//						break;
-	//					case Structure.GROUP:
-	//						if (subMessages.size() != 0)
-	//							errors = true;
-	//						for (int i = 0; i < subMessages.size(); i++) {
-	//							errorMessages.add(subMessages.get(i));
-	//						}
-	//						break;
-	//					case Structure.ELEMENT:
-	//
-	//						/* initialisation if first occurence of the element */
-	//						if (!maxOccurs.containsKey(child.toString())) {
-	//							int max = child.max;
-	//							if (max != -1) {
-	//								maxOccurs.put(child.toString(),
-	//										new Integer(max));
-	//							} else {
-	//								maxOccurs.put(child.toString(), "UNBOUNDED");
-	//							}
-	//							minOccurs.put(child.toString(), new Integer(
-	//									child.min));
-	//						}
-	//
-	//						for (int i = 0; i < subMessages.size(); i++) {
-	//							errorMessages.add(subMessages.get(i));
-	//						}
-	//
-	//						if (child.isCheckedOk) {
-	//							try {
-	//								maxOccurs.put(child.toString(), new Integer(
-	//										((Integer) maxOccurs.get(child
-	//												.toString())).intValue() - 1));
-	//							} catch (ClassCastException e) {
-	//								/*
-	//								 * ok, max is unbounded and exception is throws
-	//								 * when trying to cast String to Integer
-	//								 */
-	//							}
-	//							minOccurs.put(child.toString(), new Integer(
-	//									((Integer) minOccurs.get(child.toString()))
-	//											.intValue() - 1));
-	//// minOccurs.put(child.toString(), new Integer(0));
-	//						}
-	//					}
-	//				}
-	//
-	//				Iterator names = minOccurs.keySet().iterator();
-	//
-	//				Iterator mins = minOccurs.values().iterator();
-	//				Iterator maxs = maxOccurs.values().iterator();
-	//				while (names.hasNext()) {
-	//					String name = (String) names.next();
-	//					// if a min is > 0, it means that an element is missing
-	//					if (((Integer) mins.next()).intValue() > 0) {
-	//						errorMessages.add(printPath(node.getPath())
-	//								+ "ERROR: a " + name + " is missing");
-	//						errors = true;
-	//					}
-	//
-	//					/* if a max is < 0, it means there are too much elements */
-	//					try {
-	//						if (((Integer) maxs.next()).intValue() < 0) {
-	//							errorMessages.add(printPath(node.getPath())
-	//									+ " ERROR: a " + name
-	//									+ " should be removed");
-	//							errors = true;
-	//						}
-	//
-	//					} catch (ClassCastException e) {
-	//						/*
-	//						 * ok, max is unbounded and exception is throws when
-	//						 * trying to cast String to Integer
-	//						 */
-	//					}
-	//				}
-	//
-	//				node.isCheckedOk = !errors;
-	//				for (int i = 0; i < errorMessages.size(); i++) {
-	//					System.out.println("\n " + errorMessages.get(i));
-	//				}
-	//				return !errors;
-	//			}else {
-	//				logoutPrintWriter.write("\n " + " in element "+
-	// printPath(node.getPath()));
-	//				node.isCheckedOk = false; // should not be group anymore
-	//				return false;
-	//			}
-	//	
-	//	}
 	public String getNodeProblem(XsdNode node) {
 		if (isAffected(node)) {
 			String value = getValue(node);
@@ -2480,221 +1673,6 @@ public class XsdTreeStructImpl extends
 		return super.expendChoices;
 	}
 
-//	public void marshallFlatFileElement(XsdNode node, Writer out,
-//			Writer logoutPrintWriter) throws IOException, FileMakersException {
-//		ArrayList attributeList = new ArrayList();
-//		ArrayList elementList = new ArrayList();
-//		ArrayList groupList = new ArrayList();
-//		String value = null;
-//
-//		try {
-//			logoutPrintWriter.write("\n\n-------------- Marshalling for file: "
-//					+ getCurrentFlatFile().fileURL.getPath()
-//					+ " --------------------------------------\n");
-//			System.out.println("Marshalling file: "
-//					+ getCurrentFlatFile().fileURL.getPath());
-//		} catch (NullPointerException e) { /* out of a file */
-//			logoutPrintWriter
-//					.write("\n\n-------------- no file --------------------------------------\n");
-//		}
-//
-//		/* for each line */
-//		boolean endOfFile = false;
-//		getCurrentFlatFile().restartFile();
-//
-//		/* if the first line contains title, pass througth it */
-//		if (getCurrentFlatFile().firstLineForTitles()) {
-//			getCurrentFlatFile().nextLine();
-//		}
-//		int lineNumber = 0;
-//
-//		while (!endOfFile) {
-//			observable.setCurrentLine(lineNumber++);
-//			/*
-//			 * if checking is ok for this file qnd this element, it will be
-//			 * always so, so I can keep it it mind and will no longer check it
-//			 * later
-//			 */
-//			if (!node.isSuperChecked) {
-//				check(node);
-//				//logoutPrintErrors(node, logoutPrintWriter);
-//				//marshallingCheck(node, logoutPrintWriter);
-//			}
-//
-//			try { /* get each line */
-//
-//				if (!getCurrentFlatFile().hasLine()) {
-//					throw new IOException("!getCurrentFlatFile().hasLine()");
-//				}
-//
-//				marshallNode(node, out, logoutPrintWriter);
-//				//				check(node);
-//				//				logoutPrintWriter.write("line: " + lineNumber + "\n");
-////				String warning = this.errorManager.getAllErrors(this, node,
-////						ErrorManager.warning);
-////				String errors = this.errorManager.getAllErrors(this, node,
-////						ErrorManager.error);
-////				if (warning.length() > 0 || errors.length() > 0) {
-////					logoutPrintWriter.write("line :" + lineNumber + "\n"
-////							+ warning + "\n" + errors + "\n");
-////				}
-//
-//				getCurrentFlatFile().nextLine();
-//			} catch (IOException e) { /* end of the file */
-//				endOfFile = true;
-//				getCurrentFlatFile().restartFile();
-//			}
-//		}
-//
-//		//		node.setSuperChecked();
-//		out.flush();
-//		logoutPrintWriter.flush();
-//		System.out.println(".................. done");
-//	}
-//
-//	public void marshallDuplicableElement(XsdNode node, Writer out,
-//			Writer logoutPrintWriter) throws IOException, FileMakersException {
-//		ArrayList attributeList = new ArrayList();
-//		ArrayList elementList = new ArrayList();
-//		ArrayList groupList = new ArrayList();
-//		String value = null;
-//
-//		/* how many sub elements */
-//		String p1 = getPathForNode(node);
-//		HashMap h = associatedDuplicableFields;
-//		int nbDuplications = flatFiles
-//				.nbElements((String) associatedDuplicableFields.get(node));
-//
-//		String previousFilter = pathFilter;
-//		String filter = "";
-//
-//		for (int i = 0; i < ((String) associatedDuplicableFields.get(node))
-//				.split("\\.").length; i++) {
-//			filter += "0.";
-//		}
-//		filter += "0";
-//		pathFilter = filter;
-//		/*
-//		 * get every childs of the node get the structureType of the userElement
-//		 * and use the apropriate marshaller
-//		 */
-//		Enumeration children = node.children();
-//		while (children.hasMoreElements()) {
-//			XsdNode child = (XsdNode) children.nextElement();
-//
-//			switch (((Annotated) child.getUserObject()).getStructureType()) {
-//			case Structure.ATTRIBUTE:
-//				if (child.isUsed)
-//					attributeList.add(child);
-//				break;
-//			case Structure.ELEMENT:
-//				if (child.isUsed)
-//					elementList.add(child);
-//				break;
-//			case Structure.GROUP:
-//				if (child.isUsed)
-//					groupList.add(child);
-//				break;
-//			}
-//		}
-//
-//		for (int j = 0; j < nbDuplications; j++) {
-//			int lastFilterIdx = Integer.parseInt(filter.substring(filter
-//					.lastIndexOf(".") + 1))
-//					+ j;
-//			pathFilter = filter.substring(0, filter.lastIndexOf(".") + 1)
-//					+ lastFilterIdx;
-//
-//			/* get the value affected to this element */
-//			if (check(node)) {
-//				value = getValue(node);
-//
-//				boolean isEmptyElement = (value == null
-//						&& elementList.size() == 0 && groupList.size() == 0);
-//
-//				openElement(node, attributeList, isEmptyElement, out,
-//						logoutPrintWriter);
-//				if (value != null) {
-//					out.write(value);
-//				}
-//
-//				/* marshall the line */
-//				for (int i = 0; i < elementList.size(); i++)
-//					marshallElement((XsdNode) elementList.get(i), out,
-//							logoutPrintWriter);
-//				for (int i = 0; i < groupList.size(); i++)
-//					marshallGroup((XsdNode) groupList.get(i), out,
-//							logoutPrintWriter);
-//
-//				/* get warnings for empty fields and unfound replacement values */
-//				String emptyFields = "";
-//				String unfound = "";
-//				String unmarshallableElements = "";
-//				Iterator fieldsIt = associatedFields.keySet().iterator();
-//				while (fieldsIt.hasNext()) {
-//					XsdNode key = (XsdNode) fieldsIt.next();
-//
-//					String path = ((String) associatedFields.get(key));
-//
-//					String fieldValue = getValue(node);
-//
-//					if (key.isNodeAncestor(node)) {
-//						/* only node that requires fields from current file */
-//						if (fieldValue == null || fieldValue.length() == 0) {
-//							emptyFields += path
-//									.substring(path.indexOf(".") + 1)
-//									+ ", ";
-//							unmarshallableElements += key.toString() + ", ";
-//						} else {
-//							if (associatedClosedDictionary.containsKey(key)) {
-//								String replacementValue = dictionaries
-//										.getReplacementValue(
-//												((Integer) associatedClosedDictionary
-//														.get(key)).intValue(),
-//												fieldValue,
-//												((Integer) associatedDictionaryColumn
-//														.get(key)).intValue());
-//
-//								if (replacementValue == null
-//										|| replacementValue.length() == 0) {
-//									unfound += fieldValue + ", ";
-//									unmarshallableElements += key.toString()
-//											+ ", ";
-//								}
-//							}
-//							if (associatedOpenDictionary.containsKey(key)) {
-//								String replacementValue = dictionaries
-//										.getReplacementValue(
-//												((Integer) associatedOpenDictionary
-//														.get(key)).intValue(),
-//												fieldValue,
-//												((Integer) associatedDictionaryColumn
-//														.get(key)).intValue());
-//
-//								if (replacementValue == null
-//										|| replacementValue.length() == 0) {
-//									replacementValue = value;
-//								}
-//							}
-//						}
-//					}
-//				}
-//
-//				//				pathFilter = null;
-//				//				check(node);
-//				if (elementList.size() != 0 || groupList.size() != 0) {
-//					out.write("\n" + indentation);
-//				}
-//				closeElement(node, isEmptyElement, out);
-//			} else {
-//				/** TODO: */
-//			}
-//			//			pathFilter = null;
-//			//			out.flush();
-//		}
-//		pathFilter = previousFilter;
-//	}
-
 	/**
 	 * @return Returns the associatedDuplicableFields.
 	 * 
@@ -2718,22 +1696,20 @@ public class XsdTreeStructImpl extends
 
 	public void print2(File outFile) throws IOException {
 		Writer out = new BufferedWriter(new FileWriter(outFile));
-//		Writer logoutPrintWriter = new BufferedWriter(
-//				new FileWriter(logoutFile));
 
 		observable.setMessage("output file: " + outFile.getName());
 		out.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
 		out
 				.write("<!-- created using XmlMakerFlattener v1.0 (http://cvs.sourceforge.net/viewcvs.py/psidev/psi/mi/tools/psimakers0908src.zip) -->");
-		System.out.println("start marshalling to file :"
-				+ outFile.getName() + " at " + new Date() + "\n");
+		getMessageManager().sendMessage("start marshalling to file :"
+				+ outFile.getName() + " at " + new Date() , MessageManagerInt.simpleMessage);
 		try {
 			out.write(xmlMake());
 		} catch (FileMakersException fme) {
-			System.out.println("Exception in main loop: " + fme);
+			getMessageManager().sendMessage("Exception in main loop: " + fme, MessageManagerInt.errorMessage);
 			/** TODO : manage exception */
 		} catch (java.lang.NullPointerException npe) {
-			System.out.println("marshalling failed");
+			getMessageManager().sendMessage("marshalling failed", MessageManagerInt.errorMessage);
 		}
 
 //		String warning = this.errorManager.getAllErrors(this, (XsdNode) treeModel.getRoot(),
@@ -2745,13 +1721,12 @@ public class XsdTreeStructImpl extends
 //					+ warning + "\n" + errors + "\n");
 //		}
 		
-		System.out.println("\nmarshalling done, finished at " + new Date()
-				+ "\n");
+		getMessageManager().sendMessage("marshalling done, finished at " + new Date()
+				, MessageManagerInt.simpleMessage);
 
 		out.flush();
 		out.close();
-//		logoutPrintWriter.flush();
-//		logoutPrintWriter.close();
+
 		observable.setMessage("marshalling done");
 		observable.notifyObservers(observable.getMessage());
 		observable.deleteObservers();
@@ -2784,9 +1759,7 @@ public class XsdTreeStructImpl extends
 
 	public String xmlMakeElement(XsdNode node) throws IOException,
 			FileMakersException {
-//		System.out.println("make: " + node);
 		if (!node.isUsed) {
-//			System.out.println(node + " isn't use!");
 			return "";
 		}
 		String xmlCode = "";
@@ -2803,7 +1776,6 @@ public class XsdTreeStructImpl extends
 		 */
 		while (children.hasNext()) {
 			XsdNode child = (XsdNode) children.next();
-//			System.out.println("child: "+ child);
 			
 			switch (((Annotated) child.getUserObject()).getStructureType()) {
 			case Structure.ATTRIBUTE:
@@ -2814,7 +1786,7 @@ public class XsdTreeStructImpl extends
 					elementList.add(child);
 				break;
 			case Structure.GROUP:
-				System.out.println("should not be any group...." + child);
+				getMessageManager().sendMessage("should not be any group...." + child, MessageManagerInt.warningMessage);
 				if (child.isUsed)
 					groupList.add(child);
 				break;
@@ -2828,7 +1800,6 @@ public class XsdTreeStructImpl extends
 
 		for (int i = 0; i < elementList.size(); i++) {
 			XsdNode child = (XsdNode) elementList.get(i);
-//			System.out.println("element: "+ child);
 			/* initialisation if first occurence of the element */
 			/** TODO: check if it works for duplicated nodes... */
 			if (!maxOccurs.containsKey(child.toString())) {
@@ -2843,12 +1814,10 @@ public class XsdTreeStructImpl extends
 
 			if (associatedDuplicableFields.get(child) != null) {
 				/* marshall all subelemets */
-//				System.out.println(child + ": duplicable");
 				/* make filter */
 				/* how many sub elements */
 				String p1 = getPathForNode(child);
 				HashMap h = associatedDuplicableFields;
-				/* ça pourai etre là */ 
 								
 				String tmpPath = (String) associatedDuplicableFields.get(child);
 				if (pathFilter != null && !unduplicableNodes.contains(node)) {
@@ -2865,18 +1834,13 @@ public class XsdTreeStructImpl extends
 						filteredPath += paths[paths.length - 1];
 						tmpPath = filteredPath;
 				}
-				//String value = flatFiles.getValue(tmpPath, (String) associatedDuplicableFields.get(child));
 				int nbDuplications = flatFiles
 				.nbElements(tmpPath);
 				
-//				int nbDuplications = flatFiles
-//						.nbElements((String) associatedDuplicableFields.get(child));
-
 				String previousFilter = pathFilter;
-				/* do not forget to apply previous filter to th enew one!!! */
+				/* do not forget to apply previous filter to the new one!!! */
 				String filter = "";
 				
-//				System.out.println("pv: " + node + previousFilter);
 				for (int j = 0; j < ((String) associatedDuplicableFields.get(child))
 						.split("\\.").length; j++) {
 					if (previousFilter != null && previousFilter.split("\\.").length > j) 
@@ -2887,15 +1851,12 @@ public class XsdTreeStructImpl extends
 
 				filter += "0";
 				pathFilter = filter;
-//				System.out.println("nf: "+pathFilter);
 				for (int j = 0; j < nbDuplications; j++) {
-//					System.out.println(child + ": duplicate, " + j);
 					int lastFilterIdx = Integer.parseInt(filter.substring(filter
 							.lastIndexOf(".") + 1))
 							+ j;
 					pathFilter = filter.substring(0, filter.lastIndexOf(".") + 1)
 							+ lastFilterIdx;
-//					System.out.println("nf+: "+ child +pathFilter);
 					String xmlChildCode = xmlMakeElement(child);
 					/* update number of nodes found */
 					if (xmlChildCode != null) {
@@ -2918,8 +1879,6 @@ public class XsdTreeStructImpl extends
 				pathFilter = previousFilter;
 			} else if (associatedFlatFiles.contains(child)) {
 				/* marshall all line */
-//				System.out.println(child + ": flat file");
-
 				pushFlatFile(flatFiles.getFlatFile(associatedFlatFiles
 						.indexOf((XsdNode) elementList.get(i))));
 
@@ -2929,8 +1888,6 @@ public class XsdTreeStructImpl extends
 				observable.setElement(node.toString());
 				observable.indentation++;
 
-				//isFlattened = true;
-								
 				boolean endOfFile = false;
 				getCurrentFlatFile().restartFile();
 
@@ -2977,7 +1934,6 @@ public class XsdTreeStructImpl extends
 				popFlatFile();
 			} else {
 				/* marshall element */
-//				System.out.println("simple elt: "+child);
 				String xmlChildCode = xmlMakeElement(child);
 
 				/* update number of nodes found */
@@ -3011,12 +1967,10 @@ public class XsdTreeStructImpl extends
 		Iterator maxs = maxOccurs.values().iterator();
 		while (names.hasNext()) {
 			String name = (String) names.next();
-			// if a min is > 0, it means that an element is missing
-			/////////////////////// dat one
 			if (((Integer) mins.next()).intValue() > 0) {
 //				errorManager.addMessage(node, "a " + name + " is missing!",
 //						ErrorManager.error);
-				System.out.println("[ERROR] " + printPath(node.getPath()) + ": a " + name + " is missing! (line : " + lineNumber + ")");
+				getMessageManager().sendMessage(printPath(node.getPath()) + ": a " + name + " is missing! (line : " + lineNumber + ")", MessageManagerInt.errorMessage);
 				errors = true;
 			}
 
@@ -3025,7 +1979,7 @@ public class XsdTreeStructImpl extends
 				if (((Integer) maxs.next()).intValue() < 0) {
 //					errorManager.addMessage(node, "a " + name
 //							+ " should be removed", ErrorManager.error);
-					System.out.println("[ERROR] " + printPath(node.getPath()) + ": a " + name + " should be removed! (line : " + lineNumber + ")");
+					getMessageManager().sendMessage(printPath(node.getPath()) + ": a " + name + " should be removed! (line : " + lineNumber + ")", MessageManagerInt.errorMessage);
 					errors = true;
 				}
 
@@ -3046,7 +2000,7 @@ public class XsdTreeStructImpl extends
 				if (attribute.isRequired) {
 //					errorManager.addMessage(node, "attibute  " + attribute + " is required for " + node,
 //							ErrorManager.error);
-					System.out.println("[ERROR] " + printPath(node.getPath()) + " attibute  " + attribute + " is required for " + node + " (line : " + lineNumber + ")");
+					getMessageManager().sendMessage(printPath(node.getPath()) + " attibute  " + attribute + " is required for " + node + " (line : " + lineNumber + ")", MessageManagerInt.errorMessage);
 					errors = true;
 				} else {
 					checkedAttributes.add("");
@@ -3055,10 +2009,10 @@ public class XsdTreeStructImpl extends
 				checkedAttributes.add(getValue(attribute));
 			}
 		}
-				
+
 		if (errors) 
 			return "";
-		
+
 		if (xmlCode.trim().length() > 0) {
 			xmlCode += "\n"+ indentation;
 		}

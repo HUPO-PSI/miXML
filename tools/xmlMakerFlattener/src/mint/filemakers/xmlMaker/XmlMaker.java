@@ -22,7 +22,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
-import mint.filemakers.xmlMaker.gui.MarshallingObserver;
 import mint.filemakers.xmlMaker.mapping.DictionaryMapping;
 import mint.filemakers.xmlMaker.mapping.FlatFileMapping;
 import mint.filemakers.xmlMaker.mapping.Mapping;
@@ -31,6 +30,7 @@ import mint.filemakers.xmlMaker.structure.Dictionary;
 import mint.filemakers.xmlMaker.structure.FlatFile;
 import mint.filemakers.xmlMaker.structure.XsdTreeStructImpl;
 import mint.filemakers.xsd.FileMakersException;
+import mint.filemakers.xsd.SimpleMessageManager;
 import mint.filemakers.xsd.Utils;
 
 import org.apache.commons.cli.BasicParser;
@@ -142,6 +142,7 @@ public class XmlMaker {
 
 	public XmlMaker() {
 		xsdTree = new XsdTreeStructImpl();
+		xsdTree.setMessageManager(new SimpleMessageManager());
 	}
 
 	public static void main(String[] args) throws Exception {
