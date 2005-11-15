@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="xmlMakerFlattener/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="xmlMakerFlattener/libs/castor-0.9.5-xml.jar"/>
+	<classpathentry kind="lib" path="xmlMakerFlattener/libs/cocoon.jar"/>
+	<classpathentry kind="lib" path="xmlMakerFlattener/libs/commons-lang-2.0.jar"/>
+	<classpathentry kind="lib" path="xmlMakerFlattener/libs/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="xmlMakerFlattener/libs/xml-apis.jar"/>
+	<classpathentry kind="lib" path="xmlMakerFlattener/libs/xmlParserAPIs.jar"/>
+	<classpathentry kind="lib" path="xmlMakerFlattener/libs/commons-cli-1.0.jar"/>
+	<classpathentry kind="output" path="xmlMakerFlattener/classes"/>
+</classpath>
