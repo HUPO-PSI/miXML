@@ -2,6 +2,9 @@
 <html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
@@ -21,29 +24,38 @@ w\:* {behavior:url(#default#VML);}
 <![endif]-->
 <title>HUPO Proteomics Standards Initiative Protein Interaction Specification
 Documentation</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="date"/>
 <!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Author>Henning Hermjakob</o:Author>
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Henning Hermjakob</o:LastAuthor>
-  <o:Revision>9</o:Revision>
-  <o:TotalTime>45</o:TotalTime>
+  <o:Revision>12</o:Revision>
+  <o:TotalTime>100</o:TotalTime>
   <o:Created>2005-08-24T19:30:00Z</o:Created>
-  <o:LastSaved>2005-11-16T15:00:00Z</o:LastSaved>
+  <o:LastSaved>2005-11-21T18:09:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>541</o:Words>
-  <o:Characters>3084</o:Characters>
+  <o:Words>897</o:Words>
+  <o:Characters>5119</o:Characters>
   <o:Company>EMBL-EBI</o:Company>
-  <o:Lines>25</o:Lines>
-  <o:Paragraphs>7</o:Paragraphs>
-  <o:CharactersWithSpaces>3618</o:CharactersWithSpaces>
+  <o:Lines>42</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>6004</o:CharactersWithSpaces>
   <o:Version>10.6735</o:Version>
  </o:DocumentProperties>
 </xml><![endif]--><!--[if gte mso 9]><xml>
  <w:WordDocument>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:GrammarState>Clean</w:GrammarState>
   <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
  </w:WordDocument>
-</xml><![endif]-->
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
 <style>
 <!--
  /* Style Definitions */
@@ -64,6 +76,17 @@ h2
 	mso-outline-level:2;
 	font-size:18.0pt;
 	font-family:"Times New Roman";}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
 a:link, span.MsoHyperlink
 	{color:blue;
 	text-decoration:underline;
@@ -72,6 +95,9 @@ a:visited, span.MsoHyperlinkFollowed
 	{color:blue;
 	text-decoration:underline;
 	text-underline:single;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
 @page Section1
 	{size:595.3pt 841.9pt;
 	margin:72.0pt 90.0pt 72.0pt 90.0pt;
@@ -121,18 +147,60 @@ div.Section1
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
 @list l1
-	{mso-list-id:475611370;
-	mso-list-template-ids:243699614;}
+	{mso-list-id:1130130054;
+	mso-list-template-ids:-1388936208;}
 @list l1:level1
-	{mso-level-tab-stop:36.0pt;
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
 	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l1:level2
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:1290358786;
+	mso-list-template-ids:881769136;}
+@list l3
+	{mso-list-id:1893955543;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2043421118 134807553 134807555 134807557 134807553 134807555 134807557 134807553 134807555 134807557;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3:level2
 	{mso-level-tab-stop:72.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
-@list l1:level3
+@list l3:level3
 	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level9
+	{mso-level-tab-stop:324.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
 ol
@@ -158,7 +226,7 @@ ul
 	font-family:"Times New Roman";}
 </style>
 <![endif]--><!--[if gte mso 9]><xml>
- <o:shapedefaults v:ext="edit" spidmax="3074"/>
+ <o:shapedefaults v:ext="edit" spidmax="5122"/>
 </xml><![endif]--><!--[if gte mso 9]><xml>
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
@@ -205,10 +273,12 @@ align=left style='border-bottom-style:solid;border-bottom-width:0px;border-left-
 solid;border-left-width:0px;border-right-style:solid;border-right-width:0px;
 border-top-style:solid;border-top-width:0px;height:75px;width:113px'
 alt="PSI logo" title="" v:shapes="_x0000_s1026"></a><![endif]><a
+href="http://psidev.sourceforge.net/"></a><a
+href="http://psidev.sourceforge.net/"></a><a
 href="http://psidev.sourceforge.net/"></a><span style='mso-no-proof:yes'><a
 href="http://psidev.sourceforge.net"></a><a href="http://www.hupo.org/"></a></span><!--[if gte vml 1]><v:shape
  id="_x0000_s1027" type="#_x0000_t75" alt="HUPO logo"
- href="http://www.hupo.org/" style='position:absolute;margin-left:925.75pt;
+ href="http://www.hupo.org/" style='position:absolute;margin-left:1015.25pt;
  margin-top:0;width:84.75pt;height:56.15pt;z-index:2;mso-wrap-distance-left:0;
  mso-wrap-distance-right:0;mso-position-horizontal:right;
  mso-position-horizontal-relative:text;mso-position-vertical:top;
@@ -223,6 +293,7 @@ align=right style='border-bottom-style:solid;border-bottom-width:0px;
 border-left-style:solid;border-left-width:0px;border-right-style:solid;
 border-right-width:0px;border-top-style:solid;border-top-width:0px;height:75px;
 width:113px' alt="HUPO logo" title="" v:shapes="_x0000_s1027"></a><![endif]><a
+href="http://www.hupo.org/"></a><a href="http://www.hupo.org/"></a><a
 href="http://www.hupo.org/"></a><span style='mso-no-proof:yes'><a
 href="http://www.hupo.org/"></a></span><br clear=all style='mso-special-character:
 line-break'>
@@ -231,155 +302,250 @@ line-break'>
 <h2 align=center style='text-align:center'><a name=mozTocId916500></a><a
 href="http://psidev.sourceforge.net">Proteomics Standards Initiative</a> </h2>
 
-<h2 align=center style='text-align:center'><a name=mozTocId992260></a>Molecular
-Interaction XML Format 2.5</h2>
+<h3 align=center style='text-align:center'><a name=mozTocId992260></a>Molecular
+Interaction XML Format 2.5 BETA</h3>
 
-<h2 align=center style='text-align:center'><a name=mozTocId863651></a>Documentation
-of schema changes from version 1.0 to 2.5</h2>
+<h3 align=center style='text-align:center'><a name=mozTocId863651></a>Documentation
+of schema changes from version 1.0 to 2.5</h3>
+
+<h3 align=center style='text-align:center'>November 2005</h3>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Significant changes have been made from MIF 1.0 to 2.5. The
+overall aims were to</p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'>i<span
+     lang=EN-US style='mso-ansi-language:EN-US'>ncrease the expressive power of
+     the format, going from &#8220;intersection&#8221; to &#8220;union&#8221;
+     of molecular interaction annotation, allowing inter-database exchange of
+     fully annotated records;<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><span
+     class=GramE><span lang=EN-US style='mso-ansi-language:EN-US'>perform</span></span><span
+     lang=EN-US style='mso-ansi-language:EN-US'> a cleanup and fix minor bugs.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Although
+MIF 2.5 has many changes and is significantly more complex than 1.0, nearly all
+changes are optional additions, and the minimal representation of a given
+interaction has not been significantly expanded. In detail, the changes are:<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <ol start=1 type=1>
  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-     mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>&lt;experiment&gt;</li>
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'>&lt;experimentDescription&gt;</li>
  <ol start=1 type=1>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>experimentDescription/bibref
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>bibref</span>
       is now mandatory. Submissions are considered bibrefs.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>confidence</span>
+      is now a confidenceList, allowing multiple confidence values.</li>
  </ol>
  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-     mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>&lt;interaction&gt;</li>
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'>&lt;interaction&gt;</li>
  <ol start=1 type=1>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>added
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>added id attribute</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>added</span>
       interaction/parameterList element to describe especially kinetic
       parameters.</li>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>added an optional flag
-      &quot;negative&quot; with default value false. If set to
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>added</span>
+      an optional flag &quot;negative&quot; with default value false. If set to
       &quot;true&quot;, it indicates that the interaction has explicitely been
       described as NOT being observed in the experiment.</li>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>added inferredInteractionList
-      to allow correct description of complex topology, with supporting experimental
-      evidence. </li>
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>added</span>
+      inferredInteractionList to allow correct description of complex topology,
+      with supporting experimental evidence. </li>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>imexId has been added
-      for the purpose of the IMEx molecular interaction exchange consortium.</li>
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>imexId</span>
+      has been added for the purpose of the IMEx molecular interaction exchange
+      consortium.</li>
  </ol>
  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-     mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>&lt;participant&gt;</li>
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'>&lt;proteinInteractor&gt;
+     and<br>
+     &lt;proteinParticipant&gt;</li>
  <ol start=1 type=1>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>To enable
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>To enable
       representation of more general interactions, not only protein
       interactions, proteinParticipant and proteinInteractor have been renamed
       participant and interactor, respectively, and an element interactorType,
       controlled by a new controlled vocabulary, has been added. This allows a
       high flexibility for representation of general molecular interactions.</li>
+ </ol>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'>&lt;interactor&gt;</li>
+ <ol start=1 type=1>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>The addition of
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>added</span>
+      modelled flag: If true, it describes an interaction in a species of
+      interest, e.g. human, but has actually been<span
+      style='mso-spacerun:yes'>&nbsp; </span>investigated in another organism,
+      e.g. mouse. The transfer will usually be based on a homology statement made
+      by the data producer. If this optional element is missing, it is <span
+      class=GramE>assumed<span style='mso-spacerun:yes'>&nbsp; </span>to</span>
+      be set to false. </li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>added</span>
+      intraMolecular flag: If true, it is an intramolecular interaction, e.g.
+      an autophosphorylation. If missing, this element is assumed to be false.</li>
+ </ol>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'>&lt;participant&gt;</li>
+ <ol start=1 type=1>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>added id attribute</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>The addition of
       participant/interactionRef allows the representation of hierarchical
       structure in complexes, e.g. composition of a receptor complex from
       subunits, and interaction of such a receptor complex with a ligand.</li>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>New element experimentalFormList
-      has been added to allow correct description of experimental form of
-      proteins if one interaction is shown as supported by multiple
-      experiments.</li>
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>participantIdentificationList</span>
+      has been added to allow the description of the participant identification
+      method on a per-participant basis, not only a global method on the
+      experiment level.</li>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>identificationMethodList
-      has been added to allow fine-grained attribution of identification
-      methods.</li>
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>The previous
+      &#8220;role&#8221; attribute has been split into the biological role,
+      e.g. enzyme/target, and the experimental role, e.g. bait/prey.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>New element
+      experimentalFormList has been added to allow description of experimental
+      forms, e.g. protein tags</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>ExperimentalInteractorList
+      allows the representation of homology-based deductions made by the data
+      provider. For example, an experimentalist might work with mouse proteins
+      to make a statement on a human system. In this case, the experimentally
+      used protein would be stored in an experimentalInteractor <span
+      class=GramE>element,</span> the human protein would be stored in the
+      normal participant. On &lt;interaction&gt; level, the flag
+      &lt;modelled&gt; should be set.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>The
+      &lt;confidence&gt; element has been extended into a
+      &lt;confidenceList&gt;.</li>
  </ol>
  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-     mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>&lt;feature&gt;</li>
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'>&lt;feature&gt;</li>
  <ol start=1 type=1>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>renamed
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>added id attribute</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>renamed
       featureDescription -&gt; featureType</li>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>location:</li>
-  <ol start=1 type=1>
-   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>each feature now
-       has a list of location elements, to allow representation of
-       discontinuous features, e.g. structural domains.</li>
-   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>the location element
-       has been restructured to allow fuzzy locations, and start/end ranges.</li>
-  </ol>
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>renamed
+      featureLocation -&gt; featureRange</li>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>added a &lt;names&gt;
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>added</span>
+      ExperimentRefList. This allows <span class=GramE>to refer</span> to one
+      or more experiments in which the feature has been determined.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>added a &lt;names&gt;
       element </li>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>added a
-      &lt;attributeList&gt; element, to allow handling of free text feature
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>added</span>
+      a &lt;attributeList&gt; element, to allow handling of free text feature
       description.</li>
  </ol>
  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-     mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>Administrative changes</li>
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'>&lt;featureRange&gt;</li>
  <ol start=1 type=1>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>id attributes</li>
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>each</span>
+      feature now has a list of range elements, to allow representation of
+      discontinuous features, e.g. structural domains.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>the</span>
+      range element has been restructured to allow fuzzy locations, and
+      start/end ranges.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>site and position
+      have been removed</li>
+ </ol>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'>Administrative changes</li>
+ <ol start=1 type=1>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>id attributes</li>
   <ol start=1 type=1>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>The type of id
-       attributes has been changed from xs:ID to xs:int. xs:ID requires that
-       any id is unique in the file. This was incompatible with the
-       denormalised form of MIF 1.0, where e.g. the same protein may be listed
-       more than once.<br>
+       auto;mso-list:l0 level3 lfo6;tab-stops:list 108.0pt'>The type of id
+       attributes has been changed from xs<span class=GramE>:ID</span> to
+       xs:int. xs:ID requires that any id is unique in the file. This was
+       incompatible with the denormalised form of MIF 1.0, where e.g. the same
+       protein may be listed more than once.<br>
        Ids are now defined to be arbibrary integers, unique to each
        &lt;entry&gt;.<br>
-       The type xs:int has been chosen to provide an easy mapping to standard
-       data types, as it provides a limited range of integers, while xs:integer
-       represents the mathmatical concept of integers with an unlimited value
-       range.</li>
+       The type xs<span class=GramE>:int</span> has been chosen to provide an
+       easy mapping to standard data types, as it provides a limited range of
+       integers, while xs:integer represents the mathmatical concept of
+       integers with an unlimited value range.</li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>All major objects
+       auto;mso-list:l0 level3 lfo6;tab-stops:list 108.0pt'>All major objects
        now have an id attribute, namely &lt;experiment&gt;,
-       &lt;interaction&gt;, and all interactor and participant types.</li>
+       &lt;interaction&gt;, &lt;interactor&gt;, &lt;participant&gt;,
+       &lt;feature&gt;.</li>
   </ol>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>Method-related
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>Method-related
       elements have been renamed for clarity: </li>
   <ol start=1 type=1>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>ParticipantDetection
+       auto;mso-list:l0 level3 lfo6;tab-stops:list 108.0pt'>ParticipantDetection
        -&gt; ParticipantIdentificationMethod</li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>InteractionDetection
+       auto;mso-list:l0 level3 lfo6;tab-stops:list 108.0pt'>InteractionDetection
        -&gt; InteractionDetectionMethod</li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>FeatureDetection
+       auto;mso-list:l0 level3 lfo6;tab-stops:list 108.0pt'>FeatureDetection
        -&gt; FeatureDetectionMethod<u1:p></u1:p></li>
   </ol>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>namesType extended by
-      addition of an optional list of aliases.</li>
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>namesType</span>
+      extended by addition of an optional list of aliases.</li>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>Ordered sequence of
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>Ordered sequence of
       standard elements. New order is:</li>
   <ol start=1 type=1>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>names</li>
+       auto;mso-list:l0 level3 lfo6;tab-stops:list 108.0pt'>names</li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>bibref</li>
+       auto;mso-list:l0 level3 lfo6;tab-stops:list 108.0pt'>bibref</li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>xref</li>
+       auto;mso-list:l0 level3 lfo6;tab-stops:list 108.0pt'>xref</li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>other</li>
+       auto;mso-list:l0 level3 lfo6;tab-stops:list 108.0pt'>other</li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level3 lfo3;tab-stops:list 108.0pt'>attributeList</li>
+       auto;mso-list:l0 level3 lfo6;tab-stops:list 108.0pt'>attributeList</li>
   </ol>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>created a new complex
-      type confidenceType and inserted it in all previous occurrences of
-      confidence elements.</li>
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>created</span>
+      a new complex type confidenceType and inserted it in all previous
+      occurrences of confidence elements.</li>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>Added
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>Added
       attribute/nameAc to allow controlled vocabulary for attributes.</li>
   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-      auto;mso-list:l0 level2 lfo3;tab-stops:list 72.0pt'>extended xrefType, now
-      allows a controlled vocabulary representation of database xrefs. </li>
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'><span class=GramE>extended</span>
+      xrefType, now allows a controlled vocabulary representation of database
+      xrefs. </li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 72.0pt'>For all string
+      attributes and elements, the length has been set to at least 1. This
+      avoids empty attributes and elements, which could cause problems in data
+      exchange.</li>
  </ol>
 </ol>
 
@@ -389,7 +555,8 @@ of schema changes from version 1.0 to 2.5</h2>
 
 </div>
 
-<p class=MsoNormal><i>Henning Hermjakob, 16/11/2005</i></p>
+<p class=MsoNormal><i>Henning Hermjakob, </i><st1:date Month="11" Day="21"
+Year="2005"><i>21/11/2005</i></st1:date></p>
 
 </div>
 

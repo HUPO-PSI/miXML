@@ -42,7 +42,13 @@
 											</xs:annotation>
 										</xs:element>
 									</xs:sequence>
-									<xs:attribute name="release" type="xs:string" use="optional"/>
+									<xs:attribute name="release" use="optional">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:minLength value="1"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
 									<xs:attribute name="releaseDate" type="xs:date" use="optional"/>
 								</xs:complexType>
 							</xs:element>
@@ -154,48 +160,13 @@
 		</xs:complexType>
 	</xs:element>
 	<!--aministrative elements-->
-	<xs:complexType name="dbReferenceType">
+	<xs:complexType name="labelType">
 		<xs:annotation>
-			<xs:documentation>Refers to a unique object in an external database.</xs:documentation>
+			<xs:documentation>A short alphanumeric label identifying an object. Not necessarily unique.</xs:documentation>
 		</xs:annotation>
-		<xs:sequence minOccurs="0">
-			<xs:element name="attributeList" type="attributeListType"/>
-		</xs:sequence>
-		<xs:attribute name="db" type="xs:string" use="required">
-			<xs:annotation>
-				<xs:documentation>Name of the external database. Taken from the controlled vocabulary of databases.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="dbAc" type="xs:string" use="optional">
-			<xs:annotation>
-				<xs:documentation>Accession number of the database in the database CV. This element is controlled by the PSI-MI controlled vocabulary "database citation", root term id MI:0444.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="id" type="xs:string" use="required">
-			<xs:annotation>
-				<xs:documentation>Primary identifier of the object in the external database, e.g. UniProt accession number.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="secondary" type="xs:string" use="optional">
-			<xs:annotation>
-				<xs:documentation>Secondary identifier of the object in the external database, e.g. UniProt ID.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="version" type="xs:string" use="optional">
-			<xs:annotation>
-				<xs:documentation>The version number of the object in the external database.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="refType" type="xs:string" use="optional">
-			<xs:annotation>
-				<xs:documentation>Reference type, e.g. "identity" if this reference referes to an identical object in the external database, or "see-also" for additional information. Controlled by CV.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="refTypeAc" type="xs:string" use="optional">
-			<xs:annotation>
-				<xs:documentation>Reference type accession number from the CV of reference types. This element is controlled by the PSI-MI controlled vocabulary "xref type", root term id MI:0353. </xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
+		<xs:simpleContent>
+			<xs:extension base="xs:string"/>
+		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="fullNameType">
 		<xs:annotation>
@@ -205,36 +176,125 @@
 			<xs:extension base="xs:string"/>
 		</xs:simpleContent>
 	</xs:complexType>
-	<xs:complexType name="labelType">
-		<xs:annotation>
-			<xs:documentation>A short alphanumeric label identifying an object. Not necessarily unique.</xs:documentation>
-		</xs:annotation>
-		<xs:simpleContent>
-			<xs:extension base="xs:string"/>
-		</xs:simpleContent>
-	</xs:complexType>
 	<xs:complexType name="refType">
 		<xs:annotation>
 			<xs:documentation>Refers to an object within the same entry by its id.</xs:documentation>
 		</xs:annotation>
-		<xs:attribute name="ref" type="xs:int" use="required"/>
+		<xs:simpleContent>
+			<xs:extension base="xs:int"/>
+		</xs:simpleContent>
 	</xs:complexType>
-	<xs:complexType name="attributeListType">
+	<xs:complexType name="experimentRefListType">
 		<xs:annotation>
-			<xs:documentation>A list of additional attributes. Open tag-value list to allow the inclusion of additional data.</xs:documentation>
+			<xs:documentation>Refers to a list of experiments within the same entry.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="attribute" maxOccurs="unbounded">
+			<xs:element name="experimentRef" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>References an experiment already present in this entry.</xs:documentation>
+				</xs:annotation>
 				<xs:complexType>
 					<xs:simpleContent>
-						<xs:extension base="xs:string">
-							<xs:attribute name="name" type="xs:string" use="required"/>
-							<xs:attribute name="nameAc" type="xs:string" use="optional"/>
-						</xs:extension>
+						<xs:extension base="refType"/>
 					</xs:simpleContent>
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="xrefType">
+		<xs:annotation>
+			<xs:documentation>Crossreference to an external database. Crossreferences to literature databases, e.g. PubMed, should not be put into this structure, but into the bibRef element where possible.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="primaryRef" type="dbReferenceType">
+				<xs:annotation>
+					<xs:documentation>Primary reference to an external database.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="secondaryRef" type="dbReferenceType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Further external objects describing the object.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="dbReferenceType">
+		<xs:annotation>
+			<xs:documentation>Refers to a unique object in an external database.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0">
+			<xs:element name="attributeList" type="attributeListType"/>
+		</xs:sequence>
+		<xs:attribute name="db" use="required">
+			<xs:annotation>
+				<xs:documentation>Name of the external database. Taken from the controlled vocabulary of databases.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="dbAc" use="optional">
+			<xs:annotation>
+				<xs:documentation>Accession number of the database in the database CV. This element is controlled by the PSI-MI controlled vocabulary "database citation", root term id MI:0444.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="id" use="required">
+			<xs:annotation>
+				<xs:documentation>Primary identifier of the object in the external database, e.g. UniProt accession number.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="secondary" use="optional">
+			<xs:annotation>
+				<xs:documentation>Secondary identifier of the object in the external database, e.g. UniProt ID.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="version" use="optional">
+			<xs:annotation>
+				<xs:documentation>The version number of the object in the external database.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="refType" use="optional">
+			<xs:annotation>
+				<xs:documentation>Reference type, e.g. "identity" if this reference referes to an identical object in the external database, or "see-also" for additional information. Controlled by CV.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="refTypeAc" use="optional">
+			<xs:annotation>
+				<xs:documentation>Reference type accession number from the CV of reference types. This element is controlled by the PSI-MI controlled vocabulary "xref type", root term id MI:0353. </xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
 	</xs:complexType>
 	<xs:complexType name="bibrefType">
 		<xs:annotation>
@@ -252,6 +312,56 @@
 				</xs:annotation>
 			</xs:element>
 		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="attributeListType">
+		<xs:annotation>
+			<xs:documentation>A list of additional attributes. Open tag-value list to allow the inclusion of additional data.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="attribute" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="name" use="required">
+								<xs:annotation>
+									<xs:documentation>The name of the attribute.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+							<xs:attribute name="nameAc" use="optional">
+								<xs:annotation>
+									<xs:documentation>Enables control of the attribute type through reference to an external controlled vocabulary. Root element in the PSI MI CV is MI:0590.</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="confidenceType">
+		<xs:annotation>
+			<xs:documentation>A confidence value.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="unit" type="openCvType"/>
+			<xs:element name="value">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="bioSourceType">
 		<xs:annotation>
@@ -278,15 +388,6 @@
 					<xs:documentation>Description of the source tissue. Currently no species-independent controlled vocabulary for tissues is available, therefore the choice of reference database(s) is open to the data provider.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="confidenceType">
-		<xs:annotation>
-			<xs:documentation>A confidence value.</xs:documentation>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="unit" type="openCvType"/>
-			<xs:element name="value" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="confidenceListType">
@@ -350,65 +451,116 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="xrefType">
-		<xs:annotation>
-			<xs:documentation>Crossreference to an external database. Crossreferences to literature databases, e.g. PubMed, should not be put into this structure, but into the bibRef element where possible.</xs:documentation>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="primaryRef" type="dbReferenceType">
-				<xs:annotation>
-					<xs:documentation>Primary reference to an external database.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="secondaryRef" type="dbReferenceType" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>Further external objects describing the object.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="experimentRefListType">
-		<xs:sequence>
-			<xs:element name="experimentRef" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>References an experiment already present in this entry.</xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:complexContent>
-						<xs:extension base="refType"/>
-					</xs:complexContent>
-				</xs:complexType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="namesType">
 		<xs:annotation>
 			<xs:documentation>Names for an object.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="shortLabel" type="xs:string" minOccurs="0">
+			<xs:element name="shortLabel" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>A short string, suitable to remember the object. Can be e.g. a gene name, the first author of a paper, etc.</xs:documentation>
 				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
 			</xs:element>
-			<xs:element name="fullName" type="xs:string" minOccurs="0">
+			<xs:element name="fullName" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>A full, detailed name or description of the object. Can be e.g. the full title of a publication, or the scientific name of a species.</xs:documentation>
 				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
 			</xs:element>
 			<xs:element name="alias" minOccurs="0" maxOccurs="unbounded">
 				<xs:complexType>
 					<xs:simpleContent>
 						<xs:extension base="xs:string">
-							<xs:attribute name="typeAc" type="xs:string"/>
-							<xs:attribute name="type" type="xs:string"/>
+							<xs:attribute name="typeAc" use="optional">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+							<xs:attribute name="type" use="optional">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
 						</xs:extension>
 					</xs:simpleContent>
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<!--Feature descrition-->
+	<xs:complexType name="parameterType">
+		<xs:annotation>
+			<xs:documentation>A numeric parameter, e.g. for a kinetic value</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="term" use="required">
+			<xs:annotation>
+				<xs:documentation>The kind of parameter, e.g. "dissociation constant".</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="termAc" use="optional">
+			<xs:annotation>
+				<xs:documentation>Accession number of the term in the associated controlled vocabulary.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="unit" use="optional">
+			<xs:annotation>
+				<xs:documentation>The unit of the term, e.g. "kiloDalton".</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="unitAc" use="optional">
+			<xs:annotation>
+				<xs:documentation>Accession number of the unit in the associated controlled vocabulary.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="base" type="xs:short" use="optional" default="10">
+			<xs:annotation>
+				<xs:documentation>Base of the parameter expression. Defaults to 10.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="exponent" type="xs:short" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>Exponent of the value.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="factor" type="xs:decimal" use="required">
+			<xs:annotation>
+				<xs:documentation>The "main" value of the parameter.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!--Feature description-->
 	<xs:complexType name="featureType">
 		<xs:annotation>
 			<xs:documentation>A feature, e.g. domain, on a sequence.</xs:documentation>
@@ -786,11 +938,16 @@
 					</xs:complexContent>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="sequence" type="xs:token" minOccurs="0">
+			<xs:element name="sequence" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Sequence in uppercase</xs:documentation>
 					<xs:documentation>Usage:</xs:documentation>
 				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
 			</xs:element>
 			<xs:element name="attributeList" type="attributeListType" minOccurs="0">
 				<xs:annotation>
@@ -839,14 +996,9 @@
 					</xs:annotation>
 				</xs:element>
 			</xs:choice>
-			<xs:element name="biologicalRole" type="cvType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The role of the participant in the interaction. This describes the biological role, e.g. enzyme or enzyme target. The experimental role of the participant, e.g. 'bait', is shown in experimentalForm. This element is controlled by the PSI-MI controlled vocabulary "biologicalRole", root term id MI:0500.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="participantIdentificationMethodList" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The method(s) by which this participant has been determined. If this element is present, its value supersedes experimentDescription/participantIdentificationMethod.</xs:documentation>
+					<xs:documentation>The method(s) by which this participant has been determined. If this element is present, its value supersedes experimentDescription/ participantIdentificationMethod.</xs:documentation>
 				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
@@ -870,6 +1022,11 @@
 						</xs:element>
 					</xs:sequence>
 				</xs:complexType>
+			</xs:element>
+			<xs:element name="biologicalRole" type="cvType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The role of the participant in the interaction. This describes the biological role, e.g. enzyme or enzyme target. The experimental role of the participant, e.g. 'bait', is shown in experimentalForm. This element is controlled by the PSI-MI controlled vocabulary "biologicalRole", root term id MI:0500.</xs:documentation>
+				</xs:annotation>
 			</xs:element>
 			<xs:element name="experimentalRoleList" minOccurs="0">
 				<xs:annotation>
@@ -1037,45 +1194,5 @@
 			</xs:element>
 		</xs:sequence>
 		<xs:attribute name="id" type="xs:int" use="required"/>
-	</xs:complexType>
-	<xs:complexType name="parameterType">
-		<xs:annotation>
-			<xs:documentation>A numeric parameter, e.g. for a kinetic value</xs:documentation>
-		</xs:annotation>
-		<xs:attribute name="term" type="xs:string" use="required">
-			<xs:annotation>
-				<xs:documentation>The kind of parameter, e.g. "dissociation constant".</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="termAc" type="xs:string" use="optional">
-			<xs:annotation>
-				<xs:documentation>Accession number of the term in the associated controlled vocabulary.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="unit" type="xs:string" use="optional">
-			<xs:annotation>
-				<xs:documentation>The unit of the term, e.g. "kiloDalton".</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="unitAc" type="xs:string" use="optional">
-			<xs:annotation>
-				<xs:documentation>Accession number of the unit in the associated controlled vocabulary.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="base" type="xs:short" use="optional" default="10">
-			<xs:annotation>
-				<xs:documentation>Base of the parameter expression. Defaults to 10.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="exponent" type="xs:short" use="optional">
-			<xs:annotation>
-				<xs:documentation>Exponent of the value.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="factor" type="xs:decimal" use="required">
-			<xs:annotation>
-				<xs:documentation>The "main" value of the parameter.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
 	</xs:complexType>
 </xs:schema>
