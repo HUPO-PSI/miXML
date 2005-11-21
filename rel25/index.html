@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="index_files/filelist.xml">
+<link rel=Edit-Time-Data href="index_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>HUPO Proteomics Standards Initiative Protein Interaction Specification
+Documentation</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="date"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Henning Hermjakob</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Henning Hermjakob</o:LastAuthor>
+  <o:Revision>8</o:Revision>
+  <o:TotalTime>272</o:TotalTime>
+  <o:Created>2005-08-24T15:11:00Z</o:Created>
+  <o:LastSaved>2005-08-24T19:50:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1206</o:Words>
+  <o:Characters>6877</o:Characters>
+  <o:Company>EMBL-EBI</o:Company>
+  <o:Lines>57</o:Lines>
+  <o:Paragraphs>16</o:Paragraphs>
+  <o:CharactersWithSpaces>8067</o:CharactersWithSpaces>
+  <o:Version>10.6735</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:259267297;
+	mso-list-template-ids:-524629480;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:333072394;
+	mso-list-template-ids:-1009499208;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:516891579;
+	mso-list-template-ids:144635946;}
+@list l3
+	{mso-list-id:734359826;
+	mso-list-template-ids:-25936570;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:1365785910;
+	mso-list-template-ids:329800856;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:1437480108;
+	mso-list-template-ids:-1200698354;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:1973704668;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-957322180 134807553 134807555 134807557 134807553 134807555 134807557 134807553 134807555 134807557;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:2007321082;
+	mso-list-template-ids:1544328838;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:2113285313;
+	mso-list-template-ids:1532626742;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-GB link=blue vlink=blue style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal><a href="http://psidev.sourceforge.net"></a><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t75" alt=""
+ href="http://psidev.sourceforge.net/" style='position:absolute;margin-left:0;
+ margin-top:0;width:84.75pt;height:56.25pt;z-index:1;mso-wrap-distance-left:0;
+ mso-wrap-distance-right:0;mso-position-horizontal:left;
+ mso-position-horizontal-relative:text;mso-position-vertical-relative:line'
+ o:allowoverlap="f" o:button="t">
+ <v:imagedata src="http://psidev.sourceforge.net/images/psi.gif"/>
+ <w:wrap type="square"/>
+</v:shape><![endif]--><![if !vml]><a href="http://psidev.sourceforge.net/"><img
+border=0 width=113 height=75 src="http://psidev.sourceforge.net/images/psi.gif"
+align=left v:shapes="_x0000_s1026"></a><![endif]><span style='mso-no-proof:
+yes'><a href="http://psidev.sourceforge.net"></a><a href="http://www.hupo.org/"></a></span><!--[if gte vml 1]><v:shape
+ id="_x0000_s1027" type="#_x0000_t75" alt="" href="http://www.hupo.org/"
+ style='position:absolute;margin-left:44.75pt;margin-top:0;width:84.75pt;
+ height:56.25pt;z-index:2;mso-wrap-distance-left:0;mso-wrap-distance-right:0;
+ mso-position-horizontal:right;mso-position-horizontal-relative:text;
+ mso-position-vertical-relative:line' o:allowoverlap="f" o:button="t">
+ <v:imagedata src="http://psidev.sourceforge.net/images/hupo.gif"/>
+ <w:wrap type="square"/>
+</v:shape><![endif]--><![if !vml]><a href="http://www.hupo.org/"><img border=0
+width=113 height=75 src="http://psidev.sourceforge.net/images/hupo.gif"
+align=right v:shapes="_x0000_s1027"></a><![endif]><span style='mso-no-proof:
+yes'><a href="http://www.hupo.org/"></a></span><br clear=all style='mso-special-character:
+line-break'>
+</p>
+
+<h2 align=center style='text-align:center'><a name=mozTocId916500></a><a
+href="http://psidev.sourceforge.net">Proteomics Standards Initiative</a> </h2>
+
+<h2 align=center style='text-align:center'><a name=mozTocId992260></a>Molecular
+Interaction XML Format Documentation</h2>
+
+<h2 align=center style='text-align:center'><a name=mozTocId863651></a><span
+style='color:red'>Version 2.5</span></h2>
+
+<h4 align=center style='text-align:center'><st1:date Year="2005" Day="25"
+Month="8">August 25, 2005</st1:date></h4>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<h2>Table of Contents</h2>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#intro">Introduction</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#mi-purpose">Purpose
+     of the PSI MI XML format</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#document-purpose">Purpose
+     of this document</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'>Directory structure</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#schedule">Release
+     schedule</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#changes">Changes
+     from PSI MI 1.0 to 2.5</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#structure">Structure
+     of a PSI MI record</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#detailed-doc">Detailed
+     Documentation</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#cv">Use of
+     external controlled vocabularies<br>
+     </a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#planned">List of
+     planned features</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#comment">How to
+     comment</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#data">Available
+     data<br>
+     </a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#tools">Tools</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#submission">Data
+     submission</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list 36.0pt'><a href="#further-info">Further
+     information and relevant links</a></li>
+</ol>
+
+<h2><a name=intro></a>Introduction</h2>
+
+<p class=MsoNormal>The Proteomics Standards Initiative (PSI) aims to define
+community standards for data representation in proteomics to facilitate data
+comparison, exchange and verification. For detailed information on all PSI
+activities, please see <a href="http://psidev.sf.net">http://psidev.sf.net</a>.
+</p>
+
+<p>This document decribes the molecular interaction data exchange format. PSI
+is following a leveled approach to building this specification. This document
+describes level 2.5. For documentation of the previous level 1.0 please see <a
+href="http://psidev.sourceforge.net/mi/xml/doc/user">http://psidev.sourceforge.net/mi/xml/doc/user</a>/.
+</p>
+
+<p><b>Level 2.0 <span class=GramE>beta</span> was never officially released. This
+version, 2.5, is the released successor of 1.0.</b></p>
+
+<p>PSI MI was designed by consortium of molecular interaction data providers
+from both academia and industry, including BIND, DIP,<span class=GramE>&nbsp;
+IntAct</span>, MINT, MIPS, GlaxoSmithKline, CellZome, Hybrigenics, Universities
+of Bielefeld, <st1:City><st1:place>Bordeaux</st1:place></st1:City>, <st1:City><st1:place>Cambridge</st1:place></st1:City>,
+and others.</p>
+
+<h2><a name=mi-purpose></a>Purpose of the PSI MI XML format</h2>
+
+<p>The PSI MI format is a data exchange format for molecular interactions. It
+is not a proposed database structure. Intended usages are described by the <a
+href="http://psidev.sourceforge.net/mi/xml/doc/user/useCases.html">use cases
+documentation</a>. These use case descriptions also provide hints for future
+tools to be developed.</p>
+
+<h2><a name=document-purpose></a>Purpose of this document</h2>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'>The purpose of this document is
+to describe the general structure of the PSI MI XML specification in a more
+user-friendly manner than the specification does itself. For the detailed and
+most up-to-date description please see the <a
+href="http://psidev.sourceforge.net/mi/rel25/doc/">auto-generated documentation</a>.
+This documentation also provides additional information, e.g. sample data files
+and use case descriptions. <br>
+The XML schema is located at <a
+href="http://psidev.sourceforge.net/mi/rel25/src/MIF25.xsd">http://psidev.sourceforge.net/mi/rel25/src/MIF25.xsd</a></p>
+
+<h2><a name=schedule></a>Directory structure</h2>
+
+<p class=MsoNormal>This document is in the root directory of the PSI MI 2.5
+release. Subdirectories are</p>
+
+<p class=MsoNormal><span class=GramE>doc</span>/<span style='mso-tab-count:
+1'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Auto-generated documentation of the PSI MI
+XML schema</p>
+
+<p class=MsoNormal>src/<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Source
+code for schema and related software<o:p></o:p></p>
+
+<h2>Release schedule</h2>
+
+<p class=MsoNormal>Level 2.5 has been released in August 2005. It will become
+the supported level for most PSI partners by January 2006.<o:p></o:p></p>
+
+<h2><a href="changes1To25.html">Changes from PSI MI 1.0 to 2.5<o:p></o:p></a></h2>
+
+<h2><a name=structure></a><a name=detailed-doc></a>Detailed Documentation</h2>
+
+<p class=MsoNormal><span class=GramE>see</span> <a
+href="http://psidev.sourceforge.net/mi/rel25/doc/MIF25.html">http://psidev.sourceforge.net/mi/rel25/doc/MIF25.html<o:p></o:p></a></p>
+
+<h2><a name=cv></a>Use of external controlled vocabularies</h2>
+
+<p class=MsoNormal>Where possible, external controlled vocabularies are
+referenced from PSI MI. External controlled vocabularies are used in two forms:
+</p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l8 level1 lfo2;tab-stops:list 36.0pt'><b>Open</b> controlled
+     vocabularies: We think that no existing controlled vocabulary provides all
+     necessary terms for the given attribute in the PSI MI format. In this
+     case, it is up to the data provider to choose a controlled vocabulary, or
+     to provide a free text string if no appropriate controlled vocabulary
+     exists.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l8 level1 lfo2;tab-stops:list 36.0pt'><b>Closed </b>controlled
+     vocabularies: We think that there is a controlled vocabulary which
+     appropriately covers all necessary terms for the given attribute. In this
+     case, only terms from the defined vocabulary should be used.</li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'>The closed controlled
+vocabularies referenced by PSI MI are listed in the table below. All
+vocabularies are contained in a pair of files in <a
+href="http://www.geneontology.org">Gene Ontology</a> flat file format: <a
+href="data/psi-mi25.dag">psi-mi25.dag</a> and <a href="data/psi-mi25.def">psi-mi25.def</a>.
+The correctness of references to external controlled vocabularies is currently
+not enforced by the PSI MI schema. It is the responsibility of the data
+provider to ensure that only existing terms at an up-to-date data source are
+referenced. </p>
+
+<table class=MsoNormalTable border=1 cellpadding=0 style='mso-cellspacing:1.5pt;
+ mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>PSI MI XML level 2.5 data element<o:p></o:p></b></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>term name<o:p></o:p></b></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>PSI-MI identifier</b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span class=elementheader2>experimentType/participantIdentificationMethod</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>participant identification method</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>MI:0002</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span class=elementheader2>experimentType/interactionDetectionMethod</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>interaction detection method</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>MI:0001</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span class=elementheader2>interactionElementType/interactionType</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>interaction type</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>MI:0190</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span class=elementheader2>interactionElementType/participantList/participant/biologicalRole</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>biological role<br>
+  Example: enzyme</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>MI:0500</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span class=elementheader2>interactionElementType/experimentalRoleList/experimentalRole</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>experimental role<br>
+  Example: bait</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>MI:0495</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span class=elementheader2>interactionElementType/experimentalFormList/experimentalForm</span>
+  </p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>experimental form<br>
+  Example: his-tagged</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>MI:0505</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>featureType/featureDetectionMethod</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>feature detection method</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>MI:0003</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>featureType/featureType</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>feature type</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>MI:0116</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>interactorType/interactorType</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>interactor type</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>MI:0313</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>xrefType/*/refTypeAc</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>refType</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>MI:0353</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>deleted terms</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>obsolete</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>-</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2><a name=planned></a>List of planned features</h2>
+
+<p class=MsoNormal>Because we are following a leveled approach, we are
+interested in knowing what the community wishes to be included in the next
+level.<br>
+<br>
+The latest list of features to discuss/include in the future can be found here<span
+class=GramE>:</span><br>
+<a href="http://sourceforge.net/tracker/?atid=511101&amp;group_id=65472&amp;func=browse">http://sourceforge.net/tracker/?atid=511101&amp;group_id=65472&amp;func=browse</a></p>
+
+<h2><a name=comment></a>How to comment</h2>
+
+<p class=MsoNormal>If you would like to comment on this document, the PSI MI
+XML specification, please send a mail to<span class=GramE>:</span><br>
+<a href="mailto:psidev-mi-dev@lists.sourceforge.net">psidev-mi-dev@lists.sourceforge.net</a>&nbsp;
+</p>
+
+<h2><a name=data></a>Available data</h2>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo9;tab-stops:list 36.0pt'>IntAct
+     provides the complete database download in PSI MI 2.5 format at <a
+     href="ftp://ftp.ebi.ac.uk/pub/databases/intact/current/xml/psi25/">ftp://ftp.ebi.ac.uk/pub/databases/intact/current/xml/psi25/</a>
+     <br>
+     <span class=GramE>This</span> is currently a beta version.</li>
+</ul>
+
+<h2><a name=tools></a>Tools</h2>
+
+<p class=MsoNormal>No PSI-MI 2.5 compatible tools are available yet. <span
+class=GramE>Will be added soon.</span></p>
+
+<h2><a name=submission></a>Data submission</h2>
+
+<p class=MsoNormal>The following databases currently accept submissions of PSI
+MI formatted interaction data:</p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo5;tab-stops:list 36.0pt'><a href="http://www.bind.ca">BIND:</a>
+     Contact and submission by email: <a href="mailto:info@bind.ca">info@bind.ca</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo5;tab-stops:list 36.0pt'><a
+     href="http://dip.doe-mbi.ucla.edu/">DIP</a><span style='color:blue'>:</span>
+     Contact and submission by email: <a href="mailto:dip@mbi.ucla.edu">dip@mbi.ucla.edu</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo5;tab-stops:list 36.0pt'><a
+     href="http://www.hprd.org">HPRD</a>: Web-based submission tool: <a
+     href="http://psimi.ibioinformatics.org/">http://psimi.ibioinformatics.org/</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo5;tab-stops:list 36.0pt'><a
+     href="http://www.ebi.ac.uk/intact">IntAct:</a> Contact and submission by
+     email: <a href="mailto:datasubs@ebi.ac.uk">datasubs@ebi.ac.uk</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo5;tab-stops:list 36.0pt'><a
+     href="http://cbm.bio.uniroma2.it/mint/">MINT:</a> Contact and submission
+     by email: <a href="mailto:cesareni@uniroma2.it">cesareni@uniroma2.it</a></li>
+</ul>
+
+<h2><a name=further-info></a>Further information and relevant links</h2>
+
+<p>Databases involved: </p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><a href="http://www.bind.ca">BIND
+     </a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><a
+     href="http://dip.doe-mbi.ucla.edu/">DIP</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><a
+     href="http://www.hprd.org">HPRD</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><a
+     href="http://www.ebi.ac.uk/intact">IntAct </a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><a
+     href="http://cbm.bio.uniroma2.it/mint/">MINT</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo6;tab-stops:list 36.0pt'><a
+     href="http://mips.gsf.de/">MIPS<br>
+     </a></li>
+</ul>
+
+<p class=MsoNormal>Companies involved: </p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo7;tab-stops:list 36.0pt'><a
+     href="http://www.hybrigenics.com/">Hybrigenics</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo7;tab-stops:list 36.0pt'><a
+     href="http://www.cellzome.com/">Cellzome</a></li>
+</ul>
+
+<p class=MsoNormal>Related Efforts: </p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l5 level1 lfo8;tab-stops:list 36.0pt'><a href="http://biopax.org">BioPAX</a></li>
+</ul>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal>Henning Hermjakob, <a href="mailto:hhe@ebi.ac.uk">hhe@ebi.ac.uk</a>,
+<st1:date Year="2005" Day="24" Month="8">24-Aug-2005</st1:date></p>
+
+</div>
+
+</body>
+
+</html>

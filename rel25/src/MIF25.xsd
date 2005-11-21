@@ -166,7 +166,7 @@
 				<xs:documentation>Name of the external database. Taken from the controlled vocabulary of databases.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="dbAc">
+		<xs:attribute name="dbAc" type="xs:string" use="optional">
 			<xs:annotation>
 				<xs:documentation>Accession number of the database in the database CV. This element is controlled by the PSI-MI controlled vocabulary "database citation", root term id MI:0444.</xs:documentation>
 			</xs:annotation>
@@ -176,7 +176,7 @@
 				<xs:documentation>Primary identifier of the object in the external database, e.g. UniProt accession number.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="secondary" type="xs:string">
+		<xs:attribute name="secondary" type="xs:string" use="optional">
 			<xs:annotation>
 				<xs:documentation>Secondary identifier of the object in the external database, e.g. UniProt ID.</xs:documentation>
 			</xs:annotation>
@@ -186,12 +186,12 @@
 				<xs:documentation>The version number of the object in the external database.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="refType">
+		<xs:attribute name="refType" type="xs:string" use="optional">
 			<xs:annotation>
 				<xs:documentation>Reference type, e.g. "identity" if this reference referes to an identical object in the external database, or "see-also" for additional information. Controlled by CV.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="refTypeAc">
+		<xs:attribute name="refTypeAc" type="xs:string" use="optional">
 			<xs:annotation>
 				<xs:documentation>Reference type accession number from the CV of reference types. This element is controlled by the PSI-MI controlled vocabulary "xref type", root term id MI:0353. </xs:documentation>
 			</xs:annotation>
@@ -229,6 +229,7 @@
 					<xs:simpleContent>
 						<xs:extension base="xs:string">
 							<xs:attribute name="name" type="xs:string" use="required"/>
+							<xs:attribute name="nameAc" type="xs:string" use="optional"/>
 						</xs:extension>
 					</xs:simpleContent>
 				</xs:complexType>
@@ -448,6 +449,11 @@
 						</xs:element>
 					</xs:sequence>
 				</xs:complexType>
+			</xs:element>
+			<xs:element name="attributeList" type="attributeListType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Semi-structured additional description of the data contained in the entry.</xs:documentation>
+				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
@@ -706,11 +712,6 @@
 					<xs:documentation>Confidence in this interaction.  Usually a statistical measure.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="attributeList" type="attributeListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Semi-structured additional description of the data contained in the entry.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="parameterList" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Lists parameters which are relevant for the Interaction, e.g. kinetics.</xs:documentation>
@@ -735,13 +736,18 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
+			<xs:element name="attributeList" type="attributeListType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Semi-structured additional description of the data contained in the entry.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
-		<xs:attribute name="imexId" type="xs:int">
+		<xs:attribute name="imexId" type="xs:int" use="optional">
 			<xs:annotation>
 				<xs:documentation>Interaction identifier assigned by the IMEx consortium. Will be unique for an interaction determined in one publication. Details defined in the IMEx documents.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="id" use="required">
+		<xs:attribute name="id" type="xs:int" use="required">
 			<xs:annotation>
 				<xs:documentation>All major objects have a numerical id which is unique to that object within a PSI MI file. The object may be repeated, though, e.g. in the denormalised representation.</xs:documentation>
 			</xs:annotation>
@@ -833,15 +839,37 @@
 					</xs:annotation>
 				</xs:element>
 			</xs:choice>
-			<xs:element name="interactorType" type="cvType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The type of the participant, e.g. protein. This element is controlled by the PSI-MI controlled vocabulary "interactorType", root term id MI:0313.  This element is DEPRECATED here, the interactor type is only necessary in the interactor element itself.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="biologicalRole" type="cvType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The role of the participant in the interaction. This describes the biological role, e.g. enzyme or enzyme target. The experimental role of the participant, e.g. 'bait', is shown in experimentalForm. This element is controlled by the PSI-MI controlled vocabulary "biologicalRole", root term id MI:0500.</xs:documentation>
 				</xs:annotation>
+			</xs:element>
+			<xs:element name="participantIdentificationMethodList" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The method(s) by which this participant has been determined. If this element is present, its value supersedes experimentDescription/participantIdentificationMethod.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="participantIdentificationMethod" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Experimental method to determine the interactors involved in the interaction. This element is controlled by the PSI-MI controlled vocabulary "participant identification method", root term id MI:0002.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cvType">
+										<xs:sequence minOccurs="0">
+											<xs:element name="experimentRefList" type="experimentRefListType" minOccurs="0">
+												<xs:annotation>
+													<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
+												</xs:annotation>
+											</xs:element>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
 			</xs:element>
 			<xs:element name="experimentalRoleList" minOccurs="0">
 				<xs:annotation>
@@ -930,7 +958,7 @@
 				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="experimentalInteractor">
+						<xs:element name="experimentalInteractor" maxOccurs="unbounded">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:choice>
@@ -1019,27 +1047,27 @@
 				<xs:documentation>The kind of parameter, e.g. "dissociation constant".</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="termAc" type="xs:string">
+		<xs:attribute name="termAc" type="xs:string" use="optional">
 			<xs:annotation>
 				<xs:documentation>Accession number of the term in the associated controlled vocabulary.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="unit" type="xs:string" use="required">
+		<xs:attribute name="unit" type="xs:string" use="optional">
 			<xs:annotation>
 				<xs:documentation>The unit of the term, e.g. "kiloDalton".</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="unitAc" type="xs:string">
+		<xs:attribute name="unitAc" type="xs:string" use="optional">
 			<xs:annotation>
 				<xs:documentation>Accession number of the unit in the associated controlled vocabulary.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="base" type="xs:short" default="10">
+		<xs:attribute name="base" type="xs:short" use="optional" default="10">
 			<xs:annotation>
 				<xs:documentation>Base of the parameter expression. Defaults to 10.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="exponent" type="xs:short">
+		<xs:attribute name="exponent" type="xs:short" use="optional">
 			<xs:annotation>
 				<xs:documentation>Exponent of the value.</xs:documentation>
 			</xs:annotation>
