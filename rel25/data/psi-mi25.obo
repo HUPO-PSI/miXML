@@ -2,35 +2,39 @@ format-version: 1.0
 date: 25:10:2005 15:55
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
-default-namespace: psi-mi25.dag
 
 [Term]
 id: MI:0000
-name: ppi: protein-protein interactions
+name: protein-protein interactions
+exact_synonym: "ppi" []
 def: "Controlled vocabularies originaly created for protein protein interactions\, extended to other molecules interactions." [PMID:14755292]
 
 [Term]
 id: MI:0001
-name: interaction detectio: interaction detection method
+name: interaction detection method
+exact_synonym: "interaction detect" []
 def: "Method to determine the interaction." [PMID:14755292]
 is_a: MI:0000 ! ppi: protein-protein interactions
 
 [Term]
 id: MI:0002
-name: participant identif: participant identification method
+name: participant identification method
+exact_synonym: "participant ident" []
 def: "Method to determine the proteins involved in the interaction." [PMID:14755292]
 synonym: "participant detection" []
 is_a: MI:0000 ! ppi: protein-protein interactions
 
 [Term]
 id: MI:0003
-name: feature detection: feature detection method
+name: feature detection method
+exact_synonym: "feature detection" []
 def: "Method to determine the features of the proteins involved in the interaction." [PMID:14755292]
 is_a: MI:0000 ! ppi: protein-protein interactions
 
 [Term]
 id: MI:0004
-name: affinity chrom: affinity chromatography technologies
+name: affinity chromatography technologies
+exact_synonym: "affinity chrom" []
 def: "This class of approaches is characterised by the use of affinity resins as tools to purify molecule of interest  (baits) and their binding partners. The baits can be captured by a variety of high affinity ligands linked to a resin - for example\, antibodies specific for the bait itself\, antibodies for specific tags engineered to be expressed as part of the bait or other high affinity binders such as glutathione resins for GST fusion proteins\, metal resins for histidine-tagged proteins." [PMID:7708014]
 synonym: "Affinity purification" []
 is_a: MI:0091 ! chromatography: chromatography technologies
@@ -43,13 +47,15 @@ is_a: MI:0003 ! feature detection: feature detection method
 
 [Term]
 id: MI:0006
-name: anti bait coip: anti bait coimmunoprecipitation
+name: anti bait coimmunoprecipitation
+exact_synonym: "anti bait coip" []
 def: "A specific antibody for the protein of interest (bait) is available\, this is used to generate a high affinity resin to capture the endogenous bait present in a sample." [PMID:7708014]
 is_a: MI:0019 ! coip: coimmunoprecipitation
 
 [Term]
 id: MI:0007
-name: anti tag coip: anti tag coimmunoprecipitation
+name: anti tag coimmunoprecipitation
+exact_synonym: "anti tag coip" []
 def: "A specific antibody for the protein of interest is not available\, therefore the bait protein is expressed as a hybrid protein fused to a tag peptide/protein for which efficient and specific antibodies or a specific ligand are available.  " [PMID:7708014]
 is_a: MI:0019 ! coip: coimmunoprecipitation
 
@@ -68,19 +74,22 @@ is_a: MI:0054 ! facs: fluorescence-activated cell sorting
 
 [Term]
 id: MI:0010
-name: beta galactosidase: beta galactosidase complementation
+name: beta galactosidase complementation
+exact_synonym: "beta galactosidase" []
 def: "Beta-galactosidase activity can be used to monitor the interaction of chimeric proteins. Pairs of inactive beta gal deletion mutants are capable of complementing to restore activity when fused to interacting protein partners. Critical to the success of this system is the choice of two poorly complementing mutant moieties\, since strongly complementing mutants spontaneously assemble and produce functional beta-gal activity detectable in absence of any fused protein fragment. " [PMID:9237989, PMID:12042868]
 is_a: MI:0228 ! cytoplasmic compl: cytoplasmic complementation assay
 
 [Term]
 id: MI:0011
-name: beta lactamase: beta lactamase complementation
+name: beta lactamase complementation
+exact_synonym: "beta lactamase" []
 def: "This strategy is based on a protein fragment complementation assay (PCA) of the enzyme TEM-1 beta-lactamase. The approach includes a simple colorimetric in vitro assays using the cephalosporin nitrocefin and assays in intact cells using the fluorescent substrate CCF2/AM. The combination of in vitro colorimetric and in vivo fluorescence assays of beta-lactamase in mammalian cells permits a variety of sensitive and high-throughput large-scale applications." [PMID:12042868]
 is_a: MI:0228 ! cytoplasmic compl: cytoplasmic complementation assay
 
 [Term]
 id: MI:0012
-name: bret: bioluminescence resonance energy transfer
+name: bioluminescence resonance energy transfer
+exact_synonym: "bret" []
 def: "In this variation of the FRET assay the donor fluorophore is replaced by a luciferase (typically Renilla luciferase). In the presence of its substrate\, the luciferase catalyses a bioluminescent reaction that excites the acceptor fluorophore through a resonance energy transfer mechanism. As with FRET the energy transfer occurs only if the protein fused to the luciferase and the one fused to the acceptor fluorophore are in close proximity (10-100 Angstrom)" [PMID:9874787, PMID for application instance:10725388]
 synonym: "BRET" []
 synonym: "LRET" []
@@ -94,20 +103,23 @@ is_a: MI:0045 ! experimental
 
 [Term]
 id: MI:0014
-name: adenylate cyclase: adenylate cyclase complementation
+name: adenylate cyclase complementation
+exact_synonym: "adenylate cyclase" []
 def: "Adenylate cyclase is encoded by the cyaA gene and contains a catalytic domain which can be proteolytically cleaved into two complementary fragments\, T25 and T18\, which remain associated in the presence of calmodulin in a fully active ternary complex. In the absence of calmodulin\, the mixture of the two fragments does not exhibit detectable activity\, suggesting that the two fragments do not associate. When expressed in an adenylate cyclase-deficient E. coli strain (E. coli lacks calmodulin or calmodulin-related proteins)\, the T25 and T18 fragments fused to putative interacting proteins are brought into close association which result in cAMP synthesis. The level of reconstructed adenylate cyclase can be estimated by monitoring the expression of a cAMP dependent reporter gene." [PMID:9576956]
 is_a: MI:0228 ! cytoplasmic compl: cytoplasmic complementation assay
 
 [Term]
 id: MI:0016
-name: cd: circular dichroism
+name: circular dichroism
+exact_synonym: "cd" []
 def: "Circular dichroism (CD) is observed when optically active molecules absorb left and right hand circularly polarized light slightly differently. Linearly polarized light can be viewed as a superposition of two components of circularly polarized light of equal amplitude and phase but opposite handness. When this light passes through an optically active sample the two polarized components are absorbed differently. The difference in left and right handed absorbance A(l)- A(r) is the signal registered in CD spectra. This signal displays distinct features corresponding to different secondary structures present in peptides\, proteins and nucleic acids. The analysis of CD spectra can therefore yield valuable information about the secondary structure of biological macromolecules and the interactions among molecules that influence their structure." [PMID:11578931]
 synonym: "CD" []
 is_a: MI:0013 ! biophysical
 
 [Term]
 id: MI:0017
-name: fluorescence spectr: classical fluorescence spectroscopy
+name: classical fluorescence spectroscopy
+exact_synonym: "fluorescence spectr" []
 def: "Proteins contain endogenous fluorophores such as tryptophan residue and heme or flavins groups. Protein folding and protein-protein interaction can be studied by monitoring changes in the tryptophan environment detected by changes in its intrinsic fluorescence. Changes in the fluorescence emission spectrum on complex formation can occur either due to a shift in the wavelength of maximum fluorescence emission or by a shift in fluorescence intensity caused by the mixing of two proteins. The interaction of two proteins causes a shift in the fluorescence emission spectrum relative to the sum of the individual fluorescence spectra\, resulting in a difference spectrum \[F (complex)-2 F (sum)\]\, which is a measurable effect of the interaction. Loss of fluorescence signal from a substrate can be used to measure protein cleavage." [PMID:7708014]
 is_a: MI:0051 ! fluorescence: fluorescence technologies
 
@@ -120,26 +132,30 @@ is_a: MI:0232 ! transcription compl: transcriptional complementation assay
 
 [Term]
 id: MI:0019
-name: coip: coimmunoprecipitation
+name: coimmunoprecipitation
+exact_synonym: "coip" []
 def: "In this approach an antibody\, specific for the protein of interest (bait) or any tag expressed within a fusion protein\, is used to separate the bait from a protein mixture or a cell lysate and to capture its ligand simultaneously. The protein partners that bind to the bait protein retained by the resin can then be eluted and identified." [PMID:7708014]
 is_a: MI:0004 ! affinity chrom: affinity chromatography technologies
 
 [Term]
 id: MI:0020
-name: tem: transmission electron microscopy
+name: transmission electron microscopy
+exact_synonym: "tem" []
 def: "During the treatment for microscope analysis a tissue section is incubated with high-specificity antibodies coupled to heavy metals (gold). Any tissue section can then be analysed by electron microscopy to localise the target proteins within the cell. This method supports very high resolution colocalisation of different molecules in a cell." [PMID:14755292]
 is_a: MI:0040 ! electron microscopy
 
 [Term]
 id: MI:0021
-name: coloc fluoresc probe: colocalization by fluorescent probes cloning
+name: colocalization by fluorescent probes cloning
+exact_synonym: "coloc fluoresc probe" []
 def: "Two proteins can be localised to cell compartments\, in the same experiment\, if they are expressed as chimeric proteins fused to distinct proteins fluorescing at different wavelengths (Green Fluorescent Protein and Red Fluorescent Protein for example). Using a confocal microscope the two proteins can be visualized in living cells and it can be determined whether they have the same subcellular location. Fluorescence microscopy of cells expressing a GFP fusion protein can also demonstrate dynamic processes such as its translocation from one subcellular compartment to another." [PMID:14755292]
 is_a: MI:0051 ! fluorescence: fluorescence technologies
 is_a: MI:0416 ! fluorescence imaging: fluorescence microscopy
 
 [Term]
 id: MI:0022
-name: coloc immunostaining: colocalization by immunostaining
+name: colocalization by immunostaining
+exact_synonym: "coloc immunostaining" []
 def: "The subcellular location of a protein can be demonstrated by treating cells fixed on a microscope slide with an antibody specific for the protein of interest. A secondary antibody conjugated with a reactive enzyme (e.g. horseradish peroxidase) is then added. Following a washing step to remove the unbound secondary ligand\, a chromogenic substrate (e.g. 3\,3'\, 5\,5' tetramethyl benzidine chromogen \[TMB\]) is converted to a soluble coloured product by the conjugated enzyme and can then be visualised by standard microscopic techniques. \nOBSOLETE since combination of Interaction Detection Method and Interaction Type. Consider using the Interaction Detection Method \"imaging techniques\"  (MI\:0428) coupled with Interaction Type \"colocalisation\" (MI\:0401) and  Participant detection \"immunostaining\" (MI\:0402) instead" [PMID:14755292]
 synonym: "Immunofluorescence Staining" []
 synonym: "Immunostaining" []
@@ -147,13 +163,15 @@ is_obsolete: true
 
 [Term]
 id: MI:0023
-name: coloc visual technol: colocalization/visualisation technologies
+name: colocalization/visualisation technologies
+exact_synonym: "coloc visual technol" []
 def: "Techniques enabling the identification of the subcellular localisation of a protein or complex. Two different proteins show a similar distribution in the cell are said to co-localise. Obsolete since combination of Interaction Detection Method and Interaction Type.\nOBSOLETE. Consider using \"imaging techniques\" MI\:0428 as interaction detection method coupled with MI\:0401 \"colocalisation\" as interaction type and MI\:0396 \"predetermined\" as participant detection." [PMID:14755292]
 is_obsolete: true
 
 [Term]
 id: MI:0024
-name: conformational tm: confirmational text mining
+name: confirmational text mining
+exact_synonym: "conformational tm" []
 def: "Text mining is used to support interactions which have been determined by other methods." [PMID:14755292]
 is_a: MI:0110 ! text mining
 
@@ -178,25 +196,29 @@ is_a: MI:0401 ! biochemical
 
 [Term]
 id: MI:0028
-name: solution sedimentati: cosedimentation in solution
+name: cosedimentation in solution
+exact_synonym: "solution sedimentati" []
 def: "The ultracentrifuge can be used to characterise and/or purify macromolecules in solution according to their mass and hydrodynamic properties. Sedimentation studies provide information about the molecular weight and shape of a molecule. It is also possible to measure the association state of the sample. Both the mass of a molecule and its shape\, that influences the friction forces and diffusion that counterbalances gravity\, determine the sedimentation speed. " [PMID:10410796]
 is_a: MI:0027 ! cosedimentation
 
 [Term]
 id: MI:0029
-name: density sedimentatio: cosedimentation through density gradients
+name: cosedimentation through density gradients
+exact_synonym: "density sedimentatio" []
 def: "Sedimentation through a density gradient measures the sedimentation rate of a mixture of proteins through either a glycerol or sucrose gradient. Two interacting proteins will sediment mostly as a complex at concentrations above the binding constant. By varying the concentration of one or both of the complex constituents and taking into account the dilution of the species during sedimentation\, one can reasonably accurately estimate the binding constant." [PMID:10410796]
 is_a: MI:0027 ! cosedimentation
 
 [Term]
 id: MI:0030
-name: crosslink: cross-linking studies
+name: cross-linking studies
+exact_synonym: "crosslink" []
 def: "Analysis of complexes obtained by chemical treatments that promote the formation of covalent bonds among molecules in close proximity." [PMID:14755292]
 is_a: MI:0401 ! biochemical
 
 [Term]
 id: MI:0031
-name: protein crosslink: protein cross-linking with a bifunctional reagent
+name: protein cross-linking with a bifunctional reagent
+exact_synonym: "protein crosslink" []
 def: "A cross-linker is a bifunctional molecule having two reactive ends linked by a spacer\, often containing a disulfide bond. Cross-linkers induce the formation of covalent bonds among proteins that are neighbours. When a reducing agent is added the disulfide bridge is cleaved\, the cross-linked pairs are released and can be identified. There are various classes of cross-linkers\, the most common are those having photoreactive groups that become reactive fluorophores when activated by UV light thereby resulting in photolabeling the cross-linked moieties. " [PMID:10679368, PMID:7708014]
 synonym: "Label transfer techniques" []
 synonym: "Photoaffinity labelling" []
@@ -204,7 +226,8 @@ is_a: MI:0030 ! crosslink: cross-linking studies
 
 [Term]
 id: MI:0032
-name: ms protein sequence: de novo protein sequencing by mass spectrometry
+name: de novo protein sequencing by mass spectrometry
+exact_synonym: "ms protein sequence" []
 def: "The strategy to determine the complete amino acid sequence of a protein by mass spectrometry relies on the generation of a nested set of fragments differing by one amino acid. This permits to reveal the identity of the residue that has been removed at each degradation step by measuring the mass difference of fragments differing of one residue. Peptide fragments can be obtained by protease treatment combined with the fragmentation promoted by collision (or other methods) within a tandem mass spectrometer. This approach can be carried out with LC MS/MS (Liquid Chromatography Tandem Mass Spectrometry)\, nanoESI MS/MS (nanoElectrospray Ionisation tandem mass spectrometry)\, or FTMS (Fourier Transform mass spectrometry) instruments." [PMID:10984529]
 is_a: MI:0003 ! feature detection: feature detection method
 is_a: MI:0093 ! protein sequence: protein sequence identification
@@ -247,7 +270,8 @@ is_a: MI:0101 ! predict from sequenc: sequence based prediction
 
 [Term]
 id: MI:0038
-name: dls: dynamic light scattering
+name: dynamic light scattering
+exact_synonym: "dls" []
 def: "In dynamic light scattering\, particle diffusion in solution gives rise to fluctuations in the intensity of the scattered light on the microsecond scale. The hydrodynamic radius of the particles can be easily calculated." [PMID:9013660]
 is_a: MI:0067 ! light scattering
 
@@ -267,14 +291,16 @@ is_a: MI:0428 ! imaging techniques
 
 [Term]
 id: MI:0041
-name: endor: electron nuclear double resonance
+name: electron nuclear double resonance
+exact_synonym: "endor" []
 def: "A combination of NMR and EPR. The lines in the EPR spectrum that are caused by coupling of an unpaired electron nearby nuclei change in intensity when these nuclei are excited at their NMR frequency." [PMID:11817959, PMID:11988476, PMID for application instance:12186859]
 synonym: "ENDOR" []
 is_a: MI:0043 ! electron resonance
 
 [Term]
 id: MI:0042
-name: epr: electron paramagnetic resonance
+name: electron paramagnetic resonance
+exact_synonym: "epr" []
 def: "EPR (also called ESR\, Electron Spin Resonance) spectroscopy is analogous to NMR\, but is based on the excitation of unpaired electrons instead of nuclei. Unpaired (single) electrons are only found in radicals and some metal ions (paramagnetic species); the EPR spectrum provides information about the environment and mobility of the paramagnetic species. The magnetic interaction of two paramagnetic centres in a protein can be used to calculate the distance between them; this allows studies of the movements and interactions of protein segments. In proteins without any intrinsic unpaired electrons it is possible to attach a radical probe (spin label). Stable nitroxide radicals can be bound to amino acid residues\, in analogy with fluorescent probes. In combination with site directed mutagenesis this method is used in particular to study structure and assembly of membrane proteins\, by measuring with EPR whether an amino acid is in a polar or non polar environment. " [PMID:11817959]
 synonym: "EPR" []
 synonym: "ESR" []
@@ -295,7 +321,8 @@ is_a: MI:0001 ! interaction detectio: interaction detection method
 
 [Term]
 id: MI:0046
-name: experimental info: experimental knowledge based
+name: experimental knowledge based
+exact_synonym: "experimental info" []
 def: "Predictive algorithms that rely on the information obtained by experimental results" [PMID:14755292]
 is_a: MI:0063 ! prediction
 
@@ -308,7 +335,8 @@ is_a: MI:0400 ! affinity techniques: affinity technologies
 
 [Term]
 id: MI:0048
-name: filamentous phage: filamentous phage display
+name: filamentous phage display
+exact_synonym: "filamentous phage" []
 def: "Filamentous phages (M13\, f1\, fd) have been extensively used to develop and implement the technology of phage display. Repertoires of relatively short peptides of random amino acid sequences or cDNA libraries have been constructed and searched successfully. Most experiments have taken advantage of the ability to assemble phages decorated with hybrid versions of the receptor protein pIII or of the major coat protein pVIII. Both systems allow the display of foreign peptides by fusion to the amino-terminus of the capsid protein but differ in the number of peptide copies that can be displayed on each phage particle. Display libraries of very diverse protein fragments have been constructed by fusing either genomic or cDNA fragments to gene III or gene VIII." [PMID:7682645]
 is_a: MI:0084 ! phage display
 
@@ -321,26 +349,30 @@ is_a: MI:0400 ! affinity techniques: affinity technologies
 
 [Term]
 id: MI:0050
-name: flag tag coip: flag tag coimmunoprecipitation
+name: flag tag coimmunoprecipitation
+exact_synonym: "flag tag coip" []
 def: "The protein of interest is expressed as a fusion to the peptide DYKDDDDKV for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem.\nOBSOLETE redundant term. Map to Experimental form\: \"flag-tagged\" (MI\:0518) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:14755292]
 is_obsolete: true
 
 [Term]
 id: MI:0051
-name: fluorescence: fluorescence technologies
+name: fluorescence technologies
+exact_synonym: "fluorescence" []
 def: "Techniques based upon the measurement of the emission of one or more photons by a molecule activated by the absorption of a quantum of electro-magnetic radiation. Typically the emission\, which is characterised by a wavelength that is longer than the one of excitatory radiation\, occurs within 10-8 seconds." [PMID:14755292]
 is_a: MI:0013 ! biophysical
 
 [Term]
 id: MI:0052
-name: fcs: fluorescence correlation spectroscopy
+name: fluorescence correlation spectroscopy
+exact_synonym: "fcs" []
 def: "FCS monitors the random motion of fluorescently labelled molecules inside a defined volume irradiated by a focused laser beam. These fluctuations provide information on the rate of diffusion or diffusion time of a particle and this is directly dependent on the particle mass. As a consequence\, any increase in the mass of a biomolecule\, e.g. as a result of an interaction with a second molecule\, is readily detected as an increase in the diffusion time of the particle. From these results the concentration of the different molecules can be calculated as well as their binding constant." [PMID:10733953]
 synonym: "FCS" []
 is_a: MI:0051 ! fluorescence: fluorescence technologies
 
 [Term]
 id: MI:0053
-name: fps: fluorescence polarization spectroscopy
+name: fluorescence polarization spectroscopy
+exact_synonym: "fps" []
 def: "Because of the long lifetimes of excited fluorescent molecules (nanoseconds)\, fluorescence can be used to monitor the rotational motion of molecules\, which occurs on this timescale. This is accomplished experimentally by excitation with plane-polarized light\, followed by measurement of the emission at parallel and perpendicular planes. Since rotational correlation times depend on the size of the molecule\, this method can be used to measure the binding of two proteins because the observed polarization increase when a larger complex is formed. A fluorescence anisotropy experiment is normally carried out with a protein bearing a covalently added fluorescent group\, which increases both the observed fluorescence lifetime of the excited state and the intensity of the fluorescent signal. Residue modification can be assessed by addition of an antibody which binds to the modified residue and alters the molecular weight of the complex. A variation of this technique has been used to show interaction of a DNA binding protein with another protein.  In this case the DNA rather than protein is fluorescently labelled." [PMID:7708014, PMID:12805227]
 synonym: "FPS" []
 synonym: "Fluorescence anisotropy" []
@@ -348,7 +380,8 @@ is_a: MI:0051 ! fluorescence: fluorescence technologies
 
 [Term]
 id: MI:0054
-name: facs: fluorescence-activated cell sorting
+name: fluorescence-activated cell sorting
+exact_synonym: "facs" []
 def: "Cells in suspension flow through a laser beam\, the scattered light or emitted fluorescence is measured\, filtered and converted to digital values. Cells can be sorted according to their properties. Using flow cytometry\, any fluorescent or light scattering experiment can be carried out on entire cells. With this instrument\, interactions occurring either on cell surfaces or in any other subcellular location can be studied by using suitable fluorescent labels. " [PMID:11988464]
 synonym: "FACS" []
 synonym: "Flow cytometry" []
@@ -356,7 +389,8 @@ is_a: MI:0051 ! fluorescence: fluorescence technologies
 
 [Term]
 id: MI:0055
-name: fret: fluorescent resonance energy transfer
+name: fluorescent resonance energy transfer
+exact_synonym: "fret" []
 def: "FRET is a quantum mechanical process involving the radiationless transfer of energy from a donor fluorophore to an appropriately positioned acceptor fluorophore. The fluorophores are genetically fused to the protein in analysis and cotransfected. Three basic conditions must be fulfilled for FRET to occur between a donor molecule and acceptor molecule. First\, the donor emission spectrum must significantly overlap the absorption spectrum of the acceptor. Second\, the distance between the donor and acceptor fluorophores must fall within the range 0.002 to 0.01 10-6m. Third\, the donor and acceptor fluorophores must be in favourable orientations." [PMID:11558993]
 synonym: "FRET" []
 synonym: "FRET analysis" []
@@ -365,7 +399,8 @@ is_a: MI:0051 ! fluorescence: fluorescence technologies
 
 [Term]
 id: MI:0056
-name: full dna sequence: full identification by sequencing
+name: full identification by sequencing
+exact_synonym: "full dna sequence" []
 def: "sequencing occurs during the course of the experiment.\nThe DNA to be sequenced is used as template for the in vitro synthesis\, by DNA polymerase\, of a set of partial replicas\, all beginning at the same place\, but terminating at different points along the DNA chain. The key to this method is the use of dideoxyribonucleoside triphosphates in which the deoxyribose 3'-OH group present in normal nucleotides is missing; when such a modified nucleotide is incorporated into a DNA chain\, it blocks the elongation of the chain. To determine the full sequence\, the four different chain-terminating dideoxyribonucleosides are used in competition with an excess of deoxyribonucleosides in separate DNA synthesis reactions on the same DNA template. When the products of these four reactions are analysed by electrophoresis in four parallel lanes of a denaturing polyacrylamide gel\, the DNA sequence can be derived. Every lane displays a family of DNA fragments of different lengths\, reflecting the different sites at which a specific residue occurs in the original DNA." [PMID:14755292]
 is_a: MI:0003 ! feature detection: feature detection method
 is_a: MI:0078 ! nucleotide sequence: nucleotide sequence identification
@@ -378,7 +413,8 @@ is_a: MI:0058 ! genome prediction: genome based prediction
 
 [Term]
 id: MI:0058
-name: genome prediction: genome based prediction
+name: genome based prediction
+exact_synonym: "genome prediction" []
 def: "Methods that require fully sequenced genomes either because they are based on the comparison of genome topology or on the identification of orthologous sequences in different genomes." [PMID:14755292]
 is_a: MI:0063 ! prediction
 
@@ -390,7 +426,8 @@ is_obsolete: true
 
 [Term]
 id: MI:0060
-name: ha tag coip: ha tag coimmunoprecipitation
+name: ha tag coimmunoprecipitation
+exact_synonym: "ha tag coip" []
 def: "The protein of interest is expressed as a fusion to the peptide YPYDVPDYA (a fragment of the influenza hemaglutinin protein) for which antibodies are commercially available \nOBSOLETE redundant term. Map to Experimental form\: \"ha-tagged\" (MI\:0520) and Interaction detection method\: \"anti tag coimmunoprecipitation\"  (MI\:0007)." [PMID:14755292]
 is_obsolete: true
 
@@ -402,7 +439,8 @@ is_obsolete: true
 
 [Term]
 id: MI:0062
-name: his tag coip: his tag coimmunoprecipitation
+name: his tag coimmunoprecipitation
+exact_synonym: "his tag coip" []
 def: "The protein of interest is expressed as a fusion to a poly-His tail. This permits purification by chromatography over a metal column or by binding to commercially available anti poly-His antibodies.\nOBSOLETE redundant term. Map to Experimental form\: \"his-tagged\" (MI\:0521) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:14755292]
 is_obsolete: true
 
@@ -423,14 +461,16 @@ is_a: MI:0101 ! predict from sequenc: sequence based prediction
 
 [Term]
 id: MI:0065
-name: itc: isothermal titration calorimetry
+name: isothermal titration calorimetry
+exact_synonym: "itc" []
 def: "Isothermal titration calorimetry (ITC) measures directly the energy associated with a chemical reaction triggered by the mixing of two components. A typical ITC experiment is carried out by the stepwise addition of one of the reactants (~10-6 L per injection) into the reaction cell (~1mL) containing the second reactant. The chemical reaction occurring after each injection either releases or absorbs heat (qi) proportional to the amount of ligand that binds to the protein with a characteristic binding enthalpy (DH). As modern ITC instruments operate on the heat compensation principle\, the instrumental response (measured signal) is the amount of power (microcalories per second) necessary to maintain constant the temperature difference between the reaction and the reference cells. Because the amount of uncomplexed protein available progressively decreases after each successive injection\, the magnitude of the peaks becomes progressively smaller until complete saturation is achieved. The difference between the concentration of bound ligand in the ith and (i-1)th injections depends on the binding constant Ka and the total ligand injected. The calculations depend on the binding model (number of substrates). Analysis of the data yields DH and DG = -RTlnKa. The entropy change is obtained by using the standard thermodynamic expression DG = DH-TDS." [PMID:11785756]
 synonym: "ITC" []
 is_a: MI:0013 ! biophysical
 
 [Term]
 id: MI:0066
-name: lambda phage: lambda phage display
+name: lambda phage display
+exact_synonym: "lambda phage" []
 def: "Morphologically classified as one of the siphoviridae\, lambda is a temperate bacteriophage of E.coli\, with a double-stranded DNA genome. It has an icosahedral head attached to a flexible helical tail. Both the tail protein pV and the head protein pD have been used for displaying (C or N terminally) foreign peptides on the viral capsid." [PMID:7682645]
 is_a: MI:0084 ! phage display
 
@@ -442,13 +482,15 @@ is_a: MI:0013 ! biophysical
 
 [Term]
 id: MI:0068
-name: modified residue ms: mass detection of residue modification
+name: mass detection of residue modification
+exact_synonym: "modified residue ms" []
 def: "Mass spectrometry can be used to characterise chemical modifications within peptides. One approach consists in the observation of a mass difference when a sample is treated with an enzyme that can specifically remove a peptide modification\, for instance a phosphatase. The mass difference corresponds to the mass of the chemical group covalently linked to a residue. Such experiments carried out with a MALDI-TOF (Matrix-assisted laser desorption ionization time-of-flight ) do not allow the mapping of the modification site within the sequence\, whereas any tandem mass spectrometer (LC MS/MS Liquid Chromatography Tandem Mass Spectrometry\, nanoESI MS/MS nanoElectrospray Ionisation tandem mass spectrometry\, FTMS Fourier Transform mass spectrometry) provide such information. A second approach consists of the direct mass measurement of the ionized chemical group dissociated from the residue within a tandem mass spectrometer. Both approaches need a prior enrichment of the modified peptide population in the samples with IMAC (Immobilized Metal Affinity Chromatography)or specific anti-modification antibodies." [PMID:11395414, PMID for application instance:11875433]
 is_a: MI:0003 ! feature detection: feature detection method
 
 [Term]
 id: MI:0069
-name: ms of complexes: mass spectrometry studies of complexes
+name: mass spectrometry studies of complexes
+exact_synonym: "ms of complexes" []
 def: "Mass spectrometric approaches to the study of protein in complexes permits the identification of subunit stoichiometry and transient associations. By preserving complexes intact in the mass spectrometer\, mass measurement can be used for monitoring changes in different experimental conditions\, or to investigate how variations of collision energy affect their dissociation. Complexes can be transferred into the gas phase by a nanoflow ESI (Electrospray Ionisation) ionisation device. This is the method of choice for the investigation of the higher-order structure of biomolecules because it allows direct analysis of dilute aqueous solutions and the desolvation process is efficient and closer to the native-like solution environment. Mass measurements of intact macromolecular complexes is largely the domain of time of-flight (TOF) MS. This is mostly due to the high sensitivity and speed of TOF analysis\, as well as the virtually unlimited m/z range. Quadrupole TOF (Q-TOF) type mass spectrometers combine a quadrupole mass filter with an orthogonal TOF analyser. These spectrometers provide supplementary structural information for ions isolated in the quadrupole and analysed in the TOF. This allows complexes well in excess of 60 kDa to be dissociated and consequently their subunit composition can be determined." [PMID:12504676, PMID for application instance:12057199]
 is_a: MI:0013 ! biophysical
 
@@ -488,19 +530,22 @@ is_a: MI:0003 ! feature detection: feature detection method
 
 [Term]
 id: MI:0075
-name: myc tag coip : myc tag coimmunoprecipitation
+name: myc tag coimmunoprecipitation
+exact_synonym: "myc tag coip " []
 def: "The protein of interest is expressed as a fusion to the peptide EUKLISEED (a fragment of the Myc oncogene protein) for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem.\nOBSOLETE redundant term. Map to Experimental form\: \"myc-tagged\" (MI\:0522) and Interaction detection method\: \"anti tag coimmunoprecipitation\"  (MI\:0007)." [PMID:14755292]
 is_obsolete: true
 
 [Term]
 id: MI:0076
-name: interface predictor: neural network on interface properties
+name: neural network on interface properties
+exact_synonym: "interface predictor" []
 def: "Neural networks are trained on the properties of residues belonging to a cluster of residues that are neighbours in space on protein surface. The predictor permits the inference of the residues that are likely to be on an interaction interface." [PMID:11455607, PMID:11874449]
 is_a: MI:0577 ! feature prediction from structure
 
 [Term]
 id: MI:0077
-name: nmr: nuclear magnetic resonance
+name: nuclear magnetic resonance
+exact_synonym: "nmr" []
 def: "NMR requires a small volume of concentrated protein solution that is placed in a strong magnetic field. Certain atomic nuclei\, and in particular hydrogen\, have a magnetic moment or spin; that is\, they have an intrinsic magnetisation\, like a bar magnet. The spin aligns along the strong magnetic field\, but can be changed to a misaligned excited state in response to applied radio frequency (RF) pulses of electromagnetic radiation. When the excited hydrogen nuclei relax to their aligned state\, they emit RF radiation\, which can be measured and displayed as a spectrum. The nature of the emitted radiation depends on the environment of each hydrogen nucleus\, and if one nucleus is excited\, it will influence the absorption and emission of radiation by other nuclei that lie close to it. It is consequently possible\, by an ingenious elaboration of the basic NMR technique known as two-dimensional NMR\, to distinguish the signals from hydrogen nuclei in different amino acid residues and to identify and measure the small shifts in these signals that occur when these hydrogen nuclei lie close enough to interact\: the size of such a shift reveals the distance between the interacting pair of hydrogen atoms. In this way NMR can give information about the distances between the parts of the protein molecule. NMR provides information about interacting atoms thereby permitting to obtain information about protein structure and protein-protein interaction. " [PMID:12120505, PMID for application instance:12062432]
 synonym: "NMR" []
 is_a: MI:0003 ! feature detection: feature detection method
@@ -508,20 +553,23 @@ is_a: MI:0013 ! biophysical
 
 [Term]
 id: MI:0078
-name: nucleotide sequence: nucleotide sequence identification
+name: nucleotide sequence identification
+exact_synonym: "nucleotide sequence" []
 def: "Identification of a nucleotide sequence. Depending on the experimental design\, nucleotide sequence can be determined before the interaction detection while building a collection of clones or after the selection of\nrandomly generated clones. " [PMID:14755292]
 synonym: "sequence cloning" []
 is_a: MI:0002 ! participant identif: participant identification method
 
 [Term]
 id: MI:0079
-name: other biochemic tech: other biochemical technologies
+name: other biochemical technologies
+exact_synonym: "other biochemic tech" []
 def: "Experimental methods that could not be assigned to the other large group of technologies.\nOBSOLETE use \"biochemical\" (MI\:0401) instead." [PMID:14755292]
 is_obsolete: true
 
 [Term]
 id: MI:0080
-name: partial dna sequence: partial dna sequence identification by hybridization
+name: partial dna sequence identification by hybridization
+exact_synonym: "partial dna sequence" []
 def: "Genes are recognised by hybridization of a probe with a fragment of the gene sequence. " [PMID:14755292]
 is_a: MI:0078 ! nucleotide sequence: nucleotide sequence identification
 
@@ -533,7 +581,8 @@ is_a: MI:0008 ! array technologies
 
 [Term]
 id: MI:0082
-name: fingerprinting: peptide massfingerprinting
+name: peptide massfingerprinting
+exact_synonym: "fingerprinting" []
 def: "This approach leads to protein identification by matching peptide masses\, as measured by mass spectrometry\, to the ones calculated from in silico fragmentation of a protein sequence database. A peptide mixture from a tryptic digest is analysed by MALDI-MS (Matrix-assisted laser desorption ionization mass spectrometry). The list of peptide masses obtained by MALDI MS is automatically compared to the calculated masses of the predicted peptide fragments for each entry in the database. High mass accuracy is very important in order to obtain a statistically significant and unambiguous match This method is best applied to completely sequenced genomes and well characterised proteomes. However\, depending on the data quality\, proteins that are highly homologous to already characterised proteins (greater than 80 to 90% sequence identity) can also be identified. The retrieved sequence are evaluated by mass accuracy of the peptides\, matching of additional peptide masses in the MALDI spectrum after accounting for common modifications such as oxidation\, acrylamidation of cysteine and missed cleavages and the use of secondary information (apparent isoelectric point and molecular weight). If any ambiguity about the identification by MALDI-MS still exists\, the results must verified by an other identification method. Peptide mass fingerprint is generally carried out with a MALDI-TOF (Matrix-assisted laser desorption ionization time-of-flight ) instrument but can also be achieved ESI-TOF (Electrospray Ionisation time-of-flight) or LC-MS (Liquid Chromatography-Mass Spectrometry) mass spectrometer." [PMID:10967324, PMID:11752590, PMID for application instance:11805826]
 is_a: MI:0427 ! mass spectrometry
 is_a: MI:0433 ! partial id prot seq: partial identification of protein sequence
@@ -564,7 +613,8 @@ is_a: MI:0113 ! western blot
 
 [Term]
 id: MI:0087
-name: predictive tm: predictive text mining
+name: predictive text mining
+exact_synonym: "predictive tm" []
 def: "Methods based on natural language processing to detect possible interactions between proteins (direct physical interactions or indirect genetic interactions). This includes the detection of non ambiguous protein or gene names and analysis of the relation expressed in a sentence among them." [PMID:11791231]
 is_a: MI:0110 ! text mining
 
@@ -582,7 +632,8 @@ is_a: MI:0008 ! array technologies
 
 [Term]
 id: MI:0090
-name: complementation: protein complementation assay
+name: protein complementation assay
+exact_synonym: "complementation" []
 def: "The function of numerous proteins or ribonucleic particles (enzymes\, transcription factors\, etc...) can be rationally dissected into two fragments that fold autonomously but cannot complement to reconstitute the complex function\, unless they are located in close proximity. In a two hybrid experiment\, restoration of the activity by complementation of the two fragments when expressed as fusion with two polypeptides is taken as an evidence that the two polypeptides interact together." [PMID:11495741]
 synonym: "PCA" []
 synonym: "protein complementation assay" []
@@ -590,21 +641,24 @@ is_a: MI:0045 ! experimental
 
 [Term]
 id: MI:0091
-name: chromatography: chromatography technologies
+name: chromatography technologies
+exact_synonym: "chromatography" []
 def: "Used to separate and/or analyse complex mixtures. The components to be separated are distributed between two phases\: a stationary phase (bed) and a mobile phase which percolates through the stationary bed. The nature of the two phases determines the separation criteria exploited by the column  such as affinity\, ionic charges\, size or hydrophobicity of the molecules under analysis. Each type of column can be implemented with the mobile phase  under atmospheric or high pressure condition. In this later case columns are designated as High Pressure Liquid Chromatography (HPLC)." [PMID:14755292]
 synonym: "column chromatography" []
 is_a: MI:0400 ! affinity techniques: affinity technologies
 
 [Term]
 id: MI:0092
-name: pisa: protein in situ array
+name: protein in situ array
+exact_synonym: "pisa" []
 def: "Protein In Situ Array is a method by which protein arrays are rapidly generated in one step directly from DNA\, by cell-free protein expression and simultaneous in situ immobilisation at a surface. Individual genes or fragments are produce by PCR or RT-PCR depending on the source of genetic material using properly designed primers. The PISA is generated by cell-free protein synthesis using coupled transcription and translation to produce a double HexaHis-tagged protein\, the reaction being carried out on a surface to which the protein adheres as soon as it is synthesised. " [PMID:11470888]
 synonym: "PISA" []
 is_a: MI:0008 ! array technologies
 
 [Term]
 id: MI:0093
-name: protein sequence: protein sequence identification
+name: protein sequence identification
+exact_synonym: "protein sequence" []
 def: "Single amino acid identification along a protein sequence. " [PMID:14755292]
 is_a: MI:0002 ! participant identif: participant identification method
 
@@ -616,7 +670,8 @@ is_a: MI:0003 ! feature detection: feature detection method
 
 [Term]
 id: MI:0095
-name: seldi chip: proteinchip(r) on a surface-enhanced laser desorption/ionization
+name: proteinchip(r) on a surface-enhanced laser desorption/ionization
+exact_synonym: "seldi chip" []
 def: "ProteinChip(r) Array technology is a surface-enhanced laser desorption/ionization (SELDI) approach (Ciphergen Biosystems Inc. Fremont\, CA\, USA) for sample fractionation accomplished by retentate chromatography. Retentate chromatography is performed on ProteinChip Arrays with varying chromatographic properties (e.g. anion exchange\, cation exchange\, metal affinity and reverse phase). By utilising arrays with differing surface chemistries in parallel and in series\, a complex mixture of proteins\, as from cells or body fluids\, can be resolved into subsets of proteins with common properties. Specific analytes can also be examined by using preactivated arrays to which a bait molecule (such as an antibody or biotinylated DNA) is immobilized and a solution containing the binding partner(s) is presented to the array. This array-based immunoprecipitation or protein-binding experiment has been used with good success to study DNA-binding proteins\, receptor-ligand interactions\, and protein complexes. Any ligand retained on a SELDI chip can directly be identified by mass spectrometry." [PMID:11827829]
 synonym: "SELDI ProteinChip" []
 is_a: MI:0008 ! array technologies
@@ -629,7 +684,8 @@ is_a: MI:0004 ! affinity chrom: affinity chromatography technologies
 
 [Term]
 id: MI:0097
-name: reverse rrs: reverse ras recruitment system
+name: reverse ras recruitment system
+exact_synonym: "reverse rrs" []
 def: "In this complementation approach the bait can be any membrane protein (for example a receptor or a channel protein)\, the prey is cloned as a fusion protein of any cDNA from a library and the coding sequence of cytoplasmic RAS (cdc25 in yeast). If the bait and the prey interact\, RAS is recruited close to the membrane and can activate cell growth. This procedure must take place in cells having a mutated RAS (Cdc25-2 yeast strain having a temperature sensitive mutation of RAS) to avoid constitutive growth activation." [PMID:11160938]
 synonym: "reverse RRS" []
 is_a: MI:0228 ! cytoplasmic compl: cytoplasmic complementation assay
@@ -642,7 +698,8 @@ is_a: MI:0034 ! display technologies
 
 [Term]
 id: MI:0099
-name: spa: scintillation proximity assay
+name: scintillation proximity assay
+exact_synonym: "spa" []
 def: "SPA relies upon the fact that a beta particle emitted from a radioisotope decay can excite a fluorophore only when it is at a very short distance in water solution (few micrometers). The ligand is labelled with a radioactive atom and its potential partner is fixed to fluorophore containing beads\, the emitted fluorescence proving their interaction can be measured in a scintillation counter. The scintillator measures only the amount of bound radiolabelled ligand. Competition experiment with cold competitor can be done to estimate the binding affinities (50% inhibitory concentration \[IC50\]\, cold ligand versus labelled ligand). Loss of signal can also be used to measure substrate cleavage by an enzyme\, and labelled antibodies used to titrate the degree of modified residue present." [PMID:3866247]
 synonym: "RIA Radio Immuno Assay" []
 synonym: "SPA" []
@@ -650,20 +707,23 @@ is_a: MI:0013 ! biophysical
 
 [Term]
 id: MI:0100
-name: sequence phylogeny: sequence based phylogenetic profile
+name: sequence based phylogenetic profile
+exact_synonym: "sequence phylogeny" []
 def: "Multiple alignments of orthologous sequences in the same species and their corresponding phylogenetic trees are built. Every phylogenetic tree is computed as a matrix of distances between all possible protein pairs. The covariation of the distance matrices reveals interacting protein pairs." [PMID:11707606]
 is_a: MI:0058 ! genome prediction: genome based prediction
 is_a: MI:0101 ! predict from sequenc: sequence based prediction
 
 [Term]
 id: MI:0101
-name: predict from sequenc: sequence based prediction
+name: sequence based prediction
+exact_synonym: "predict from sequenc" []
 def: "Computational methods based on evolutionary hypothesis\, used as criteria to browse sequences and predict interacting pairs" [PMID:14755292]
 is_a: MI:0063 ! prediction
 
 [Term]
 id: MI:0102
-name: sequence tag: sequence tag identification
+name: sequence tag identification
+exact_synonym: "sequence tag" []
 def: "This approach leads to protein identification by combining mass measurement and short amino acid sequence information obtained by tandem mass spectrometry. This information is then used to automatically find the best match in a sequence database. A mixture of peptides derived from a protease digestion is analysed by nanoelectrospray LC-MS/MS (Liquid Chromatography Tandem Mass Spectrometer or nanoESI MS/MS) mass spectrometry. Electrospray mass spectrometry cannot be applied to dilute samples and is affected by high salt. As a consequence peptides\, normally extracted from acrylamide gels by in situ proteolysis\, are desalted and concentrated on a microcolumn followed by elution into a capillary used for nanoelectrospray tandem mass spectrometry. A first mass spectrum (\"Normal mass spectrum\" or \"Q1 mass spectrum\") gives information about the masses of all the peptides. Peptides observed in the normal mass spectrum are isolated in turn and dissociated into fragments by collision with gas molecules within the mass spectrometer. Some of the fragments obtained from a peptide constitute a nested set\, differing by one amino acid\, and the mass difference between them allows assignment of a partial sequence. The masses of the fragments define the position of the partial sequence in the peptide. Together with the cleavage specificity of the protease used to cleave the protein\, and mass information such sequence tag provides much higher search specificity to match the a database entry. The procedure is repeated with several peptides from the digest\, resulting in multiple identifications of the same protein or identification of several proteins from the peptide mixture. Unknown proteins can easily be identified by using the high specificity of the peptide sequence tag for searches in most sequence databases including EST or genome databases." [PMID:10967324, PMID:11752590, PMID for application instance:11805837]
 is_a: MI:0427 ! mass spectrometry
 is_a: MI:0433 ! partial id prot seq: partial identification of protein sequence
@@ -676,13 +736,15 @@ is_a: MI:0080 ! partial dna sequence: partial dna sequence identification by hyb
 
 [Term]
 id: MI:0104
-name: sls: static light scattering
+name: static light scattering
+exact_synonym: "sls" []
 def: "In static light scattering\, the average intensity of scattered light at multiple angles is measured. The data yield information on particle molecular weight\, particle size and shape\, and particle-particle interactions." [PMID:9013660]
 is_a: MI:0067 ! light scattering
 
 [Term]
 id: MI:0105
-name: predict from struct: structure based prediction
+name: structure based prediction
+exact_synonym: "predict from struct" []
 def: "Methods based on 3D structure information." [PMID:14755292]
 is_a: MI:0063 ! prediction
 
@@ -694,7 +756,8 @@ is_a: MI:0577 ! feature prediction from structure
 
 [Term]
 id: MI:0107
-name: spr: surface plasmon resonance
+name: surface plasmon resonance
+exact_synonym: "spr" []
 def: "This method measures formation of complex by monitoring changes in the resonance angle of light impinging on a gold surface as a result of changes in the refractive index of the surface. A ligand of interest (peptide or protein) is immobilized on a dextran polymer\, and a solution of interacting protein is passed over it through a cell\, with a gold wall coated with this polymer. Macromolecules that interact with the immobilized ligand are retained on the polymer surface\, and alter the resonance angle of impinging light as a result of the change in refractive index brought about by the increased protein mass retained on the polymer surface. Since all proteins have the same refractive index and since there is a linear correlation between resonance angle shift and protein concentration near the surface\, this allows one to measure changes in protein concentration at the surface as a consequence of protein interaction. Furthermore\, this can be done in real time\, allowing direct measurement of both the on rate and the off rate of complex formation. " [PMID:12120258, PMID:11896282]
 synonym: "BIAcore(r)" []
 synonym: "Optical biosensor" []
@@ -702,14 +765,16 @@ is_a: MI:0013 ! biophysical
 
 [Term]
 id: MI:0108
-name: t7 phage: t7 phage display
+name: t7 phage display
+exact_synonym: "t7 phage" []
 def: "T7 is a double stranded DNA bacteriophage with a thin-walled icosahedral capsid\, ~55 nm in diameter\, which is decorated by 415 copies of the capsid protein\, the product of gene 10. gp10 can tolerate insertions at the carboxyterminus without loosing its ability to be inserted into functional phage capsids. Both low density and high density display (albeit only with short peptides) can be achieved." [PMID:14755292]
 comment: reference not index in medline \: Rosenberg\, A.\, Griffin\, K.\, Studier\, W.S.\, McCormick\, M.\, Berg\, J.\, Novy\, R.\, Mierendorf\, R. inNovations\, 1996\, 6\, 1.
 is_a: MI:0084 ! phage display
 
 [Term]
 id: MI:0109
-name: tap tag coip: tap tag coimmunoprecipitation
+name: tap tag coimmunoprecipitation
+exact_synonym: "tap tag coip" []
 def: "The TAP method involves the fusion of the TAP tag (encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A) to the target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This two steps purification steps ensures a highly selective complex purification of the \"Tapped\" protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag). \nOBSOLETE redundant term. Map to Experimental form\: \"tap-tagged\" (MI\:0524) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:10504710]
 is_obsolete: true
 
@@ -721,13 +786,15 @@ is_a: MI:0046 ! experimental info: experimental knowledge based
 
 [Term]
 id: MI:0111
-name: dhfr reconstruction: dihydrofolate reductase reconstruction
+name: dihydrofolate reductase reconstruction
+exact_synonym: "dhfr reconstruction" []
 def: "The gene for DHFR is rationally dissected into two fragments called F\[1\,2\] and F\[3\]. Two proteins or protein domains that are thought to bind to each other can then be fused to either of the two DHFR fragments. Reconstitution of enzyme activity can be monitored in vivo by cell survival in DHFR-negative cells grown in the absence of nucleotides. A fluorescence assay can also be carried out taking advantage of fMTX  binding to reconstituted DHFR. The basis of this assay is that complementary fragments of DHFR\, when expressed and reassembled in cells\, will bind with high affinity (Kd 5 540 pM) to fMTX in a 1\:1 complex. fMTX is retained in cells by this complex\, whereas the unbound fMTX is actively and rapidly transported out of the cells. Survival depends only on the number of molecules of DHFR reassembled. " [PMID:10318894]
 is_a: MI:0228 ! cytoplasmic compl: cytoplasmic complementation assay
 
 [Term]
 id: MI:0112
-name: ub reconstruction: ubiquitin reconstruction
+name: ubiquitin reconstruction
+exact_synonym: "ub reconstruction" []
 def: "In this method the two proteins\, whose interaction is under investigation\, (in this case mostly membrane proteins) are fused to an terminal fragment (Nub) and to a C-terminal fragment of ubiquitin (Cub). The two fragments do not associate to form a functional ubiquitin unless the two fused membrane proteins form a complex. The association is monitored by an ingenious trick. The C-term fragment of ubiquitin is expressed as a fusion to a transcription factor that being linked to a membrane protein cannot perform its function unless it is released form the ubiquitin fusion by a specific protease. This achieved through the activity of UBP (an ubiquitin specific protease) that cleaves off the reporter protein only when a functional ubiquitin is reconstituted." [PMID:9560251]
 is_a: MI:0228 ! cytoplasmic compl: cytoplasmic complementation assay
 
@@ -741,7 +808,8 @@ is_a: MI:0421 ! antibody detection: identification by antibody
 
 [Term]
 id: MI:0114
-name: x-ray: x-ray crystallography
+name: x-ray crystallography
+exact_synonym: "x-ray" []
 def: "X-rays have a wavelength\, typically around 0.1 nm (the diameter of a hydrogen atom). If a narrow parallel beam of X-rays is directed at a sample of a pure protein\, most of the X-rays will pass straight through it. A small fraction\, however\, will be scattered by the atoms in the sample. If the sample is a well-ordered crystal\, the scattered waves will reinforce one another at certain points and will appear as diffraction spots when the X-rays are recorded by a suitable detector. The position and intensity of each spot in the X-ray diffraction pattern contain information about the position and nature of the atoms in the crystal. The three-dimensional structure of a large molecule can be deduced from the electron-density map of its crystal. In recent years X-ray diffraction analysis has become increasingly automated\, and now the slowest step is likely to be the production of suitable protein crystals. This requires high concentration of very pure protein and empirical searching for the proper crystallisation conditions." [PMID:14755292]
 synonym: "X-ray" []
 is_a: MI:0003 ! feature detection: feature detection method
@@ -774,14 +842,16 @@ is_a: MI:0252 ! biological feature
 
 [Term]
 id: MI:0119
-name: mutation decreasing: mutation decreasing interaction
+name: mutation decreasing interaction
+exact_synonym: "mutation decreasing" []
 def: "Residue of a protein whose identity mutation or deletion decreases significantly interaction strength." [PMID:14755292]
 synonym: "hotspot" []
 is_a: MI:0118 ! mutation
 
 [Term]
 id: MI:0120
-name: ptm: post translation modification
+name: post translation modification
+exact_synonym: "ptm" []
 def: "Residue covalent modifications occurring in the specific protein form involved in an interaction " [PMID:14755292]
 is_a: MI:0252 ! biological feature
 
@@ -793,7 +863,8 @@ is_a: MI:0120 ! ptm: post translation modification
 
 [Term]
 id: MI:0122
-name: acetylalanine: n-acetyl-alanine
+name: n-acetyl-alanine
+exact_synonym: "acetylalanine" []
 def: "residue modification" [PMID:11125103, RESID:AA0041]
 synonym: "(S)-2-(acetylamino)propanoic acid" []
 synonym: "AAC" []
@@ -804,7 +875,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0123
-name: acetylarginine: n2-acetyl-arginine
+name: n2-acetyl-arginine
+exact_synonym: "acetylarginine" []
 def: "residue modification" [PMID:11125103, RESID:AA0354]
 synonym: "N2-acetyl-L-arginine" []
 synonym: "RAC" []
@@ -815,7 +887,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0124
-name: acetylasparagine: n-acetyl-asparagine
+name: n-acetyl-asparagine
+exact_synonym: "acetylasparagine" []
 def: "residue modification" [PMID:11125103]
 synonym: "N-acetyl-L-asparagine" []
 synonym: "NAC" []
@@ -824,7 +897,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0125
-name: acetylaspartate: n-acetyl-aspartic acid
+name: n-acetyl-aspartic acid
+exact_synonym: "acetylaspartate" []
 def: "residue modification" [PMID:11125103, RESID:AA0042]
 synonym: "(S)-2-(acetylamino)butanedioic acid" []
 synonym: "DAC" []
@@ -835,7 +909,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0126
-name: acetylcysteine: n-acetyl-cysteine
+name: n-acetyl-cysteine
+exact_synonym: "acetylcysteine" []
 def: "residue modification" [PMID:11125103, RESID:AA0043]
 synonym: "(R)-2-acetylamino-3-sulfanylpropanoic acid" []
 synonym: "2-acetylamino-3-mercaptopropanoic acid" []
@@ -847,7 +922,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0127
-name: acetylglutamine: n-acetyl-glutamine
+name: n-acetyl-glutamine
+exact_synonym: "acetylglutamine" []
 def: "residue modification" [PMID:11125103, RESID:AA0045]
 synonym: "(S)-2-acetylamino-5-pentanediamic acid" []
 synonym: "N-acetyl-L-glutamine" []
@@ -858,7 +934,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0128
-name: acetylglutamate: n-acetyl-glutamic acid
+name: n-acetyl-glutamic acid
+exact_synonym: "acetylglutamate" []
 def: "residue modification" [PMID:11125103, RESID:AA0044]
 synonym: "(S)-2-(acetylamino)pentanedioic acid" []
 synonym: "EAC" []
@@ -869,7 +946,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0129
-name: acetylglycine: n-acetylglycine
+name: n-acetylglycine
+exact_synonym: "acetylglycine" []
 def: "residue modification" [PMID:11125103, RESID:AA0046]
 synonym: "2-(acetylamino)ethanoic acid" []
 synonym: "GAC" []
@@ -880,7 +958,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0130
-name: acetylhistidine: n-acetyl-histidine
+name: n-acetyl-histidine
+exact_synonym: "acetylhistidine" []
 def: "residue modification" [PMID:11125103]
 synonym: "HAC" []
 synonym: "N-acetyl-L-histidine" []
@@ -889,7 +968,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0131
-name: acetylisoleucine: n-acetyl-isoleucine
+name: n-acetyl-isoleucine
+exact_synonym: "acetylisoleucine" []
 def: "residue modification" [PMID:11125103, RESID:AA0047]
 synonym: "(2S\,3S)-2-acetylamino-3-methylpentanoic acid" []
 synonym: "IAC" []
@@ -900,7 +980,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0132
-name: acetylleucine: n-acetyl-leucine
+name: n-acetyl-leucine
+exact_synonym: "acetylleucine" []
 def: "residue modification" [PMID:11125103]
 synonym: "LAC" []
 synonym: "N-acetyl-L-leucine" []
@@ -909,7 +990,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0133
-name: n2-acetyllysine: n2-acetyl-lysine
+name: n2-acetyl-lysine
+exact_synonym: "n2-acetyllysine" []
 def: "residue modification" [PMID:11125103, RESID:AA0048]
 synonym: "(S)-2-acetylamino-6-aminohexanoic acid" []
 synonym: "KAC" []
@@ -920,7 +1002,8 @@ is_a: MI:0526 ! acetyllysine: n-acetyl-lysine
 
 [Term]
 id: MI:0134
-name: n6-acetyllysine: n6-acetyl-lysine
+name: n6-acetyl-lysine
+exact_synonym: "n6-acetyllysine" []
 def: "residue modification" [PMID:11125103, RESID:AA0055]
 synonym: "(S)-2-amino-6-(acetylamino)hexanoic acid" []
 synonym: "KA6" []
@@ -932,7 +1015,8 @@ is_a: MI:0526 ! acetyllysine: n-acetyl-lysine
 
 [Term]
 id: MI:0135
-name: acetylmethionine: n-acetyl-methionine
+name: n-acetyl-methionine
+exact_synonym: "acetylmethionine" []
 def: "residue modification" [PMID:11125103, RESID:AA0049]
 synonym: "(S)-2-acetylamino-4-(methylsulfanyl)butanoic acid" []
 synonym: "2-acetylamino-4-(methylthio)butanoic acid" []
@@ -945,7 +1029,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0136
-name: acetylphenylalanine: n-acetyl-phenylalanine
+name: n-acetyl-phenylalanine
+exact_synonym: "acetylphenylalanine" []
 def: "residue modification" [PMID:11125103]
 synonym: "FAC" []
 synonym: "N-acetyl-L-phenylalanine" []
@@ -954,7 +1039,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0137
-name: acetylproline: n-acetyl-proline
+name: n-acetyl-proline
+exact_synonym: "acetylproline" []
 def: "residue modification" [PMID:11125103, RESID:AA0050]
 synonym: "(2S)-1-acetyl-2-pyrrolidinecarboxylic acid" []
 synonym: "N-acetyl-L-proline" []
@@ -965,7 +1051,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0138
-name: acetylserine: n-acetyl-serine
+name: n-acetyl-serine
+exact_synonym: "acetylserine" []
 def: "residue modification" [PMID:11125103, RESID:AA0051]
 synonym: "(S)-2-acetylamino-3-hydroxypropanoic acid" []
 synonym: "N-acetyl-L-serine" []
@@ -976,7 +1063,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0139
-name: acetylthreonine: n-acetyl-threonine
+name: n-acetyl-threonine
+exact_synonym: "acetylthreonine" []
 def: "residue modification" [PMID:11125103, RESID:AA0052]
 synonym: "(2S\,3R)-2-acetylamino-3-hydroxybutanoic acid" []
 synonym: "N-acetyl-L-threonine" []
@@ -987,7 +1075,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0140
-name: acetyltryptophan: n-acetyl-tryptophan
+name: n-acetyl-tryptophan
+exact_synonym: "acetyltryptophan" []
 def: "residue modification" [PMID:11125103]
 synonym: "N-acetyl-L-tryptophan" []
 synonym: "WAC" []
@@ -996,7 +1085,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0141
-name: acetyltyrosine: n-acetyl-tyrosine
+name: n-acetyl-tyrosine
+exact_synonym: "acetyltyrosine" []
 def: "residue modification" [PMID:11125103, RESID:AA0053]
 synonym: "(S)-2-acetylamino-3-(4-hydoxyphenyl)propanoic acid" []
 synonym: "N-acetyl-L-tyrosine" []
@@ -1007,7 +1097,8 @@ is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0142
-name: acetylvaline: n-acetyl-valine
+name: n-acetyl-valine
+exact_synonym: "acetylvaline" []
 def: "residue modification" [PMID:11125103, RESID:AA0054]
 synonym: "(S)-2-acetylamino-3-methylbutanoic acid" []
 synonym: "N-acetyl-L-valine" []
@@ -1024,7 +1115,8 @@ is_a: MI:0120 ! ptm: post translation modification
 
 [Term]
 id: MI:0144
-name: alanineamide: alanine amide
+name: alanine amide
+exact_synonym: "alanineamide" []
 def: "residue modification" [PMID:14755292]
 synonym: "(S)-2-aminopropanamide" []
 synonym: "AAM" []
@@ -1035,7 +1127,8 @@ is_a: MI:0143 ! amidated residue
 
 [Term]
 id: MI:0145
-name: arginineamide: arginine amide
+name: arginine amide
+exact_synonym: "arginineamide" []
 def: "residue modification" [PMID:11125103, RESID:AA0082]
 synonym: "(S)-2-amino-5-guanidinopentanamide" []
 synonym: "L-arginine amide" []
@@ -1052,7 +1145,8 @@ is_a: MI:0120 ! ptm: post translation modification
 
 [Term]
 id: MI:0147
-name: formylmethionine: n-formyl-methionine
+name: n-formyl-methionine
+exact_synonym: "formylmethionine" []
 def: "residue modification" [PMID:11125103, RESID:AA0021]
 synonym: "(S)-2-formylamino-4-(methylsulfanyl)butanoic acid" []
 synonym: "2-formylamino-4-(methylthio)butanoic acid" []
@@ -1069,7 +1163,8 @@ is_a: MI:0120 ! ptm: post translation modification
 
 [Term]
 id: MI:0149
-name: 4hydroxyproline: 4-hydroxy-proline
+name: 4-hydroxy-proline
+exact_synonym: "4hydroxyproline" []
 def: "residue modification" [PMID:11125103, RESID:AA0030]
 synonym: "4-hydroxy-L-proline" []
 synonym: "HYP" []
@@ -1084,7 +1179,8 @@ is_a: MI:0120 ! ptm: post translation modification
 
 [Term]
 id: MI:0151
-name: farnesylcysteine: s-farnesyl-cysteine
+name: s-farnesyl-cysteine
+exact_synonym: "farnesylcysteine" []
 def: "residue modification" [PMID:11125103, RESID:AA0102]
 synonym: "(R\,E\,E)-2-amino-3-(3\,7\,11-trimethyl-2\,6\,10-dodecatrienylsulfanyl)propanoic acid" []
 synonym: "2-amino-3-(3\,7\,11-trimethyl-2\,6\,10-dodecatrienylthio)propanoic acid" []
@@ -1095,7 +1191,8 @@ is_a: MI:0547 ! prenylcysteine: s-prenyl-cysteine
 
 [Term]
 id: MI:0152
-name: geranylgeranylcys: s-geranylgeranyl-cysteine
+name: s-geranylgeranyl-cysteine
+exact_synonym: "geranylgeranylcys" []
 def: "residue modification" [PMID:11125103, RESID:AA0104]
 synonym: "(R\,E\,E\,E)-2-amino-3-(3\,7\,11\,15-tetramethyl-2\,6\,10\,14-hexadecatetraenylsulfanyl)propanoic acid" []
 synonym: "2-amino-3-(3\,7\,11\,15-tetramethyl-2\,6\,10\,14-hexadecatetraenylthio)propanoic acid" []
@@ -1106,7 +1203,8 @@ is_a: MI:0547 ! prenylcysteine: s-prenyl-cysteine
 
 [Term]
 id: MI:0153
-name: n-palmitoylcysteine: n-palmitoyl-cysteine
+name: n-palmitoyl-cysteine
+exact_synonym: "n-palmitoylcysteine" []
 def: "residue modification" [PMID:11125103, RESID:AA0060]
 synonym: "(R)-2-hexadecanoylamino-3-sulfanylpropanoic acid" []
 synonym: "2-hexadecanoylamino-3-mercaptopropanoic acid" []
@@ -1118,7 +1216,8 @@ is_a: MI:0561 ! palmitoylated aa: palmitoylated residue
 
 [Term]
 id: MI:0154
-name: s-palmitoylcysteine: s-palmitoyl-cysteine
+name: s-palmitoyl-cysteine
+exact_synonym: "s-palmitoylcysteine" []
 def: "residue modification" [PMID:11125103, RESID:AA0106]
 synonym: "(R)-2-amino-3-(hexadecanoylsulfanyl)propanoic acid" []
 synonym: "2-amino-3-(hexadecanoylthio)propanoic acid" []
@@ -1131,7 +1230,8 @@ is_a: MI:0561 ! palmitoylated aa: palmitoylated residue
 
 [Term]
 id: MI:0155
-name: myristoylglycine: n-myristoyl-glycine
+name: n-myristoyl-glycine
+exact_synonym: "myristoylglycine" []
 def: "residue modification" [PMID:11125103, RESID:AA0059]
 synonym: "GMY" []
 synonym: "N-myristoyl-glycine" []
@@ -1140,7 +1240,8 @@ is_a: MI:0560 ! myristoylated aa: myristoylated residue
 
 [Term]
 id: MI:0156
-name: myristoyllysine: n6-myristoyl-lysine
+name: n6-myristoyl-lysine
+exact_synonym: "myristoyllysine" []
 def: "residue modification" [PMID:11125103, RESID:AA0078]
 synonym: "(S)-2-amino-6-(tetradecanoylamino)hexanoic acid" []
 synonym: "KMY" []
@@ -1159,7 +1260,8 @@ is_a: MI:0120 ! ptm: post translation modification
 
 [Term]
 id: MI:0158
-name: methylalanine: n-methyl-alanine
+name: n-methyl-alanine
+exact_synonym: "methylalanine" []
 def: "residue modification" [PMID:11125103, RESID:AA0061]
 synonym: "(S)-2-methylaminopropanoic acid" []
 synonym: "AMT" []
@@ -1170,7 +1272,8 @@ is_a: MI:0562 ! methylated alanine
 
 [Term]
 id: MI:0159
-name: trimethylalanine: n,n,n-trimethyl-alanine
+name: n,n,n-trimethyl-alanine
+exact_synonym: "trimethylalanine" []
 def: "residue modification" [PMID:11125103, RESID:AA0062]
 synonym: "(S)-1-carboxy-N\,N\,N-trimethylethanaminium" []
 synonym: "(S)-2-(trimethylammonio)propanoic acid" []
@@ -1181,7 +1284,8 @@ is_a: MI:0562 ! methylated alanine
 
 [Term]
 id: MI:0160
-name: dimethylarginine: omega-n,omega-n-dimethyl-arginine
+name: omega-n,omega-n-dimethyl-arginine
+exact_synonym: "dimethylarginine" []
 def: "residue modification" [PMID:11125103, RESID:AA0068]
 synonym: "(S)-2-amino-5-\[((dimethylamino)iminomethyl)amino\]pentanoic acid" []
 synonym: "NG\,NG-dimethylarginine" []
@@ -1193,7 +1297,8 @@ is_a: MI:0563 ! methylated arginine
 
 [Term]
 id: MI:0161
-name: methylthioaspartate: beta-methylthioaspartic acid
+name: beta-methylthioaspartic acid
+exact_synonym: "methylthioaspartate" []
 def: "residue modification" [PMID:11125103, RESID:AA0232]
 synonym: "(2R\,3Xi)-2-amino-3-methylsulfanylbutanedioic acid" []
 synonym: "3-carboxy-S-methyl-cysteine" []
@@ -1206,7 +1311,8 @@ is_a: MI:0157 ! methylated residue
 
 [Term]
 id: MI:0162
-name: methylglutamine: n5-methyl-glutamine
+name: n5-methyl-glutamine
+exact_synonym: "methylglutamine" []
 def: "residue modification" [PMID:11125103, RESID:AA0071]
 synonym: "(S)-2-amino-N5-methylpentanediamic acid" []
 synonym: "N(delta)-methylglutamine" []
@@ -1219,7 +1325,8 @@ is_a: MI:0157 ! methylated residue
 
 [Term]
 id: MI:0163
-name: glutamatemethylester: glutamic acid 5-methyl ester
+name: glutamic acid 5-methyl ester
+exact_synonym: "glutamatemethylester" []
 def: "residue modification" [PMID:11125103, RESID:AA0072]
 synonym: "(S)-2-aminopentanedioic acid 5-methyl ester" []
 synonym: "5-methyl-L-glutamate" []
@@ -1231,7 +1338,8 @@ is_a: MI:0157 ! methylated residue
 
 [Term]
 id: MI:0164
-name: methylhistidine: 3'-methyl-histidine
+name: 3'-methyl-histidine
+exact_synonym: "methylhistidine" []
 def: "residue modification" [PMID:11125103, RESID:AA0073]
 synonym: "(S)-2-amino-3-(3-methyl-3H-imidazol-4-yl)propanoic acid" []
 synonym: "1-methylhistidine \[misnomer\]" []
@@ -1245,7 +1353,8 @@ is_a: MI:0157 ! methylated residue
 
 [Term]
 id: MI:0165
-name: methyllysine: n6-methyl-lysine
+name: n6-methyl-lysine
+exact_synonym: "methyllysine" []
 def: "residue modification" [PMID:11125103]
 synonym: "(S)-2-amino-6-methylaminohexanoic acid" []
 synonym: "MLZ" []
@@ -1257,7 +1366,8 @@ is_a: MI:0548 ! methylatedlysine: methylated-lysine
 
 [Term]
 id: MI:0166
-name: dimethyllysine: n6,n6-dimethyl-lysine
+name: n6,n6-dimethyl-lysine
+exact_synonym: "dimethyllysine" []
 def: "residue modification" [PMID:11125103, RESID:AA0075]
 synonym: "(S)-2-amino-6-dimethylaminohexanoic acid" []
 synonym: "MLY" []
@@ -1270,7 +1380,8 @@ is_a: MI:0548 ! methylatedlysine: methylated-lysine
 
 [Term]
 id: MI:0167
-name: trimethyllysine: n6,n6,n6-trimethyl-lysine
+name: n6,n6,n6-trimethyl-lysine
+exact_synonym: "trimethyllysine" []
 def: "residue modification" [PMID:11125103, RESID:AA0074]
 synonym: "(S)-2-amino-6-(trimethylammonio)hexanoic acid" []
 synonym: "(S)-5-amino-5-carboxy-N\,N\,N-trimethylpentanaminium" []
@@ -1283,7 +1394,8 @@ is_a: MI:0548 ! methylatedlysine: methylated-lysine
 
 [Term]
 id: MI:0168
-name: methylmethionine: n-methyl-methionine
+name: n-methyl-methionine
+exact_synonym: "methylmethionine" []
 def: "residue modification" [PMID:11125103, RESID:AA0064]
 synonym: "(S)-2-methylamino-4-(methylsulfanyl)butanoic acid" []
 synonym: "2-methylamino-4-(methylthio)butanoic acid" []
@@ -1295,7 +1407,8 @@ is_a: MI:0157 ! methylated residue
 
 [Term]
 id: MI:0169
-name: methylphenylalanine: n-methyl-phenylalanine
+name: n-methyl-phenylalanine
+exact_synonym: "methylphenylalanine" []
 def: "residue modification" [PMID:14755292]
 synonym: "(S)-2-methylamino-3-phenylpropanoic acid" []
 synonym: "FMT" []
@@ -1306,13 +1419,15 @@ is_a: MI:0157 ! methylated residue
 
 [Term]
 id: MI:0170
-name: phosphorylated: phosphorylated residue
+name: phosphorylated residue
+exact_synonym: "phosphorylated" []
 def: "residue modification" [PMID:11125103]
 is_a: MI:0120 ! ptm: post translation modification
 
 [Term]
 id: MI:0171
-name: phosphoarginine: omega-n-phospho-arginine
+name: omega-n-phospho-arginine
+exact_synonym: "phosphoarginine" []
 def: "residue modification" [PMID:11125103, RESID:AA0222]
 synonym: "(S)-2-amino-5-\[imino(phosphonoamino)methyl\]aminopentanoic acid" []
 synonym: "N5-\[imino(phosphonoamino)methyl\]-L-ornithine" []
@@ -1324,7 +1439,8 @@ is_a: MI:0170 ! phosphorylated: phosphorylated residue
 
 [Term]
 id: MI:0172
-name: phosphoaspartic acid: aspartic 4-phosphoric anhydride
+name: aspartic 4-phosphoric anhydride
+exact_synonym: "phosphoaspartic acid" []
 def: "residue modification" [PMID:11125103, RESID:AA0033]
 synonym: "(S)-2-aminobutanedioic 4-phosphoric anhydride" []
 synonym: "DPO" []
@@ -1336,7 +1452,8 @@ is_a: MI:0170 ! phosphorylated: phosphorylated residue
 
 [Term]
 id: MI:0173
-name: phosphocysteine: s-phospho-cysteine
+name: s-phospho-cysteine
+exact_synonym: "phosphocysteine" []
 def: "residue modification" [PMID:11125103, RESID:AA0034]
 synonym: "(R)-2-amino-3-(phosphonosulfanyl)propanoic acid" []
 synonym: "CPO" []
@@ -1349,7 +1466,8 @@ is_a: MI:0170 ! phosphorylated: phosphorylated residue
 
 [Term]
 id: MI:0174
-name: 1-phosphohistidine: 1'-phospho-histidine
+name: 1'-phospho-histidine
+exact_synonym: "1-phosphohistidine" []
 def: "residue modification" [PMID:11125103, RESID:AA0035]
 synonym: "(S)-2-amino-3-(1-phosphono-1H-imidazol-4-yl)propanoic acid" []
 synonym: "1'-phospho-L-histidine" []
@@ -1364,7 +1482,8 @@ is_a: MI:0555 ! phosphoshistidine: phospho-histidine
 
 [Term]
 id: MI:0175
-name: 3-phosphohistidine: 3'-phospho-histidine
+name: 3'-phospho-histidine
+exact_synonym: "3-phosphohistidine" []
 def: "residue modification" [PMID:11125103, RESID:AA0036]
 synonym: "(S)-2-amino-3-(3-phosphono-3H-imidazol-4-yl)propanoic acid" []
 synonym: "HPD" []
@@ -1378,7 +1497,8 @@ is_a: MI:0555 ! phosphoshistidine: phospho-histidine
 
 [Term]
 id: MI:0176
-name: phosphoserine: o-phospho-serine
+name: o-phospho-serine
+exact_synonym: "phosphoserine" []
 def: "residue modification" [PMID:11125103, RESID:AA0037]
 synonym: "(S)-2-amino-3-(phosphonooxy)propanoic acid" []
 synonym: "2-amino-3-hydroxypropanoic acid 3-phosphate" []
@@ -1393,7 +1513,8 @@ is_a: MI:0170 ! phosphorylated: phosphorylated residue
 
 [Term]
 id: MI:0177
-name: phosphothreonine: o-phospho-threonine
+name: o-phospho-threonine
+exact_synonym: "phosphothreonine" []
 def: "residue modification" [PMID:11125103, RESID:AA0038]
 synonym: "(2S\,3R)-2-amino-3-phosphonooxybutanoic acid" []
 synonym: "2-amino-3-hydroxybutanoic acid 3-phosphate" []
@@ -1406,7 +1527,8 @@ is_a: MI:0170 ! phosphorylated: phosphorylated residue
 
 [Term]
 id: MI:0178
-name: phosphotyrosine: o4'-phospho-tyrosine
+name: o4'-phospho-tyrosine
+exact_synonym: "phosphotyrosine" []
 def: "residue modification" [PMID:11125103, RESID:AA0039]
 synonym: "(S)-2-amino-3-(4-phosphonooxyphenyl)propanoic acid" []
 synonym: "2-amino-3-(4-hydroxyphenyl)propanoic acid 4'-phosphate" []
@@ -1445,7 +1567,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0182
-name: oxoalanine: 3-oxoalanine
+name: 3-oxoalanine
+exact_synonym: "oxoalanine" []
 def: "residue modification" [PMID:11125103, RESID:AA0185]
 synonym: "(S)-2-amino-3-oxopropanoic acid" []
 synonym: "2-amino-3-oxopropionic acid" []
@@ -1460,7 +1583,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0183
-name: pyroglutamic acid: 2-pyrrolidone-5-carboxylic acid
+name: 2-pyrrolidone-5-carboxylic acid
+exact_synonym: "pyroglutamic acid" []
 def: "residue modification" [PMID:11125103, RESID:AA0031]
 synonym: "(S)-5-oxo-2-pyrrolidinecarboxylic acid" []
 synonym: "2-oxopyrrolidine-5-carboxylic acid" []
@@ -1473,7 +1597,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0184
-name: glycerylpo4etohamine: glutamyl 5-glycerylphosphorylethanolamine
+name: glutamyl 5-glycerylphosphorylethanolamine
+exact_synonym: "glycerylpo4etohamine" []
 def: "residue modification" [PMID:11125103, RESID:AA0170]
 synonym: "(S)-2-amino-5-\[2-(\[(\[2\,3-dihydroxypropyl\]oxy)(hydroxy)phosphoryl\]oxy)ethyl\]amino-5-oxopentanoic acid" []
 synonym: "EGE" []
@@ -1485,7 +1610,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0185
-name: diphthamide: 2'-[3-carboxamido-3-(trimethylammonio)propyl]-histidine
+name: 2'-[3-carboxamido-3-(trimethylammonio)propyl]-histidine
+exact_synonym: "diphthamide" []
 def: "residue modification" [PMID:11125103, RESID:AA0040]
 synonym: "2'-\[3-carboxamido-3-(trimethylammonio)propyl\]-L-histidine" []
 synonym: "2-\[(Xi)-3-carboxamido-3-(trimethylammonio)propyl\]-4-((S)-2-amino-2-carboxyethyl)-1H-imidazole" []
@@ -1500,7 +1626,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0186
-name: biotinyllysine: n6-biotinyl-lysine
+name: n6-biotinyl-lysine
+exact_synonym: "biotinyllysine" []
 def: "residue modification" [PMID:11125103, RESID:AA0117]
 synonym: "(3aS-(3aalpha\,4beta\,6aalpha))-N6-(5-(hexahydro-2-oxo-1H-thieno(3\,4-d)imidazol-4-yl)-1-oxopentyl)-L-lysine" []
 synonym: "(S)-2-amino-6-\[5-((3aS\,4S\,6aR)-hexahydro-2-oxo-1H-thieno\[3\,4-d\]imidazol-4-yl)-1-oxopentyl\]aminohexanoic acid" []
@@ -1515,7 +1642,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0187
-name: hypusine: n6-(4-amino-2-hydroxybutyl)-lysine
+name: n6-(4-amino-2-hydroxybutyl)-lysine
+exact_synonym: "hypusine" []
 def: "residue modification" [PMID:11125103, RESID:AA0116]
 synonym: "(S\,R)-2-amino-6-(4-amino-2-hydroxybutylamino)hexanoic acid" []
 synonym: "KHY" []
@@ -1526,7 +1654,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0188
-name: retinallysine: n6-retinal-lysine
+name: n6-retinal-lysine
+exact_synonym: "retinallysine" []
 def: "residue modification" [PMID:11125103, RESID:AA0120]
 synonym: "(S)-2-amino-6-\[(2E\,4E\,6E\,8E)-3\,7-dimethyl-9-(2\,6\,6-trimethylcyclohex-1-en-1-yl)-2\,4\,6\,8-nonatetraenylidene\]aminohexanoic acid" []
 synonym: "KRT" []
@@ -1560,7 +1689,8 @@ is_obsolete: true
 
 [Term]
 id: MI:0192
-name: acetylation: acetylation reaction
+name: acetylation reaction
+exact_synonym: "acetylation" []
 def: "Reaction\, that can affect K\,C\,A\,D\,E\,Q\,G\,I\,K\,M\,P\,S\,T\,Y\,V residues." [RESID:AA0055, RESID:AA0056, RESID:AA0041, RESID:AA0042, RESID:AA0043, RESID:AA0044, RESID:AA0045, RESID:AA0046, RESID:AA0047, RESID:AA0048, RESID:AA0049, RESID:AA0050, RESID:AA0051, RESID:AA0052, RESID:AA0053, RESID:AA0054]
 xref_analog: GO:0006473 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -1568,7 +1698,8 @@ xref_unknown: GO:0006473 "Gene Ontolgy"
 
 [Term]
 id: MI:0193
-name: amidation: amidation reaction
+name: amidation reaction
+exact_synonym: "amidation" []
 def: "Irreversible reaction that can affect A\,R\,N\,D\,C\,Q\,E\,G\,H\,I\,L\,K\,M\,F\,P\,S\,T\,W\,Y or V residues." [RESID:AA0081, RESID:AA0082, RESID:AA0083, RESID:AA0084, RESID:AA0085, RESID:AA0086, RESID:AA0087, RESID:AA0088, RESID:AA0089, RESID:AA0090, RESID:AA0091, RESID:AA0092, RESID:AA0093, RESID:AA0094, RESID:AA0095, RESID:AA0096, RESID:AA0097, RESID:AA0098, RESID:AA0099, RESID:AA0100]
 xref_analog: GO:0001519 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -1576,7 +1707,8 @@ xref_unknown: GO:0018032 "Gene Ontology"
 
 [Term]
 id: MI:0194
-name: cleavage: cleavage reaction
+name: cleavage reaction
+exact_synonym: "cleavage" []
 def: "Covalent bond breakage in a molecule leading to the formation of smaller molecules." [PMID:14755292]
 is_a: MI:0414 ! enzymatic reaction
 
@@ -1594,7 +1726,8 @@ is_obsolete: true
 
 [Term]
 id: MI:0197
-name: deacetylation: deacetylation reaction
+name: deacetylation reaction
+exact_synonym: "deacetylation" []
 def: "N6-acetyl-L-lysine or S-acetyl-L-cysteine are cleaved and return K or C residues. " [RESID:AA0055, RESID:AA0056]
 xref_analog: GO:0006476 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -1602,44 +1735,51 @@ xref_unknown: GO:0006476 "Gene Ontology"
 
 [Term]
 id: MI:0198
-name: defarnesylation: defarnesylation reaction
+name: defarnesylation reaction
+exact_synonym: "defarnesylation" []
 def: "S-farnesyl-L-cysteined is cleaved and returns a C residue." [RESID:AA0102]
 is_a: MI:0212 ! lipid cleavage
 
 [Term]
 id: MI:0199
-name: deformylation: deformylation reaction
+name: deformylation reaction
+exact_synonym: "deformylation" []
 def: "N6-formyl-L-lysine is cleaved and returns a K residue." [RESID:AA0211]
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0200
-name: degeranylation: degeranylation reaction
+name: degeranylation reaction
+exact_synonym: "degeranylation" []
 def: "S-geranylgeranyl-L-cysteine is cleaved and returns a C residue." [RESID:AA0104]
 is_a: MI:0212 ! lipid cleavage
 
 [Term]
 id: MI:0201
-name: demyristoylation: demyristoylation reaction
+name: demyristoylation reaction
+exact_synonym: "demyristoylation" []
 def: "N6-myristoyl-L-lysine is cleaved and returns a K residue." [RESID:AA0078]
 is_a: MI:0212 ! lipid cleavage
 
 [Term]
 id: MI:0202
-name: depalmitoylation: depalmitoylation reaction
+name: depalmitoylation reaction
+exact_synonym: "depalmitoylation" []
 def: "S-palmitoyl-L-cysteine\, N6-palmitoyl-L-lysine\, O-palmitoyl-L-threonine or O-palmitoyl-L-serine are cleaved and return C\,K\,T or S residues" [RESID:AA0106, RESID:AA0060, RESID:AA0077]
 is_a: MI:0212 ! lipid cleavage
 
 [Term]
 id: MI:0203
-name: dephosphorylation: dephosphorylation reaction
+name: dephosphorylation reaction
+exact_synonym: "dephosphorylation" []
 def: "Phosphoresidues are cleaved and return D\,C\,H\,S\,T\,Y or R residues." [RESID:AA0033, RESID:AA0034, RESID:AA0035, RESID:AA0036, RESID:AA0037, RESID:AA0038, RESID:AA0039, RESID:AA0222]
 xref_analog: GO:0016311 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0204
-name: deubiquitination: deubiquitination reaction
+name: deubiquitination reaction
+exact_synonym: "deubiquitination" []
 def: "Cleavage of the G-K bond and release of ubiquitin or ubiquitin like proteins." [RESID:AA0125, PMID:11583613]
 xref_analog: GO:0016579 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -1652,14 +1792,16 @@ is_obsolete: true
 
 [Term]
 id: MI:0206
-name: farnesylation: farnesylation reaction
+name: farnesylation reaction
+exact_synonym: "farnesylation" []
 def: "Reversible reaction that can affect C residue." [RESID:AA0102]
 xref_analog: GO:0018347 "Gene Ontology"
 is_a: MI:0211 ! lipid addition
 
 [Term]
 id: MI:0207
-name: formylation: formylation reaction
+name: formylation reaction
+exact_synonym: "formylation" []
 def: "Reaction that can affect K or G residues." [RESID:AA0211, RESID:AA0057]
 xref_analog: GO:0018256 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -1673,14 +1815,16 @@ is_a: MI:0190 ! interaction type
 
 [Term]
 id: MI:0209
-name: geranylgeranylation: geranylgeranylation reaction
+name: geranylgeranylation reaction
+exact_synonym: "geranylgeranylation" []
 def: "Reversible reaction that can affect C residue." [RESID:AA0104]
 xref_analog: GO:0018348 "Gene Ontology"
 is_a: MI:0211 ! lipid addition
 
 [Term]
 id: MI:0210
-name: hydroxylation: hydroxylation reaction
+name: hydroxylation reaction
+exact_synonym: "hydroxylation" []
 def: "Irreversible reaction that can affect K\,P\,Y  or R residues." [RESID:AA0028, RESID:AA0029, RESID:AA0030, RESID:AA0146, RESID:AA0215]
 xref_analog: GO:0018126 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -1700,34 +1844,39 @@ is_a: MI:0194 ! cleavage: cleavage reaction
 
 [Term]
 id: MI:0213
-name: methylation: methylation reaction
+name: methylation reaction
+exact_synonym: "methylation" []
 def: "The covalent attachment of a methyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer.\nIrreversible reaction that can affect A\,G\,M\,F\,P\,C\,R\,N\,Q\,E\,H\,or K residues. " [RESID:AA0061, RESID:AA0062, RESID:AA0063, RESID:AA0064, RESID:AA0234, RESID:AA0065, RESID:AA0066, RESID:AA0272, RESID:AA0067, RESID:AA0068, RESID:AA0069, RESID:AA0070, RESID:AA0071, RESID:AA0072, RESID:AA0073, RESID:AA0074, RESID:AA0075, RESID:AA0076]
 xref_analog: GO:0043414 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0214
-name: myristoylation: myristoylation reaction
+name: myristoylation reaction
+exact_synonym: "myristoylation" []
 def: "Reaction that can affect K or G residues." [RESID:AA0078, RESID:AA0059]
 xref_analog: GO:0018319 "Gene Ontology"
 is_a: MI:0211 ! lipid addition
 
 [Term]
 id: MI:0215
-name: non covalent inter: non covalent interaction
+name: non covalent interaction
+exact_synonym: "non covalent inter" []
 def: "Interaction mediated by non-covalent\, weak forces rearrangement. \nOBSOLETE use \"physical interaction\" (MI\:0218) instead." [PMID:14755292]
 is_obsolete: true
 
 [Term]
 id: MI:0216
-name: palmitoylation: palmitoylation reaction
+name: palmitoylation reaction
+exact_synonym: "palmitoylation" []
 def: "Reversible reaction that can affect C\,K\,T or S residues." [RESID:AA0106, RESID:AA0060, RESID:AA0077, RESID:AA0079, RESID:AA0080]
 xref_analog: GO:0018318 "Gene Ontology"
 is_a: MI:0211 ! lipid addition
 
 [Term]
 id: MI:0217
-name: phosphorylation: phosphorylation reaction
+name: phosphorylation reaction
+exact_synonym: "phosphorylation" []
 def: "Reversible reaction that can affect D\,C\,H\,S\,T\,Y\,R residues." [RESID:AA0033, RESID:AA0034, RESID:AA0035, RESID:AA0036, RESID:AA0037, RESID:AA0038, RESID:AA0222, RESID:AA0039]
 xref_analog: GO:0016310 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -1747,7 +1896,8 @@ is_a: MI:0269 ! synthetic phenotype
 
 [Term]
 id: MI:0220
-name: ubiquitination: ubiquitination reaction
+name: ubiquitination reaction
+exact_synonym: "ubiquitination" []
 def: "Reversible reaction that create a covalent bond between a C-terminus G of ubiquitin and a K residue of the target." [RESID:AA0125, PMID:11583613]
 xref_analog: GO:0016567 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -1766,57 +1916,66 @@ is_a: MI:0221 ! expression level
 
 [Term]
 id: MI:0223
-name: under-expressed: under-expressed level
+name: under-expressed level
+exact_synonym: "under-expressed" []
 def: "A molecule is estimated to be expressed at lower levels than in physiological condition" [PMID:14755292]
 is_a: MI:0221 ! expression level
 
 [Term]
 id: MI:0225
-name: chip-chip: chromatin immunoprecipitation array
+name: chromatin immunoprecipitation array
+exact_synonym: "chip-chip" []
 def: "The method combines a modified chromatin immunoprecipitation (ChIP) procedure\, with DNA microarray analysis. Cells are fixed with formaldehyde\, harvested\, and disrupted by sonication. The DNA fragments cross-linked to a protein of interest are enriched by immunoprecipitation with a specific antibody. After reversal of the cross-links\, the enriched DNA is amplified and labeled with a fluorescent dye (Cy5) by using a ligation-mediatedpolymerase chain reaction (LM-PCR). In parallel a sample of DNA that is not enriched by immunoprecipitation is subjected to LM-PCR in the presence of a different fluorophore (Cy3)\, and both immunoprecipitation (IP)-enriched and unenriched pools of labeled DNA were hybridized to a single DNA microarray containing a set of intergenic sequences. The ratio of the Cy5 to Cy3 fluorescence intensities measured at each DNA element in the microarray provided a measure of the extent of binding of the transcription factor to the corresponding genomic locus" [PMID:11206552, PMID:11125145]
 is_a: MI:0008 ! array technologies
 is_a: MI:0402 ! ch-ip: chromatin immunoprecipitation assays
 
 [Term]
 id: MI:0226
-name: ion exchange chrom: ion exchange chromatography
+name: ion exchange chromatography
+exact_synonym: "ion exchange chrom" []
 def: "Stable complexes and their component proteins can be separated on the basis of their net charge by ion-exchange chromatography. If a protein has a net positive charge at pH 7\, it will usually bind to a column of beads containing carboxylate groups\, and can then be eluted by increasing the concentration of sodium chloride or another salt in the eluting buffer by competition of sodium ions with positively charged groups on the protein for binding to the column. Protein that have a low density of net positive charge will tend to emerge first\, followed by those having a higher charge density. Positively charged complexes or proteins (cationic proteins) can be separated on negatively charged carboxymethyl-cellulose (CM-cellulose) columns. Conversely\, negatively charged complexes or proteins (anionic proteins) can be separated by chromatography on positively charged diethylaminoethyl-cellulose (DEAE-cellulose) columns." [PMID:14755292]
 synonym: "IEC" []
 is_a: MI:0091 ! chromatography: chromatography technologies
 
 [Term]
 id: MI:0227
-name: reverse phase chrom: reverse phase chromatography
+name: reverse phase chromatography
+exact_synonym: "reverse phase chrom" []
 def: "Reverse phase chromatography operates on the basis of hydrophilicity and lipophilicity. The stationary phase consists of silica based packings with n-alkyl chains covalently bound. For example\, C-8 signifies an octyl chain and C-18 an octadecyl ligand in the matrix. The more hydrophobic the matrix on each ligand\, the greater is the tendency of the column to retain hydrophobic moieties. Thus hydrophilic compounds elute more quickly than do hydrophobic compounds.\n\n" [PMID:14755292]
 is_a: MI:0091 ! chromatography: chromatography technologies
 
 [Term]
 id: MI:0228
-name: cytoplasmic compl: cytoplasmic complementation assay
+name: cytoplasmic complementation assay
+exact_synonym: "cytoplasmic compl" []
 def: "Protein complementation assay performed by dissecting a cytoplasmic protein activity and restoring it through the two hybrid proteins interaction." [PMID:14755292]
 is_a: MI:0090 ! complementation: protein complementation assay
 
 [Term]
 id: MI:0229
-name: gfp complementation: green fluorescence protein complementation assay
+name: green fluorescence protein complementation assay
+exact_synonym: "gfp complementation" []
 def: "Protein-protein interaction trap based on fusions of bait and prey protein to two dissected fragment of GFP. The system implemented in E. coli\, allow screening of partners\, including membrane proteins and also detect transient interaction that are stabilized by the complemented GFP.\n" [PMID:15631464]
 is_a: MI:0228 ! cytoplasmic compl: cytoplasmic complementation assay
 
 [Term]
 id: MI:0230
-name: membrane compl: membrane bound complementation assay
+name: membrane bound complementation assay
+exact_synonym: "membrane compl" []
 def: "Protein complementation assay based on dissection of a membrane protein." [PMID:14755292]
 is_a: MI:0090 ! complementation: protein complementation assay
 
 [Term]
 id: MI:0231
-name: mappit: mammalian protein protein interaction trap
+name: mammalian protein protein interaction trap
+exact_synonym: "mappit" []
 def: "The MAPPIT(mammalian protein-protein interaction Trap) is a screening method for protein-protein interaction in mammalian cells\, based on the reconstitution of a membrane STAT (signal transducers and activators of transcription) receptor. The bait protein is fused to a STAT recruitment-deficient  receptor and the prey protein to a functional STAT recruitment sites. In such a configuration\, a given baitprey interaction restores a STAT-dependent responses leading to the expression of a reporter gene. This system\, enable to demonstrate not only protein interaction but also modification-independent and tyrosine phosphorylation- dependent interactions." [PMID:12853652]
 is_a: MI:0230 ! membrane compl: membrane bound complementation assay
 
 [Term]
 id: MI:0232
-name: transcription compl: transcriptional complementation assay
+name: transcriptional complementation assay
+exact_synonym: "transcription compl" []
 def: "Protein complementation assay performed by dissecting a transcription factor activity (DNA binding domain and transcription activation domain)  its restoration  through the two hybrid proteins interaction that lead to a reporter gene expression." [PMID:14755292]
 is_a: MI:0090 ! complementation: protein complementation assay
 
@@ -1881,19 +2040,22 @@ is_a: MI:0507 ! tagged molecule
 
 [Term]
 id: MI:0241
-name: hrp tagged: horseradish peroxidase tagged
+name: horseradish peroxidase tagged
+exact_synonym: "hrp tagged" []
 def: "Protein is fused to horseradish peroxidase\, and the measure of this enzyme activity can be taken as indicative of presence of protein" [PMID:14755292]
 is_a: MI:0365 ! enzyme tagged
 
 [Term]
 id: MI:0242
-name: go-definition-ref: gene ontology definition reference
+name: gene ontology definition reference
+exact_synonym: "go-definition-ref" []
 def: "This qualifier is used when the crossreference is imported from the Gene Ontology tag definition_reference." [PMID:14755292]
 is_a: MI:0353 ! xref type: cross-reference type
 
 [Term]
 id: MI:0243
-name: isoform-parent: isoform parent sequence reference
+name: isoform parent sequence reference
+exact_synonym: "isoform-parent" []
 def: "Reference to the master sequence from which this isoform has been derived." [PMID:14755292]
 is_a: MI:0353 ! xref type: cross-reference type
 
@@ -1967,13 +2129,15 @@ is_a: MI:0418 ! genetic
 
 [Term]
 id: MI:0255
-name: expression interfer: gene expression interference
+name: gene expression interference
+exact_synonym: "expression interfer" []
 def: "This term refers to methods designed to interfere with gene expression rather than with the gene itself. This class of methods are either designed to interfere with\ngene transcripts or directly with their protein products" [PMID:14755292]
 is_a: MI:0418 ! genetic
 
 [Term]
 id: MI:0256
-name: rnai: rna interference
+name: rna interference
+exact_synonym: "rnai" []
 def: "RNA interference (RNAi) is a post-translational gene silencing method reproducing a naturally occurring phenomena. RNAi is the process whereby double-stranded RNA (dsRNA) induces the sequence-specific degradation of homologous mRNA. RNAi or dsRNA-induced silencing phenomena are present in evolutionarily diverse\norganisms\, e.g.\, nematodes\, plants\, fungi\, and trypanosomes. The mechanisms by which RNAi works is initiated by a processive cleavage of dsRNA into 21 to 23 nucleotide (nt) short interfering RNAs (siRNAs). These native siRNA duplexes are then incorporated into a protein complex called RNA-induced silencing complex\n(RISC). ATP-dependent unwinding of the siRNA duplex generates an active RISC complex. Guided by the antisense strand of siRNA\, the active RISC complex\nrecognizes and cleaves the corresponding mRNA. " [PMID:12408823, PMID:12110901]
 is_a: MI:0255 ! expression interfer: gene expression interference
 
@@ -1991,13 +2155,15 @@ is_a: MI:0255 ! expression interfer: gene expression interference
 
 [Term]
 id: MI:0259
-name: perturbagens pep: perturbagens peptides
+name: perturbagens peptides
+exact_synonym: "perturbagens pep" []
 def: "This approach is based on the expression of peptides that bind to specific target proteins thereby interfering with their activity. In a standard approach the interfering peptide is expressed by genetic fusion to a stable protein scaffold. Interfering peptides can also be introduced into cells by fusing them to proteins or peptides (homeodomains\, Tat protein..) having the property of penetrating the cell membrane. The peptide-carrier fusion protein is either synthesized chemically or produced in vivo\, normally in bacteria. When the purified fusion protein is added to a cell culture\, it penetrates the cell membrane thereby permitting the fused peptide to interfere with its target protein." [PMID:8606778, PMID:11731788]
 is_a: MI:0255 ! expression interfer: gene expression interference
 
 [Term]
 id: MI:0260
-name: inhibitor small mol: inhibitor small molecules
+name: inhibitor small molecules
+exact_synonym: "inhibitor small mol" []
 def: "Protein activity is inhibited by small inorganic molecules (drugs) that specifically bind to their targets. Recently this classical pharmacological approach is sometime referred to as 'chemical genetics'. " [PMID:10780927, PMID:10542155]
 is_a: MI:0255 ! expression interfer: gene expression interference
 
@@ -2015,25 +2181,29 @@ is_a: MI:0261 ! suppression
 
 [Term]
 id: MI:0263
-name: suppress  knockout: suppression knockout
+name: suppression knockout
+exact_synonym: "suppress  knockout" []
 def: "Knocked out gene is the suppressor of a phenotype" [PMID:15608217]
 is_a: MI:0262 ! suppression mutation
 
 [Term]
 id: MI:0264
-name: suppression partial: suppression partial alteration
+name: suppression partial alteration
+exact_synonym: "suppression partial" []
 def: "A mutation is the partial suppressor of a mutant phenotype" [PMID:15608217]
 is_a: MI:0262 ! suppression mutation
 
 [Term]
 id: MI:0265
-name: suppress expression: suppression expression alteration
+name: suppression expression alteration
+exact_synonym: "suppress expression" []
 def: "An altered expression is the suppressor of a phenotype" [PMID:15608217]
 is_a: MI:0261 ! suppression
 
 [Term]
 id: MI:0266
-name: suppress overexpress: suppression overexpression
+name: suppression overexpression
+exact_synonym: "suppress overexpress" []
 def: "Overexpression is the suppressor of a phenotpe" [PMID:15608217]
 is_a: MI:0265 ! suppress expression: suppression expression alteration
 
@@ -2045,7 +2215,8 @@ is_a: MI:0265 ! suppress expression: suppression expression alteration
 
 [Term]
 id: MI:0268
-name: suppress underexpres: suppression underexpression
+name: suppression underexpression
+exact_synonym: "suppress underexpres" []
 def: "Underexpression is the suppressor of a phenotype" [PMID:15608217]
 is_a: MI:0265 ! suppress expression: suppression expression alteration
 
@@ -2057,37 +2228,43 @@ is_a: MI:0208 ! genetic interaction
 
 [Term]
 id: MI:0270
-name: cond syntetic lethal: conditional synthetic lethal
+name: conditional synthetic lethal
+exact_synonym: "cond syntetic lethal" []
 def: "Two silent mutations  show a conditional synthetic lethal phenotype when  they co-occur on the same cell. " [PMID:15608217]
 is_a: MI:0269 ! synthetic phenotype
 
 [Term]
 id: MI:0271
-name: temprtr  synt lethal: conditional synthetic lethal temperature-sensitivity
+name: conditional synthetic lethal temperature-sensitivity
+exact_synonym: "temprtr  synt lethal" []
 def: "Two silent mutations  show a temperature sensitive lethal phenotype  when  they co-occur on the same cell." [PMID:15608217]
 is_a: MI:0270 ! cond syntetic lethal: conditional synthetic lethal
 
 [Term]
 id: MI:0273
-name: synt growth effect: synthetic growth effect
+name: synthetic growth effect
+exact_synonym: "synt growth effect" []
 def: "Two silent mutations  show  altered growth effect  when  they co-occur on the same cell. " [PMID:15608217]
 is_a: MI:0269 ! synthetic phenotype
 
 [Term]
 id: MI:0274
-name: synt growth defect: synthetic growth defect
+name: synthetic growth defect
+exact_synonym: "synt growth defect" []
 def: "Two silent mutations  show growth defect  when  they co-occur on the same cell. " [PMID:15608217]
 is_a: MI:0273 ! synt growth effect: synthetic growth effect
 
 [Term]
 id: MI:0275
-name: synt growth increase: synthetic growth increase
+name: synthetic growth increase
+exact_synonym: "synt growth increase" []
 def: "Two silent mutations  show growth increase  when  they co-occur on the same cell. " [PMID:15608217]
 is_a: MI:0273 ! synt growth effect: synthetic growth effect
 
 [Term]
 id: MI:0276
-name: bn-page: blue native page
+name: blue native page
+exact_synonym: "bn-page" []
 def: "Blue native PAGE (BN-PAGE) permits a high-resolution separation of multi-protein complexes under native conditions. Blue native (BN)-PAGE is a charge shift method\, in which the electrophoretic mobility of a complex is determined by the negative charge of the bound Coomassie dye and the size and shape of the complex. Coomassie does not act as a detergent and preserves the structure of complexes. Importantly\, the resolution of BN-PAGE is much higher than that of other methods such as gel filtration or sucrose-gradient ultracentrifugation. Combined with other pre-purifications or dialysis steps this method permits the analysis of multi-protein complexes of whole cellular lysates by BN-PAGE." [PMID:14665681]
 is_a: MI:0404 ! comigration in gel: comigration in non denaturing gel electrophoresis
 
@@ -2113,7 +2290,8 @@ is_a: MI:0300 ! alias type
 
 [Term]
 id: MI:0303
-name: go synonym: gene ontology synonym
+name: gene ontology synonym
+exact_synonym: "go synonym" []
 def: "Synonym as used in Gene Ontology" [PMID:14755292]
 is_a: MI:0300 ! alias type
 
@@ -2125,7 +2303,8 @@ is_a: MI:0300 ! alias type
 
 [Term]
 id: MI:0305
-name: locus name: ordered locus name
+name: ordered locus name
+exact_synonym: "locus name" []
 def: "A name used to represent an ORF in a completely sequenced genome or chromosome. It is generally based on a prefix representing the organism and a number which usually represents the sequential ordering of genes on the chromosome. Depending on the genome sequencing center\, numbers are attributed only to protein-coding genes\, or also to pseudogenes\, or also to tRNAs and other features." [PMID:14755292]
 comment: For instance   HI0934\, Rv3245c\, At5g34500\, YER456W
 synonym: "CDS number" []
@@ -2137,7 +2316,8 @@ is_a: MI:0300 ! alias type
 
 [Term]
 id: MI:0306
-name: orf name: open reading frame name
+name: open reading frame name
+exact_synonym: "orf name" []
 def: "A name temporarily attributed by a sequencing project to an open reading frame. This name is generally based on a cosmid numbering system. " [PMID:14755292]
 comment: For instance  MtCY277.28c\, SYGP-ORF50\, SpBC2F12.04\, C06E1.1\, CG10954. \n Also called Sequencing names or Contig names or Temporary ORFNames
 is_a: MI:0300 ! alias type
@@ -2202,7 +2382,8 @@ is_a: MI:0314 ! complex
 
 [Term]
 id: MI:0316
-name: ribonucleoprot compl: ribonucleoprotein complex
+name: ribonucleoprotein complex
+exact_synonym: "ribonucleoprot compl" []
 def: "A macromolecular complex containing both protein and RNA molecules" [PMID:14755292, GO:0030529]
 synonym: "protein rna complex" []
 is_a: MI:0314 ! complex
@@ -2222,7 +2403,8 @@ is_a: MI:0383 ! biopolymer
 
 [Term]
 id: MI:0319
-name: dna: deoxyribonucleic acid
+name: deoxyribonucleic acid
+exact_synonym: "dna" []
 def: "Polymer formed by the deoxyribose sugar group\, and the nucleotides bases adenine\, guanine\, thymine and cytosine" [PMID:14755292]
 synonym: "DNA" []
 synonym: "deoxyribonucleic acid" []
@@ -2231,7 +2413,8 @@ is_a: MI:0318 ! nucleic acid
 
 [Term]
 id: MI:0320
-name: rna: ribonucleic acid
+name: ribonucleic acid
+exact_synonym: "rna" []
 def: "Polymer formed by ribose sugar group\, and the bases of the nucleotides adenine\, guanine\, uracil  and cytosine." [PMID:14755292]
 synonym: "RNA" []
 xref_analog: SO:0000356 "Sequence Ontology"
@@ -2239,7 +2422,8 @@ is_a: MI:0318 ! nucleic acid
 
 [Term]
 id: MI:0321
-name: crna: catalytic rna
+name: catalytic rna
+exact_synonym: "crna" []
 def: "Species of RNA that catalyses cleavage or trans-esterification of the phosphodiester link" [PMID:14755292]
 synonym: "catalytic RNA" []
 synonym: "catalytic ribonucleic acid" []
@@ -2247,14 +2431,16 @@ is_a: MI:0320 ! rna: ribonucleic acid
 
 [Term]
 id: MI:0322
-name: grna: guide rna
+name: guide rna
+exact_synonym: "grna" []
 def: "Small RNA molecules that hybridize to specific mRNAs and direct their RNA editing.\n" [PMID:14755292]
 synonym: "guide RNA" []
 is_a: MI:0320 ! rna: ribonucleic acid
 
 [Term]
 id: MI:0323
-name: hnrna: heterogeneous nuclear ribonucleic acid
+name: heterogeneous nuclear ribonucleic acid
+exact_synonym: "hnrna" []
 def: "A heterogeneous mixture of RNA molecules of high Mr with a rapid turnover rate that occurs in cell nuclei during protein synthesis; it is the form of RNA synthesized in eukaryotes by RNA polymerase II\, that which is translated into protein" [PMID:14755292]
 synonym: "heterogeneous nuclear RNA" []
 synonym: "heterogeneous nuclear ribonucleic acid" []
@@ -2262,14 +2448,16 @@ is_a: MI:0320 ! rna: ribonucleic acid
 
 [Term]
 id: MI:0324
-name: mrna: messenger ribonucleic acid
+name: messenger ribonucleic acid
+exact_synonym: "mrna" []
 def: "Single-stranded RNA molecule that specifies the amino acid sequence of one or more polypeptide chains" [PMID:14755292]
 synonym: "mRNA" []
 is_a: MI:0320 ! rna: ribonucleic acid
 
 [Term]
 id: MI:0325
-name: trna: transfer ribonucleic acid
+name: transfer ribonucleic acid
+exact_synonym: "trna" []
 def: "The low molecular weight RNAs that specifically bind amino acids by aminoacetylation to form aminoacyl tRNA and which possess a special nucleotide triplet\, the anticodon." [PMID:14755292]
 synonym: "tRNA" []
 synonym: "transfer RNA" []
@@ -2332,7 +2520,8 @@ is_a: MI:0000 ! ppi: protein-protein interactions
 
 [Term]
 id: MI:0334
-name: c-terminal: c-terminal position
+name: c-terminal position
+exact_synonym: "c-terminal" []
 def: "Term describing the last amino acid of a peptide chain" [PMID:14755292]
 comment: Displayed as 'c'.
 synonym: "c-term" []
@@ -2342,7 +2531,8 @@ is_a: MI:0333 ! feature range status
 
 [Term]
 id: MI:0335
-name: certain: certain sequence position
+name: certain sequence position
+exact_synonym: "certain" []
 def: "Position within the sequence clearly defined." [PMID:14755292]
 is_a: MI:0333 ! feature range status
 
@@ -2369,14 +2559,16 @@ is_a: MI:0333 ! feature range status
 
 [Term]
 id: MI:0339
-name: undetermined: undetermined sequence position
+name: undetermined sequence position
+exact_synonym: "undetermined" []
 def: "Term describing a completely unknown or unspecified sequence position" [PMID:14755292]
 comment: Displayed as '?'.
 is_a: MI:0333 ! feature range status
 
 [Term]
 id: MI:0340
-name: n-terminal : n-terminal position
+name: n-terminal position
+exact_synonym: "n-terminal " []
 def: "Term describing the first amino acid of a peptide chain" [PMID:14755292]
 comment: Displayed as 'n'.
 synonym: "amino-terminus" []
@@ -2416,7 +2608,8 @@ is_a: MI:0300 ! alias type
 
 [Term]
 id: MI:0346
-name: experimental prep: experimental preparation
+name: experimental preparation
+exact_synonym: "experimental prep" []
 def: "Set of terms to describe the participant experimental treatment and status. This term group in fact 4 orthologues short controlled vocabularies delivery method\, expression level\, molecular source\, and sample process. Each participant can then be annotated with a maximum of 4 terms selected from each short list. " [PMID:14755292]
 is_a: MI:0000 ! ppi: protein-protein interactions
 
@@ -2453,7 +2646,8 @@ is_a: MI:0350 ! purified
 
 [Term]
 id: MI:0353
-name: xref type: cross-reference type
+name: cross-reference type
+exact_synonym: "xref type" []
 def: "Qualifier to describe the type of information a cross-reference is pointing to." [PMID:14755292]
 synonym: "CvXrefQualifier" []
 synonym: "refType" []
@@ -2461,21 +2655,24 @@ is_a: MI:0000 ! ppi: protein-protein interactions
 
 [Term]
 id: MI:0354
-name: component: gene ontology term for cellular component
+name: gene ontology term for cellular component
+exact_synonym: "component" []
 def: "Cross reference pointing to a Gene Ontology -'cellular component' term." [PMID:14681407]
 synonym: "go component term" []
 is_a: MI:0353 ! xref type: cross-reference type
 
 [Term]
 id: MI:0355
-name: function: gene ontology term for cellular function
+name: gene ontology term for cellular function
+exact_synonym: "function" []
 def: "Cross reference pointing to a Gene Ontology -'cellular function' term." [PMID:14681407]
 synonym: "go function term" []
 is_a: MI:0353 ! xref type: cross-reference type
 
 [Term]
 id: MI:0356
-name: identity: identical object
+name: identical object
+exact_synonym: "identity" []
 def: "Reference to the corresponding object in another database. Correspondence may be complete or partial.	" [PMID:14755292]
 comment: For instance this qualifier\, in an interaction entry\, can be associated to a cross reference to the same interaction in an other database.
 is_a: MI:0353 ! xref type: cross-reference type
@@ -2494,7 +2691,8 @@ is_a: MI:0353 ! xref type: cross-reference type
 
 [Term]
 id: MI:0359
-name: process: gene ontology term for cellular process
+name: gene ontology term for cellular process
+exact_synonym: "process" []
 def: "Cross reference pointing to a Gene Ontology -'cellular process' term." [PMID:14681407]
 synonym: "go process term" []
 is_a: MI:0353 ! xref type: cross-reference type
@@ -2543,7 +2741,8 @@ is_a: MI:0240 ! fusion proteins
 
 [Term]
 id: MI:0366
-name: alk phosphatase tag: alkaline phosphatase tagged
+name: alkaline phosphatase tagged
+exact_synonym: "alk phosphatase tag" []
 def: "Protein is fused to alkaline phosphatase\, and the measure of this enzyme activity can be taken as indicative of presence of protein" [PMID:10935637]
 is_a: MI:0365 ! enzyme tagged
 
@@ -2563,14 +2762,16 @@ is_a: MI:0240 ! fusion proteins
 
 [Term]
 id: MI:0369
-name: gallex: lex-a dimerization assay
+name: lex-a dimerization assay
+exact_synonym: "gallex" []
 def: "The method is based on the repression of a reporter gene activity by two LexA DNA binding domains with different binding specificities. LexA is a transcription factor with an N-terminal DNA binding/activation domain (DBAct) and a C-terminal dimerization domain. LexA dimerization is required to repress transcription efficiently. The discovery of LexA DNA binding domains that bind to different DNA sequence enabled the development of this system." [PMID:12446730]
 synonym: "gallex" []
 is_a: MI:0232 ! transcription compl: transcriptional complementation assay
 
 [Term]
 id: MI:0370
-name: toxcat: tox-r dimerization assay
+name: tox-r dimerization assay
+exact_synonym: "toxcat" []
 def: "This assay allow identification of  interactions in the inner membrane of E. coli. by using a chimeric construct ToxR-TM-MBP composed of the N-terminal DNA binding/transcriptional activation domain of ToxR (a dimerization dependant transcription factor)  fused to a transmembrane domain of interest (TM) and a monomeric periplasmic anchor (the maltose binding protein). Association of the two TM results in the ToxR-mediated activation of a reporter gene such as CAT (chloroamphenicol acetyltransferase activity). The level of CAT expression indicates the strength of TM association. CAT expression can then be tested and quantify by measuring CAM resistance with disk diffusion assay or CAT activity assays on cell-free extracts." [PMID:9927659]
 synonym: "toxcat" []
 is_a: MI:0230 ! membrane compl: membrane bound complementation assay
@@ -2586,13 +2787,15 @@ is_a: MI:0517 ! radiolabelled: radiolabelled molecule
 
 [Term]
 id: MI:0372
-name: subcellular prep: subcellular preparation
+name: subcellular preparation
+exact_synonym: "subcellular prep" []
 def: "Cell lysates are partially fractionated to isolate a specific subcellular  fraction." [PMID:14755292]
 is_a: MI:0344 ! cell lysate
 
 [Term]
 id: MI:0373
-name: dye labelled: dye labelled molecule
+name: dye labelled molecule
+exact_synonym: "dye labelled" []
 def: "Molecules coupled with a dye  which aids identification isolation and monitoring." [PMID:14577292]
 is_a: MI:0505 ! experimental feature
 
@@ -2616,7 +2819,8 @@ is_a: MI:0374 ! cyanine labelled
 
 [Term]
 id: MI:0377
-name: fitc labelled: fluorescein isothiocyanate labelled
+name: fluorescein isothiocyanate labelled
+exact_synonym: "fitc labelled" []
 def: "Fluorescein isothiocyanate is a yellow-green coloured low molecular weight dye which couples to proteins via reaction with primary amine groups at high pH. FITC is excitable at 488nm\, close to its absorption maximum at 494nm\, and produces maximum fluorescence emission around 520nm." [PMID:14577292]
 synonym: "FITC labelled" []
 synonym: "fluorescein isothiocyanate labbeled" []
@@ -2624,7 +2828,8 @@ is_a: MI:0373 ! dye labelled: dye labelled molecule
 
 [Term]
 id: MI:0378
-name: rare isotope label: rare isotope labelled molecule
+name: rare isotope labelled molecule
+exact_synonym: "rare isotope label" []
 def: "Molecule that has rare isotopes among its constituent atoms that can be used to identify\, localize or quantify the full molecule.  " [PMID:14577292]
 is_a: MI:0253 ! isotope labelled
 
@@ -2655,7 +2860,8 @@ is_a: MI:0378 ! rare isotope label: rare isotope labelled molecule
 
 [Term]
 id: MI:0382
-name: mutation increasing: mutation increasing interaction
+name: mutation increasing interaction
+exact_synonym: "mutation increasing" []
 def: "Residue of a protein whose identity mutation or deletion increases significantly interaction strength." [PMID:14577292]
 is_a: MI:0118 ! mutation
 
@@ -2715,7 +2921,8 @@ is_a: MI:0384 ! alexa labelled
 
 [Term]
 id: MI:0396
-name: predetermined: predetermined participant
+name: predetermined participant
+exact_synonym: "predetermined" []
 def: "Molecule whose sequence identity is not checked and has been assumed from external or previous experimental evidence(s)." [PMID:14755292]
 is_a: MI:0002 ! participant identif: participant identification method
 
@@ -2727,19 +2934,22 @@ is_a: MI:0018 ! two hybrid
 
 [Term]
 id: MI:0398
-name: two hybrid pooling: two hybrid pooling approach
+name: two hybrid pooling approach
+exact_synonym: "two hybrid pooling" []
 def: "In the pooling strategy the sets of bait and prey hybrid vectors are mated all together and then selected. The positives double hybrid clones are sequenced to identify the interacting partners. " [PMID:12634794, PMID for application instance:11283351]
 is_a: MI:0018 ! two hybrid
 
 [Term]
 id: MI:0399
-name: 2h fragment pooling: two hybrid fragment pooling approach
+name: two hybrid fragment pooling approach
+exact_synonym: "2h fragment pooling" []
 def: "This two hybrid approach involves the screening of a large number of individual proteins against a comprehensive library of randomly generated fragment as prey. The usage of degenerated fragment allows identification of the minimal protein region required for the interaction. since multiple clones that encode overlapping regions of protein are often identified\, the minimal domain for interaction may be readily apparent from the initial screen." [PMID:12634794, PMID for application instance:11196647]
 is_a: MI:0398 ! two hybrid pooling: two hybrid pooling approach
 
 [Term]
 id: MI:0400
-name: affinity techniques: affinity technologies
+name: affinity technologies
+exact_synonym: "affinity techniques" []
 def: "Techniques which depend upon the strength of the interaction between two entities" [PMID:14755292]
 is_a: MI:0401 ! biochemical
 
@@ -2751,7 +2961,8 @@ is_a: MI:0045 ! experimental
 
 [Term]
 id: MI:0402
-name: ch-ip: chromatin immunoprecipitation assays
+name: chromatin immunoprecipitation assays
+exact_synonym: "ch-ip" []
 def: "Chromatin immunoprecipitation (ChIP) is a powerful approach that allows one to define the interaction of factors with specific chromosomal sites in living cells. ChIP involves treating cells or tissue briefly with formaldehyde to crosslink proteins to DNA. An antibody against a protein suspected of binding a given cis-element is then used to immunoprecipitate chromatin fragments. Polymerase chain reaction analysis of the immunoprecipitate with primers flanking the cis-element reveals whether a specific DNA sequence is recovered in an immune-specific manner and therefore whether the protein contacted the site in living cells." [PMID:12054902]
 is_a: MI:0400 ! affinity techniques: affinity technologies
 
@@ -2763,7 +2974,8 @@ is_a: MI:0190 ! interaction type
 
 [Term]
 id: MI:0404
-name: comigration in gel: comigration in non denaturing gel electrophoresis
+name: comigration in non denaturing gel electrophoresis
+exact_synonym: "comigration in gel" []
 def: "comigration by non denaturing gel electrophoresis" [PMID:14755292]
 is_a: MI:0401 ! biochemical
 
@@ -2799,13 +3011,15 @@ is_a: MI:0417 ! footprinting
 
 [Term]
 id: MI:0410
-name: sem: electron tomography
+name: electron tomography
+exact_synonym: "sem" []
 def: "Electron tomography is a general method for three-dimensional (3D) reconstruction of single\, transparent objects from a series of projection images (i.e. from a tilt series) recorded with a transmission electron microscope. It offers the opportunity to obtain 3D information on structural cellular arrangements with a high resolution. " [PMID:12160704]
 is_a: MI:0040 ! electron microscopy
 
 [Term]
 id: MI:0411
-name: elisa: enzyme linked immunosorbent assay
+name: enzyme linked immunosorbent assay
+exact_synonym: "elisa" []
 def: "Following non-covalent binding of a purified primary ligand to a solid phase\, a blocking reagent is added to prevent any non-specific binding. A specific antigen is then allowed to bind to the primary ligand. Unbound antigen is removed by washing and a secondary antibody conjugated to an enzyme (e.g. horseradish peroxidase) is added. Following a washing step to remove unbound secondary ligand\, the extent to which a chromogenic substrate (e.g. 3\,3'\, 5\,5' tetramethyl benzidine chromogen \[TMB\]) is converted to a soluble coloured product by the conjugated enzyme in a given time is determined by spectrophotometry using a standard microplate absorbance reader. A similar type of approach can be utilized to detect enzymatic activities. The substrate\, attached to a solid phase is incubated in the presence of the enzyme and the enzymatic modification is monitored by an antibody that is specific for the modified substrate (for instance a phosphorylated protein)." [PMID:11906746]
 synonym: "ELISA" []
 is_a: MI:0400 ! affinity techniques: affinity technologies
@@ -2813,13 +3027,15 @@ is_a: MI:0421 ! antibody detection: identification by antibody
 
 [Term]
 id: MI:0412
-name: emsa supershift: electrophoretic mobility supershift assay
+name: electrophoretic mobility supershift assay
+exact_synonym: "emsa supershift" []
 def: "The EMSA supershift is a EMSA experiment carried out using a third lane loaded with the radiolabeled nucleic acid\, a protein mixture and an antibody for a specific protein. If an extra retardation is observed\, this is due to the formation of a larger complex including the antibody. By this approach\, at least one protein of the complex is directly identified. " [PMID:12169687]
 is_a: MI:0413 ! emsa: electrophoretic mobility shift assay
 
 [Term]
 id: MI:0413
-name: emsa: electrophoretic mobility shift assay
+name: electrophoretic mobility shift assay
+exact_synonym: "emsa" []
 def: "This method proves the interaction between a nucleic acid and a protein partner. On the same electrophoresis gel 1 lane is loaded with a radiolabeled nucleic acid of known sequence\, a second lane is loaded with the same nucleic acid together with a purified protein (or a protein mixture). After the electrophoresis run and autoradiography by comparing the nucleic acid migration in the two lanes the retardation of the nucleic acid due to its interaction with a protein can be easily observed." [PMID:12169687]
 synonym: "Gel retardation assay" []
 synonym: "band shift" []
@@ -2840,7 +3056,8 @@ is_a: MI:0401 ! biochemical
 
 [Term]
 id: MI:0416
-name: fluorescence imaging: fluorescence microscopy
+name: fluorescence microscopy
+exact_synonym: "fluorescence imaging" []
 def: "fluorescent microscopy" [PMID:14755292]
 is_a: MI:0428 ! imaging techniques
 
@@ -2865,7 +3082,8 @@ is_a: MI:0415 ! enzymatic studies
 
 [Term]
 id: MI:0420
-name: kinase htrf: kinase homogeneous time resolved fluorescence
+name: kinase homogeneous time resolved fluorescence
+exact_synonym: "kinase htrf" []
 def: "Measures quenching of the nonradiative energy transfer between fluorescent long-lifetime lanthanide chelates and different acceptors. Relies on a fluorescence energy donor and acceptor being added from close proximity on the phosphorylated substrate due to the action of the kinase" [PMID:14987100]
 synonym: "homogeneous time-resolved fluorescence" []
 synonym: "kinase HTRF" []
@@ -2874,7 +3092,8 @@ is_a: MI:0510 ! htrf:homogeneous time resolved fluorescence
 
 [Term]
 id: MI:0421
-name: antibody detection: identification by antibody
+name: identification by antibody
+exact_synonym: "antibody detection" []
 def: "antibody mediated identification" [PMID:14755292]
 is_a: MI:0002 ! participant identif: participant identification method
 
@@ -2886,7 +3105,8 @@ is_a: MI:0421 ! antibody detection: identification by antibody
 
 [Term]
 id: MI:0423
-name: in gel kinase assay: in-gel kinase assay
+name: in-gel kinase assay
+exact_synonym: "in gel kinase assay" []
 def: "Substrate protein radio-labelled by kinase transferring an isotope of phosphate from the nucleotide. Substrate isolated by gel electrophoresis and radio-labelling confirmed by autoradiography." [PMID:14755292]
 is_a: MI:0424 ! protein kinase assay
 
@@ -2898,7 +3118,8 @@ is_a: MI:0415 ! enzymatic studies
 
 [Term]
 id: MI:0425
-name: kinase spa: kinase scintillation proximity assay
+name: kinase scintillation proximity assay
+exact_synonym: "kinase spa" []
 def: "Relies on the radiolabelling of a peptide substrate immobilized on a scintillant coated SPA-bead. The kinase transfers a phosphate isotope from th nucleotide to the substrate" [PMID:14755292]
 is_a: MI:0099 ! spa: scintillation proximity assay
 is_a: MI:0424 ! protein kinase assay
@@ -2924,13 +3145,15 @@ is_a: MI:0045 ! experimental
 
 [Term]
 id: MI:0429
-name: required to bind: necessary binding site
+name: necessary binding site
+exact_synonym: "required to bind" []
 def: "A sequence range within a protein identified as being absolutely required for an interaction." [PMID:14755292]
 is_a: MI:0117 ! binding site
 
 [Term]
 id: MI:0430
-name: nucl ac uv crosslink: nucleic acid uv cross-linking assay
+name: nucleic acid uv cross-linking assay
+exact_synonym: "nucl ac uv crosslink" []
 def: "Radiolabelled nucleic acids with a known sequence are incubated with purified proteins or reproducible protein mixture (HPLC eluate fractions) and then irradiated with UV. The complex are treated with an enzyme to remove the unbound nucleic acid (Rnase A or Dnase I for example)\, washed and then analyzed by electrophoresis.  The eventual complexes are identified by autoradiography. The proteins involved in the complex can be recognized by specific antibodies or by retrieving the original protein mixture and carrying further analysis on it. The affinity of the binding can be estimated by adding a non-labelled  nucleic acid  as competitor before the UV irradiation." [PMID:14755292]
 is_a: MI:0030 ! crosslink: cross-linking studies
 
@@ -2951,7 +3174,8 @@ is_a: MI:0232 ! transcription compl: transcriptional complementation assay
 
 [Term]
 id: MI:0433
-name: partial id prot seq: partial identification of protein sequence
+name: partial identification of protein sequence
+exact_synonym: "partial id prot seq" []
 def: "partial protein sequence identification" [PMID:14755292]
 is_a: MI:0093 ! protein sequence: protein sequence identification
 
@@ -2991,7 +3215,8 @@ is_a: MI:0588 ! 3 hybrid method
 
 [Term]
 id: MI:0439
-name: rsa: random spore analysis
+name: random spore analysis
+exact_synonym: "rsa" []
 def: "A technique used to detect genetic interactions between 2 (or more) genes in a sporulating organism by scoring a large population of haploid spores for a phenotype and correlating the phenotype with the presence of single vs double (multiple) mutations.   A diploid heterozygous organism harbouring mutations in two (or more) genes is induced to sporulate.  Resulting spores are meiotic segregants that are haploid and are either wild type or mutant at each locus. Spores are scored for a phenotype\, such as loss of viability. \n" [PMID:14755292]
 synonym: "RSA" []
 synonym: "random-spore analysis" []
@@ -3006,14 +3231,16 @@ is_a: MI:0400 ! affinity techniques: affinity technologies
 
 [Term]
 id: MI:0441
-name: sga: synthetic genetic analysis
+name: synthetic genetic analysis
+exact_synonym: "sga" []
 def: "Identification of genetic interactions by generation of an organism harbouring mutations in 2 or more genes and scoring for a phenotype\, such as loss of viability\, that is not observed for any of the mutations in isolation" [PMID:14755292]
 synonym: "SGA" []
 is_a: MI:0254 ! genetic interference
 
 [Term]
 id: MI:0442
-name: sufficient to bind: sufficient binding site
+name: sufficient binding site
+exact_synonym: "sufficient to bind" []
 def: "Binding will occur when this sequence range is present within a protein" [PMID:14755292]
 is_a: MI:0117 ! binding site
 
@@ -3031,7 +3258,8 @@ is_a: MI:0000 ! ppi: protein-protein interactions
 
 [Term]
 id: MI:0445
-name: experiment xref: experiment database xref
+name: experiment database xref
+exact_synonym: "experiment xref" []
 def: "experiment database xref" [PMID:14755292]
 is_a: MI:0444 ! database citation
 
@@ -3043,13 +3271,15 @@ is_a: MI:0445 ! experiment xref: experiment database xref
 
 [Term]
 id: MI:0447
-name: feature xref: feature database xref
+name: feature database xref
+exact_synonym: "feature xref" []
 def: "feature database xref" [PMID:14755292]
 is_a: MI:0444 ! database citation
 
 [Term]
 id: MI:0448
-name: go: gene ontology
+name: gene ontology
+exact_synonym: "go" []
 def: "The objective of Gene Ontology (GO) is to provide controlled vocabularies for the description of the molecular function\, biological process and cellular component of gene products\nhttp\://www.ebi.ac.uk/GO" [PMID:14755292]
 is_a: MI:0447 ! feature xref: feature database xref
 is_a: MI:0461 ! interaction xref: interaction database xref
@@ -3142,7 +3372,8 @@ is_a: MI:0461 ! interaction xref: interaction database xref
 
 [Term]
 id: MI:0461
-name: interaction xref: interaction database xref
+name: interaction database xref
+exact_synonym: "interaction xref" []
 def: "interaction database xref" [PMID:14755292]
 is_a: MI:0444 ! database citation
 
@@ -3237,7 +3468,8 @@ is_a: MI:0461 ! interaction xref: interaction database xref
 
 [Term]
 id: MI:0473
-name: participant xref: participant database xref
+name: participant database xref
+exact_synonym: "participant xref" []
 def: "participant database xref" [PMID:14755292]
 is_a: MI:0444 ! database citation
 
@@ -3267,7 +3499,8 @@ is_a: MI:0473 ! participant xref: participant database xref
 
 [Term]
 id: MI:0477
-name: entrezgene/locuslink: entrez gene/locuslink
+name: entrez gene/locuslink
+exact_synonym: "entrezgene/locuslink" []
 def: "LocusLink provides a single query interface to curated sequence and descriptive information about genetic loci.\nhttp\://www.ncbi.nlm.nih.gov/LocusLink/" [PMID:14755292]
 synonym: "Entrez gene/locuslink" []
 is_a: MI:0473 ! participant xref: participant database xref
@@ -3330,7 +3563,8 @@ is_a: MI:0473 ! participant xref: participant database xref
 
 [Term]
 id: MI:0486
-name: uniprotkb: uniprot knowledge base
+name: uniprot knowledge base
+exact_synonym: "uniprotkb" []
 def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot\, TrEMBL\, and PIR.\nhttp\://www.expasy.uniprot.org/" [PMID:14681372]
 synonym: "UniProt" []
 is_a: MI:0473 ! participant xref: participant database xref
@@ -3450,7 +3684,8 @@ is_a: MI:0116 ! feature type
 
 [Term]
 id: MI:0506
-name: over-expressed: over-expressed level
+name: over-expressed level
+exact_synonym: "over-expressed" []
 def: "A molecule is estimated to be expressed at higher levels than in physiological condition" [PMID:14755292]
 is_a: MI:0221 ! expression level
 
@@ -3462,13 +3697,15 @@ is_a: MI:0505 ! experimental feature
 
 [Term]
 id: MI:0508
-name: radiolabeled acetate: deacetylase radiometric assay
+name: deacetylase radiometric assay
+exact_synonym: "radiolabeled acetate" []
 def: "Measures the release of radiolabelled acetic acid from pre-labeled histone-" [PMID:14755292]
 is_a: MI:0406 ! deacetylase assay
 
 [Term]
 id: MI:0509
-name: phosphatase htrf: phosphatase homogeneous time resolved fluorescence
+name: phosphatase homogeneous time resolved fluorescence
+exact_synonym: "phosphatase htrf" []
 def: "Measures quenching of the nonradiative energy transfer between fluorescent long-lifetime lanthanide chelates and different acceptors. Relies on a fluorescence energy donor and acceptor being removed from close proximity on the phosphorylated substrate due to the action of the phosphatase" [PMID:14987100]
 comment: homogeneous time-resolved fluorescence
 synonym: "homogeneous time-resolved fluorescence" []
@@ -3485,7 +3722,8 @@ is_a: MI:0051 ! fluorescence: fluorescence technologies
 
 [Term]
 id: MI:0511
-name: protease htrf: protease homogeneous time resolved fluorescence
+name: protease homogeneous time resolved fluorescence
+exact_synonym: "protease htrf" []
 def: "Measures quenching of the nonradiative energy transfer between fluorescent long-lifetime lanthanide chelates and different acceptors. Fluorescence donor and acceptor are on the same peptide molecule and separated by the action of the protease." [PMID:14987100]
 synonym: "Protease HTRF" []
 is_a: MI:0435 ! protease assay
@@ -3505,25 +3743,29 @@ is_a: MI:0435 ! protease assay
 
 [Term]
 id: MI:0514
-name: in gel phosphatase: in gel phosphatase assay
+name: in gel phosphatase assay
+exact_synonym: "in gel phosphatase" []
 def: "Substrate protein pre-radiolabelled either synthetically or through the action of a kinase transferring an isotope of phosphate from a nucleotide. Substrate then exposed to phosphate under assay conditions. Substrate isolated by gel electrophoresis and loss of radiolabelling confirmed by autoradiography." [PMID:14755292]
 is_a: MI:0434 ! phosphatase assay
 
 [Term]
 id: MI:0515
-name: methyltransferase as: methyltransferase assay
+name: methyltransferase assay
+exact_synonym: "methyltransferase as" []
 def: "Measures the catalysis of the transfer of a methyl group to an acceptor molecule." [PMID:14755292]
 is_a: MI:0415 ! enzymatic studies
 
 [Term]
 id: MI:0516
-name: radiolabeled methyl: methyltransferase radiometric assay
+name: methyltransferase radiometric assay
+exact_synonym: "radiolabeled methyl" []
 def: "Measures the transfer of a radiolabelled methyl group of a donor\, for example S-adenosyl-L-methionine (SAM) to a carboxyl group of an acceptor" [PMID:14755292]
 is_a: MI:0515 ! methyltransferase as: methyltransferase assay
 
 [Term]
 id: MI:0517
-name: radiolabelled: radiolabelled molecule
+name: radiolabelled molecule
+exact_synonym: "radiolabelled" []
 def: "A radiolabelled molecule has radio isotopes among its constituent atoms that can be used to identify\, localize or quantify the full molecule.  " [PMID:14755292]
 synonym: "radiolabeled" []
 is_a: MI:0253 ! isotope labelled
@@ -3584,19 +3826,22 @@ is_a: MI:0507 ! tagged molecule
 
 [Term]
 id: MI:0526
-name: acetyllysine: n-acetyl-lysine
+name: n-acetyl-lysine
+exact_synonym: "acetyllysine" []
 def: "residue modification" [RESID:AA0048, RESID:AA0055]
 is_a: MI:0121 ! acetylated residue
 
 [Term]
 id: MI:0527
-name: adp-ribosylated: adp ribosylated residue
+name: adp ribosylated residue
+exact_synonym: "adp-ribosylated" []
 def: "residue modification" [PMID:14755292]
 is_a: MI:0120 ! ptm: post translation modification
 
 [Term]
 id: MI:0528
-name: adp-ribosylarginine: omega-n-(adp-ribosyl)-arginine
+name: omega-n-(adp-ribosyl)-arginine
+exact_synonym: "adp-ribosylarginine" []
 def: "residue modification" [RESID:AA0168]
 synonym: "(S)-2-amino-5-(\[imino(\[adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl\]amino)methyl\]amino)pentanoic acid" []
 synonym: "N(omega)-\[alpha-D-ribofuranoside 5'->5'-ester with adenosine 5'-(trihydrogen diphosphate)\]-L-arginine" []
@@ -3606,7 +3851,8 @@ is_a: MI:0527 ! adp-ribosylated: adp ribosylated residue
 
 [Term]
 id: MI:0529
-name: adp-ribosylcysteine: s-(adp-ribosyl)-cysteine
+name: s-(adp-ribosyl)-cysteine
+exact_synonym: "adp-ribosylcysteine" []
 def: "residue modification" [RESID:AA0169]
 synonym: "(R)-2-amino-3-(\[adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl\]sulfanyl)propanoic acid" []
 synonym: "S-(ADP-ribosyl)-L-cysteine" []
@@ -3616,7 +3862,8 @@ is_a: MI:0527 ! adp-ribosylated: adp ribosylated residue
 
 [Term]
 id: MI:0530
-name: adp-ribosylglutamate: glutamyl-5-poly(adp-ribose)
+name: glutamyl-5-poly(adp-ribose)
+exact_synonym: "adp-ribosylglutamate" []
 def: "residue modification" [RESID:AA0295]
 synonym: "(S)-2-amino-5-poly\[2'-adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with 1alpha-D-ribofuranosyl\]oxy-5-oxopentanoic acid" []
 synonym: "L-glutamyl-5-poly(ADP-ribose)" []
@@ -3625,7 +3872,8 @@ is_a: MI:0527 ! adp-ribosylated: adp ribosylated residue
 
 [Term]
 id: MI:0531
-name: adp-ribosylserine: o-(adp-ribosyl)-serine
+name: o-(adp-ribosyl)-serine
+exact_synonym: "adp-ribosylserine" []
 def: "residue modification" [RESID:AA0237]
 synonym: "(S)-2-amino-3-(\[adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl\]oxy)-propanoic acid Formula" []
 synonym: "O-(ADP-ribosyl)-L-serine" []
@@ -3636,7 +3884,8 @@ is_a: MI:0527 ! adp-ribosylated: adp ribosylated residue
 
 [Term]
 id: MI:0532
-name: adpribosylasparagine: n4-(adp-ribosyl)-asparagine
+name: n4-(adp-ribosyl)-asparagine
+exact_synonym: "adpribosylasparagine" []
 def: "residue modification" [RESID:AA0231]
 synonym: "(S)-2-amino-4-(\[adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl\]amino)-4-oxobutanoic acid" []
 synonym: "N4-(ADP-ribosyl)-L-asparagine" []
@@ -3675,14 +3924,16 @@ is_a: MI:0533 ! glycosylated residue
 
 [Term]
 id: MI:0537
-name: glycosylarginine: omega-n-glycosyl-arginine
+name: omega-n-glycosyl-arginine
+exact_synonym: "glycosylarginine" []
 def: "residue modification" [RESID:AA0327]
 synonym: "omega-N-glycosyl-L-arginine" []
 is_a: MI:0533 ! glycosylated residue
 
 [Term]
 id: MI:0538
-name: glycosylasparagine: n4-glycosyl-asparagine
+name: n4-glycosyl-asparagine
+exact_synonym: "glycosylasparagine" []
 def: "residue modification" [RESID:AA0151]
 synonym: "N4-glycosyl-L-asparagine" []
 is_a: MI:0533 ! glycosylated residue
@@ -3695,62 +3946,71 @@ is_a: MI:0150 ! lipid modification
 
 [Term]
 id: MI:0540
-name: gpi-alanine: gpi-anchor amidated alanine
+name: gpi-anchor amidated alanine
+exact_synonym: "gpi-alanine" []
 def: "residue modification" [RESID:AA0163]
 synonym: "N-alanyl-glycosylphosphatidylinositolethanolamine" []
 is_a: MI:0539 ! gpi anchor residue
 
 [Term]
 id: MI:0541
-name: gpi-asparagine: gpi-anchor amidated asparagine
+name: gpi-anchor amidated asparagine
+exact_synonym: "gpi-asparagine" []
 def: "residue modification" [RESID:AA0158]
 synonym: "N-asparaginyl-glycosylphosphatidylinositolethanolamine" []
 is_a: MI:0539 ! gpi anchor residue
 
 [Term]
 id: MI:0542
-name: gpi-aspartate: gpi-anchor amidated aspartate
+name: gpi-anchor amidated aspartate
+exact_synonym: "gpi-aspartate" []
 def: "residue modification" [RESID:AA0159]
 synonym: "N-aspartyl-glycosylphosphatidylinositolethanolamine" []
 is_a: MI:0539 ! gpi anchor residue
 
 [Term]
 id: MI:0543
-name: gpi-cysteine: gpi-anchor amidated cysteine
+name: gpi-anchor amidated cysteine
+exact_synonym: "gpi-cysteine" []
 def: "residue modification" [RESID:AA0160]
 synonym: "N-cysteinyl-glycosylphosphatidylinositolethanolamine" []
 is_a: MI:0539 ! gpi anchor residue
 
 [Term]
 id: MI:0544
-name: gpi-glycine: gpi-anchor amidated glycine
+name: gpi-anchor amidated glycine
+exact_synonym: "gpi-glycine" []
 def: "residue modification" [RESID:AA0161]
 synonym: "N-glycyl-glycosylphosphatidylinositolethanolamine" []
 is_a: MI:0539 ! gpi anchor residue
 
 [Term]
 id: MI:0545
-name: gpi-serine: gpi-anchor amidated serine
+name: gpi-anchor amidated serine
+exact_synonym: "gpi-serine" []
 def: "residue modification" [RESID:AA0162]
 synonym: "N-seryl-glycosylphosphatidylinositolethanolamine" []
 is_a: MI:0539 ! gpi anchor residue
 
 [Term]
 id: MI:0546
-name: gpi-threonine: gpi-anchor amidated threonine
+name: gpi-anchor amidated threonine
+exact_synonym: "gpi-threonine" []
 def: "residue modification" [RESID:AA0164]
 synonym: "N-threonyl-glycosylphosphatidylinositolethanolamine" []
 is_a: MI:0539 ! gpi anchor residue
 
 [Term]
 id: MI:0547
-name: prenylcysteine: s-prenyl-cysteine
+name: s-prenyl-cysteine
+exact_synonym: "prenylcysteine" []
 def: "residue modification" [PMID:14755292]
 is_a: MI:0150 ! lipid modification
 
 [Term]
 id: MI:0548
-name: methylatedlysine: methylated-lysine
+name: methylated-lysine
+exact_synonym: "methylatedlysine" []
 def: "residue modification" [RESID:AA0074, RESID:AA0075, RESID:AA0076]
 is_a: MI:0157 ! methylated residue
 
@@ -3762,7 +4022,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0550
-name: carboxyglutamic acid: gamma-carboxyglutamic acid
+name: gamma-carboxyglutamic acid
+exact_synonym: "carboxyglutamic acid" []
 def: "residue modification" [RESID:AA0032]
 synonym: "(S)-3-amino-1\,1\,3-propanetricarboxylic acid" []
 synonym: "1-carboxyglutamic acid \[misnomer\]" []
@@ -3779,7 +4040,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0552
-name: nitrosylcysteine: s-nitrosyl-cysteine
+name: s-nitrosyl-cysteine
+exact_synonym: "nitrosylcysteine" []
 def: "residue modification" [RESID:AA0230]
 synonym: "(R)-2-amino-3-nitrososulfanyl-propanoic acid" []
 synonym: "L-cysteine nitrite ester" []
@@ -3789,7 +4051,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0553
-name: sulfotyrosine: o4'-sulfo-tyrosine
+name: o4'-sulfo-tyrosine
+exact_synonym: "sulfotyrosine" []
 def: "residue modification" [RESID:AA0172]
 synonym: "(S)-2-amino-3-(4-sulfooxyphenyl)propanoic acid" []
 synonym: "2-amino-3-(4-hydroxyphenyl)propanoic acid 4'-sulfate" []
@@ -3809,7 +4072,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0555
-name: phosphoshistidine: phospho-histidine
+name: phospho-histidine
+exact_synonym: "phosphoshistidine" []
 def: "residue modification" [RESID:AA0035, RESID:AA0036]
 is_a: MI:0170 ! phosphorylated: phosphorylated residue
 
@@ -3821,7 +4085,8 @@ is_a: MI:0195 ! covalent binding
 
 [Term]
 id: MI:0557
-name: adp ribosylation: adp ribosylation reaction
+name: adp ribosylation reaction
+exact_synonym: "adp ribosylation" []
 def: "Reaction that can affect Arg\, Cys\, Glu\, Arg and Asn residues." [RESID:AA0168, RESID:AA0169, RESID:AA0295, RESID:AA0237, RESID:AA0231]
 xref_analog: GO:0006471 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -3829,27 +4094,31 @@ xref_unknown: GO:0006471 "Gene Ontology"
 
 [Term]
 id: MI:0558
-name: deglycosylation: deglycosylation reaction
+name: deglycosylation reaction
+exact_synonym: "deglycosylation" []
 def: "Reaction catalyzed by PNGase\, a deglycosylating enzyme that promotes the hydrolysis of the beta-aspartylglycosylamine bond of aspargine-linked glycopeptides and glycoproteins." [PMID:15670854]
 xref_analog: GO:0006517 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0559
-name: glycosylation: glycosylation reaction
+name: glycosylation reaction
+exact_synonym: "glycosylation" []
 def: "The covalent attachment of a glycosyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer.\nReaction that can affect Ser\, Thr\, Cys\, Arg\, and Asn residues.  This reaction is known to be reversible in the case of  Asn substrate. " [RESID:AA0154, RESID:AA0155, RESID:AA0122, RESID:AA0327, RESID:AA0151]
 xref_analog: GO:0043413 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0560
-name: myristoylated aa: myristoylated residue
+name: myristoylated residue
+exact_synonym: "myristoylated aa" []
 def: "residue modification" [PMID:14755292]
 is_a: MI:0150 ! lipid modification
 
 [Term]
 id: MI:0561
-name: palmitoylated aa: palmitoylated residue
+name: palmitoylated residue
+exact_synonym: "palmitoylated aa" []
 def: "residue modification" [PMID:14755292]
 is_a: MI:0150 ! lipid modification
 
@@ -3867,7 +4136,8 @@ is_a: MI:0157 ! methylated residue
 
 [Term]
 id: MI:0564
-name: methylarginine: omega-n-methyl-arginine
+name: omega-n-methyl-arginine
+exact_synonym: "methylarginine" []
 def: "residue modification" [RESID:AA0069]
 synonym: "(S)-2-amino-5-\[(imino(methylamino)methyl)amino\]pentanoic acid" []
 synonym: "NG-methylarginine;" []
@@ -3882,7 +4152,8 @@ is_a: MI:0179 ! other modification
 
 [Term]
 id: MI:0566
-name: sumoylation: sumoylation reaction
+name: sumoylation reaction
+exact_synonym: "sumoylation" []
 def: "Reversible reaction that create a covalent bond between a C-terminus G of an ubiquitine like  sumo protein and a K residue of the target." [PMID:15985640]
 xref_analog: GO:0016925 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -3890,7 +4161,8 @@ xref_unknown: GO:0016925 "Gene Ontology"
 
 [Term]
 id: MI:0567
-name: neddylation: neddylation reaction
+name: neddylation reaction
+exact_synonym: "neddylation" []
 def: "Reversible reaction that create a covalent bond between a  Glycine residue of an ubiquitine like  NEDD8 protein and a lysine residue of the target. " [PMID:16127432]
 xref_analog: GO:0045116 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -3898,7 +4170,8 @@ xref_unknown: GO:0045116 "Gene Ontology"
 
 [Term]
 id: MI:0568
-name: desumoylation: desumoylation reaction
+name: desumoylation reaction
+exact_synonym: "desumoylation" []
 def: "Cleavage of the G-K bond and release of  the SUMO ubiquitin like proteins." [PMID:15985640]
 xref_analog: GO:0016926 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -3906,7 +4179,8 @@ xref_unknown: GO:0016926 "Gene Ontology"
 
 [Term]
 id: MI:0569
-name: deneddylation: deneddylation reaction
+name: deneddylation reaction
+exact_synonym: "deneddylation" []
 def: "Cleavage of the G-K bond and release of the NEDD8 ubiquitin like proteins. Deneddylation\, which removes the NEDD8 moiety\, requires the isopeptidase activity of the COP9 signalosome." [PMID:16127432]
 xref_analog: GO:0000338 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -3940,13 +4214,15 @@ is_a: MI:0119 ! mutation decreasing: mutation decreasing interaction
 
 [Term]
 id: MI:0574
-name: doi: digital object identifier
+name: digital object identifier
+exact_synonym: "doi" []
 def: "Identifier of a publication prior it pubmed indexing. " [PMID:14755292]
 is_a: MI:0445 ! experiment xref: experiment database xref
 
 [Term]
 id: MI:0575
-name: afcs: alliance for cellulare signaling
+name: alliance for cellulare signaling
+exact_synonym: "afcs" []
 def: "Alliance for Cellular Signaling (AfCS -Nature) store yeast 2-hybrid Interaction data and expression data. Information and data are freely available to all.\nhttp\://www.signaling-gateway.org\n" [PMID:14755292]
 synonym: "AfCS" []
 is_a: MI:0461 ! interaction xref: interaction database xref
@@ -3966,7 +4242,8 @@ is_a: MI:0003 ! feature detection: feature detection method
 
 [Term]
 id: MI:0578
-name: mbp tagged: maltose binding protein tagged
+name: maltose binding protein tagged
+exact_synonym: "mbp tagged" []
 def: "The protein is expressed and purified as a fusion to the glutathione maltose-\nbinding protein (MBP). The MBP-fusion protein can be purifed by affinity chromatography using an amylose resin." [PMID:14755292]
 synonym: "maltose binding protein tag" []
 is_a: MI:0240 ! fusion proteins
@@ -4033,7 +4310,8 @@ is_a: MI:0090 ! complementation: protein complementation assay
 
 [Term]
 id: MI:0589
-name: in vitro translated: in vitro translated protein
+name: in vitro translated protein
+exact_synonym: "in vitro translated" []
 def: "Protein sample collected by in vitro translation of its mRNA  taking advantage of purified transaltion machinery. " [PMID:14755292]
 is_a: MI:0342 ! sample process
 
@@ -4046,7 +4324,8 @@ is_a: MI:0000 ! ppi: protein-protein interactions
 
 [Term]
 id: MI:0591
-name: experiment descripti: experiment description
+name: experiment description
+exact_synonym: "experiment descripti" []
 def: "The experimental condition text description\, should contain information about the organisms hosting the interaction." [PMID:14755292]
 is_a: MI:0590 ! attribute name
 
@@ -4100,13 +4379,15 @@ is_a: MI:0590 ! attribute name
 
 [Term]
 id: MI:0600
-name: nutrition synt letal: conditional synthetic lethal nutrition-sensitivity
+name: conditional synthetic lethal nutrition-sensitivity
+exact_synonym: "nutrition synt letal" []
 def: "Two silent mutations  show a nutrition sensitive lethal phenotype  when  they co-occur on the same cell." [PMID:15608217]
 is_a: MI:0270 ! cond syntetic lethal: conditional synthetic lethal
 
 [Term]
 id: MI:0601
-name: so: sequence ontology
+name: sequence ontology
+exact_synonym: "so" []
 def: "The Sequence Ontology (SO) is a structured controlled vocabulary for the parts of a genomic annotation. SO provides a common set of terms and definitions that will facilitate the exchange\, analysis and management of genomic data. " [PMID:15892872]
 is_a: MI:0447 ! feature xref: feature database xref
 is_a: MI:0473 ! participant xref: participant database xref
