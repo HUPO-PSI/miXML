@@ -181,6 +181,7 @@
 					<xs:documentation>PSI MI version within given level</xs:documentation>
 				</xs:annotation>
 			</xs:attribute>
+			<xs:attribute name="minorVersion" type="xs:int" use="optional" fixed="1"/>
 		</xs:complexType>
 	</xs:element>
 	<!--aministrative elements-->
@@ -602,7 +603,7 @@
 			</xs:element>
 			<xs:element name="featureType" type="cvType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Description and classification of the feature</xs:documentation>
+					<xs:documentation>Description and classification of the feature. This element is controlled by the PSI-MI controlled vocabulary "featureType", root term id MI:0116.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="featureDetectionMethod" type="cvType" minOccurs="0">
@@ -1079,33 +1080,6 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="experimentalFormList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The form(s) of the participant in the interaction, e.g. protein tags. </xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="experimentalForm" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:documentation>This element is controlled by the PSI-MI controlled vocabulary "experimentalForm", root term id MI:0505.</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="cvType">
-										<xs:sequence minOccurs="0">
-											<xs:element name="experimentRefList" type="experimentRefListType" minOccurs="0">
-												<xs:annotation>
-													<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
-												</xs:annotation>
-											</xs:element>
-										</xs:sequence>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
 			<xs:element name="experimentalPreparationList" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Terms describing the experimental sample preparation. </xs:documentation>
@@ -1170,7 +1144,7 @@
 			</xs:element>
 			<xs:element name="featureList" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Sequence features relevant for the interaction, for example binding domains</xs:documentation>
+					<xs:documentation>Sequence features relevant for the interaction, for example binding domains, and experimental modifications, e.g. protein tags. </xs:documentation>
 				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
@@ -1178,6 +1152,13 @@
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="featureType">
+										<xs:sequence minOccurs="0">
+											<xs:element name="experimentRefList" type="experimentRefListType" minOccurs="0">
+												<xs:annotation>
+													<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
+												</xs:annotation>
+											</xs:element>
+										</xs:sequence>
 										<xs:attribute name="id" type="xs:int" use="required"/>
 									</xs:extension>
 								</xs:complexContent>
