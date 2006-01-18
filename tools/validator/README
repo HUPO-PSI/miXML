@@ -1,0 +1,68 @@
+PSI Validator
+=============
+
+DIRECTORIES
+------------
+
+classes/        : compiled Java classes
+config/	        : configuration files
+data/           : data flat files for test purposes
+doc/            : documentation
+lib/            : third-party libraries needed in addition to the standard JDK
+scripts/        : auxiliary scripts, ant files, make files
+src/            : Java sources
+xml/            : XML schema of the validator
+
+Other directories under psiValidator not mentioned above are currently not relevant to installing/running the PSI Validator.
+
+
+OUTLINE
+-------
+
+1. Prerequisites
+2. Setup
+3. Applications
+4. Hints and Tips
+
+
+1. Prerequisites
+-----------------
+To install and run the PSI Validator software you must have the following installed in your environment:
+
+	- java JDK 1.4
+	  see http://java.sun.com/j2se/downloads.html
+	- ant 1.5 or above (all the intact build process relies on ant)
+	  see http://ant.apache.org/bindownload.cgi
+
+
+2. Setup
+---------
+
+    2.1. HTTP Proxy
+    ----------------
+    edit the file config/proxy.properties and follow instructions
+
+
+    2.2. Compiling the PSI Validator
+    ---------------------------------
+    Type 'ant compile'
+
+
+    2.3. Validation of a PSI file
+    ------------------------------
+    Compile the validator (cf. 2.2)
+
+    under Unix or cygwin
+    Type './scripts/validator.sh <rule.xml> <psi_file.xml>'
+
+    under windows
+    Type './scripts/validator.bat <rule.xml> <psi_file.xml>'
+
+
+4. Hints and Tips
+------------------
+a) If you find that you get OutOfMemoryErrors with large queries, increasing the heap size that java uses
+can help. You can do this simply by setting the environment variable JAVA_OPTS as follows:
+
+setenv JAVA_OPTS '-Xms200M -Xmx250M' (or use export if you use another shell)
+or you can specify it when calling java -Xms200M -Xmx250M.    

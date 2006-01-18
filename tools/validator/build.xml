@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    ANT build configuration file for the PSI Validator.
+    Authors: Samuel Kerrien (skerrien@ebi.ac.uk).
+    Version: $Id: build.xml,v 1.1 2006/01/18 16:15:58 skerrien Exp $
+-->
+
+<project name="psiValidator" basedir="." default="project">
+
+    <property name="project.title" value="PSI Validator"/>
+    <property name="project.version" value="0.1"/>
+
+    <property name="src.dir" value="src"/>
+    <property name="schema.dir" value="schemas"/>
+    <property name="dest.dir" value="classes"/>
+    <property name="jdoc.dir" value="doc/api"/>
+    <property name="config.dir" value="config"/>
+    <property name="lib.dir" value="lib"/>
+
+    <property name="mi10.dir" value="src/psidev/psi/mi/validator/extensions/mi10/model" />
+    <property name="mi25.dir" value="src/psidev/psi/mi/validator/extensions/mi25/model" />
+
+    <!-- Where the distribution files are going to be (jar) -->
+    <property name="dist.dir" value="dist"/>
+
+
+    <!-- Project classpath. -->
+    <path id="project.class.path">
+        <!-- lib directory -->
+        <fileset dir="lib">
+            <include name="**/*.jar"/>
+        </fileset>
+
+        <pathelement path="${dest.dir}"/>
+    </path>
+
+    <!-- javadoc classpath. -->
+    <path id="javadoc.class.path">
+        <path refid="project.class.path"/>
+    </path>
+
+    <!-- ************ End of Project level data *************** -->
+
+    <!-- =================================================================== -->
+
+    <!-- Remove 'dest' and 'jdoc' directories for clean build. -->
+    <target name="clean" depends="jaxb-clean"
+            description="Prepare for clean build; removes api docs and classes dirs">
+
+        <!-- Delete the distribution files. -->
+        <delete dir="${dist.dir}" quiet="true"/>
+
+        <delete dir="${dest.dir}"/>
+        <delete dir="${jdoc.dir}"/>
+    </target>
+
+    <!-- =================================================================== -->
+
+    <!-- Copy configuration files. -->
+    <target name="copyConfigFiles">
+        <!-- copy only necessary files -->
+        <copy todir="${dest.dir}/${config.dir}" filtering="on">
+            <fileset dir="${config.dir}">
+                <include name="proxy.properties"/>
+                <include name="log4j.properties"/>
+            </fileset>
+        </copy>
+
+        <!-- copy JAXB config file from the source directory -->
+        <copy todir="${dest.dir}" filtering="on">
+            <fileset dir="${src.dir}">
+                <include name="**/*.properties"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <!-- =================================================================== -->
+
+    <!-- Compiles only the Intact core files. -->
+    <target name="compile" description="Compiles the Intact core source files">
+        <mkdir dir="${dest.dir}"/>
+
+        <javac srcdir="${src.dir}" destdir="${dest.dir}" debug="on" deprecation="on"
+               source="1.5">
+            <classpath refid="project.class.path"/>
+        </javac>
+
+        <!-- Copy any configuration files -->
+        <antcall target="copyConfigFiles"/>
+    </target>
+
+    <!-- =================================================================== -->
+
+    <target name="show-java-version" description="Displays the version of JRE">
+        <echo message="You are using JRE ${ant.java.version}"/>
+    </target>
+
+    <!-- =================================================================== -->
+
+    <!-- Build javadocs -->
+    <target name="javadoc"
+            depends="compile"
+            description="Creates Intact core API Documentation">
+
+        <!-- Start with a fresh api directory. -->
+        <delete dir="${jdoc.dir}" quiet="true"/>
+        <mkdir dir="${jdoc.dir}"/>
+
+        <javadoc destdir="${jdoc.dir}"
+                 author="true"
+                 version="true"
+                 use="true"
+                 windowtitle="Schema Validator API Documentation"
+                 doctitle="&lt;h1&gt;${project.title} Documentation (Version ${project.version})&lt;/h1&gt;"
+                 bottom="&lt;i&gt;Samuel Kerrien (skerrien@ebi.ac.uk), Matthias Oesterheld (m.oesterheld@gsf.de)&lt;/i&gt;"
+                 source="1.5">
+
+            <!-- Exclude javadoc for test packages. -->
+            <packageset dir="${src.dir}">
+                <exclude name="**/test/**"/>
+            </packageset>
+            <classpath refid="javadoc.class.path"/>
+        </javadoc>
+    </target>
+
+    <!-- =================================================================== -->
+
+    <!-- Build entire project -->
+    <target name="project" depends="javadoc"/>
+
+    <!-- =================================================================== -->
+
+    <!-- Runs the JUnit tester directly. The output is redirected to std out -->
+    <!-- There is one target for each set of package tests -->
+
+    <!-- model target -->
+    <target name="test" depends="compile"
+            description="Runs JUnit directly with output directed to stdout">
+        <java classname="junit.textui.TestRunner" fork="true">
+            <arg value="psidev.psi.mi.validator.framework.test.AllJUnitTests"/>
+            <classpath refid="project.class.path"/>
+        </java>
+    </target>
+
+    <!-- =================================================================== -->
+
+
+    <!-- Generates java object model for PSI 1.0 using JAXB -->
+
+    <!-- model target -->
+    <target name="jaxb-xjc-psi10" description="Build Java object model for PSI-MI 1.0">
+
+        <!-- Configure the XJC task -->
+        <taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask">
+            <classpath refid="project.class.path"/>
+        </taskdef>
+
+        <!-- Delete existing generated classes -->
+        <delete dir="${mi10.dir}" quiet="true" />
+
+        <!-- Generate object model -->
+        <xjc schema="schemas/MIF.xsd"
+             target="src"
+             package="psidev.psi.mi.validator.extensions.mi10.model"
+             readOnly="true"
+             extension="true" />
+    </target>
+
+    <!-- =================================================================== -->
+
+    <!-- Generates java object model for PSI 1.0 using JAXB -->
+
+    <!-- model target -->
+    <target name="jaxb-clean" description="Clean all auto generated source code">
+
+        <!-- Delete existing generated classes -->
+        <delete dir="${mi10.dir}" quiet="true" />
+
+        <!-- Delete existing generated classes -->
+        <delete dir="${mi25.dir}" quiet="true" />
+
+    </target>
+
+    <!-- =================================================================== -->
+
+    <!-- Generates java object model for PAI 2.5 using JAXB -->
+
+    <!-- model target -->
+    <target name="jaxb-xjc-psi25" description="Build Java object model for PSI-MI 2.5">
+
+        <!-- Configure the XJC task -->
+        <taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask">
+            <classpath refid="project.class.path"/>
+        </taskdef>
+
+        <!-- Delete existing generated classes -->
+        <delete dir="${mi25.dir}" quiet="true" />
+
+        <!-- Generate object model -->
+        <xjc schema="${schema.dir}/MIF252.xsd"
+             target="${src.dir}"
+             package="psidev.psi.mi.validator.extensions.mi25.model"
+             readOnly="true"
+             extension="true" />
+    </target>
+
+</project>

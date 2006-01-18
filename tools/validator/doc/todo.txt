@@ -1,0 +1,27 @@
+XML to Object binding:
+======================
+
+- support for compact version
+
+Output formats:
+===============
+
+- XML output
+- XSL stylesheet for HTML output
+
+Other stuff:
+============
+
+- OBO Loader should take URLs
+- user documentation
+    * how to write a rule
+- developer documentation
+    * how to extend the framework
+    * UML diagram
+- client package and console (works with files)
+- GUI
+	- display meaningful error message when a JaxbException is thrown ... so far it is outputed in the console.
+
+===============
+WRITE RULES!!!!
+===============

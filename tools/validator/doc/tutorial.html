@@ -1,0 +1,346 @@
+<html>
+<head>
+    <title>Validate your first PSI-MI 2.5 document</title>
+
+    <STYLE TYPE="text/css">
+        <!--
+        H1 {
+            color: darkblue;
+            font-size: 30px;
+            font-family: Arial
+        }
+
+        H2 {
+            color: darkblue;
+            font-size: 20px;
+            font-family: Arial
+        }
+
+        H3 {
+            color: darkblue;
+            font-size: 15px;
+            font-family: Arial
+        }
+
+        P, UL, LI, BLOCKQUOTE {
+            color: black;
+            font-size: 10px;
+            font-family: Arial
+        }
+
+        A:link {
+            text-decoration: none;
+            color: blue;
+
+        }
+
+        A:active {
+            text-decoration: none;
+            color: red;
+        }
+
+        A:visited {
+            text-decoration: none;
+            color: blue;
+        }
+
+        -->
+    </STYLE>
+</head>
+
+<body bgcolor="white" link="#0000ff" Vlink="#660099">
+
+<h1 align="middle">Tutorial - PSI Validator</h1>
+<hr width="70%"/>
+
+<h2>1. Introduction to the Validator's main components</h2>
+<blockquote>
+    <p>
+        The Schema Validator is a fairly generic API that allow customization so that one can adapt it to its own XML
+        Schema. So far we have written an entension to the
+        <a target="_blank" href="http://psidev.sourceforge.net/mi/rel25/src/MIF25.xsd">PSI-MI 2.5 Schema</a>.
+        <br/>
+    <blockquote>
+        <img src="images/icon_warning.gif" alt="warning"> Bear in mind that so far, only <b>expanded form of the PSI-MI
+        2.5</b>
+        representation can be validated. We are planning in the short term to allow compact form validation.
+    </blockquote>
+    It makes use of <a target="_blank" href="http://java.sun.com/webservices/jaxb/">JAXB</a> (libraries available in
+    lib/) to generate a Java object model on the basis of an Schema file (*.xsd)
+    <br/>
+    A Validator consists of:
+    <ul>
+        <li>set of Ontologies upon which we rely to describe domain specific information, we give them identifier to
+            allow referencing,<br/>
+            eg. the <a target="_blank" href="http://psidev.sourceforge.net/mi/rel25/data/psi-mi25.obo">PSI-MI 2.5
+            Ontology</a></li>
+        <li>set of <a href="./api/net/sf/psidev/mi/validator/Rule.html">Rule</a>s that allow to model the logic of what
+            we want to check.</li>
+    </ul>
+
+    <p/>
+</blockquote>
+
+
+<h2>2. Run the client application</h2>
+<blockquote>
+<p>
+
+<h3>2.1. Requirements</h3>
+   Before to get started, you have to make sure that you have the following items properly installed on your computer:
+<ul>
+    <li>A working Unix system or <a target="_blank" href="http://www.cygwin.com/">cygwin</a> under windows.</li>
+    <li>J2SDK 1.5 (<a target="_blank" href="http://java.sun.com/j2se/1.5.0/download.jsp">download</a>)
+         <br/>Also, make sure that your environment variable JAVA_HOME is correctly set, as well as your PATH updated.</li>
+    <li>Ant 1.6.x (<a target="_blank" href="http://ant.apache.org/bindownload.cgi">download</a>)
+        <br/>Also, make sure that your environment variable ANT_HOME is correctly set, as well as your PATH updated.</li>
+</ul>
+
+<img src="images/icon_info.gif" alt="info">  Once this is done, when typing <code>java -version</code> and <code>ant -version</code> in a shell should give the version of java and ant respectively.
+
+<h3>2.2. Generate the JAXB object model</h3>
+<blockquote>
+    We have created an Ant task that does that job.
+    <br/>
+    The schema upon which we will generate the object model is provided with the validator, you can find it under
+    the directory <code>schema/</code>.
+    <br/>
+    <blockquote>
+        <img src="images/icon_info.gif" alt="info"> This schema integrates forthcoming changes that do NOT affect the
+        validation of existing XML file, that is:
+        <ul>
+            <li>renaming of the complex type <code>interactionType</code> to interactionElementType so it doesn't
+                clash with the convtolled vocab</li>
+            <li>renaming of the complex type <code>featureType</code> to featureElementType so it doesn't
+                clash with the controlled vocab</li>
+        </ul>
+    </blockquote>
+    <br/>
+    The PSI-MI 2.5 schema is stored in schema/
+    <br/>
+    From the project directory, type:
+    <blockquote>
+        <code><b>ant jaxb-xjc-psi25</b></code>
+    </blockquote>
+    This should display a couple of warnings as shown below:
+    <blockquote>
+        <code><b>[WARNING]</b> warning: &lt;keyref&gt; identity constraint will be ignored by JAXB validation</code>
+    </blockquote>
+    Do not worry too much about this, we are not using the in-built JAXB validation anyway...
+    <br/>
+    This should have generated the object model in the following package:
+    <blockquote>
+        <code>net.sf.psidev.mi.extensions.mi25.model</code>
+    </blockquote>
+
+    <img src="images/icon_warning.gif" alt="warning"> Do NOT edit the code generated in that package as it will be
+    deleted automatically when you next start the code generator.
+</blockquote>
+
+<h3>2.3. Compile the framework</h3>
+<blockquote>
+    Once the JAXB object model is generated, we can compile the framework (that includes all extensions, eg. PSI-MI
+    2.5 validator).
+    <br/>
+    From the project directory, type:
+    <blockquote>
+        <code><b>ant compile</b></code>
+    </blockquote>
+
+</blockquote>
+
+<h3>2.4. Generate the API documentation</h3>
+<blockquote>
+    A lot of the documentation is in the Java source code.
+    <br/>
+    If you have any interrest in writing your own rule, I would advice you to do the following:
+    <br/>
+    from the project directory, type:
+    <blockquote>
+        <code><b>ant javadoc</b></code>
+    </blockquote>
+
+    <img src="images/icon_info.gif" alt="note"> About 20 warnings are actually due to the JAXB autogenerated code.
+
+</blockquote>
+
+<h3>2.5. Running the test suite</h3>
+
+from the project directory, type:
+<blockquote>
+    <code><b>ant test</b></code>
+</blockquote>
+<blockquote>
+    <img src="images/icon_info.gif" alt="note"> So far there are not many test (as of 2006-01-16) 19 implemented but we
+    are going to add a lot more ...
+</blockquote>
+
+<h3>2.6. Checking that the PSI-MI 2.5 validator is properly configured</h3>
+
+Before you start the Validator graphical interface, you have to make sure that the PSI-MI 2.5 validator is properly configured.
+<br/>
+The configuration file is <code>config\config-mi-validator.xml</code>, at the current stage, here is what it contains:
+<blockquote>
+<center>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td bgcolor="lightgrey">
+<PRE>
+<FONT style="font-family:monospaced;" COLOR="#000000">&lt;</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>config</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+    </FONT><FONT style="font-family:monospaced;" COLOR="#808080"><I>&lt;!-- List of ontologies used in that specific validator, they will be referenced by their 'id' --&gt;</I></FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+    </FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>ontologies</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+        </FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>ontology</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000"> </FONT><FONT style="font-family:monospaced;" COLOR="#0000ff"><B>id=</B></FONT><FONT style="font-family:monospaced;" COLOR="#008000"><B>&quot;MI&quot;</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="red"><B>file:/C:/cygwin/home/Samuel/validator</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000"><B>/cv/psi-mi25.obo</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;/</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>ontology</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+    </FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;/</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>ontologies</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+
+    </FONT><FONT style="font-family:monospaced;" COLOR="#808080"><I>&lt;!-- List of rules that this specific validator should use --&gt;</I></FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+    </FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>rules</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+        </FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>rule</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000"><B>net.sf.psidev.mi.extensions.mi25.rules.InteractorTypeRule</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;/</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>rule</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+        </FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>rule</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000"><B>net.sf.psidev.mi.extensions.mi25.rules.InteractionDetectionRule</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;/</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>rule</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+        </FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>rule</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000"><B>net.sf.psidev.mi.extensions.mi25.rules.InteractionTypeCheckRule</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;/</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>rule</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+    </FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;/</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>rules</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+
+</FONT><FONT style="font-family:monospaced;" COLOR="#000000">&lt;/</FONT><FONT style="font-family:monospaced;" COLOR="#000080"><B>config</B></FONT><FONT style="font-family:monospaced;" COLOR="#000000">&gt;</FONT><FONT style="font-family:monospaced;" COLOR="#000000">
+</FONT></PRE>
+            </td>
+        </tr>
+    </table>
+</center>
+    <br/>
+    <img src="images/icon_warning.gif" alt="warning"> You need to customize the path highlighted in red so it matched your local filesystem. We are looking into ways to simplify this in the short term.
+</blockquote>
+
+<blockquote>
+    <img src="images/icon_warning.gif" alt="warning"> Please not that currently there are only 3 basic rules
+    implemented, this will grow quickly in the short term.
+</blockquote>
+
+
+<h3>2.7. Validating using the <u>console based</u> client</h3>
+<blockquote>
+    If you have already compiled the source code succesfully and configured your validator as explained above, you can type:
+    <blockquote>
+        <code><b>./scripts/console.sh xml/sample-psimi25.xml config/config-mi-validator.xml DEBUG</b></code>
+    </blockquote>
+
+    <blockquote>
+        <table border="0" cellpadding="10">
+            <tr>
+                <td valign="top"><img src="images/icon_info.gif" alt="note"></td>
+                <td>
+                    Please note that the DEBUG parameter on the command line will filter
+                    validator messages so that only higher or equal level will be displayed.
+                    <br/>
+                    The hierarchy is INFO &lt; DEBUG &lt; WARN &lt; ERROR &lt; FATAL.
+                    <br/>
+                    So if you specify level WARN, only messages having level WARN, ERROR or FATAL will be mentionned.
+                </td>
+            </tr>
+        </table>
+    </blockquote>
+
+    All messages will be displyed on the screen, it should look like the output below:
+
+<blockquote>
+    <table border="1" cellpadding="10">
+            <tr>
+                <td bgcolor="black">
+<pre>
+<font color="white">running in a Windows JVM (from cygwin)..
+No proxy setting requested.
+READPATHS = [C:\cygwin\home\Samuel\validator\cv\psi-mi25.obo]
+Parse Done!
+====================================================================================
+ERROR: Invalid interactor type (MI:0190)
+Context( interaction[id='8479'] participant[id='8481'] interactor[id='8481'] )
+Rule name: Interactor Type Check
+Description: Checks that InteractorType has MI:0313 for parent.
+Tip:
+        * Check in the psi-mi25.obo the list of children terms of MI:0313.
+
+====================================================================================
+ERROR: Could not find MI reference (MI:9999) in psi-mi25.obo
+Context( interaction[id='8479'] experimentDescription[id='8480'] )
+Rule name: Interaction Detection Check
+Description: Checks that InteractorType has MI:0001 for parent.
+Tip:
+        * Check in the psi-mi25.obo the list of children terms of MI:0001.</font>
+</pre>
+                </td>
+            </tr>
+        </table>
+</blockquote>
+</blockquote>
+
+
+<h3>2.8. Validating using the <u>graphical based</u> client</h3>
+
+<blockquote>
+    If you have already compiled the source code succesfully and configured your validator as explained above, you can type:
+    <blockquote>
+        <code><b>./scripts/gui.sh config/config-mi-validator.xml DEBUG</b></code>
+    </blockquote>
+
+    <blockquote>
+        <table border="0" cellpadding="10">
+            <tr>
+                <td valign="top"><img src="images/icon_info.gif" alt="note"></td>
+                <td>
+                    Please note that the DEBUG parameter on the command line will filter
+                    validator messages so that only higher or equal level will be displayed.
+                    <br/>
+                    The hierarchy is INFO &lt; DEBUG &lt; WARN &lt; ERROR &lt; FATAL.
+                    <br/>
+                    So if you specify level WARN, only messages having level WARN, ERROR or FATAL will be mentionned.
+                </td>
+            </tr>
+        </table>
+    </blockquote>
+
+    The screen below should appear:
+
+    <br/>
+    <blockquote><img src="images/validatorWindowEmpty.png" alt=""></blockquote>
+
+    <br/>
+    Then you simply have to Drag and Drop a PSI-MI 2.5 file onto the window to start the validation process.
+    <br/>
+    A report window should then open and show eventual messages:
+
+    <blockquote><img src="images/reportWindow.PNG" alt=""></blockquote>
+
+    Here is how the main window looks like now:
+
+    <br/>
+    <blockquote><img src="images/resultAfterValidation.PNG" alt=""></blockquote>
+
+    and now let's validate an other file:
+
+    <br/>
+    <blockquote><img src="images/multipleValidation.PNG" alt=""></blockquote>
+    This file has no error reported.
+    <br/>
+    As the tooltip indicates, if you want to visualise again the validation report, simply click on the cell showing the
+    message count (should be red)
+</blockquote>
+
+</blockquote>
+
+
+
+<h2>3. Troubleshooting</h2>
+<blockquote>
+    <p>
+        <a href="mailto:psidev-mi-dev@lists.sourceforge.net"><img border="0" src="images/question.gif" alt=""></a>Should
+        you have any other questions, please post a mail to the <a href="mailto:psidev-mi-dev@lists.sourceforge.net">PSI-MI
+        mailing list</a>.
+    </p>
+</blockquote>
+
+<hr>
+<p>
+    <a href="mailto:skerrien@ebi.ac.uk">Samuel Kerrien</a>, 2006-01-18
+</p>
+<p/>
+
+</body>
+</html>
