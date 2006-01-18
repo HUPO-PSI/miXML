@@ -9,9 +9,9 @@ import java.util.Map;
 
 /**
  * The definition of a rule. the check method should contain the logic of that particular rule.
- * @
+ * 
  * @author Samuel Kerrien (skerrien@ebi.ac.uk)
- * @version $Id: Rule.java,v 1.1 2006/01/18 16:57:59 skerrien Exp $
+ * @version $Id: Rule.java,v 1.2 2006/01/18 17:07:03 skerrien Exp $
  * @since <pre>26-Dec-2005</pre>
  */
 public abstract class Rule {
