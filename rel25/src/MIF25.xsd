@@ -86,7 +86,7 @@
 								</xs:annotation>
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="interactor" type="interactorType" minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="interactor" type="interactorElementType" minOccurs="0" maxOccurs="unbounded">
 											<xs:annotation>
 												<xs:documentation>A molecule object in its native state, as described in databases.</xs:documentation>
 												<xs:documentation>Usage: A protein interactor must contain an xref to UniProt and NCBI-GI where possible. </xs:documentation>
@@ -181,7 +181,7 @@
 					<xs:documentation>PSI MI version within given level</xs:documentation>
 				</xs:annotation>
 			</xs:attribute>
-			<xs:attribute name="minorVersion" type="xs:int" use="optional" fixed="1"/>
+			<xs:attribute name="minorVersion" type="xs:int" use="optional" fixed="2"/>
 		</xs:complexType>
 	</xs:element>
 	<!--aministrative elements-->
@@ -414,6 +414,7 @@
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
+		<xs:attribute name="ncbiTaxId" type="xs:int"/>
 	</xs:complexType>
 	<xs:complexType name="confidenceListType">
 		<xs:annotation>
@@ -586,7 +587,7 @@
 		</xs:attribute>
 	</xs:complexType>
 	<!--Feature description-->
-	<xs:complexType name="featureType">
+	<xs:complexType name="featureElementType">
 		<xs:annotation>
 			<xs:documentation>A feature, e.g. domain, on a sequence.</xs:documentation>
 		</xs:annotation>
@@ -633,6 +634,7 @@
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
+		<xs:attribute name="id" type="xs:int"/>
 	</xs:complexType>
 	<xs:complexType name="intervalType">
 		<xs:annotation>
@@ -730,9 +732,7 @@
 						<xs:element name="hostOrganism" maxOccurs="unbounded">
 							<xs:complexType>
 								<xs:complexContent>
-									<xs:extension base="bioSourceType">
-										<xs:attribute name="ncbiTaxId" type="xs:int" use="required"/>
-									</xs:extension>
+									<xs:extension base="bioSourceType"/>
 								</xs:complexContent>
 							</xs:complexType>
 						</xs:element>
@@ -931,7 +931,7 @@
 		</xs:attribute>
 	</xs:complexType>
 	<!--interactors and participants-->
-	<xs:complexType name="interactorType">
+	<xs:complexType name="interactorElementType">
 		<xs:annotation>
 			<xs:documentation>Describes a molecular interactor.</xs:documentation>
 		</xs:annotation>
@@ -957,9 +957,7 @@
 				</xs:annotation>
 				<xs:complexType>
 					<xs:complexContent>
-						<xs:extension base="bioSourceType">
-							<xs:attribute name="ncbiTaxId" type="xs:int" use="required"/>
-						</xs:extension>
+						<xs:extension base="bioSourceType"/>
 					</xs:complexContent>
 				</xs:complexType>
 			</xs:element>
@@ -1010,7 +1008,7 @@
 						<xs:documentation>References an interactor described in the interactorList of the entry</xs:documentation>
 					</xs:annotation>
 				</xs:element>
-				<xs:element name="interactor" type="interactorType">
+				<xs:element name="interactor" type="interactorElementType">
 					<xs:annotation>
 						<xs:documentation>Fully describes an interactor</xs:documentation>
 					</xs:annotation>
@@ -1125,7 +1123,7 @@
 												<xs:documentation>References an interactor described in the interactorList of the entry</xs:documentation>
 											</xs:annotation>
 										</xs:element>
-										<xs:element name="interactor" type="interactorType">
+										<xs:element name="interactor" type="interactorElementType">
 											<xs:annotation>
 												<xs:documentation>Fully describes an interactor</xs:documentation>
 											</xs:annotation>
@@ -1148,15 +1146,7 @@
 				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="feature" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="featureType">
-										<xs:attribute name="id" type="xs:int" use="required"/>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="feature" type="featureElementType" maxOccurs="unbounded"/>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
@@ -1177,7 +1167,6 @@
 												</xs:annotation>
 											</xs:element>
 										</xs:sequence>
-										<xs:attribute name="ncbiTaxId" type="xs:int" use="required"/>
 									</xs:extension>
 								</xs:complexContent>
 							</xs:complexType>
