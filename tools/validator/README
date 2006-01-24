@@ -1,19 +1,20 @@
-PSI Validator
-=============
+Schema Validator
+================
 
 DIRECTORIES
 ------------
 
 classes/        : compiled Java classes
 config/	        : configuration files
-data/           : data flat files for test purposes
-doc/            : documentation
+doc/            : documentation including a tutorial on how to start using PSI-MI 2.5 validator
 lib/            : third-party libraries needed in addition to the standard JDK
 scripts/        : auxiliary scripts, ant files, make files
 src/            : Java sources
-xml/            : XML schema of the validator
+xml/            : sample XML files
+schemas/        : XML schema of the validator
 
-Other directories under psiValidator not mentioned above are currently not relevant to installing/running the PSI Validator.
+Other directories under validator not mentioned above are currently not relevant to installing/running
+the Schema Validator.
 
 
 OUTLINE
@@ -29,9 +30,9 @@ OUTLINE
 -----------------
 To install and run the PSI Validator software you must have the following installed in your environment:
 
-	- java JDK 1.4
+	- java JDK 1.5
 	  see http://java.sun.com/j2se/downloads.html
-	- ant 1.5 or above (all the intact build process relies on ant)
+	- ant 1.6 or above (all the intact build process relies on ant)
 	  see http://ant.apache.org/bindownload.cgi
 
 
@@ -43,20 +44,20 @@ To install and run the PSI Validator software you must have the following instal
     edit the file config/proxy.properties and follow instructions
 
 
-    2.2. Compiling the PSI Validator
+    2.2. Compiling the PSI-MI 2.5 Validator
     ---------------------------------
-    Type 'ant compile'
+    Type 'ant jaxb-xjc-psi25 compile'
 
 
-    2.3. Validation of a PSI file
+    2.3. Validation of a PSI file (2 clients available so far, console or graphical based)
     ------------------------------
     Compile the validator (cf. 2.2)
 
     under Unix or cygwin
-    Type './scripts/validator.sh <rule.xml> <psi_file.xml>'
-
-    under windows
-    Type './scripts/validator.bat <rule.xml> <psi_file.xml>'
+    Type
+         './scripts/validator.sh <psiFile> <configFile> [logLevel]'
+       or
+         './scripts/gui.sh <validator_config_file> [log level]'
 
 
 4. Hints and Tips
