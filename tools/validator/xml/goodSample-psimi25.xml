@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<entrySet level="2" version="5" xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi
+D:\Develop\src\PPI\PSI-MI\MIF25.xsd">
+	<entry>
+		<source>
+			<names>
+				<shortLabel>MIPS</shortLabel>
+				<fullName>Munich Institute for Protein Sequences</fullName>
+			</names>
+			<bibref>
+				<xref>
+					<primaryRef db="pubmed" id="16381906"/>
+				</xref>
+			</bibref>
+		</source>
+		<availabilityList>
+			<availability id="1">MIPS Databases and associated information are protected by copyright. This server and its associated data and services are for academic, non-commercial use only. The GSF  has no liability for the use of results, data or information which have been provided through this server. Neither the use for commercial purposes, nor the redistribution of MIPS database files to third parties nor the distribution of parts of files or derivative products to any third parties is permitted. Commercial users may contact the distributor Biomax Informatics GmbH.</availability>
+		</availabilityList>
+		<interactionList>
+			<interaction id="8479">
+				<experimentList>
+					<experimentDescription id="8480">
+						<bibref>
+							<xref>
+								<primaryRef db="PUBMED" id="9209064"/>
+							</xref>
+						</bibref>
+						<interactionDetectionMethod>
+							<names>
+								<shortLabel>interactionDetectionMethod</shortLabel>
+							</names>
+							<xref>
+								<primaryRef db="psi-mi" id="MI:0001"/>
+							</xref>
+						</interactionDetectionMethod>
+					</experimentDescription>
+				</experimentList>
+				<participantList>
+					<participant id="8481">
+						<interactor id="8482">
+							<names>
+								<shortLabel>YAL038W</shortLabel>
+								<fullName>pyruvate kinase</fullName>
+							</names>
+							<xref>
+<!--								<primaryRef db="uniprotkb" id="P00549"/>-->
+								<primaryRef db="intact" dbAc="MI:0462" id="EBI-761642" secondary="hall-1998-1"/>
+								<secondaryRef db="cygd" id="YAL038W"/>
+							</xref>
+							<interactorType>
+								<names>
+									<shortLabel>protein</shortLabel>
+									<fullName>protein</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi" id="MI:0313"/>
+								</xref>
+							</interactorType>
+							<organism ncbiTaxId="4932"/>
+						</interactor>
+					</participant>
+					<participant id="8483">
+						<interactor id="8484">
+							<names>
+								<shortLabel>YNL307C</shortLabel>
+								<fullName>ser/thr/tyr protein kinase</fullName>
+							</names>
+							<xref>
+								<primaryRef db="uniprotkb" id="P21965"/>
+								<secondaryRef db="cygd" id="YNL307C"/>
+							</xref>
+							<interactorType>
+								<names>
+									<shortLabel>protein</shortLabel>
+									<fullName>protein</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi" id="MI:0326"/>
+								</xref>
+							</interactorType>
+							<organism ncbiTaxId="4932"/>
+						</interactor>
+					</participant>
+				</participantList>
+			</interaction>
+			<interaction id="54634">
+				<experimentList>
+					<experimentDescription id="54635">
+						<bibref>
+							<xref>
+								<primaryRef db="PUBMED" id="9209064"/>
+							</xref>
+						</bibref>
+						<interactionDetectionMethod>
+							<names>
+								<shortLabel>interactionDetectionMethod</shortLabel>
+							</names>
+							<xref>
+								<primaryRef db="psi-mi" id="MI:0018"/>
+							</xref>
+						</interactionDetectionMethod>
+					</experimentDescription>
+				</experimentList>
+				<participantList>
+					<participant id="54636">
+						<interactor id="54637">
+							<names>
+								<shortLabel>YAL038W</shortLabel>
+								<fullName>pyruvate kinase</fullName>
+							</names>
+							<xref>
+								<primaryRef db="uniprotkb" id="P00549"/>
+								<secondaryRef db="cygd" id="YAL038W"/>
+							</xref>
+							<interactorType>
+								<names>
+									<shortLabel>protein</shortLabel>
+									<fullName>protein</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi" id="MI:0326"/>
+								</xref>
+							</interactorType>
+							<organism ncbiTaxId="4932"/>
+						</interactor>
+					</participant>
+					<participant id="54638">
+						<interactor id="54639">
+							<names>
+								<shortLabel>YNL307C</shortLabel>
+								<fullName>ser/thr/tyr protein kinase</fullName>
+							</names>
+							<xref>
+								<primaryRef db="uniprotkb" id="P21965"/>
+								<secondaryRef db="cygd" id="YNL307C"/>
+							</xref>
+							<interactorType>
+								<names>
+									<shortLabel>protein</shortLabel>
+									<fullName>protein</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi" id="MI:0326"/>
+								</xref>
+							</interactorType>
+							<organism ncbiTaxId="4932"/>
+						</interactor>
+					</participant>
+				</participantList>
+			</interaction>
+			<interaction id="40692">
+				<experimentList>
+					<experimentDescription id="40693">
+						<bibref>
+							<xref>
+								<primaryRef db="PUBMED" id="0"/>
+							</xref>
+						</bibref>
+						<interactionDetectionMethod>
+							<names>
+								<shortLabel>interactionDetectionMethod</shortLabel>
+							</names>
+							<xref>
+								<primaryRef db="psi-mi" id="MI:0001"/>
+							</xref>
+						</interactionDetectionMethod>
+					</experimentDescription>
+				</experimentList>
+				<participantList>
+					<participant id="40694">
+						<interactor id="40695">
+							<names>
+								<shortLabel>YAL038W</shortLabel>
+								<fullName>pyruvate kinase</fullName>
+							</names>
+							<xref>
+								<primaryRef db="uniprotkb" id="P00549"/>
+								<secondaryRef db="cygd" id="YAL038W"/>
+							</xref>
+							<interactorType>
+								<names>
+									<shortLabel>protein</shortLabel>
+									<fullName>protein</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi" id="MI:0326"/>
+								</xref>
+							</interactorType>
+							<organism ncbiTaxId="4932"/>
+						</interactor>
+					</participant>
+					<participant id="40696">
+						<interactor id="40697">
+							<names>
+								<shortLabel>YOR347C</shortLabel>
+								<fullName>pyruvate kinase, glucose-repressed isoform</fullName>
+							</names>
+							<xref>
+								<primaryRef db="uniprotkb" id="P52489"/>
+								<secondaryRef db="cygd" id="YOR347C"/>
+							</xref>
+							<interactorType>
+								<names>
+									<shortLabel>protein</shortLabel>
+									<fullName>protein</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi" id="MI:0326"/>
+								</xref>
+							</interactorType>
+							<organism ncbiTaxId="4932"/>
+						</interactor>
+					</participant>
+				</participantList>
+			</interaction>
+			<interaction id="232">
+				<experimentList>
+					<experimentDescription id="233">
+						<bibref>
+							<xref>
+								<primaryRef db="PUBMED" id="0"/>
+							</xref>
+						</bibref>
+						<interactionDetectionMethod>
+							<names>
+								<shortLabel>interactionDetectionMethod</shortLabel>
+							</names>
+							<xref>
+								<primaryRef db="psi-mi" id="MI:0024"/>
+							</xref>
+						</interactionDetectionMethod>
+					</experimentDescription>
+				</experimentList>
+				<participantList>
+					<participant id="234">
+						<interactor id="235">
+							<names>
+								<shortLabel>YAL038W</shortLabel>
+								<fullName>pyruvate kinase</fullName>
+							</names>
+							<xref>
+								<primaryRef db="uniprotkb" id="P00549"/>
+								<secondaryRef db="cygd" id="YAL038W"/>
+							</xref>
+							<interactorType>
+								<names>
+									<shortLabel>protein</shortLabel>
+									<fullName>protein</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi" id="MI:0326"/>
+								</xref>
+							</interactorType>
+							<organism ncbiTaxId="4932"/>
+						</interactor>
+					</participant>
+					<participant id="236">
+						<interactor id="237">
+							<names>
+								<shortLabel>YOR347C</shortLabel>
+								<fullName>pyruvate kinase, glucose-repressed isoform</fullName>
+							</names>
+							<xref>
+								<primaryRef db="uniprotkb" id="P52489"/>
+								<secondaryRef db="cygd" id="YOR347C"/>
+							</xref>
+							<interactorType>
+								<names>
+									<shortLabel>protein</shortLabel>
+									<fullName>protein</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi" id="MI:0326"/>
+								</xref>
+							</interactorType>
+							<organism ncbiTaxId="4932"/>
+						</interactor>
+					</participant>
+				</participantList>
+			</interaction>
+			<interaction id="17414">
+				<experimentList>
+					<experimentDescription id="17415">
+						<bibref>
+							<xref>
+								<primaryRef db="PUBMED" id="11283351"/>
+							</xref>
+						</bibref>
+						<interactionDetectionMethod>
+							<names>
+								<shortLabel>interactionDetectionMethod</shortLabel>
+							</names>
+							<xref>
+								<primaryRef db="psi-mi" id="MI:0018"/>
+							</xref>
+						</interactionDetectionMethod>
+					</experimentDescription>
+				</experimentList>
+				<participantList>
+					<participant id="17416">
+						<interactor id="17417">
+							<names>
+								<shortLabel>YOR226C</shortLabel>
+								<fullName>strong similarity to nitrogen fixation proteins</fullName>
+							</names>
+							<xref>
+								<primaryRef db="uniprotkb" id="Q12056"/>
+								<secondaryRef db="cygd" id="YOR226C"/>
+							</xref>
+							<interactorType>
+								<names>
+									<shortLabel>protein</shortLabel>
+									<fullName>protein</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi" id="MI:0326"/>
+								</xref>
+							</interactorType>
+							<organism ncbiTaxId="4932"/>
+						</interactor>
+					</participant>
+					<participant id="17418">
+						<interactor id="17419">
+							<names>
+								<shortLabel>YAL038W</shortLabel>
+								<fullName>pyruvate kinase</fullName>
+							</names>
+							<xref>
+								<primaryRef db="uniprotkb" id="P00549"/>
+								<secondaryRef db="cygd" id="YAL038W"/>
+							</xref>
+							<interactorType>
+								<names>
+									<shortLabel>protein</shortLabel>
+									<fullName>protein</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi" id="MI:0326"/>
+								</xref>
+							</interactorType>
+							<organism ncbiTaxId="4932"/>
+						</interactor>
+					</participant>
+				</participantList>
+			</interaction>
+		</interactionList>
+	</entry>
+</entrySet>
