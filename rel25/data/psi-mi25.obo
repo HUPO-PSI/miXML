@@ -1,5 +1,5 @@
 format-version: 1.0
-date: 12:01:2006 16:18
+date: 31:01:2006 08:38
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: file:D:/luisa/ebi-luisa/PSI-IMEX/master_cv_copy/psi-mi25.obo
@@ -44,7 +44,7 @@ is_a: MI:0091 ! chromatography technologies
 id: MI:0005
 name: alanine scanning
 def: "This approach is used to identify the residues that are involved in an interaction. Several variants of the native protein are prepared by mutating each residue of interest to an alanine. The mutated proteins are expressed\, tested for proper folding and probed in the binding assay. " [PMID:14755292]
-is_a: MI:0003 ! feature detection method
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0006
@@ -100,7 +100,7 @@ is_a: MI:0051 ! fluorescence technologies
 id: MI:0013
 name: biophysical
 def: "The application of physical principles and methods to biological experiments" [PMID:14755292]
-is_a: MI:0045 ! experimental
+is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0014
@@ -186,8 +186,8 @@ is_obsolete: true
 id: MI:0026
 name: correlated mutations
 def: "Pairs of multiple alignments of orthologous sequences are used to identify potential interacting partners as proteins that show covariation of their residue identities between different species. Proteins displaying inter-protein correlated mutations during evolution are likely to be interacting proteins due to co-adapted evolution of their protein interacting interfaces. " [PMID:11933068]
-is_a: MI:0003 ! feature detection method
 is_a: MI:0101 ! sequence based prediction
+is_a: MI:0660 ! feature prediction
 
 [Term]
 id: MI:0027
@@ -230,15 +230,15 @@ id: MI:0032
 name: de novo protein sequencing by mass spectrometry
 def: "The strategy to determine the complete amino acid sequence of a protein by mass spectrometry relies on the generation of a nested set of fragments differing by one amino acid. This permits to reveal the identity of the residue that has been removed at each degradation step by measuring the mass difference of fragments differing of one residue. Peptide fragments can be obtained by protease treatment combined with the fragmentation promoted by collision (or other methods) within a tandem mass spectrometer. This approach can be carried out with LC MS/MS (Liquid Chromatography Tandem Mass Spectrometry)\, nanoESI MS/MS (nanoElectrospray Ionisation tandem mass spectrometry)\, or FTMS (Fourier Transform mass spectrometry) instruments." [PMID:10984529]
 exact_synonym: "ms protein sequence" []
-is_a: MI:0003 ! feature detection method
 is_a: MI:0093 ! protein sequence identification
 is_a: MI:0427 ! mass spectrometry
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0033
 name: deletion analysis
 def: "In this approach\, once a protein is demonstrated to participate in an interaction\, several deletion derivatives are produced and tested in the binding assay to identify the minimal fragment (domain) that can still support the interaction." [PMID:14755292]
-is_a: MI:0003 ! feature detection method
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0034
@@ -265,9 +265,9 @@ is_a: MI:0101 ! sequence based prediction
 id: MI:0037
 name: domain profile pairs
 def: "This approach uses a protein interaction network of a given organism to infer interaction in another organism using information about the interacting region. The regions or domains involved in interactions are clustered if they share sequence similarity and have common interacting partners. The resulting domain profiles are then used to screen the proteome of another organism and domain-domain interactions are inferred. Ultimately\, an inferred protein interaction map is built in this second organism. " [PMID:11473021]
-is_a: MI:0003 ! feature detection method
 is_a: MI:0046 ! experimental knowledge based
 is_a: MI:0101 ! sequence based prediction
+is_a: MI:0660 ! feature prediction
 
 [Term]
 id: MI:0038
@@ -285,7 +285,7 @@ is_a: MI:0433 ! partial identification of protein sequence
 [Term]
 id: MI:0040
 name: electron microscopy
-def: "Electron microscopy methods provide insights into the structure of biological macromolecules and their supramolecular assemblies. Resolution is on average around 10 Angstroms but can reach the atomic level when the samples analysed are 2D crystals. Different types of samples can be analysed by electron microscopy\: crystals\, single particles like viruses\, macromolecular complexes or entire cells and tissue sections. Samples can be chemically fixed or vitrified by rapid freezing in liquid ethane\, and then transferred into the electron microscope. Data collection consists of the recording of electron diffraction data (2D crystals) and images. Depending on the type of sample\, different approaches are used to analyse and merge images and electron diffraction data. \n " [PMID:11785754]
+def: "Electron microscopy methods provide insights into the structure of biological macromolecules and their supramolecular assemblies. Resolution is on average around 10 Angstroms but can reach the atomic level when the samples analysed are 2D crystals. Different types of samples can be analysed by electron microscopy\: crystals\, single particles like viruses\, macromolecular complexes or entire cells and tissue sections. Samples can be chemically fixed or vitrified by rapid freezing in liquid ethane\, and then transferred into the electron microscope. Data collection consists of the recording of electron diffraction data (2D crystals) and images. Depending on the type of sample\, different approaches are used to analyse and merge images and electron diffraction data." [PMID:11785754]
 synonym: "Electron cryomicroscopy" []
 synonym: "Electron crystallography" []
 is_a: MI:0428 ! imaging techniques
@@ -311,13 +311,14 @@ is_a: MI:0043 ! electron resonance
 id: MI:0043
 name: electron resonance
 def: "A form of spectroscopy in which the absorption of microwave by a sample in a strong magnetic field is used to study atoms or molecules with unpaired electrons." [PMID:14755292]
-is_a: MI:0003 ! feature detection method
 is_a: MI:0013 ! biophysical
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0045
-name: experimental
+name: experimental interaction detection
 def: "Methods based on laboratory experiments." [PMID:14755292]
+exact_synonym: "experimental interac" []
 is_a: MI:0001 ! interaction detection method
 
 [Term]
@@ -325,7 +326,7 @@ id: MI:0046
 name: experimental knowledge based
 def: "Predictive algorithms that rely on the information obtained by experimental results" [PMID:14755292]
 exact_synonym: "experimental info" []
-is_a: MI:0063 ! prediction
+is_a: MI:0063 ! interaction prediction
 
 [Term]
 id: MI:0047
@@ -401,10 +402,10 @@ is_a: MI:0051 ! fluorescence technologies
 [Term]
 id: MI:0056
 name: full identification by sequencing
-def: "sequencing occurs during the course of the experiment.\nThe DNA to be sequenced is used as template for the in vitro synthesis\, by DNA polymerase\, of a set of partial replicas\, all beginning at the same place\, but terminating at different points along the DNA chain. The key to this method is the use of dideoxyribonucleoside triphosphates in which the deoxyribose 3'-OH group present in normal nucleotides is missing; when such a modified nucleotide is incorporated into a DNA chain\, it blocks the elongation of the chain. To determine the full sequence\, the four different chain-terminating dideoxyribonucleosides are used in competition with an excess of deoxyribonucleosides in separate DNA synthesis reactions on the same DNA template. When the products of these four reactions are analysed by electrophoresis in four parallel lanes of a denaturing polyacrylamide gel\, the DNA sequence can be derived. Every lane displays a family of DNA fragments of different lengths\, reflecting the different sites at which a specific residue occurs in the original DNA." [PMID:14755292]
+def: "sequencing occurs during the course of the experiment. The DNA to be sequenced is used as template for the in vitro synthesis\, by DNA polymerase\, of a set of partial replicas\, all beginning at the same place\, but terminating at different points along the DNA chain. The key to this method is the use of dideoxyribonucleoside triphosphates in which the deoxyribose 3'-OH group present in normal nucleotides is missing; when such a modified nucleotide is incorporated into a DNA chain\, it blocks the elongation of the chain. To determine the full sequence\, the four different chain-terminating dideoxyribonucleosides are used in competition with an excess of deoxyribonucleosides in separate DNA synthesis reactions on the same DNA template. When the products of these four reactions are analysed by electrophoresis in four parallel lanes of a denaturing polyacrylamide gel\, the DNA sequence can be derived. Every lane displays a family of DNA fragments of different lengths\, reflecting the different sites at which a specific residue occurs in the original DNA." [PMID:14755292]
 exact_synonym: "full dna sequence" []
-is_a: MI:0003 ! feature detection method
 is_a: MI:0078 ! nucleotide sequence identification
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0057
@@ -417,7 +418,7 @@ id: MI:0058
 name: genome based prediction
 def: "Methods that require fully sequenced genomes either because they are based on the comparison of genome topology or on the identification of orthologous sequences in different genomes." [PMID:14755292]
 exact_synonym: "genome prediction" []
-is_a: MI:0063 ! prediction
+is_a: MI:0063 ! interaction prediction
 
 [Term]
 id: MI:0059
@@ -447,9 +448,10 @@ is_obsolete: true
 
 [Term]
 id: MI:0063
-name: prediction
+name: interaction prediction
 def: "Computational methods to predict an interaction. " [PMID:14755292]
 synonym: "in silico methods" []
+exact_synonym: "predicted interac" []
 is_a: MI:0001 ! interaction detection method
 
 [Term]
@@ -486,7 +488,7 @@ id: MI:0068
 name: mass detection of residue modification
 def: "Mass spectrometry can be used to characterise chemical modifications within peptides. One approach consists in the observation of a mass difference when a sample is treated with an enzyme that can specifically remove a peptide modification\, for instance a phosphatase. The mass difference corresponds to the mass of the chemical group covalently linked to a residue. Such experiments carried out with a MALDI-TOF (Matrix-assisted laser desorption ionization time-of-flight ) do not allow the mapping of the modification site within the sequence\, whereas any tandem mass spectrometer (LC MS/MS Liquid Chromatography Tandem Mass Spectrometry\, nanoESI MS/MS nanoElectrospray Ionisation tandem mass spectrometry\, FTMS Fourier Transform mass spectrometry) provide such information. A second approach consists of the direct mass measurement of the ionized chemical group dissociated from the residue within a tandem mass spectrometer. Both approaches need a prior enrichment of the modified peptide population in the samples with IMAC (Immobilized Metal Affinity Chromatography)or specific anti-modification antibodies." [PMID:11395414, PMID for application instance:11875433]
 exact_synonym: "modified residue ms" []
-is_a: MI:0003 ! feature detection method
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0069
@@ -499,7 +501,7 @@ is_a: MI:0013 ! biophysical
 id: MI:0070
 name: mobility shift
 def: "Protein modifications can be identified by gel electrophoresis since any change in the mass and/or the charge of the protein can alter its mobility in PAGE. Although this method does not allow the unequivocally identification of the type of modification that has caused the shift\, it is possible\, by combining this approach with more direct methods\, to correlate the extent of the shift to a specific modification." [PMID:14755292]
-is_a: MI:0003 ! feature detection method
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0071
@@ -514,7 +516,7 @@ is_a: MI:0091 ! chromatography technologies
 [Term]
 id: MI:0072
 name: monoclonal antibody
-def: "Monoclonal antibodies are monospecific antibodies produced in the supernatant of a cell line obtained by fusing a lymphocyte B to a myeloma cell line or selected by phage display technology.\n" [PMID:14755292]
+def: "Monoclonal antibodies are monospecific antibodies produced in the supernatant of a cell line obtained by fusing a lymphocyte B to a myeloma cell line or selected by phage display technology." [PMID:14755292]
 is_a: MI:0113 ! western blot
 
 [Term]
@@ -527,7 +529,7 @@ is_a: MI:0034 ! display technologies
 id: MI:0074
 name: mutation analysis
 def: "Several mutant proteins are produced by random or directed techniques and assayed for their ability to support binding. Mutants defective in binding are tested for correct folding to pinpoint the residues that are directly involved in binding." [PMID:14755292]
-is_a: MI:0003 ! feature detection method
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0075
@@ -549,16 +551,16 @@ name: nuclear magnetic resonance
 def: "NMR requires a small volume of concentrated protein solution that is placed in a strong magnetic field. Certain atomic nuclei\, and in particular hydrogen\, have a magnetic moment or spin; that is\, they have an intrinsic magnetisation\, like a bar magnet. The spin aligns along the strong magnetic field\, but can be changed to a misaligned excited state in response to applied radio frequency (RF) pulses of electromagnetic radiation. When the excited hydrogen nuclei relax to their aligned state\, they emit RF radiation\, which can be measured and displayed as a spectrum. The nature of the emitted radiation depends on the environment of each hydrogen nucleus\, and if one nucleus is excited\, it will influence the absorption and emission of radiation by other nuclei that lie close to it. It is consequently possible\, by an ingenious elaboration of the basic NMR technique known as two-dimensional NMR\, to distinguish the signals from hydrogen nuclei in different amino acid residues and to identify and measure the small shifts in these signals that occur when these hydrogen nuclei lie close enough to interact\: the size of such a shift reveals the distance between the interacting pair of hydrogen atoms. In this way NMR can give information about the distances between the parts of the protein molecule. NMR provides information about interacting atoms thereby permitting to obtain information about protein structure and protein-protein interaction. " [PMID:12120505, PMID for application instance:12062432]
 synonym: "NMR" []
 exact_synonym: "nmr" []
-is_a: MI:0003 ! feature detection method
 is_a: MI:0013 ! biophysical
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0078
 name: nucleotide sequence identification
-def: "Identification of a nucleotide sequence. Depending on the experimental design\, nucleotide sequence can be determined before the interaction detection while building a collection of clones or after the selection of\nrandomly generated clones. " [PMID:14755292]
+def: "Identification of a nucleotide sequence. Depending on the experimental design\, nucleotide sequence can be determined before the interaction detection while building a collection of clones or after the selection of randomly generated clones. " [PMID:14755292]
 synonym: "sequence cloning" []
 exact_synonym: "nucleotide sequence" []
-is_a: MI:0002 ! participant identification method
+is_a: MI:0661 ! experimental participant identification
 
 [Term]
 id: MI:0079
@@ -636,9 +638,8 @@ id: MI:0090
 name: protein complementation assay
 def: "The function of numerous proteins or ribonucleic particles (enzymes\, transcription factors\, etc...) can be rationally dissected into two fragments that fold autonomously but cannot complement to reconstitute the complex function\, unless they are located in close proximity. In a two hybrid experiment\, restoration of the activity by complementation of the two fragments when expressed as fusion with two polypeptides is taken as an evidence that the two polypeptides interact together." [PMID:11495741]
 synonym: "PCA" []
-synonym: "protein complementation assay" []
 exact_synonym: "complementation" []
-is_a: MI:0045 ! experimental
+is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0091
@@ -661,13 +662,13 @@ id: MI:0093
 name: protein sequence identification
 def: "Single amino acid identification along a protein sequence. " [PMID:14755292]
 exact_synonym: "protein sequence" []
-is_a: MI:0002 ! participant identification method
+is_a: MI:0661 ! experimental participant identification
 
 [Term]
 id: MI:0094
 name: protein staining
 def: "A wide range of dyes have been used over the years to visualise proteins in polyacrylamide gels - Coomasie Blue and silver-staining being two classical methods. Fluorescent dyes such as Nile Red and SYPRO Orange are now increasingly used due to their superior dynamic range. Use of non-denaturing gels can allow visualisation of protein protein interactions. Several dyes can be used to specifically indicate residue modification\, however this methodology will give no information as the number of residues modified or their position within the protein sequence. Examples include the use of acid fuscian or the fluorescent dansyl hydrazine to show protein glycosylation." [PMID:12015990]
-is_a: MI:0003 ! feature detection method
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0095
@@ -719,7 +720,7 @@ id: MI:0101
 name: sequence based prediction
 def: "Computational methods based on evolutionary hypothesis\, used as criteria to browse sequences and predict interacting pairs" [PMID:14755292]
 exact_synonym: "predict from sequenc" []
-is_a: MI:0063 ! prediction
+is_a: MI:0063 ! interaction prediction
 
 [Term]
 id: MI:0102
@@ -747,7 +748,7 @@ id: MI:0105
 name: structure based prediction
 def: "Methods based on 3D structure information." [PMID:14755292]
 exact_synonym: "predict from struct" []
-is_a: MI:0063 ! prediction
+is_a: MI:0063 ! interaction prediction
 
 [Term]
 id: MI:0106
@@ -758,7 +759,7 @@ is_a: MI:0577 ! feature prediction from structure
 [Term]
 id: MI:0107
 name: surface plasmon resonance
-def: "This method measures formation of complex by monitoring changes in the resonance angle of light impinging on a gold surface as a result of changes in the refractive index of the surface. A ligand of interest (peptide or protein) is immobilized on a dextran polymer\, and a solution of interacting protein is passed over it through a cell\, with a gold wall coated with this polymer. Macromolecules that interact with the immobilized ligand are retained on the polymer surface\, and alter the resonance angle of impinging light as a result of the change in refractive index brought about by the increased protein mass retained on the polymer surface. Since all proteins have the same refractive index and since there is a linear correlation between resonance angle shift and protein concentration near the surface\, this allows one to measure changes in protein concentration at the surface as a consequence of protein interaction. Furthermore\, this can be done in real time\, allowing direct measurement of both the on rate and the off rate of complex formation. " [PMID:12120258, PMID:11896282]
+def: "This method measures formation of complex by monitoring changes in the resonance angle of light impinging on a gold surface as a result of changes in the refractive index of the surface. A ligand of interest (peptide or protein) is immobilized on a dextran polymer\, and a solution of interacting protein is passed over it through a cell\, with a gold wall coated with this polymer. Macromolecules that interact with the immobilized ligand are retained on the polymer surface\, and alter the resonance angle of impinging light as a result of the change in refractive index brought about by the increased protein mass retained on the polymer surface. Since all proteins have the same refractive index and since there is a linear correlation between resonance angle shift and protein concentration near the surface\, this allows one to measure changes in protein concentration at the surface as a consequence of protein interaction. Furthermore\, this can be done in real time\, allowing direct measurement of both the on rate and the off rate of complex formation. " [PMID:12120258, PMID:11896282, PMID:16338355]
 synonym: "BIAcore(r)" []
 synonym: "Optical biosensor" []
 exact_synonym: "spr" []
@@ -804,8 +805,8 @@ id: MI:0113
 name: western blot
 def: "Western blot is a procedure to identify and quantify proteins. A mixture of protein is first submitted to an electrophoresis in denaturant condition and then electro-transferred from the gel to a membrane. The membrane is then incubated with a primary antibody specific for a given protein or a specific residue modification in the sample under analysis. A secondary antibody\, radiolabelled or fused to a chromogenic enzyme\, targets the first antibody and allows the visualisation of the protein band on the membrane. " [PMID:14755292]
 synonym: "Immuno blot" []
-is_a: MI:0003 ! feature detection method
 is_a: MI:0421 ! identification by antibody
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0114
@@ -813,8 +814,8 @@ name: x-ray crystallography
 def: "X-rays have a wavelength\, typically around 1 Angstrom (the diameter of a hydrogen atom). If a narrow parallel beam of X-rays is directed at a sample of a pure protein\, most of the X-rays will pass straight through it. A small fraction\, however\, will be scattered by the atoms in the sample. If the sample is a well-ordered crystal\, the scattered waves will reinforce one another at certain points and will appear as diffraction spots when the X-rays are recorded by a suitable detector. The position and intensity of each spot in the X-ray diffraction pattern contain information about the position and nature of the atoms in the crystal. The three-dimensional structure of a large molecule can be deduced from the electron-density map of its crystal. In recent years X-ray diffraction analysis has become increasingly automated\, and now the slowest step is likely to be the production of suitable protein crystals. This requires high concentration of very pure protein and empirical searching for the proper crystallisation conditions." [PMID:14755292]
 synonym: "X-ray" []
 exact_synonym: "x-ray" []
-is_a: MI:0003 ! feature detection method
 is_a: MI:0013 ! biophysical
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0115
@@ -1695,7 +1696,6 @@ def: "Reaction\, that can affect K\,C\,A\,D\,E\,Q\,G\,I\,K\,M\,P\,S\,T\,Y\,V res
 exact_synonym: "acetylation" []
 xref_analog: GO:0006473 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
-xref_unknown: GO:0006473 "Gene Ontolgy"
 
 [Term]
 id: MI:0193
@@ -1704,7 +1704,6 @@ def: "Irreversible reaction that can affect A\,R\,N\,D\,C\,Q\,E\,G\,H\,I\,L\,K\,
 exact_synonym: "amidation" []
 xref_analog: GO:0001519 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
-xref_unknown: GO:0018032 "Gene Ontology"
 
 [Term]
 id: MI:0194
@@ -1732,7 +1731,6 @@ def: "N6-acetyl-L-lysine or S-acetyl-L-cysteine are cleaved and return K or C re
 exact_synonym: "deacetylation" []
 xref_analog: GO:0006476 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
-xref_unknown: GO:0006476 "Gene Ontology"
 
 [Term]
 id: MI:0198
@@ -1806,7 +1804,6 @@ def: "Reaction that can affect K or G residues." [RESID:AA0211, RESID:AA0057]
 exact_synonym: "formylation" []
 xref_analog: GO:0018256 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
-xref_unknown: GO:0018256 "Gene Ontology"
 
 [Term]
 id: MI:0208
@@ -1846,7 +1843,7 @@ is_a: MI:0194 ! cleavage reaction
 [Term]
 id: MI:0213
 name: methylation reaction
-def: "The covalent attachment of a methyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer.\nIrreversible reaction that can affect A\,G\,M\,F\,P\,C\,R\,N\,Q\,E\,H\,or K residues. " [RESID:AA0061, RESID:AA0062, RESID:AA0063, RESID:AA0064, RESID:AA0234, RESID:AA0065, RESID:AA0066, RESID:AA0272, RESID:AA0067, RESID:AA0068, RESID:AA0069, RESID:AA0070, RESID:AA0071, RESID:AA0072, RESID:AA0073, RESID:AA0074, RESID:AA0075, RESID:AA0076]
+def: "The covalent attachment of a methyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer. Irreversible reaction that can affect A\,G\,M\,F\,P\,C\,R\,N\,Q\,E\,H\,or K residues. " [RESID:AA0061, RESID:AA0062, RESID:AA0063, RESID:AA0064, RESID:AA0234, RESID:AA0065, RESID:AA0066, RESID:AA0272, RESID:AA0067, RESID:AA0068, RESID:AA0069, RESID:AA0070, RESID:AA0071, RESID:AA0072, RESID:AA0073, RESID:AA0074, RESID:AA0075, RESID:AA0076]
 exact_synonym: "methylation" []
 xref_analog: GO:0043414 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -1885,14 +1882,14 @@ is_a: MI:0414 ! enzymatic reaction
 [Term]
 id: MI:0218
 name: physical interaction
-def: "Interaction that requires atoms proximity. " [PMID:14755292]
+def: "Interaction among molecules that can be direct or indirect." [PMID:14755292]
 synonym: "aggregation" []
 is_a: MI:0190 ! interaction type
 
 [Term]
 id: MI:0219
 name: synthetic lethal
-def: "Death phenotype observed on cells carrying combination of  two independently silent  mutations.\n." [PMID:15608217]
+def: "Death phenotype observed on cells carrying combination of  two independently silent  mutations." [PMID:15608217]
 is_a: MI:0269 ! synthetic phenotype
 
 [Term]
@@ -1906,7 +1903,7 @@ is_a: MI:0414 ! enzymatic reaction
 [Term]
 id: MI:0221
 name: expression level
-def: "Synthesis rate of a molecule under investigation described in comparison with its naturally occurring expression level in a cell. \n" [PMID:14755292]
+def: "Synthesis rate of a molecule under investigation described in comparison with its naturally occurring expression level in a cell." [PMID:14755292]
 is_a: MI:0346 ! experimental preparation
 
 [Term]
@@ -1941,7 +1938,7 @@ is_a: MI:0091 ! chromatography technologies
 [Term]
 id: MI:0227
 name: reverse phase chromatography
-def: "Reverse phase chromatography operates on the basis of hydrophilicity and lipophilicity. The stationary phase consists of silica based packings with n-alkyl chains covalently bound. For example\, C-8 signifies an octyl chain and C-18 an octadecyl ligand in the matrix. The more hydrophobic the matrix on each ligand\, the greater is the tendency of the column to retain hydrophobic moieties. Thus hydrophilic compounds elute more quickly than do hydrophobic compounds.\n\n" [PMID:14755292]
+def: "Reverse phase chromatography operates on the basis of hydrophilicity and lipophilicity. The stationary phase consists of silica based packings with n-alkyl chains covalently bound. For example\, C-8 signifies an octyl chain and C-18 an octadecyl ligand in the matrix. The more hydrophobic the matrix on each ligand\, the greater is the tendency of the column to retain hydrophobic moieties. Thus hydrophilic compounds elute more quickly than do hydrophobic compounds." [PMID:14755292]
 exact_synonym: "reverse phase chrom" []
 is_a: MI:0091 ! chromatography technologies
 
@@ -1955,7 +1952,7 @@ is_a: MI:0090 ! protein complementation assay
 [Term]
 id: MI:0229
 name: green fluorescence protein complementation assay
-def: "Protein-protein interaction trap based on fusions of bait and prey protein to two dissected fragment of GFP. The system implemented in E. coli\, allow screening of partners\, including membrane proteins and also detect transient interaction that are stabilized by the complemented GFP.\n" [PMID:15631464]
+def: "Protein-protein interaction trap based on fusions of bait and prey protein to two dissected fragment of GFP. The system implemented in E. coli\, allow screening of partners\, including membrane proteins and also detect transient interaction that are stabilized by the complemented GFP." [PMID:15631464]
 exact_synonym: "gfp complementation" []
 is_a: MI:0228 ! cytoplasmic complementation assay
 
@@ -2030,13 +2027,13 @@ is_a: MI:0517 ! radiolabelled molecule
 [Term]
 id: MI:0239
 name: biotin tagged
-def: "Biotin\, a 244 Dalton vitamin found in tissue and blood\, binds with high affinity to avidin and  streptavidin protein. Since biotin is a relatively small molecule\, it can be conjugated to many proteins or nucleic acids without significantly altering their biological activity. Biotinylation reagents are available for targeting a variety of specific functional groups\, including primary amines\, sulfhydryls\, carboxyls and carbohydrates that lead to nucleotides or amino acid biotinilation. \n" [PMID:14755292]
+def: "Biotin\, a 244 Dalton vitamin found in tissue and blood\, binds with high affinity to avidin and  streptavidin protein. Since biotin is a relatively small molecule\, it can be conjugated to many proteins or nucleic acids without significantly altering their biological activity. Biotinylation reagents are available for targeting a variety of specific functional groups\, including primary amines\, sulfhydryls\, carboxyls and carbohydrates that lead to nucleotides or amino acid biotinilation." [PMID:14755292]
 is_a: MI:0507 ! tagged molecule
 
 [Term]
 id: MI:0240
 name: fusion proteins
-def: "The protein under study  is expressed as a fusion with a labelling protein\, having either fluorescence properties or an enzymatic activity that facilitates its identification\, localisation or quantification. \n" [PMID:14755292]
+def: "The protein under study  is expressed as a fusion with a labelling protein\, having either fluorescence properties or an enzymatic activity that facilitates its identification\, localisation or quantification. " [PMID:14755292]
 is_a: MI:0507 ! tagged molecule
 
 [Term]
@@ -2064,37 +2061,43 @@ is_a: MI:0353 ! cross-reference type
 id: MI:0244
 name: reactome complex
 def: "Collection of functional complexes within Reactome - a knowledgebase of biological processes.  http\://www.reactome.org/" [PMID:14755292]
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0467 ! reactome
 
 [Term]
 id: MI:0245
 name: reactome protein
 def: "Collection of protein within the Reactome database - a knowledgebase of biological processes.  http\://www.reactome.org/" [PMID:14755292]
+xref_analog: id-validation-regexp:\"\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]|\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]-\[0-9\]+|\[A-Z\]\{3\}\[0-9\]\{5\}|\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]-PRO_\[0-9\]\{10\}\"
 is_a: MI:0467 ! reactome
 
 [Term]
 id: MI:0246
 name: cabri
 def: "CABRI cell lines catalogue available at http\://www.cabri.org/" [PMID:14755292]
+xref_analog: id-validation-regexp:\"\[0-9\]+|ACC\\s\[A-Z0-9\]+|ECACC\\s\[A-Z0-9\]+|LMBP\\s\[A-Z0-9\]+|ICLC\\s\[A-Z0-9\]+|CIP-\[0-9\]+\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
 id: MI:0247
 name: newt
 def: "New EBI Web Taxonomy http\://www.ebi.ac.uk/newt/index.html" [PMID:14755292]
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
 id: MI:0248
 name: resid
 def: "The RESID Database of Protein Modifications is a comprehensive collection of annotations and structures for protein modifications including amino-terminal\, carboxyl-terminal and peptide chain cross-link post-translational modifications	 http\://www.ebi.ac.uk/RESID/index.html" [PMID:14755292]
+xref_analog: id-validation-regexp:\"AA\[0-9\]\{4\}\"
 is_a: MI:0447 ! feature database xref
 is_a: MI:0473 ! participant database xref
 
 [Term]
 id: MI:0249
 name: huge
-def: "A Database of Human Unidentified Gene-Encoded Large Proteins Analyzed by Kazusa Human cDNA Project\n http\://www.kazusa.or.jp/huge/" [PMID:14755292]
+def: "A Database of Human Unidentified Gene-Encoded Large Proteins Analyzed by Kazusa Human cDNA Project.\nhttp\://www.kazusa.or.jp/huge/" [PMID:14755292]
+xref_analog: id-validation-regexp:\"KIAA\[0-9\]\{4\}\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -2125,15 +2128,15 @@ is_a: MI:0505 ! experimental feature
 [Term]
 id: MI:0254
 name: genetic interference
-def: "This term refers to methods that aim at interfering with the activity of a specific gene by altering the gene regulatory or coding sequences. This goal can be\nachieved either by a classical genetic approach (random mutagenesis followed by phenotype characterization and genetic mapping) or by a reverse genetics approach where a gene of interest is modified by directed mutagenesis." [PMID:14755292]
-is_a: MI:0045 ! experimental
+def: "This term refers to methods that aim at interfering with the activity of a specific gene by altering the gene regulatory or coding sequences. This goal can be achieved either by a classical genetic approach (random mutagenesis followed by phenotype characterization and genetic mapping) or by a reverse genetics approach where a gene of interest is modified by directed mutagenesis." [PMID:14755292]
+is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0255
 name: post transcriptional interference
-def: "This term refers to methods designed to interfere with gene expression at post-transcriptional level rather than with the gene itself.\n" [PMID:14755292]
+def: "This term refers to methods designed to interfere with gene expression at post-transcriptional level rather than with the gene itself." [PMID:14755292]
 exact_synonym: "expression interfer" []
-is_a: MI:0045 ! experimental
+is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0256
@@ -2145,7 +2148,7 @@ is_a: MI:0255 ! post transcriptional interference
 [Term]
 id: MI:0257
 name: antisense rna
-def: "This approach is based on the observation that expression of RNA that is complementary to a specific mRNA can decrease the synthesis of its gene product either by increasing the degradation of the targeted mRNA or by interfering with\nits translation." [PMID:1340158]
+def: "This approach is based on the observation that expression of RNA that is complementary to a specific mRNA can decrease the synthesis of its gene product either by increasing the degradation of the targeted mRNA or by interfering with its translation." [PMID:1340158]
 is_a: MI:0255 ! post transcriptional interference
 
 [Term]
@@ -2224,7 +2227,7 @@ is_a: MI:0265 ! suppression expression alteration
 [Term]
 id: MI:0269
 name: synthetic phenotype
-def: "Two  silent mutations  show an altered phenotype when  they co-occur on the same cell.\n" [PMID:15608217]
+def: "Two  silent mutations  show an altered phenotype when  they co-occur on the same cell." [PMID:15608217]
 is_a: MI:0208 ! genetic interaction
 
 [Term]
@@ -2272,7 +2275,7 @@ is_a: MI:0404 ! comigration in non denaturing gel electrophoresis
 [Term]
 id: MI:0300
 name: alias type
-def: "Descriptor of type of nomenclature used to describe interactor" [PMID:14755292]
+def: "Descriptor of type of nomenclature used to describe interactor." [PMID:14755292]
 synonym: "CvAliasType" []
 is_a: MI:0000 ! molecular interaction
 
@@ -2319,7 +2322,7 @@ is_a: MI:0300 ! alias type
 id: MI:0306
 name: open reading frame name
 def: "A name temporarily attributed by a sequencing project to an open reading frame. This name is generally based on a cosmid numbering system. " [PMID:14755292]
-comment: For instance  MtCY277.28c\, SYGP-ORF50\, SpBC2F12.04\, C06E1.1\, CG10954. \n Also called Sequencing names or Contig names or Temporary ORFNames
+comment: For instance  MtCY277.28c\, SYGP-ORF50\, SpBC2F12.04\, C06E1.1\, CG10954. Also called Sequencing names or Contig names or Temporary ORFNames
 exact_synonym: "orf name" []
 is_a: MI:0300 ! alias type
 
@@ -2372,7 +2375,7 @@ is_a: MI:0000 ! molecular interaction
 [Term]
 id: MI:0314
 name: complex
-def: "A stable set of interacting molecules that can be copurified and operate as a functional unit. This term and its children should be use only at PARTICIPANT level." [PMID:14755292]
+def: "A stable set of interacting molecules that can be copurified. This term and its children should be use only at PARTICIPANT level." [PMID:14755292]
 is_a: MI:0313 ! interactor type
 
 [Term]
@@ -2433,7 +2436,7 @@ is_a: MI:0320 ! ribonucleic acid
 [Term]
 id: MI:0322
 name: guide rna
-def: "Small RNA molecules that hybridize to specific mRNAs and direct their RNA editing.\n" [PMID:14755292]
+def: "Small RNA molecules that hybridize to specific mRNAs and direct their RNA editing." [PMID:14755292]
 synonym: "guide RNA" []
 exact_synonym: "grna" []
 is_a: MI:0320 ! ribonucleic acid
@@ -2555,7 +2558,7 @@ is_a: MI:0333 ! feature range status
 id: MI:0338
 name: range
 def: "Describes a sequence position known to be in a certain range\, where the exact position is unclear." [PMID:14755292]
-comment: For instance   when an amino acid modification is known to be in the region from 5 to 7.\nDisplayed as '..'.
+comment: For instance   when an amino acid modification is known to be in the region from 5 to 7. Displayed as '..'.
 is_a: MI:0333 ! feature range status
 
 [Term]
@@ -2714,16 +2717,17 @@ is_a: MI:0353 ! cross-reference type
 [Term]
 id: MI:0362
 name: inference
-def: "Interaction support based on human assumption\, either when the complete experimental evidence is not available or  when the results are extended by homology to closely related orthologues  sequences." [PMID:14755292]
+def: "Evidence based on human assumption\, either when the complete experimental support is not available or  when the results are extended by homology to closely related orthologues  sequences." [PMID:14755292]
 synonym: "modeled" []
 synonym: "modelled" []
 is_a: MI:0001 ! interaction detection method
+is_a: MI:0002 ! participant identification method
 is_a: MI:0003 ! feature detection method
 
 [Term]
 id: MI:0363
 name: inferred by author
-def: "Interaction support based on the author of a paper assumption\, either when the complete experimental evidence is not available or  when the results are extended by homology to closely related orthologues  sequences." [PMID:14755292]
+def: "Evidence based on the author of a paper assumption\, either when the complete experimental support is not available or  when the results are extended by homology to closely related orthologues  sequences." [PMID:14755292]
 synonym: "modeled by author" []
 synonym: "modelled by author" []
 is_a: MI:0362 ! inference
@@ -2731,7 +2735,7 @@ is_a: MI:0362 ! inference
 [Term]
 id: MI:0364
 name: inferred by curator
-def: "Interaction support based on a curator assumption\, either when the complete experimental evidence is not available or  when the results are extended by homology to closely related orthologues  sequences." [PMID:14755292]
+def: "Evidence based on a curator assumption\, either when the complete experimental support is not available or  when the results are extended by homology to closely related orthologues  sequences." [PMID:14755292]
 synonym: "modeled by curator" []
 synonym: "modelled by curator" []
 is_a: MI:0362 ! inference
@@ -2927,12 +2931,12 @@ id: MI:0396
 name: predetermined participant
 def: "Molecule whose sequence identity is not checked and has been assumed from external or previous experimental evidence(s)." [PMID:14755292]
 exact_synonym: "predetermined" []
-is_a: MI:0002 ! participant identification method
+is_a: MI:0661 ! experimental participant identification
 
 [Term]
 id: MI:0397
 name: two hybrid array
-def: "Two-hybrid screening can be done in a colony array format\, in which each colony expresses a defined pair of proteins. Because the particular protein pair expressed in each colony is defined by its position in the array\, positive signals identify interacting proteins without further characterization\, thus obviating the need for DNA purification and sequencing. The interrogation of a two-hybrid colony array usually involves a mating strategy in which every DNA binding domain hybrid (the bait) is tested against all activation domain hybrids (the preys) in a grid pattern. Arrays usually use full-length open reading frames.\n\n" [PMID:11827624, PMID for application instance:10688190]
+def: "Two-hybrid screening can be done in a colony array format\, in which each colony expresses a defined pair of proteins. Because the particular protein pair expressed in each colony is defined by its position in the array\, positive signals identify interacting proteins without further characterization\, thus obviating the need for DNA purification and sequencing. The interrogation of a two-hybrid colony array usually involves a mating strategy in which every DNA binding domain hybrid (the bait) is tested against all activation domain hybrids (the preys) in a grid pattern. Arrays usually use full-length open reading frames." [PMID:11827624, PMID for application instance:10688190]
 is_a: MI:0018 ! two hybrid
 
 [Term]
@@ -2960,7 +2964,7 @@ is_a: MI:0401 ! biochemical
 id: MI:0401
 name: biochemical
 def: "The application of chemical principles and methods to biological experiments" [PMID:14755292]
-is_a: MI:0045 ! experimental
+is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0402
@@ -3060,7 +3064,7 @@ is_a: MI:0401 ! biochemical
 [Term]
 id: MI:0416
 name: fluorescence microscopy
-def: "fluorescent microscopy" [PMID:14755292]
+def: "Fluorescent microscopy uses a high intensity light to illuminate the sample. This light excites fluorescence species in the sample\, which then emit light of a longer wavelength. A fluorescent microscope also produces a magnified image of the sample\, but the image is based on the second light source -- the light emanating from the fluorescent species -- rather than from the light originally used to illuminate\, and excite\, the sample." [PMID:14755292]
 exact_synonym: "fluorescence imaging" []
 is_a: MI:0428 ! imaging techniques
 
@@ -3098,7 +3102,7 @@ id: MI:0421
 name: identification by antibody
 def: "antibody mediated identification" [PMID:14755292]
 exact_synonym: "antibody detection" []
-is_a: MI:0002 ! participant identification method
+is_a: MI:0661 ! experimental participant identification
 
 [Term]
 id: MI:0422
@@ -3130,21 +3134,21 @@ is_a: MI:0424 ! protein kinase assay
 [Term]
 id: MI:0426
 name: light microscopy
-def: "light microscopy" [PMID:14755292]
+def: "Light visible microscopy uses environmental light to illuminate the sample and produce a magnified image of the sample." [PMID:14755292]
 is_a: MI:0428 ! imaging techniques
 
 [Term]
 id: MI:0427
 name: mass spectrometry
 def: "mass spectrometry " [PMID:14755292]
-is_a: MI:0002 ! participant identification method
+is_a: MI:0661 ! experimental participant identification
 
 [Term]
 id: MI:0428
 name: imaging techniques
 def: "Methods that provide images of molecules at various resolution depending on the technology used." [PMID:14755292]
 synonym: "microscopy" []
-is_a: MI:0045 ! experimental
+is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0429
@@ -3198,7 +3202,7 @@ is_a: MI:0415 ! enzymatic studies
 id: MI:0436
 name: protein footprinting
 def: "Protein footprinting is a technique for identifying structural changes modulated by protein-ligand binding\, and mapping protein-ligand interfaces This technique involves attaching cutting reagents randomly to amino acid residue (e.g. lysine or cysteine) on the proteins surface and then using this lysine-labelled protein to cleave polypeptide backbone of the other protein at exposed residues adjacent to its binding site." [PMID:14987073, PMID:14967031, PMID:14600024]
-is_a: MI:0003 ! feature detection method
+is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0437
@@ -3219,7 +3223,7 @@ is_a: MI:0588 ! 3 hybrid method
 [Term]
 id: MI:0439
 name: random spore analysis
-def: "A technique used to detect genetic interactions between 2 (or more) genes in a sporulating organism by scoring a large population of haploid spores for a phenotype and correlating the phenotype with the presence of single vs double (multiple) mutations.   A diploid heterozygous organism harbouring mutations in two (or more) genes is induced to sporulate.  Resulting spores are meiotic segregants that are haploid and are either wild type or mutant at each locus. Spores are scored for a phenotype\, such as loss of viability. \n" [PMID:14755292]
+def: "A technique used to detect genetic interactions between 2 (or more) genes in a sporulating organism by scoring a large population of haploid spores for a phenotype and correlating the phenotype with the presence of single vs double (multiple) mutations.   A diploid heterozygous organism harbouring mutations in two (or more) genes is induced to sporulate.  Resulting spores are meiotic segregants that are haploid and are either wild type or mutant at each locus. Spores are scored for a phenotype\, such as loss of viability." [PMID:14755292]
 synonym: "RSA" []
 synonym: "random-spore analysis" []
 synonym: "spore germination" []
@@ -3270,6 +3274,7 @@ is_a: MI:0444 ! database citation
 id: MI:0446
 name: pubmed
 def: "PubMed is designed to provide access to citations from biomedical literature\nhttp\://www.ncbi.nlm.nih.gov/entrez/query.fcgi" [PMID:14755292]
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0445 ! experiment database xref
 
 [Term]
@@ -3284,6 +3289,7 @@ id: MI:0448
 name: gene ontology
 def: "The objective of Gene Ontology (GO) is to provide controlled vocabularies for the description of the molecular function\, biological process and cellular component of gene products\nhttp\://www.ebi.ac.uk/GO" [PMID:14755292]
 exact_synonym: "go" []
+xref_analog: id-validation-regexp:\"GO\:\[0-9\]\{7\}\"
 is_a: MI:0447 ! feature database xref
 is_a: MI:0461 ! interaction database xref
 
@@ -3292,6 +3298,7 @@ id: MI:0449
 name: interpro
 def: "InterPro combines a number of databases (referred to as member databases) that use different methodologies and a varying degree of biological information on well-characterised proteins to derive protein signatures\nhttp\://www.ebi.ac.uk/interpro/" [PMID:1252001]
 synonym: "InterPro" []
+xref_analog: id-validation-regexp:\"IPR\[0-9\]\{6\}\"
 is_a: MI:0447 ! feature database xref
 
 [Term]
@@ -3299,6 +3306,7 @@ id: MI:0450
 name: cdd
 def: "CD-Search service may be used to identify the conserved domains present in a protein sequence.\nhttp\://www.ncbi.nlm.nih.gov/Structure/cdd" [PMID:14755292]
 synonym: "CDD" []
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0447 ! feature database xref
 
 [Term]
@@ -3306,6 +3314,7 @@ id: MI:0451
 name: pfam
 def: "Pfam is a large collection of multiple sequence alignments and hidden Markov models covering many common protein domains.\nhttp\://www.sanger.ac.uk/Software/Pfam" [PMID:14755292]
 synonym: "Pfam" []
+xref_analog: id-validation-regexp:\"PF\[0-9\]\{5\}\"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3313,6 +3322,7 @@ id: MI:0452
 name: pirsf
 def: "PIRSF is a classification system based on evolutionary relationship of whole proteins.\nhttp\://pir.georgetown.edu/iproclass/" [PMID:14755292]
 synonym: "PIRSF" []
+xref_analog: id-validation-regexp:\"PIRSF\[0-9\]\{5\}\"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3320,13 +3330,15 @@ id: MI:0453
 name: prints
 def: "PRINTS  is a compendium of protein fingerprints. A fingerprint is a group of conserved motifs used to characterise a protein family\nhttp\://www.bioinf.man.ac.uk/dbbrowser/PRINTS/" [PMID:14755292]
 synonym: "PRINTS" []
+xref_analog: id-validation-regexp:\"PR\[0-9\]\{6\}\"
 is_a: MI:0449 ! interpro
 
 [Term]
 id: MI:0454
 name: prodom
-def: "The ProDom  protein domain database consists of an automatic compilation of homologous domains.\nhttp\://prodes.toulouse.inra.fr/prodom" [PMID:14755292]
+def: "The ProDom  protein domain database consists of an automatic compilation of homologous domains.\nhttp\://protein.toulouse.inra.fr/prodom.html" [PMID:14755292]
 synonym: "ProDom" []
+xref_analog: id-validation-regexp:\"PD\[0-9\]\{6\}\"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3334,6 +3346,7 @@ id: MI:0455
 name: prosite
 def: "PROSITE is a database of protein families and domains. It consists of biologically significant sites\, patterns and profiles\nhttp\://us.expasy.org/prosite/" [PMID:14755292]
 synonym: "Prosite" []
+xref_analog: id-validation-regexp:\"PS\[0-9\]\{5\}\"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3341,6 +3354,7 @@ id: MI:0456
 name: scop superfamily
 def: "SUPERFAMILY is a library of profile hidden Markov models that represent all proteins of known structure. The library is based on the SCOP classification of proteins\: each model corresponds to a SCOP domain \nhttp\://supfam.mrc-lmb.cam.ac.uk/SUPERFAMILY/" [PMID:14755292]
 synonym: "SCOP superfamily" []
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3348,6 +3362,7 @@ id: MI:0457
 name: smart
 def: "SMART  (a Simple Modular Architecture Research Tool) allows the identification and annotation of genetically mobile domains and the analysis of domain architectures.\nhttp\://smart.embl-heidelberg.de/" [PMID:14755292]
 synonym: "SMART" []
+xref_analog: id-validation-regexp:\"SM\[0-9\]\{5\}\"
 is_a: MI:0449 ! interpro
 
 [Term]
@@ -3355,13 +3370,15 @@ id: MI:0458
 name: tigrfams
 def: "TIGRFAMs  is a collection of protein families\, featuring curated multiple sequence alignments\, Hidden Markov Models (HMMs) and annotation\nhttp\://www.tigr.org/TIGRFAMs" [PMID:14755292]
 synonym: "TIGRFAMs" []
+xref_analog: id-validation-regexp:\"TIGR\[0-9\]+\"
 is_a: MI:0449 ! interpro
 
 [Term]
 id: MI:0459
 name: mmdb
-def: "MMDB (Molecular Modeling DataBase)\,  is a subset of three-dimensional structures obtained from the Protein Data Bank\nhttp\://www.ncbi.nlm.nih.gov/Structure/MMDB" [PMID:14755292]
+def: "MMDB (Molecular Modeling DataBase)\,  is a subset of three-dimensional structures obtained from the Protein Data Bank\nhttp\://www.ncbi.nlm.nih.gov/Structure" [PMID:14755292]
 synonym: "MMDB" []
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0447 ! feature database xref
 is_a: MI:0461 ! interaction database xref
 
@@ -3370,6 +3387,7 @@ id: MI:0460
 name: pdb
 def: "PDB maintain a single Protein Data Bank Archive of macromolecular structural data that is freely and publicly available to the global community.\nhttp\://www.wwpdb.org/" [PMID:14634627]
 synonym: "PDB" []
+xref_analog: id-validation-regexp:\"\[0-9\]\[a-zA-Z0-9\]\{3\}\"
 is_a: MI:0447 ! feature database xref
 is_a: MI:0461 ! interaction database xref
 
@@ -3385,6 +3403,7 @@ id: MI:0462
 name: bind
 def: "The Biomolecular Interaction Network Database (BIND) is a collection of records documenting molecular interactions.\nhttp\://www.blueprint.org/bind" [PMID:14755292]
 synonym: "BIND" []
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0461 ! interaction database xref
 is_a: MI:0489 ! source database xref
 
@@ -3399,10 +3418,12 @@ is_a: MI:0489 ! source database xref
 [Term]
 id: MI:0464
 name: cygd
-def: "The MIPS Comprehensive Yeast Genome Database (CYGD) aims to present information on the molecular structure and functional network of the entirely sequenced\, well-studied model eukaryote\, the budding yeast Saccharomyces cerevisiae. In addition the data of various projects on related yeasts are used for comparative analysis.\nhttp\://mips.gsf.de/proj/yeast/CYGD" [PMID:14755292]
+def: "The MIPS Comprehensive Yeast Genome Database (CYGD) aims to present information on the molecular structure and functional network of the entirely sequenced\, well-studied model eukaryote\, the budding yeast Saccharomyces cerevisiae. In addition the data of various projects on related yeasts are used for comparative analysis.\nhttp\://mips.gsf.de/proj/yeast/CYGD\nhttp\://mips.gsf.de/genre/proj/mpact" [PMID:14755292]
 synonym: "CYGD" []
 synonym: "CYGD (MIPS)" []
 synonym: "MIPS" []
+synonym: "MPact" []
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0461 ! interaction database xref
 is_a: MI:0473 ! participant database xref
 is_a: MI:0489 ! source database xref
@@ -3412,6 +3433,7 @@ id: MI:0465
 name: dip
 def: "The database of interacting protein (DIP) database stores experimentally determined interactions between proteins. It combines information from a variety of sources to create a single\, consistent set of protein-protein interactions.\nhttp\://dip.doe-mbi.ucla.edu/" [PMID:14755292]
 synonym: "DIP" []
+xref_analog: id-validation-regexp:\"DIP\[0-9\]+\[NE\]\"
 is_a: MI:0461 ! interaction database xref
 is_a: MI:0489 ! source database xref
 
@@ -3443,6 +3465,7 @@ id: MI:0469
 name: intact
 def: "INTerAction datanase (IntAct) provides an open source database and toolkit for the storage\, presentation and analysis of protein interactions.\nhttp\://www.ebi.ac.uk/intact" [PMID:14681455]
 synonym: "IntAct" []
+xref_analog: id-validation-regexp:\"EBI-\[0-9\]+\"
 is_a: MI:0461 ! interaction database xref
 is_a: MI:0489 ! source database xref
 
@@ -3451,6 +3474,7 @@ id: MI:0470
 name: kegg
 def: " KEGG (Kyoto Encyclopedia of Genes and Genomes) is a knowledge base for systematic analysis of gene functions\, linking genomic information with higher order functional information and also supplies  information about chemical compounds\, enzyme molecules and enzymatic reactions.\nhttp\://www.genome.ad.jp/kegg/" [PMID:14755292]
 synonym: "KEGG" []
+xref_analog: id-validation-regexp:\"\[a-Z\]+\:\[a-Z\]+\[0-9\]+\"
 is_a: MI:0461 ! interaction database xref
 is_a: MI:0473 ! participant database xref
 
@@ -3459,6 +3483,7 @@ id: MI:0471
 name: mint
 def: "The Moleculer INTeraction database (MINT) is a relational database designed to store interactions between biological molecules. http\://mint.bio.uniroma2.it/mint/" [PMID:14755292]
 synonym: "MINT" []
+xref_analog: id-validation-regexp:\"MINT-\[9-0\]+\"
 is_a: MI:0461 ! interaction database xref
 is_a: MI:0489 ! source database xref
 
@@ -3467,6 +3492,7 @@ id: MI:0472
 name: msd
 def: "The Macromolecular Structure Database (MSD) - the European project for the collection\, management and distribution of data about macromolecular structures\, derived in part from the Protein Data Bank (PDB).\nhttp\://www.ebi.ac.uk/msd/" [PMID:14755292]
 synonym: "PQS" []
+xref_analog: id-validation-regexp:\"\[0-9\]\[a-zA-Z0-9\]\{3\}\"
 is_a: MI:0461 ! interaction database xref
 
 [Term]
@@ -3481,6 +3507,7 @@ id: MI:0474
 name: chebi
 def: "A definitive\, freely available database of Chemical compounds of Biological Interest (ChEBI).\nhttp\://www.ebi.ac.uk/chebi/" [PMID:14755292]
 synonym: "ChEBI" []
+xref_analog: id-validation-regexp:\"CHEBI\:\[0-9\]+\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3491,6 +3518,7 @@ synonym: "DDBJ" []
 synonym: "DDBJ/EMBL/GenBank" []
 synonym: "EMBL" []
 synonym: "GenBank" []
+xref_analog: id-validation-regexp:\"\[9-0\]+|\[A-Z\]\{1-2\}\[9-0\]+\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3498,6 +3526,7 @@ id: MI:0476
 name: ensembl
 def: " Ensembl is a joint project between the EMBL-EBI and the Wellcome Trust Sanger Institute that aims at developing a system that maintains automatic annotation of large eukaryotic genomes\nhttp\://www.ebi.ac.uk/ensembl" [PMID:15078858]
 synonym: "Ensembl" []
+xref_analog: id-validation-regexp:\"ENS\[GTP\]\[0-9\]\{11\}\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3506,6 +3535,7 @@ name: entrez gene/locuslink
 def: "LocusLink provides a single query interface to curated sequence and descriptive information about genetic loci.\nhttp\://www.ncbi.nlm.nih.gov/LocusLink/" [PMID:14755292]
 synonym: "Entrez gene/locuslink" []
 exact_synonym: "entrezgene/locuslink" []
+xref_analog: id-validation-regexp:\"\[9-0\]+|\[A-Z\]\{1-2\}\[9-0\]+\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3513,6 +3543,7 @@ id: MI:0478
 name: flybase
 def: "FlyBase is a comprehensive database for information on the genetics and molecular biology of Drosophila. http\://fbserver.gen.cam.ac.uk\:7081/" [PMID:14755292]
 synonym: "FlyBase" []
+xref_analog: id-validation-regexp:\"FBgn\[0-9\]\{7\}\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3520,6 +3551,7 @@ id: MI:0479
 name: mgd/mgi
 def: "Mouse Genome Informatics (MGI) provides integrated access to data on the genetics\, genomics\, and biology of the laboratory mouse.\nhttp\://www.informatics.jax.org/" [PMID:14755292]
 synonym: "MGD/MGI" []
+xref_analog: id-validation-regexp:\"MGI\:\[0-9\]+\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3527,6 +3559,7 @@ id: MI:0480
 name: omim
 def: "Online Mendelian Inheritance in Man (OMIM) is a catalogue of human genes and genetic disorders\, with links to literature references\, sequence records\, maps\, and related databases\nhttp\://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM" [PMID:14755292]
 synonym: "OMIM" []
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3534,6 +3567,7 @@ id: MI:0481
 name: refseq
 def: "The Reference Sequence (RefSeq) collection aims to provide a comprehensive\, integrated\, non-redundant set of sequences\, including genomic DNA\, transcript (RNA)\, and protein products\, for a number of organisms\nhttp\://www.ncbi.nlm.nih.gov/RefSeq/" [PMID:14755292]
 synonym: "Refseq" []
+xref_analog: id-validation-regexp:\"NW_\[0-9\]+|\[0-9\]+\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3541,6 +3575,7 @@ id: MI:0482
 name: rfam
 def: " Rfam is a large collection of multiple sequence alignments and covariance models covering many common non-coding RNA families.\nhttp\://www.sanger.ac.uk/Software/Rfam/" [PMID:14755292]
 synonym: "rfam" []
+xref_analog: id-validation-regexp:\"RF\[0-9\]\{5\}\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3548,13 +3583,15 @@ id: MI:0483
 name: rgd
 def: "The Rat Genome Database (RGD) curates and integrates rat genetic and genomic data\nhttp\://rgd.mcw.edu/" [PMID:14755292]
 synonym: "RGD" []
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
 id: MI:0484
 name: sgd
-def: "SGD is a scientific database of the molecular biology and genetics of the yeast Saccharomyces cerevisiae\nhttp\://www.yeastgenome.org/\n" [PMID:14755292]
+def: "SGD is a scientific database of the molecular biology and genetics of the yeast Saccharomyces cerevisiae\nhttp\://www.yeastgenome.org/" [PMID:14755292]
 synonym: "SGD" []
+xref_analog: id-validation-regexp:\"S\[0-9\]\{9\}\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3562,6 +3599,7 @@ id: MI:0485
 name: uniparc
 def: "UniProt Archive (UniParc) is part of UniProt project. It is a non-redundant archive of protein sequences derived from many sources\nhttp\://www.ebi.ac.uk/uniparc/" [PMID:14681372]
 synonym: "UniParc" []
+xref_analog: id-validation-regexp:\"UPI\[A-F0-9\]\{10\}\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3570,6 +3608,7 @@ name: uniprot knowledge base
 def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot\, TrEMBL\, and PIR.\nhttp\://www.expasy.uniprot.org/" [PMID:14681372]
 synonym: "UniProt" []
 exact_synonym: "uniprotkb" []
+xref_analog: id-validation-regexp:\"\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]|\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]-\[0-9\]+|\[A-Z\]\{3\}\[0-9\]\{5\}|\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]-PRO_\[0-9\]\{10\}\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3577,6 +3616,7 @@ id: MI:0487
 name: wormbase
 def: "WormBase is the central worm database that houses the gene reports\, locus reports\, translation reports\, expression pattern data and genome browser \nhttp\://www.wormbase.org/" [PMID:14755292]
 synonym: "WormBase" []
+xref_analog: id-validation-regexp:\"WBGene\[0-9\]\{8\}\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3584,6 +3624,7 @@ id: MI:0488
 name: psi-mi
 def: "PSI-MI" [PMID:14755292]
 synonym: "PSI-MI" []
+xref_analog: id-validation-regexp:\"MI\:\[0-9\]\{4\}\"
 is_a: MI:0444 ! database citation
 
 [Term]
@@ -4095,7 +4136,6 @@ def: "Reaction that can affect Arg\, Cys\, Glu\, Arg and Asn residues." [RESID:A
 exact_synonym: "adp ribosylation" []
 xref_analog: GO:0006471 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
-xref_unknown: GO:0006471 "Gene Ontology"
 
 [Term]
 id: MI:0558
@@ -4108,7 +4148,7 @@ is_a: MI:0414 ! enzymatic reaction
 [Term]
 id: MI:0559
 name: glycosylation reaction
-def: "The covalent attachment of a glycosyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer.\nReaction that can affect Ser\, Thr\, Cys\, Arg\, and Asn residues.  This reaction is known to be reversible in the case of  Asn substrate. " [RESID:AA0154, RESID:AA0155, RESID:AA0122, RESID:AA0327, RESID:AA0151]
+def: "The covalent attachment of a glycosyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer. Reaction that can affect Ser\, Thr\, Cys\, Arg\, and Asn residues.  This reaction is known to be reversible in the case of  Asn substrate. " [RESID:AA0154, RESID:AA0155, RESID:AA0122, RESID:AA0327, RESID:AA0151]
 exact_synonym: "glycosylation" []
 xref_analog: GO:0043413 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
@@ -4162,7 +4202,6 @@ def: "Reversible reaction that create a covalent bond between a C-terminus G of 
 exact_synonym: "sumoylation" []
 xref_analog: GO:0016925 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
-xref_unknown: GO:0016925 "Gene Ontology"
 
 [Term]
 id: MI:0567
@@ -4171,7 +4210,6 @@ def: "Reversible reaction that create a covalent bond between a  Glycine residue
 exact_synonym: "neddylation" []
 xref_analog: GO:0045116 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
-xref_unknown: GO:0045116 "Gene Ontology"
 
 [Term]
 id: MI:0568
@@ -4180,7 +4218,6 @@ def: "Cleavage of the G-K bond and release of  the SUMO ubiquitin like proteins.
 exact_synonym: "desumoylation" []
 xref_analog: GO:0016926 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
-xref_unknown: GO:0016926 "Gene Ontology"
 
 [Term]
 id: MI:0569
@@ -4189,7 +4226,6 @@ def: "Cleavage of the G-K bond and release of the NEDD8 ubiquitin like proteins.
 exact_synonym: "deneddylation" []
 xref_analog: GO:0000338 "Gene Ontology"
 is_a: MI:0414 ! enzymatic reaction
-xref_unknown: GO:0000338 "Gene Ontology"
 
 [Term]
 id: MI:0570
@@ -4203,7 +4239,6 @@ name: mrna cleavage
 def: "Any process by which a pre-mRNA or mRNA molecule is cleaved at specific sites or in a regulated manner." [PMID:14681407]
 xref_analog: GO:0006379 "Gene Ontology"
 is_a: MI:0194 ! cleavage reaction
-xref_unknown: GO:0006379 "Gene Ontology"
 
 [Term]
 id: MI:0572
@@ -4215,6 +4250,7 @@ is_a: MI:0194 ! cleavage reaction
 id: MI:0573
 name: mutation disrupting interaction
 def: "Residue of a protein whose identity mutation or deletion totally disrupt an interaction" [PMID:14755292]
+exact_synonym: "mutation disrupting" []
 is_a: MI:0119 ! mutation decreasing interaction
 
 [Term]
@@ -4222,14 +4258,16 @@ id: MI:0574
 name: digital object identifier
 def: "Identifier of a publication prior it pubmed indexing. " [PMID:14755292]
 exact_synonym: "doi" []
+xref_analog: id-validation-regexp:\"doi\:\[9-0\]+\\.\[0-9\]+\\/\"
 is_a: MI:0445 ! experiment database xref
 
 [Term]
 id: MI:0575
 name: alliance for cellulare signaling
-def: "Alliance for Cellular Signaling (AfCS -Nature) store yeast 2-hybrid Interaction data and expression data. Information and data are freely available to all.\nhttp\://www.signaling-gateway.org\n" [PMID:14755292]
+def: "Alliance for Cellular Signaling (AfCS -Nature) store yeast 2-hybrid Interaction data and expression data. Information and data are freely available to all.\nhttp\://www.signaling-gateway.org" [PMID:14755292]
 synonym: "AfCS" []
 exact_synonym: "afcs" []
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0461 ! interaction database xref
 is_a: MI:0489 ! source database xref
 
@@ -4243,7 +4281,8 @@ is_a: MI:0577 ! feature prediction from structure
 id: MI:0577
 name: feature prediction from structure
 def: "Group of method taking advantage of 3D structure to calculate and infer the feature of interacting molecules" [PMID:14755292]
-is_a: MI:0003 ! feature detection method
+exact_synonym: "feature struct pred" []
+is_a: MI:0660 ! feature prediction
 
 [Term]
 id: MI:0578
@@ -4274,7 +4313,7 @@ is_a: MI:0495 ! experimental role
 [Term]
 id: MI:0582
 name: suppressed gene
-def: "Gene whose mutation phenotype is suppressed by a given suppressor mutation\n" [PMID:14755292]
+def: "Gene whose mutation phenotype is suppressed by a given suppressor mutation" [PMID:14755292]
 is_a: MI:0495 ! experimental role
 
 [Term]
@@ -4294,6 +4333,7 @@ is_a: MI:0495 ! experimental role
 id: MI:0585
 name: intenz
 def: "IntEnz is the name for the Integrated relational Enzyme database and is the official version of the Enzyme Nomenclature. The Enzyme Nomenclature comprises recommendations of the Nomenclature Committee of the International Union of Bio chemistry and Molecular Biology (NC-IUBMB) on the nomenclature and classification of enzyme-catalysed reactions. IntEnz is supported by NC-IUBMB and contains enzyme data curated and approved by this committee. The database IntEnz is available at http\://www.ebi.ac.uk/intenz." [PMID:14681451]
+xref_analog: id-validation-regexp:\"EC \[0-6\]\{1\}\\.\[0-9\]+\\.\[0-9\]+\\.\[0-9\]+\"
 is_a: MI:0461 ! interaction database xref
 
 [Term]
@@ -4333,7 +4373,7 @@ id: MI:0591
 name: experiment description
 def: "The experimental condition text description\, should contain information about the organisms hosting the interaction." [PMID:14755292]
 exact_synonym: "experiment descripti" []
-is_a: MI:0590 ! attribute name
+is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0592
@@ -4364,25 +4404,26 @@ id: MI:0596
 name: experimental form description
 def: "Free text description of all the tags and artificial process undergone by a molecule during an experiment " [PMID:14755292]
 exact_synonym: "experimental form de" []
-is_a: MI:0590 ! attribute name
+is_a: MI:0666 ! participant attribute name
 
 [Term]
 id: MI:0597
 name: feature description
 def: "The feature text description may include information about the feature detection method." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0668 ! feature attribute name
 
 [Term]
 id: MI:0598
 name: feature constrain
 def: "The feature constrain free text will specificity whether a biological feature is shown to be possible (just observed) or required (experimentally demonstrated to be necessary for an interaction)." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0668 ! feature attribute name
 
 [Term]
 id: MI:0599
 name: figure legend
 def: "Text pointing to a specific paper figure legend where the experimental evidences for an interaction are shown." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0600
@@ -4396,6 +4437,7 @@ id: MI:0601
 name: sequence ontology
 def: "The Sequence Ontology (SO) is a structured controlled vocabulary for the parts of a genomic annotation. SO provides a common set of terms and definitions that will facilitate the exchange\, analysis and management of genomic data. " [PMID:15892872]
 exact_synonym: "so" []
+xref_analog: id-validation-regexp:\"SO\:\[0-9\]\{7\}\"
 is_a: MI:0447 ! feature database xref
 is_a: MI:0473 ! participant database xref
 
@@ -4471,7 +4513,7 @@ is_a: MI:0320 ! ribonucleic acid
 [Term]
 id: MI:0611
 name: signal recognition particle rna
-def: "Small (300 nucleotides) stable RNAs transcribed by RNA pol III that are part of the signal-recognition particle (SRP). This particle comprises one RNA and six proteins bound to the RNA. SRP function is to assist secretory proteins sorting in the endoplasmic reticulum (ER). SRP is a cytosolic particle that transiently binds to the ER signal sequence of a nascent protein\, to the large ribosomal unit\, and to the SRP receptor in the ER membrane.\n" [PMID:14755292]
+def: "Small (300 nucleotides) stable RNAs transcribed by RNA pol III that are part of the signal-recognition particle (SRP). This particle comprises one RNA and six proteins bound to the RNA. SRP function is to assist secretory proteins sorting in the endoplasmic reticulum (ER). SRP is a cytosolic particle that transiently binds to the ER signal sequence of a nascent protein\, to the large ribosomal unit\, and to the SRP receptor in the ER membrane." [PMID:14755292]
 synonym: "srpRNA" []
 exact_synonym: "srprna" []
 is_a: MI:0320 ! ribonucleic acid
@@ -4479,172 +4521,188 @@ is_a: MI:0320 ! ribonucleic acid
 [Term]
 id: MI:0612
 name: comment
-def: "Comment for public view. This attribute can be associated to interaction\, experiment\, Cv term\, and any participant." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+def: "Comment for public view. This attribute can be associated to interaction\, experiment\, Cv term\, an organism and any participant." [PMID:14755292]
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:0665 ! experiment attibute name
+is_a: MI:0666 ! participant attribute name
+is_a: MI:0667 ! controlled vocabulary attribute name
+is_a: MI:0668 ! feature attribute name
+is_a: MI:0669 ! organism attribute name
 
 [Term]
 id: MI:0613
 name: function
 def: "Biological function of a participant or of an  interaction." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:0666 ! participant attribute name
 
 [Term]
 id: MI:0614
 name: url
 def: "URL/Web address describing an experiment\, an interaction\, a Cv term or an organism" [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:0665 ! experiment attibute name
+is_a: MI:0667 ! controlled vocabulary attribute name
+is_a: MI:0669 ! organism attribute name
 
 [Term]
 id: MI:0615
 name: search-url
 def: "Search engine URL associated to Cv Database terms." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0667 ! controlled vocabulary attribute name
 
 [Term]
 id: MI:0616
 name: example
 def: "Example generally associated to Cv terms" [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0667 ! controlled vocabulary attribute name
 
 [Term]
 id: MI:0617
 name: disease
 def: "The interaction that has a disease association.	" [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
 
 [Term]
 id: MI:0618
 name: caution
 def: "Warning about errors/ grounds for confusion. Can be associated to interaction\, experiment\, Cv term or any participant." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:0665 ! experiment attibute name
+is_a: MI:0666 ! participant attribute name
+is_a: MI:0667 ! controlled vocabulary attribute name
+is_a: MI:0668 ! feature attribute name
+is_a: MI:0669 ! organism attribute name
 
 [Term]
 id: MI:0619
 name: pathway
 def: "Refers to the metabolic pathway involving an interaction or a complex." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
 
 [Term]
 id: MI:0620
 name: search-url-ascii
 def: "Search URL to retrieve an external entry in ASCII format. Generally associated to Cv Database terms." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0667 ! controlled vocabulary attribute name
 
 [Term]
 id: MI:0621
 name: author-confidence
 def: "Confidence classification assigned by the author of the publication to a specific interaction." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
 
 [Term]
 id: MI:0622
 name: confidence-mapping
 def: "Description of confidence assessment method generally associated to the experiment." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0623
 name: inhibition
-def: "Description of an inhibitor of an interaction." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+def: "The interaction between the proteins or the formation of a complex is disrupted by a biological molecule or by a modification of the interactors.\n" [PMID:14755292]
+is_a: MI:0664 ! interaction attribute name
 
 [Term]
 id: MI:0624
 name: stimulation
-def: "Description of a stimulator of an interaction." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+def: "Reaction occurs at a faster rate in the presence of this compound or molecule i.e. the molecule directly physically co-operates with the interaction. Reaction may not occur at all in the absence of this molecule.\n" [PMID:14755292]
+is_a: MI:0664 ! interaction attribute name
 
 [Term]
 id: MI:0625
 name: agonist
-def: "Description of an activator of an interactor." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+def: "Description of an activator that acts on an external cell receptor or other upstream molecule to stimulate a downstream interaction\, potentially by modification of one or more of the interactors.\n" [PMID:14755292]
+is_a: MI:0666 ! participant attribute name
 
 [Term]
 id: MI:0626
 name: antagonist
-def: "Description of an inactivator of an interactor." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+def: "Opposes the effect of a natural ligand by binding at the same receptor or alters the state of an upstream molecule to inhibit a downstream interaction." [PMID:14755292]
+is_a: MI:0666 ! participant attribute name
 
 [Term]
 id: MI:0627
 name: experiment modification
 def: "Modifications of the standard experimental method described in the CV." [PMID:14755292]
 exact_synonym: "exp-modification" []
-is_a: MI:0590 ! attribute name
+is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0628
 name: validation regular expression
 def: "Regular Expression used to check the validity of cross references' identifier. Attribute generally associated to terms in Cv Database." [PMID:14755292]
 exact_synonym: "id-validation-regexp" []
-is_a: MI:0590 ! attribute name
+is_a: MI:0667 ! controlled vocabulary attribute name
 
 [Term]
 id: MI:0629
 name: complex-properties
 def: "Information on the complex being annotated. Attribute generally associated to an interaction." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0630
 name: 3d-structure
 def: "Comments on the 3D structure. This attribute is generally associated to an interaction." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
 
 [Term]
 id: MI:0631
 name: 3d-r-factors
 def: "Free R-Factor and working R-Factor for the quality of the crystallographic model. This attribute is generally associated to an interaction." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
 
 [Term]
 id: MI:0632
 name: 3d-resolution
 def: "Resolution of the 3D structure. This attribute is generally associated to an interaction." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
 
 [Term]
 id: MI:0633
 name: data-processing
 def: "Information about how the data was processed. This attribute is used mainly for large scale experiment." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0634
 name: contact-email
 def: "E-mail address to contact the author/organisation which has produced the data. This attribute is generally associated to an experiment." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0635
 name: contact-comment
 def: "Free text notes on how to contact the author organisation which has produced the data This attribute is generally associated to an experiment." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0636
 name: author-list
 def: "List of authors associated to a publication. This attribute is generally associated to an experiment." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0637
 name: isoform-comment
 def: "Participant isoform's comment. This attribute can be attached to interactions or participants." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:0666 ! participant attribute name
 
 [Term]
 id: MI:0638
 name: prerequisite-ptm
 def: "Post translational modification required for an interaction to occur." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0668 ! feature attribute name
 
 [Term]
 id: MI:0639
 name: resulting-ptm
 def: "Post translational modification occurs subsequently to an interaction." [PMID:14755292]
-is_a: MI:0590 ! attribute name
+is_a: MI:0668 ! feature attribute name
 
 [Term]
 id: MI:0640
@@ -4756,11 +4814,133 @@ id: MI:0655
 name: lambda repressor two hybrid
 def: "A protein of interest (the bait) is fused to the full-length bacteriophage lambda repressor protein (lambdacI\, 237 amino acids)\, containing the amino terminal DNA-binding domain and the carboxylterminal dimerization domain. The corresponding target (prey) protein is fused to the N-terminal domain of the alfa-subunit of RNA polymerase (248 amino acids). The bait is tethered to the lambda operator sequence upstream of the reporter promoter through the DNA-binding domain of lambdacI. When the bait and prey interact\, they recruit and stabilize the binding of RNA polymerase at the promoter and activate the transcription of the HIS3 reporter gene. Due to the tendency of both the lambda repressor protein and the N-terminal domain of the alfa-subunit of RNA polymerase to dimerize\, this system might not be optimal for the analysis of proteins that self-associate unless their interaction with other protein partners depends on the oligomerization." [PMID:15792953]
 exact_synonym: "lambda two hybrid" []
-is_a: MI:0018 ! two hybrid
+is_a: MI:0232 ! transcriptional complementation assay
 
 [Term]
 id: MI:0656
 name: identified peptide
 def: "Peptide whose sequence is experimentally identified and can lead to a full protein identification." [PMID:14755292]
 is_a: MI:0505 ! experimental feature
+
+[Term]
+id: MI:0657
+name: systematic evolution of ligands by exponential enrichment
+def: "RNA and cDNA constructs with variable central sequences and a constant flanking region are collected in a complex library. The library is then screened to select either specific binding partners of a bait molecule (generally a protein) or particular enzymatic activities of the nucleic acid molecules themselves. The selected nucleic acids are amplified using the constant flanking regions to increase their abundance. Cycles of selection-amplification can be repeated to increase the specificity of the targets that\, at the end\, are individually identified by sequencing." [PMID:11539574]
+synonym: "in vitro evolution of nucleic acids" []
+exact_synonym: "selex" []
+is_a: MI:0400 ! affinity technologies
+
+[Term]
+id: MI:0658
+name: multidimensional protein identification technology
+def: "MudPIT is a method for rapid and large-scale protein identification by multidimensional liquid chromatography associated with tandem mass spectrometry. The chromatography step consists of strong cation exchange material back-to-back with reversed phase material inside fused silica capillaries. The peptides bound to the cation-exchange resin are freed by the gradually increasing salt concentration of the buffer and are subsequently retained by the reversed phase resin. Increasing buffers hydrophobicity progressively elute peptides from the reversed phase packing directly into the mass spectrometer. Typically this mass spectrometer will be a tandem electrospray\, so peptides undergo ionization in the liquid phase\, are separated in a primary mass spectrometer\, analysed in the second mass spectrometer and identified" [PMID:11231557]
+exact_synonym: "mudpit" []
+is_a: MI:0093 ! protein sequence identification
+is_a: MI:0427 ! mass spectrometry
+
+[Term]
+id: MI:0659
+name: experimental feature detection
+def: "experimental feature detection" [PMID:14755292]
+exact_synonym: "experimental feature" []
+is_a: MI:0003 ! feature detection method
+
+[Term]
+id: MI:0660
+name: feature prediction
+def: "feature prediction" [PMID:14755292]
+is_a: MI:0003 ! feature detection method
+
+[Term]
+id: MI:0661
+name: experimental participant identification
+def: "experimental participant identification" [PMID:14755292]
+exact_synonym: "experimental particp" []
+is_a: MI:0002 ! participant identification method
+
+[Term]
+id: MI:0662
+name: imex-primary
+def: "Interaction identifier of a database belonging to IMEx consortium." [PMID:14755292]
+is_a: MI:0353 ! cross-reference type
+
+[Term]
+id: MI:0663
+name: confocal microscopy
+def: "A confocal is a standard epifluorescence microscope with improvement essentially coming from the rejection of out-of-focus light interference. Confocal imaging system achieves this by two strategies\: a) by illuminating a single point of the specimen at any one time with a focused beam\, so that illumination intensity drops off rapidly and b) by the use of blocking a pinhole aperture in a conjugate focal plane to the specimen so that light emitted away from the point in the specimen being illuminated is blocked from reaching the detector. Only the light from the single point illuminated of the specimen passing through the image pinhole is detected by a photodetector. Usually a computer is used to control the sequential scanning of the sample and to assemble the image for display onto a video screen." [PMID:14755292]
+is_a: MI:0428 ! imaging techniques
+
+[Term]
+id: MI:0664
+name: interaction attribute name
+def: "Attribute name of annotation associated to an interaction element" [PMID:14755292]
+exact_synonym: "interaction att name" []
+is_a: MI:0590 ! attribute name
+
+[Term]
+id: MI:0665
+name: experiment attibute name
+def: "Attribute name of annotation associated to an experiment element" [PMID:14755292]
+exact_synonym: "experiment att name" []
+is_a: MI:0590 ! attribute name
+
+[Term]
+id: MI:0666
+name: participant attribute name
+def: "Attribute name of annotation associated to a participant element" [PMID:14755292]
+exact_synonym: "participant att name" []
+is_a: MI:0590 ! attribute name
+
+[Term]
+id: MI:0667
+name: controlled vocabulary attribute name
+def: "Attribute name of annotation associated to a CV term" [PMID:14755292]
+exact_synonym: "cv att name" []
+is_a: MI:0590 ! attribute name
+
+[Term]
+id: MI:0668
+name: feature attribute name
+def: "Attribute name of annotation associated to a feature element" [PMID:14755292]
+exact_synonym: "feature att name" []
+is_a: MI:0590 ! attribute name
+
+[Term]
+id: MI:0669
+name: organism attribute name
+def: "Attribute name of annotation associated to an organism element" [PMID:14755292]
+exact_synonym: "organism att name" []
+is_a: MI:0590 ! attribute name
+
+[Term]
+id: MI:0670
+name: imex
+def: "International Molecular Interaction Exchange" [PMID:14755292]
+synonym: "IMEx" []
+is_a: MI:0461 ! interaction database xref
+
+[Term]
+id: MI:0671
+name: antibodies
+def: "This annotation topic should contain information about antibodies when specific antibodies (monoclonal or polyclonal raised against specific regions of the proteins or purified in a specific manner) have been used." [PMID:14755292]
+is_a: MI:0665 ! experiment attibute name
+
+[Term]
+id: MI:0672
+name: library-used
+def: "This annotation topic will be used to store information about the cDNA library. If a name is available this should be reported along with a short description of the library." [PMID:14755292]
+is_a: MI:0665 ! experiment attibute name
+
+[Term]
+id: MI:0673
+name: complex-synonym
+def: "Alternative names to describe a complex." [PMID:14755292]
+is_a: MI:0300 ! alias type
+
+[Term]
+id: MI:0674
+name: peptide parent sequence reference
+def: "Describe cross link pointing to a peptide parent sequence" [PMID:14755292]
+exact_synonym: "peptide-parent" []
+is_a: MI:0353 ! cross-reference type
 
