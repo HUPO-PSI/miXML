@@ -1,5 +1,5 @@
 format-version: 1.0
-date: 31:01:2006 08:38
+date: 09:02:2006 17:32
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: file:D:/luisa/ebi-luisa/PSI-IMEX/master_cv_copy/psi-mi25.obo
@@ -15,7 +15,7 @@ id: MI:0001
 name: interaction detection method
 def: "Method to determine the interaction." [PMID:14755292]
 exact_synonym: "interaction detect" []
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0002
@@ -23,14 +23,14 @@ name: participant identification method
 def: "Method to determine the proteins involved in the interaction." [PMID:14755292]
 synonym: "participant detection" []
 exact_synonym: "participant ident" []
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0003
 name: feature detection method
 def: "Method to determine the features of the proteins involved in the interaction." [PMID:14755292]
 exact_synonym: "feature detection" []
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0004
@@ -423,20 +423,20 @@ is_a: MI:0063 ! interaction prediction
 [Term]
 id: MI:0059
 name: gst pull down
-def: "The bait protein is expressed and purified as a fusion to the glutathione S-tranferase protein. The bait protein is normally attached to a glutathione sepharose resin or alternatively to a support containing an anti-GST antibody.\nOBSOLETE redundant term. Map to Experimental form\: \"gst-tagged\" (MI\:0519) and Interaction detection method\: \"pull down\"  (MI\:0096)." [PMID:14755292]
+def: "The bait protein is expressed and purified as a fusion to the glutathione S-tranferase protein. The bait protein is normally attached to a glutathione sepharose resin or alternatively to a support containing an anti-GST antibody.\nOBSOLETE redundant term. Map to feature type \: \"gst-tagged\" (MI\:0519) and Interaction detection method\: \"pull down\"  (MI\:0096)." [PMID:14755292]
 is_obsolete: true
 
 [Term]
 id: MI:0060
 name: ha tag coimmunoprecipitation
-def: "The protein of interest is expressed as a fusion to the peptide YPYDVPDYA (a fragment of the influenza hemaglutinin protein) for which antibodies are commercially available \nOBSOLETE redundant term. Map to Experimental form\: \"ha-tagged\" (MI\:0520) and Interaction detection method\: \"anti tag coimmunoprecipitation\"  (MI\:0007)." [PMID:14755292]
+def: "The protein of interest is expressed as a fusion to the peptide YPYDVPDYA (a fragment of the influenza hemaglutinin protein) for which antibodies are commercially available \nOBSOLETE redundant term. Map to feature type \: \"ha-tagged\" (MI\:0520) and Interaction detection method\: \"anti tag coimmunoprecipitation\"  (MI\:0007)." [PMID:14755292]
 exact_synonym: "ha tag coip" []
 is_obsolete: true
 
 [Term]
 id: MI:0061
 name: his pull down
-def: "The bait protein is expressed and purified fused to an amino or carboxyterminal tail containing a variable number of histidines. The bait protein is normally attached to a metal (usually nickel) resin.\nOBSOLETE redundant term. Map to Experimental form\: \"his-tagged\" (MI\:0521) and Interaction detection method\: \"pull down\"  (MI\:0096)." [PMID:14755292]
+def: "The bait protein is expressed and purified fused to an amino or carboxyterminal tail containing a variable number of histidines. The bait protein is normally attached to a metal (usually nickel) resin.\nOBSOLETE redundant term. Map to feature type \: \"his-tagged\" (MI\:0521) and Interaction detection method\: \"pull down\"  (MI\:0096)." [PMID:14755292]
 is_obsolete: true
 
 [Term]
@@ -776,7 +776,7 @@ is_a: MI:0084 ! phage display
 [Term]
 id: MI:0109
 name: tap tag coimmunoprecipitation
-def: "The TAP method involves the fusion of the TAP tag (encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A) to the target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This two steps purification steps ensures a highly selective complex purification of the \"Tapped\" protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag). \nOBSOLETE redundant term. Map to Experimental form\: \"tap-tagged\" (MI\:0524) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:10504710]
+def: "The TAP method involves the fusion of the TAP tag (encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A) to the target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This two steps purification steps ensures a highly selective complex purification of the \"Tapped\" protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag). \nOBSOLETE redundant term. Map to feature \: \"camodulin binding protein-protein A\" (MI\:0524) and Interaction detection method\: \"tandem affinity purification\" (MI\:0676)." [PMID:10504710]
 exact_synonym: "tap tag coip" []
 is_obsolete: true
 
@@ -828,7 +828,7 @@ is_a: MI:0054 ! fluorescence-activated cell sorting
 id: MI:0116
 name: feature type
 def: "Property of a subsequence that may interfere with the binding of a molecule" [PMID:14755292]
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0117
@@ -1681,7 +1681,7 @@ is_a: MI:0179 ! other modification
 id: MI:0190
 name: interaction type
 def: "Connection between molecule" [PMID:14755292]
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0191
@@ -2277,7 +2277,7 @@ id: MI:0300
 name: alias type
 def: "Descriptor of type of nomenclature used to describe interactor." [PMID:14755292]
 synonym: "CvAliasType" []
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0301
@@ -2370,12 +2370,12 @@ id: MI:0313
 name: interactor type
 def: "Molecular species involved in the interaction." [PMID:14755292]
 synonym: "participant type" []
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0314
 name: complex
-def: "A stable set of interacting molecules that can be copurified. This term and its children should be use only at PARTICIPANT level." [PMID:14755292]
+def: "Set of interacting molecules that can be copurified. This term and its children should be use only at PARTICIPANT level." [PMID:14755292]
 is_a: MI:0313 ! interactor type
 
 [Term]
@@ -2520,7 +2520,7 @@ def: "Describes sequence positions resolution of a given participant feature. In
 synonym: "CvFuzzyType" []
 synonym: "endStatus" []
 synonym: "startStatus" []
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0334
@@ -2615,7 +2615,7 @@ id: MI:0346
 name: experimental preparation
 def: "Set of terms to describe the participant experimental treatment and status. This term group in fact 4 orthologues short controlled vocabularies delivery method\, expression level\, molecular source\, and sample process. Each participant can then be annotated with a maximum of 4 terms selected from each short list. " [PMID:14755292]
 exact_synonym: "experimental prep" []
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0348
@@ -2655,7 +2655,7 @@ def: "Qualifier to describe the type of information a cross-reference is pointin
 synonym: "CvXrefQualifier" []
 synonym: "refType" []
 exact_synonym: "xref type" []
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0354
@@ -3107,7 +3107,7 @@ is_a: MI:0661 ! experimental participant identification
 [Term]
 id: MI:0422
 name: immunostaining
-def: "immunostaining co-localisation" [PMID:14755292]
+def: "immunostaining " [PMID:14755292]
 is_a: MI:0421 ! identification by antibody
 
 [Term]
@@ -3261,7 +3261,7 @@ is_obsolete: true
 id: MI:0444
 name: database citation
 def: "Database citation list names of databases commonly used to cross reference interaction data." [PMID:14755292]
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0445
@@ -3518,7 +3518,7 @@ synonym: "DDBJ" []
 synonym: "DDBJ/EMBL/GenBank" []
 synonym: "EMBL" []
 synonym: "GenBank" []
-xref_analog: id-validation-regexp:\"\[9-0\]+|\[A-Z\]\{1-2\}\[9-0\]+\"
+xref_analog: id-validation-regexp:\"\[0-9\]+|\[A-Z\]\{1-2\}\[9-0\]+\\.\[0-9\]+ \"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3526,7 +3526,7 @@ id: MI:0476
 name: ensembl
 def: " Ensembl is a joint project between the EMBL-EBI and the Wellcome Trust Sanger Institute that aims at developing a system that maintains automatic annotation of large eukaryotic genomes\nhttp\://www.ebi.ac.uk/ensembl" [PMID:15078858]
 synonym: "Ensembl" []
-xref_analog: id-validation-regexp:\"ENS\[GTP\]\[0-9\]\{11\}\"
+xref_analog: id-validation-regexp:\"ENS\[A-Z\]+\[0-9\]\{11\}\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3567,7 +3567,7 @@ id: MI:0481
 name: refseq
 def: "The Reference Sequence (RefSeq) collection aims to provide a comprehensive\, integrated\, non-redundant set of sequences\, including genomic DNA\, transcript (RNA)\, and protein products\, for a number of organisms\nhttp\://www.ncbi.nlm.nih.gov/RefSeq/" [PMID:14755292]
 synonym: "Refseq" []
-xref_analog: id-validation-regexp:\"NW_\[0-9\]+|\[0-9\]+\"
+xref_analog: id-validation-regexp:\"\[XNZ\]\[A-Z\]_\[0-9\]+|\[0-9\]+\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3668,7 +3668,7 @@ is_obsolete: true
 id: MI:0495
 name: experimental role
 def: "Role played by the participant within the experiment" [PMID:14755292]
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0496
@@ -3698,7 +3698,7 @@ is_a: MI:0500 ! biological role
 id: MI:0500
 name: biological role
 def: "Description of molecules polarity on a directional interaction." [PMID:14755292]
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0501
@@ -3859,9 +3859,11 @@ is_a: MI:0507 ! tagged molecule
 
 [Term]
 id: MI:0524
-name: tap tagged
-def: "The TAP method involves the fusion of the TAP tag (encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A) to the target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This two steps purification steps ensures a highly selective complex purification of the \"Tapped\" protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag). " [PMID:14755292]
-is_a: MI:0507 ! tagged molecule
+name: calmodulin binding peptide plus protein a tag
+def: "Tag encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A fused to a target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This tag allows two steps purification steps ensuring a highly selective purification of the \"Tapped\" protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag). " [PMID:14755292]
+synonym: "CBP-ProtA tag" []
+exact_synonym: "tap tagged" []
+is_a: MI:0677 ! multiple tag
 
 [Term]
 id: MI:0525
@@ -4333,7 +4335,7 @@ is_a: MI:0495 ! experimental role
 id: MI:0585
 name: intenz
 def: "IntEnz is the name for the Integrated relational Enzyme database and is the official version of the Enzyme Nomenclature. The Enzyme Nomenclature comprises recommendations of the Nomenclature Committee of the International Union of Bio chemistry and Molecular Biology (NC-IUBMB) on the nomenclature and classification of enzyme-catalysed reactions. IntEnz is supported by NC-IUBMB and contains enzyme data curated and approved by this committee. The database IntEnz is available at http\://www.ebi.ac.uk/intenz." [PMID:14681451]
-xref_analog: id-validation-regexp:\"EC \[0-6\]\{1\}\\.\[0-9\]+\\.\[0-9\]+\\.\[0-9\]+\"
+xref_analog: id-validation-regexp:\"\[0-6\]\{1\}\\.\[0-9\]+\\.\[0-9\]+\\.\[0-9\]+ \"
 is_a: MI:0461 ! interaction database xref
 
 [Term]
@@ -4366,7 +4368,7 @@ id: MI:0590
 name: attribute name
 def: "Collection of topic describing the free text stored as an attribute value." [PMID:14755292]
 synonym: "CvTopic" []
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0591
@@ -4708,7 +4710,7 @@ is_a: MI:0668 ! feature attribute name
 id: MI:0640
 name: parameter type
 def: "Parameter for enzymatic or binding kinetic studies." [PMID:14755292]
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0641
@@ -4757,7 +4759,7 @@ is_a: MI:0640 ! parameter type
 id: MI:0647
 name: parameter unit
 def: "Controlled vocabulary for kinetic constant units." [PMID:14755292]
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0648
@@ -4943,4 +4945,39 @@ name: peptide parent sequence reference
 def: "Describe cross link pointing to a peptide parent sequence" [PMID:14755292]
 exact_synonym: "peptide-parent" []
 is_a: MI:0353 ! cross-reference type
+
+[Term]
+id: MI:0675
+name: international protein index
+def: "IPI provides a top level guide to the main databases that describe the proteomes of higher eukaryotic organisms. IPI effectively maintains a database of cross references between the primary data sources\, provides minimally redundant yet maximally complete sets of proteins for featured species (one sequence per transcript) and maintains stable identifiers (with incremental versioning) to allow the tracking of sequences in IPI between IPI releases. IPI is updated monthly in accordance with the latest data released by the primary data sources." [PMID:15221759]
+exact_synonym: "ipi" []
+is_a: MI:0473 ! participant database xref
+xref_unknown: id-validation-regexp:\"IPI\[0-9\]+.\[0-9\]+|IPI\[0-9\]+\"
+
+[Term]
+id: MI:0676
+name: tandem affinity purification
+def: "Tandem affinity purification allows rapid purification under native conditions of complexes\, even when expressed at their natural level. Prior knowledge of complex composition or function is not required. The TAP method requires fusion of the a multiple tag\, either N- or C-terminally\, to the target (or bait) protein of interest. The multiple tag allows two steps purification steps ensuring a highly selective complex purification. " [PMID:11403571]
+synonym: "TAP" []
+exact_synonym: "tap" []
+is_a: MI:0004 ! affinity chromatography technologies
+
+[Term]
+id: MI:0677
+name: multiple tag
+def: "The protein of interest is expressed as a fusion to the a complex tag. A multiple tag consists of a concatenation of tags that can also be used alone." [PMID:14755292]
+is_a: MI:0507 ! tagged molecule
+
+[Term]
+id: MI:0678
+name: antibody array
+def: "Microarray consisting of antibodies spotted on a solid support in appropriate orientation is incubated with a biological sample (or antigen). The proteins captured together with a probe\,  (retained by a specific antibody of the array) can be either identified using a second\, labelled detection antibody or taking advantage of proteins labelling prior their application on to the array. " [PMID:12454649]
+synonym: "antigen capture assay" []
+synonym: "sandwich immunoassay" []
+is_a: MI:0008 ! array technologies
+
+[Typedef]
+id: part_of
+name: part of
+is_transitive: true
 
