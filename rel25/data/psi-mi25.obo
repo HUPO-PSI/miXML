@@ -1,5 +1,5 @@
 format-version: 1.0
-date: 09:02:2006 17:32
+date: 13:02:2006 13:19
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: file:D:/luisa/ebi-luisa/PSI-IMEX/master_cv_copy/psi-mi25.obo
@@ -352,7 +352,7 @@ is_a: MI:0400 ! affinity technologies
 [Term]
 id: MI:0050
 name: flag tag coimmunoprecipitation
-def: "The protein of interest is expressed as a fusion to the peptide DYKDDDDKV for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem.\nOBSOLETE redundant term. Map to Experimental form\: \"flag-tagged\" (MI\:0518) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:14755292]
+def: "The protein of interest is expressed as a fusion to the peptide DYKDDDDKV for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem.\nOBSOLETE redundant term. Map to feature type\: \"flag-tagged\" (MI\:0518) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:14755292]
 exact_synonym: "flag tag coip" []
 is_obsolete: true
 
@@ -442,7 +442,7 @@ is_obsolete: true
 [Term]
 id: MI:0062
 name: his tag coimmunoprecipitation
-def: "The protein of interest is expressed as a fusion to a poly-His tail. This permits purification by chromatography over a metal column or by binding to commercially available anti poly-His antibodies.\nOBSOLETE redundant term. Map to Experimental form\: \"his-tagged\" (MI\:0521) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:14755292]
+def: "The protein of interest is expressed as a fusion to a poly-His tail. This permits purification by chromatography over a metal column or by binding to commercially available anti poly-His antibodies.\nOBSOLETE redundant term. Map to feature type\: \"his-tagged\" (MI\:0521) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:14755292]
 exact_synonym: "his tag coip" []
 is_obsolete: true
 
@@ -534,7 +534,7 @@ is_a: MI:0659 ! experimental feature detection
 [Term]
 id: MI:0075
 name: myc tag coimmunoprecipitation
-def: "The protein of interest is expressed as a fusion to the peptide EUKLISEED (a fragment of the Myc oncogene protein) for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem.\nOBSOLETE redundant term. Map to Experimental form\: \"myc-tagged\" (MI\:0522) and Interaction detection method\: \"anti tag coimmunoprecipitation\"  (MI\:0007)." [PMID:14755292]
+def: "The protein of interest is expressed as a fusion to the peptide EUKLISEED (a fragment of the Myc oncogene protein) for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem.\nOBSOLETE redundant term. Map to feature type\: \"myc-tagged\" (MI\:0522) and Interaction detection method\: \"anti tag coimmunoprecipitation\"  (MI\:0007)." [PMID:14755292]
 exact_synonym: "myc tag coip " []
 is_obsolete: true
 
@@ -776,7 +776,7 @@ is_a: MI:0084 ! phage display
 [Term]
 id: MI:0109
 name: tap tag coimmunoprecipitation
-def: "The TAP method involves the fusion of the TAP tag (encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A) to the target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This two steps purification steps ensures a highly selective complex purification of the \"Tapped\" protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag). \nOBSOLETE redundant term. Map to feature \: \"camodulin binding protein-protein A\" (MI\:0524) and Interaction detection method\: \"tandem affinity purification\" (MI\:0676)." [PMID:10504710]
+def: "The TAP method involves the fusion of the TAP tag (encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A) to the target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This two steps purification steps ensures a highly selective complex purification of the \"Tapped\" protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag). \nOBSOLETE redundant term. Map to feature type\: \"camodulin binding protein-protein A\" (MI\:0524) and Interaction detection method\: \"tandem affinity purification\" (MI\:0676)." [PMID:10504710]
 exact_synonym: "tap tag coip" []
 is_obsolete: true
 
@@ -3859,9 +3859,9 @@ is_a: MI:0507 ! tagged molecule
 
 [Term]
 id: MI:0524
-name: calmodulin binding peptide plus protein a tag
+name: calmodulin binding peptide plus protein a tagged
 def: "Tag encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A fused to a target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This tag allows two steps purification steps ensuring a highly selective purification of the \"Tapped\" protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag). " [PMID:14755292]
-synonym: "CBP-ProtA tag" []
+synonym: "CBP-ProtA tagged" []
 exact_synonym: "tap tagged" []
 is_a: MI:0677 ! multiple tag
 
@@ -4850,7 +4850,7 @@ is_a: MI:0003 ! feature detection method
 [Term]
 id: MI:0660
 name: feature prediction
-def: "feature prediction" [PMID:14755292]
+def: "Feature detection based on computational analysis. " [PMID:14755292]
 is_a: MI:0003 ! feature detection method
 
 [Term]
@@ -4971,7 +4971,7 @@ is_a: MI:0507 ! tagged molecule
 [Term]
 id: MI:0678
 name: antibody array
-def: "Microarray consisting of antibodies spotted on a solid support in appropriate orientation is incubated with a biological sample (or antigen). The proteins captured together with a probe\,  (retained by a specific antibody of the array) can be either identified using a second\, labelled detection antibody or taking advantage of proteins labelling prior their application on to the array. " [PMID:12454649]
+def: "A microarray consisting of antibodies spotted on a solid support in appropriate orientation is incubated with a biological sample (or antigen). Some proteins are captured by the antibodies in the array. In case a protein of interest form a complex with the ones attached to the array\, it is then detected by specific antibody or labelling identification (tag\, ELISA\, biotin...)" [PMID:12454649]
 synonym: "antigen capture assay" []
 synonym: "sandwich immunoassay" []
 is_a: MI:0008 ! array technologies
