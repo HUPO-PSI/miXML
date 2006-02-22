@@ -1,0 +1,369 @@
+<?xml version="1.0"?>       
+<entrySet xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" level="2" version="5" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/rel25/src/MIF25.xsd">
+     <entry><source releaseDate="2006-02-06">
+         <names>
+           <shortLabel>European Bioinformatics Institute</shortLabel>
+         </names>
+         <bibref>
+           <xref>
+             <primaryRef db="pubmed" dbAc="MI:0446" id="14681455" refType="primary-reference" refTypeAc="MI:0358"/>
+           </xref>
+         </bibref>
+         <xref>
+           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0469" refType="primary-reference" refTypeAc="MI:0358"/>
+         </xref>
+         <attributeList>
+           <attribute name="postalAddress">Wellcome Trust Genome Campus, Hinxton, Cambridge, CB10 1SD, United Kingdom</attribute>
+           <attribute name="url">http://www.ebi.ac.uk</attribute>
+         </attributeList>
+       </source><availabilityList/><experimentList><experimentDescription id="2">
+           <names>
+             <shortLabel>yoshida-2005a-1</shortLabel>
+             <fullName>The regulatory domain of srk2e/ost1/snrk2.6 interacts with abi1 and integrates aba and osmotic stress signals controlling stomatal closure in arabidopsis.</fullName>
+           </names>
+           <bibref>
+             <xref>
+               <primaryRef db="pubmed" dbAc="MI:0446" id="16365038" refType="primary-reference" refTypeAc="MI:0358"/>
+             </xref>
+           </bibref>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-782512" secondary="yoshida-2005a-1"/>
+             <secondaryRef db="newt" dbAc="MI:0247" id="3702" refType="target-species" secondary="arath"/>
+           </xref>
+           <hostOrganismList>
+             <hostOrganism ncbiTaxId="4932">
+               <names>
+                 <shortLabel>yeast</shortLabel>
+                 <fullName>Saccharomyces cerevisiae</fullName>
+               </names>
+             </hostOrganism>
+           </hostOrganismList>
+           <interactionDetectionMethod>
+             <names>
+               <shortLabel>two hybrid</shortLabel>
+               <fullName>two hybrid</fullName>
+               <alias>2H</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0018" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="10967325" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="12634794" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionDetectionMethod>
+           <participantIdentificationMethod>
+             <names>
+               <shortLabel>predetermined</shortLabel>
+               <fullName>predetermined participant</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0396" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="7940758" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </participantIdentificationMethod>
+           <attributeList>
+             <attribute name="author-list">Yoshida R., Umezawa T., Mizoguchi T., Takahashi S., Takahashi F., Shinozaki K.</attribute>
+             <attribute name="contact-email">sinozaki@rtc.riken.jp</attribute>
+             <attribute name="exp-modification">A directed yeast two hybrid assay was used in this study.</attribute>
+             <attribute name="figure-legend">Figure 6 (B) and Figure 7 (B).</attribute>
+           </attributeList>
+         </experimentDescription></experimentList><interactorList><interactor id="4">
+           <names>
+             <shortLabel>q940h6_arath</shortLabel>
+             <fullName>Protein kinase</fullName>
+             <alias type="gene name" typeAc="MI:0301">At4g33950/F17I5.140</alias>
+             <alias type="gene name synonym" typeAc="MI:0302">ost1</alias>
+             <alias type="locus name" typeAc="MI:0305">At4g33950</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="Q940H6" refType="identity" refTypeAc="MI:0356" secondary="q940h6_arath" version="TrEMBL_29"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0004672" secondary="F:protein kinase activity"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0009738" secondary="P:abscisic acid mediated signa"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR000719" secondary="Prot_kinase"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR008271" secondary="Ser_thr_pkin_AS"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR002290" secondary="Ser_thr_pkinase"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR001245" secondary="Tyr_pkinase"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-782514" secondary="q940h6_arath"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="3702">
+             <names>
+               <shortLabel>arath</shortLabel>
+               <fullName>Arabidopsis thaliana</fullName>
+             </names>
+           </organism>
+           <sequence>MDRPAVSGPMDLPIMHDSDRYELVKDIGSGNFGVARLMRDKQSNELVAVKYIERGEKIDENVKREIINHRSLRHPNIVRFKEVILTPTHLAIVMEYASGGELFERICNAGRFSEDEARFFFQQLISGVSYCHAMQVCHRDLKLENTLLDGSPAPRLKICDFGYSKSSVLHSQPKSTVGTPAYIAPEVLLKKEYDGKVADVWSCGVTLYVMLVGAYPFEDPEEPKNFRKTIHRILNVQYAIPDYVHISPECRHLISRIFVADPAKRISIPEIRNHEWFLKNLPADLMNDNTMTTQFDESDQPGQSIEEIMQIIAEATVPPAGTQNLNHYLTGSLDIDDDMEEDLESDLDDLDIDSSGEIVYAM</sequence>
+         </interactor><interactor id="6">
+           <names>
+             <shortLabel>pp2c1_arath</shortLabel>
+             <fullName>Protein phosphatase 2C ABI1</fullName>
+             <alias type="gene name" typeAc="MI:0301">ABI1</alias>
+             <alias type="locus name" typeAc="MI:0305">At4g26080</alias>
+             <alias type="orf name" typeAc="MI:0306">F20B18.190</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="P49597" refType="identity" refTypeAc="MI:0356" secondary="pp2c1_arath" version="SP_49"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR000222" secondary="PP2C"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR001932" secondary="PP2C-like"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q43717" refType="secondary-ac" refTypeAc="MI:0360" secondary="pp2c1_arath" version="SP_49"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q94C87" refType="secondary-ac" refTypeAc="MI:0360" secondary="pp2c1_arath" version="SP_49"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-782526" secondary="pp2c1_arath"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="3702">
+             <names>
+               <shortLabel>arath</shortLabel>
+               <fullName>Arabidopsis thaliana</fullName>
+             </names>
+           </organism>
+           <sequence>MEEVSPAIAGPFRPFSETQMDFTGIRLGKGYCNNQYSNQDSENGDLMVSLPETSSCSVSGSHGSESRKVLISRINSPNLNMKESAAADIVVVDISAGDEINGSDITSEKKMISRTESRSLFEFKSVPLYGFTSICGRRPEMEDAVSTIPRFLQSSSGSMLDGRFDPQSAAHFFGVYDGHGGSQVANYCRERMHLALAEEIAKEKPMLCDGDTWLEKWKKALFNSFLRVDSEIESVAPETVGSTSVVAVVFPSHIFVANCGDSRAVLCRGKTALPLSVDHKPDREDEAARIEAAGGKVIQWNGARVFGVLAMSRSIGDRYLKPSIIPDPEVTAVKRVKEDDCLILASDGVWDVMTDEEACEMARKRILLWHKKNAVAGDASLLADERRKEGKDPAAMSAAEYLSKLAIQRGSKDNISVVVVDLKPRRKLKSKPLN</sequence>
+         </interactor></interactorList><interactionList>
+         <interaction id="1">
+           <names>
+             <shortLabel>ost1-abi1</shortLabel>
+             <fullName>Directed Yeast 2 hybrid analysis reveals  interaction between the OST1 protein and ABI1  protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-782536" secondary="ost1-abi1"/>
+           </xref>
+           <experimentList>
+             <experimentRef>2</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="3">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="3702">
+                   <names>
+                     <shortLabel>arath</shortLabel>
+                     <fullName>Arabidopsis thaliana</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+             <participant id="5">
+               <interactorRef>6</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="3702">
+                   <names>
+                     <shortLabel>arath</shortLabel>
+                     <fullName>Arabidopsis thaliana</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="7">
+           <names>
+             <shortLabel>abi1-ost1</shortLabel>
+             <fullName>Directed Yeast 2 hybrid analysis reveals  interaction between the ABI1 protein and OST1 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-782539" secondary="abi1-ost1"/>
+           </xref>
+           <experimentList>
+             <experimentRef>2</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="8">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <featureList>
+                 <feature id="9">
+                   <names>
+                     <shortLabel>region</shortLabel>
+                   </names>
+                   <featureType>
+                     <names>
+                       <shortLabel>binding site</shortLabel>
+                       <fullName>binding site</fullName>
+                     </names>
+                     <xref>
+                       <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0117" refType="identity" refTypeAc="MI:0356"/>
+                       <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+                     </xref>
+                   </featureType>
+                   <featureRangeList>
+                     <featureRange>
+                       <startStatus>
+                         <names>
+                           <shortLabel>certain</shortLabel>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0335" refType="identity" refTypeAc="MI:0356"/>
+                         </xref>
+                       </startStatus>
+                       <begin position="319"/>
+                       <endStatus>
+                         <names>
+                           <shortLabel>certain</shortLabel>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0335" refType="identity" refTypeAc="MI:0356"/>
+                         </xref>
+                       </endStatus>
+                       <end position="357"/>
+                     </featureRange>
+                   </featureRangeList>
+                 </feature>
+               </featureList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="3702">
+                   <names>
+                     <shortLabel>arath</shortLabel>
+                     <fullName>Arabidopsis thaliana</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+             <participant id="10">
+               <interactorRef>6</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="3702">
+                   <names>
+                     <shortLabel>arath</shortLabel>
+                     <fullName>Arabidopsis thaliana</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+       </interactionList></entry>
+   </entrySet>
