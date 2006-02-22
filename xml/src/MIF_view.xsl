@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0"
                 xmlns:psi="net:sf:psidev:mi"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -26,7 +27,11 @@ Notes:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 -->
 
-<xsl:output method="html" encoding="ISO-8859-1"/>
+<xsl:output method="html"
+            encoding="iso-8859-1"
+            indent="yes"
+            media-type="text/html"
+            standalone="yes"/>
 
 <xsl:param name="base" select="'http://psidev.sourceforge.net'"/>
 
@@ -45,9 +50,6 @@ Notes:
 <xsl:param name="pubmedUrl"
            select="'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;&amp;dopt=Citation&amp;list_uids='"/>
 
-<!-- Element: entrySet
-Here we start with element entrySet - also giving out Header/Footer.
--->
 <xsl:template match="psi:entrySet">
     <html>
         <head>
@@ -55,27 +57,41 @@ Here we start with element entrySet - also giving out Header/Footer.
                 HUPO Proteomics Standards Initiative
                 Molecular Interaction
             </title>
+            <style>
+                table   {
+                    width:              100%;
+                }
+                .title  {
+                    background-color:   #BBBBBB;
+                    font-weight:        bold;
+                }
+                .table-title    {
+                    background-color:   #BBBBBB;
+                    width:              20%;
+                }
+                .table-subtitle    {
+                    background-color:   #BBBBBB;
+                    font-style:         italic;
+                }
+            </style>
         </head>
         <body>
-            <a href="{$base}">
-                <img src="{$base}/images/psi.gif" border="0" align="left"/>
-            </a>
-            <a href="http://www.hupo.org/">
-                <img src="{$base}/images/hupo.gif" border="0" align="right"/>
-            </a>
-            <br clear="all"/>
-            <center>
-                <h2>
-                    <a href="{$base}">
-                        Proteomics Standards Initiative
-                    </a>
+            <div id="header">
+                <a href="{$base}">
+                    <img src="{$base}/images/psi.gif" border="0" align="left"/>
+                </a>
+                <a href="http://www.hupo.org/">
+                    <img src="{$base}/images/hupo.gif" border="0" align="right"/>
+                </a>
+                <h2 align="center">
+                    <a href="{$base}">Proteomics Standards Initiative</a>
                 </h2>
-                <h2>
+                <h2 align="center">
                     Molecular Interaction Version
                     <xsl:value-of select="concat(@level, '.', @version)"/>
                 </h2>
-                <xsl:apply-templates/>
-            </center>
+            </div>
+            <xsl:apply-templates/>
         </body>
     </html>
 </xsl:template>
@@ -89,14 +105,15 @@ Here we start with element entrySet - also giving out Header/Footer.
     <xsl:comment><xsl:value-of select="name(.)"/></xsl:comment>
     <xsl:if test="string-length(name(.)) > 0">
         <div id="{name(.)}">
-            <table border="1" align="left">
+            <table border="1">
                 <tr>
-                    <td valign="top" bgcolor="#BBBBBB" style="font-weight:bold" colspan="2">
+                    <td class="title" colspan="2">
                         <xsl:apply-templates select="current()" mode="name"/>
                     </td>
                 </tr>
                 <xsl:apply-templates/>
             </table>
+            <br/>
         </div>
     </xsl:if>
 </xsl:template>
@@ -108,16 +125,9 @@ Here we start with element entrySet - also giving out Header/Footer.
     <xsl:value-of select="substring($str, 2, string-length($str) - 1)" />
 </xsl:template>
 
-<xsl:template match="psi:experimentList">
-    <tr>
-        <td valign="top" bgcolor="#BBBBBB">Experiments:</td>
-        <td><xsl:apply-templates/></td>
-    </tr>
-</xsl:template>
-
 <xsl:template match="@releaseDate">
     <tr>
-        <td bgcolor="#BBBBBB">Release Date:</td>
+        <td class="table-title">Release Date:</td>
         <td><xsl:value-of select="text()"/></td>
     </tr>
 </xsl:template>
@@ -127,7 +137,7 @@ Here we start with element entrySet - also giving out Header/Footer.
 
 <xsl:template match="psi:names">
     <tr>
-        <td valign="top" bgcolor="#BBBBBB">Name:</td>
+        <td class="table-title">Name:</td>
         <td>
             <xsl:apply-templates select="psi:shortLabel"/>
             <xsl:apply-templates select="psi:fullName[. != ../psi:shortLabel]"/>
@@ -163,7 +173,7 @@ Here we start with element entrySet - also giving out Header/Footer.
         <xsl:variable name="url">
             <xsl:apply-templates select="current()" mode="url"/>
         </xsl:variable>
-        <td bgcolor="#BBBBBB">
+        <td class="table-title">
             <xsl:value-of select="@db"/>
             <xsl:apply-templates select="@version"/>
         </td>
@@ -221,7 +231,7 @@ Here we start with element entrySet - also giving out Header/Footer.
 
 <xsl:template match="psi:confidence">
     <tr>
-        <td bgcolor="#BBBBBB">Confidence</td>
+        <td class="table-title">Confidence</td>
         <td>
             <xsl:apply-templates select="psi:unit/psi:names/psi:shortLabel"/>:
             <xsl:apply-templates select="psi:value"/>
@@ -241,16 +251,19 @@ Here we start with element entrySet - also giving out Header/Footer.
 
 <xsl:template match="psi:experimentDescription">
     <tr>
-        <td valign="top" bgcolor="#BBBBBB">Name:</td>
+        <td class="table-subtitle" colspan="2">
+            <a name="{@id}">Experiment #<xsl:value-of select="@id"/></a>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#BBBBBB">Name:</td>
         <td>
-            <a name="{@id}"><xsl:value-of select="@id"/></a>:
             <xsl:value-of select="psi:names/psi:shortLabel"/>
         </td>
     </tr>
     <tr>
-        <td valign="top" bgcolor="#BBBBBB">Description:</td>
+        <td class="table-title">Description:</td>
         <td>
-            <a name="{@id}"><xsl:value-of select="@id"/></a>:
             <xsl:value-of select="psi:names/psi:fullName"/>
         </td>
     </tr>
@@ -263,67 +276,63 @@ Here we start with element entrySet - also giving out Header/Footer.
 
 <xsl:template match="psi:interactor">
     <tr>
-        <td>
-            <a name="{@id}"><xsl:value-of select="@id"/></a>
+        <td class="table-subtitle" colspan="2">
+            <a name="{@id}">Interactor #<xsl:value-of select="@id"/></a>
         </td>
-        <td><xsl:apply-templates/></td>
     </tr>
+    <xsl:apply-templates/>
 </xsl:template>
 
 <xsl:template match="psi:interaction">
     <tr>
-        <td>
-            <table border="3">
-                <xsl:apply-templates/>
-            </table>
+        <td class="table-subtitle" colspan="2">
+            <a name="{@id}">Interaction #<xsl:value-of select="@id"/></a>
         </td>
     </tr>
+    <xsl:apply-templates/>
 </xsl:template>
 
 <!--Level 3 -->
 
-<xsl:template match="psi:participantList">
+<xsl:template match="psi:experimentList">
     <tr>
-        <td valign="top" bgcolor="#BBBBBB">Participants:</td>
+        <td class="table-title">Experiments:</td>
         <xsl:apply-templates/>
     </tr>
 </xsl:template>
 
-<xsl:template match="psi:experimentRef | psi:availabilityRef">
+<xsl:template match="psi:experimentRef">
+    <td><a href="#{.}"><xsl:value-of select="."/></a></td>
+</xsl:template>
+
+<xsl:template match="psi:availabilityRef">
     <tr><td><a href="#{.}"><xsl:value-of select="."/></a></td></tr>
 </xsl:template>
 
-<!--Level 4 -->
+<xsl:template match="psi:participantList">
+    <xsl:apply-templates/>
+</xsl:template>
 
 <xsl:template match="psi:participant">
   <tr>
-    <table border="1">
-        <tr>
-            <td align="center">
-                <xsl:apply-templates select="psi:interactorRef" mode="participant"/>
-                <xsl:apply-templates select="psi:interactor" mode="participant"/>
-            </td>
-            <xsl:apply-templates select="psi:biologicalRole"/>
-            <xsl:apply-templates select="psi:experimentalRoleList"/>
-        </tr>
-    </table>
+      <td class="table-title">Participant #<xsl:value-of select="@id"/></td>
+      <td>
+        <table border="1">
+            <tr>
+                <td colspan="2">
+                    <xsl:apply-templates select="psi:interactorRef" mode="participant"/>
+                    <xsl:apply-templates select="psi:interactor"    mode="participant"/>
+                </td>
+            </tr>
+            <tr>
+                <xsl:apply-templates select="psi:biologicalRole"/>
+            </tr>
+            <tr>
+                <xsl:apply-templates select="psi:experimentalRoleList"/>
+            </tr>
+        </table>
+      </td>
   </tr>
-</xsl:template>
-
-<xsl:template match="psi:interactorRef" mode="participant">
-    <a href="#{.}">
-        <xsl:apply-templates select="text()"/>
-    </a>
-</xsl:template>
-
-<xsl:template match="psi:interactor" mode="participant">
-    <xsl:apply-templates select="@id"/>
-</xsl:template>
-
-<xsl:template match="node()" mode="cellrow">
-    <xsl:param name="title"/>
-    <td valign="top" bgcolor="#BBBBBB"><xsl:value-of select="$title"/>:</td>
-    <td><table border="1"><xsl:apply-templates/></table></td>
 </xsl:template>
 
 <xsl:template match="psi:biologicalRole">
@@ -340,6 +349,22 @@ Here we start with element entrySet - also giving out Header/Footer.
 
 <xsl:template match="psi:experimentalRole">
     <xsl:apply-templates/>
+</xsl:template>
+
+<xsl:template match="psi:interactorRef" mode="participant">
+    <a href="#{.}">
+        Interactor #<xsl:apply-templates select="text()"/>
+    </a>
+</xsl:template>
+
+<xsl:template match="psi:interactor" mode="participant">
+    <xsl:apply-templates select="@id"/>
+</xsl:template>
+
+<xsl:template match="node()" mode="cellrow">
+    <xsl:param name="title"/>
+    <td class="table-title"><xsl:value-of select="$title"/>:</td>
+    <td><table border="1"><xsl:apply-templates/></table></td>
 </xsl:template>
 
 <xsl:template match="psi:interactionType">
@@ -374,7 +399,7 @@ Here we start with element entrySet - also giving out Header/Footer.
 
 <xsl:template match="psi:sequence">
     <tr>
-        <td valign="top" bgcolor="#BBBBBB">Sequence:</td>
+        <td class="table-title">Sequence:</td>
         <td>
             <xsl:call-template name="split-string">
                 <xsl:with-param name="str" select="."/>
@@ -389,7 +414,7 @@ Here we start with element entrySet - also giving out Header/Footer.
 
 <xsl:template match="psi:attribute">
     <tr>
-        <td valign="top" bgcolor="#BBBBBB">
+        <td class="table-title">
             <xsl:apply-templates select="@name"/>
         </td>
         <td><xsl:apply-templates select="text()"/></td>
