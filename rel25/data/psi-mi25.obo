@@ -3,7 +3,7 @@ date: 01:03:2006 16:11
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.12 2006/03/02 16:12:17 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.13 2006/03/02 16:53:20 luisa_montecchi Exp $
 
 [Term]
 id: MI:0000
@@ -770,6 +770,7 @@ is_a: MI:0013 ! biophysical
 id: MI:0108
 name: t7 phage display
 def: "T7 is a double stranded DNA bacteriophage with a thin-walled icosahedral capsid\, ~550 Angstrom in diameter\, which is decorated by 415 copies of the capsid protein\, the product of gene 10. gp10 can tolerate insertions at the carboxyterminus without loosing its ability to be inserted into functional phage capsids. Both low density and high density display (albeit only with short peptides) can be achieved." [PMID:14755292]
+comment: reference not index in medline \: Rosenberg\, A.\, Griffin\, K.\, Studier\, W.S.\, McCormick\, M.\, Berg\, J.\, Novy\, R.\, Mierendorf\, R. inNovations\, 1996\, 6\, 1.
 exact_synonym: "t7 phage" []
 is_a: MI:0084 ! phage display
 
@@ -2293,6 +2294,7 @@ is_a: MI:0300 ! alias type
 id: MI:0305
 name: ordered locus name
 def: "A name used to represent an ORF in a completely sequenced genome or chromosome. It is generally based on a prefix representing the organism and a number which usually represents the sequential ordering of genes on the chromosome. Depending on the genome sequencing center\, numbers are attributed only to protein-coding genes\, or also to pseudogenes\, or also to tRNAs and other features." [PMID:14755292]
+comment: For instance   HI0934\, Rv3245c\, At5g34500\, YER456W
 synonym: "CDS number" []
 synonym: "ONL" []
 synonym: "ORF number" []
@@ -2305,6 +2307,7 @@ is_a: MI:0300 ! alias type
 id: MI:0306
 name: open reading frame name
 def: "A name temporarily attributed by a sequencing project to an open reading frame. This name is generally based on a cosmid numbering system." [PMID:14755292]
+comment: For instance  MtCY277.28c\, SYGP-ORF50\, SpBC2F12.04\, C06E1.1\, CG10954. Also called Sequencing names or Contig names or Temporary ORFNames
 exact_synonym: "orf name" []
 is_a: MI:0300 ! alias type
 
@@ -2504,6 +2507,7 @@ relationship: part_of MI:0000 ! molecular interaction
 id: MI:0334
 name: c-terminal position
 def: "Term describing the last amino acid of a peptide chain." [PMID:14755292]
+comment: Displayed as 'c'.
 synonym: "c-term" []
 synonym: "c-terminus" []
 synonym: "carboxy-terminus" []
@@ -2521,24 +2525,28 @@ is_a: MI:0333 ! feature range status
 id: MI:0336
 name: greater-than
 def: "Partially determined sequence position known to be in a location higher than a given position." [PMID:14755292]
+comment: Displayed as '>'.
 is_a: MI:0333 ! feature range status
 
 [Term]
 id: MI:0337
 name: less-than
 def: "Partially determined sequence position known to be in a position lower than a given position." [PMID:14755292]
+comment: Displayed as '<'.
 is_a: MI:0333 ! feature range status
 
 [Term]
 id: MI:0338
 name: range
 def: "Describes a sequence position known to be in a certain range\, where the exact position is unclear." [PMID:14755292]
+comment: For instance   when an amino acid modification is known to be in the region from 5 to 7. Displayed as '..'.
 is_a: MI:0333 ! feature range status
 
 [Term]
 id: MI:0339
 name: undetermined sequence position
 def: "Term describing a completely unknown or unspecified sequence position." [PMID:14755292]
+comment: Displayed as '?'.
 exact_synonym: "undetermined" []
 is_a: MI:0333 ! feature range status
 
@@ -2546,6 +2554,7 @@ is_a: MI:0333 ! feature range status
 id: MI:0340
 name: n-terminal position
 def: "Term describing the first amino acid of a peptide chain." [PMID:14755292]
+comment: Displayed as 'n'.
 synonym: "amino-terminus" []
 synonym: "n-term" []
 synonym: "n-terminus" []
@@ -2649,6 +2658,7 @@ is_a: MI:0353 ! cross-reference type
 id: MI:0356
 name: identical object
 def: "Reference to the corresponding object in another database. Correspondence may be complete or partial." [PMID:14755292]
+comment: For instance this qualifier\, in an interaction entry\, can be associated to a cross reference to the same interaction in an other database.
 exact_synonym: "identity" []
 is_a: MI:0353 ! cross-reference type
 
