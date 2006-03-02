@@ -3,7 +3,7 @@ date: 01:03:2006 16:11
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.15 2006/03/02 17:42:51 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.16 2006/03/02 17:53:50 luisa_montecchi Exp $
 
 [Term]
 id: MI:0000
@@ -1693,14 +1693,14 @@ is_obsolete: true
 [Term]
 id: MI:0192
 name: acetylation reaction
-def: "Reaction\, that can affect K\,C\,A\,D\,E\,Q\,G\,I\,K\,M\,P\,S\,T\,Y\,V residues." [PMID:14755292 , RESID:AA0055, RESID:AA0056, RESID:AA0041, RESID:AA0042, RESID:AA0043, RESID:AA0044, RESID:AA0045, RESID:AA0046, RESID:AA0047, RESID:AA0048, RESID:AA0049, RESID:AA0050, RESID:AA0051, RESID:AA0052, RESID:AA0053, RESID:AA0054, GO:000647]
+def: "Reaction\, that can affect K\,C\,A\,D\,E\,Q\,G\,I\,K\,M\,P\,S\,T\,Y\,V residues." [PMID:14755292, RESID:AA0055, RESID:AA0056, RESID:AA0041, RESID:AA0042, RESID:AA0043, RESID:AA0044, RESID:AA0045, RESID:AA0046, RESID:AA0047, RESID:AA0048, RESID:AA0049, RESID:AA0050, RESID:AA0051, RESID:AA0052, RESID:AA0053, RESID:AA0054, GO:000647]
 exact_synonym: "acetylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0193
 name: amidation reaction
-def: "Irreversible reaction that can affect A\,R\,N\,D\,C\,Q\,E\,G\,H\,I\,L\,K\,M\,F\,P\,S\,T\,W\,Y or V residues." [PMID:14755292 , RESID:AA0081, RESID:AA0082, RESID:AA0083, RESID:AA0084, RESID:AA0085, RESID:AA0086, RESID:AA0087, RESID:AA0088, RESID:AA0089, RESID:AA0090, RESID:AA0091, RESID:AA0092, RESID:AA0093, RESID:AA0094, RESID:AA0095, RESID:AA0096, RESID:AA0097, RESID:AA0098, RESID:AA0099, RESID:AA0100, GO:000151]
+def: "Irreversible reaction that can affect A\,R\,N\,D\,C\,Q\,E\,G\,H\,I\,L\,K\,M\,F\,P\,S\,T\,W\,Y or V residues." [PMID:14755292, RESID:AA0081, RESID:AA0082, RESID:AA0083, RESID:AA0084, RESID:AA0085, RESID:AA0086, RESID:AA0087, RESID:AA0088, RESID:AA0089, RESID:AA0090, RESID:AA0091, RESID:AA0092, RESID:AA0093, RESID:AA0094, RESID:AA0095, RESID:AA0096, RESID:AA0097, RESID:AA0098, RESID:AA0099, RESID:AA0100, GO:000151]
 exact_synonym: "amidation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -1726,49 +1726,49 @@ is_obsolete: true
 [Term]
 id: MI:0197
 name: deacetylation reaction
-def: "N6-acetyl-L-lysine or S-acetyl-L-cysteine are cleaved and return K or C residues." [PMID:14755292 , RESID:AA0055, RESID:AA0056, GO:000647]
+def: "N6-acetyl-L-lysine or S-acetyl-L-cysteine are cleaved and return K or C residues." [PMID:14755292, RESID:AA0055, RESID:AA0056, GO:000647]
 exact_synonym: "deacetylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0198
 name: defarnesylation reaction
-def: "S-farnesyl-L-cysteined is cleaved and returns a C residue." [PMID:14755292 , RESID:AA0102]
+def: "S-farnesyl-L-cysteined is cleaved and returns a C residue." [PMID:14755292, RESID:AA0102]
 exact_synonym: "defarnesylation" []
 is_a: MI:0212 ! lipid cleavage
 
 [Term]
 id: MI:0199
 name: deformylation reaction
-def: "N6-formyl-L-lysine is cleaved and returns a K residue." [PMID:14755292 , RESID:AA0211]
+def: "N6-formyl-L-lysine is cleaved and returns a K residue." [PMID:14755292, RESID:AA0211]
 exact_synonym: "deformylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0200
 name: degeranylation reaction
-def: "S-geranylgeranyl-L-cysteine is cleaved and returns a C residue." [PMID:14755292 , RESID:AA0104]
+def: "S-geranylgeranyl-L-cysteine is cleaved and returns a C residue." [PMID:14755292, RESID:AA0104]
 exact_synonym: "degeranylation" []
 is_a: MI:0212 ! lipid cleavage
 
 [Term]
 id: MI:0201
 name: demyristoylation reaction
-def: "N6-myristoyl-L-lysine is cleaved and returns a K residue." [PMID:14755292 , RESID:AA0078]
+def: "N6-myristoyl-L-lysine is cleaved and returns a K residue." [PMID:14755292, RESID:AA0078]
 exact_synonym: "demyristoylation" []
 is_a: MI:0212 ! lipid cleavage
 
 [Term]
 id: MI:0202
 name: depalmitoylation reaction
-def: "S-palmitoyl-L-cysteine\, N6-palmitoyl-L-lysine\, O-palmitoyl-L-threonine or O-palmitoyl-L-serine are cleaved and return C\,K\,T or S residues." [PMID:14755292 , RESID:AA0106, RESID:AA0060, RESID:AA0077]
+def: "S-palmitoyl-L-cysteine\, N6-palmitoyl-L-lysine\, O-palmitoyl-L-threonine or O-palmitoyl-L-serine are cleaved and return C\,K\,T or S residues." [PMID:14755292, RESID:AA0106, RESID:AA0060, RESID:AA0077]
 exact_synonym: "depalmitoylation" []
 is_a: MI:0212 ! lipid cleavage
 
 [Term]
 id: MI:0203
 name: dephosphorylation reaction
-def: "Phosphoresidues are cleaved and return D\,C\,H\,S\,T\,Y or R residues." [PMID:14755292 , RESID:AA0033, RESID:AA0034, RESID:AA0035, RESID:AA0036, RESID:AA0037, RESID:AA0038, RESID:AA0039, RESID:AA0222, GO:001631]
+def: "Phosphoresidues are cleaved and return D\,C\,H\,S\,T\,Y or R residues." [PMID:14755292, RESID:AA0033, RESID:AA0034, RESID:AA0035, RESID:AA0036, RESID:AA0037, RESID:AA0038, RESID:AA0039, RESID:AA0222, GO:001631]
 exact_synonym: "dephosphorylation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -1788,14 +1788,14 @@ is_obsolete: true
 [Term]
 id: MI:0206
 name: farnesylation reaction
-def: "Reversible reaction that can affect C residue." [PMID:14755292 , RESID:AA0102, GO:001834]
+def: "Reversible reaction that can affect C residue." [PMID:14755292, RESID:AA0102, GO:001834]
 exact_synonym: "farnesylation" []
 is_a: MI:0211 ! lipid addition
 
 [Term]
 id: MI:0207
 name: formylation reaction
-def: "Reaction that can affect K or G residues." [PMID:14755292 , RESID:AA0211, RESID:AA0057, GO:001825]
+def: "Reaction that can affect K or G residues." [PMID:14755292, RESID:AA0211, RESID:AA0057, GO:001825]
 exact_synonym: "formylation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -1808,14 +1808,14 @@ is_a: MI:0190 ! interaction type
 [Term]
 id: MI:0209
 name: geranylgeranylation reaction
-def: "Reversible reaction that can affect C residue." [PMID:14755292 , RESID:AA0104, GO:001834]
+def: "Reversible reaction that can affect C residue." [PMID:14755292, RESID:AA0104, GO:001834]
 exact_synonym: "geranylgeranylation" []
 is_a: MI:0211 ! lipid addition
 
 [Term]
 id: MI:0210
 name: hydroxylation reaction
-def: "Irreversible reaction that can affect K\,P\,Y or R residues." [PMID:14755292 , RESID:AA0028, RESID:AA0029, RESID:AA0030, RESID:AA0146, RESID:AA0215, GO:001812]
+def: "Irreversible reaction that can affect K\,P\,Y or R residues." [PMID:14755292, RESID:AA0028, RESID:AA0029, RESID:AA0030, RESID:AA0146, RESID:AA0215, GO:001812]
 exact_synonym: "hydroxylation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -1834,14 +1834,14 @@ is_a: MI:0194 ! cleavage reaction
 [Term]
 id: MI:0213
 name: methylation reaction
-def: "The covalent attachment of a methyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer. Irreversible reaction that can affect A\,G\,M\,F\,P\,C\,R\,N\,Q\,E\,H\,or K residues." [PMID:14755292 , RESID:AA0061, RESID:AA0062, RESID:AA0063, RESID:AA0064, RESID:AA0234, RESID:AA0065, RESID:AA0066, RESID:AA0272, RESID:AA0067, RESID:AA0068, RESID:AA0069, RESID:AA0070, RESID:AA0071, RESID:AA0072, RESID:AA0073, RESID:AA0074, RESID:AA0075, RESID:AA0076, GO:004341]
+def: "The covalent attachment of a methyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer. Irreversible reaction that can affect A\,G\,M\,F\,P\,C\,R\,N\,Q\,E\,H\,or K residues." [PMID:14755292, RESID:AA0061, RESID:AA0062, RESID:AA0063, RESID:AA0064, RESID:AA0234, RESID:AA0065, RESID:AA0066, RESID:AA0272, RESID:AA0067, RESID:AA0068, RESID:AA0069, RESID:AA0070, RESID:AA0071, RESID:AA0072, RESID:AA0073, RESID:AA0074, RESID:AA0075, RESID:AA0076, GO:004341]
 exact_synonym: "methylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0214
 name: myristoylation reaction
-def: "Reaction that can affect K or G residues." [PMID:14755292 , RESID:AA0078, RESID:AA0059, GO:001831]
+def: "Reaction that can affect K or G residues." [PMID:14755292, RESID:AA0078, RESID:AA0059, GO:001831]
 exact_synonym: "myristoylation" []
 is_a: MI:0211 ! lipid addition
 
@@ -1855,14 +1855,14 @@ is_obsolete: true
 [Term]
 id: MI:0216
 name: palmitoylation reaction
-def: "Reversible reaction that can affect C\,K\,T or S residues." [PMID:14755292 , RESID:AA0106, RESID:AA0060, RESID:AA0077, RESID:AA0079, RESID:AA0080, GO:001831]
+def: "Reversible reaction that can affect C\,K\,T or S residues." [PMID:14755292, RESID:AA0106, RESID:AA0060, RESID:AA0077, RESID:AA0079, RESID:AA0080, GO:001831]
 exact_synonym: "palmitoylation" []
 is_a: MI:0211 ! lipid addition
 
 [Term]
 id: MI:0217
 name: phosphorylation reaction
-def: "Reversible reaction that can affect D\,C\,H\,S\,T\,Y\,R residues." [PMID:14755292 , RESID:AA0033, RESID:AA0034, RESID:AA0035, RESID:AA0036, RESID:AA0037, RESID:AA0038, RESID:AA0222, RESID:AA0039, GO:001631]
+def: "Reversible reaction that can affect D\,C\,H\,S\,T\,Y\,R residues." [PMID:14755292, RESID:AA0033, RESID:AA0034, RESID:AA0035, RESID:AA0036, RESID:AA0037, RESID:AA0038, RESID:AA0222, RESID:AA0039, GO:001631]
 exact_synonym: "phosphorylation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -3495,7 +3495,7 @@ is_a: MI:0473 ! participant database xref
 [Term]
 id: MI:0475
 name: ddbj/embl/genbank
-def: "DDBJ/EMBL/GenBank Nucleotide Sequence Database Collaboration exchange new and updated data on a daily basis to achieve optimal synchronisation.\nhttp\://www.ebi.ac.uk/embl/Contact/collaboration " [PMID:14755292]
+def: "DDBJ/EMBL/GenBank Nucleotide Sequence Database Collaboration exchange new and updated data on a daily basis to achieve optimal synchronisation.\nhttp\://www.ebi.ac.uk/embl/Contact/collaboration" [PMID:14755292]
 synonym: "DDBJ" []
 synonym: "DDBJ/EMBL/GenBank" []
 synonym: "EMBL" []
@@ -3855,7 +3855,7 @@ is_a: MI:0507 ! tagged molecule
 [Term]
 id: MI:0526
 name: n-acetyl-lysine
-def: "residue modification." [PMID:14755292 , RESID:AA0048, RESID:AA0055]
+def: "residue modification." [PMID:14755292, RESID:AA0048, RESID:AA0055]
 exact_synonym: "acetyllysine" []
 is_a: MI:0121 ! acetylated residue
 
@@ -3869,7 +3869,7 @@ is_a: MI:0120 ! post translation modification
 [Term]
 id: MI:0528
 name: omega-n-(adp-ribosyl)-arginine
-def: "residue modification." [PMID:14755292 , RESID:AA0168]
+def: "residue modification." [PMID:14755292, RESID:AA0168]
 synonym: "(S)-2-amino-5-(\[imino(\[adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl\]amino)methyl\]amino)pentanoic acid" []
 synonym: "N(omega)-\[alpha-D-ribofuranoside 5'->5'-ester with adenosine 5'-(trihydrogen diphosphate)\]-L-arginine" []
 synonym: "N(omega)-alpha-D-ribofuranosyl-L-arginine 5'->5'-ester with adenosine 5'-(trihydrogen diphosphate)" []
@@ -3880,7 +3880,7 @@ is_a: MI:0527 ! adp ribosylated residue
 [Term]
 id: MI:0529
 name: s-(adp-ribosyl)-cysteine
-def: "residue modification." [PMID:14755292 , RESID:AA0169]
+def: "residue modification." [PMID:14755292, RESID:AA0169]
 synonym: "(R)-2-amino-3-(\[adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl\]sulfanyl)propanoic acid" []
 synonym: "S-(ADP-ribosyl)-L-cysteine" []
 synonym: "S-L-cysteine alpha-D-ribofuranoside 5'->5'-ester with adenosine 5'-(trihydrogen diphosphate)" []
@@ -3891,7 +3891,7 @@ is_a: MI:0527 ! adp ribosylated residue
 [Term]
 id: MI:0530
 name: glutamyl-5-poly(adp-ribose)
-def: "residue modification." [PMID:14755292 , RESID:AA0295]
+def: "residue modification." [PMID:14755292, RESID:AA0295]
 synonym: "(S)-2-amino-5-poly\[2'-adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with 1alpha-D-ribofuranosyl\]oxy-5-oxopentanoic acid" []
 synonym: "L-glutamyl-5-poly(ADP-ribose)" []
 synonym: "L-isoglutamyl-poly(ADP-ribose)" []
@@ -3901,7 +3901,7 @@ is_a: MI:0527 ! adp ribosylated residue
 [Term]
 id: MI:0531
 name: o-(adp-ribosyl)-serine
-def: "residue modification." [PMID:14755292 , RESID:AA0237]
+def: "residue modification." [PMID:14755292, RESID:AA0237]
 synonym: "(S)-2-amino-3-(\[adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl\]oxy)-propanoic acid Formula" []
 synonym: "O-(ADP-ribosyl)-L-serine" []
 synonym: "O3-(ADP-ribosyl)-L-serine" []
@@ -3913,7 +3913,7 @@ is_a: MI:0527 ! adp ribosylated residue
 [Term]
 id: MI:0532
 name: n4-(adp-ribosyl)-asparagine
-def: "residue modification." [PMID:14755292 , RESID:AA0231]
+def: "residue modification." [PMID:14755292, RESID:AA0231]
 synonym: "(S)-2-amino-4-(\[adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl\]amino)-4-oxobutanoic acid" []
 synonym: "N4-(ADP-ribosyl)-L-asparagine" []
 synonym: "N4-\[alpha-D-ribofuranoside 5'->5'-ester with adenosine 5'-(trihydrogen diphosphate)\]-L-asparagine" []
@@ -3930,14 +3930,14 @@ is_a: MI:0120 ! post translation modification
 [Term]
 id: MI:0534
 name: glycosyl-cysteine
-def: "residue modification." [PMID:14755292 , RESID:AA0122]
+def: "residue modification." [PMID:14755292, RESID:AA0122]
 synonym: "S-glycosyl-L-cysteine" []
 is_a: MI:0533 ! glycosylated residue
 
 [Term]
 id: MI:0535
 name: glycosyl-serine
-def: "residue modification." [PMID:14755292 , RESID:AA0154]
+def: "residue modification." [PMID:14755292, RESID:AA0154]
 synonym: "O-glycosyl-L-serine" []
 synonym: "O3-glycosyl-L-serine" []
 is_a: MI:0533 ! glycosylated residue
@@ -3945,7 +3945,7 @@ is_a: MI:0533 ! glycosylated residue
 [Term]
 id: MI:0536
 name: glycosyl-threonine
-def: "residue modification." [PMID:14755292 , RESID:AA0155]
+def: "residue modification." [PMID:14755292, RESID:AA0155]
 synonym: "O-glycosyl-L-threonine" []
 synonym: "O3-glycosyl-L-threonine" []
 is_a: MI:0533 ! glycosylated residue
@@ -3953,7 +3953,7 @@ is_a: MI:0533 ! glycosylated residue
 [Term]
 id: MI:0537
 name: omega-n-glycosyl-arginine
-def: "residue modification." [PMID:14755292 , RESID:AA0327]
+def: "residue modification." [PMID:14755292, RESID:AA0327]
 synonym: "omega-N-glycosyl-L-arginine" []
 exact_synonym: "glycosylarginine" []
 is_a: MI:0533 ! glycosylated residue
@@ -3961,7 +3961,7 @@ is_a: MI:0533 ! glycosylated residue
 [Term]
 id: MI:0538
 name: n4-glycosyl-asparagine
-def: "residue modification." [PMID:14755292 , RESID:AA0151]
+def: "residue modification." [PMID:14755292, RESID:AA0151]
 synonym: "N4-glycosyl-L-asparagine" []
 exact_synonym: "glycosylasparagine" []
 is_a: MI:0533 ! glycosylated residue
@@ -3975,7 +3975,7 @@ is_a: MI:0150 ! lipid modification
 [Term]
 id: MI:0540
 name: gpi-anchor amidated alanine
-def: "residue modification." [PMID:14755292 , RESID:AA0163]
+def: "residue modification." [PMID:14755292, RESID:AA0163]
 synonym: "N-alanyl-glycosylphosphatidylinositolethanolamine" []
 exact_synonym: "gpi-alanine" []
 is_a: MI:0539 ! gpi anchor residue
@@ -3983,7 +3983,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0541
 name: gpi-anchor amidated asparagine
-def: "residue modification." [PMID:14755292 , RESID:AA0158]
+def: "residue modification." [PMID:14755292, RESID:AA0158]
 synonym: "N-asparaginyl-glycosylphosphatidylinositolethanolamine" []
 exact_synonym: "gpi-asparagine" []
 is_a: MI:0539 ! gpi anchor residue
@@ -3991,7 +3991,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0542
 name: gpi-anchor amidated aspartate
-def: "residue modification." [PMID:14755292 , RESID:AA0159]
+def: "residue modification." [PMID:14755292, RESID:AA0159]
 synonym: "N-aspartyl-glycosylphosphatidylinositolethanolamine" []
 exact_synonym: "gpi-aspartate" []
 is_a: MI:0539 ! gpi anchor residue
@@ -3999,7 +3999,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0543
 name: gpi-anchor amidated cysteine
-def: "residue modification." [PMID:14755292 , RESID:AA0160]
+def: "residue modification." [PMID:14755292, RESID:AA0160]
 synonym: "N-cysteinyl-glycosylphosphatidylinositolethanolamine" []
 exact_synonym: "gpi-cysteine" []
 is_a: MI:0539 ! gpi anchor residue
@@ -4007,7 +4007,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0544
 name: gpi-anchor amidated glycine
-def: "residue modification." [PMID:14755292 , RESID:AA0161]
+def: "residue modification." [PMID:14755292, RESID:AA0161]
 synonym: "N-glycyl-glycosylphosphatidylinositolethanolamine" []
 exact_synonym: "gpi-glycine" []
 is_a: MI:0539 ! gpi anchor residue
@@ -4015,7 +4015,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0545
 name: gpi-anchor amidated serine
-def: "residue modification." [PMID:14755292 , RESID:AA0162]
+def: "residue modification." [PMID:14755292, RESID:AA0162]
 synonym: "N-seryl-glycosylphosphatidylinositolethanolamine" []
 exact_synonym: "gpi-serine" []
 is_a: MI:0539 ! gpi anchor residue
@@ -4023,7 +4023,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0546
 name: gpi-anchor amidated threonine
-def: "residue modification." [PMID:14755292 , RESID:AA0164]
+def: "residue modification." [PMID:14755292, RESID:AA0164]
 synonym: "N-threonyl-glycosylphosphatidylinositolethanolamine" []
 exact_synonym: "gpi-threonine" []
 is_a: MI:0539 ! gpi anchor residue
@@ -4038,7 +4038,7 @@ is_a: MI:0150 ! lipid modification
 [Term]
 id: MI:0548
 name: methylated-lysine
-def: "residue modification." [PMID:14755292 , RESID:AA0074, RESID:AA0075, RESID:AA0076]
+def: "residue modification." [PMID:14755292, RESID:AA0074, RESID:AA0075, RESID:AA0076]
 exact_synonym: "methylatedlysine" []
 is_a: MI:0157 ! methylated residue
 
@@ -4051,7 +4051,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0550
 name: gamma-carboxyglutamic acid
-def: "residue modification." [PMID:14755292 , RESID:AA0032]
+def: "residue modification." [PMID:14755292, RESID:AA0032]
 synonym: "(S)-3-amino-1\,1\,3-propanetricarboxylic acid" []
 synonym: "1-carboxyglutamic acid \[misnomer\]" []
 synonym: "4-carboxyglutamic acid" []
@@ -4069,7 +4069,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0552
 name: s-nitrosyl-cysteine
-def: "residue modification." [PMID:14755292 , RESID:AA0230]
+def: "residue modification." [PMID:14755292, RESID:AA0230]
 synonym: "(R)-2-amino-3-nitrososulfanyl-propanoic acid" []
 synonym: "L-cysteine nitrite ester" []
 synonym: "S-nitrosocysteine" []
@@ -4080,7 +4080,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0553
 name: o4'-sulfo-tyrosine
-def: "residue modification." [PMID:14755292 , RESID:AA0172]
+def: "residue modification." [PMID:14755292, RESID:AA0172]
 synonym: "(S)-2-amino-3-(4-sulfooxyphenyl)propanoic acid" []
 synonym: "2-amino-3-(4-hydroxyphenyl)propanoic acid 4'-sulfate" []
 synonym: "O4'-sulfo-L-tyrosine" []
@@ -4101,21 +4101,21 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0555
 name: phospho-histidine
-def: "residue modification." [PMID:14755292 , RESID:AA0035, RESID:AA0036]
+def: "residue modification." [PMID:14755292, RESID:AA0035, RESID:AA0036]
 exact_synonym: "phosphoshistidine" []
 is_a: MI:0170 ! phosphorylated residue
 
 [Term]
 id: MI:0556
 name: transglutamination reaction
-def: "Gln-Lys cross-link catalyzed by a transglutaminase." [PMID:14755292 , RESID:AA0124]
+def: "Gln-Lys cross-link catalyzed by a transglutaminase." [PMID:14755292, RESID:AA0124]
 exact_synonym: "transglutamination" []
 is_a: MI:0195 ! covalent binding
 
 [Term]
 id: MI:0557
 name: adp ribosylation reaction
-def: "Reaction that can affect Arg\, Cys\, Glu\, Arg and Asn residues." [PMID:14755292 , RESID:AA0168, RESID:AA0169, RESID:AA0295, RESID:AA0237, RESID:AA0231, GO:000647]
+def: "Reaction that can affect Arg\, Cys\, Glu\, Arg and Asn residues." [PMID:14755292, RESID:AA0168, RESID:AA0169, RESID:AA0295, RESID:AA0237, RESID:AA0231, GO:000647]
 exact_synonym: "adp ribosylation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -4129,7 +4129,7 @@ is_a: MI:0414 ! enzymatic reaction
 [Term]
 id: MI:0559
 name: glycosylation reaction
-def: "The covalent attachment of a glycosyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer. Reaction that can affect Ser\, Thr\, Cys\, Arg\, and Asn residues. This reaction is known to be reversible in the case of Asn substrate." [PMID:14755292 , RESID:AA0154, RESID:AA0155, RESID:AA0122, RESID:AA0327, RESID:AA0151, GO:004341]
+def: "The covalent attachment of a glycosyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer. Reaction that can affect Ser\, Thr\, Cys\, Arg\, and Asn residues. This reaction is known to be reversible in the case of Asn substrate." [PMID:14755292, RESID:AA0154, RESID:AA0155, RESID:AA0122, RESID:AA0327, RESID:AA0151, GO:004341]
 exact_synonym: "glycosylation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -4150,19 +4150,19 @@ is_a: MI:0150 ! lipid modification
 [Term]
 id: MI:0562
 name: methylated alanine
-def: "residue modification." [PMID:14755292 , RESID:AA0061, RESID:AA0062]
+def: "residue modification." [PMID:14755292, RESID:AA0061, RESID:AA0062]
 is_a: MI:0157 ! methylated residue
 
 [Term]
 id: MI:0563
 name: methylated arginine
-def: "residue modification." [PMID:14755292 , RESID:AA0068, RESID:AA0069]
+def: "residue modification." [PMID:14755292, RESID:AA0068, RESID:AA0069]
 is_a: MI:0157 ! methylated residue
 
 [Term]
 id: MI:0564
 name: omega-n-methyl-arginine
-def: "residue modification." [PMID:14755292 , RESID:AA0069]
+def: "residue modification." [PMID:14755292, RESID:AA0069]
 synonym: "(S)-2-amino-5-\[(imino(methylamino)methyl)amino\]pentanoic acid" []
 synonym: "NG-methylarginine;" []
 synonym: "omega-N-methyl-L-arginine" []
