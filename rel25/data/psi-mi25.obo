@@ -3,7 +3,7 @@ date: 01:03:2006 16:11
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.13 2006/03/02 16:53:20 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.14 2006/03/02 17:19:30 luisa_montecchi Exp $
 
 [Term]
 id: MI:0000
@@ -2294,7 +2294,7 @@ is_a: MI:0300 ! alias type
 id: MI:0305
 name: ordered locus name
 def: "A name used to represent an ORF in a completely sequenced genome or chromosome. It is generally based on a prefix representing the organism and a number which usually represents the sequential ordering of genes on the chromosome. Depending on the genome sequencing center\, numbers are attributed only to protein-coding genes\, or also to pseudogenes\, or also to tRNAs and other features." [PMID:14755292]
-comment: For instance   HI0934\, Rv3245c\, At5g34500\, YER456W
+comment: For instance HI0934\, Rv3245c\, At5g34500\, YER456W.
 synonym: "CDS number" []
 synonym: "ONL" []
 synonym: "ORF number" []
@@ -2307,7 +2307,7 @@ is_a: MI:0300 ! alias type
 id: MI:0306
 name: open reading frame name
 def: "A name temporarily attributed by a sequencing project to an open reading frame. This name is generally based on a cosmid numbering system." [PMID:14755292]
-comment: For instance  MtCY277.28c\, SYGP-ORF50\, SpBC2F12.04\, C06E1.1\, CG10954. Also called Sequencing names or Contig names or Temporary ORFNames
+comment: For instance MtCY277.28c\, SYGP-ORF50\, SpBC2F12.04\, C06E1.1\, CG10954. Also called Sequencing names or Contig names or Temporary ORFNames.
 exact_synonym: "orf name" []
 is_a: MI:0300 ! alias type
 
@@ -2539,7 +2539,7 @@ is_a: MI:0333 ! feature range status
 id: MI:0338
 name: range
 def: "Describes a sequence position known to be in a certain range\, where the exact position is unclear." [PMID:14755292]
-comment: For instance   when an amino acid modification is known to be in the region from 5 to 7. Displayed as '..'.
+comment: For instance when an amino acid modification is known to be in the region from 5 to 7. Displayed as '..'.
 is_a: MI:0333 ! feature range status
 
 [Term]
