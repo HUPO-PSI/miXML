@@ -3,7 +3,7 @@ date: 01:03:2006 16:11
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.14 2006/03/02 17:19:30 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.15 2006/03/02 17:42:51 luisa_montecchi Exp $
 
 [Term]
 id: MI:0000
@@ -2089,7 +2089,7 @@ is_a: MI:0473 ! participant database xref
 [Term]
 id: MI:0250
 name: gene
-def: "interactor for genetic interaction." [PMID:14755292, SO:000070]
+def: "interactor for genetic interaction." [PMID:14755292]
 is_a: MI:0313 ! interactor type
 
 [Term]
@@ -2386,13 +2386,13 @@ is_a: MI:0313 ! interactor type
 [Term]
 id: MI:0318
 name: nucleic acid
-def: "Linear polymers of nucleotides\, linked by 3'\,5' phosphodiester linkages." [PMID:14755292, SO:000034]
+def: "Linear polymers of nucleotides\, linked by 3'\,5' phosphodiester linkages." [PMID:14755292]
 is_a: MI:0383 ! biopolymer
 
 [Term]
 id: MI:0319
 name: deoxyribonucleic acid
-def: "Polymer formed by the deoxyribose sugar group\, and the nucleotides bases adenine\, guanine\, thymine and cytosine." [PMID:14755292, SO:000035]
+def: "Polymer formed by the deoxyribose sugar group\, and the nucleotides bases adenine\, guanine\, thymine and cytosine." [PMID:14755292]
 synonym: "DNA" []
 synonym: "deoxyribonucleic acid" []
 exact_synonym: "dna" []
@@ -2401,7 +2401,7 @@ is_a: MI:0318 ! nucleic acid
 [Term]
 id: MI:0320
 name: ribonucleic acid
-def: "Polymer formed by ribose sugar group\, and the bases of the nucleotides adenine\, guanine\, uracil and cytosine." [PMID:14755292, SO:000035]
+def: "Polymer formed by ribose sugar group\, and the bases of the nucleotides adenine\, guanine\, uracil and cytosine." [PMID:14755292]
 synonym: "RNA" []
 exact_synonym: "rna" []
 is_a: MI:0318 ! nucleic acid
@@ -2453,7 +2453,7 @@ is_a: MI:0320 ! ribonucleic acid
 [Term]
 id: MI:0326
 name: protein
-def: "A linear polymer of amino acids joined by peptide bonds in a specific sequence." [PMID:14755292, SO:000035]
+def: "A linear polymer of amino acids joined by peptide bonds in a specific sequence." [PMID:14755292]
 is_a: MI:0383 ! biopolymer
 
 [Term]
