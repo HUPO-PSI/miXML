@@ -1,9 +1,9 @@
 format-version: 1.0
 date: 01:03:2006 16:11
-saved-by: luisa@ebi.ac.uk
+saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.11 2006/03/01 16:56:21 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.12 2006/03/02 16:12:17 luisa_montecchi Exp $
 
 [Term]
 id: MI:0000
@@ -600,7 +600,7 @@ is_a: MI:0093 ! protein sequence identification
 [Term]
 id: MI:0084
 name: phage display
-def: "Peptide sequences or entire proteins can be displayed on phage capsids by fusion to coat proteins to generate a library of fusion phages each displaying a different peptide. Such a library can then be exploited to identify specific phages that display peptides that bind to any given bait molecule for instance an antibody. The selection is performed by a series of cycles of affinity purification known as panning. The bait protein\, immobilized on a solid support (plastic\, agarose\, sepharose\, magnetic beads..) is soaked in the phage mixture and that phage that remains attached to the bait is amplified and carried through a further affinity purification step. Each cycle results in an approximately 1\,000-fold enrichment of specific phage and after a few selection rounds (2-4)\, DNA sequencing of the tight-binding phage reveals only a small number of sequences. Phage display panning experiments can be carried out either on libraries of peptides of random amino acid sequence or on libraries of displaying natural peptides obtained by inserting cDNA fragments into the phage vector (cDNA libraries). Libraries have been assembled on several different phages (Fd\, Lambda or T7)." [PMID:7708014, PMID:10975452]
+def: "Peptide sequences or entire proteins can be displayed on phage capsids by fusion to coat proteins to generate a library of fusion phages each displaying a different peptide. Such a library can then be exploited to identify specific phages that display peptides that bind to any given bait molecule for instance an antibody. The selection is performed by a series of cycles of affinity purification known as panning. The bait protein\, immobilized on a solid support (plastic\, agarose\, sepharose\, magnetic beads and others) is soaked in the phage mixture and that phage that remains attached to the bait is amplified and carried through a further affinity purification step. Each cycle results in an approximately 1\,000-fold enrichment of specific phage and after a few selection rounds (2-4)\, DNA sequencing of the tight-binding phage reveals only a small number of sequences. Phage display panning experiments can be carried out either on libraries of peptides of random amino acid sequence or on libraries of displaying natural peptides obtained by inserting cDNA fragments into the phage vector (cDNA libraries). Libraries have been assembled on several different phages (Fd\, Lambda or T7)." [PMID:7708014, PMID:10975452]
 is_a: MI:0034 ! display technologies
 
 [Term]
@@ -637,7 +637,7 @@ is_a: MI:0008 ! array technologies
 [Term]
 id: MI:0090
 name: protein complementation assay
-def: "The function of numerous proteins or ribonucleic particles (enzymes\, transcription factors\, etc..) can be rationally dissected into two fragments that fold autonomously but cannot complement to reconstitute the complex function\, unless they are located in close proximity. In a two hybrid experiment\, restoration of the activity by complementation of the two fragments when expressed as fusion with two polypeptides is taken as an evidence that the two polypeptides interact together." [PMID:11495741]
+def: "The function of numerous proteins or ribonucleic particles (enzymes\, transcription factors\, and others) can be rationally dissected into two fragments that fold autonomously but cannot complement to reconstitute the complex function\, unless they are located in close proximity. In a two hybrid experiment\, restoration of the activity by complementation of the two fragments when expressed as fusion with two polypeptides is taken as an evidence that the two polypeptides interact together." [PMID:11495741]
 synonym: "PCA" []
 exact_synonym: "complementation" []
 is_a: MI:0045 ! experimental interaction detection
@@ -682,7 +682,7 @@ is_a: MI:0008 ! array technologies
 [Term]
 id: MI:0096
 name: pull down
-def: "A specific affinity chromatography method where a protein of interest (bait) is expressed as a fusion to an affinity tag (GST\, HIS tail..) and linked at high concentration to a support that has affinity for the tag. Purified proteins or cellular extracts are then adsorbed to the resin and the retained binding proteins are identified. Thus\, in this approach\, the protein that has affinity for the solid support (bait) is expressed and purified first\, often in an heterologous system\, and then challenged with a solution containing the candidate partner proteins. no antibodies to retain bait but other affinity stuffs." [PMID:14755292]
+def: "A specific affinity chromatography method where a protein of interest (bait) is expressed as a fusion to an affinity tag (GST\, HIS tag and others) and linked at high concentration to a support that has affinity for the tag. Purified proteins or cellular extracts are then adsorbed to the resin and the retained binding proteins are identified. Thus\, in this approach\, the protein that has affinity for the solid support (bait) is expressed and purified first\, often in an heterologous system\, and then challenged with a solution containing the candidate partner proteins. no antibodies to retain bait but other affinity stuffs." [PMID:14755292]
 is_a: MI:0004 ! affinity chromatography technologies
 
 [Term]
@@ -2648,7 +2648,7 @@ is_a: MI:0353 ! cross-reference type
 [Term]
 id: MI:0356
 name: identical object
-def: "Reference to the corresponding object in another database. Correspondence may be complete or partial.." [PMID:14755292]
+def: "Reference to the corresponding object in another database. Correspondence may be complete or partial." [PMID:14755292]
 exact_synonym: "identity" []
 is_a: MI:0353 ! cross-reference type
 
@@ -4525,7 +4525,7 @@ is_a: MI:0667 ! controlled vocabulary attribute name
 [Term]
 id: MI:0617
 name: disease
-def: "The interaction that has a disease association.." [PMID:14755292]
+def: "The interaction that has a disease association." [PMID:14755292]
 is_a: MI:0664 ! interaction attribute name
 
 [Term]
@@ -4934,7 +4934,7 @@ is_a: MI:0507 ! tagged molecule
 [Term]
 id: MI:0678
 name: antibody array
-def: "A microarray consisting of antibodies spotted on a solid support in appropriate orientation is incubated with a biological sample (or antigen). Some proteins are captured by the antibodies in the array. In case a protein of interest form a complex with the ones attached to the array\, it is then detected by specific antibody or labelling identification (tag\, ELISA\, biotin..)." [PMID:12454649]
+def: "A microarray consisting of antibodies spotted on a solid support in appropriate orientation is incubated with a biological sample (or antigen). Some proteins are captured by the antibodies in the array. In case a protein of interest form a complex with the ones attached to the array\, it is then detected by specific antibody or labelling identification (tag\, ELISA\, biotin and others)." [PMID:12454649]
 synonym: "antigen capture assay" []
 synonym: "sandwich immunoassay" []
 is_a: MI:0008 ! array technologies
