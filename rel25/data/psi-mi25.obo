@@ -3,7 +3,7 @@ date: 01:03:2006 16:11
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.16 2006/03/02 17:53:50 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.17 2006/03/03 12:14:16 luisa_montecchi Exp $
 
 [Term]
 id: MI:0000
@@ -770,7 +770,7 @@ is_a: MI:0013 ! biophysical
 id: MI:0108
 name: t7 phage display
 def: "T7 is a double stranded DNA bacteriophage with a thin-walled icosahedral capsid\, ~550 Angstrom in diameter\, which is decorated by 415 copies of the capsid protein\, the product of gene 10. gp10 can tolerate insertions at the carboxyterminus without loosing its ability to be inserted into functional phage capsids. Both low density and high density display (albeit only with short peptides) can be achieved." [PMID:14755292]
-comment: reference not index in medline \: Rosenberg\, A.\, Griffin\, K.\, Studier\, W.S.\, McCormick\, M.\, Berg\, J.\, Novy\, R.\, Mierendorf\, R. inNovations\, 1996\, 6\, 1.
+comment: Reference not index in medline \: Rosenberg\, A.\, Griffin\, K.\, Studier\, W.S.\, McCormick\, M.\, Berg\, J.\, Novy\, R.\, Mierendorf\, R. inNovations\, 1996\, 6\, 1.
 exact_synonym: "t7 phage" []
 is_a: MI:0084 ! phage display
 
@@ -1693,14 +1693,14 @@ is_obsolete: true
 [Term]
 id: MI:0192
 name: acetylation reaction
-def: "Reaction\, that can affect K\,C\,A\,D\,E\,Q\,G\,I\,K\,M\,P\,S\,T\,Y\,V residues." [PMID:14755292, RESID:AA0055, RESID:AA0056, RESID:AA0041, RESID:AA0042, RESID:AA0043, RESID:AA0044, RESID:AA0045, RESID:AA0046, RESID:AA0047, RESID:AA0048, RESID:AA0049, RESID:AA0050, RESID:AA0051, RESID:AA0052, RESID:AA0053, RESID:AA0054, GO:000647]
+def: "Reaction\, that can affect K\,C\,A\,D\,E\,Q\,G\,I\,K\,M\,P\,S\,T\,Y\,V residues." [PMID:14755292, RESID:AA0055, RESID:AA0056, RESID:AA0041, RESID:AA0042, RESID:AA0043, RESID:AA0044, RESID:AA0045, RESID:AA0046, RESID:AA0047, RESID:AA0048, RESID:AA0049, RESID:AA0050, RESID:AA0051, RESID:AA0052, RESID:AA0053, RESID:AA0054, GO:0006473]
 exact_synonym: "acetylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0193
 name: amidation reaction
-def: "Irreversible reaction that can affect A\,R\,N\,D\,C\,Q\,E\,G\,H\,I\,L\,K\,M\,F\,P\,S\,T\,W\,Y or V residues." [PMID:14755292, RESID:AA0081, RESID:AA0082, RESID:AA0083, RESID:AA0084, RESID:AA0085, RESID:AA0086, RESID:AA0087, RESID:AA0088, RESID:AA0089, RESID:AA0090, RESID:AA0091, RESID:AA0092, RESID:AA0093, RESID:AA0094, RESID:AA0095, RESID:AA0096, RESID:AA0097, RESID:AA0098, RESID:AA0099, RESID:AA0100, GO:000151]
+def: "Irreversible reaction that can affect A\,R\,N\,D\,C\,Q\,E\,G\,H\,I\,L\,K\,M\,F\,P\,S\,T\,W\,Y or V residues." [PMID:14755292, RESID:AA0081, RESID:AA0082, RESID:AA0083, RESID:AA0084, RESID:AA0085, RESID:AA0086, RESID:AA0087, RESID:AA0088, RESID:AA0089, RESID:AA0090, RESID:AA0091, RESID:AA0092, RESID:AA0093, RESID:AA0094, RESID:AA0095, RESID:AA0096, RESID:AA0097, RESID:AA0098, RESID:AA0099, RESID:AA0100, GO:0001519]
 exact_synonym: "amidation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -1726,7 +1726,7 @@ is_obsolete: true
 [Term]
 id: MI:0197
 name: deacetylation reaction
-def: "N6-acetyl-L-lysine or S-acetyl-L-cysteine are cleaved and return K or C residues." [PMID:14755292, RESID:AA0055, RESID:AA0056, GO:000647]
+def: "N6-acetyl-L-lysine or S-acetyl-L-cysteine are cleaved and return K or C residues." [PMID:14755292, RESID:AA0055, RESID:AA0056, GO:0006476]
 exact_synonym: "deacetylation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -1768,14 +1768,14 @@ is_a: MI:0212 ! lipid cleavage
 [Term]
 id: MI:0203
 name: dephosphorylation reaction
-def: "Phosphoresidues are cleaved and return D\,C\,H\,S\,T\,Y or R residues." [PMID:14755292, RESID:AA0033, RESID:AA0034, RESID:AA0035, RESID:AA0036, RESID:AA0037, RESID:AA0038, RESID:AA0039, RESID:AA0222, GO:001631]
+def: "Phosphoresidues are cleaved and return D\,C\,H\,S\,T\,Y or R residues." [PMID:14755292, RESID:AA0033, RESID:AA0034, RESID:AA0035, RESID:AA0036, RESID:AA0037, RESID:AA0038, RESID:AA0039, RESID:AA0222, GO:0016311]
 exact_synonym: "dephosphorylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0204
 name: deubiquitination reaction
-def: "Cleavage of the G-K bond and release of ubiquitin or ubiquitin like proteins." [RESID:AA0125, PMID:11583613, GO:001657]
+def: "Cleavage of the G-K bond and release of ubiquitin or ubiquitin like proteins." [RESID:AA0125, PMID:11583613, GO:0016579]
 exact_synonym: "deubiquitination" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -1788,14 +1788,14 @@ is_obsolete: true
 [Term]
 id: MI:0206
 name: farnesylation reaction
-def: "Reversible reaction that can affect C residue." [PMID:14755292, RESID:AA0102, GO:001834]
+def: "Reversible reaction that can affect C residue." [PMID:14755292, RESID:AA0102, GO:0018347]
 exact_synonym: "farnesylation" []
 is_a: MI:0211 ! lipid addition
 
 [Term]
 id: MI:0207
 name: formylation reaction
-def: "Reaction that can affect K or G residues." [PMID:14755292, RESID:AA0211, RESID:AA0057, GO:001825]
+def: "Reaction that can affect K or G residues." [PMID:14755292, RESID:AA0211, RESID:AA0057, GO:0018256]
 exact_synonym: "formylation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -1808,21 +1808,21 @@ is_a: MI:0190 ! interaction type
 [Term]
 id: MI:0209
 name: geranylgeranylation reaction
-def: "Reversible reaction that can affect C residue." [PMID:14755292, RESID:AA0104, GO:001834]
+def: "Reversible reaction that can affect C residue." [PMID:14755292, RESID:AA0104, GO:0018348]
 exact_synonym: "geranylgeranylation" []
 is_a: MI:0211 ! lipid addition
 
 [Term]
 id: MI:0210
 name: hydroxylation reaction
-def: "Irreversible reaction that can affect K\,P\,Y or R residues." [PMID:14755292, RESID:AA0028, RESID:AA0029, RESID:AA0030, RESID:AA0146, RESID:AA0215, GO:001812]
+def: "Irreversible reaction that can affect K\,P\,Y or R residues." [PMID:14755292, RESID:AA0028, RESID:AA0029, RESID:AA0030, RESID:AA0146, RESID:AA0215, GO:0018126]
 exact_synonym: "hydroxylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0211
 name: lipid addition
-def: "Covalent or non covalent binding of lipid group on a protein residue." [PMID:14755292, GO:000649]
+def: "Covalent or non covalent binding of lipid group on a protein residue." [PMID:14755292, GO:0006497]
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
@@ -1834,14 +1834,14 @@ is_a: MI:0194 ! cleavage reaction
 [Term]
 id: MI:0213
 name: methylation reaction
-def: "The covalent attachment of a methyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer. Irreversible reaction that can affect A\,G\,M\,F\,P\,C\,R\,N\,Q\,E\,H\,or K residues." [PMID:14755292, RESID:AA0061, RESID:AA0062, RESID:AA0063, RESID:AA0064, RESID:AA0234, RESID:AA0065, RESID:AA0066, RESID:AA0272, RESID:AA0067, RESID:AA0068, RESID:AA0069, RESID:AA0070, RESID:AA0071, RESID:AA0072, RESID:AA0073, RESID:AA0074, RESID:AA0075, RESID:AA0076, GO:004341]
+def: "The covalent attachment of a methyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer. Irreversible reaction that can affect A\,G\,M\,F\,P\,C\,R\,N\,Q\,E\,H\,or K residues." [PMID:14755292, RESID:AA0061, RESID:AA0062, RESID:AA0063, RESID:AA0064, RESID:AA0234, RESID:AA0065, RESID:AA0066, RESID:AA0272, RESID:AA0067, RESID:AA0068, RESID:AA0069, RESID:AA0070, RESID:AA0071, RESID:AA0072, RESID:AA0073, RESID:AA0074, RESID:AA0075, RESID:AA0076, GO:0043414]
 exact_synonym: "methylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0214
 name: myristoylation reaction
-def: "Reaction that can affect K or G residues." [PMID:14755292, RESID:AA0078, RESID:AA0059, GO:001831]
+def: "Reaction that can affect K or G residues." [PMID:14755292, RESID:AA0078, RESID:AA0059, GO:0018319]
 exact_synonym: "myristoylation" []
 is_a: MI:0211 ! lipid addition
 
@@ -1855,14 +1855,14 @@ is_obsolete: true
 [Term]
 id: MI:0216
 name: palmitoylation reaction
-def: "Reversible reaction that can affect C\,K\,T or S residues." [PMID:14755292, RESID:AA0106, RESID:AA0060, RESID:AA0077, RESID:AA0079, RESID:AA0080, GO:001831]
+def: "Reversible reaction that can affect C\,K\,T or S residues." [PMID:14755292, RESID:AA0106, RESID:AA0060, RESID:AA0077, RESID:AA0079, RESID:AA0080, GO:0018318]
 exact_synonym: "palmitoylation" []
 is_a: MI:0211 ! lipid addition
 
 [Term]
 id: MI:0217
 name: phosphorylation reaction
-def: "Reversible reaction that can affect D\,C\,H\,S\,T\,Y\,R residues." [PMID:14755292, RESID:AA0033, RESID:AA0034, RESID:AA0035, RESID:AA0036, RESID:AA0037, RESID:AA0038, RESID:AA0222, RESID:AA0039, GO:001631]
+def: "Reversible reaction that can affect D\,C\,H\,S\,T\,Y\,R residues." [PMID:14755292, RESID:AA0033, RESID:AA0034, RESID:AA0035, RESID:AA0036, RESID:AA0037, RESID:AA0038, RESID:AA0222, RESID:AA0039, GO:0016310]
 exact_synonym: "phosphorylation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -1882,7 +1882,7 @@ is_a: MI:0269 ! synthetic phenotype
 [Term]
 id: MI:0220
 name: ubiquitination reaction
-def: "Reversible reaction that create a covalent bond between a C-terminus G of ubiquitin and a K residue of the target." [RESID:AA0125, PMID:11583613, GO:001656]
+def: "Reversible reaction that create a covalent bond between a C-terminus G of ubiquitin and a K residue of the target." [RESID:AA0125, PMID:11583613, GO:0016567]
 exact_synonym: "ubiquitination" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -2089,7 +2089,7 @@ is_a: MI:0473 ! participant database xref
 [Term]
 id: MI:0250
 name: gene
-def: "interactor for genetic interaction." [PMID:14755292]
+def: "interactor for genetic interaction." [PMID:14755292, SO:0000704]
 is_a: MI:0313 ! interactor type
 
 [Term]
@@ -2386,13 +2386,13 @@ is_a: MI:0313 ! interactor type
 [Term]
 id: MI:0318
 name: nucleic acid
-def: "Linear polymers of nucleotides\, linked by 3'\,5' phosphodiester linkages." [PMID:14755292]
+def: "Linear polymers of nucleotides\, linked by 3'\,5' phosphodiester linkages." [PMID:14755292, SO:0000348]
 is_a: MI:0383 ! biopolymer
 
 [Term]
 id: MI:0319
 name: deoxyribonucleic acid
-def: "Polymer formed by the deoxyribose sugar group\, and the nucleotides bases adenine\, guanine\, thymine and cytosine." [PMID:14755292]
+def: "Polymer formed by the deoxyribose sugar group\, and the nucleotides bases adenine\, guanine\, thymine and cytosine." [PMID:14755292, SO:0000352]
 synonym: "DNA" []
 synonym: "deoxyribonucleic acid" []
 exact_synonym: "dna" []
@@ -2401,7 +2401,7 @@ is_a: MI:0318 ! nucleic acid
 [Term]
 id: MI:0320
 name: ribonucleic acid
-def: "Polymer formed by ribose sugar group\, and the bases of the nucleotides adenine\, guanine\, uracil and cytosine." [PMID:14755292]
+def: "Polymer formed by ribose sugar group\, and the bases of the nucleotides adenine\, guanine\, uracil and cytosine." [PMID:14755292, SO:0000356]
 synonym: "RNA" []
 exact_synonym: "rna" []
 is_a: MI:0318 ! nucleic acid
@@ -2453,7 +2453,7 @@ is_a: MI:0320 ! ribonucleic acid
 [Term]
 id: MI:0326
 name: protein
-def: "A linear polymer of amino acids joined by peptide bonds in a specific sequence." [PMID:14755292]
+def: "A linear polymer of amino acids joined by peptide bonds in a specific sequence." [PMID:14755292, SO:0000358]
 is_a: MI:0383 ! biopolymer
 
 [Term]
@@ -4115,21 +4115,21 @@ is_a: MI:0195 ! covalent binding
 [Term]
 id: MI:0557
 name: adp ribosylation reaction
-def: "Reaction that can affect Arg\, Cys\, Glu\, Arg and Asn residues." [PMID:14755292, RESID:AA0168, RESID:AA0169, RESID:AA0295, RESID:AA0237, RESID:AA0231, GO:000647]
+def: "Reaction that can affect Arg\, Cys\, Glu\, Arg and Asn residues." [PMID:14755292, RESID:AA0168, RESID:AA0169, RESID:AA0295, RESID:AA0237, RESID:AA0231, GO:0006471]
 exact_synonym: "adp ribosylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0558
 name: deglycosylation reaction
-def: "Reaction catalyzed by PNGase\, a deglycosylating enzyme that promotes the hydrolysis of the beta-aspartylglycosylamine bond of aspargine-linked glycopeptides and glycoproteins." [PMID:15670854, GO:000651]
+def: "Reaction catalyzed by PNGase\, a deglycosylating enzyme that promotes the hydrolysis of the beta-aspartylglycosylamine bond of aspargine-linked glycopeptides and glycoproteins." [PMID:15670854, GO:0006517]
 exact_synonym: "deglycosylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0559
 name: glycosylation reaction
-def: "The covalent attachment of a glycosyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer. Reaction that can affect Ser\, Thr\, Cys\, Arg\, and Asn residues. This reaction is known to be reversible in the case of Asn substrate." [PMID:14755292, RESID:AA0154, RESID:AA0155, RESID:AA0122, RESID:AA0327, RESID:AA0151, GO:004341]
+def: "The covalent attachment of a glycosyl residue to one or more monomeric units in a polypeptide\, polynucleotide\, polysaccharide\, or other biological polymer. Reaction that can affect Ser\, Thr\, Cys\, Arg\, and Asn residues. This reaction is known to be reversible in the case of Asn substrate." [PMID:14755292, RESID:AA0154, RESID:AA0155, RESID:AA0122, RESID:AA0327, RESID:AA0151, GO:0043413]
 exact_synonym: "glycosylation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -4178,28 +4178,28 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0566
 name: sumoylation reaction
-def: "Reversible reaction that create a covalent bond between a C-terminus G of an ubiquitine like sumo protein and a K residue of the target." [PMID:15985640, GO:001692]
+def: "Reversible reaction that create a covalent bond between a C-terminus G of an ubiquitine like sumo protein and a K residue of the target." [PMID:15985640, GO:0016925]
 exact_synonym: "sumoylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0567
 name: neddylation reaction
-def: "Reversible reaction that create a covalent bond between a Glycine residue of an ubiquitine like NEDD8 protein and a lysine residue of the target." [PMID:16127432, GO:004511]
+def: "Reversible reaction that create a covalent bond between a Glycine residue of an ubiquitine like NEDD8 protein and a lysine residue of the target." [PMID:16127432, GO:0045116]
 exact_synonym: "neddylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0568
 name: desumoylation reaction
-def: "Cleavage of the G-K bond and release of the SUMO ubiquitin like proteins." [PMID:15985640, GO:001692]
+def: "Cleavage of the G-K bond and release of the SUMO ubiquitin like proteins." [PMID:15985640, GO:0016926]
 exact_synonym: "desumoylation" []
 is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0569
 name: deneddylation reaction
-def: "Cleavage of the G-K bond and release of the NEDD8 ubiquitin like proteins. Deneddylation\, which removes the NEDD8 moiety\, requires the isopeptidase activity of the COP9 signalosome." [PMID:16127432, GO:000033]
+def: "Cleavage of the G-K bond and release of the NEDD8 ubiquitin like proteins. Deneddylation\, which removes the NEDD8 moiety\, requires the isopeptidase activity of the COP9 signalosome." [PMID:16127432, GO:0000338]
 exact_synonym: "deneddylation" []
 is_a: MI:0414 ! enzymatic reaction
 
@@ -4212,7 +4212,7 @@ is_a: MI:0194 ! cleavage reaction
 [Term]
 id: MI:0571
 name: mrna cleavage
-def: "Any process by which a pre-mRNA or mRNA molecule is cleaved at specific sites or in a regulated manner." [PMID:14681407, GO:000637]
+def: "Any process by which a pre-mRNA or mRNA molecule is cleaved at specific sites or in a regulated manner." [PMID:14681407, GO:0006379]
 is_a: MI:0194 ! cleavage reaction
 
 [Term]
