@@ -1,0 +1,2067 @@
+   <entrySet level="2" version="5" xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/rel25/src/MIF25.xsd">
+     <entry>
+       <source releaseDate="2006-02-27">
+         <names>
+           <shortLabel>European Bioinformatics Institute</shortLabel>
+         </names>
+         <bibref>
+           <xref>
+             <primaryRef db="pubmed" dbAc="MI:0446" id="14681455" refType="primary-reference" refTypeAc="MI:0358"/>
+           </xref>
+         </bibref>
+         <xref>
+           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0469" refType="primary-reference" refTypeAc="MI:0358"/>
+         </xref>
+         <attributeList>
+           <attribute name="postalAddress">Wellcome Trust Genome Campus, Hinxton, Cambridge, CB10 1SD, United Kingdom</attribute>
+           <attribute name="url">http://www.ebi.ac.uk</attribute>
+         </attributeList>
+       </source>
+       <experimentList>
+         <experimentDescription id="2">
+           <names>
+             <shortLabel>ishibashi-2006-1</shortLabel>
+             <fullName>A Higher Plant Has Three Different Types of RPA Heterotrimeric Complex.</fullName>
+           </names>
+           <bibref>
+             <xref>
+               <primaryRef db="pubmed" dbAc="MI:0446" id="16428324" refType="primary-reference" refTypeAc="MI:0358"/>
+             </xref>
+           </bibref>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849505" secondary="ishibashi-2006-1"/>
+             <secondaryRef db="newt" dbAc="MI:0247" id="39947" refType="target-species" secondary="orysa"/>
+           </xref>
+           <hostOrganismList>
+             <hostOrganism ncbiTaxId="4932">
+               <names>
+                 <shortLabel>yeast</shortLabel>
+                 <fullName>Saccharomyces cerevisiae</fullName>
+               </names>
+             </hostOrganism>
+           </hostOrganismList>
+           <interactionDetectionMethod>
+             <names>
+               <shortLabel>two hybrid</shortLabel>
+               <fullName>two hybrid</fullName>
+               <alias>2H</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0018" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="10967325" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="12634794" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionDetectionMethod>
+           <participantIdentificationMethod>
+             <names>
+               <shortLabel>predetermined</shortLabel>
+               <fullName>predetermined participant</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0396" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="7940758" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </participantIdentificationMethod>
+           <attributeList>
+             <attribute name="author-list">Ishibashi T., Kimura S., Sakaguchi K.</attribute>
+             <attribute name="contact-email">kengo@rs.noda.tus.ac.jp</attribute>
+             <attribute name="exp-modification">Directed yeast two hybrid</attribute>
+             <attribute name="figure-legend">Figure 2 (A).</attribute>
+           </attributeList>
+         </experimentDescription>
+         <experimentDescription id="27">
+           <names>
+             <shortLabel>ishibashi-2006-3</shortLabel>
+             <fullName>A Higher Plant Has Three Different Types of RPA Heterotrimeric Complex.</fullName>
+           </names>
+           <bibref>
+             <xref>
+               <primaryRef db="pubmed" dbAc="MI:0446" id="16428324" refType="primary-reference" refTypeAc="MI:0358"/>
+             </xref>
+           </bibref>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849664" secondary="ishibashi-2006-3"/>
+             <secondaryRef db="newt" dbAc="MI:0247" id="39947" refType="target-species" secondary="orysa"/>
+           </xref>
+           <hostOrganismList>
+             <hostOrganism ncbiTaxId="4530">
+               <names>
+                 <shortLabel>orysa-1</shortLabel>
+                 <fullName>Oryza sativa</fullName>
+               </names>
+             </hostOrganism>
+           </hostOrganismList>
+           <interactionDetectionMethod>
+             <names>
+               <shortLabel>anti bait coip</shortLabel>
+               <fullName>anti bait coimmunoprecipitation</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0006" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="7708014" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionDetectionMethod>
+           <participantIdentificationMethod>
+             <names>
+               <shortLabel>western blot</shortLabel>
+               <fullName>western blot</fullName>
+               <alias>Immuno blot</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0113" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </participantIdentificationMethod>
+           <attributeList>
+             <attribute name="author-list">Ishibashi T., Kimura S., Sakaguchi K.</attribute>
+             <attribute name="contact-email">kengo@rs.noda.tus.ac.jp</attribute>
+             <attribute name="figure-legend">Figure 2 (D)and (E).</attribute>
+           </attributeList>
+         </experimentDescription>
+         <experimentDescription id="46">
+           <names>
+             <shortLabel>ishibashi-2006-2</shortLabel>
+             <fullName>A Higher Plant Has Three Different Types of RPA Heterotrimeric Complex.</fullName>
+           </names>
+           <bibref>
+             <xref>
+               <primaryRef db="pubmed" dbAc="MI:0446" id="16428324" refType="primary-reference" refTypeAc="MI:0358"/>
+             </xref>
+           </bibref>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849602" secondary="ishibashi-2006-2"/>
+             <secondaryRef db="newt" dbAc="MI:0247" id="39947" refType="target-species" secondary="orysa"/>
+           </xref>
+           <hostOrganismList>
+             <hostOrganism ncbiTaxId="-1">
+               <names>
+                 <shortLabel>in vitro</shortLabel>
+               </names>
+             </hostOrganism>
+           </hostOrganismList>
+           <interactionDetectionMethod>
+             <names>
+               <shortLabel>pull down</shortLabel>
+               <fullName>pull down</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0096" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionDetectionMethod>
+           <participantIdentificationMethod>
+             <names>
+               <shortLabel>western blot</shortLabel>
+               <fullName>western blot</fullName>
+               <alias>Immuno blot</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0113" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </participantIdentificationMethod>
+           <attributeList>
+             <attribute name="author-list">Ishibashi T., Kimura S., Sakaguchi K.</attribute>
+             <attribute name="contact-email">kengo@rs.noda.tus.ac.jp</attribute>
+             <attribute name="figure-legend">Figure 2 (B)and (C).</attribute>
+           </attributeList>
+         </experimentDescription>
+       </experimentList>
+       <interactorList>
+         <interactor id="4">
+           <names>
+             <shortLabel>q9sdk9_orysa</shortLabel>
+             <fullName>Hypothetical protein P0705D01.4</fullName>
+             <alias type="gene name" typeAc="MI:0301">P0705D01.4</alias>
+             <alias type="gene name synonym" typeAc="MI:0302">OsRPA14</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="Q9SDK9" refType="identity" refTypeAc="MI:0356" secondary="q9sdk9_orysa" version="TrEMBL_31"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003676" secondary="F:nucleic acid binding"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006412" secondary="P:protein biosynthesis"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012340" secondary="OB_NA_bd_sub"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-849521" secondary="q9sdk9_orysa"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="39947">
+             <names>
+               <shortLabel>orysa</shortLabel>
+               <fullName>Oryza sativa (japonica cultivar-group)</fullName>
+             </names>
+           </organism>
+           <sequence>MDTSGPAAFVNGEILKMFVGRRVRTVVQAQREEGGLLIGQSTDGHQLTIKGASGAPMSHYVEIIGIAEPNQAIRAEVCTDFGENFDPAPFNGLCKLANGQMKDLFL</sequence>
+         </interactor>
+         <interactor id="6">
+           <names>
+             <shortLabel>q9avm2_orysa</shortLabel>
+             <fullName>Replication protein A 30kDa</fullName>
+             <alias type="gene name" typeAc="MI:0301">OsRPA32</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="Q9AVM2" refType="identity" refTypeAc="MI:0356" secondary="q9avm2_orysa" version="TrEMBL_26"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003676" secondary="F:nucleic acid binding"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012340" secondary="OB_NA_bd_sub"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR004365" secondary="OB_tRNA_NA_bd"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR011991" secondary="Wing_hlx_DNA_bd"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-849513" secondary="q9avm2_orysa"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="39947">
+             <names>
+               <shortLabel>orysa</shortLabel>
+               <fullName>Oryza sativa (japonica cultivar-group)</fullName>
+             </names>
+           </organism>
+           <sequence>MMSFSQPDAFSPSQFTSSQNAAADSTTPSKSRGASSTMPLTVKQISEAQQSGITGEKGAPFVVDGVETANVRLVGLVSGKTERNTDVSFMIDDGTGRLDFIRWVNDGADSAETAAVQNGMYVSVIGSLKGLQERKRATAFAIRPVTDYNEVTLHFIQCVRMHLENTKSQIGSPAKTYSAMGSSSSNGFSEMTTPTSVKSNPAPVLSVTNGSKTDLNTEVLNVFREPANVESEHGVHIDEIVKRLRLPEAKIKVAIDYLADIGHIYSTIDESHYKSAFNE</sequence>
+         </interactor>
+         <interactor id="10">
+           <names>
+             <shortLabel>q6h7j5_orysa</shortLabel>
+             <fullName>Putative replication protein A2</fullName>
+             <alias type="gene name" typeAc="MI:0301">OJ1643_A10.19</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="Q6H7J5" refType="identity" refTypeAc="MI:0356" secondary="q6h7j5_orysa" version="TrEMBL_27"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003676" secondary="F:nucleic acid binding"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012340" secondary="OB_NA_bd_sub"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR004365" secondary="OB_tRNA_NA_bd"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR011991" secondary="Wing_hlx_DNA_bd"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-849532" secondary="q6h7j5_orysa"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="39947">
+             <names>
+               <shortLabel>orysa</shortLabel>
+               <fullName>Oryza sativa (japonica cultivar-group)</fullName>
+             </names>
+           </organism>
+           <sequence>MYGVGVGGGGGGNYDGGGGNASSLFGGGGFMPSQATNAAEGTSGGGGGFPKSRNAQALLPLTVKQIMDASQTNDDKSNFAVNGMEVSTVRLVGRMLNKLDRVTDVSFTLDDGTGRVPVNRWENDSTDTKEMADIQNGDYVIVNGGLKGFQGKRQVVAYSVRRITNFNDVTHHFLHCVHVHLELTRPKSQVNANTATGTPNQTMPRDSMAYNQSPLTNQASTFSAPQNTGTGTNMIDLVLNVFHDPAVMNDDHGVGVDYVSRRLNLPEETVGKIIIDQVDLGHLYATIDDHHYKSTMNG</sequence>
+         </interactor>
+         <interactor id="13">
+           <names>
+             <shortLabel>q5z8l1_orysa</shortLabel>
+             <fullName>Putative replication protein A2</fullName>
+             <alias type="gene name" typeAc="MI:0301">P0550B04.15</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="Q5Z8L1" refType="identity" refTypeAc="MI:0356" secondary="q5z8l1_orysa" version="TrEMBL_28"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003676" secondary="F:nucleic acid binding"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012340" secondary="OB_NA_bd_sub"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR004365" secondary="OB_tRNA_NA_bd"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-849544" secondary="q5z8l1_orysa"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="39947">
+             <names>
+               <shortLabel>orysa</shortLabel>
+               <fullName>Oryza sativa (japonica cultivar-group)</fullName>
+             </names>
+           </organism>
+           <sequence>MAAAASYFSGTALMPSQRSGAPAPEYSAAGTGAAAAPSPSKPRDPRFSGCVPATVLHISRSFAAALAADGGGDPVFSIDGVETTNVRVLGRVVSVVSRDTDVCFTLDDSTGKIPLVRWITDQSDTRDTSYIQEGVYVKVQVNLMGFQAKKQGLARSIRPINNFNEVVLHFIECMHVHLESVQSKMQRQLPPSVQTNEYTHVPSSGGVRDYQVHFTPQVNQGLPPAVQTNTSTYVPLLGGVRDHQAHFAQVNQGQFSPAVQANTSTHLPFSGGVGEHQIHFTPKVNQGQFPPSVQTNTSAHVPYSGGFREHQVHFTPPVNQGQFPPAVQTNLYNHAASSGGVREQVHLTQANQFSAYSSTGGLQHDPQRMVLEALQQPDILLSNMEHTLMNWLEELECPKQTLWGLSSIWLQQASSIGPLMTIMSSLCVMVDQCNHPQD</sequence>
+         </interactor>
+         <interactor id="17">
+           <names>
+             <shortLabel>q65xv7_orysa</shortLabel>
+             <fullName>Hypothetical protein P0016H04.11</fullName>
+             <alias type="gene name" typeAc="MI:0301">P0016H04.11</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="Q65XV7" refType="identity" refTypeAc="MI:0356" secondary="q65xv7_orysa" version="TrEMBL_28"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005634" secondary="C:nucleus"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003677" secondary="F:DNA binding"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006260" secondary="P:DNA replication"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012340" secondary="OB_NA_bd_sub"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR004365" secondary="OB_tRNA_NA_bd"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR006162" secondary="Ppantne_S"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR007199" secondary="Rep-A_N"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR004591" secondary="Rpa1"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR001878" secondary="Znf_CCHC"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-849558" secondary="q65xv7_orysa"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="39947">
+             <names>
+               <shortLabel>orysa</shortLabel>
+               <fullName>Oryza sativa (japonica cultivar-group)</fullName>
+             </names>
+           </organism>
+           <sequence>MEPQLTPGAVQAIAEHPDGTGTIQPVLQVVDVRPVTTKNAPPTPKPAERFRMMLSDGVNTQQSMLATALNPLVKDATLRPGTVVQLTDFMCNTIQGKRIIIVVKLDVLQNDCIVIGNPKHYEPKSLTKEQDPNLQASVAQTNNGTYSGGASMLGPSVAPRAEQAASNSSYGGPYNSAQGMLGSSIGRTVEPGPANVSAVGSYGAISAQNTTNANMMQPTSQLNIMNANTMQPTSQLNTMNANTMQPTSQLSSLNPNQNQRFAAPASGGVFGPPGNAYGQPSRPSYQQPPPVYMNRGPASRNDSATRIIPITALNPYQPKWTIKARVTAKSDIRHWSNARSSGTVFSFDLLDAQGGEIRAQCWKESADKFFGQIEVGRVYLISRGSLKPAQKKYNTLNHDYEITLDIGLSTVEVCSDDDNSIPRLQYNFRQISELENMANETIVDLLGVVTSVSPSATIMRKIGTETRKRSIQLKDLSGRSIEVTLWGNFCDAEGQQLQLQCDSGSNPIIAFKGARVGDFNGKSVSTIGSTQLIINPDFPEVERLRQWYMTEGKTAPCISLSREMLNMGRTDARKTIAQIKDENLGRLEKPDWITVKAAISHVTTESFCYPACPKLLPVGRQCNKKAINNGDGMWHCDRCDESFQNPEYRYMLRFQIQDHTGSTYASAFDEAGEQIFGRKAGELFSIRNVDQDDAQFAEIIEGVRWHLYLFKLKVKEETYNDEQSLKCTAVKVEKLDPSKESNVLLGAIDNLLLDPKGQSDLAPNAGFTDPVGGHGAPTSSNAYAMNTGGVNQFGQQASISAGMSTPLAATRNLQTCSICGANGHSAQICHVGADMDMQETSAGGSSMGNYNSIAGNGSSECYKCKQPGHYARDCPGQSTGGLECFKCKQPGHFSRDCPVQSTGGSECFKCKQPGHFARDCPGQSTGAQHQTYGNNVAASRGYNRQSFVGGY</sequence>
+         </interactor>
+         <interactor id="25">
+           <names>
+             <shortLabel>q9avl8_orysa</shortLabel>
+             <fullName>Replication protein A 70kDa</fullName>
+             <alias type="gene name" typeAc="MI:0301">OsRPA70a</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="Q9AVL8" refType="identity" refTypeAc="MI:0356" secondary="q9avl8_orysa" version="TrEMBL_25"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005634" secondary="C:nucleus"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003677" secondary="F:DNA binding"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006260" secondary="P:DNA replication"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012340" secondary="OB_NA_bd_sub"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR004365" secondary="OB_tRNA_NA_bd"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR007199" secondary="Rep-A_N"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR004591" secondary="Rpa1"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-849583" secondary="q9avl8_orysa"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="39947">
+             <names>
+               <shortLabel>orysa</shortLabel>
+               <fullName>Oryza sativa (japonica cultivar-group)</fullName>
+             </names>
+           </organism>
+           <sequence>MARLTPNGVAAALAGDTNLKPVLQIVELRGVQVNGAGVTRGERFRAVVSDGTAASSALFAAQLSDHARSGALRRGSIVQLSEYVINEVGPRRIIVILNLEVLVSECEIIGNPTALSETGSPIPNPTRVEQFNGAPQYGLMAGNSSNTTTKPSDNVPLFQNSMAGNSSNFATRPSDKVPVFQPTVQPSYRPAPNYKNHGAIMKNEAPARIIPISALNPYQGRWAIKARVTAKGDIRRYHNAKGDGKVFSFDLLDSDGGEIRVTCFNALLDRFYEVVEVGKVYVVSRGNLRPAQKNYNHLNNEWEILLENGSTVDLCPDENSSIPTQRFDFRPINEIEDAQNNAILDIIGVVTSVNPCTTIQRKNGMETQKRTMNLKDMSGRSVEVTMWGDFCNREGSQLQGMVERGIFPVLAVKAGKVSDFSGKSVGTISSTQFFINPDSAEAHSLRQWFDSGGRDAFTQSISRDITPGASRNEIRKTVAQIKDEGLGMGDKPDWITVKATVIFFKNESFFYTACPNMIGDRQCNKKVTKSTNGNWTCDKCDREFEECDYRYLLQFQIQDHSGTAWVTAFQEAGQELLGCSATELNALKEREDPRFADTMLNCLFQEYLLRLKVKEESYGDERKVKNTAVKVEKVDPSGESKFLLDLISKSSALH</sequence>
+         </interactor>
+       </interactorList>
+       <interactionList>
+         <interaction id="1">
+           <names>
+             <shortLabel>q9avm2-p0705d01_4</shortLabel>
+             <fullName>Directed yeast two hybrid analysis reveals  interaction between the OsRPA32 protein and P0705D01.4 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849529" secondary="q9avm2-p0705d01_4"/>
+           </xref>
+           <experimentList>
+             <experimentRef>2</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="3">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="5">
+               <interactorRef>6</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="7">
+           <names>
+             <shortLabel>q6h7j5-p0705d01_4-1</shortLabel>
+             <fullName>Directed yeast two hybrid analysis reveals  interaction between the Q6H7J5  protein and P0705D01.4 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849540" secondary="q6h7j5-p0705d01_4-1"/>
+           </xref>
+           <experimentList>
+             <experimentRef>2</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="8">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="9">
+               <interactorRef>10</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="11">
+           <names>
+             <shortLabel>q5z8l1-p0705d01_4-2</shortLabel>
+             <fullName>Directed yeast two hybrid analysis reveals  interaction between the q5z8l1 protein and P0705D01.4 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849551" secondary="q5z8l1-p0705d01_4-2"/>
+           </xref>
+           <experimentList>
+             <experimentRef>2</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="12">
+               <interactorRef>13</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="14">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="15">
+           <names>
+             <shortLabel>q5z8l1-q65xv7</shortLabel>
+             <fullName>Directed yeast two hybrid analysis reveals  interaction between the q5z8l1 protein and Q65XV7 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849572" secondary="q5z8l1-q65xv7"/>
+           </xref>
+           <experimentList>
+             <experimentRef>2</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="16">
+               <interactorRef>17</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="18">
+               <interactorRef>13</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="comment">Very weak interactions between OsRAP32-3 and OsRAP70a and OsRAP70b were detected.</attribute>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="19">
+           <names>
+             <shortLabel>q9avm2-q7y069</shortLabel>
+             <fullName>Directed yeast two hybrid analysis reveals  interaction between the OsRPA32 protein and Q7Y069 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849579" secondary="q9avm2-q7y069"/>
+           </xref>
+           <experimentList>
+             <experimentRef>2</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="20">
+               <interactorRef>6</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="21">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="comment">Weak interactions between OsRAP32-1 and OsRAP70b or OsRAP70c were detected.</attribute>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="22">
+           <names>
+             <shortLabel>q6h7j5-q9avl8</shortLabel>
+             <fullName>Directed yeast two hybrid analysis reveals  interaction between the Q6H7J5 protein and Q9AVl8 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849594" secondary="q6h7j5-q9avl8"/>
+           </xref>
+           <experimentList>
+             <experimentRef>2</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="23">
+               <interactorRef>10</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="24">
+               <interactorRef>25</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="comment">Weak interactions between Q6H7J5 and Q7Y069 or Q65XV7.</attribute>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="26">
+           <names>
+             <shortLabel>q9avm2-p0705d01_4-1</shortLabel>
+             <fullName>Co-immunoprecipitation analysis reveals  interaction between the OsRPA32 protein and P0705D01.4 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849666" secondary="q9avm2-p0705d01_4-1"/>
+           </xref>
+           <experimentList>
+             <experimentRef>27</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="28">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="29">
+               <interactorRef>6</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="30">
+           <names>
+             <shortLabel>q6h7j5-p0705d01_4-2</shortLabel>
+             <fullName>Co-immunoprecipitation  analysis reveals  interaction between the Q6H7J5  protein and P0705D01.4 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849669" secondary="q6h7j5-p0705d01_4-2"/>
+           </xref>
+           <experimentList>
+             <experimentRef>27</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="31">
+               <interactorRef>10</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="32">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="33">
+           <names>
+             <shortLabel>q5z8l1-p0705d01_4-3</shortLabel>
+             <fullName>Co-immunoprecipitation analysis reveals  interaction between the q5z8l1 protein and P0705D01.4 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849672" secondary="q5z8l1-p0705d01_4-3"/>
+           </xref>
+           <experimentList>
+             <experimentRef>27</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="34">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="35">
+               <interactorRef>13</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="36">
+           <names>
+             <shortLabel>q6h7j5-q9avl8-2</shortLabel>
+             <fullName>Co-immunoprecipitation analysis reveals  interaction between the Q6H7J5 protein and Q9AVl8 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849675" secondary="q6h7j5-q9avl8-2"/>
+           </xref>
+           <experimentList>
+             <experimentRef>27</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="37">
+               <interactorRef>25</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="38">
+               <interactorRef>10</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="39">
+           <names>
+             <shortLabel>q9avm2-q7y069-2</shortLabel>
+             <fullName>Co-immunoprecipitation analysis reveals  interaction between the OsRPA32 protein and Q7Y069 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849678" secondary="q9avm2-q7y069-2"/>
+           </xref>
+           <experimentList>
+             <experimentRef>27</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="40">
+               <interactorRef>6</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="41">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="42">
+           <names>
+             <shortLabel>q5z8l1-q65xv7-2</shortLabel>
+             <fullName>Co-immunoprecipitation  analysis reveals  interaction between the q5z8l1 protein and Q65XV7 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849681" secondary="q5z8l1-q65xv7-2"/>
+           </xref>
+           <experimentList>
+             <experimentRef>27</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="43">
+               <interactorRef>17</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="44">
+               <interactorRef>13</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="45">
+           <names>
+             <shortLabel>q6h7j5-q9avl8-1</shortLabel>
+             <fullName>Pulldown analysis reveals  interaction between the Q6H7J5 protein and Q9AVl8 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849612" secondary="q6h7j5-q9avl8-1"/>
+           </xref>
+           <experimentList>
+             <experimentRef>46</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="47">
+               <interactorRef>25</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="48">
+               <interactorRef>10</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <featureList>
+                 <feature id="49">
+                   <names>
+                     <shortLabel>region</shortLabel>
+                   </names>
+                   <featureType>
+                     <names>
+                       <shortLabel>his tagged</shortLabel>
+                       <fullName>his tagged</fullName>
+                       <alias>6-His-tagged</alias>
+                       <alias>Hexa-His-tagged</alias>
+                       <alias>Histidine-tagged</alias>
+                     </names>
+                     <xref>
+                       <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0521" refType="identity" refTypeAc="MI:0356"/>
+                       <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+                     </xref>
+                   </featureType>
+                   <featureRangeList>
+                     <featureRange>
+                       <startStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </startStatus>
+                       <begin position="0"/>
+                       <endStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </endStatus>
+                       <end position="0"/>
+                     </featureRange>
+                   </featureRangeList>
+                 </feature>
+               </featureList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="comment">A weak interaction between OsRAP32-2 and OsRAP70c was detected.</attribute>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="50">
+           <names>
+             <shortLabel>q5z8l1-q65xv7-1</shortLabel>
+             <fullName>Pulldown analysis reveals  interaction between the q5z8l1 protein and Q65XV7 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849618" secondary="q5z8l1-q65xv7-1"/>
+           </xref>
+           <experimentList>
+             <experimentRef>46</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="51">
+               <interactorRef>13</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <featureList>
+                 <feature id="52">
+                   <names>
+                     <shortLabel>region</shortLabel>
+                   </names>
+                   <featureType>
+                     <names>
+                       <shortLabel>his tagged</shortLabel>
+                       <fullName>his tagged</fullName>
+                       <alias>6-His-tagged</alias>
+                       <alias>Hexa-His-tagged</alias>
+                       <alias>Histidine-tagged</alias>
+                     </names>
+                     <xref>
+                       <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0521" refType="identity" refTypeAc="MI:0356"/>
+                       <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+                     </xref>
+                   </featureType>
+                   <featureRangeList>
+                     <featureRange>
+                       <startStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </startStatus>
+                       <begin position="0"/>
+                       <endStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </endStatus>
+                       <end position="0"/>
+                     </featureRange>
+                   </featureRangeList>
+                 </feature>
+               </featureList>
+             </participant>
+             <participant id="53">
+               <interactorRef>17</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="54">
+           <names>
+             <shortLabel>q9avl8-q6h7j5</shortLabel>
+             <fullName>Pulldown analysis reveals  interaction between the  Q9AVl8 protein and Q6H7J5 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849625" secondary="q9avl8-q6h7j5"/>
+           </xref>
+           <experimentList>
+             <experimentRef>46</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="55">
+               <interactorRef>10</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="56">
+               <interactorRef>25</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <featureList>
+                 <feature id="57">
+                   <names>
+                     <shortLabel>region</shortLabel>
+                   </names>
+                   <featureType>
+                     <names>
+                       <shortLabel>his tagged</shortLabel>
+                       <fullName>his tagged</fullName>
+                       <alias>6-His-tagged</alias>
+                       <alias>Hexa-His-tagged</alias>
+                       <alias>Histidine-tagged</alias>
+                     </names>
+                     <xref>
+                       <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0521" refType="identity" refTypeAc="MI:0356"/>
+                       <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+                     </xref>
+                   </featureType>
+                   <featureRangeList>
+                     <featureRange>
+                       <startStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </startStatus>
+                       <begin position="0"/>
+                       <endStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </endStatus>
+                       <end position="0"/>
+                     </featureRange>
+                   </featureRangeList>
+                 </feature>
+               </featureList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="58">
+           <names>
+             <shortLabel>q9avm2-q7y069-1</shortLabel>
+             <fullName>Pulldown analysis reveals  interaction between the OsRPA32 protein and Q7Y069 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849639" secondary="q9avm2-q7y069-1"/>
+           </xref>
+           <experimentList>
+             <experimentRef>46</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="59">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="60">
+               <interactorRef>6</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <featureList>
+                 <feature id="61">
+                   <names>
+                     <shortLabel>region</shortLabel>
+                   </names>
+                   <featureType>
+                     <names>
+                       <shortLabel>his tagged</shortLabel>
+                       <fullName>his tagged</fullName>
+                       <alias>6-His-tagged</alias>
+                       <alias>Hexa-His-tagged</alias>
+                       <alias>Histidine-tagged</alias>
+                     </names>
+                     <xref>
+                       <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0521" refType="identity" refTypeAc="MI:0356"/>
+                       <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+                     </xref>
+                   </featureType>
+                   <featureRangeList>
+                     <featureRange>
+                       <startStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </startStatus>
+                       <begin position="0"/>
+                       <endStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </endStatus>
+                       <end position="0"/>
+                     </featureRange>
+                   </featureRangeList>
+                 </feature>
+               </featureList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="comment">A weak interaction between OsRAP32-1 and OsRAP70c was detected.</attribute>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="62">
+           <names>
+             <shortLabel>q65xv7-q5z8l1</shortLabel>
+             <fullName>Pulldown analysis reveals  interaction between the  Q65XV7 protein and q5z8l1 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849646" secondary="q65xv7-q5z8l1"/>
+           </xref>
+           <experimentList>
+             <experimentRef>46</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="63">
+               <interactorRef>13</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+             <participant id="64">
+               <interactorRef>17</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <featureList>
+                 <feature id="65">
+                   <names>
+                     <shortLabel>region</shortLabel>
+                   </names>
+                   <featureType>
+                     <names>
+                       <shortLabel>his tagged</shortLabel>
+                       <fullName>his tagged</fullName>
+                       <alias>6-His-tagged</alias>
+                       <alias>Hexa-His-tagged</alias>
+                       <alias>Histidine-tagged</alias>
+                     </names>
+                     <xref>
+                       <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0521" refType="identity" refTypeAc="MI:0356"/>
+                       <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+                     </xref>
+                   </featureType>
+                   <featureRangeList>
+                     <featureRange>
+                       <startStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </startStatus>
+                       <begin position="0"/>
+                       <endStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </endStatus>
+                       <end position="0"/>
+                     </featureRange>
+                   </featureRangeList>
+                 </feature>
+               </featureList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="66">
+           <names>
+             <shortLabel>q7y069-q9avm2</shortLabel>
+             <fullName>Pulldown analysis reveals  interaction between the Q7Y069 protein and OsRPA32 protein</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849654" secondary="q7y069-q9avm2"/>
+           </xref>
+           <experimentList>
+             <experimentRef>46</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="67">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <featureList>
+                 <feature id="68">
+                   <names>
+                     <shortLabel>region</shortLabel>
+                   </names>
+                   <featureType>
+                     <names>
+                       <shortLabel>his tagged</shortLabel>
+                       <fullName>his tagged</fullName>
+                       <alias>6-His-tagged</alias>
+                       <alias>Hexa-His-tagged</alias>
+                       <alias>Histidine-tagged</alias>
+                     </names>
+                     <xref>
+                       <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0521" refType="identity" refTypeAc="MI:0356"/>
+                       <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+                     </xref>
+                   </featureType>
+                   <featureRangeList>
+                     <featureRange>
+                       <startStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </startStatus>
+                       <begin position="0"/>
+                       <endStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </endStatus>
+                       <end position="0"/>
+                     </featureRange>
+                   </featureRangeList>
+                 </feature>
+               </featureList>
+             </participant>
+             <participant id="69">
+               <interactorRef>6</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="comment">A weak interaction between OsRAP70b and OsRAP32-2 was detected.</attribute>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+       </interactionList>
+     </entry>
+   </entrySet>
