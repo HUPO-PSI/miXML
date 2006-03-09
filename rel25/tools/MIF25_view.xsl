@@ -35,7 +35,9 @@ Notes:
 
 <xsl:param name="base" select="'http://psidev.sourceforge.net'"/>
 
-<xsl:param name="word.wrap" select="40"/>
+<xsl:param name="word.wrap" select="10"/>
+<!--xsl:param name="word.sep"><br/></xsl:param-->
+<xsl:param name="word.sep"  select="' '"/>
 
 <xsl:param name="swissProtUrl"
            select="'http://www.expasy.org/cgi-bin/sprot-search-ac?'"/>
@@ -72,6 +74,10 @@ Notes:
                 .table-subtitle    {
                     background-color:   #BBBBBB;
                     font-style:         italic;
+                }
+                .sequence   {
+                    font-family:        "Courier New", monospace;
+                    font-size:          90%;
                 }
             </style>
         </head>
@@ -391,16 +397,26 @@ Notes:
     </xsl:apply-templates>
 </xsl:template>
 
+<xsl:template match="psi:interactorType">
+    <tr>
+        <xsl:apply-templates select="current()"  mode="cellrow">
+            <xsl:with-param name="title" select="'Interactor Type'"/>
+        </xsl:apply-templates>
+    </tr>
+</xsl:template>
+
 <xsl:template match="psi:organism">
-    <xsl:apply-templates select="current()"  mode="cellrow">
-        <xsl:with-param name="title" select="'Organism'"/>
-    </xsl:apply-templates>
+    <tr>
+        <xsl:apply-templates select="current()"  mode="cellrow">
+            <xsl:with-param name="title" select="'Organism'"/>
+        </xsl:apply-templates>
+    </tr>
 </xsl:template>
 
 <xsl:template match="psi:sequence">
     <tr>
         <td class="table-title">Sequence:</td>
-        <td>
+        <td class="sequence">
             <xsl:call-template name="split-string">
                 <xsl:with-param name="str" select="."/>
             </xsl:call-template>
@@ -426,10 +442,12 @@ Notes:
 <xsl:template name="split-string">
     <xsl:param name="str"/>
     <xsl:param name="max" select="$word.wrap"/>
+    <xsl:param name="sep" select="$word.sep"/>
     <xsl:choose>
         <xsl:when test="string-length($str) > $max">
             <xsl:variable name="substr" select="substring($str, 1, $max)"/>
-            <xsl:value-of select="substring($substr, 1, $max)"/><br/>
+            <xsl:value-of select="substring($substr, 1, $max)"/>
+            <xsl:copy-of select="$sep"/>
             <xsl:variable name="subsubstr"
                           select="substring($str, number($max + 1), string-length($str))"/>
             <xsl:choose>
