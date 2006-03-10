@@ -1,0 +1,129 @@
+<html>
+<head>
+    <title>
+        HUPO PSI-MI Test Page
+    </title>
+    <style type="text/css">
+        table   {
+            width:  100%;
+        }
+    </style>
+    <script type="text/javascript" src="sarissa.js"> </script>
+	<script type="text/javascript">
+    //<![CDATA[
+
+    // Preload the XSL files
+    var htmlProcessor     = new XSLTProcessor();
+    var expandedProcessor = new XSLTProcessor();
+    var compactProcessor  = new XSLTProcessor();
+    htmlProcessor.importStylesheet(getDocument("../../tools/MIF25_view.xsl"));
+    expandedProcessor.importStylesheet(getDocument("../../tools/MIF25_expand.xsl"));
+    compactProcessor.importStylesheet(getDocument("../../tools/MIF25_compact.xsl"));
+
+    // XML document
+    var xmlUrl;
+    var xmlDoc;
+
+    function getDocument(url)  {
+        var doc = Sarissa.getDomDocument();
+        doc.async = false; // this is the important part
+        doc.load(url);
+        return doc;
+    }
+
+    function getProcessor(url)  {
+        var processor = new XSLTProcessor();
+        processor.importStylesheet(getDocument(url));
+        return processor;
+    }
+
+    function transform(xmlUrl, xslUrl)  {
+        var doc = getDocument(xmlUrl);
+        var processor = getProcessor(xslUrl);
+        return processor.transformToDocument(doc);
+    }
+
+    function go_onSubmit()  {
+        try {
+            var resultElement;
+            var htmlResultElement = document.getElementById("html-result");
+            var xmlResultElement  = document.getElementById("xml-result");
+            var view = document.getElementById("view").value;
+            var processor;
+            if (view == "html") {
+                processor       = htmlProcessor;
+                resultElement   = htmlResultElement;
+                //xmlResultElement.visibility = "hidden";
+                xmlResultElement.innerHTML = "";
+            }
+            else    {
+                processor = expandedProcessor;
+                if (view == "compact")  {
+                    processor = compactProcessor;
+                }
+                resultElement = xmlResultElement;
+                //htmlResultElement.visibility = "hidden";
+                htmlResultElement.innerHTML = "";
+            }
+            resultElement.innerHTML = "";
+            //resultElement.visibility = "visible";
+            // Only reload XML document if changed
+            var url = document.getElementById("xml-url").value;
+            if (url != xmlUrl)  {
+                xmlUrl = url;
+                xmlDoc = getDocument(xmlUrl);
+            }
+            var resultDoc = processor.transformToDocument(xmlDoc);
+            resultElement.innerHTML = Sarissa.serialize(resultDoc);
+            if (view == "html") {
+                xmlResultElement.innerHTML = Sarissa.serialize(resultDoc);
+            }
+        }
+        catch (e)  {
+            alert(e);
+        }
+    }
+    //]]>
+    </script>
+</head>
+
+<body>
+
+<h1>HUPO PSI-MI Test Page</h1>
+
+Transform any PSI-MI 2.5 file.
+
+<table>
+    <tr>
+        <td width="10%">
+            PSI-MI file:
+        </td>
+        <td>
+            <input id="xml-url" type="text" size="30" value="../../sampleData/10523676.xml"></input>
+        </td>
+    </tr>
+    <tr>
+        <td width="10%">
+            View:
+        </td>
+        <td>
+            <select id="view">
+                <option value="html">HTML</option>
+                <option value="expand">Expanded XML</option>
+                <option value="compact">Compact XML</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+
+<input type="button" value="Go" onclick="go_onSubmit()"/>
+
+<p>
+   <div id="html-result"></div>
+   <textarea id="xml-result" cols="100" rows="30" style="visibility: visible"></textarea>
+</p>
+
+</body>
+
+</html>
