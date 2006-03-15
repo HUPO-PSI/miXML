@@ -1,9 +1,9 @@
 format-version: 1.0
-date: 01:03:2006 16:11
+date: 15:03:2006 16:28
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.18 2006/03/08 12:00:25 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.19 2006/03/15 16:48:48 luisa_montecchi Exp $
 
 [Term]
 id: MI:0000
@@ -3270,8 +3270,8 @@ is_a: MI:0444 ! database citation
 id: MI:0448
 name: gene ontology
 def: "The objective of Gene Ontology (GO) is to provide controlled vocabularies for the description of the molecular function\, biological process and cellular component of gene products.\nhttp\://www.ebi.ac.uk/GO" [PMID:14755292]
-xref_analog: id-validation-regexp:\"GO\:\[0-9\]\{7\}\"
 exact_synonym: "go" []
+xref_analog: id-validation-regexp:\"GO\:\[0-9\]\{7\}\"
 is_a: MI:0447 ! feature database xref
 is_a: MI:0461 ! interaction database xref
 
@@ -3516,8 +3516,8 @@ id: MI:0477
 name: entrez gene/locuslink
 def: "LocusLink provides a single query interface to curated sequence and descriptive information about genetic loci.\nhttp\://www.ncbi.nlm.nih.gov/LocusLink/" [PMID:14755292]
 synonym: "Entrez gene/locuslink" []
-xref_analog: id-validation-regexp:\"\[0-9\]+|\[A-Z\]\{1-2\}\[0-9\]+\"
 exact_synonym: "entrezgene/locuslink" []
+xref_analog: id-validation-regexp:\"\[0-9\]+|\[A-Z\]\{1\,2\}_\[0-9\]+|\[A-Z\]\{1\,2\}_\[A-Z\]\{1\,4\}\[0-9\]+\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -3589,8 +3589,8 @@ id: MI:0486
 name: uniprot knowledge base
 def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot\, TrEMBL\, and PIR.\nhttp\://www.expasy.uniprot.org/" [PMID:14681372]
 synonym: "UniProt" []
-xref_analog: id-validation-regexp:\"\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]|\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]-\[0-9\]+|\[A-Z\]\{3\}\[0-9\]\{5\}|\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]-PRO_\[0-9\]\{10\}\"
 exact_synonym: "uniprotkb" []
+xref_analog: id-validation-regexp:\"\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]|\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]-\[0-9\]+|\[A-Z\]\{3\}\[0-9\]\{5\}|\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]-PRO_\[0-9\]\{10\}\"
 is_a: MI:0473 ! participant database xref
 
 [Term]
@@ -4232,8 +4232,8 @@ is_a: MI:0119 ! mutation decreasing interaction
 id: MI:0574
 name: digital object identifier
 def: "Identifier of a publication prior it pubmed indexing." [PMID:14755292]
-xref_analog: id-validation-regexp:\"doi\:\[0-9\]+\\.\[0-9\]+\\/\"
 exact_synonym: "doi" []
+xref_analog: id-validation-regexp:\"doi\:\[0-9\]+\\.\[0-9\]+\\/\"
 is_a: MI:0445 ! experiment database xref
 
 [Term]
@@ -4241,8 +4241,8 @@ id: MI:0575
 name: alliance for cellulare signaling
 def: "Alliance for Cellular Signaling (AfCS -Nature) store yeast 2-hybrid Interaction data and expression data. Information and data are freely available to all.\nhttp\://www.signaling-gateway.org" [PMID:14755292]
 synonym: "AfCS" []
-xref_analog: id-validation-regexp:\"\[0-9\]+\"
 exact_synonym: "afcs" []
+xref_analog: id-validation-regexp:\"\[0-9\]+\"
 is_a: MI:0461 ! interaction database xref
 is_a: MI:0489 ! source database xref
 
@@ -4411,8 +4411,8 @@ is_a: MI:0270 ! conditional synthetic lethal
 id: MI:0601
 name: sequence ontology
 def: "The Sequence Ontology (SO) is a structured controlled vocabulary for the parts of a genomic annotation. SO provides a common set of terms and definitions that will facilitate the exchange\, analysis and management of genomic data." [PMID:15892872]
-xref_analog: id-validation-regexp:\"SO\:\[0-9\]\{7\}\"
 exact_synonym: "so" []
+xref_analog: id-validation-regexp:\"SO\:\[0-9\]\{7\}\"
 is_a: MI:0447 ! feature database xref
 is_a: MI:0473 ! participant database xref
 
@@ -4788,6 +4788,7 @@ is_a: MI:0648 ! molar
 id: MI:0655
 name: lambda repressor two hybrid
 def: "A protein of interest (the bait) is fused to the full-length bacteriophage lambda repressor protein (lambdacI\, 237 amino acids)\, containing the amino terminal DNA-binding domain and the carboxylterminal dimerization domain. The corresponding target (prey) protein is fused to the N-terminal domain of the alfa-subunit of RNA polymerase (248 amino acids). The bait is tethered to the lambda operator sequence upstream of the reporter promoter through the DNA-binding domain of lambdacI. When the bait and prey interact\, they recruit and stabilize the binding of RNA polymerase at the promoter and activate the transcription of the HIS3 reporter gene. Due to the tendency of both the lambda repressor protein and the N-terminal domain of the alfa-subunit of RNA polymerase to dimerize\, this system might not be optimal for the analysis of proteins that self-associate unless their interaction with other protein partners depends on the oligomerization." [PMID:15792953]
+synonym: "BacterioMatch" []
 exact_synonym: "lambda two hybrid" []
 is_a: MI:0232 ! transcriptional complementation assay
 
@@ -4924,8 +4925,8 @@ id: MI:0675
 name: international protein index
 def: "IPI provides a top level guide to the main databases that describe the proteomes of higher eukaryotic organisms. IPI effectively maintains a database of cross references between the primary data sources\, provides minimally redundant yet maximally complete sets of proteins for featured species (one sequence per transcript) and maintains stable identifiers (with incremental versioning) to allow the tracking of sequences in IPI between IPI releases. IPI is updated monthly in accordance with the latest data released by the primary data sources." [PMID:15221759]
 exact_synonym: "ipi" []
-is_a: MI:0473 ! participant database xref
 xref_analog: id-validation-regexp:\"IPI\[0-9\]+.\[0-9\]+|IPI\[0-9\]+\"
+is_a: MI:0473 ! participant database xref
 
 [Term]
 id: MI:0676
