@@ -1,9 +1,9 @@
 format-version: 1.0
-date: 15:03:2006 16:28
+date: 16:03:2006 15:44
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.19 2006/03/15 16:48:48 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.20 2006/03/16 15:50:58 luisa_montecchi Exp $
 
 [Term]
 id: MI:0000
@@ -4688,28 +4688,28 @@ relationship: part_of MI:0000 ! molecular interaction
 [Term]
 id: MI:0641
 name: ic50
-def: "Molar concentration of an agonist which produces 50% of the maximum possible inhibitory response for that agonist under standard condition. Note that this measure is reaction dependent. Unit Molar." [PMID:14755292]
+def: "Molar concentration of an antagonist which produces 50% of the maximum possible inhibitory response for that antagonist. Note this measure depends on the specific antagonist used and upon experimental conditions\, notably temperature\, pH and solution composition (e.g.\, salts\, chelating agents and others). Thus the ic50 is a relative measure and its values can be compared only when sharing the same experimental setting. Unit Molar." [PMID:14755292]
 synonym: "IC50" []
 is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:0642
 name: ec50
-def: "Molar concentration of an agonist which produces 50% of the maximum possible response for that agonist under standard condition. Note that this measure is reaction dependent. Unit Molar." [PMID:14755292]
+def: "Molar concentration of an agonist which produces 50% of the maximum possible response for that agonist. Note this measure depends on the specific agonist used and upon experimental conditions\, notably temperature\, pH and solution composition (e.g.\, salts\, chelating agents and others). Thus the ec50 is a relative measure and its values can be compared only when sharing the same experimental setting. Unit Molar." [PMID:14755292]
 synonym: "EC50" []
 is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:0643
 name: ki
-def: "Equilibrium constant for inhibitory binding. Unit Molar." [PMID:14755292]
+def: "Equilibrium constant for dissociation of an inhibitor. Unit Molar." [PMID:14755292]
 synonym: "Ki" []
 is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:0644
 name: km
-def: "Michealis-Menten constant\: concentration of substrate at which the reaction rate is equal to half the maximal rate (i.e. Km=\{s\} when Vo=1/2Vmax). This definition is not true for allosteric enzymes. Unit Molar." [PMID:14755292]
+def: "Michaelis-Menten constant\: concentration of substrate at which the reaction rate is equal to half the maximal rate (i.e. Km=\{s\} when Vo=1/2Vmax). Unit Molar." [PMID:14755292]
 synonym: "Km" []
 is_a: MI:0640 ! parameter type
 
@@ -4717,7 +4717,6 @@ is_a: MI:0640 ! parameter type
 id: MI:0645
 name: kcat
 def: "The number of substrate molecules converted to product in a given unit of time\, on a single enzyme molecule when the enzyme is saturated with substrate. Unit per second\, or s-1." [PMID:14755292]
-synonym: "Kcat" []
 synonym: "turnover number" []
 is_a: MI:0640 ! parameter type
 
