@@ -4,7 +4,9 @@
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
-<!-- 
+<!--
+@id: $Id: MIF25_view.xsl,v 1.4 2006/03/22 13:05:56 aquinn Exp $
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 This XSLT-Script was designed for generating HTML out of a PSI-MI-XML-File,
 which satisfies MIF.xsd.
 Its only a visualisation and does not show all details included in PSI !
