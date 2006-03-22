@@ -153,14 +153,11 @@ Notes:
 </xsl:template>
 
 <xsl:template match="psi:shortLabel">
-    <!--span style="font-weight:bold"-->
-        <xsl:value-of select="."/>
-    <!--/span-->
+    <xsl:value-of select="."/>
 </xsl:template>
 
-<xsl:template match="psi:fullName">
-    :<xsl:value-of select="."/>
-</xsl:template>
+<!-- On one line so colon appears correctly -->
+<xsl:template match="psi:fullName">: <xsl:value-of select="."/></xsl:template>
 
 <xsl:template match="psi:alias">
     (<xsl:apply-templates select="@type"/><xsl:apply-templates select="text()"/>)
@@ -258,11 +255,11 @@ Notes:
 <xsl:template match="psi:experimentDescription">
     <tr>
         <td class="table-subtitle" colspan="2">
-            <a name="{@id}">Experiment #<xsl:value-of select="@id"/></a>
+            <a name="e{@id}">Experiment #<xsl:value-of select="@id"/></a>
         </td>
     </tr>
     <tr>
-        <td bgcolor="#BBBBBB">Name:</td>
+        <td class="table-title">Name:</td>
         <td>
             <xsl:value-of select="psi:names/psi:shortLabel"/>
         </td>
@@ -283,7 +280,7 @@ Notes:
 <xsl:template match="psi:interactor">
     <tr>
         <td class="table-subtitle" colspan="2">
-            <a name="{@id}">Interactor #<xsl:value-of select="@id"/></a>
+            <a name="i{@id}">Interactor #<xsl:value-of select="@id"/></a>
         </td>
     </tr>
     <xsl:apply-templates/>
@@ -292,27 +289,17 @@ Notes:
 <xsl:template match="psi:interaction">
     <tr>
         <td class="table-subtitle" colspan="2">
-            <a name="{@id}">Interaction #<xsl:value-of select="@id"/></a>
+            <a name="ix{@id}">Interaction #<xsl:value-of select="@id"/></a>
         </td>
     </tr>
     <xsl:apply-templates/>
 </xsl:template>
-
-<!--Level 3 -->
 
 <xsl:template match="psi:experimentList">
     <tr>
         <td class="table-title">Experiments:</td>
         <xsl:apply-templates/>
     </tr>
-</xsl:template>
-
-<xsl:template match="psi:experimentRef">
-    <td><a href="#{.}"><xsl:value-of select="."/></a></td>
-</xsl:template>
-
-<xsl:template match="psi:availabilityRef">
-    <tr><td><a href="#{.}"><xsl:value-of select="."/></a></td></tr>
 </xsl:template>
 
 <xsl:template match="psi:participantList">
@@ -336,6 +323,7 @@ Notes:
             <tr>
                 <xsl:apply-templates select="psi:experimentalRoleList"/>
             </tr>
+            <xsl:apply-templates select="psi:featureList/psi:feature"/>   
         </table>
       </td>
   </tr>
@@ -353,14 +341,65 @@ Notes:
     </xsl:apply-templates>
 </xsl:template>
 
+<xsl:template match="psi:feature">
+    <tr>
+        <td class="table-title">
+            Feature #<xsl:value-of select="@id"/>
+        </td>
+        <td>
+            <xsl:apply-templates select="psi:featureType/psi:names/psi:shortLabel"/>
+            (<xsl:apply-templates select="psi:names/psi:shortLabel"/>)
+            [
+            <xsl:apply-templates select="psi:featureRangeList/psi:featureRange/psi:begin/@position"/>
+            ..
+            <xsl:apply-templates select="psi:featureRangeList/psi:featureRange/psi:end/@position"/>
+            ]
+        </td>
+    </tr>
+</xsl:template>
+
 <xsl:template match="psi:experimentalRole">
     <xsl:apply-templates/>
 </xsl:template>
 
+<xsl:template match="psi:experimentRef">
+    <td>
+        <a href="#e{.}">
+            <xsl:apply-templates select="/psi:entrySet/psi:entry/psi:experimentList/psi:experimentDescription[@id = current()/text()]"
+                                 mode="ref">
+                <xsl:with-param name="label" select="'Experiment'"/>
+            </xsl:apply-templates>    
+        </a>
+    </td>
+</xsl:template>
+
+<xsl:template match="psi:availabilityRef">
+    <tr><td><a href="#a{.}"><xsl:value-of select="."/></a></td></tr>
+</xsl:template>
+
 <xsl:template match="psi:interactorRef" mode="participant">
-    <a href="#{.}">
-        Interactor #<xsl:apply-templates select="text()"/>
+    <a href="#i{.}">
+        <xsl:apply-templates select="/psi:entrySet/psi:entry/psi:interactorList/psi:interactor[@id = current()/text()]"
+                             mode="ref">
+            <xsl:with-param name="label" select="'Interactor'"/>
+        </xsl:apply-templates>
     </a>
+</xsl:template>
+
+<xsl:template match="node()" mode="ref">
+    <xsl:param name="label"/>
+    <xsl:choose>
+        <xsl:when test="psi:names/psi:shortLabel = ''">
+            <xsl:value-of select="$label"/>
+            #<xsl:apply-templates select="@id"/>   
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:attribute name="title">
+                <xsl:apply-templates select="psi:names/psi:fullName/text()"/>
+            </xsl:attribute>            
+            <xsl:apply-templates select="psi:names/psi:shortLabel"/>      
+        </xsl:otherwise>
+    </xsl:choose>
 </xsl:template>
 
 <xsl:template match="psi:interactor" mode="participant">
@@ -433,8 +472,24 @@ Notes:
         <td class="table-title">
             <xsl:apply-templates select="@name"/>
         </td>
-        <td><xsl:apply-templates select="text()"/></td>
+        <td><xsl:apply-templates select="current()" mode="text"/></td>
     </tr>
+</xsl:template>
+
+<xsl:template match="psi:attribute[@name = 'url']" mode="text">
+    <a href="{text()}">
+        <xsl:apply-templates select="text()"/>
+    </a>
+</xsl:template>
+
+<xsl:template match="psi:attribute[@name = 'contact-email']" mode="text">
+    <a href="mailto:{text()}">
+        <xsl:apply-templates select="text()"/>
+    </a>
+</xsl:template>
+
+<xsl:template match="psi:attribute" mode="text">
+    <xsl:apply-templates select="text()"/>
 </xsl:template>
 
 <!-- TODO: copied from PRIDE common.xsl - should use common.xsl here -->
