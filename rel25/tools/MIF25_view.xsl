@@ -5,7 +5,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
 <!--
-@id: $Id: MIF25_view.xsl,v 1.4 2006/03/22 13:05:56 aquinn Exp $
+@id: $Id: MIF25_view.xsl,v 1.5 2006/04/05 08:46:56 aquinn Exp $
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 This XSLT-Script was designed for generating HTML out of a PSI-MI-XML-File,
 which satisfies MIF.xsd.
@@ -53,6 +53,8 @@ Notes:
            select="'http://www.ebi.ac.uk/intact/search/do/search?searchString='"/>
 <xsl:param name="pubmedUrl"
            select="'http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;&amp;dopt=Citation&amp;list_uids='"/>
+<xsl:param name="newtUrl"
+           select="'http://www.ebi.ac.uk/newt/display?search='"/>
 
 <xsl:template match="psi:entrySet">
     <html>
@@ -141,17 +143,19 @@ Notes:
 </xsl:template>
 
 
-<!--Level 2 -->
-
 <xsl:template match="psi:names">
     <tr>
         <td class="table-title">Name:</td>
         <td>
-            <xsl:apply-templates select="psi:shortLabel"/>
-            <xsl:apply-templates select="psi:fullName[. != ../psi:shortLabel]"/>
-            <xsl:apply-templates select="psi:alias"/>
+            <xsl:apply-templates select="current()" mode="no-title"/>
         </td>
     </tr>
+</xsl:template>
+
+<xsl:template match="psi:names" mode="no-title">
+    <xsl:apply-templates select="psi:shortLabel"/>
+    <xsl:apply-templates select="psi:fullName[. != ../psi:shortLabel]"/>
+    <xsl:apply-templates select="psi:alias"/>
 </xsl:template>
 
 <xsl:template match="psi:shortLabel">
@@ -273,6 +277,8 @@ Notes:
         </td>
     </tr>
     <xsl:apply-templates select="psi:bibref"/>
+    <xsl:apply-templates select="psi:xref"/>
+    <xsl:apply-templates select="psi:hostOrganismList/psi:hostOrganism"/>
     <tr><xsl:apply-templates select="psi:interactionDetectionMethod"/></tr>
     <tr><xsl:apply-templates select="psi:participantIdentificationMethod"/></tr>
     <tr><xsl:apply-templates select="psi:featureDetectionMethod"/></tr>
@@ -325,7 +331,8 @@ Notes:
             <tr>
                 <xsl:apply-templates select="psi:experimentalRoleList"/>
             </tr>
-            <xsl:apply-templates select="psi:featureList/psi:feature"/>   
+            <xsl:apply-templates select="psi:featureList/psi:feature"/>
+            <xsl:apply-templates select="psi:hostOrganismList/psi:hostOrganism"/>
         </table>
       </td>
   </tr>
@@ -446,11 +453,17 @@ Notes:
     </tr>
 </xsl:template>
 
-<xsl:template match="psi:organism">
+<xsl:template match="psi:organism | psi:hostOrganism">
     <tr>
-        <xsl:apply-templates select="current()"  mode="cellrow">
-            <xsl:with-param name="title" select="'Organism'"/>
-        </xsl:apply-templates>
+        <td class="table-title">
+            <xsl:if test="local-name() = 'hostOrganism'">Host</xsl:if>
+            Organism:
+        </td>
+        <td>
+            <a href="{$newtUrl}{@ncbiTaxId}" title="Tax ID: {@ncbiTaxId}">
+                <xsl:apply-templates select="psi:names" mode="no-title"/>
+            </a>
+        </td>
     </tr>
 </xsl:template>
 
