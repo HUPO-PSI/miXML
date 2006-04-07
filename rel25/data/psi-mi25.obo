@@ -1,9 +1,9 @@
 format-version: 1.0
-date: 16:03:2006 15:44
+date: 07:04:2006 17:35
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.20 2006/03/16 15:50:58 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.21 2006/04/07 16:55:52 luisa_montecchi Exp $
 
 [Term]
 id: MI:0000
@@ -157,7 +157,7 @@ is_a: MI:0416 ! fluorescence microscopy
 [Term]
 id: MI:0022
 name: colocalization by immunostaining
-def: "The subcellular location of a protein can be demonstrated by treating cells fixed on a microscope slide with an antibody specific for the protein of interest. A secondary antibody conjugated with a reactive enzyme (e.g. horseradish peroxidase) is then added. Following a washing step to remove the unbound secondary ligand\, a chromogenic substrate (e.g. 3\,3'\, 5\,5' tetramethyl benzidine chromogen \[TMB\]) is converted to a soluble coloured product by the conjugated enzyme and can then be visualised by standard microscopic techniques.\nOBSOLETE since combination of Interaction Detection Method and Interaction Type. Consider using the Interaction Detection Method \"imaging techniques\" (MI\:0428) coupled with Interaction Type \"colocalisation\" (MI\:0401) and Participant detection \"immunostaining\" (MI\:0402) instead." [PMID:14755292]
+def: "The subcellular location of a protein can be demonstrated by treating cells fixed on a microscope slide with an antibody specific for the protein of interest. A secondary antibody conjugated with a reactive enzyme (e.g. horseradish peroxidase) is then added. Following a washing step to remove the unbound secondary ligand\, a chromogenic substrate (e.g. 3\,3'\, 5\,5' tetramethyl benzidine chromogen \[TMB\]) is converted to a soluble coloured product by the conjugated enzyme and can then be visualised by standard microscopic techniques.\nOBSOLETE since combination of Interaction Detection Method and Interaction Type. Consider using the Interaction Detection Method imaging techniques (MI\:0428) coupled with Interaction Type colocalisation (MI\:0401) and Participant detection immunostaining (MI\:0402) instead." [PMID:14755292]
 synonym: "Immunofluorescence Staining" []
 synonym: "Immunostaining" []
 exact_synonym: "coloc immunostaining" []
@@ -166,7 +166,7 @@ is_obsolete: true
 [Term]
 id: MI:0023
 name: colocalization/visualisation technologies
-def: "Techniques enabling the identification of the subcellular localisation of a protein or complex. Two different proteins show a similar distribution in the cell are said to co-localise. Obsolete since combination of Interaction Detection Method and Interaction Type.\nOBSOLETE. Consider using \"imaging techniques\" MI\:0428 as interaction detection method coupled with MI\:0401 \"colocalisation\" as interaction type and MI\:0396 \"predetermined\" as participant detection." [PMID:14755292]
+def: "Techniques enabling the identification of the subcellular localisation of a protein or complex. Two different proteins show a similar distribution in the cell are said to co-localise. Obsolete since combination of Interaction Detection Method and Interaction Type.\nOBSOLETE. Consider using imaging techniques (MI\:0428) as interaction detection method coupled with colocalisation (MI\:0401) as interaction type and predetermined (MI\:0396) as participant detection." [PMID:14755292]
 exact_synonym: "coloc visual technol" []
 is_obsolete: true
 
@@ -180,7 +180,7 @@ is_a: MI:0110 ! text mining
 [Term]
 id: MI:0025
 name: copurification
-def: "Approaches designed to separate cell components on the basis of their physicochemical properties. The observation that two or more proteins copurify in one or several conditions is taken as an indication that they form a molecular complex.\nOBSOLETE since too non-specific. Consider use of \"cosedimentation\" (MI\:0027) or \"comigration in non denaturing gel electrophoresis \" (MI\:0404) or \"affinity chromatography technologies \" (MI\:0004) or \"molecular sieving\" (MI\:0071) or for unspecific cases \"biochemical\" (MI\:0401)." [PMID:14755292]
+def: "Approaches designed to separate cell components on the basis of their physicochemical properties. The observation that two or more proteins copurify in one or several conditions is taken as an indication that they form a molecular complex.\nOBSOLETE since too non-specific. Consider use of cosedimentation (MI\:0027) or comigration in non denaturing gel electrophoresis (MI\:0404) or affinity chromatography technologies (MI\:0004) or molecular sieving (MI\:0071) or for unspecific cases biochemical (MI\:0401)." [PMID:14755292]
 is_obsolete: true
 
 [Term]
@@ -353,7 +353,7 @@ is_a: MI:0400 ! affinity technologies
 [Term]
 id: MI:0050
 name: flag tag coimmunoprecipitation
-def: "The protein of interest is expressed as a fusion to the peptide DYKDDDDKV for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem.\nOBSOLETE redundant term. Map to feature type\: \"flag-tagged\" (MI\:0518) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:14755292]
+def: "The protein of interest is expressed as a fusion to the peptide DYKDDDDKV for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem.\nOBSOLETE redundant term. Map to feature type\: flag-tagged (MI\:0518) and Interaction detection method\: anti tag coimmunoprecipitation (MI\:0007)." [PMID:14755292]
 exact_synonym: "flag tag coip" []
 is_obsolete: true
 
@@ -424,26 +424,26 @@ is_a: MI:0063 ! interaction prediction
 [Term]
 id: MI:0059
 name: gst pull down
-def: "The bait protein is expressed and purified as a fusion to the glutathione S-tranferase protein. The bait protein is normally attached to a glutathione sepharose resin or alternatively to a support containing an anti-GST antibody.\nOBSOLETE redundant term. Map to feature type \: \"gst-tagged\" (MI\:0519) and Interaction detection method\: \"pull down\" (MI\:0096)." [PMID:14755292]
+def: "The bait protein is expressed and purified as a fusion to the glutathione S-tranferase protein. The bait protein is normally attached to a glutathione sepharose resin or alternatively to a support containing an anti-GST antibody.\nOBSOLETE redundant term. Map to feature type \: gst-tagged (MI\:0519) and Interaction detection method\: pull down (MI\:0096)." [PMID:14755292]
 is_obsolete: true
 
 [Term]
 id: MI:0060
 name: ha tag coimmunoprecipitation
-def: "The protein of interest is expressed as a fusion to the peptide YPYDVPDYA (a fragment of the influenza hemaglutinin protein) for which antibodies are commercially available.\nOBSOLETE redundant term. Map to feature type \: \"ha-tagged\" (MI\:0520) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:14755292]
+def: "The protein of interest is expressed as a fusion to the peptide YPYDVPDYA (a fragment of the influenza hemaglutinin protein) for which antibodies are commercially available.\nOBSOLETE redundant term. Map to feature type \: ha-tagged (MI\:0520) and Interaction detection method\: anti tag coimmunoprecipitation (MI\:0007)." [PMID:14755292]
 exact_synonym: "ha tag coip" []
 is_obsolete: true
 
 [Term]
 id: MI:0061
 name: his pull down
-def: "The bait protein is expressed and purified fused to an amino or carboxyterminal tail containing a variable number of histidines. The bait protein is normally attached to a metal (usually nickel) resin.\nOBSOLETE redundant term. Map to feature type \: \"his-tagged\" (MI\:0521) and Interaction detection method\: \"pull down\" (MI\:0096)." [PMID:14755292]
+def: "The bait protein is expressed and purified fused to an amino or carboxyterminal tail containing a variable number of histidines. The bait protein is normally attached to a metal (usually nickel) resin.\nOBSOLETE redundant term. Map to feature type \: his-tagged (MI\:0521) and Interaction detection method\: pull down (MI\:0096)." [PMID:14755292]
 is_obsolete: true
 
 [Term]
 id: MI:0062
 name: his tag coimmunoprecipitation
-def: "The protein of interest is expressed as a fusion to a poly-His tail. This permits purification by chromatography over a metal column or by binding to commercially available anti poly-His antibodies.\nOBSOLETE redundant term. Map to feature type\: \"his-tagged\" (MI\:0521) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:14755292]
+def: "The protein of interest is expressed as a fusion to a poly-His tail. This permits purification by chromatography over a metal column or by binding to commercially available anti poly-His antibodies.\nOBSOLETE redundant term. Map to feature type\: his-tagged (MI\:0521) and Interaction detection method\: anti tag coimmunoprecipitation (MI\:0007)." [PMID:14755292]
 exact_synonym: "his tag coip" []
 is_obsolete: true
 
@@ -535,7 +535,7 @@ is_a: MI:0659 ! experimental feature detection
 [Term]
 id: MI:0075
 name: myc tag coimmunoprecipitation
-def: "The protein of interest is expressed as a fusion to the peptide EUKLISEED (a fragment of the Myc oncogene protein) for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem.\nOBSOLETE redundant term. Map to feature type\: \"myc-tagged\" (MI\:0522) and Interaction detection method\: \"anti tag coimmunoprecipitation\" (MI\:0007)." [PMID:14755292]
+def: "The protein of interest is expressed as a fusion to the peptide EUKLISEED (a fragment of the Myc oncogene protein) for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem.\nOBSOLETE redundant term. Map to feature type\: myc-tagged (MI\:0522) and Interaction detection method\: anti tag coimmunoprecipitation (MI\:0007)." [PMID:14755292]
 exact_synonym: "myc tag coip " []
 is_obsolete: true
 
@@ -566,7 +566,7 @@ is_a: MI:0661 ! experimental participant identification
 [Term]
 id: MI:0079
 name: other biochemical technologies
-def: "Experimental methods that could not be assigned to the other large group of technologies.\nOBSOLETE use \"biochemical\" (MI\:0401) instead." [PMID:14755292]
+def: "Experimental methods that could not be assigned to the other large group of technologies.\nOBSOLETE use biochemical (MI\:0401) instead." [PMID:14755292]
 exact_synonym: "other biochemic tech" []
 is_obsolete: true
 
@@ -726,7 +726,7 @@ is_a: MI:0063 ! interaction prediction
 [Term]
 id: MI:0102
 name: sequence tag identification
-def: "This approach leads to protein identification by combining mass measurement and short amino acid sequence information obtained by tandem mass spectrometry. This information is then used to automatically find the best match in a sequence database. A mixture of peptides derived from a protease digestion is analysed by nanoelectrospray LC-MS/MS (Liquid Chromatography Tandem Mass Spectrometer or nanoESI MS/MS) mass spectrometry. Electrospray mass spectrometry cannot be applied to dilute samples and is affected by high salt. As a consequence peptides\, normally extracted from acrylamide gels by in situ proteolysis\, are desalted and concentrated on a microcolumn followed by elution into a capillary used for nanoelectrospray tandem mass spectrometry. A first mass spectrum (\"Normal mass spectrum\" or \"Q1 mass spectrum\") gives information about the masses of all the peptides. Peptides observed in the normal mass spectrum are isolated in turn and dissociated into fragments by collision with gas molecules within the mass spectrometer. Some of the fragments obtained from a peptide constitute a nested set\, differing by one amino acid\, and the mass difference between them allows assignment of a partial sequence. The masses of the fragments define the position of the partial sequence in the peptide. Together with the cleavage specificity of the protease used to cleave the protein\, and mass information such sequence tag provides much higher search specificity to match the a database entry. The procedure is repeated with several peptides from the digest\, resulting in multiple identifications of the same protein or identification of several proteins from the peptide mixture. Unknown proteins can easily be identified by using the high specificity of the peptide sequence tag for searches in most sequence databases including EST or genome databases." [PMID:10967324, PMID:11752590, PMID for application instance:11805837]
+def: "This approach leads to protein identification by combining mass measurement and short amino acid sequence information obtained by tandem mass spectrometry. This information is then used to automatically find the best match in a sequence database. A mixture of peptides derived from a protease digestion is analysed by nanoelectrospray LC-MS/MS (Liquid Chromatography Tandem Mass Spectrometer or nanoESI MS/MS) mass spectrometry. Electrospray mass spectrometry cannot be applied to dilute samples and is affected by high salt. As a consequence peptides\, normally extracted from acrylamide gels by in situ proteolysis\, are desalted and concentrated on a microcolumn followed by elution into a capillary used for nanoelectrospray tandem mass spectrometry. A first mass spectrum (Normal mass spectrum or Q1 mass spectrum) gives information about the masses of all the peptides. Peptides observed in the normal mass spectrum are isolated in turn and dissociated into fragments by collision with gas molecules within the mass spectrometer. Some of the fragments obtained from a peptide constitute a nested set\, differing by one amino acid\, and the mass difference between them allows assignment of a partial sequence. The masses of the fragments define the position of the partial sequence in the peptide. Together with the cleavage specificity of the protease used to cleave the protein\, and mass information such sequence tag provides much higher search specificity to match the a database entry. The procedure is repeated with several peptides from the digest\, resulting in multiple identifications of the same protein or identification of several proteins from the peptide mixture. Unknown proteins can easily be identified by using the high specificity of the peptide sequence tag for searches in most sequence databases including EST or genome databases." [PMID:10967324, PMID:11752590, PMID for application instance:11805837]
 exact_synonym: "sequence tag" []
 is_a: MI:0427 ! mass spectrometry
 is_a: MI:0433 ! partial identification of protein sequence
@@ -777,7 +777,7 @@ is_a: MI:0084 ! phage display
 [Term]
 id: MI:0109
 name: tap tag coimmunoprecipitation
-def: "The TAP method involves the fusion of the TAP tag (encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A) to the target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This two steps purification steps ensures a highly selective complex purification of the \"Tapped\" protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag).\nOBSOLETE redundant term. Map to feature type\: \"camodulin binding protein-protein A\" (MI\:0524) and Interaction detection method\: \"tandem affinity purification\" (MI\:0676)." [PMID:10504710]
+def: "The TAP method involves the fusion of the TAP tag (encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A) to the target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This two steps purification steps ensures a highly selective complex purification of the tapped protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag).\nOBSOLETE redundant term. Map to feature type\: calmodulin binding protein-protein A (MI\:0524) and Interaction detection method\: tandem affinity purification (MI\:0676)." [PMID:10504710]
 exact_synonym: "tap tag coip" []
 is_obsolete: true
 
@@ -1687,7 +1687,7 @@ relationship: part_of MI:0000 ! molecular interaction
 [Term]
 id: MI:0191
 name: aggregation
-def: "Physical association among molecules.\nOBSOLETE - since too non-specific. Consider using \"physical interaction\" (MI\:0218 )instead." [PMID:14755292]
+def: "Physical association among molecules.\nOBSOLETE since too non-specific. Consider using physical interaction (MI\:0218) instead." [PMID:14755292]
 is_obsolete: true
 
 [Term]
@@ -1720,7 +1720,7 @@ is_a: MI:0407 ! direct interaction
 [Term]
 id: MI:0196
 name: covalent interaction
-def: "Physical interaction mediated by covalent bond rearrangement.\nOBSOLETE use \"covalent binding\" (MI\:0195) instead." [PMID:14755292]
+def: "Physical interaction mediated by covalent bond rearrangement.\nOBSOLETE use covalent binding (MI\:0195) instead." [PMID:14755292]
 is_obsolete: true
 
 [Term]
@@ -1848,7 +1848,7 @@ is_a: MI:0211 ! lipid addition
 [Term]
 id: MI:0215
 name: non covalent interaction
-def: "Interaction mediated by non-covalent\, weak forces rearrangement.\nOBSOLETE use \"physical interaction\" (MI\:0218) instead." [PMID:14755292]
+def: "Interaction mediated by non-covalent\, weak forces rearrangement.\nOBSOLETE use physical interaction (MI\:0218) instead." [PMID:14755292]
 exact_synonym: "non covalent inter" []
 is_obsolete: true
 
@@ -2139,20 +2139,20 @@ is_a: MI:0255 ! post transcriptional interference
 [Term]
 id: MI:0258
 name: inhibitor antibodies
-def: "Intracellular or extracellular expression of antibodies is used to target specific gene products in order to inactivate them. Most of the times the antibody scaffold need s to reengineered for efficient expression and solubility in the cytoplasm.\nOBSOLETE as such method can be described using the biological role inhibitor MI\:0586." [PMID:10189716]
+def: "Intracellular or extracellular expression of antibodies is used to target specific gene products in order to inactivate them. Most of the times the antibody scaffold need s to reengineered for efficient expression and solubility in the cytoplasm.\nOBSOLETE as such method can be described using the biological role inhibitor (MI\:0586)." [PMID:10189716]
 is_obsolete: true
 
 [Term]
 id: MI:0259
 name: perturbagens peptides
-def: "This approach is based on the expression of peptides that bind to specific target proteins thereby interfering with their activity. In a standard approach the interfering peptide is expressed by genetic fusion to a stable protein scaffold. Interfering peptides can also be introduced into cells by fusing them to proteins or peptides (homeodomains\, Tat protein.) having the property of penetrating the cell membrane. The peptide-carrier fusion protein is either synthesized chemically or produced in vivo\, normally in bacteria. When the purified fusion protein is added to a cell culture\, it penetrates the cell membrane thereby permitting the fused peptide to interfere with its target protein.\nOBSOLETE as such method can be described using the biological role inhibitor MI\:0586." [PMID:8606778, PMID:11731788]
+def: "This approach is based on the expression of peptides that bind to specific target proteins thereby interfering with their activity. In a standard approach the interfering peptide is expressed by genetic fusion to a stable protein scaffold. Interfering peptides can also be introduced into cells by fusing them to proteins or peptides (homeodomains\, Tat protein.) having the property of penetrating the cell membrane. The peptide-carrier fusion protein is either synthesized chemically or produced in vivo\, normally in bacteria. When the purified fusion protein is added to a cell culture\, it penetrates the cell membrane thereby permitting the fused peptide to interfere with its target protein.\nOBSOLETE as such method can be described using the biological role inhibitor (MI\:0586)." [PMID:8606778, PMID:11731788]
 exact_synonym: "perturbagens pep" []
 is_obsolete: true
 
 [Term]
 id: MI:0260
 name: inhibitor small molecules
-def: "Protein activity is inhibited by small inorganic molecules (drugs) that specifically bind to their targets. Recently this classical pharmacological approach is sometime referred to as 'chemical genetics'.\nOBSOLETE as such method can be described using the biological role inhibitor MI\:0586." [PMID:10780927, PMID:10542155]
+def: "Protein activity is inhibited by small inorganic molecules (drugs) that specifically bind to their targets. Recently this classical pharmacological approach is sometime referred to as 'chemical genetics'.\nOBSOLETE as such method can be described using the biological role inhibitor (MI\:0586)." [PMID:10780927, PMID:10542155]
 exact_synonym: "inhibitor small mol" []
 is_obsolete: true
 
@@ -2576,7 +2576,7 @@ is_a: MI:0346 ! experimental preparation
 [Term]
 id: MI:0343
 name: cdna library
-def: "Mixed population of cDNAs (complementaryDNA) made from mRNA from a defined source\, usually a specific cell type. This term should be associated only to nucleic acid interactors not to their proteins product. For instance in 2h screening use \"living cells\" (MI\:0349) as sample process." [PMID:6110205]
+def: "Mixed population of cDNAs (complementaryDNA) made from mRNA from a defined source\, usually a specific cell type. This term should be associated only to nucleic acid interactors not to their proteins product. For instance in 2h screening use living cells (MI\:0349) as sample process." [PMID:6110205]
 is_a: MI:0342 ! sample process
 
 [Term]
@@ -2685,7 +2685,7 @@ is_a: MI:0353 ! cross-reference type
 [Term]
 id: MI:0360
 name: secondary accession number
-def: "Reference to the corresponding object in another database (like \"identity\" xref qualifier) but the identifier used in the external database is a secondary identifier." [PMID:14755292]
+def: "Reference to the corresponding object in another database (like identity xref qualifier) but the identifier used in the external database is a secondary identifier." [PMID:14755292]
 exact_synonym: "secondary-ac" []
 is_a: MI:0353 ! cross-reference type
 
@@ -3236,7 +3236,7 @@ is_a: MI:0117 ! binding site
 [Term]
 id: MI:0443
 name: ubiquitin binding
-def: "Interaction concerning ubiquitin that is covalently attached to any Lys residue of its interaction partner.\nOBSOLETE remap to \"ubiquitination reaction\" (MI\:0220) or describe ubiquitine as a participant on the interaction using \"physical interaction\" or \"covalent binding\" as interaction type." [PMID:14755292]
+def: "Interaction concerning ubiquitin that is covalently attached to any Lys residue of its interaction partner.\nOBSOLETE remap to ubiquitination reaction (MI\:0220) or describe ubiquitine as a participant on the interaction using physical interaction (MI\:0218) or covalent binding (MI\:0195) as interaction type." [PMID:14755292]
 is_obsolete: true
 
 [Term]
@@ -3841,7 +3841,7 @@ is_a: MI:0507 ! tagged molecule
 [Term]
 id: MI:0524
 name: calmodulin binding peptide plus protein a tagged
-def: "Tag encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A fused to a target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This tag allows two steps purification steps ensuring a highly selective purification of the \"Tapped\" protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag)." [PMID:14755292]
+def: "Tag encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A fused to a target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This tag allows two steps purification steps ensuring a highly selective purification of the tapped protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag)." [PMID:14755292]
 synonym: "CBP-ProtA tagged" []
 exact_synonym: "tap tagged" []
 is_a: MI:0677 ! multiple tag
@@ -4249,7 +4249,7 @@ is_a: MI:0489 ! source database xref
 [Term]
 id: MI:0576
 name: structural proximity
-def: "Method to identify domain-domain interactions within the same resolved structure. Pfam domains are first projected onto a pdb structure and then the distance between all pairs of residues in different domains are calculated. When the distance between 2 residues is below the non covalent bond threshold\, the corresponding pair of domains is predicted to interact." [PMID:15353450]
+def: "Method to identify domain-domain interactions within the same resolved structure. Domains are first projected onto a pdb structure and then the distance between all pairs of residues in different domains are calculated. When the distance between 2 residues is below the non covalent bond threshold\, the corresponding pair of domains is predicted to interact." [PMID:15353450]
 is_a: MI:0577 ! feature prediction from structure
 
 [Term]
