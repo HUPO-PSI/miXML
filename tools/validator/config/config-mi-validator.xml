@@ -1,13 +1,18 @@
 <config>
     <!-- List of ontologies used in that specific validator, they will be referenced by their 'id' -->
     <ontologies>
-        <ontology id="MI">file:/C:/cygwin/home/Samuel/validator/cv/psi-mi25.obo</ontology>
+        <ontology id="MI">file:/D:/psi/mi/tools/validator/cv/psi-mi25.obo</ontology>
     </ontologies>
 
     <!-- List of rules that this specific validator should use -->
     <rules>
+        <rule>psidev.psi.mi.validator.extensions.mi25.rules.ExperimentBibRefRule</rule>
+        <rule>psidev.psi.mi.validator.extensions.mi25.rules.ExperimentHostOrgRule</rule>
+        <rule>psidev.psi.mi.validator.extensions.mi25.rules.ExperimentDetectionRule</rule>
         <rule>psidev.psi.mi.validator.extensions.mi25.rules.InteractorTypeRule</rule>
-        <rule>psidev.psi.mi.validator.extensions.mi25.rules.InteractionDetectionRule</rule>
-        <rule>psidev.psi.mi.validator.extensions.mi25.rules.InteractionTypeCheckRule</rule>
+        <rule>psidev.psi.mi.validator.extensions.mi25.rules.InteractorNameRule</rule>
+        <rule>psidev.psi.mi.validator.extensions.mi25.rules.InteractionTypeRule</rule>
+        <rule>psidev.psi.mi.validator.extensions.mi25.rules.FeatureTypeRule</rule>
+        <rule>psidev.psi.mi.validator.extensions.mi25.rules.ParticipantSeqXrefRule</rule>
     </rules>
 </config>
