@@ -10,28 +10,25 @@ import psidev.psi.mi.validator.framework.ValidatorMessage;
 import psidev.psi.mi.validator.framework.MessageLevel;
 import psidev.psi.mi.validator.framework.ontology.model.OntologyTerm;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * <b> Checks that interactor types are valid. </b>.
  * <p/>
  *
  * @author Samuel Kerrien
- * @version $Id: InteractorTypeRule.java,v 1.1 2006/01/18 16:55:44 skerrien Exp $
+ * @version $Id: InteractorTypeRule.java,v 1.2 2006/04/19 11:00:16 luisa_montecchi Exp $
  * @since 04.01.2006; 17:22:27
  */
 public class InteractorTypeRule extends Mi25Rule {
 
-    public InteractorTypeRule( Map ontologies ) {
-        super( ontologies );
+    public InteractorTypeRule(Map ontologies) {
+        super(ontologies);
 
         // describe the rule.
-        setName( "Interactor Type Check" );
-        setDescription( "Checks that InteractorType has " + Mi25Ontology.InteractorTypeRoot + " for parent." );
-        addTip( "Check in the psi-mi25.obo the list of children terms of " + Mi25Ontology.InteractorTypeRoot + "." );
+        setName("Interactor Type Check");
+        setDescription("Checks that InteractorType has " + Mi25Ontology.InteractorTypeRoot + " for parent.");
+        addTip("Check in the psi-mi25.obo the list of children terms of " + Mi25Ontology.InteractorTypeRoot + ".");
     }
 
     /**
@@ -39,13 +36,11 @@ public class InteractorTypeRule extends Mi25Rule {
      * the specified term is a child of the right ontology term.
      *
      * @param jaxbObject an interaction to check on.
-     *
      * @return a collection of validator messages.
-     *
      * @throws ValidatorException if we fail to retreive the MI Ontology.
      */
-    public Collection<ValidatorMessage> check( Object jaxbObject ) throws ValidatorException {
-
+    public Collection<ValidatorMessage> check(Object jaxbObject) throws ValidatorException {
+        checkExpandedFormat(jaxbObject);
         // Object upon which we perform the check
         InteractionElementType interaction = (InteractionElementType) jaxbObject;
         int interactionId = interaction.getId();
@@ -54,7 +49,7 @@ public class InteractorTypeRule extends Mi25Rule {
         List<ValidatorMessage> messages = new ArrayList<ValidatorMessage>();
 
         // checking all interactors of that interaction
-        for ( Object o : interaction.getParticipantList().getParticipant() ) {
+        for (Object o : interaction.getParticipantList().getParticipant()) {
             ParticipantType participantType = (ParticipantType) o;
 
             int participantId = participantType.getId();
@@ -64,33 +59,34 @@ public class InteractorTypeRule extends Mi25Rule {
             int interactorId = participantType.getInteractor().getId();
 
             Mi25Ontology ont = super.getMiOntology();
-            OntologyTerm t = ont.search( id );
+            OntologyTerm t = ont.search(id);
 
-            if ( t == null ) {
+            if (t == null) {
 
                 Mi25Context context = new Mi25Context();
-                context.setInteractionId( interactionId );
-                context.setParticipantId( participantId );
-                context.setInteractorId( interactorId );
+                context.setInteractionId(interactionId);
+                context.setParticipantId(participantId);
+                context.setInteractorId(interactorId);
 
-                messages.add( new ValidatorMessage( "No CV term specified",
-                                                    MessageLevel.ERROR,
-                                                    context,
-                                                    this ) );
+                messages.add(new ValidatorMessage("Invalid MI identifier for CV interactor Type (" + id + ")",
+                        MessageLevel.ERROR,
+                        context,
+                        this));
+
             } else {
 
                 OntologyTerm t2 = ont.getInteractorTypeRoot();
-                if ( !t.isChildOf( t2 ) ) {
+                if (!t.isChildOf(t2)) {
 
                     Mi25Context context = new Mi25Context();
-                    context.setInteractionId( interactionId );
-                    context.setParticipantId( participantId );
-                    context.setInteractorId( interactorId );
+                    context.setInteractionId(interactionId);
+                    context.setParticipantId(participantId);
+                    context.setInteractorId(interactorId);
 
-                    messages.add( new ValidatorMessage( "Invalid interactor type (" + t.getId() + ")",
-                                                        MessageLevel.ERROR,
-                                                        context,
-                                                        this ) );
+                    messages.add(new ValidatorMessage("Term does not belong to CV interactor type (" + id + ")",
+                            MessageLevel.ERROR,
+                            context,
+                            this));
                 }
             }
         }
