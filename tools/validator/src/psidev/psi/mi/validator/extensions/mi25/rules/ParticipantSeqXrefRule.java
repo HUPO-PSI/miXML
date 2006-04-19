@@ -17,7 +17,7 @@ import java.util.*;
  * <p/>
  *
  * @author Luisa Montecchi
- * @version $Id: ParticipantSeqXrefRule.java,v 1.1 2006/04/19 10:58:24 luisa_montecchi Exp $
+ * @version $Id: ParticipantSeqXrefRule.java,v 1.2 2006/04/19 11:13:04 luisa_montecchi Exp $
  * @since 10-Apr-2006
  */
 public class ParticipantSeqXrefRule extends Mi25Rule {
@@ -130,7 +130,7 @@ public class ParticipantSeqXrefRule extends Mi25Rule {
                                 context,
                                 this));
 
-                    } else if (! mi_db.equals("MI:0486")) {
+                    } else if (! mi_db.equals(Mi25Ontology.UNIPROT_MI)) {
                         Mi25Context context = new Mi25Context();
                         context.setInteractionId(interactionId);
                         context.setParticipantId(participantId);
