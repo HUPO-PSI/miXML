@@ -18,7 +18,7 @@ import java.util.*;
  * -- Description of Class goes here -- </p>
  *
  * @author Samuel Kerrien (skerrien@ebi.ac.uk)
- * @version $Id: InteractionTypeRule.java,v 1.1 2006/04/19 10:58:24 luisa_montecchi Exp $
+ * @version $Id: InteractionTypeRule.java,v 1.2 2006/04/19 12:24:31 luisa_montecchi Exp $
  * @since 04.01.2006; 17:22:27
  */
 public class InteractionTypeRule extends Mi25Rule {
@@ -26,6 +26,9 @@ public class InteractionTypeRule extends Mi25Rule {
 
     public InteractionTypeRule( Map ontologies ) {
         super( ontologies );
+        setName("Interaction Type Rule");
+        setDescription("Checks that each interaction has a CV interaction Type (not mandatory in PSI)");
+        addTip("It is recomended to provide a CV term for interaction type, see  in the psi-mi25.obo the list of children terms of " + Mi25Ontology.InteractionTypeRoot +".");
     }
 
     public Collection<ValidatorMessage> check( Object jaxbObject ) throws ValidatorException {
