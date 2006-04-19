@@ -1,0 +1,355 @@
+   <entrySet level="2" version="5" xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/rel25/src/MIF25.xsd">
+     <entry>
+       <source releaseDate="2006-02-13">
+         <names>
+           <shortLabel>European Bioinformatics Institute</shortLabel>
+         </names>
+         <bibref>
+           <xref>
+             <primaryRef db="pubmed" dbAc="MI:0446" id="14681455" refType="primary-reference" refTypeAc="MI:0358"/>
+           </xref>
+         </bibref>
+         <xref>
+           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0469" refType="primary-reference" refTypeAc="MI:0358"/>
+         </xref>
+         <attributeList>
+           <attribute name="postalAddress">Wellcome Trust Genome Campus, Hinxton, Cambridge, CB10 1SD, United Kingdom</attribute>
+           <attribute name="url">http://www.ebi.ac.uk</attribute>
+         </attributeList>
+       </source>
+       <experimentList>
+         <experimentDescription id="2">
+           <names>
+             <shortLabel>kabe-1999-1</shortLabel>
+             <fullName>The role of human MBF1 as a transcriptional coactivator.</fullName>
+           </names>
+           <bibref>
+             <xref>
+               <primaryRef db="pubmed" dbAc="MI:0446" id="10567391" refType="primary-reference" refTypeAc="MI:0358"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="8164657" refType="method reference" refTypeAc="MI:0357"/>
+             </xref>
+           </bibref>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-784297" secondary="kabe-1999-1"/>
+             <secondaryRef db="newt" dbAc="MI:0247" id="9606" refType="target-species" secondary="human"/>
+           </xref>
+           <hostOrganismList>
+             <hostOrganism ncbiTaxId="-1">
+               <names>
+                 <shortLabel>in vitro</shortLabel>
+               </names>
+             </hostOrganism>
+           </hostOrganismList>
+           <interactionDetectionMethod>
+             <names>
+               <shortLabel>emsa</shortLabel>
+               <fullName>electrophoretic mobility shift assay</fullName>
+               <alias>band shift</alias>
+               <alias>Gel retardation assay</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0413" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="12169687" refType="primary-reference" refTypeAc="MI:0358"/>
+             </xref>
+           </interactionDetectionMethod>
+           <participantIdentificationMethod>
+             <names>
+               <shortLabel>western blot</shortLabel>
+               <fullName>western blot</fullName>
+               <alias>Immuno blot</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0113" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </participantIdentificationMethod>
+           <attributeList>
+             <attribute name="author-list">Kabe Y., Goto M., Shima D., Imai T., Wada T., Morohashi K., Shirakawa M., Hirose S., Handa H.</attribute>
+             <attribute name="figure-legend">3A</attribute>
+             <attribute name="contact-email">hhanda@bio.titech.ac.jp</attribute>
+           </attributeList>
+         </experimentDescription>
+       </experimentList>
+       <interactorList>
+         <interactor id="4">
+           <names>
+             <shortLabel>edf1_human</shortLabel>
+             <fullName>Endothelial differentiation-related factor 1</fullName>
+             <alias type="gene name" typeAc="MI:0301">EDF1</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="O60869" refType="identity" refTypeAc="MI:0356" secondary="edf1_human" version="SP_49"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005622" secondary="C:intracellular"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0007275" secondary="P:development"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR001387" secondary="HTH_3"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q5T5T2" refType="secondary-ac" refTypeAc="MI:0360" secondary="edf1_human" version="SP_49"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q9UIM1" refType="secondary-ac" refTypeAc="MI:0360" secondary="edf1_human" version="SP_49"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-781301" secondary="edf1_human"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="9606">
+             <names>
+               <shortLabel>human</shortLabel>
+               <fullName>Homo sapiens</fullName>
+             </names>
+           </organism>
+           <sequence>MAESDWDTVTVLRKKGPTAAQAKSKQAILAAQRRGEDVETSKKWAAGQNKQHSITKNTAKLDRETEELHHDRVTLEVGKVIQQGRQSKGLTQKDLATKINEKPQVIADYESGRAIPNNQVLGKIERAIGLKLRGKDIGKPIEKGPRAK</sequence>
+         </interactor>
+         <interactor id="6">
+           <names>
+             <shortLabel>tbp_human</shortLabel>
+             <fullName>TATA-box binding protein</fullName>
+             <alias type="gene name" typeAc="MI:0301">TBP</alias>
+             <alias type="gene name synonym" typeAc="MI:0302">TF2D</alias>
+             <alias type="gene name synonym" typeAc="MI:0302">TFIID</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="P20226" refType="identity" refTypeAc="MI:0356" secondary="tbp_human" version="SP_49"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005669" secondary="C:transcription factor TFIID c"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0016251" secondary="F:general RNA polymerase II tr"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006367" secondary="P:transcription initiation fro"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR000814" secondary="TFIID"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q16845" refType="secondary-ac" refTypeAc="MI:0360" secondary="tbp_human" version="SP_49"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q9UC02" refType="secondary-ac" refTypeAc="MI:0360" secondary="tbp_human" version="SP_49"/>
+             <secondaryRef db="reactome protein" dbAc="MI:0245" id="P20226"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005515" secondary="F:protein binding"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012295" secondary="bAdaptin_TBP_C"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012294" secondary="TFIID_C/glycos_N"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-355371" secondary="tbp_human"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="9606">
+             <names>
+               <shortLabel>human</shortLabel>
+               <fullName>Homo sapiens</fullName>
+             </names>
+           </organism>
+           <sequence>MDQNNSLPPYAQGLASPQGAMTPGIPIFSPMMPYGTGLTPQPIQNTNSLSILEEQQRQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQAVAAAAVQQSTSQQATQGTSGQAPQLFHSQTLTTAPLPGTTPLYPSPMTPMTPITPATPASESSGIVPQLQNIVSTVNLGCKLDLKTIALRARNAEYNPKRFAAVIMRIREPRTTALIFSSGKMVCTGAKSEEQSRLAARKYARVVQKLGFPAKFLDFKIQNMVGSCDVKFPIRLEGLVLTHQQFSSYEPELFPGLIYRMIKPRIVLLIFVSGKVVLTGAKVRAEIYEAFENIYPILKGFRKTT</sequence>
+         </interactor>
+         <interactor id="8">
+           <names>
+             <shortLabel>tata fragment</shortLabel>
+             <fullName>Adenovirus E4 promoter TATA box sequence.</fullName>
+           </names>
+           <xref>
+             <primaryRef db="ddbj_embl_genbank" dbAc="MI:0475" id="D12587" refType="identity" refTypeAc="MI:0356"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-784221" secondary="tata fragment"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>dna</shortLabel>
+               <fullName>deoxyribonucleic acid</fullName>
+               <alias>DNA</alias>
+               <alias>deoxyribonucleic acid</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0319" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000352" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="130308">
+             <names>
+               <shortLabel>humad</shortLabel>
+               <fullName>Human adenovirus E</fullName>
+             </names>
+           </organism>
+         </interactor>
+       </interactorList>
+       <interactionList>
+         <interaction id="1">
+           <names>
+             <shortLabel>edf1-tbp-1</shortLabel>
+             <fullName>Interaction of hMBF-1 and human TBP detected by electrophoretic mobility shift assays.</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-784300" secondary="edf1-tbp-1"/>
+           </xref>
+           <experimentList>
+             <experimentRef>2</experimentRef>
+           </experimentList>
+           <participantList>
+             <participant id="3">
+               <interactorRef>4</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="9606">
+                   <names>
+                     <shortLabel>human</shortLabel>
+                     <fullName>Homo sapiens</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+             <participant id="5">
+               <interactorRef>6</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="9606">
+                   <names>
+                     <shortLabel>human</shortLabel>
+                     <fullName>Homo sapiens</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+             <participant id="7">
+               <interactorRef>8</interactorRef>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <featureList>
+                 <feature id="9">
+                   <names>
+                     <shortLabel>region</shortLabel>
+                   </names>
+                   <featureType>
+                     <names>
+                       <shortLabel>32p radiolabelled</shortLabel>
+                       <fullName>32p radiolabelled</fullName>
+                       <alias>32P</alias>
+                       <alias>P32</alias>
+                     </names>
+                     <xref>
+                       <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0236" refType="identity" refTypeAc="MI:0356"/>
+                       <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+                     </xref>
+                   </featureType>
+                   <featureRangeList>
+                     <featureRange>
+                       <startStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </startStatus>
+                       <begin position="0"/>
+                       <endStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </endStatus>
+                       <end position="0"/>
+                     </featureRange>
+                   </featureRangeList>
+                 </feature>
+               </featureList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="130308">
+                   <names>
+                     <shortLabel>humad</shortLabel>
+                     <fullName>Human adenovirus E</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="comment">A 32P-labelled double-stranded oligonucleotide containing the TATA element of the adenovirus E4 promoter was used in this experiment.</attribute>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+       </interactionList>
+     </entry>
+   </entrySet>

@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entrySet xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" level="2" version="5" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/rel25/src/MIF25.xsd">
+     <entry>
+       <source releaseDate="2006-02-19">
+         <names>
+           <shortLabel>European Bioinformatics Institute</shortLabel>
+         </names>
+         <bibref>
+           <xref>
+             <primaryRef db="pubmed" dbAc="MI:0446" id="14681455" refType="primary-reference" refTypeAc="MI:0358"/>
+           </xref>
+         </bibref>
+         <xref>
+           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0469" refType="primary-reference" refTypeAc="MI:0358"/>
+         </xref>
+         <attributeList>
+           <attribute name="postalAddress">Wellcome Trust Genome Campus, Hinxton, Cambridge, CB10 1SD, United Kingdom</attribute>
+           <attribute name="url">http://www.ebi.ac.uk</attribute>
+         </attributeList>
+       </source>
+       
+       
+       <interactionList>
+         <interaction id="1">
+           <names>
+             <shortLabel>pola-pola2-6</shortLabel>
+             <fullName>Interaction between POLA, POLA2, PRI1 and PRI2 identified by antibody pulldown.</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-850066" secondary="pola-pola2-6"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005658" refType="component" refTypeAc="MI:0354" secondary="alpha DNA polymerase:primase c"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006270" refType="process" refTypeAc="MI:0359" secondary="DNA replication initiation"/>
+           </xref>
+           <experimentList>
+             <experimentDescription id="2">
+           <names>
+             <shortLabel>ott-2002-1</shortLabel>
+             <fullName>Role of the p68 subunit of human DNA polymerase alpha-primase in simian virus 40 DNA replication.</fullName>
+           </names>
+           <bibref>
+             <xref>
+               <primaryRef db="pubmed" dbAc="MI:0446" id="12138179" refType="primary-reference" refTypeAc="MI:0358"/>
+             </xref>
+           </bibref>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849999" secondary="ott-2002-1"/>
+             <secondaryRef db="newt" dbAc="MI:0247" id="9606" refType="target-species" secondary="human"/>
+           </xref>
+            <interactionDetectionMethod>
+             <names>
+               <shortLabel>pull down</shortLabel>
+               <fullName>pull down</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0096" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionDetectionMethod>
+           <participantIdentificationMethod>
+             <names>
+               <shortLabel>predetermined</shortLabel>
+               <fullName>predetermined participant</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0396" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="7940758" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </participantIdentificationMethod>
+           <attributeList>
+             <attribute name="author-list">Ott RD., Rehfuess C., Podust VN., Clark JE., Fanning E.</attribute>
+             <attribute name="contact-email">fannine@ctrvax.vanderbilt.edu</attribute>
+             <attribute name="exp-modification">Participants identified by SDS-PAGE and Coomassie blue staining. Presence of POLA and POLA2 confirmed by western blot.</attribute>
+             <attribute name="antibodies">Complex purified by binding to monoclonal antibody SJK 237-71 Sepharose.</attribute>
+             <attribute name="figure-legend">1</attribute>
+           </attributeList>
+         </experimentDescription>
+           </experimentList>
+           <participantList>
+             <participant id="3">
+               <interactor id="4">
+           <names>
+             <shortLabel>pri1_human</shortLabel>
+             <fullName>DNA primase small subunit</fullName>
+             <alias type="gene name" typeAc="MI:0301">PRIM1</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="P49642" refType="identity" refTypeAc="MI:0356" secondary="pri1_human" version="SP_47"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003896" secondary="F:DNA primase activity"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006269" secondary="P:DNA replication, synthesis o"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012192" secondary="DNA_prim_euk"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR002755" secondary="DNA_primase_S"/>
+             <secondaryRef db="reactome protein" dbAc="MI:0245" id="P49642"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-726050" secondary="pri1_human"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="9606">
+             <names>
+               <shortLabel>human</shortLabel>
+               <fullName>Homo sapiens</fullName>
+             </names>
+           </organism>
+           <sequence>METFDPTELPELLKLYYRRLFPYSQYYRWLNYGGVIKNYFQHREFSFTLKDDIYIRYQSFNNQSDLEKEMQKMNPYKIDIGAVYSHRPNQHNTVKLGAFQAQEKELVFDIDMTDYDDVRRCCSSADICPKCWTLMTMAIRIIDRALKEDFGFKHRLWVYSGRRGVHCWVCDESVRKLSSAVRSGIVEYLSLVKGGQDVKKKVHLSEKIHPFIRKSINIIKKYFEEYALVNQDILENKESWDKILALVPETIHDELQQSFQKSHNSLQRWEHLKKVASRYQNNIKNDKYGPWLEWEIMLQYCFPRLDINVSKGINHLLKSPFSVHPKTGRISVPIDLQKVDQFDPFTVPTISFICRELDAISTNEEEKEENEAESDVKHRTRDYKKTSLAPYVKVFEHFLENLDKSRKGELLKKSDLQKDF</sequence>
+         </interactor>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>neutral component</shortLabel>
+                     <fullName>neutral component</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0497" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="9606">
+                   <names>
+                     <shortLabel>human</shortLabel>
+                     <fullName>Homo sapiens</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+             <participant id="5">
+               <interactor id="6">
+           <names>
+             <shortLabel>pri2_human</shortLabel>
+             <fullName>DNA primase large subunit</fullName>
+             <alias type="gene name" typeAc="MI:0301">PRIM2A</alias>
+             <alias type="gene name synonym" typeAc="MI:0302">PRIM2</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="P49643" refType="identity" refTypeAc="MI:0356" secondary="pri2_human" version="SP_38"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003896" secondary="F:DNA primase activity"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006269" secondary="P:DNA replication, synthesis o"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR007238" secondary="DNA_primase_lrg"/>
+             <secondaryRef db="reactome protein" dbAc="MI:0245" id="P49643"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q53FJ8" refType="secondary-ac" refTypeAc="MI:0360" secondary="pri2_human" version="SP_38"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q6P1Q7" refType="secondary-ac" refTypeAc="MI:0360" secondary="pri2_human" version="SP_38"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q8WVL2" refType="secondary-ac" refTypeAc="MI:0360" secondary="pri2_human" version="SP_38"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q9H413" refType="secondary-ac" refTypeAc="MI:0360" secondary="pri2_human" version="SP_38"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-850004" secondary="pri2_human"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="9606">
+             <names>
+               <shortLabel>human</shortLabel>
+               <fullName>Homo sapiens</fullName>
+             </names>
+           </organism>
+           <sequence>MEFSGRKWRKLRLAGDQRNASYPHCLQFYLQPPSENISLIEFENLAIDRVKLLKSVENLGVSYVKGTEQYQSKLESELRKLKFSYRENLEDEYEPRRRDHISHFILRLAYCQSEELRRWFIQQEMDLLRFRFSILPKDKIQDFLKDSQLQFEAISDEEKTLREQEIVASSPSLSGLKLGFESIYKIPFADALDLFRGRKVYLEDGFAYVPLKDIVAIILNEFRAKLSKALALTARSLPAVQSDERLQPLLNHLSHSYTGQDYSTQGNVGKISLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQFWKQEFIKGKMDPDKFDKGYSYNIRHSFGKEGKRTDYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCESQRILNGGKDIKKEPIQPETPQPKPSVQKTKDASSALASLNSSLEMDMEGLEDYFSEDS</sequence>
+         </interactor>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>neutral component</shortLabel>
+                     <fullName>neutral component</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0497" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="9606">
+                   <names>
+                     <shortLabel>human</shortLabel>
+                     <fullName>Homo sapiens</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+             <participant id="7">
+               <interactor id="8">
+           <names>
+             <shortLabel>dpoa2_human</shortLabel>
+             <fullName>DNA polymerase alpha subunit B</fullName>
+             <alias type="gene name" typeAc="MI:0301">POLA2</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="Q14181" refType="identity" refTypeAc="MI:0356" secondary="dpoa2_human" version="SP_41"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005634" secondary="C:nucleus"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006260" secondary="P:DNA replication"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR007200" secondary="DNA_pol_alpha_B"/>
+             <secondaryRef db="reactome protein" dbAc="MI:0245" id="Q14181"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005515" secondary="F:protein binding"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q9BPV3" refType="secondary-ac" refTypeAc="MI:0360" secondary="dpoa2_human" version="SP_41"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-712752" secondary="dpoa2_human"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="9606">
+             <names>
+               <shortLabel>human</shortLabel>
+               <fullName>Homo sapiens</fullName>
+             </names>
+           </organism>
+           <sequence>MSASAQQLAEELQIFGLDCEEALIEKLVELCVQYGQNEEGMVGELIAFCTSTHKVGLTSEILNSFEHEFLSKRLSKARHSTCKDSGHAGARDIVSIQELIEVEEEEEILLNSYTTPSKGSQKRAISTPETPLTKRSVSTRSPHQLLSPSSFSPSATPSQKYNSRSNRGEVVTSFGLAQGVSWSGRGGAGNISLKVLGCPEALTGSYKSMFQKLPDIREVLTCKIEELGSELKEHYKIEAFTPLLAPAQEPVTLLGQIGCDSNGKLNNKSVILEGDREHSSGAQIPVDLSELKEYSLFPGQVVIMEGINTTGRKLVATKLYEGVPLPFYQPTEEDADFEQSMVLVACGPYTTSDSITYDPLLDLIAVINHDRPDVCILFGPFLDAKHEQVENCLLTSPFEDIFKQCLRTIIEGTRSSGSHLVFVPSLRDVHHEPVYPQPPFSYSDLSREDKKQVQFVSEPCSLSINGVIFGLTSTDLLFHLGAEEISSSSGTSDRFSRILKHILTQRSYYPLYPPQEDMAIDYESFYVYAQLPVTPDVLIIPSELRYFVKDVLGCVCVNPGRLTKGQVGGTFARLYLRRPAADGAERQSPCIAVQVVRI</sequence>
+         </interactor>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>neutral component</shortLabel>
+                     <fullName>neutral component</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0497" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="9606">
+                   <names>
+                     <shortLabel>human</shortLabel>
+                     <fullName>Homo sapiens</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+             <participant id="9">
+               <interactor id="10">
+           <names>
+             <shortLabel>dpola_human</shortLabel>
+             <fullName>DNA polymerase alpha catalytic subunit</fullName>
+             <alias type="gene name" typeAc="MI:0301">POLA</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="P09884" refType="identity" refTypeAc="MI:0356" secondary="dpola_human" version="SP_58"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005634" secondary="C:nucleus"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003889" secondary="F:alpha DNA polymerase activit"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006260" secondary="P:DNA replication"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR006172" secondary="DNA_pol_B"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR006133" secondary="DNA_pol_B_exo"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR006134" secondary="DNA_pol_B_region"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR004578" secondary="Pol2"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012337" secondary="RNaseH_fold"/>
+             <secondaryRef db="reactome protein" dbAc="MI:0245" id="P09884"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q86UQ7" refType="secondary-ac" refTypeAc="MI:0360" secondary="dpola_human" version="SP_58"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-850026" secondary="dpola_human"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="9606">
+             <names>
+               <shortLabel>human</shortLabel>
+               <fullName>Homo sapiens</fullName>
+             </names>
+           </organism>
+           <sequence>MAPVHGDDSLSDSGSFVSSRARREKKSKKGRQEALERLKKAKAGEKYKYEVEDFTGVYEEVDEEQYSKLVQARQDDDWIVDDDGIGYVEDGREIFDDDLEDDALDADEKGKDGKARNKDKRNVKKLAVTKPNNIKSMFIACAGKKTADKAVDLSKDGLLGDILQDLNTETPQITPPPVMILKKKRSIGASPNPFSVHTATAVPSGKIASPVSRKEPPLTPVPLKRAEFAGDDVQVESTEEEQESGAMEFEDGDFDEPMEVEEVDLEPMAAKAWDKESEPAEEVKQEADSGKGTVSYLGSFLPDVSCWDIDQEGDSSFSVQEVQVDSSHLPLVKGADEEQVFHFYWLDAYEDQYNQPGVVFLFGKVWIESAETHVSCCVMVKNIERTLYFLPREMKIDLNTGKETGTPISMKDVYEEFDEKIATKYKIMKFKSKPVEKNYAFEIPDVPEKSEYLEVKYSAEMPQLPQDLKGETFSHVFGTNTSSLELFLMNRKIKGPCWLEVKSPQLLNQPVSWCKVEAMALKPDLVNVIKDVSPPPLVVMAFSMKTMQNAKNHQNEIIAMAALVHHSFALDKAAPKPPFQSHFCVVSKPKDCIFPYAFKEVIEKKNVKVEVAATERTLLGFFLAKVHKIDPDIIVGHNIYGFELEVLLQRINVCKAPHWSKIGRLKRSNMPKLGGRSGFGERNATCGRMICDVEISAKELIRCKSYHLSELVQQILKTERVVIPMENIQNMYSESSQLLYLLEHTWKDAKFILQIMCELNVLPLALQITNIAGNIMSRTLMGGRSERNEFLLLHAFYENNYIVPDKQIFRKPQQKLGDEDEEIDGDTNKYKKGRKKAAYAGGLVLDPKVGFYDKFILLLDFNSLYPSIIQEFNICFTTVQRVASEAQKVTEDGEQEQIPELPDPSLEMGILPREIRKLVERRKQVKQLMKQQDLNPDLILQYDIRQKALKLTANSMYGCLGFSYSRFYAKPLAALVTYKGREILMHTKEMVQKMNLEVIYGDTDSIMINTNSTNLEEVFKLGNKVKSEVNKLYKLLEIDIDGVFKSLLLLKKKKYAALVVEPTSDGNYVTKQELKGLDIVRRDWCDLAKDTGNFVIGQILSDQSRDTIVENIQKRLIEIGENVLNGSVPVSQFEINKALTKDPQDYPDKKSLPHVHVALWINSQGGRKVKAGDTVSYVICQDGSNLTASQRAYAPEQLQKQDNLTIDTQYYLAQQIHPVVARICEPIDGIDAVLIATWLGLDPTQFRVHHYHKDEENDALLGGPAQLTDEEKYRDCERFKCPCPTCGTENIYDNVFDGSGTDMEPSLYRCSNIDCKASPLTFTVQLSNKLIMDIRRFIKKYYDGWLICEEPTCRNRTRHLPLQFSRTGPLCPACMKATLQPEYSDKSLYTQLCFYRYIFDAECALEKLTTDHEKDKLKKQFFTPKVLQDYRKLKNTAEQFLSRSGYSEVNLSKLFAGCAVKS</sequence>
+         </interactor>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>neutral component</shortLabel>
+                     <fullName>neutral component</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0497" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="9606">
+                   <names>
+                     <shortLabel>human</shortLabel>
+                     <fullName>Homo sapiens</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="comment">Small amounts of the proteolytic cleavage products of POLA were also observed in the complex.</attribute>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+         <interaction id="11">
+           <names>
+             <shortLabel>pola-pri1-1</shortLabel>
+             <fullName>Interaction between POLA, PRI1 and PRI2 identified by antibody pulldown</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-850113" secondary="pola-pri1-1"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006270" refType="process" refTypeAc="MI:0359" secondary="DNA replication initiation"/>
+           </xref>
+           <experimentList>
+             <experimentDescription id="2">
+           <names>
+             <shortLabel>ott-2002-1</shortLabel>
+             <fullName>Role of the p68 subunit of human DNA polymerase alpha-primase in simian virus 40 DNA replication.</fullName>
+           </names>
+           <bibref>
+             <xref>
+               <primaryRef db="pubmed" dbAc="MI:0446" id="12138179" refType="primary-reference" refTypeAc="MI:0358"/>
+             </xref>
+           </bibref>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-849999" secondary="ott-2002-1"/>
+             <secondaryRef db="newt" dbAc="MI:0247" id="9606" refType="target-species" secondary="human"/>
+           </xref>
+           <hostOrganismList>
+             <hostOrganism ncbiTaxId="-1">
+               <names>
+                 <shortLabel>in vitro</shortLabel>
+               </names>
+             </hostOrganism>
+           </hostOrganismList>
+           <interactionDetectionMethod>
+             <names>
+               <shortLabel>pull down</shortLabel>
+               <fullName>pull down</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0096" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionDetectionMethod>
+           <participantIdentificationMethod>
+             <names>
+               <shortLabel>predetermined</shortLabel>
+               <fullName>predetermined participant</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0396" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="7940758" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </participantIdentificationMethod>
+           <attributeList>
+             <attribute name="author-list">Ott RD., Rehfuess C., Podust VN., Clark JE., Fanning E.</attribute>
+             <attribute name="contact-email">fannine@ctrvax.vanderbilt.edu</attribute>
+             <attribute name="exp-modification">Participants identified by SDS-PAGE and Coomassie blue staining. Presence of POLA and POLA2 confirmed by western blot.</attribute>
+             <attribute name="antibodies">Complex purified by binding to monoclonal antibody SJK 237-71 Sepharose.</attribute>
+             <attribute name="figure-legend">1</attribute>
+           </attributeList>
+         </experimentDescription>
+           </experimentList>
+           <participantList>
+             <participant id="12">
+               <interactor id="6">
+           <names>
+             <shortLabel>pri2_human</shortLabel>
+             <fullName>DNA primase large subunit</fullName>
+             <alias type="gene name" typeAc="MI:0301">PRIM2A</alias>
+             <alias type="gene name synonym" typeAc="MI:0302">PRIM2</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="P49643" refType="identity" refTypeAc="MI:0356" secondary="pri2_human" version="SP_38"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003896" secondary="F:DNA primase activity"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006269" secondary="P:DNA replication, synthesis o"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR007238" secondary="DNA_primase_lrg"/>
+             <secondaryRef db="reactome protein" dbAc="MI:0245" id="P49643"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q53FJ8" refType="secondary-ac" refTypeAc="MI:0360" secondary="pri2_human" version="SP_38"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q6P1Q7" refType="secondary-ac" refTypeAc="MI:0360" secondary="pri2_human" version="SP_38"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q8WVL2" refType="secondary-ac" refTypeAc="MI:0360" secondary="pri2_human" version="SP_38"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q9H413" refType="secondary-ac" refTypeAc="MI:0360" secondary="pri2_human" version="SP_38"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-850004" secondary="pri2_human"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="9606">
+             <names>
+               <shortLabel>human</shortLabel>
+               <fullName>Homo sapiens</fullName>
+             </names>
+           </organism>
+           <sequence>MEFSGRKWRKLRLAGDQRNASYPHCLQFYLQPPSENISLIEFENLAIDRVKLLKSVENLGVSYVKGTEQYQSKLESELRKLKFSYRENLEDEYEPRRRDHISHFILRLAYCQSEELRRWFIQQEMDLLRFRFSILPKDKIQDFLKDSQLQFEAISDEEKTLREQEIVASSPSLSGLKLGFESIYKIPFADALDLFRGRKVYLEDGFAYVPLKDIVAIILNEFRAKLSKALALTARSLPAVQSDERLQPLLNHLSHSYTGQDYSTQGNVGKISLDQIDLLSTKSFPPCMRQLHKALRENHHLRHGGRMQYGLFLKGIGLTLEQALQFWKQEFIKGKMDPDKFDKGYSYNIRHSFGKEGKRTDYTPFSCLKIILSNPPSQGDYHGCPFRHSDPELLKQKLQSYKISPGGISQILDLVKGTHYQVACQKYFEMIHNVDDCGFSLNHPNQFFCESQRILNGGKDIKKEPIQPETPQPKPSVQKTKDASSALASLNSSLEMDMEGLEDYFSEDS</sequence>
+         </interactor>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>neutral component</shortLabel>
+                     <fullName>neutral component</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0497" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="9606">
+                   <names>
+                     <shortLabel>human</shortLabel>
+                     <fullName>Homo sapiens</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+             <participant id="13">
+               <interactor id="10">
+           <names>
+             <shortLabel>dpola_human</shortLabel>
+             <fullName>DNA polymerase alpha catalytic subunit</fullName>
+             <alias type="gene name" typeAc="MI:0301">POLA</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="P09884" refType="identity" refTypeAc="MI:0356" secondary="dpola_human" version="SP_58"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005634" secondary="C:nucleus"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003889" secondary="F:alpha DNA polymerase activit"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006260" secondary="P:DNA replication"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR006172" secondary="DNA_pol_B"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR006133" secondary="DNA_pol_B_exo"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR006134" secondary="DNA_pol_B_region"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR004578" secondary="Pol2"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012337" secondary="RNaseH_fold"/>
+             <secondaryRef db="reactome protein" dbAc="MI:0245" id="P09884"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="Q86UQ7" refType="secondary-ac" refTypeAc="MI:0360" secondary="dpola_human" version="SP_58"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-850026" secondary="dpola_human"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="9606">
+             <names>
+               <shortLabel>human</shortLabel>
+               <fullName>Homo sapiens</fullName>
+             </names>
+           </organism>
+           <sequence>MAPVHGDDSLSDSGSFVSSRARREKKSKKGRQEALERLKKAKAGEKYKYEVEDFTGVYEEVDEEQYSKLVQARQDDDWIVDDDGIGYVEDGREIFDDDLEDDALDADEKGKDGKARNKDKRNVKKLAVTKPNNIKSMFIACAGKKTADKAVDLSKDGLLGDILQDLNTETPQITPPPVMILKKKRSIGASPNPFSVHTATAVPSGKIASPVSRKEPPLTPVPLKRAEFAGDDVQVESTEEEQESGAMEFEDGDFDEPMEVEEVDLEPMAAKAWDKESEPAEEVKQEADSGKGTVSYLGSFLPDVSCWDIDQEGDSSFSVQEVQVDSSHLPLVKGADEEQVFHFYWLDAYEDQYNQPGVVFLFGKVWIESAETHVSCCVMVKNIERTLYFLPREMKIDLNTGKETGTPISMKDVYEEFDEKIATKYKIMKFKSKPVEKNYAFEIPDVPEKSEYLEVKYSAEMPQLPQDLKGETFSHVFGTNTSSLELFLMNRKIKGPCWLEVKSPQLLNQPVSWCKVEAMALKPDLVNVIKDVSPPPLVVMAFSMKTMQNAKNHQNEIIAMAALVHHSFALDKAAPKPPFQSHFCVVSKPKDCIFPYAFKEVIEKKNVKVEVAATERTLLGFFLAKVHKIDPDIIVGHNIYGFELEVLLQRINVCKAPHWSKIGRLKRSNMPKLGGRSGFGERNATCGRMICDVEISAKELIRCKSYHLSELVQQILKTERVVIPMENIQNMYSESSQLLYLLEHTWKDAKFILQIMCELNVLPLALQITNIAGNIMSRTLMGGRSERNEFLLLHAFYENNYIVPDKQIFRKPQQKLGDEDEEIDGDTNKYKKGRKKAAYAGGLVLDPKVGFYDKFILLLDFNSLYPSIIQEFNICFTTVQRVASEAQKVTEDGEQEQIPELPDPSLEMGILPREIRKLVERRKQVKQLMKQQDLNPDLILQYDIRQKALKLTANSMYGCLGFSYSRFYAKPLAALVTYKGREILMHTKEMVQKMNLEVIYGDTDSIMINTNSTNLEEVFKLGNKVKSEVNKLYKLLEIDIDGVFKSLLLLKKKKYAALVVEPTSDGNYVTKQELKGLDIVRRDWCDLAKDTGNFVIGQILSDQSRDTIVENIQKRLIEIGENVLNGSVPVSQFEINKALTKDPQDYPDKKSLPHVHVALWINSQGGRKVKAGDTVSYVICQDGSNLTASQRAYAPEQLQKQDNLTIDTQYYLAQQIHPVVARICEPIDGIDAVLIATWLGLDPTQFRVHHYHKDEENDALLGGPAQLTDEEKYRDCERFKCPCPTCGTENIYDNVFDGSGTDMEPSLYRCSNIDCKASPLTFTVQLSNKLIMDIRRFIKKYYDGWLICEEPTCRNRTRHLPLQFSRTGPLCPACMKATLQPEYSDKSLYTQLCFYRYIFDAECALEKLTTDHEKDKLKKQFFTPKVLQDYRKLKNTAEQFLSRSGYSEVNLSKLFAGCAVKS</sequence>
+         </interactor>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>neutral component</shortLabel>
+                     <fullName>neutral component</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0497" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="9606">
+                   <names>
+                     <shortLabel>human</shortLabel>
+                     <fullName>Homo sapiens</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+             <participant id="14">
+               <interactor id="4">
+           <names>
+             <shortLabel>pri1_human</shortLabel>
+             <fullName>DNA primase small subunit</fullName>
+             <alias type="gene name" typeAc="MI:0301">PRIM1</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="P49642" refType="identity" refTypeAc="MI:0356" secondary="pri1_human" version="SP_47"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0003896" secondary="F:DNA primase activity"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0006269" secondary="P:DNA replication, synthesis o"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012192" secondary="DNA_prim_euk"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR002755" secondary="DNA_primase_S"/>
+             <secondaryRef db="reactome protein" dbAc="MI:0245" id="P49642"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-726050" secondary="pri1_human"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="9606">
+             <names>
+               <shortLabel>human</shortLabel>
+               <fullName>Homo sapiens</fullName>
+             </names>
+           </organism>
+           <sequence>METFDPTELPELLKLYYRRLFPYSQYYRWLNYGGVIKNYFQHREFSFTLKDDIYIRYQSFNNQSDLEKEMQKMNPYKIDIGAVYSHRPNQHNTVKLGAFQAQEKELVFDIDMTDYDDVRRCCSSADICPKCWTLMTMAIRIIDRALKEDFGFKHRLWVYSGRRGVHCWVCDESVRKLSSAVRSGIVEYLSLVKGGQDVKKKVHLSEKIHPFIRKSINIIKKYFEEYALVNQDILENKESWDKILALVPETIHDELQQSFQKSHNSLQRWEHLKKVASRYQNNIKNDKYGPWLEWEIMLQYCFPRLDINVSKGINHLLKSPFSVHPKTGRISVPIDLQKVDQFDPFTVPTISFICRELDAISTNEEEKEENEAESDVKHRTRDYKKTSLAPYVKVFEHFLENLDKSRKGELLKKSDLQKDF</sequence>
+         </interactor>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>neutral component</shortLabel>
+                     <fullName>neutral component</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0497" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="9606">
+                   <names>
+                     <shortLabel>human</shortLabel>
+                     <fullName>Homo sapiens</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <attributeList>
+             <attribute name="comment">Small amounts of the proteolytic cleavage products of POLA were also observed in the complex.</attribute>
+             <attribute name="comment">The trimer, purified in the absence of POLA2, exhibits lower specific activity that that of the tetramer in both a polymerase and a primase assay.</attribute>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+       </interactionList>
+     </entry>
+   </entrySet>

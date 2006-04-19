@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entrySet xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" level="2" version="5" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/rel25/src/MIF25.xsd">
+     <entry>
+       <source releaseDate="2006-02-19">
+         <names>
+           <shortLabel>European Bioinformatics Institute</shortLabel>
+         </names>
+         <bibref>
+           <xref>
+             <primaryRef db="pubmed" dbAc="MI:0446" id="14681455" refType="primary-reference" refTypeAc="MI:0358"/>
+           </xref>
+         </bibref>
+         <xref>
+           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0469" refType="primary-reference" refTypeAc="MI:0358"/>
+         </xref>
+         <attributeList>
+           <attribute name="postalAddress">Wellcome Trust Genome Campus, Hinxton, Cambridge, CB10 1SD, United Kingdom</attribute>
+           <attribute name="url">http://www.ebi.ac.uk</attribute>
+         </attributeList>
+       </source>
+       
+       
+       <interactionList>
+         <interaction id="1">
+           <names>
+             <shortLabel>cflar-itch-1</shortLabel>
+             <fullName>Interaction detected by GST pull down.</fullName>
+           </names>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-852345" secondary="cflar-itch-1"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-851778" refType="see-also" refTypeAc="MI:0361"/>
+           </xref>
+           <experimentList>
+             <experimentDescription id="2">
+           <names>
+             <shortLabel>chang-2006-3</shortLabel>
+             <fullName>The E3 ubiquitin ligase itch couples JNK activation to TNFalpha-induced cell death by inducing c-FLIP(L) turnover.</fullName>
+           </names>
+           <bibref>
+             <xref>
+               <primaryRef db="pubmed" dbAc="MI:0446" id="16469705" refType="primary-reference" refTypeAc="MI:0358"/>
+             </xref>
+           </bibref>
+           <xref>
+             <primaryRef db="intact" dbAc="MI:0469" id="EBI-852338" secondary="chang-2006-3"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-851760" refType="see-also" refTypeAc="MI:0361"/>
+             <secondaryRef db="newt" dbAc="MI:0247" id="10090" refType="target-species" secondary="mouse"/>
+           </xref>
+           <hostOrganismList>
+             <hostOrganism ncbiTaxId="-1">
+               <names>
+                 <shortLabel>in vitro</shortLabel>
+               </names>
+             </hostOrganism>
+           </hostOrganismList>
+           <interactionDetectionMethod>
+             <names>
+               <shortLabel>pull down</shortLabel>
+               <fullName>pull down</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0096" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionDetectionMethod>
+           <participantIdentificationMethod>
+             <names>
+               <shortLabel>western blot</shortLabel>
+               <fullName>western blot</fullName>
+               <alias>Immuno blot</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0113" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </participantIdentificationMethod>
+           <attributeList>
+             <attribute name="author-list">Chang L., Kamata H., Solinas G., Luo JL., Maeda S., Venuprasad K., Liu YC., Karin M.</attribute>
+             <attribute name="contact-email">karinoffice@ucsd.edu</attribute>
+             <attribute name="figure-legend">5A</attribute>
+             <attribute name="negative"/>
+           </attributeList>
+         </experimentDescription>
+           </experimentList>
+           <participantList>
+             <participant id="3">
+               <interactor id="4">
+           <names>
+             <shortLabel>o35732-2</shortLabel>
+             <fullName>CASP8 and FADD-like apoptosis regulator precursor</fullName>
+             <alias type="isoform synonym" typeAc="MI:0304">FLIP-S</alias>
+             <alias type="isoform synonym" typeAc="MI:0304">CASH beta</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="O35732-2" refType="identity" refTypeAc="MI:0356" secondary="cflar_mouse" version="SP_55"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-851716" refType="isoform-parent" refTypeAc="MI:0243" secondary="cflar_mouse"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-851735" secondary="o35732-2"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="10090">
+             <names>
+               <shortLabel>mouse</shortLabel>
+               <fullName>Mus musculus</fullName>
+             </names>
+           </organism>
+           <sequence>MAQSPVSAEVIHQVEECLDEDEKEMMLFLCRDVTENLAAPNVRDLLDSLSERGQLSFATLAELLYRVRRFDLLKRILKTDKATVEDHLRRNPHLVSDYRVLLMEIGESLDQNDVSSLVFLTRITRDYTGRGKIAKDKSFLDLVIELEKLNLIASDQLNLLEKCLKNIHRIDLNTKIQKYTQSSQGARSNMNTLQASLPKLSIKYNSRVSLEPVYGVPALAPT</sequence>
+         </interactor>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>prey</shortLabel>
+                     <fullName>prey</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0498" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <featureList>
+                 <feature id="5">
+                   <names>
+                     <shortLabel>region</shortLabel>
+                   </names>
+                   <featureType>
+                     <names>
+                       <shortLabel>his tagged</shortLabel>
+                       <fullName>his tagged</fullName>
+                       <alias>6-His-tagged</alias>
+                       <alias>Hexa-His-tagged</alias>
+                       <alias>Histidine-tagged</alias>
+                     </names>
+                     <xref>
+                       <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0521" refType="identity" refTypeAc="MI:0356"/>
+                       <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+                     </xref>
+                   </featureType>
+                   <featureRangeList>
+                     <featureRange>
+                       <startStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </startStatus>
+                       <begin position="0"/>
+                       <endStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </endStatus>
+                       <end position="0"/>
+                     </featureRange>
+                   </featureRangeList>
+                 </feature>
+               </featureList>
+             </participant>
+             <participant id="6">
+               <interactor id="7">
+           <names>
+             <shortLabel>itch_mouse</shortLabel>
+             <fullName>Itchy E3 ubiquitin protein ligase</fullName>
+             <alias type="gene name" typeAc="MI:0301">Itch</alias>
+           </names>
+           <xref>
+             <primaryRef db="uniprotkb" dbAc="MI:0486" id="Q8C863" refType="identity" refTypeAc="MI:0356" secondary="itch_mouse" version="SP_27"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005634" secondary="C:nucleus"/>
+             <secondaryRef db="go" dbAc="MI:0448" id="GO:0005515" secondary="F:protein binding"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR000008" secondary="C2"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR000569" secondary="HECT"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR012287" secondary="Homeodomain-rel"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR002349" secondary="WW"/>
+             <secondaryRef db="interpro" dbAc="MI:0449" id="IPR001202" secondary="WW_Rsp5_WWP"/>
+             <secondaryRef db="uniprotkb" dbAc="MI:0486" id="O54971" refType="secondary-ac" refTypeAc="MI:0360" secondary="itch_mouse" version="SP_27"/>
+             <secondaryRef db="intact" dbAc="MI:0469" id="EBI-851782" secondary="itch_mouse"/>
+           </xref>
+           <interactorType>
+             <names>
+               <shortLabel>protein</shortLabel>
+               <fullName>protein</fullName>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0326" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+               <secondaryRef db="so" dbAc="MI:0601" id="SO:0000358" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactorType>
+           <organism ncbiTaxId="10090">
+             <names>
+               <shortLabel>mouse</shortLabel>
+               <fullName>Mus musculus</fullName>
+             </names>
+           </organism>
+           <sequence>MSDSGPQLDSMGSLTMKSQLQITVISAKLKENKKNWFGPSPYVEVTVDGQSKKTEKCNNTNSPKWKQPLTVIVTPTSKLCFRVWSHQTLKSDVLLGTAGLDIYETLKSNNMKLEEVVMTLQLVGDKEPTETMGDLSVCLDGLQVEAEVVTNGETSCSESTTQNDDGCRTRDDTRVSTNGSEDPEVAASGENKRANGNNSPSLSNGGFKPSRPPRPSRPPPPTPRRPASVNGSPSTNSDSDGSSTGSLPPTNTNVNTSTSEGATSGLIIPLTISGGSGPRPLNTVSQAPLPPGWEQRVDQHGRVYYVDHVEKRTTWDRPEPLPPGWERRVDNMGRIYYVDHFTRTTTWQRPTLESVRNYEQWQLQRSQLQGAMQQFNQRFIYGNQDLFATSQNKEFDPLGPLPPGWEKRTDSNGRVYFVNHNTRITQWEDPRSQGQLNEKPLPEGWEMRFTVDGIPYFVDHNRRATTYIDPRTGKSALDNGPQIAYVRDFKAKVQYFRFWCQQLAMPQHIKITVTRKTLFEDSFQQIMSFSPQDLRRRLWVIFPGEEGLDYGGVAREWFFLLSHEVLNPMYCLFEYAGKDNYCLQINPASYINPDHLKYFRFIGRFIAMALFHGKFIDTGFSLPFYKRILNKPVGLKDLESIDPEFYNSLIWVKENNIEECGLEMYFSVDKEILGEIKSHDLKPNGGNILVTEENKEEYIRMVAEWRLSRGVEEQTQAFFEGFNEILPQQYLQYFDAKELEVLLCGMQEIDLNDWQRHAIYRHYTRTSKQIMWFWQFVKEIDNEKRMRLLQFVTGTCRLPVGGFADLMGSNGPQKFCIEKVGKENWLPRSHTCFNRLDLPPYKSYEQLKEKLLFAIEETEGFGQE</sequence>
+         </interactor>
+               <biologicalRole>
+                 <names>
+                   <shortLabel>unspecified</shortLabel>
+                   <fullName>unspecified</fullName>
+                 </names>
+                 <xref>
+                   <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0499" refType="identity" refTypeAc="MI:0356"/>
+                   <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                 </xref>
+               </biologicalRole>
+               <experimentalRoleList>
+                 <experimentalRole>
+                   <names>
+                     <shortLabel>bait</shortLabel>
+                     <fullName>bait</fullName>
+                   </names>
+                   <xref>
+                     <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0496" refType="identity" refTypeAc="MI:0356"/>
+                     <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                   </xref>
+                 </experimentalRole>
+               </experimentalRoleList>
+               <featureList>
+                 <feature id="8">
+                   <names>
+                     <shortLabel>region</shortLabel>
+                   </names>
+                   <featureType>
+                     <names>
+                       <shortLabel>gst tagged</shortLabel>
+                       <fullName>gst tagged</fullName>
+                       <alias>glutathione S-tranferase tag</alias>
+                     </names>
+                     <xref>
+                       <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0519" refType="identity" refTypeAc="MI:0356"/>
+                       <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                     </xref>
+                   </featureType>
+                   <featureRangeList>
+                     <featureRange>
+                       <startStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </startStatus>
+                       <begin position="0"/>
+                       <endStatus>
+                         <names>
+                           <shortLabel>undetermined</shortLabel>
+                           <fullName>undetermined sequence position</fullName>
+                         </names>
+                         <xref>
+                           <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0339" refType="identity" refTypeAc="MI:0356"/>
+                           <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="primary-reference" refTypeAc="MI:0358"/>
+                         </xref>
+                       </endStatus>
+                       <end position="0"/>
+                     </featureRange>
+                   </featureRangeList>
+                 </feature>
+               </featureList>
+               <hostOrganismList>
+                 <hostOrganism ncbiTaxId="10090">
+                   <names>
+                     <shortLabel>mouse</shortLabel>
+                     <fullName>Mus musculus</fullName>
+                   </names>
+                 </hostOrganism>
+               </hostOrganismList>
+             </participant>
+           </participantList>
+           <interactionType>
+             <names>
+               <shortLabel>physical interaction</shortLabel>
+               <fullName>physical interaction</fullName>
+               <alias>aggregation</alias>
+             </names>
+             <xref>
+               <primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0218" refType="identity" refTypeAc="MI:0356"/>
+               <secondaryRef db="pubmed" dbAc="MI:0446" id="14755292" refType="go-definition-ref" refTypeAc="MI:0242"/>
+             </xref>
+           </interactionType>
+           <negative>true</negative>
+           <attributeList>
+             <attribute name="negative"/>
+             <attribute name="isoform-comment">The short form of the cFLAR protein does not interact with ITCH.</attribute>
+             <attribute name="kd">1.0</attribute>
+           </attributeList>
+         </interaction>
+       </interactionList>
+     </entry>
+   </entrySet>
