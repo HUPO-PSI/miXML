@@ -16,7 +16,7 @@ import java.util.*;
  * <p/>
  *
  * @author Luisa Montecchi
- * @version $Id: FeatureTypeRule.java,v 1.1 2006/04/19 10:58:24 luisa_montecchi Exp $
+ * @version $Id: FeatureTypeRule.java,v 1.2 2006/04/19 12:23:40 luisa_montecchi Exp $
  * @since 20-Mar-2006
  */
 public class FeatureTypeRule extends Mi25Rule {
@@ -88,7 +88,7 @@ public class FeatureTypeRule extends Mi25Rule {
                                 Mi25Context context = new Mi25Context();
                                 context.setInteractionId(interactionId);
                                 context.setParticipantId(participantId);
-                                context.setInteractorId(featureId);
+                                context.setFeatureId(featureId);
 
                                 messages.add(new ValidatorMessage("Term does not belong to CV feature type (" + term.getId() + ")",
                                         MessageLevel.WARN,
@@ -102,7 +102,7 @@ public class FeatureTypeRule extends Mi25Rule {
                         Mi25Context context = new Mi25Context();
                         context.setInteractionId(interactionId);
                         context.setParticipantId(participantId);
-                        context.setInteractorId(featureId);
+                        context.setFeatureId(featureId);
 
                         messages.add(new ValidatorMessage("Feature without CV feature type ",
                                 MessageLevel.WARN,
