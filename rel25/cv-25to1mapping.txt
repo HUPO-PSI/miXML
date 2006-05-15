@@ -4,119 +4,119 @@
 # see PSI 2.5 schema at http://psidev.sourceforge.net/mi/rel25/doc/ and PSI 1 schema at http://psidev.sourceforge.net/mi/xml/doc/tmp0000.html					
 # see PSI 2.5 CV at http://psidev.sourceforge.net/mi/rel25/data and PSI 1 CV at http://psidev.sourceforge.net/mi/controlledVocab/psi-mi.dag					
 # PSI MI 2.5 	exact synonym or name	PSI MI  1.0  or boolean or string 	term name or path for previous column boolean or string 	PSI MI 2.5 CV TYPE	PSI MI 2.5 obsolete
-MI:0001	 interaction detectio	MI:0001	interaction detection 	interaction detection	
+MI:0001	 interaction detectio	MI:0001	interaction detection 	interaction detection method	
 MI:0002	 participant identif	MI:0002	participant detection 	participant detection	
-MI:0003	 feature detection	MI:0003	feature detection 	feature detection	
-MI:0004	 affinity chrom	MI:0004	affinity chromatography technologies 	interaction detection	
-MI:0005	 alanine scanning	MI:0005	alanine scanning 	feature detection	
-MI:0006	 anti bait coip	MI:0006	anti bait coip: anti bait coimmunoprecipitation 	interaction detection	
-MI:0007	 anti tag coip	MI:0007	anti tag coip: anti tag coimmunoprecipitation 	interaction detection	
-MI:0008	 array technologies	MI:0008	array technologies 	interaction detection	
-MI:0009	 bacterial display	MI:0009	bacterial display 	interaction detection	
-MI:0010	 beta galactosidase	MI:0010	beta galactosidase complementation 	interaction detection	
-MI:0011	 beta lactamase	MI:0011	beta lactamase complementation 	interaction detection	
-MI:0012	 bret	MI:0012	bret: bioluminescence resonance energy transfer 	interaction detection	
-MI:0013	 biophysical	MI:0013	biophysical 	interaction detection	
-MI:0014	 adenylate cyclase	MI:0014	adenilate cyclase complementation 	interaction detection	
-MI:0016	 cd	MI:0016	cd: circular dichroism 	interaction detection	
-MI:0017	 fluorescence spectr	MI:0017	classical fluorescence spectroscopy 	interaction detection	
-MI:0018	 two hybrid	MI:0018	two hybrid 	interaction detection	
-MI:0019	 coip	MI:0019	coip: coimmunoprecipitation 	interaction detection	
-MI:0020	 tem	MI:0020	colocalization by electron microscopy 	interaction detection	
-MI:0021	 coloc fluoresc probe	MI:0021	colocalization by fluorescent probes cloning 	interaction detection	
-MI:0022	 coloc immunostaining	MI:0022	colocalization by immunostaining 	interaction detection	obsolete
-MI:0023	 coloc visual technol	MI:0023	colocalization/visualisation technologies 	interaction detection	obsolete
-MI:0024	 conformational tm	MI:0024	confirmational text mining 	interaction detection	
-MI:0025	 copurification	MI:0025	copurification 	interaction detection	obsolete
-MI:0026	 correlated mutations	MI:0026	correlated mutations 	interaction detection	
-MI:0027	 cosedimentation	MI:0027	cosedimentation 	interaction detection	
-MI:0028	 solution sedimentati	MI:0028	cosedimentation in solution 	interaction detection
-MI:0029	 density sedimentatio	MI:0029	cosedimentation through density gradients 	interaction detection
-MI:0030	 crosslink	MI:0030	cross-linking studies 	interaction detection
-MI:0031	 protein crosslink	MI:0031	cross-linking with a bifunctional reagent 	interaction detection
-MI:0032	 ms protein sequence	MI:0032	de novo protein sequencing by mass spectrometry 	interaction detection
-MI:0033	 deletion analysis	MI:0033	deletion analysis 	feature detection
-MI:0034	 display technologies	MI:0034	display technologies 	interaction detection
-MI:0035	 docking	MI:0035	docking 	interaction detection
-MI:0036	 domain fusion	MI:0036	domain fusion 	interaction detection
-MI:0037	 domain profile pairs	MI:0037	domain profile pairs 	interaction detection
-MI:0038	 dls	MI:0038	dynamic light scattering 	interaction detection
+MI:0003	 feature detection	MI:0003	feature detection method	feature detection method	
+MI:0004	 affinity chrom	MI:0004	affinity chromatography technologies 	interaction detection method	
+MI:0005	 alanine scanning	MI:0005	alanine scanning 	feature detection method	
+MI:0006	 anti bait coip	MI:0006	anti bait coip: anti bait coimmunoprecipitation 	interaction detection method	
+MI:0007	 anti tag coip	MI:0007	anti tag coip: anti tag coimmunoprecipitation 	interaction detection method	
+MI:0008	 array technologies	MI:0008	array technologies 	interaction detection method	
+MI:0009	 bacterial display	MI:0009	bacterial display 	interaction detection method	
+MI:0010	 beta galactosidase	MI:0010	beta galactosidase complementation 	interaction detection method	
+MI:0011	 beta lactamase	MI:0011	beta lactamase complementation 	interaction detection method	
+MI:0012	 bret	MI:0012	bret: bioluminescence resonance energy transfer 	interaction detection method	
+MI:0013	 biophysical	MI:0013	biophysical 	interaction detection method	
+MI:0014	 adenylate cyclase	MI:0014	adenilate cyclase complementation 	interaction detection method	
+MI:0016	 cd	MI:0016	cd: circular dichroism 	interaction detection method	
+MI:0017	 fluorescence spectr	MI:0017	classical fluorescence spectroscopy 	interaction detection method	
+MI:0018	 two hybrid	MI:0018	two hybrid 	interaction detection method	
+MI:0019	 coip	MI:0019	coip: coimmunoprecipitation 	interaction detection method	
+MI:0020	 tem	MI:0020	transmission electron microscopy	interaction detection method	
+MI:0021	 coloc fluoresc probe	MI:0021	colocalization by fluorescent probes cloning 	interaction detection method	obsolete
+MI:0022	 coloc immunostaining	MI:0022	colocalization by immunostaining 	interaction detection method	obsolete
+MI:0023	 coloc visual technol	MI:0023	colocalization/visualisation technologies 	interaction detection method	obsolete
+MI:0024	 conformational tm	MI:0024	confirmational text mining 	interaction detection method	
+MI:0025	 copurification	MI:0025	copurification 	interaction detection method	obsolete
+MI:0026	 correlated mutations	MI:0026	correlated mutations 	interaction detection method	
+MI:0027	 cosedimentation	MI:0027	cosedimentation 	interaction detection method	
+MI:0028	 solution sedimentati	MI:0028	cosedimentation in solution 	interaction detection method
+MI:0029	 density sedimentatio	MI:0029	cosedimentation through density gradients 	interaction detection method
+MI:0030	 crosslink	MI:0030	cross-linking studies 	interaction detection method
+MI:0031	 protein crosslink	MI:0031	cross-linking with a bifunctional reagent 	interaction detection method
+MI:0032	 ms protein sequence	MI:0032	de novo protein sequencing by mass spectrometry 	interaction detection method
+MI:0033	 deletion analysis	MI:0033	deletion analysis 	feature detection method
+MI:0034	 display technologies	MI:0034	display technologies 	interaction detection method
+MI:0035	 docking	MI:0035	docking 	interaction detection method
+MI:0036	 domain fusion	MI:0036	domain fusion 	interaction detection method
+MI:0037	 domain profile pairs	MI:0037	domain profile pairs 	interaction detection method
+MI:0038	 dls	MI:0038	dynamic light scattering 	interaction detection method
 MI:0039	 edman degradation	MI:0039	edman degradation 	participant detection
-MI:0040	 electron microscopy	MI:0040	electron microscopy 	interaction detection
-MI:0041	 endor	MI:0041	endor: electron nuclear double resonance 	interaction detection
-MI:0042	 epr	MI:0042	epr: electron paramagnetic resonance 	interaction detection
-MI:0043	 electron resonance	MI:0043	electron resonance 	interaction detection
-MI:0045	 experimental	MI:0045	experimental 	interaction detection	
-MI:0046	 experimental info	MI:0046	experimental knowledge based 	interaction detection	
-MI:0047	 far western blotting	MI:0047	far western blotting 	interaction detection	
-MI:0048	 filamentous phage	MI:0048	filamentous phage display 	interaction detection	
-MI:0049	 filter binding	MI:0049	filter binding 	interaction detection	
-MI:0050	 flag tag coip	MI:0050	flag tag coip: flag tag coimmunoprecipitation 	interaction detection	
-MI:0051	 fluorescence	MI:0051	fluorescence technologies 	interaction detection	
-MI:0052	 fcs	MI:0052	fcs: fluorescence correlation spectroscopy 	interaction detection	
-MI:0053	 fps	MI:0053	fps: fluorescence polarization spectroscopy 	interaction detection	
-MI:0054	 facs	MI:0054	facs: fluorescence-activated cell sorting 	interaction detection	
-MI:0055	 fret	MI:0055	fret: fluorescent resonance energy transfer 	interaction detection	
+MI:0040	 electron microscopy	MI:0040	electron microscopy 	interaction detection method
+MI:0041	 endor	MI:0041	endor: electron nuclear double resonance 	interaction detection method
+MI:0042	 epr	MI:0042	epr: electron paramagnetic resonance 	interaction detection method
+MI:0043	 electron resonance	MI:0043	electron resonance 	interaction detection method
+MI:0045	 experimental	MI:0045	experimental 	interaction detection method	
+MI:0046	 experimental info	MI:0046	experimental knowledge based 	interaction detection method	
+MI:0047	 far western blotting	MI:0047	far western blotting 	interaction detection method	
+MI:0048	 filamentous phage	MI:0048	filamentous phage display 	interaction detection method	
+MI:0049	 filter binding	MI:0049	filter binding 	interaction detection method	
+MI:0050	 flag tag coip	MI:0007	 anti tag coip	interaction detection method	obsolete
+MI:0051	 fluorescence	MI:0051	fluorescence technologies 	interaction detection method	
+MI:0052	 fcs	MI:0052	fcs: fluorescence correlation spectroscopy 	interaction detection method	
+MI:0053	 fps	MI:0053	fps: fluorescence polarization spectroscopy 	interaction detection method	
+MI:0054	 facs	MI:0054	facs: fluorescence-activated cell sorting 	interaction detection method	
+MI:0055	 fret	MI:0055	fret: fluorescent resonance energy transfer 	interaction detection method	
 MI:0056	 full dna sequence	MI:0056	full identification by sequencing 	participant detection	
-MI:0057	 gene neighbourhoods	MI:0057	gene neighbourhoods 	interaction detection	
-MI:0058	 genome prediction	MI:0058	genome based prediction 	interaction detection	
-MI:0059	 gst pull down	MI:0059	gst pull down 	interaction detection	obsolete
-MI:0060	 ha tag coip	MI:0060	ha tag coip: ha tag coimmunoprecipitation 	interaction detection	obsolete
-MI:0061	 his pull down	MI:0061	his pull down 	interaction detection	obsolete
-MI:0062	 his tag coip	MI:0062	his tag coip: his tag coimmunoprecipitation 	interaction detection	obsolete
-MI:0063	 prediction	MI:0063	in silico 	interaction detection	
-MI:0064	 interologs mapping	MI:0064	interologs mapping 	interaction detection	
-MI:0065	 itc	MI:0065	itc: isothermal titration calorimetry 	interaction detection	
-MI:0066	 lambda phage	MI:0066	lambda phage display 	interaction detection	
-MI:0067	 light scattering	MI:0067	light scattering 	interaction detection	
-MI:0068	 modified residue ms	MI:0068	mass detection of residue modification 	feature detection	
-MI:0069	 ms of complexes	MI:0069	mass spectrometry studies of complexes 	interaction detection	
-MI:0070	 mobility shift	MI:0070	mobility shift 	feature detection	
-MI:0071	 molecular sieving	MI:0071	molecular sieving 	interaction detection	
-MI:0072	 monoclonal antibody	MI:0072	monoclonal antibody 	participant detection	
-MI:0073	 mrna display	MI:0073	mrna display 	interaction detection	
-MI:0074	 mutation analysis	MI:0074	mutation analysis 	feature detection	
-MI:0075	 myc tag coip 	MI:0075	myc tag coip : myc tag coimmunoprecipitation 	interaction detection	obsolete
-MI:0076	 interface predictor	MI:0076	neural network on interface properties 	feature detection	
-MI:0077	 nmr	MI:0077	nmr: nuclear magnetic resonance 	interaction detection	
+MI:0057	 gene neighbourhoods	MI:0057	gene neighbourhoods 	interaction detection method	
+MI:0058	 genome prediction	MI:0058	genome based prediction 	interaction detection method	
+MI:0059	 gst pull down	MI:0096	pull down	interaction detection method	obsolete
+MI:0060	 ha tag coip	MI:0007	anti tag coip	interaction detection method	obsolete
+MI:0061	 his pull down	MI:0096	pull down	interaction detection method	obsolete
+MI:0062	 his tag coip	MI:0007	anti tag coip	interaction detection method	obsolete
+MI:0063	 prediction	MI:0063	in silico 	interaction detection method	
+MI:0064	 interologs mapping	MI:0064	interologs mapping 	interaction detection method	
+MI:0065	 itc	MI:0065	itc: isothermal titration calorimetry 	interaction detection method	
+MI:0066	 lambda phage	MI:0066	lambda phage display 	interaction detection method	
+MI:0067	 light scattering	MI:0067	light scattering 	interaction detection method	
+MI:0068	 modified residue ms	MI:0068	mass detection of residue modification 	feature detection method	
+MI:0069	 ms of complexes	MI:0069	mass spectrometry studies of complexes 	interaction detection method	
+MI:0070	 mobility shift	MI:0070	mobility shift 	feature detection method	
+MI:0071	 molecular sieving	MI:0071	molecular sieving 	interaction detection method	
+MI:0072	monoclonal antibody western blot	MI:0072	monoclonal antibody 	participant detection	
+MI:0073	 mrna display	MI:0073	mrna display 	interaction detection method	
+MI:0074	 mutation analysis	MI:0074	mutation analysis 	feature detection method	
+MI:0075	 myc tag coip 	MI:0075	myc tag coip : myc tag coimmunoprecipitation 	interaction detection method	obsolete
+MI:0076	 interface predictor	MI:0076	neural network on interface properties 	feature detection method	
+MI:0077	 nmr	MI:0077	nmr: nuclear magnetic resonance 	interaction detection method	
 MI:0078	 nucleotide sequence	MI:0078	nucleotide sequence identification 	participant detection	
-MI:0079	 other biochemic tech	MI:0079	other biochemical technologies 	interaction detection	obsolete
+MI:0079	 other biochemic tech	MI:0079	other biochemical technologies 	interaction detection method	obsolete
 MI:0080	 partial dna sequence	MI:0080	partial dna sequence identification by hybridization 	participant detection	
-MI:0081	 peptide array	MI:0081	peptide array 	interaction detection	
+MI:0081	 peptide array	MI:0081	peptide array 	interaction detection method	
 MI:0082	 fingerprinting	MI:0082	peptide massfingerprinting 	participant detection	
 MI:0083	 peptide synthesis	MI:0083	peptide synthesis 	participant detection	
-MI:0084	 phage display	MI:0084	phage display 	interaction detection	
-MI:0085	 phylogenetic profile	MI:0085	phylogenetic profile 	interaction detection	
-MI:0086	 polyclonal antibody	MI:0086	polyclonal antibody 	participant detection	
-MI:0087	 predictive tm	MI:0087	predictive text mining 	interaction detection	
+MI:0084	 phage display	MI:0084	phage display 	interaction detection method	
+MI:0085	 phylogenetic profile	MI:0085	phylogenetic profile 	interaction detection method	
+MI:0086	polyclonal antibody western blot	MI:0086	polyclonal antibody 	participant detection	
+MI:0087	 predictive tm	MI:0087	predictive text mining 	interaction detection method	
 MI:0088	 primer specific pcr	MI:0088	primer specific pcr 	participant detection	
-MI:0089	 protein array	MI:0089	protein array 	interaction detection	
-MI:0090	 complementation	MI:0090	pca: protein complementation assay 	interaction detection	
-MI:0091	 chromatography	MI:0004	affinity chromatography technologies 	interaction detection	
-MI:0092	 pisa	MI:0092	pisa: protein in situ array 	interaction detection	
+MI:0089	 protein array	MI:0089	protein array 	interaction detection method	
+MI:0090	 complementation	MI:0090	pca: protein complementation assay 	interaction detection method	
+MI:0091	 chromatography	MI:0004	affinity chromatography technologies 	interaction detection method	
+MI:0092	 pisa	MI:0092	pisa: protein in situ array 	interaction detection method	
 MI:0093	 protein sequence	MI:0093	protein sequence identification 	participant detection
-MI:0094	 protein staining	MI:0094	protein staining 	feature detection
-MI:0095	 seldi chip	MI:0095	seldi chip: proteinchip(r) on a surface-enhanced laser desorption/ionization 	interaction detection
-MI:0096	 pull down	MI:0096	pull down 	interaction detection
-MI:0097	 reverse rrs	MI:0097	reverse rrs: reverse ras recruitment system 	interaction detection
-MI:0098	 ribosome display	MI:0098	ribosome display 	interaction detection
-MI:0099	 spa	MI:0099	spa: scintillation proximity assay 	interaction detection
-MI:0100	 sequence phylogeny	MI:0100	sequence based phylogenetic profile 	interaction detection
-MI:0101	 predict from sequenc	MI:0101	sequence based prediction 	interaction detection
+MI:0094	 protein staining	MI:0094	protein staining 	feature detection method
+MI:0095	 seldi chip	MI:0095	seldi chip: proteinchip(r) on a surface-enhanced laser desorption/ionization 	interaction detection method
+MI:0096	 pull down	MI:0096	pull down 	interaction detection method
+MI:0097	 reverse rrs	MI:0097	reverse rrs: reverse ras recruitment system 	interaction detection method
+MI:0098	 ribosome display	MI:0098	ribosome display 	interaction detection method
+MI:0099	 spa	MI:0099	spa: scintillation proximity assay 	interaction detection method
+MI:0100	 sequence phylogeny	MI:0100	sequence based phylogenetic profile 	interaction detection method
+MI:0101	 predict from sequenc	MI:0101	sequence based prediction 	interaction detection method
 MI:0102	 sequence tag	MI:0102	sequence tag identification 	participant detection
 MI:0103	 southern blot	MI:0103	southern blot 	participant detection
-MI:0104	 sls	MI:0104	static light scattering 	interaction detection
-MI:0105	 predict from struct	MI:0105	structure based prediction 	interaction detection
-MI:0106	 surface patches	MI:0106	surface patches 	feature detection
-MI:0107	 spr	MI:0107	surface plasmon resonance 	interaction detection
-MI:0108	 t7 phage	MI:0108	t7 phage display 	interaction detection
-MI:0109	 tap tag coip	MI:0109	tap tag coip: tap tag coimmunoprecipitation 	interaction detection	obsolete
-MI:0110	 text mining	MI:0110	text mining 	interaction detection	
-MI:0111	 dhfr reconstruction	MI:0111	dehydrofolate reductase reconstruction 	interaction detection	
-MI:0112	 ub reconstruction	MI:0112	ubiquitin reconstruction 	interaction detection	
+MI:0104	 sls	MI:0104	static light scattering 	interaction detection method
+MI:0105	 predict from struct	MI:0105	structure based prediction 	interaction detection method
+MI:0106	 surface patches	MI:0106	surface patches 	feature detection method
+MI:0107	 spr	MI:0107	surface plasmon resonance 	interaction detection method
+MI:0108	 t7 phage	MI:0108	t7 phage display 	interaction detection method
+MI:0109	 tap tag coip	MI:0109	tap tag coip: tap tag coimmunoprecipitation 	interaction detection method	obsolete
+MI:0110	 text mining	MI:0110	text mining 	interaction detection method	
+MI:0111	 dhfr reconstruction	MI:0111	dehydrofolate reductase reconstruction 	interaction detection method	
+MI:0112	 ub reconstruction	MI:0112	ubiquitin reconstruction 	interaction detection method	
 MI:0113	 western blot	MI:0113	western blot 	participant detection	
-MI:0114	 x-ray	MI:0114	x-ray: x-ray crystallography 	interaction detection	
-MI:0115	 yeast display	MI:0115	yeast display 	interaction detection	
+MI:0114	 x-ray	MI:0114	x-ray: x-ray crystallography 	interaction detection method	
+MI:0115	 yeast display	MI:0115	yeast display 	interaction detection method	
 MI:0116	 feature type	MI:0116	feature type 	feature type	
 MI:0117	 binding site	MI:0117	binding site 	feature type	
 MI:0118	 mutation	MI:0118	mutation 	feature type	
@@ -225,14 +225,14 @@ MI:0220	 ubiquitination	MI:0191	aggregation 	interaction type
 MI:0221	 expression level	FALSE	proteinParticipantType/isOverexpressedProtein	expression level
 MI:0222	 endogenous level	FALSE	proteinParticipantType/isOverexpressedProtein	expression level
 MI:0223	 under-expressed	FALSE	proteinParticipantType/isOverexpressedProtein	expression level
-MI:0225	 chip-chip		No export because data type not suported by PSI 1	interaction detection
-MI:0226	 ion exchange chrom	MI:0004	affinity chromatography technologies 	interaction detection
-MI:0227	 reverse phase chrom	MI:0004	affinity chromatography technologies 	interaction detection
-MI:0228	 cytoplasmic compl	MI:0090	pca: protein complementation assay 	interaction detection
-MI:0229	 gfp complementation	MI:0090	pca: protein complementation assay 	interaction detection
-MI:0230	 membrane compl	MI:0090	pca: protein complementation assay 	interaction detection
-MI:0231	 mappit	MI:0090	pca: protein complementation assay 	interaction detection
-MI:0232	 transcription compl	MI:0090	pca: protein complementation assay 	interaction detection
+MI:0225	 chip-chip		No export because data type not suported by PSI 1	interaction detection method
+MI:0226	 ion exchange chrom	MI:0004	affinity chromatography technologies 	interaction detection method
+MI:0227	 reverse phase chrom	MI:0004	affinity chromatography technologies 	interaction detection method
+MI:0228	 cytoplasmic compl	MI:0090	pca: protein complementation assay 	interaction detection method
+MI:0229	 gfp complementation	MI:0090	pca: protein complementation assay 	interaction detection method
+MI:0230	 membrane compl	MI:0090	pca: protein complementation assay 	interaction detection method
+MI:0231	 mappit	MI:0090	pca: protein complementation assay 	interaction detection method
+MI:0232	 transcription compl	MI:0090	pca: protein complementation assay 	interaction detection method
 MI:0233	 protein dna complex		No export because data type not suported by PSI 1	interactor type
 MI:0234	 131i radiolabelled	TRUE	isTaggedProtein	feature type
 MI:0235	 14c radiolabelled	TRUE	isTaggedProtein	feature type
@@ -254,13 +254,13 @@ MI:0250	 gene		No export because data type not suported by PSI 1	interactor type
 MI:0251	 gene product		no remapping	xref type
 MI:0252	 biological feature	TRUE	isTaggedProtein	feature type
 MI:0253	 isotope labelled	TRUE	isTaggedProtein	feature type
-MI:0254	 genetic interference		No export because data type not suported by PSI 1	interaction detection
-MI:0255	 gene expression interference		No export because data type not suported by PSI 1	interaction detection
-MI:0256	 RNAi		No export because data type not suported by PSI 1	interaction detection
-MI:0257	 antisense RNA		No export because data type not suported by PSI 1	interaction detection
-MI:0258	 inhibitor antibodies		No export because data type not suported by PSI 1	interaction detection
-MI:0259	 perturbagens peptides		No export because data type not suported by PSI 1	interaction detection
-MI:0260	 inhibitor small molecules		No export because data type not suported by PSI 1	interaction detection
+MI:0254	 genetic interference		No export because data type not suported by PSI 1	interaction detection method
+MI:0255	 gene expression interference		No export because data type not suported by PSI 1	interaction detection method
+MI:0256	 RNAi		No export because data type not suported by PSI 1	interaction detection method
+MI:0257	 antisense RNA		No export because data type not suported by PSI 1	interaction detection method
+MI:0258	 inhibitor antibodies		No export because data type not suported by PSI 1	interaction detection method
+MI:0259	 perturbagens peptides		No export because data type not suported by PSI 1	interaction detection method
+MI:0260	 inhibitor small molecules		No export because data type not suported by PSI 1	interaction detection method
 MI:0261	 suppression		No export because data type not suported by PSI 1	interaction type 
 MI:0262	 suppression mutation		No export because data type not suported by PSI 1	interaction type 
 MI:0263	 suppress  knockout		No export because data type not suported by PSI 1	interaction type 
@@ -275,7 +275,7 @@ MI:0271	 temprtr  synt lethal		No export because data type not suported by PSI 1
 MI:0273	 synt growth effect		No export because data type not suported by PSI 1	interaction type 
 MI:0274	 synt growth defect		No export because data type not suported by PSI 1	interaction type 
 MI:0275	 synt growth increase		No export because data type not suported by PSI 1	interaction type 
-MI:0276	 bn-page	MI:0025	copurification 	interaction detection
+MI:0276	 bn-page	MI:0025	copurification 	interaction detection method
 MI:0300	 alias type		no remapping	alias type
 MI:0301	 gene name		no remapping	alias type
 MI:0302	 gene name synonym		no remapping	alias type
@@ -337,15 +337,15 @@ MI:0358	 primary-reference		no remapping	xref type
 MI:0359	 process		no remapping	xref type
 MI:0360	 secondary-ac		no remapping	xref type
 MI:0361	 see-also		no remapping	xref type
-MI:0362	 inference	MI:0001	interaction detection 	interaction detection
-MI:0363	 inferred by author	MI:0001	interaction detection 	interaction detection
-MI:0364	 inferred by curator	MI:0001	interaction detection 	interaction detection
+MI:0362	 inference	MI:0001	interaction detection 	interaction detection method
+MI:0363	 inferred by author	MI:0001	interaction detection 	interaction detection method
+MI:0364	 inferred by curator	MI:0001	interaction detection 	interaction detection method
 MI:0365	 enzyme tagged	TRUE	isTaggedProtein	feature type
 MI:0366	 alk phosphatase tag	TRUE	isTaggedProtein	feature type
 MI:0367	 gfp tagged	TRUE	isTaggedProtein	feature type
 MI:0368	 yfp tagged	TRUE	isTaggedProtein	feature type
-MI:0369	 gallex	MI:0090	pca: protein complementation assay 	interaction detection
-MI:0370	 toxcat	MI:0090	pca: protein complementation assay 	interaction detection
+MI:0369	 gallex	MI:0090	pca: protein complementation assay 	interaction detection method
+MI:0370	 toxcat	MI:0090	pca: protein complementation assay 	interaction detection method
 MI:0371	 35s radiolabelled	TRUE	isTaggedProtein	feature type
 MI:0372	 subcellular prep		no remapping	sample process
 MI:0373	 dye labelled	TRUE	isTaggedProtein	feature type
@@ -368,51 +368,51 @@ MI:0389	 alexa 546 labelled	TRUE	isTaggedProtein	feature type
 MI:0390	 alexa 568 labelled	TRUE	isTaggedProtein	feature type
 MI:0391	 alexa 594 labelled	TRUE	isTaggedProtein	feature type
 MI:0396	 predetermined	MI:0396	undetermined participant 	participant detection
-MI:0397	 two hybrid array	MI:0397	two hybrid array 	interaction detection
-MI:0398	 two hybrid pooling	MI:0398	two hybrid pooling approach 	interaction detection
-MI:0399	 2h fragment pooling	MI:0399	two hybrid fragment pooling approach 	interaction detection
-MI:0400	 affinity techniques	MI:0004	affinity chromatography technologies 	interaction detection
-MI:0401	 biochemical	MI:0079	other biochemical technologies 	interaction detection
-MI:0402	 ch-ip		No export because data type not suported by PSI 1	interaction detection
+MI:0397	 two hybrid array	MI:0397	two hybrid array 	interaction detection method
+MI:0398	 two hybrid pooling	MI:0398	two hybrid pooling approach 	interaction detection method
+MI:0399	 2h fragment pooling	MI:0399	two hybrid fragment pooling approach 	interaction detection method
+MI:0400	 affinity techniques	MI:0004	affinity chromatography technologies 	interaction detection method
+MI:0401	 biochemical	MI:0079	other biochemical technologies 	interaction detection method
+MI:0402	 ch-ip		No export because data type not suported by PSI 1	interaction detection method
 MI:0403	 colocalization	MI:0191	aggregation 	interaction type 
-MI:0404	 comigration in gel	MI:0079	other biochemical technologies 	interaction detection
-MI:0405	 competition binding	MI:0079	other biochemical technologies 	interaction detection
-MI:0406	 deacetylase assay	MI:0079	other biochemical technologies 	interaction detection
+MI:0404	 comigration in gel	MI:0079	other biochemical technologies 	interaction detection method
+MI:0405	 competition binding	MI:0079	other biochemical technologies 	interaction detection method
+MI:0406	 deacetylase assay	MI:0079	other biochemical technologies 	interaction detection method
 MI:0407	 direct interaction	MI:0191	aggregation 	interaction type 
 MI:0408	 disulfide bond	MI:0191	aggregation 	interaction type 
-MI:0409	 dna footprinting		No export because data type not suported by PSI 1	interaction detection
-MI:0410	 sem	MI:0040	electron microscopy 	interaction detection
-MI:0411	 elisa	MI:0044	elisa: enzyme-linked immunosorbent assay 	interaction detection
-MI:0412	 emsa supershift		No export because data type not suported by PSI 1	interaction detection
-MI:0413	 emsa		No export because data type not suported by PSI 1	interaction detection
+MI:0409	 dna footprinting		No export because data type not suported by PSI 1	interaction detection method
+MI:0410	 sem	MI:0040	electron microscopy 	interaction detection method
+MI:0411	 elisa	MI:0044	elisa: enzyme-linked immunosorbent assay 	interaction detection method
+MI:0412	 emsa supershift		No export because data type not suported by PSI 1	interaction detection method
+MI:0413	 emsa		No export because data type not suported by PSI 1	interaction detection method
 MI:0414	 enzymatic reaction	MI:0191	aggregation 	interaction type 
-MI:0415	 enzymatic studies	MI:0079	other biochemical technologies 	interaction detection
-MI:0416	 fluorescence imaging	MI:0023	colocalization/visualisation technologies 	interaction detection
-MI:0417	 footprinting	MI:0079	other biochemical technologies 	interaction detection
-MI:0418	 genetic		No export because data type not suported by PSI 1	interaction detection
-MI:0419	 gtpase assay	MI:0079	other biochemical technologies 	interaction detection
-MI:0420	 kinase htrf	MI:0051	fluorescence technologies 	interaction detection
+MI:0415	 enzymatic studies	MI:0079	other biochemical technologies 	interaction detection method
+MI:0416	 fluorescence imaging	MI:0023	colocalization/visualisation technologies 	interaction detection method
+MI:0417	 footprinting	MI:0079	other biochemical technologies 	interaction detection method
+MI:0418	 genetic		No export because data type not suported by PSI 1	interaction detection method
+MI:0419	 gtpase assay	MI:0079	other biochemical technologies 	interaction detection method
+MI:0420	 kinase htrf	MI:0051	fluorescence technologies 	interaction detection method
 MI:0421	 antibody detection	MI:0072	monoclonal antibody 	participant detection
 MI:0422	 immunostaining	MI:0086	polyclonal antibody 	participant detection
-MI:0423	 in gel kinase assay	MI:0079	other biochemical technologies 	interaction detection
-MI:0424	 protein kinase assay	MI:0079	other biochemical technologies 	interaction detection
-MI:0425	 kinase spa	MI:0099	spa: scintillation proximity assay 	interaction detection
-MI:0426	 light microscopy	MI:0023	colocalization/visualisation technologies 	interaction detection
+MI:0423	 in gel kinase assay	MI:0079	other biochemical technologies 	interaction detection method
+MI:0424	 protein kinase assay	MI:0079	other biochemical technologies 	interaction detection method
+MI:0425	 kinase spa	MI:0099	spa: scintillation proximity assay 	interaction detection method
+MI:0426	 light microscopy	MI:0023	colocalization/visualisation technologies 	interaction detection method
 MI:0427	 mass spectrometry	MI:0093	protein sequence identification 	participant detection	
-MI:0428	 imaging techniques	MI:0023	colocalization/visualisation technologies 	interaction detection	
+MI:0428	 imaging techniques	MI:0023	colocalization/visualisation technologies 	interaction detection method	
 MI:0429	 required to bind	TRUE	isTaggedProtein	feature type	
-MI:0430	 nucl ac uv crosslink		No export because data type not suported by PSI 1	interaction detection	
+MI:0430	 nucl ac uv crosslink		No export because data type not suported by PSI 1	interaction detection method	
 MI:0431	 obsolete	MI:0431	 obsolete	obsolete	obsolete
-MI:0432	 one hybrid	MI:0090	pca: protein complementation assay 	interaction detection	
+MI:0432	 one hybrid	MI:0090	pca: protein complementation assay 	interaction detection method	
 MI:0433	 partial id prot seq	MI:0093	protein sequence identification 	participant detection	
-MI:0434	 phosphatase assay	MI:0079	other biochemical technologies 	interaction detection	
-MI:0435	 protease assay	MI:0079	other biochemical technologies 	interaction detection	
-MI:0436	 protein footprinting	MI:0079	other biochemical technologies 	interaction detection	
-MI:0437	 protein tri hybrid	MI:0090	pca: protein complementation assay 	interaction detection	
-MI:0438	 rna tri hybrid		No export because data type not suported by PSI 1	interaction detection	
-MI:0439	 rsa		No export because data type not suported by PSI 1	interaction detection	
-MI:0440	 saturation binding	MI:0079	other biochemical technologies 	interaction detection	
-MI:0441	 sga		No export because data type not suported by PSI 1	interaction detection	
+MI:0434	 phosphatase assay	MI:0079	other biochemical technologies 	interaction detection method	
+MI:0435	 protease assay	MI:0079	other biochemical technologies 	interaction detection method	
+MI:0436	 protein footprinting	MI:0079	other biochemical technologies 	interaction detection method	
+MI:0437	 protein tri hybrid	MI:0090	pca: protein complementation assay 	interaction detection method	
+MI:0438	 rna tri hybrid		No export because data type not suported by PSI 1	interaction detection method	
+MI:0439	 rsa		No export because data type not suported by PSI 1	interaction detection method	
+MI:0440	 saturation binding	MI:0079	other biochemical technologies 	interaction detection method	
+MI:0441	 sga		No export because data type not suported by PSI 1	interaction detection method	
 MI:0442	 sufficient to bind	TRUE	isTaggedProtein	feature type	
 MI:0443	 ubiquitin binding	MI:0191	aggregation 	interaction type 
 MI:0444	 database citation	 database citation	xrefType/primaryRef/db	database citation
@@ -461,11 +461,11 @@ MI:0486	 uniprot	 uniprot	xrefType/primaryRef/db	database citation
 MI:0487	 wormbase	 wormbase	xrefType/primaryRef/db	database citation
 MI:0488	 psi-mi	 psi-mi	xrefType/primaryRef/db	database citation
 MI:0489	 source database xref	 source database xref	xrefType/primaryRef/db	database citation
-MI:0495	 experimental role	unspecified	proteinParticipantType/role	experimental role
-MI:0496	 bait	bait	proteinParticipantType/role	experimental role
-MI:0497	 neutral component	neutral	proteinParticipantType/role	experimental role
-MI:0498	 prey	prey	proteinParticipantType/role	experimental role
-MI:0499	 unspecified	unspecified	proteinParticipantType/role	experimental role
+MI:0495	experimental role	unspecified	proteinParticipantType/role	experimental role
+MI:0496	bait	bait	proteinParticipantType/role	experimental role
+MI:0497	neutral component	neutral	proteinParticipantType/role	experimental role
+MI:0498	prey	prey	proteinParticipantType/role	experimental role
+MI:0499	unspecified role	unspecified role	proteinParticipantType/role	experimental role
 MI:0500	 biological role	unspecified	proteinParticipantType/role	biological role
 MI:0501	 enzyme	bait	proteinParticipantType/role	biological role
 MI:0502	 enzyme target	prey	proteinParticipantType/role	biological role
@@ -473,15 +473,15 @@ MI:0503	 self	neutral	proteinParticipantType/role	biological role
 MI:0505	 experimental feature	TRUE	isTaggedProtein	feature type
 MI:0506	 over-expressed	TRUE	proteinParticipantType/isOverexpressedProtein	expression level
 MI:0507	 tagged molecule	TRUE	isTaggedProtein	feature type
-MI:0508	 radiolabeled acetate	MI:0079	other biochemical technologies 	interaction detection
-MI:0509	 phosphatase htrf	MI:0051	fluorescence technologies 	interaction detection
-MI:0510	 htrf	MI:0051	fluorescence technologies 	interaction detection
-MI:0511	 protease htrf	MI:0051	fluorescence technologies 	interaction detection
-MI:0512	 zymography	MI:0079	other biochemical technologies 	interaction detection
-MI:0513	 collagen film assay	MI:0079	other biochemical technologies 	interaction detection
-MI:0514	 in gel phosphatase	MI:0079	other biochemical technologies 	interaction detection
-MI:0515	 methyltransferase as	MI:0079	other biochemical technologies 	interaction detection
-MI:0516	 radiolabeled methyl	MI:0079	other biochemical technologies 	interaction detection
+MI:0508	 radiolabeled acetate	MI:0079	other biochemical technologies 	interaction detection method
+MI:0509	 phosphatase htrf	MI:0051	fluorescence technologies 	interaction detection method
+MI:0510	 htrf	MI:0051	fluorescence technologies 	interaction detection method
+MI:0511	 protease htrf	MI:0051	fluorescence technologies 	interaction detection method
+MI:0512	 zymography	MI:0079	other biochemical technologies 	interaction detection method
+MI:0513	 collagen film assay	MI:0079	other biochemical technologies 	interaction detection method
+MI:0514	 in gel phosphatase	MI:0079	other biochemical technologies 	interaction detection method
+MI:0515	 methyltransferase as	MI:0079	other biochemical technologies 	interaction detection method
+MI:0516	 radiolabeled methyl	MI:0079	other biochemical technologies 	interaction detection method
 MI:0517	 radiolabelled	TRUE	isTaggedProtein	feature type
 MI:0518	 flag tagged	TRUE	isTaggedProtein	feature type
 MI:0519	 gst tagged	TRUE	isTaggedProtein	feature type
@@ -541,19 +541,19 @@ MI:0572	 dna cleavage		No export because data type not suported by PSI 1	interac
 MI:0573	 mutation disrupting interaction	MI:0119	hotspot 	feature type
 MI:0574	 doi	 doi	xrefType/primaryRef/db	database citation
 MI:0575	 afcs	 afcs	xrefType/primaryRef/db	database citation
-MI:0576	 structural proximity	MI:0003	feature detection 	feature detection
-MI:0577	 feature prediction from structure	MI:0003	feature detection 	feature detection
+MI:0576	 structural proximity	MI:0003	feature detection method	feature detection method
+MI:0577	 feature prediction from structure	MI:0003	feature detection method	feature detection method
 MI:0578	 mbp tagged	TRUE	isTaggedProtein	feature type
 MI:0579	 electron donor	bait	proteinParticipantType/role	biological role
 MI:0580	 electron acceptor	prey	proteinParticipantType/role	biological role
-MI:0581	 suppressor gene		No export because data type not suported by PSI 1	experimental role
-MI:0582	 suppressed gene		No export because data type not suported by PSI 1	experimental role
-MI:0583	 donor fluorophore	bait	proteinParticipantType/role	experimental role
-MI:0584	 acceptor fluorophore	prey	proteinParticipantType/role	experimental role
+MI:0581	suppressor gene		No export because data type not suported by PSI 1	experimental role
+MI:0582	suppressed gene		No export because data type not suported by PSI 1	experimental role
+MI:0583	donor fluorophore	bait	proteinParticipantType/role	experimental role
+MI:0584	acceptor fluorophore	prey	proteinParticipantType/role	experimental role
 MI:0585	 intenz	 intenz	xrefType/primaryRef/db	database citation
 MI:0586	 inhibitor		No export because data type not suported by PSI 1	biological role
 MI:0587	 inhibited		No export because data type not suported by PSI 1	biological role
-MI:0588	 3 hybrid method	MI:0090	pca: protein complementation assay 	interaction detection
+MI:0588	 3 hybrid method	MI:0090	pca: protein complementation assay 	interaction detection method
 MI:0589	 in vitro translated		no remapping	sample process
 MI:0590	 attribute name	 attribute name	attributeListType/attribute/name	attribute name
 MI:0591	 experiment descripti	 experiment descripti	attributeListType/attribute/name	attribute name
@@ -567,11 +567,11 @@ MI:0598	 feature constrain	 feature constrain	attributeListType/attribute/name	a
 MI:0599	 figure legend	 figure legend	attributeListType/attribute/name	attribute name
 MI:0600	 nutrition synt letal		No export because data type not suported by PSI 1	interaction type 
 MI:0601	sequence ontology	sequence ontology	xrefType/primaryRef/db	database citation
-MI:0602	chemical footprinting		No export because data type not suported by PSI 1	interaction detection
-MI:0603	dimethylsulphate footprinting		No export because data type not suported by PSI 1	interaction detection
-MI:0604	potassium permanganate footprinting		No export because data type not suported by PSI 1	interaction detection
-MI:0605	enzymatic footprinting		No export because data type not suported by PSI 1	interaction detection
-MI:0606	DNase I footprinting		No export because data type not suported by PSI 1	interaction detection
+MI:0602	chemical footprinting		No export because data type not suported by PSI 1	interaction detection method
+MI:0603	dimethylsulphate footprinting		No export because data type not suported by PSI 1	interaction detection method
+MI:0604	potassium permanganate footprinting		No export because data type not suported by PSI 1	interaction detection method
+MI:0605	enzymatic footprinting		No export because data type not suported by PSI 1	interaction detection method
+MI:0606	DNase I footprinting		No export because data type not suported by PSI 1	interaction detection method
 MI:0607	small nuclear rna		No export because data type not suported by PSI 1	interactor type
 MI:0608	ribosomal rna		No export because data type not suported by PSI 1	interactor type
 MI:0609	small nucleolar rna		No export because data type not suported by PSI 1	interactor type
@@ -606,29 +606,29 @@ MI:0637	isoform-comment	isoform-comment	attributeListType/attribute/name	attribu
 MI:0638	prerequisite-ptm	prerequisite-ptm	attributeListType/attribute/name	attribute name
 MI:0639	resulting-ptm	resulting-ptm	attributeListType/attribute/name	attribute name
 MI:0640	parameter type		no remapping	parameter type
-MI:0641	ic50		no remapping	parameter type
-MI:0642	ec50		no remapping	parameter type
-MI:0643	ki		no remapping	parameter type
-MI:0644	km		no remapping	parameter type
-MI:0645	kcat		no remapping	parameter type
-MI:0646	kd		no remapping	parameter type
-MI:0647	parameter unit		no remapping	parameter unit
-MI:0648	molar		no remapping	parameter unit
-MI:0649	second		no remapping	parameter unit
-MI:0650	millimolar		no remapping	parameter unit
-MI:0651	micromolar		no remapping	parameter unit
-MI:0652	nanomolar		no remapping	parameter unit
-MI:0653	picomolar		no remapping	parameter unit
-MI:0654	fentomolar		no remapping	parameter unit
-MI:0655	lambda repressor two hybrid	MI:0018	two hybrid 	interaction detection
-MI:0656	identified peptide		no remapping	feature type
-MI:0657	systematic evolution of ligands by exponential enrichment		No export because data type not suported by PSI 1	interaction detection
-MI:0658	multidimensional protein identification technology	MI:0082	peptide massfingerprinting	participant detection method
-MI:0659	experimental feature detection		feature detection method	feature detection method
-MI:0660	feature prediction		feature detection method	feature detection method
-MI:0661	experimental participant identification	MI:0002	participant identification method	participant detection method
+MI:0641	ic50		no remapping	parameter type	
+MI:0642	ec50		no remapping	parameter type	
+MI:0643	ki		no remapping	parameter type	
+MI:0644	km		no remapping	parameter type	
+MI:0645	kcat		no remapping	parameter type	
+MI:0646	kd		no remapping	parameter type	
+MI:0647	parameter unit		no remapping	parameter unit	
+MI:0648	molar		no remapping	parameter unit	
+MI:0649	second		no remapping	parameter unit	
+MI:0650	millimolar		no remapping	parameter unit	obsolete
+MI:0651	micromolar		no remapping	parameter unit	obsolete
+MI:0652	nanomolar		no remapping	parameter unit	obsolete
+MI:0653	picomolar		no remapping	parameter unit	obsolete
+MI:0654	fentomolar		no remapping	parameter unit	obsolete
+MI:0655	lambda repressor two hybrid	MI:0018	two hybrid 	interaction detection method	
+MI:0656	identified peptide		no remapping	feature type	
+MI:0657	systematic evolution of ligands by exponential enrichment		No export because data type not suported by PSI 1	interaction detection method
+MI:0658	multidimensional protein identification technology	MI:0082	peptide massfingerprinting	participant detection
+MI:0659	experimental feature detection	MI:0003	feature detection method	feature detection method
+MI:0660	feature prediction	MI:0003	feature detection method	feature detection method
+MI:0661	experimental participant identification	MI:0002	participant identification method	participant detection
 MI:0662	imex-primary		no remapping	xref type
-MI:0663	confocal microscopy	MI:0013	biophysical 	interaction detection
+MI:0663	confocal microscopy	MI:0013	biophysical 	interaction detection method
 MI:0664	interaction attribute name	interaction attribute name	attributeListType/attribute/name	attribute name
 MI:0665	experiment attibute name	experiment attibute name	attributeListType/attribute/name	attribute name
 MI:0666	participant attribute name	participant attribute name	attributeListType/attribute/name	attribute name
@@ -641,7 +641,57 @@ MI:0672	library-used	library-used	attributeListType/attribute/name	attribute nam
 MI:0673	complex-synonym		no remapping	alias type
 MI:0674	peptide parent sequence reference		no remapping	xref type
 MI:0675	international protein index	international protein index	xrefType/primaryRef/db	database citation
-MI:0676	tandem affinity purification	MI:0007	anti tag coip: anti tag coimmunoprecipitation 	interaction detection
-MI:0677	multiple tag		isTaggedProtein	feature type
-MI:0678	antibody array	MI:0089	protein array	interaction detection
-				
+MI:0676	tandem affinity purification	MI:0007	anti tag coip: anti tag coimmunoprecipitation 	interaction detection method
+MI:0677	tandem tag	TRUE	isTaggedProtein	feature type
+MI:0678	antibody array	MI:0089	protein array	interaction detection method
+MI:0679	poly a		No export because data type not suported by PSI 1	interactor type
+MI:0680	single stranded deoxyribonucleic acid		No export because data type not suported by PSI 1	interactor type
+MI:0681	double stranded deoxyribonucleic acid		No export because data type not suported by PSI 1	interactor type
+MI:0682	cofactor		No export because data type not suported by PSI 1	biological role
+MI:0683	sequence database	sequence database	xrefType/primaryRef/db	database citation
+MI:0684	ancillary	unspecified role	proteinParticipantType/role	experimental role
+MI:0685	source reference		no remapping	xref type
+MI:0686	unspecified method	MI:0001	interaction detection 	interaction detection method
+MI:0687	fluorescent protein tag	TRUE	isTaggedProtein	feature type
+MI:0688	dna binding domain tag	TRUE	isTaggedProtein	feature type
+MI:0689	activation domain tag	TRUE	isTaggedProtein	feature type
+MI:0690	gal4 activation domain	TRUE	isTaggedProtein	feature type
+MI:0691	vp16 activation domain	TRUE	isTaggedProtein	feature type
+MI:0692	b42 activation domain	TRUE	isTaggedProtein	feature type
+MI:0693	gal4 dna binding domain	TRUE	isTaggedProtein	feature type
+MI:0694	lexa dna binding domain	TRUE	isTaggedProtein	feature type
+MI:0695	sandwich immunoassay	MI:0089	protein array	interaction detection method
+MI:0696	polymerase assay	MI:0079	other biochemical technologies 	interaction detection method
+MI:0697	dna directed dna polymerase assay	MI:0079	other biochemical technologies 	interaction detection method
+MI:0698	dna directed rna polymerase assay	MI:0079	other biochemical technologies 	interaction detection method
+MI:0699	rna directed dna polymerase assay	MI:0079	other biochemical technologies 	interaction detection method
+MI:0700	rna directed rna polymerase assay	MI:0079	other biochemical technologies 	interaction detection method
+MI:0701	dna strand elongation		No export because data type not suported by PSI 1	interaction type 
+MI:0702	panther	panther	xrefType/primaryRef/db	database citation
+MI:0703	gene3d	gene3d	xrefType/primaryRef/db	database citation
+MI:0705	anti tag western blot	MI:0113	western blot 	participant detection
+MI:0707	anti tag immunostaining	MI:0086	polyclonal antibody 	participant detection
+MI:0708	monoclonal antibody immunostaining	MI:0072	monoclonal antibody 	participant detection
+MI:0709	polyclonal antibody immunostaining	MI:0086	polyclonal antibody 	participant detection
+MI:0659 	experimental feature detection	MI:0003	feature detection method	feature detection method
+MI:0032 	de novo protein sequencing by mass spectrometry 	MI:0032 	de novo protein sequencing by mass spectrometry 	feature detection method
+MI:0043	electron resonance 	MI:0043	electron resonance 	feature detection method
+MI:0041 	electron nuclear double resonance 	MI:0041 	electron nuclear double resonance 	feature detection method
+MI:0042 	electron paramagnetic resonance 	MI:0042 	electron paramagnetic resonance 	feature detection method
+MI:0056 	full identification by sequencing 	MI:0056 	full identification by sequencing 	feature detection method
+MI:0068 	mass detection of residue modification 	MI:0068 	mass detection of residue modification 	feature detection method
+MI:0077 	nuclear magnetic resonance 	MI:0077 	nuclear magnetic resonance 	feature detection method
+MI:0436	protein footprinting 	MI:0003	feature detection method	feature detection method
+MI:0113 	western blot 	MI:0113 	western blot 	feature detection method
+MI:0705 	anti tag western blot 	MI:0113 	western blot 	feature detection method
+MI:0072 	monoclonal antibody western blot 	MI:0072 	monoclonal antibody western blot 	feature detection method
+MI:0086 	polyclonal antibody western blot 	MI:0086 	polyclonal antibody western blot 	feature detection method
+MI:0114 	x-ray crystallography 	MI:0114 	x-ray crystallography 	feature detection method
+MI:0026	correlated mutations 	MI:0026	correlated mutations 	feature detection method
+MI:0037 	domain profile pairs 	MI:0037 	domain profile pairs 	feature detection method
+MI:0577 	feature prediction from structure 	MI:0003	feature detection method	feature detection method
+MI:0035	docking 	MI:0035	docking 	feature detection method
+MI:0076 	neural network on interface properties 	MI:0076 	neural network on interface properties 	feature detection method
+MI:0362 	inference 	MI:0003	feature detection method	feature detection method
+MI:0363 	inferred by author 	MI:0003	feature detection method	feature detection method
+MI:0364 	inferred by curator 	MI:0003	feature detection method	feature detection method

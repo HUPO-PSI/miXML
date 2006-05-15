@@ -1,9 +1,9 @@
 format-version: 1.0
-date: 07:04:2006 17:35
+date: 12:05:2006 08:47
 saved-by: luisa
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.21 2006/04/07 16:55:52 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.22 2006/05/15 12:26:28 luisa_montecchi Exp $
 
 [Term]
 id: MI:0000
@@ -35,11 +35,11 @@ relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0004
-name: affinity chromatography technologies
+name: affinity chromatography technology
 def: "This class of approaches is characterised by the use of affinity resins as tools to purify molecule of interest (baits) and their binding partners. The baits can be captured by a variety of high affinity ligands linked to a resin - for example\, antibodies specific for the bait itself\, antibodies for specific tags engineered to be expressed as part of the bait or other high affinity binders such as glutathione resins for GST fusion proteins\, metal resins for histidine-tagged proteins." [PMID:7708014]
 synonym: "Affinity purification" []
 exact_synonym: "affinity chrom" []
-is_a: MI:0091 ! chromatography technologies
+is_a: MI:0091 ! chromatography technology
 
 [Term]
 id: MI:0005
@@ -63,15 +63,15 @@ is_a: MI:0019 ! coimmunoprecipitation
 
 [Term]
 id: MI:0008
-name: array technologies
+name: array technology
 def: "In this class of methodologies\, the molecules to be tested are presented ordered in an array format (typically at high density) on planar supports. The characteristics and chemical nature of the planar support can vary. This format permits the simultaneous assay\, in controlled conditions\, of several thousand proteins/peptides/nucleic acids for different functions\, for instance their ability to bind any given molecule." [PMID:14755292]
-is_a: MI:0400 ! affinity technologies
+is_a: MI:0400 ! affinity technology
 
 [Term]
 id: MI:0009
 name: bacterial display
 def: "The protein of interest is presented on the outer membrane of Gram negative bacteria by expressing it as a fusion partner to peptide signals that direct heterologous proteins to the cell surface. For instance\, a single chain Fv (scFv) antibody fragment\, consisting of the variable heavy and variable light domains from two separate anti-digoxin monoclonal antibodies\, was displayed on the outer membrane of Escherichia coli by fusing it to an Lpp-OmpA. Similar systems have also been developed for gram positive bacteria. Fluorescence-activated cell sorting (FACS)\, is used to specifically select clones displaying a protein binding to scFv-producing cells." [PMID:8248129, PMID:10436088]
-is_a: MI:0034 ! display technologies
+is_a: MI:0034 ! display technology
 is_a: MI:0054 ! fluorescence-activated cell sorting
 
 [Term]
@@ -95,7 +95,7 @@ def: "In this variation of the FRET assay the donor fluorophore is replaced by a
 synonym: "BRET" []
 synonym: "LRET" []
 exact_synonym: "bret" []
-is_a: MI:0051 ! fluorescence technologies
+is_a: MI:0051 ! fluorescence technology
 
 [Term]
 id: MI:0013
@@ -123,7 +123,7 @@ id: MI:0017
 name: classical fluorescence spectroscopy
 def: "Proteins contain endogenous fluorophores such as tryptophan residue and heme or flavins groups. Protein folding and protein-protein interaction can be studied by monitoring changes in the tryptophan environment detected by changes in its intrinsic fluorescence. Changes in the fluorescence emission spectrum on complex formation can occur either due to a shift in the wavelength of maximum fluorescence emission or by a shift in fluorescence intensity caused by the mixing of two proteins. The interaction of two proteins causes a shift in the fluorescence emission spectrum relative to the sum of the individual fluorescence spectra\, resulting in a difference spectrum \[F (complex)-2 F (sum)\]\, which is a measurable effect of the interaction. Loss of fluorescence signal from a substrate can be used to measure protein cleavage." [PMID:7708014]
 exact_synonym: "fluorescence spectr" []
-is_a: MI:0051 ! fluorescence technologies
+is_a: MI:0051 ! fluorescence technology
 
 [Term]
 id: MI:0018
@@ -137,7 +137,7 @@ id: MI:0019
 name: coimmunoprecipitation
 def: "In this approach an antibody\, specific for the protein of interest (bait) or any tag expressed within a fusion protein\, is used to separate the bait from a protein mixture or a cell lysate and to capture its ligand simultaneously. The protein partners that bind to the bait protein retained by the resin can then be eluted and identified." [PMID:7708014]
 exact_synonym: "coip" []
-is_a: MI:0004 ! affinity chromatography technologies
+is_a: MI:0004 ! affinity chromatography technology
 
 [Term]
 id: MI:0020
@@ -149,10 +149,9 @@ is_a: MI:0040 ! electron microscopy
 [Term]
 id: MI:0021
 name: colocalization by fluorescent probes cloning
-def: "Two proteins can be localised to cell compartments\, in the same experiment\, if they are expressed as chimeric proteins fused to distinct proteins fluorescing at different wavelengths (Green Fluorescent Protein and Red Fluorescent Protein for example). Using a confocal microscope the two proteins can be visualized in living cells and it can be determined whether they have the same subcellular location. Fluorescence microscopy of cells expressing a GFP fusion protein can also demonstrate dynamic processes such as its translocation from one subcellular compartment to another." [PMID:14755292]
+def: "Two proteins can be localised to cell compartments\, in the same experiment\, if they are expressed as chimeric proteins fused to distinct proteins fluorescing at different wavelengths (Green Fluorescent Protein and Red Fluorescent Protein for example). Using a confocal microscope the two proteins can be visualized in living cells and it can be determined whether they have the same subcellular location. Fluorescence microscopy of cells expressing a GFP fusion protein can also demonstrate dynamic processes such as its translocation from one subcellular compartment to another.\nOBSOLETE\: use imaging technique (MI\:0428) and specific probe as feature of each interacting protein." [PMID:14755292]
 exact_synonym: "coloc fluoresc probe" []
-is_a: MI:0051 ! fluorescence technologies
-is_a: MI:0416 ! fluorescence microscopy
+is_obsolete: true
 
 [Term]
 id: MI:0022
@@ -205,14 +204,14 @@ is_a: MI:0027 ! cosedimentation
 
 [Term]
 id: MI:0029
-name: cosedimentation through density gradients
+name: cosedimentation through density gradient
 def: "Sedimentation through a density gradient measures the sedimentation rate of a mixture of proteins through either a glycerol or sucrose gradient. Two interacting proteins will sediment mostly as a complex at concentrations above the binding constant. By varying the concentration of one or both of the complex constituents and taking into account the dilution of the species during sedimentation\, one can reasonably accurately estimate the binding constant." [PMID:10410796]
 exact_synonym: "density sedimentatio" []
 is_a: MI:0027 ! cosedimentation
 
 [Term]
 id: MI:0030
-name: cross-linking studies
+name: cross-linking study
 def: "Analysis of complexes obtained by chemical treatments that promote the formation of covalent bonds among molecules in close proximity." [PMID:14755292]
 exact_synonym: "crosslink" []
 is_a: MI:0401 ! biochemical
@@ -224,7 +223,7 @@ def: "A cross-linker is a bifunctional molecule having two reactive ends linked 
 synonym: "Label transfer techniques" []
 synonym: "Photoaffinity labelling" []
 exact_synonym: "protein crosslink" []
-is_a: MI:0030 ! cross-linking studies
+is_a: MI:0030 ! cross-linking study
 
 [Term]
 id: MI:0032
@@ -243,9 +242,9 @@ is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0034
-name: display technologies
+name: display technology
 def: "All the methods that permit the physical linking of a protein/peptide to its coding sequence. As a consequence affinity purification of the displayed peptide results in the genetic enrichment of its coding sequence. By these technologies genes encoding a peptide with desired binding properties can be selected over an excess of up to 1012 unrelated molecules." [PMID:14755292]
-is_a: MI:0400 ! affinity technologies
+is_a: MI:0400 ! affinity technology
 
 [Term]
 id: MI:0035
@@ -334,7 +333,7 @@ id: MI:0047
 name: far western blotting
 def: "Proteins are fractionated by PAGE (SDS-polyacrylamide gel electrophoresis)\, transferred to a nitrocellulose membrane and tested for the ability to bind to a protein\, a peptide\, or any other ligand. Cell lysates can also be fractionated before gel electrophoresis to increase the sensitivity of the method for detecting interactions with rare proteins. Denaturants are removed during the blotting procedure\, which allows many proteins to recover (or partially recover) activity. However\, if biological activity is not recoverable\, the proteins can be fractionated by a non denaturing gel system. This variation of the method eliminates the problem of activity regeneration and allows the detection of binding when the presence of a protein complex is required for binding. The protein probe can be prepared by any one of several procedures\, while fusion affinity tags greatly facilitate purification. Synthesis in E. coli with a GST fusion\, epitope tag\, or other affinity tag is most commonly used. The protein of interest can then be radioactively labelled\, biotinylated\, or used in the blotting procedure as an unlabeled probe that is detected by a specific antibody." [PMID:7708014]
 synonym: "Affinity blotting" []
-is_a: MI:0400 ! affinity technologies
+is_a: MI:0400 ! affinity technology
 
 [Term]
 id: MI:0048
@@ -348,7 +347,7 @@ id: MI:0049
 name: filter binding
 def: "Proteins expressed by different clones of an expression library are bound to a nitrocellulose membrane\, by colony (bacterial library) or plaque (phage library) blotting. A labelled protein can then be used as a probe to identify clones expressing proteins that interact with the probe. Interactions occur on nitrocellulose filters. The method is highly general and therefore widely applicable\, in that proteins as diverse as transcription factors and growth factor receptors have been successfully used as probes. A variety of approaches can be used to label the protein ligand\, alternatively the ligand can be detected by a specific antibody." [PMID:7708014]
 synonym: "Filter overlay assay" []
-is_a: MI:0400 ! affinity technologies
+is_a: MI:0400 ! affinity technology
 
 [Term]
 id: MI:0050
@@ -359,7 +358,7 @@ is_obsolete: true
 
 [Term]
 id: MI:0051
-name: fluorescence technologies
+name: fluorescence technology
 def: "Techniques based upon the measurement of the emission of one or more photons by a molecule activated by the absorption of a quantum of electro-magnetic radiation. Typically the emission\, which is characterised by a wavelength that is longer than the one of excitatory radiation\, occurs within 10-8 seconds." [PMID:14755292]
 exact_synonym: "fluorescence" []
 is_a: MI:0013 ! biophysical
@@ -370,7 +369,7 @@ name: fluorescence correlation spectroscopy
 def: "FCS monitors the random motion of fluorescently labelled molecules inside a defined volume irradiated by a focused laser beam. These fluctuations provide information on the rate of diffusion or diffusion time of a particle and this is directly dependent on the particle mass. As a consequence\, any increase in the mass of a biomolecule\, e.g. as a result of an interaction with a second molecule\, is readily detected as an increase in the diffusion time of the particle. From these results the concentration of the different molecules can be calculated as well as their binding constant." [PMID:10733953]
 synonym: "FCS" []
 exact_synonym: "fcs" []
-is_a: MI:0051 ! fluorescence technologies
+is_a: MI:0051 ! fluorescence technology
 
 [Term]
 id: MI:0053
@@ -379,7 +378,7 @@ def: "Because of the long lifetimes of excited fluorescent molecules (nanosecond
 synonym: "FPS" []
 synonym: "Fluorescence anisotropy" []
 exact_synonym: "fps" []
-is_a: MI:0051 ! fluorescence technologies
+is_a: MI:0051 ! fluorescence technology
 
 [Term]
 id: MI:0054
@@ -388,7 +387,7 @@ def: "Cells in suspension flow through a laser beam\, the scattered light or emi
 synonym: "FACS" []
 synonym: "Flow cytometry" []
 exact_synonym: "facs" []
-is_a: MI:0051 ! fluorescence technologies
+is_a: MI:0051 ! fluorescence technology
 
 [Term]
 id: MI:0055
@@ -398,7 +397,7 @@ synonym: "FRET" []
 synonym: "FRET analysis" []
 synonym: "RET" []
 exact_synonym: "fret" []
-is_a: MI:0051 ! fluorescence technologies
+is_a: MI:0051 ! fluorescence technology
 
 [Term]
 id: MI:0056
@@ -410,7 +409,7 @@ is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0057
-name: gene neighbourhoods
+name: gene neighbourhood
 def: "Gene pairs that show a conserved topological neighbourhood in many prokaryotic genomes are considered by this approach to encode interacting or functionally related proteins. By measuring the physical distance of any given gene pair in different genomes\, interacting partners are inferred." [PMID:9787636]
 is_a: MI:0058 ! genome based prediction
 
@@ -512,19 +511,20 @@ synonym: "Gel Filtration" []
 synonym: "Siezing column" []
 synonym: "Size Exclusion Chromatography" []
 is_a: MI:0013 ! biophysical
-is_a: MI:0091 ! chromatography technologies
+is_a: MI:0091 ! chromatography technology
 
 [Term]
 id: MI:0072
-name: monoclonal antibody
-def: "Monoclonal antibodies are monospecific antibodies produced in the supernatant of a cell line obtained by fusing a lymphocyte B to a myeloma cell line or selected by phage display technology." [PMID:14755292]
+name: monoclonal antibody western blot
+def: "Western blot assay carried out using monospecific antibodies produced in the supernatant of a cell line obtained by fusing a lymphocyte B to a myeloma cell line or selected by phage display technology." [PMID:14755292]
+exact_synonym: "monoclonal western" []
 is_a: MI:0113 ! western blot
 
 [Term]
 id: MI:0073
 name: mrna display
 def: "This method relies on the covalent coupling of mRNA to the nascent polypeptide. The mRNA (natural or artificial) is first covalently linked to a short DNA linker carrying a puromycin moiety. The mRNA mixture is then translated in vitro. When the ribosome reaches the RNA-DNA junction the ribosome stalls and the puromycin moiety enters the peptidyltransferase site of the ribosome and forms a covalent linkage to the nascent polypeptide. As a result the protein and the mRNA are covalently joined and can be isolated from the ribosome and purified. In the current protocol\, a cDNA strand is then synthesised to form a less sticky RNA-DNA hybrid and these complexes are finally used for affinity selection. As in most display approaches\, several selections cycles (3-6) are sufficient to enrich for mRNAs encoding ligand proteins." [PMID:11551470]
-is_a: MI:0034 ! display technologies
+is_a: MI:0034 ! display technology
 
 [Term]
 id: MI:0074
@@ -581,7 +581,7 @@ is_a: MI:0078 ! nucleotide sequence identification
 id: MI:0081
 name: peptide array
 def: "The peptide synthesis methods offer numerous opportunities to synthesise and subsequently screen large arrays of synthetic peptides on planar cellulose supports. Discrete spots are arranged as arrays on membrane sheets where each spot is individually accessed by manual or automated delivery of the appropriate reagent solutions. Over the past few years protein-protein recognition\, peptide-metal ion interactions\, peptide-nucleic acid binding\, enzymatic modification of peptides experiments\, have been explored using synthetic peptide arrays on planar support." [PMID:11167074]
-is_a: MI:0008 ! array technologies
+is_a: MI:0008 ! array technology
 
 [Term]
 id: MI:0082
@@ -601,7 +601,7 @@ is_a: MI:0093 ! protein sequence identification
 id: MI:0084
 name: phage display
 def: "Peptide sequences or entire proteins can be displayed on phage capsids by fusion to coat proteins to generate a library of fusion phages each displaying a different peptide. Such a library can then be exploited to identify specific phages that display peptides that bind to any given bait molecule for instance an antibody. The selection is performed by a series of cycles of affinity purification known as panning. The bait protein\, immobilized on a solid support (plastic\, agarose\, sepharose\, magnetic beads and others) is soaked in the phage mixture and that phage that remains attached to the bait is amplified and carried through a further affinity purification step. Each cycle results in an approximately 1\,000-fold enrichment of specific phage and after a few selection rounds (2-4)\, DNA sequencing of the tight-binding phage reveals only a small number of sequences. Phage display panning experiments can be carried out either on libraries of peptides of random amino acid sequence or on libraries of displaying natural peptides obtained by inserting cDNA fragments into the phage vector (cDNA libraries). Libraries have been assembled on several different phages (Fd\, Lambda or T7)." [PMID:7708014, PMID:10975452]
-is_a: MI:0034 ! display technologies
+is_a: MI:0034 ! display technology
 
 [Term]
 id: MI:0085
@@ -611,8 +611,9 @@ is_a: MI:0058 ! genome based prediction
 
 [Term]
 id: MI:0086
-name: polyclonal antibody
-def: "Polyclonal antibodies are a mixture of different antibodies that represent the immune response\, normally in an experimental animal\, to any given antigen." [PMID:14755292]
+name: polyclonal antibody western blot
+def: "Western blot assay carried out using a mixture of different antibodies that represent the immune response\, normally in an experimental animal\, to the protein of interest." [PMID:14755292]
+exact_synonym: "polyclonal western" []
 is_a: MI:0113 ! western blot
 
 [Term]
@@ -632,7 +633,7 @@ is_a: MI:0080 ! partial dna sequence identification by hybridization
 id: MI:0089
 name: protein array
 def: "The protein array technology allows the screening of biochemical activities or binding abilities of hundreds or thousands of protein samples in parallel. After synthesis and purification by high-throughput methodologies\, the proteins are printed onto the chip by using an instrument (micro-arrayer) that is capable of spotting liquid samples in a reproducible manner onto a planar support. The ordered protein array can then be probed with labelled molecules to identify proteins that bind to the bait." [PMID:12067604, PMID:10976071]
-is_a: MI:0008 ! array technologies
+is_a: MI:0008 ! array technology
 
 [Term]
 id: MI:0090
@@ -644,11 +645,11 @@ is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0091
-name: chromatography technologies
+name: chromatography technology
 def: "Used to separate and/or analyse complex mixtures. The components to be separated are distributed between two phases\: a stationary phase (bed) and a mobile phase which percolates through the stationary bed. The nature of the two phases determines the separation criteria exploited by the column such as affinity\, ionic charges\, size or hydrophobicity of the molecules under analysis. Each type of column can be implemented with the mobile phase under atmospheric or high pressure condition. In this later case columns are designated as High Pressure Liquid Chromatography (HPLC)." [PMID:14755292]
 synonym: "column chromatography" []
 exact_synonym: "chromatography" []
-is_a: MI:0400 ! affinity technologies
+is_a: MI:0400 ! affinity technology
 
 [Term]
 id: MI:0092
@@ -656,7 +657,7 @@ name: protein in situ array
 def: "Protein In Situ Array is a method by which protein arrays are rapidly generated in one step directly from DNA\, by cell-free protein expression and simultaneous in situ immobilisation at a surface. Individual genes or fragments are produce by PCR or RT-PCR depending on the source of genetic material using properly designed primers. The PISA is generated by cell-free protein synthesis using coupled transcription and translation to produce a double HexaHis-tagged protein\, the reaction being carried out on a surface to which the protein adheres as soon as it is synthesised." [PMID:11470888]
 synonym: "PISA" []
 exact_synonym: "pisa" []
-is_a: MI:0008 ! array technologies
+is_a: MI:0008 ! array technology
 
 [Term]
 id: MI:0093
@@ -677,13 +678,13 @@ name: proteinchip(r) on a surface-enhanced laser desorption/ionization
 def: "ProteinChip(r) Array technology is a surface-enhanced laser desorption/ionization (SELDI) approach (Ciphergen Biosystems Inc. Fremont\, CA\, USA) for sample fractionation accomplished by retentate chromatography. Retentate chromatography is performed on ProteinChip Arrays with varying chromatographic properties (e.g. anion exchange\, cation exchange\, metal affinity and reverse phase). By utilising arrays with differing surface chemistries in parallel and in series\, a complex mixture of proteins\, as from cells or body fluids\, can be resolved into subsets of proteins with common properties. Specific analytes can also be examined by using preactivated arrays to which a bait molecule (such as an antibody or biotinylated DNA) is immobilized and a solution containing the binding partner(s) is presented to the array. This array-based immunoprecipitation or protein-binding experiment has been used with good success to study DNA-binding proteins\, receptor-ligand interactions\, and protein complexes. Any ligand retained on a SELDI chip can directly be identified by mass spectrometry." [PMID:11827829]
 synonym: "SELDI ProteinChip" []
 exact_synonym: "seldi chip" []
-is_a: MI:0008 ! array technologies
+is_a: MI:0008 ! array technology
 
 [Term]
 id: MI:0096
 name: pull down
 def: "A specific affinity chromatography method where a protein of interest (bait) is expressed as a fusion to an affinity tag (GST\, HIS tag and others) and linked at high concentration to a support that has affinity for the tag. Purified proteins or cellular extracts are then adsorbed to the resin and the retained binding proteins are identified. Thus\, in this approach\, the protein that has affinity for the solid support (bait) is expressed and purified first\, often in an heterologous system\, and then challenged with a solution containing the candidate partner proteins. no antibodies to retain bait but other affinity stuffs." [PMID:14755292]
-is_a: MI:0004 ! affinity chromatography technologies
+is_a: MI:0004 ! affinity chromatography technology
 
 [Term]
 id: MI:0097
@@ -697,7 +698,7 @@ is_a: MI:0228 ! cytoplasmic complementation assay
 id: MI:0098
 name: ribosome display
 def: "This method permits the coupling of phenotype to genotype via the formation of a non-covalent ternary complex between mRNAs and their encoded polypeptides while they are translated in an in vitro system. As a first step a cDNA library is constructed that encodes chimeric proteins in which the natural proteins or protein domains are fused to a C-terminal tether. As a consequence when the mRNA is translated in vitro the domain can fold while the tether is still in the ribosomal tunnel. Furthermore this chimeric mRNAs lack a stop codon\, thus preventing release of the mRNA and the polypeptide from the ribosome. High concentrations of magnesium and low temperature further stabilise the ternary complex. Similarly to phage display\, these complexes can be used directly to select for nucleic acids encoding proteins with desired properties." [PMID:11551470, PMID for application instance:12167034]
-is_a: MI:0034 ! display technologies
+is_a: MI:0034 ! display technology
 
 [Term]
 id: MI:0099
@@ -777,7 +778,7 @@ is_a: MI:0084 ! phage display
 [Term]
 id: MI:0109
 name: tap tag coimmunoprecipitation
-def: "The TAP method involves the fusion of the TAP tag (encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A) to the target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This two steps purification steps ensures a highly selective complex purification of the tapped protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag).\nOBSOLETE redundant term. Map to feature type\: calmodulin binding protein-protein A (MI\:0524) and Interaction detection method\: tandem affinity purification (MI\:0676)." [PMID:10504710]
+def: "The TAP method involves the fusion of the TAP tag (encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A) to the target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This two steps purification steps ensures a highly selective complex purification of the tapped protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag).\nOBSOLETE redundant term. Map to feature type\: tap tagged (MI\:0524) and  as interaction detection method  tandem affinity purification (MI\:0676)." [PMID:10504710]
 exact_synonym: "tap tag coip" []
 is_obsolete: true
 
@@ -804,7 +805,7 @@ is_a: MI:0228 ! cytoplasmic complementation assay
 [Term]
 id: MI:0113
 name: western blot
-def: "Western blot is a procedure to identify and quantify proteins. A mixture of protein is first submitted to an electrophoresis in denaturant condition and then electro-transferred from the gel to a membrane. The membrane is then incubated with a primary antibody specific for a given protein or a specific residue modification in the sample under analysis. A secondary antibody\, radiolabelled or fused to a chromogenic enzyme\, targets the first antibody and allows the visualisation of the protein band on the membrane." [PMID:14755292]
+def: "Western blot is a procedure to identify and quantify proteins. A mixture of protein is first submitted to an electrophoresis in denaturing condition and then electro-transferred from the gel to a membrane. The membrane is then incubated with a primary antibody specific for a given protein or a specific residue modification in the sample under analysis. A secondary antibody\, radiolabelled or fused to fluorophore or to a chromogenic enzyme\, targets the first antibody and allows the visualisation of the protein band on the membrane." [PMID:14755292]
 synonym: "Immuno blot" []
 is_a: MI:0421 ! identification by antibody
 is_a: MI:0659 ! experimental feature detection
@@ -822,7 +823,7 @@ is_a: MI:0659 ! experimental feature detection
 id: MI:0115
 name: yeast display
 def: "The proteins are displayed on the surface of the yeast S. cerevisiae by fusion to signal sequences for protein secretion. This method is limited by the low efficiency of the yeast display system but can take full advantage of exploiting cell sorting methods (FACS) to isolate cells that display molecules with desired binding properties." [PMID:9181578]
-is_a: MI:0034 ! display technologies
+is_a: MI:0034 ! display technology
 is_a: MI:0054 ! fluorescence-activated cell sorting
 
 [Term]
@@ -1910,7 +1911,7 @@ id: MI:0225
 name: chromatin immunoprecipitation array
 def: "The method combines a modified chromatin immunoprecipitation (ChIP) procedure\, with DNA microarray analysis. Cells are fixed with formaldehyde\, harvested\, and disrupted by sonication. The DNA fragments cross-linked to a protein of interest are enriched by immunoprecipitation with a specific antibody. After reversal of the cross-links\, the enriched DNA is amplified and labeled with a fluorescent dye (Cy5) by using a ligation-mediatedpolymerase chain reaction (LM-PCR). In parallel a sample of DNA that is not enriched by immunoprecipitation is subjected to LM-PCR in the presence of a different fluorophore (Cy3)\, and both immunoprecipitation (IP)-enriched and unenriched pools of labeled DNA were hybridized to a single DNA microarray containing a set of intergenic sequences. The ratio of the Cy5 to Cy3 fluorescence intensities measured at each DNA element in the microarray provided a measure of the extent of binding of the transcription factor to the corresponding genomic locus." [PMID:11206552, PMID:11125145]
 exact_synonym: "chip-chip" []
-is_a: MI:0008 ! array technologies
+is_a: MI:0008 ! array technology
 is_a: MI:0402 ! chromatin immunoprecipitation assays
 
 [Term]
@@ -1919,14 +1920,14 @@ name: ion exchange chromatography
 def: "Stable complexes and their component proteins can be separated on the basis of their net charge by ion-exchange chromatography. If a protein has a net positive charge at pH 7\, it will usually bind to a column of beads containing carboxylate groups\, and can then be eluted by increasing the concentration of sodium chloride or another salt in the eluting buffer by competition of sodium ions with positively charged groups on the protein for binding to the column. Protein that have a low density of net positive charge will tend to emerge first\, followed by those having a higher charge density. Positively charged complexes or proteins (cationic proteins) can be separated on negatively charged carboxymethyl-cellulose (CM-cellulose) columns. Conversely\, negatively charged complexes or proteins (anionic proteins) can be separated by chromatography on positively charged diethylaminoethyl-cellulose (DEAE-cellulose) columns." [PMID:14755292]
 synonym: "IEC" []
 exact_synonym: "ion exchange chrom" []
-is_a: MI:0091 ! chromatography technologies
+is_a: MI:0091 ! chromatography technology
 
 [Term]
 id: MI:0227
 name: reverse phase chromatography
 def: "Reverse phase chromatography operates on the basis of hydrophilicity and lipophilicity. The stationary phase consists of silica based packings with n-alkyl chains covalently bound. For example\, C-8 signifies an octyl chain and C-18 an octadecyl ligand in the matrix. The more hydrophobic the matrix on each ligand\, the greater is the tendency of the column to retain hydrophobic moieties. Thus hydrophilic compounds elute more quickly than do hydrophobic compounds." [PMID:14755292]
 exact_synonym: "reverse phase chrom" []
-is_a: MI:0091 ! chromatography technologies
+is_a: MI:0091 ! chromatography technology
 
 [Term]
 id: MI:0228
@@ -1971,63 +1972,63 @@ is_a: MI:0314 ! complex
 
 [Term]
 id: MI:0234
-name: 131i radiolabelled
+name: 131i radiolabel
 def: "Molecule labelled with 131 radio isotope of iodine atoms." [PMID:14755292]
 synonym: "131I" []
 synonym: "I131" []
-is_a: MI:0517 ! radiolabelled molecule
+is_a: MI:0517 ! radiolabel
 
 [Term]
 id: MI:0235
-name: 14c radiolabelled
+name: 14c radiolabel
 def: "Molecule labelled with the radio isotope 14 of carbon atoms." [PMID:14755292]
 synonym: "14C" []
 synonym: "C14" []
-is_a: MI:0517 ! radiolabelled molecule
+is_a: MI:0517 ! radiolabel
 
 [Term]
 id: MI:0236
-name: 32p radiolabelled
+name: 32p radiolabel
 def: "Molecule labelled with the radio isotope 32 of phosphorus atoms." [PMID:14755292]
 synonym: "32P" []
 synonym: "P32" []
-is_a: MI:0517 ! radiolabelled molecule
+is_a: MI:0517 ! radiolabel
 
 [Term]
 id: MI:0237
-name: 33p radiolabelled
+name: 33p radiolabel
 def: "Molecule labelled with the radio isotope 33 of phosphorus atoms." [PMID:14755292]
 synonym: "33P" []
 synonym: "P33" []
-is_a: MI:0517 ! radiolabelled molecule
+is_a: MI:0517 ! radiolabel
 
 [Term]
 id: MI:0238
-name: 3h radiolabelled
+name: 3h radiolabel
 def: "Molecules labelled with isotope 3 of hydrogen atoms." [PMID:14755292]
 synonym: "3H" []
 synonym: "H3" []
 synonym: "tritium" []
-is_a: MI:0517 ! radiolabelled molecule
+is_a: MI:0517 ! radiolabel
 
 [Term]
 id: MI:0239
-name: biotin tagged
+name: biotin tag
 def: "Biotin\, a 244 Dalton vitamin found in tissue and blood\, binds with high affinity to avidin and streptavidin protein. Since biotin is a relatively small molecule\, it can be conjugated to many proteins or nucleic acids without significantly altering their biological activity. Biotinylation reagents are available for targeting a variety of specific functional groups\, including primary amines\, sulfhydryls\, carboxyls and carbohydrates that lead to nucleotides or amino acid biotinilation." [PMID:14755292]
-is_a: MI:0507 ! tagged molecule
+is_a: MI:0507 ! tag
 
 [Term]
 id: MI:0240
-name: fusion proteins
-def: "The protein under study is expressed as a fusion with a labelling protein\, having either fluorescence properties or an enzymatic activity that facilitates its identification\, localisation or quantification." [PMID:14755292]
-is_a: MI:0507 ! tagged molecule
+name: fusion protein
+def: "The protein under study is expressed as a fusion with a labelling protein\, having either fluorescence properties or an enzymatic activity that facilitates its purification\, identification\, localisation or quantification." [PMID:14755292]
+is_a: MI:0507 ! tag
 
 [Term]
 id: MI:0241
-name: horseradish peroxidase tagged
+name: horseradish peroxidase tag
 def: "Protein is fused to horseradish peroxidase\, and the measure of this enzyme activity can be taken as indicative of presence of protein." [PMID:14755292]
-exact_synonym: "hrp tagged" []
-is_a: MI:0365 ! enzyme tagged
+exact_synonym: "hrp tag" []
+is_a: MI:0365 ! enzyme tag
 
 [Term]
 id: MI:0242
@@ -2062,29 +2063,29 @@ id: MI:0246
 name: cabri
 def: "CABRI cell lines catalogue available at.\nhttp\://www.cabri.org/" [PMID:14755292]
 xref_analog: id-validation-regexp:\"\[0-9\]+|ACC\\s\[A-Z0-9\]+|ECACC\\s\[A-Z0-9\]+|LMBP\\s\[A-Z0-9\]+|ICLC\\s\[A-Z0-9\]+|CIP-\[0-9\]+\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0473 ! participant database
 
 [Term]
 id: MI:0247
 name: newt
-def: "New EBI Web Taxonomy.\nhttp\://www.ebi.ac.uk/newt/index.html" [PMID:14755292]
+def: "New EBI Web Taxonomy.\nhttp\://www.ebi.ac.uk/newt" [PMID:14755292]
 xref_analog: id-validation-regexp:\"\[0-9\]+\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0473 ! participant database
 
 [Term]
 id: MI:0248
 name: resid
 def: "The RESID Database of Protein Modifications is a comprehensive collection of annotations and structures for protein modifications including amino-terminal\, carboxyl-terminal and peptide chain cross-link post-translational modifications.\nhttp\://www.ebi.ac.uk/RESID/index.html" [PMID:14755292]
 xref_analog: id-validation-regexp:\"AA\[0-9\]\{4\}\"
-is_a: MI:0447 ! feature database xref
-is_a: MI:0473 ! participant database xref
+is_a: MI:0447 ! feature database
+is_a: MI:0473 ! participant database
 
 [Term]
 id: MI:0249
 name: huge
 def: "A Database of Human Unidentified Gene-Encoded Large Proteins Analyzed by Kazusa Human cDNA Project.\nhttp\://www.kazusa.or.jp/huge/" [PMID:14755292]
-xref_analog: id-validation-regexp:\"KIAA\[0-9\]\{4\}\"
-is_a: MI:0473 ! participant database xref
+xref_analog: id-validation-regexp:\"KIAA\[0-9\]\{4\}\[A-Z\]\{0\,1\}\"
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0250
@@ -2106,8 +2107,8 @@ is_a: MI:0116 ! feature type
 
 [Term]
 id: MI:0253
-name: isotope labelled
-def: "isotope." [PMID:14755292]
+name: isotope label
+def: "One of several nuclides having the same number of protons in their nuclei and hence having the same atomic number\, but differing in the number of neutrons and therefore\, in the mass number." [PMID:14755292]
 is_a: MI:0505 ! experimental feature
 
 [Term]
@@ -2462,7 +2463,7 @@ name: peptide
 def: "Chains of amino acids joined by peptide bonds. Distinction between peptides\, oligopeptides and polypeptides is arbitrarily by length; a polypeptide is perhaps more than 15 residues." [PMID:14755292]
 synonym: "oligopeptide" []
 synonym: "polypeptide" []
-is_a: MI:0326 ! protein
+is_a: MI:0383 ! biopolymer
 
 [Term]
 id: MI:0328
@@ -2671,7 +2672,7 @@ is_a: MI:0353 ! cross-reference type
 [Term]
 id: MI:0358
 name: primary-reference
-def: "Used to indicate the PMID from which the experimental data is taken." [PMID:14755292]
+def: "Used to indicate the PMID from which the experimental data is extracted." [PMID:14755292]
 is_a: MI:0353 ! cross-reference type
 
 [Term]
@@ -2723,30 +2724,32 @@ is_a: MI:0362 ! inference
 
 [Term]
 id: MI:0365
-name: enzyme tagged
-def: "Protein is fused to an enzyme\, for example alkaline phosphatase\, and measure of enzyme activity can be taken as indicative of presence of protein." [PMID:10935637]
-is_a: MI:0240 ! fusion proteins
+name: enzyme tag
+def: "Molecule under study is fused to an enzyme\, for example alkaline phosphatase\, and measure of enzyme activity can be taken as indicative of presence of protein." [PMID:10935637]
+is_a: MI:0240 ! fusion protein
 
 [Term]
 id: MI:0366
-name: alkaline phosphatase tagged
+name: alkaline phosphatase tag
 def: "Protein is fused to alkaline phosphatase\, and the measure of this enzyme activity can be taken as indicative of presence of protein." [PMID:10935637]
 exact_synonym: "alk phosphatase tag" []
-is_a: MI:0365 ! enzyme tagged
+is_a: MI:0365 ! enzyme tag
 
 [Term]
 id: MI:0367
-name: gfp tagged
+name: green fluorescent protein tag
 def: "The green fluorescent protein (GFP) of the bioluminescent jellyfish Aequorea victoria can be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native." [PMID:7491768]
 synonym: "green fluorescent protein tag" []
-is_a: MI:0240 ! fusion proteins
+exact_synonym: "gfp tag" []
+is_a: MI:0687 ! fluorescent protein tag
 
 [Term]
 id: MI:0368
-name: yfp tagged
+name: yellow fluorescent protein tag
 def: "Yellow fluorescent protein from Vibrio fischeri can be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native." [PMID:10929120]
 synonym: "yellow fluorescent protein tag" []
-is_a: MI:0240 ! fusion proteins
+exact_synonym: "yfp tag" []
+is_a: MI:0687 ! fluorescent protein tag
 
 [Term]
 id: MI:0369
@@ -2766,12 +2769,12 @@ is_a: MI:0230 ! membrane bound complementation assay
 
 [Term]
 id: MI:0371
-name: 35s radiolabelled
+name: 35s radiolabel
 def: "Molecule labelled with 35 radio isotope of sulfur. Proteins are often metabolically labelled\, usually be growth in 35S labelled culture medium." [PMID:14755292]
 synonym: "35S" []
 synonym: "S35" []
 synonym: "s35 radiolabelled" []
-is_a: MI:0517 ! radiolabelled molecule
+is_a: MI:0517 ! radiolabel
 
 [Term]
 id: MI:0372
@@ -2782,69 +2785,69 @@ is_a: MI:0344 ! cell lysate
 
 [Term]
 id: MI:0373
-name: dye labelled molecule
-def: "Molecules coupled with a dye which aids identification isolation and monitoring." [PMID:14577292]
+name: dye label
+def: "Dye coupled to a molecule allowing its identification isolation and monitoring." [PMID:14577292]
 exact_synonym: "dye labelled" []
 is_a: MI:0505 ! experimental feature
 
 [Term]
 id: MI:0374
-name: cyanine labelled
+name: cyanine label
 def: "The organic cyanine dyes emit in the red range (>550 nm)\, offer a number of advantages. Their emission range is such that background fluorescence is often reduced. In addition these molecules can be linked directly to specific locations in synthetically produced nucleic acids." [PMID:14577292]
-is_a: MI:0373 ! dye labelled molecule
+is_a: MI:0373 ! dye label
 
 [Term]
 id: MI:0375
-name: cy3 labelled
+name: cy3 label
 def: "The organic cyanine Cy3 emits maximally at 570 nm." [PMID:14577292]
-is_a: MI:0374 ! cyanine labelled
+is_a: MI:0374 ! cyanine label
 
 [Term]
 id: MI:0376
-name: cy5 labelled
+name: cy5 label
 def: "The organic cyanine Cy5 emits maximally at 670 nm." [PMID:14577292]
-is_a: MI:0374 ! cyanine labelled
+is_a: MI:0374 ! cyanine label
 
 [Term]
 id: MI:0377
-name: fluorescein isothiocyanate labelled
+name: fluorescein isothiocyanate label
 def: "Fluorescein isothiocyanate is a yellow-green coloured low molecular weight dye which couples to proteins via reaction with primary amine groups at high pH. FITC is excitable at 488nm\, close to its absorption maximum at 494nm\, and produces maximum fluorescence emission around 520nm." [PMID:14577292]
 synonym: "FITC labelled" []
 synonym: "fluorescein isothiocyanate labbeled" []
 exact_synonym: "fitc labelled" []
-is_a: MI:0373 ! dye labelled molecule
+is_a: MI:0373 ! dye label
 
 [Term]
 id: MI:0378
-name: rare isotope labelled molecule
-def: "Molecule that has rare isotopes among its constituent atoms that can be used to identify\, localize or quantify the full molecule." [PMID:14577292]
+name: rare isotope label
+def: "Molecule can be labelled including rare isotopes among its constituent atoms that can be used to identify\, localize or quantify the full molecule." [PMID:14577292]
 exact_synonym: "rare isotope label" []
-is_a: MI:0253 ! isotope labelled
+is_a: MI:0253 ! isotope label
 
 [Term]
 id: MI:0379
-name: 13c labelled
+name: 13c label
 def: "Molecules labelled with isotope 13 of carbon atoms." [PMID:14577292]
 synonym: "13C" []
 synonym: "C13" []
-is_a: MI:0378 ! rare isotope labelled molecule
+is_a: MI:0378 ! rare isotope label
 
 [Term]
 id: MI:0380
-name: 15n labelled
+name: 15n label
 def: "Molecules labelled with isotope 15 of nytrogen atoms." [PMID:14577292]
 synonym: "15N" []
 synonym: "N15" []
-is_a: MI:0378 ! rare isotope labelled molecule
+is_a: MI:0378 ! rare isotope label
 
 [Term]
 id: MI:0381
-name: 2h labelled
+name: 2h label
 def: "Molecules labelled with isotope 2 of hydrogen atoms." [PMID:14577292]
 synonym: "2H2" []
 synonym: "D2" []
 synonym: "deuterium" []
-is_a: MI:0378 ! rare isotope labelled molecule
+is_a: MI:0378 ! rare isotope label
 
 [Term]
 id: MI:0382
@@ -2861,51 +2864,51 @@ is_a: MI:0313 ! interactor type
 
 [Term]
 id: MI:0384
-name: alexa labelled
+name: alexa label
 def: "All Alexa dyes are fluorescent iodoacetamide dyes that can be conjugated with the primary amines of biomolecules. All Alexa dyes and their conjugates are more fluorescent and more photostable than the commonly used dyes. The numbers in the Alexa names indicate the approximate excitation wavelength maximum in nm)." [PMID:10449539]
-is_a: MI:0373 ! dye labelled molecule
+is_a: MI:0373 ! dye label
 
 [Term]
 id: MI:0385
-name: alexa 350 labelled
+name: alexa 350 label
 def: "Alexa fluorescent dye analogue to AMCA (7-amino-4-methylcoumarin-3-acetic acid) with an approximate excitation wavelength maximum of 350 nm." [PMID:10449539]
-is_a: MI:0384 ! alexa labelled
+is_a: MI:0384 ! alexa label
 
 [Term]
 id: MI:0386
-name: alexa 430 labelled
+name: alexa 430 label
 def: "Alexa fluorescent dye analogue to Lucifer Yellow with an approximate excitation wavelength maximum of 430 nm." [PMID:10449539]
-is_a: MI:0384 ! alexa labelled
+is_a: MI:0384 ! alexa label
 
 [Term]
 id: MI:0387
-name: alexa 488 labelled
+name: alexa 488 label
 def: "Alexa fluorescent dye analogue to Oregon Green 488 with an approximate excitation wavelength maximum of 488 nm." [PMID:10449539]
-is_a: MI:0384 ! alexa labelled
+is_a: MI:0384 ! alexa label
 
 [Term]
 id: MI:0388
-name: alexa 532 labelled
+name: alexa 532 label
 def: "Alexa fluorescent dye analogue to Rhodamine 6G with an approximate excitation wavelength maximum of 532nm." [PMID:10449539]
-is_a: MI:0384 ! alexa labelled
+is_a: MI:0384 ! alexa label
 
 [Term]
 id: MI:0389
-name: alexa 546 labelled
+name: alexa 546 label
 def: "Alexa fluorescent dye analogue to Cy3 with an approximate excitation wavelength maximum of 546nm." [PMID:10449539]
-is_a: MI:0384 ! alexa labelled
+is_a: MI:0384 ! alexa label
 
 [Term]
 id: MI:0390
-name: alexa 568 labelled
+name: alexa 568 label
 def: "Alexa fluorescent dye analogue to Rhodamine Red-X with an approximate excitation wavelength maximum of 568nm." [PMID:10449539]
-is_a: MI:0384 ! alexa labelled
+is_a: MI:0384 ! alexa label
 
 [Term]
 id: MI:0391
-name: alexa 594 labelled
+name: alexa 594 label
 def: "Alexa fluorescent dye analogue to Texas Red-X with an approximate excitation wavelength maximum of 594nm." [PMID:10449539]
-is_a: MI:0384 ! alexa labelled
+is_a: MI:0384 ! alexa label
 
 [Term]
 id: MI:0396
@@ -2923,7 +2926,7 @@ is_a: MI:0018 ! two hybrid
 [Term]
 id: MI:0398
 name: two hybrid pooling approach
-def: "In the pooling strategy the sets of bait and prey hybrid vectors are mated all together and then selected. The positives double hybrid clones are sequenced to identify the interacting partners." [PMID:12634794, PMID for application instance:11283351]
+def: "In the pooling strategy the sets of bait and prey hybrid vectors are randomly mated. The positives double hybrid clones are sequenced to identify the interacting partners." [PMID:12634794, PMID for application instance:11283351]
 exact_synonym: "two hybrid pooling" []
 is_a: MI:0018 ! two hybrid
 
@@ -2936,7 +2939,7 @@ is_a: MI:0398 ! two hybrid pooling approach
 
 [Term]
 id: MI:0400
-name: affinity technologies
+name: affinity technology
 def: "Techniques which depend upon the strength of the interaction between two entities." [PMID:14755292]
 exact_synonym: "affinity techniques" []
 is_a: MI:0401 ! biochemical
@@ -2952,7 +2955,7 @@ id: MI:0402
 name: chromatin immunoprecipitation assays
 def: "Chromatin immunoprecipitation (ChIP) is a powerful approach that allows one to define the interaction of factors with specific chromosomal sites in living cells. ChIP involves treating cells or tissue briefly with formaldehyde to crosslink proteins to DNA. An antibody against a protein suspected of binding a given cis-element is then used to immunoprecipitate chromatin fragments. Polymerase chain reaction analysis of the immunoprecipitate with primers flanking the cis-element reveals whether a specific DNA sequence is recovered in an immune-specific manner and therefore whether the protein contacted the site in living cells." [PMID:12054902]
 exact_synonym: "ch-ip" []
-is_a: MI:0400 ! affinity technologies
+is_a: MI:0400 ! affinity technology
 
 [Term]
 id: MI:0403
@@ -2971,13 +2974,13 @@ is_a: MI:0401 ! biochemical
 id: MI:0405
 name: competition binding
 def: "Competitive binding experiments measure equilibrium binding of a single concentration of ligand at various concentrations of an unlabeled competitor. Analysis of these data gives the affinity of the receptor for the competitor." [PMID:14755292]
-is_a: MI:0400 ! affinity technologies
+is_a: MI:0400 ! affinity technology
 
 [Term]
 id: MI:0406
 name: deacetylase assay
-def: "Catalysis of the hydrolysis of an acetyl group or groups from a substrate molecule." [PMID:14755292]
-is_a: MI:0415 ! enzymatic studies
+def: "Measures the catalysis of the hydrolysis of an acetyl group or groups from a substrate molecule." [PMID:14755292]
+is_a: MI:0415 ! enzymatic study
 
 [Term]
 id: MI:0407
@@ -3010,7 +3013,7 @@ name: enzyme linked immunosorbent assay
 def: "Following non-covalent binding of a purified primary ligand to a solid phase\, a blocking reagent is added to prevent any non-specific binding. A specific antigen is then allowed to bind to the primary ligand. Unbound antigen is removed by washing and a secondary antibody conjugated to an enzyme (e.g. horseradish peroxidase) is added. Following a washing step to remove unbound secondary ligand\, the extent to which a chromogenic substrate (e.g. 3\,3'\, 5\,5' tetramethyl benzidine chromogen \[TMB\]) is converted to a soluble coloured product by the conjugated enzyme in a given time is determined by spectrophotometry using a standard microplate absorbance reader. A similar type of approach can be utilized to detect enzymatic activities. The substrate\, attached to a solid phase is incubated in the presence of the enzyme and the enzymatic modification is monitored by an antibody that is specific for the modified substrate (for instance a phosphorylated protein)." [PMID:11906746]
 synonym: "ELISA" []
 exact_synonym: "elisa" []
-is_a: MI:0400 ! affinity technologies
+is_a: MI:0400 ! affinity technology
 is_a: MI:0421 ! identification by antibody
 
 [Term]
@@ -3027,7 +3030,7 @@ def: "This method proves the interaction between a nucleic acid and a protein pa
 synonym: "Gel retardation assay" []
 synonym: "band shift" []
 exact_synonym: "emsa" []
-is_a: MI:0400 ! affinity technologies
+is_a: MI:0400 ! affinity technology
 
 [Term]
 id: MI:0414
@@ -3038,7 +3041,7 @@ is_a: MI:0407 ! direct interaction
 
 [Term]
 id: MI:0415
-name: enzymatic studies
+name: enzymatic study
 def: "Participants are enzyme or substrate in a biochemical reaction." [PMID:14755292]
 is_a: MI:0401 ! biochemical
 
@@ -3064,9 +3067,9 @@ is_obsolete: true
 [Term]
 id: MI:0419
 name: gtpase assay
-def: "GTPase assay." [PMID:14755292]
+def: "Measures the catalysis of the reaction\: GTP + H2O = GDP + phosphate." [PMID:14755292]
 synonym: "GTPase" []
-is_a: MI:0415 ! enzymatic studies
+is_a: MI:0415 ! enzymatic study
 
 [Term]
 id: MI:0420
@@ -3088,7 +3091,7 @@ is_a: MI:0661 ! experimental participant identification
 [Term]
 id: MI:0422
 name: immunostaining
-def: "immunostaining." [PMID:14755292]
+def: "Method using an antibody coupled with some colouring agent to detect a specific protein within a cell or tissue sample. In some cases the primary antibody is directly linked to a colouring agent\, more often the primary antibody is targeted by a secondary antibody\, targeting the primary antibody." [PMID:14755292]
 is_a: MI:0421 ! identification by antibody
 
 [Term]
@@ -3102,12 +3105,12 @@ is_a: MI:0424 ! protein kinase assay
 id: MI:0424
 name: protein kinase assay
 def: "Catalysis of the transfer of a phosphate group\, usually from ATP\, to a protein substrate." [PMID:14755292]
-is_a: MI:0415 ! enzymatic studies
+is_a: MI:0415 ! enzymatic study
 
 [Term]
 id: MI:0425
 name: kinase scintillation proximity assay
-def: "Relies on the radiolabelling of a peptide substrate immobilized on a scintillant coated SPA-bead. The kinase transfers a phosphate isotope from th nucleotide to the substrate." [PMID:14755292]
+def: "Relies on the radiolabelling of a peptide substrate immobilized on a scintillant coated SPA-bead. The kinase transfers a phosphate isotope from the nucleotide to the substrate." [PMID:14755292]
 exact_synonym: "kinase spa" []
 is_a: MI:0099 ! scintillation proximity assay
 is_a: MI:0424 ! protein kinase assay
@@ -3143,7 +3146,7 @@ id: MI:0430
 name: nucleic acid uv cross-linking assay
 def: "Radiolabelled nucleic acids with a known sequence are incubated with purified proteins or reproducible protein mixture (HPLC eluate fractions) and then irradiated with UV. The complex are treated with an enzyme to remove the unbound nucleic acid (Rnase A or Dnase I for example)\, washed and then analyzed by electrophoresis. The eventual complexes are identified by autoradiography. The proteins involved in the complex can be recognized by specific antibodies or by retrieving the original protein mixture and carrying further analysis on it. The affinity of the binding can be estimated by adding a non-labelled nucleic acid as competitor before the UV irradiation." [PMID:14755292]
 exact_synonym: "nucl ac uv crosslink" []
-is_a: MI:0030 ! cross-linking studies
+is_a: MI:0030 ! cross-linking study
 
 [Term]
 id: MI:0431
@@ -3170,14 +3173,14 @@ is_a: MI:0093 ! protein sequence identification
 [Term]
 id: MI:0434
 name: phosphatase assay
-def: "Measures catalysis of the reaction\: a phosphoprotein + H2O = a protein + phosphate." [PMID:14755292]
-is_a: MI:0415 ! enzymatic studies
+def: "Measures the catalysis of the reaction\: a phosphoprotein + H2O = a protein + phosphate." [PMID:14755292]
+is_a: MI:0415 ! enzymatic study
 
 [Term]
 id: MI:0435
 name: protease assay
-def: "Measures enzymatic hydrolysis of a peptide bond within a peptide or protein substrate." [PMID:14755292]
-is_a: MI:0415 ! enzymatic studies
+def: "Measures the enzymatic hydrolysis of a peptide bond within a peptide or protein substrate." [PMID:14755292]
+is_a: MI:0415 ! enzymatic study
 
 [Term]
 id: MI:0436
@@ -3216,7 +3219,7 @@ is_a: MI:0254 ! genetic interference
 id: MI:0440
 name: saturation binding
 def: "Saturation binding experiments measure specific ligand binding at equilibrium at various concentrations of the ligand. Analysis of these data can determine receptor number and affinity." [PMID:14755292]
-is_a: MI:0400 ! affinity technologies
+is_a: MI:0400 ! affinity technology
 
 [Term]
 id: MI:0441
@@ -3247,8 +3250,8 @@ relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0445
-name: experiment database xref
-def: "experiment database xref." [PMID:14755292]
+name: experiment database
+def: "experiment database." [PMID:14755292]
 exact_synonym: "experiment xref" []
 is_a: MI:0444 ! database citation
 
@@ -3257,12 +3260,12 @@ id: MI:0446
 name: pubmed
 def: "PubMed is designed to provide access to citations from biomedical literature.\nhttp\://www.ncbi.nlm.nih.gov/entrez/query.fcgi" [PMID:14755292]
 xref_analog: id-validation-regexp:\"\[0-9\]+\"
-is_a: MI:0445 ! experiment database xref
+is_a: MI:0445 ! experiment database
 
 [Term]
 id: MI:0447
-name: feature database xref
-def: "feature database xref." [PMID:14755292]
+name: feature database
+def: "feature database." [PMID:14755292]
 exact_synonym: "feature xref" []
 is_a: MI:0444 ! database citation
 
@@ -3272,8 +3275,8 @@ name: gene ontology
 def: "The objective of Gene Ontology (GO) is to provide controlled vocabularies for the description of the molecular function\, biological process and cellular component of gene products.\nhttp\://www.ebi.ac.uk/GO" [PMID:14755292]
 exact_synonym: "go" []
 xref_analog: id-validation-regexp:\"GO\:\[0-9\]\{7\}\"
-is_a: MI:0447 ! feature database xref
-is_a: MI:0461 ! interaction database xref
+is_a: MI:0447 ! feature database
+is_a: MI:0461 ! interaction database
 
 [Term]
 id: MI:0449
@@ -3281,15 +3284,15 @@ name: interpro
 def: "InterPro combines a number of databases (referred to as member databases) that use different methodologies and a varying degree of biological information on well-characterised proteins to derive protein signatures.\nhttp\://www.ebi.ac.uk/interpro/" [PMID:1252001]
 synonym: "InterPro" []
 xref_analog: id-validation-regexp:\"IPR\[0-9\]\{6\}\"
-is_a: MI:0447 ! feature database xref
+is_a: MI:0447 ! feature database
 
 [Term]
 id: MI:0450
 name: cdd
-def: "CD-Search service may be used to identify the conserved domains present in a protein sequence.\nhttp\://www.ncbi.nlm.nih.gov/Structure/cdd" [PMID:14755292]
+def: "The Conserved Domain Database may be used to identify the conserved domains present in a protein sequence.\nhttp\://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml" [PMID:14755292]
 synonym: "CDD" []
 xref_analog: id-validation-regexp:\"\[0-9\]+\"
-is_a: MI:0447 ! feature database xref
+is_a: MI:0447 ! feature database
 
 [Term]
 id: MI:0451
@@ -3310,7 +3313,7 @@ is_a: MI:0449 ! interpro
 [Term]
 id: MI:0453
 name: prints
-def: "PRINTS is a compendium of protein fingerprints. A fingerprint is a group of conserved motifs used to characterise a protein family.\nhttp\://www.bioinf.man.ac.uk/dbbrowser/PRINTS/" [PMID:14755292]
+def: "PRINTS is a compendium of protein fingerprints. A fingerprint is a group of conserved motifs used to characterise a protein family.\nhttp\://umber.sbs.man.ac.uk/dbbrowser/PRINTS/" [PMID:14755292]
 synonym: "PRINTS" []
 xref_analog: id-validation-regexp:\"PR\[0-9\]\{6\}\"
 is_a: MI:0449 ! interpro
@@ -3361,8 +3364,8 @@ name: mmdb
 def: "MMDB (Molecular Modeling DataBase)\, is a subset of three-dimensional structures obtained from the Protein Data Bank.\nhttp\://www.ncbi.nlm.nih.gov/Structure" [PMID:14755292]
 synonym: "MMDB" []
 xref_analog: id-validation-regexp:\"\[0-9\]+\"
-is_a: MI:0447 ! feature database xref
-is_a: MI:0461 ! interaction database xref
+is_a: MI:0447 ! feature database
+is_a: MI:0461 ! interaction database
 
 [Term]
 id: MI:0460
@@ -3370,13 +3373,13 @@ name: pdb
 def: "PDB maintain a single Protein Data Bank Archive of macromolecular structural data that is freely and publicly available to the global community.\nhttp\://www.wwpdb.org/" [PMID:14634627]
 synonym: "PDB" []
 xref_analog: id-validation-regexp:\"\[0-9\]\[a-zA-Z0-9\]\{3\}\"
-is_a: MI:0447 ! feature database xref
-is_a: MI:0461 ! interaction database xref
+is_a: MI:0447 ! feature database
+is_a: MI:0461 ! interaction database
 
 [Term]
 id: MI:0461
-name: interaction database xref
-def: "interaction database xref." [PMID:14755292]
+name: interaction database
+def: "interaction database." [PMID:14755292]
 exact_synonym: "interaction xref" []
 is_a: MI:0444 ! database citation
 
@@ -3386,16 +3389,16 @@ name: bind
 def: "The Biomolecular Interaction Network Database (BIND) is a collection of records documenting molecular interactions.\nhttp\://www.blueprint.org/bind" [PMID:14755292]
 synonym: "BIND" []
 xref_analog: id-validation-regexp:\"\[0-9\]+\"
-is_a: MI:0461 ! interaction database xref
-is_a: MI:0489 ! source database xref
+is_a: MI:0461 ! interaction database
+is_a: MI:0489 ! source database
 
 [Term]
 id: MI:0463
 name: grid
 def: "The General Repository for Interaction Datasets (GRID) is a database of genetic and physical interactions.\nhttp\://biodata.mshri.on.ca/grid" [PMID:14755292]
 synonym: "GRID" []
-is_a: MI:0461 ! interaction database xref
-is_a: MI:0489 ! source database xref
+is_a: MI:0461 ! interaction database
+is_a: MI:0489 ! source database
 
 [Term]
 id: MI:0464
@@ -3406,9 +3409,9 @@ synonym: "CYGD (MIPS)" []
 synonym: "MIPS" []
 synonym: "MPact" []
 xref_analog: id-validation-regexp:\"\[0-9\]+\"
-is_a: MI:0461 ! interaction database xref
-is_a: MI:0473 ! participant database xref
-is_a: MI:0489 ! source database xref
+is_a: MI:0461 ! interaction database
+is_a: MI:0489 ! source database
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0465
@@ -3416,15 +3419,15 @@ name: dip
 def: "The database of interacting protein (DIP) database stores experimentally determined interactions between proteins. It combines information from a variety of sources to create a single\, consistent set of protein-protein interactions.\nhttp\://dip.doe-mbi.ucla.edu/" [PMID:14755292]
 synonym: "DIP" []
 xref_analog: id-validation-regexp:\"DIP\[0-9\]+\[NE\]\"
-is_a: MI:0461 ! interaction database xref
-is_a: MI:0489 ! source database xref
+is_a: MI:0461 ! interaction database
+is_a: MI:0489 ! source database
 
 [Term]
 id: MI:0466
 name: ecocyc
 def: " EcoCyc is a bioinformatics database that describes the genome and the biochemical machinery of E. coli K12 MG1655.\nhttp\://ecocyc.org/" [PMID:14755292]
 synonym: "EcoCyc" []
-is_a: MI:0461 ! interaction database xref
+is_a: MI:0461 ! interaction database
 
 [Term]
 id: MI:0467
@@ -3433,14 +3436,14 @@ def: "The Reactome project is a collaboration among Cold Spring Harbor Laborator
 synonym: "GKB" []
 synonym: "Genome Knowledge Base" []
 synonym: "Reactome" []
-is_a: MI:0461 ! interaction database xref
+is_a: MI:0461 ! interaction database
 
 [Term]
 id: MI:0468
 name: hprd
 def: "The Human Protein Reference Database represents a centralized platform to visually depict and integrate information pertaining to domain architecture\, post-translational modifications\, interaction networks and disease association for each protein in the human proteome.\nhttp\://www.hprd.org/" [PMID:14755292]
 synonym: "HPRD" []
-is_a: MI:0461 ! interaction database xref
+is_a: MI:0461 ! interaction database
 
 [Term]
 id: MI:0469
@@ -3448,8 +3451,8 @@ name: intact
 def: "INTerAction datanase (IntAct) provides an open source database and toolkit for the storage\, presentation and analysis of protein interactions.\nhttp\://www.ebi.ac.uk/intact" [PMID:14681455]
 synonym: "IntAct" []
 xref_analog: id-validation-regexp:\"EBI-\[0-9\]+\"
-is_a: MI:0461 ! interaction database xref
-is_a: MI:0489 ! source database xref
+is_a: MI:0461 ! interaction database
+is_a: MI:0489 ! source database
 
 [Term]
 id: MI:0470
@@ -3457,8 +3460,8 @@ name: kegg
 def: " KEGG (Kyoto Encyclopedia of Genes and Genomes) is a knowledge base for systematic analysis of gene functions\, linking genomic information with higher order functional information and also supplies information about chemical compounds\, enzyme molecules and enzymatic reactions.\nhttp\://www.genome.ad.jp/kegg/" [PMID:14755292]
 synonym: "KEGG" []
 xref_analog: id-validation-regexp:\"\[a-zA-Z\]+\:\[a-zA-Z\]+\[0-9\]+\"
-is_a: MI:0461 ! interaction database xref
-is_a: MI:0473 ! participant database xref
+is_a: MI:0461 ! interaction database
+is_a: MI:0473 ! participant database
 
 [Term]
 id: MI:0471
@@ -3466,8 +3469,8 @@ name: mint
 def: "The Moleculer INTeraction database (MINT) is a relational database designed to store interactions between biological molecules.\nhttp\://mint.bio.uniroma2.it/mint/" [PMID:14755292]
 synonym: "MINT" []
 xref_analog: id-validation-regexp:\"MINT_\[0-9\]+\"
-is_a: MI:0461 ! interaction database xref
-is_a: MI:0489 ! source database xref
+is_a: MI:0461 ! interaction database
+is_a: MI:0489 ! source database
 
 [Term]
 id: MI:0472
@@ -3475,12 +3478,12 @@ name: msd
 def: "The Macromolecular Structure Database (MSD) - the European project for the collection\, management and distribution of data about macromolecular structures\, derived in part from the Protein Data Bank (PDB).\nhttp\://www.ebi.ac.uk/msd/" [PMID:14755292]
 synonym: "PQS" []
 xref_analog: id-validation-regexp:\"\[0-9\]\[a-zA-Z0-9\]\{3\}\"
-is_a: MI:0461 ! interaction database xref
+is_a: MI:0461 ! interaction database
 
 [Term]
 id: MI:0473
-name: participant database xref
-def: "participant database xref." [PMID:14755292]
+name: participant database
+def: "participant database." [PMID:14755292]
 exact_synonym: "participant xref" []
 is_a: MI:0444 ! database citation
 
@@ -3490,7 +3493,7 @@ name: chebi
 def: "A definitive\, freely available database of Chemical compounds of Biological Interest (ChEBI).\nhttp\://www.ebi.ac.uk/chebi/" [PMID:14755292]
 synonym: "ChEBI" []
 xref_analog: id-validation-regexp:\"CHEBI\:\[0-9\]+\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0473 ! participant database
 
 [Term]
 id: MI:0475
@@ -3501,7 +3504,7 @@ synonym: "DDBJ/EMBL/GenBank" []
 synonym: "EMBL" []
 synonym: "GenBank" []
 xref_analog: id-validation-regexp:\"\[0-9\]+|\[A-Z\]\{1\,2\}\[0-9\]+\\.\[0-9\]+ \"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0476
@@ -3509,7 +3512,7 @@ name: ensembl
 def: " Ensembl is a joint project between the EMBL-EBI and the Wellcome Trust Sanger Institute that aims at developing a system that maintains automatic annotation of large eukaryotic genomes.\nhttp\://www.ebi.ac.uk/ensembl" [PMID:15078858]
 synonym: "Ensembl" []
 xref_analog: id-validation-regexp:\"ENS\[A-Z\]+\[0-9\]\{11\}\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0477
@@ -3518,7 +3521,7 @@ def: "LocusLink provides a single query interface to curated sequence and descri
 synonym: "Entrez gene/locuslink" []
 exact_synonym: "entrezgene/locuslink" []
 xref_analog: id-validation-regexp:\"\[0-9\]+|\[A-Z\]\{1\,2\}_\[0-9\]+|\[A-Z\]\{1\,2\}_\[A-Z\]\{1\,4\}\[0-9\]+\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0478
@@ -3526,7 +3529,7 @@ name: flybase
 def: "FlyBase is a comprehensive database for information on the genetics and molecular biology of Drosophila.\nhttp\://fbserver.gen.cam.ac.uk\:7081/" [PMID:14755292]
 synonym: "FlyBase" []
 xref_analog: id-validation-regexp:\"FBgn\[0-9\]\{7\}\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0479
@@ -3534,7 +3537,7 @@ name: mgd/mgi
 def: "Mouse Genome Informatics (MGI) provides integrated access to data on the genetics\, genomics\, and biology of the laboratory mouse.\nhttp\://www.informatics.jax.org/" [PMID:14755292]
 synonym: "MGD/MGI" []
 xref_analog: id-validation-regexp:\"MGI\:\[0-9\]+\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0480
@@ -3542,7 +3545,7 @@ name: omim
 def: "Online Mendelian Inheritance in Man (OMIM) is a catalogue of human genes and genetic disorders\, with links to literature references\, sequence records\, maps\, and related databases.\nhttp\://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM" [PMID:14755292]
 synonym: "OMIM" []
 xref_analog: id-validation-regexp:\"\[0-9\]+\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0481
@@ -3550,7 +3553,7 @@ name: refseq
 def: "The Reference Sequence (RefSeq) collection aims to provide a comprehensive\, integrated\, non-redundant set of sequences\, including genomic DNA\, transcript (RNA)\, and protein products\, for a number of organisms.\nhttp\://www.ncbi.nlm.nih.gov/RefSeq/" [PMID:14755292]
 synonym: "Refseq" []
 xref_analog: id-validation-regexp:\"\[XNZ\]\[A-Z\]_\[0-9\]+|\[0-9\]+\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0482
@@ -3558,7 +3561,7 @@ name: rfam
 def: "Rfam is a large collection of multiple sequence alignments and covariance models covering many common non-coding RNA families.\nhttp\://www.sanger.ac.uk/Software/Rfam/" [PMID:14755292]
 synonym: "rfam" []
 xref_analog: id-validation-regexp:\"RF\[0-9\]\{5\}\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0483
@@ -3566,7 +3569,7 @@ name: rgd
 def: "The Rat Genome Database (RGD) curates and integrates rat genetic and genomic data.\nhttp\://rgd.mcw.edu/" [PMID:14755292]
 synonym: "RGD" []
 xref_analog: id-validation-regexp:\"\[0-9\]+\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0484
@@ -3574,7 +3577,7 @@ name: sgd
 def: "SGD is a scientific database of the molecular biology and genetics of the yeast Saccharomyces cerevisiae.\nhttp\://www.yeastgenome.org/" [PMID:14755292]
 synonym: "SGD" []
 xref_analog: id-validation-regexp:\"S\[0-9\]\{9\}\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0485
@@ -3582,7 +3585,7 @@ name: uniparc
 def: "UniProt Archive (UniParc) is part of UniProt project. It is a non-redundant archive of protein sequences derived from many sources.\nhttp\://www.ebi.ac.uk/uniparc/" [PMID:14681372]
 synonym: "UniParc" []
 xref_analog: id-validation-regexp:\"UPI\[A-F0-9\]\{10\}\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0486
@@ -3591,7 +3594,7 @@ def: "UniProt (Universal Protein Resource) is the world's most comprehensive cat
 synonym: "UniProt" []
 exact_synonym: "uniprotkb" []
 xref_analog: id-validation-regexp:\"\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]|\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]-\[0-9\]+|\[A-Z\]\{3\}\[0-9\]\{5\}|\[OPQ\]\[0-9\]\[A-Z0-9\]\{3\}\[0-9\]-PRO_\[0-9\]\{10\}\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0487
@@ -3599,7 +3602,7 @@ name: wormbase
 def: "WormBase is the central worm database that houses the gene reports\, locus reports\, translation reports\, expression pattern data and genome browser.\nhttp\://www.wormbase.org/" [PMID:14755292]
 synonym: "WormBase" []
 xref_analog: id-validation-regexp:\"WBGene\[0-9\]\{8\}\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0488
@@ -3611,8 +3614,8 @@ is_a: MI:0444 ! database citation
 
 [Term]
 id: MI:0489
-name: source database xref
-def: "source database xref." [PMID:14755292]
+name: source database
+def: "Source database." [PMID:14755292]
 is_a: MI:0444 ! database citation
 
 [Term]
@@ -3672,8 +3675,9 @@ is_a: MI:0495 ! experimental role
 
 [Term]
 id: MI:0499
-name: unspecified
+name: unspecified role
 def: "Role not specified or not applicable to the data." [PMID:14755292]
+is_a: MI:0495 ! experimental role
 is_a: MI:0500 ! biological role
 
 [Term]
@@ -3717,14 +3721,14 @@ is_a: MI:0221 ! expression level
 
 [Term]
 id: MI:0507
-name: tagged molecule
-def: "Molecules are engineered to include a tag\, which aids identification isolation and monitoring." [PMID:14755292]
+name: tag
+def: "Small molecules\, peptides or full proteins that can be used as label as they confer some property that facilitates identification purification and monitoring to the labelled molecule." [PMID:14755292]
 is_a: MI:0505 ! experimental feature
 
 [Term]
 id: MI:0508
 name: deacetylase radiometric assay
-def: "Measures the release of radiolabelled acetic acid from pre-labeled histone-." [PMID:14755292]
+def: "Measures the release of radiolabelled acetic acid from pre-labeled histone." [PMID:14755292]
 exact_synonym: "radiolabeled acetate" []
 is_a: MI:0406 ! deacetylase assay
 
@@ -3744,7 +3748,7 @@ name: homogeneous time resolved fluorescence
 def: "Methods based on the exceptionally long fluorescence lifetime characteristics of certain fluorophores\, which allows the elimination of the effects of background fluorescence. Uses nonradiative energy transfer or quenching between fluorescent lanthanide chelates and different acceptors to measure reaction rates." [PMID:14987100]
 synonym: "homogeneous time-resolved fluorescence" []
 exact_synonym: "htrf" []
-is_a: MI:0051 ! fluorescence technologies
+is_a: MI:0051 ! fluorescence technology
 
 [Term]
 id: MI:0511
@@ -3779,7 +3783,7 @@ id: MI:0515
 name: methyltransferase assay
 def: "Measures the catalysis of the transfer of a methyl group to an acceptor molecule." [PMID:14755292]
 exact_synonym: "methyltransferase as" []
-is_a: MI:0415 ! enzymatic studies
+is_a: MI:0415 ! enzymatic study
 
 [Term]
 id: MI:0516
@@ -3790,67 +3794,73 @@ is_a: MI:0515 ! methyltransferase assay
 
 [Term]
 id: MI:0517
-name: radiolabelled molecule
+name: radiolabel
 def: "A radiolabelled molecule has radio isotopes among its constituent atoms that can be used to identify\, localize or quantify the full molecule." [PMID:14755292]
 synonym: "radiolabeled" []
 exact_synonym: "radiolabelled" []
-is_a: MI:0253 ! isotope labelled
+is_a: MI:0253 ! isotope label
 
 [Term]
 id: MI:0518
-name: flag tagged
+name: flag tag
 def: "The protein of interest is expressed as a fusion to the peptide DYKDDDDKV for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem." [PMID:14755292]
+synonym: "DYKDDDDKV epitope tag" []
 synonym: "FLAG" []
 synonym: "FLAG-tagged" []
-is_a: MI:0507 ! tagged molecule
+is_a: MI:0507 ! tag
 
 [Term]
 id: MI:0519
-name: gst tagged
+name: glutathione s tranferase tag
 def: "The protein is expressed and purified as a fusion to the glutathione S-tranferase protein." [PMID:14755292]
 synonym: "glutathione S-tranferase tag" []
-is_a: MI:0240 ! fusion proteins
+exact_synonym: "gst tag" []
+is_a: MI:0365 ! enzyme tag
 
 [Term]
 id: MI:0520
-name: ha tagged
+name: ha tag
 def: "The protein of interest is expressed as a fusion to the peptide YPYDVPDYA (a fragment of the influenza hemagglutinin protein) for which antibodies are commercially available." [PMID:14755292]
-is_a: MI:0507 ! tagged molecule
+synonym: "YPYDVPDYA epitope tag" []
+is_a: MI:0507 ! tag
 
 [Term]
 id: MI:0521
-name: his tagged
+name: his tag
 def: "The protein of interest is expressed as a fusion to a poly-His tail. This permits purification by chromatography over a metal column or by binding to commercially available anti poly-His antibodies." [PMID:14755292]
-synonym: "6-His-tagged" []
-synonym: "Hexa-His-tagged" []
-synonym: "Histidine-tagged" []
-is_a: MI:0507 ! tagged molecule
+synonym: "6-His-tag" []
+synonym: "Hexa-His-tag" []
+synonym: "Histidine-tag" []
+is_a: MI:0507 ! tag
 
 [Term]
 id: MI:0522
-name: myc tagged
+name: myc tag
 def: "The protein of interest is expressed as a fusion to the peptide EUKLISEED (a fragment of the Myc oncogene protein) for which antibodies are commercially available. Sometimes multiple copies of the peptide are fused in tandem." [PMID:14755292]
-is_a: MI:0507 ! tagged molecule
+synonym: "EUKLISEED epitope tag" []
+is_a: MI:0507 ! tag
 
 [Term]
 id: MI:0523
-name: t7 tagged
-def: "T7 tagged protein." [PMID:14755292]
-is_a: MI:0507 ! tagged molecule
+name: t7 tag
+def: "The protein of interest is expressed as a fusion to the peptide MASMTGGQQMG for which antibodies are commercially available." [PMID:14755292]
+synonym: "MASMTGGQQMG epitope tag" []
+is_a: MI:0507 ! tag
 
 [Term]
 id: MI:0524
-name: calmodulin binding peptide plus protein a tagged
+name: calmodulin binding peptide plus protein a tag
 def: "Tag encoding a calmodulin binding peptide\, a TEV cleavage site\, and the Staphylococcus aureus Protein A fused to a target protein and the introduction of the construct into the host cell or organism\, maintaining the expression of the fusion protein at\, or close to\, its natural level. The fusion protein and associated components are recovered from cell extracts by affinity selection on an IgG matrix. After washing\, the TEV protease is added to release the bound material. The eluate is incubated with calmodulin-coated beads in the presence of calcium. This second affinity step is required to remove the TEV protease as well as traces of contaminants remaining after the first affinity selection. After washing\, the bound material is released with EGTA. This tag allows two steps purification steps ensuring a highly selective purification of the tapped protein (first round of selection on the protein A\, a high affinity tag) under mild condition (non denaturant pH or conditions required to remove the tag)." [PMID:14755292]
 synonym: "CBP-ProtA tagged" []
 exact_synonym: "tap tagged" []
-is_a: MI:0677 ! multiple tag
+is_a: MI:0677 ! tandem tag
 
 [Term]
 id: MI:0525
-name: v5 tagged
-def: "V5-tagged protein." [PMID:14755292]
-is_a: MI:0507 ! tagged molecule
+name: v5 tag
+def: "The protein of interest is expressed as a fusion to the peptide GKPIPNPLLGLDST for which antibodies are commercially available." [PMID:14755292]
+synonym: "GKPIPNPLLGLDST epitope tag" []
+is_a: MI:0507 ! tag
 
 [Term]
 id: MI:0526
@@ -4234,7 +4244,7 @@ name: digital object identifier
 def: "Identifier of a publication prior it pubmed indexing." [PMID:14755292]
 exact_synonym: "doi" []
 xref_analog: id-validation-regexp:\"doi\:\[0-9\]+\\.\[0-9\]+\\/\"
-is_a: MI:0445 ! experiment database xref
+is_a: MI:0445 ! experiment database
 
 [Term]
 id: MI:0575
@@ -4243,8 +4253,8 @@ def: "Alliance for Cellular Signaling (AfCS -Nature) store yeast 2-hybrid Intera
 synonym: "AfCS" []
 exact_synonym: "afcs" []
 xref_analog: id-validation-regexp:\"\[0-9\]+\"
-is_a: MI:0461 ! interaction database xref
-is_a: MI:0489 ! source database xref
+is_a: MI:0461 ! interaction database
+is_a: MI:0489 ! source database
 
 [Term]
 id: MI:0576
@@ -4261,11 +4271,11 @@ is_a: MI:0660 ! feature prediction
 
 [Term]
 id: MI:0578
-name: maltose binding protein tagged
+name: maltose binding protein tag
 def: "The protein is expressed and purified as a fusion to the glutathione maltose-binding protein (MBP). The MBP-fusion protein can be purified by affinity chromatography using an amylose resin." [PMID:14755292]
 synonym: "maltose binding protein tag" []
-exact_synonym: "mbp tagged" []
-is_a: MI:0240 ! fusion proteins
+exact_synonym: "mbp tag" []
+is_a: MI:0240 ! fusion protein
 
 [Term]
 id: MI:0579
@@ -4307,9 +4317,9 @@ is_a: MI:0495 ! experimental role
 [Term]
 id: MI:0585
 name: intenz
-def: "IntEnz is the name for the Integrated relational Enzyme database and is the official version of the Enzyme Nomenclature. The Enzyme Nomenclature comprises recommendations of the Nomenclature Committee of the International Union of Bio chemistry and Molecular Biology (NC-IUBMB) on the nomenclature and classification of enzyme-catalysed reactions. IntEnz is supported by NC-IUBMB and contains enzyme data curated and approved by this committee. The database IntEnz is available at.\nhttp\://www.ebi.ac.uk/intenz." [PMID:14681451]
+def: "IntEnz is the name for the Integrated relational Enzyme database and is the official version of the Enzyme Nomenclature. The Enzyme Nomenclature comprises recommendations of the Nomenclature Committee of the International Union of Bio chemistry and Molecular Biology (NC-IUBMB) on the nomenclature and classification of enzyme-catalysed reactions. IntEnz is supported by NC-IUBMB and contains enzyme data curated and approved by this committee. The database IntEnz is available at.\nhttp\://www.ebi.ac.uk/intenz" [PMID:14681451]
 xref_analog: id-validation-regexp:\"\[0-6\]\{1\}\\.\[0-9\]+\\.\[0-9\]+\\.\[0-9\]+ \"
-is_a: MI:0461 ! interaction database xref
+is_a: MI:0461 ! interaction database
 
 [Term]
 id: MI:0586
@@ -4354,7 +4364,7 @@ is_a: MI:0665 ! experiment attibute name
 id: MI:0592
 name: ipfam
 def: "Web resource that allows the investigation of protein interactions in the Protein Data Bank structures at the level of Pfam domains and amino acid residues. iPfam is available on the Web for browsing at.\nhttp\://www.sanger.ac.uk/Software/Pfam/iPfam/" [PMID:15353450]
-is_a: MI:0447 ! feature database xref
+is_a: MI:0447 ! feature database
 
 [Term]
 id: MI:0593
@@ -4413,8 +4423,8 @@ name: sequence ontology
 def: "The Sequence Ontology (SO) is a structured controlled vocabulary for the parts of a genomic annotation. SO provides a common set of terms and definitions that will facilitate the exchange\, analysis and management of genomic data." [PMID:15892872]
 exact_synonym: "so" []
 xref_analog: id-validation-regexp:\"SO\:\[0-9\]\{7\}\"
-is_a: MI:0447 ! feature database xref
-is_a: MI:0473 ! participant database xref
+is_a: MI:0447 ! feature database
+is_a: MI:0473 ! participant database
 
 [Term]
 id: MI:0602
@@ -4751,37 +4761,37 @@ is_a: MI:0647 ! parameter unit
 [Term]
 id: MI:0650
 name: millimolar
-def: "10E-3 moles per liter of solution." [PMID:14755292]
+def: "10E-3 moles per liter of solution.\nOBSOLETE\: term redundant with the schema exponent attribute of the parameter." [PMID:14755292]
 synonym: "mM" []
-is_a: MI:0648 ! molar
+is_obsolete: true
 
 [Term]
 id: MI:0651
 name: micromolar
-def: "10E-6 moles per liter of solution." [PMID:14755292]
+def: "10E-6 moles per liter of solution.\nOBSOLETE\: term redundant with the schema exponent attribute of the parameter." [PMID:14755292]
 synonym: "uM" []
-is_a: MI:0648 ! molar
+is_obsolete: true
 
 [Term]
 id: MI:0652
 name: nanomolar
-def: "10E-9 moles per liter of solution." [PMID:14755292]
+def: "10E-9 moles per liter of solution.\nOBSOLETE\: term redundant with the schema exponent attribute of the parameter." [PMID:14755292]
 synonym: "nM" []
-is_a: MI:0648 ! molar
+is_obsolete: true
 
 [Term]
 id: MI:0653
 name: picomolar
-def: "10E-12 moles per liter of solution." [PMID:14755292]
+def: "10E-12 moles per liter of solution.\nOBSOLETE\: term redundant with the schema exponent attribute of the parameter." [PMID:14755292]
 synonym: "pM" []
-is_a: MI:0648 ! molar
+is_obsolete: true
 
 [Term]
 id: MI:0654
 name: fentomolar
-def: "10E-15 moles per liter of solution." [PMID:14755292]
+def: "10E-15 moles per liter of solution.\nOBSOLETE\: term redundant with the schema exponent attribute of the parameter." [PMID:14755292]
 synonym: "fM" []
-is_a: MI:0648 ! molar
+is_obsolete: true
 
 [Term]
 id: MI:0655
@@ -4803,7 +4813,7 @@ name: systematic evolution of ligands by exponential enrichment
 def: "RNA and cDNA constructs with variable central sequences and a constant flanking region are collected in a complex library. The library is then screened to select either specific binding partners of a bait molecule (generally a protein) or particular enzymatic activities of the nucleic acid molecules themselves. The selected nucleic acids are amplified using the constant flanking regions to increase their abundance. Cycles of selection-amplification can be repeated to increase the specificity of the targets that\, at the end\, are individually identified by sequencing." [PMID:11539574]
 synonym: "in vitro evolution of nucleic acids" []
 exact_synonym: "selex" []
-is_a: MI:0400 ! affinity technologies
+is_a: MI:0400 ! affinity technology
 
 [Term]
 id: MI:0658
@@ -4817,7 +4827,7 @@ is_a: MI:0427 ! mass spectrometry
 id: MI:0659
 name: experimental feature detection
 def: "experimental feature detection." [PMID:14755292]
-exact_synonym: "experimental feature" []
+exact_synonym: "exp feature detect" []
 is_a: MI:0003 ! feature detection method
 
 [Term]
@@ -4892,7 +4902,7 @@ id: MI:0670
 name: imex
 def: "International Molecular Interaction Exchange." [PMID:14755292]
 synonym: "IMEx" []
-is_a: MI:0461 ! interaction database xref
+is_a: MI:0461 ! interaction database
 
 [Term]
 id: MI:0671
@@ -4925,7 +4935,7 @@ name: international protein index
 def: "IPI provides a top level guide to the main databases that describe the proteomes of higher eukaryotic organisms. IPI effectively maintains a database of cross references between the primary data sources\, provides minimally redundant yet maximally complete sets of proteins for featured species (one sequence per transcript) and maintains stable identifiers (with incremental versioning) to allow the tracking of sequences in IPI between IPI releases. IPI is updated monthly in accordance with the latest data released by the primary data sources." [PMID:15221759]
 exact_synonym: "ipi" []
 xref_analog: id-validation-regexp:\"IPI\[0-9\]+.\[0-9\]+|IPI\[0-9\]+\"
-is_a: MI:0473 ! participant database xref
+is_a: MI:0683 ! sequence database
 
 [Term]
 id: MI:0676
@@ -4933,21 +4943,223 @@ name: tandem affinity purification
 def: "Tandem affinity purification allows rapid purification under native conditions of complexes\, even when expressed at their natural level. Prior knowledge of complex composition or function is not required. The TAP method requires fusion of the a multiple tag\, either N- or C-terminally\, to the target (or bait) protein of interest. The multiple tag allows two steps purification steps ensuring a highly selective complex purification." [PMID:11403571]
 synonym: "TAP" []
 exact_synonym: "tap" []
-is_a: MI:0004 ! affinity chromatography technologies
+is_a: MI:0004 ! affinity chromatography technology
 
 [Term]
 id: MI:0677
-name: multiple tag
-def: "The protein of interest is expressed as a fusion to the a complex tag. A multiple tag consists of a concatenation of tags that can also be used alone." [PMID:14755292]
-is_a: MI:0507 ! tagged molecule
+name: tandem tag
+def: "A tandem tag consists of the concatenation of simple tags that is engineered to be cloned as a unique element onto a sequence of interest. Note that when a protein is fused to many simple tags that are inserted individually and possibly in different sequence positions these should be reported as independent features." [PMID:14755292]
+is_a: MI:0507 ! tag
 
 [Term]
 id: MI:0678
 name: antibody array
-def: "A microarray consisting of antibodies spotted on a solid support in appropriate orientation is incubated with a biological sample (or antigen). Some proteins are captured by the antibodies in the array. In case a protein of interest form a complex with the ones attached to the array\, it is then detected by specific antibody or labelling identification (tag\, ELISA\, biotin and others)." [PMID:12454649]
+def: "A microarray consisting of antibodies spotted on a solid support in appropriate orientation is incubated with a biological sample (or antigen). Some proteins are captured by the antibodies in the array. Protein of  forming complexes on the array are identified according to their prior labelling (tag\, ELISA\, biotin and others)." [PMID:12454649]
 synonym: "antigen capture assay" []
 synonym: "sandwich immunoassay" []
-is_a: MI:0008 ! array technologies
+is_a: MI:0008 ! array technology
+
+[Term]
+id: MI:0679
+name: poly adenine
+def: "A sequence of adenine nucleotides that is added to the 3' end of some primary transcript messenger RNA molecules in eukaryotes during post-transcriptional processing. The added tail is believed to confer stability to the molecule." [PMID:14755292]
+synonym: "poly A" []
+exact_synonym: "poly a" []
+is_a: MI:0320 ! ribonucleic acid
+
+[Term]
+id: MI:0680
+name: single stranded deoxyribonucleic acid
+def: "DNA that consists of only one chain of nucleotides rather than the two base pairing strands found in DNA in the double helix form." [PMID:14755292]
+synonym: "ss DNA" []
+exact_synonym: "ss dna" []
+is_a: MI:0319 ! deoxyribonucleic acid
+
+[Term]
+id: MI:0681
+name: double stranded deoxyribonucleic acid
+def: "DNA that consists of two base pairing strands. The 2 nucleotide chains are held together by hydrogen bonds between base pairs of nucleotides.\n" [PMID:14755292]
+synonym: "ds DNA" []
+exact_synonym: "ds dna" []
+is_a: MI:0319 ! deoxyribonucleic acid
+
+[Term]
+id: MI:0682
+name: cofactor
+def: "A cofactor is a small molecule required for the catalysis of an enzyme." [PMID:14755292]
+synonym: "coenzyme" []
+is_a: MI:0500 ! biological role
+
+[Term]
+id: MI:0683
+name: sequence database
+def: "Database collecting nucleic or amino acid sequences." [PMID:14755292]
+is_a: MI:0473 ! participant database
+
+[Term]
+id: MI:0684
+name: ancillary
+def: "Molecule required for an observed binary interaction to occur. This molecule may act as stabilizer of any of the interaction partners or may act as a bridge molecule between them but the method does not provide resolution or evidence to demonstrate its actual molecular function (i.e.Mudpit\, tri hybrid etc)." [PMID:14755292]
+is_a: MI:0495 ! experimental role
+
+[Term]
+id: MI:0685
+name: source reference
+def: "Reference pointing to the originating database in which an interaction\, or other curated information\, was first described." [PMID:14755292]
+is_a: MI:0353 ! cross-reference type
+
+[Term]
+id: MI:0686
+name: unspecified method
+def: "Yet to be identified interaction detection method associated with interaction data imported from a third party database. This database may have potentially different standards of curation." [PMID:14755292]
+is_a: MI:0001 ! interaction detection method
+
+[Term]
+id: MI:0687
+name: fluorescent protein tag
+def: "Protein having well characterized fluorescence excitation and emission spectra used as fusion with a protein under study to facilitate its  localisation or identification." [PMID:14755292]
+exact_synonym: "fluorescent prot tag" []
+is_a: MI:0240 ! fusion protein
+
+[Term]
+id: MI:0688
+name: dna binding domain tag
+def: "Part of a transcription factor responsible for the binding of gene regulatory region prior to their transcription. Such tags are generally used in two hybrid experiments where they are fused to a bait polypeptide tested for its ability to interact with a prey fused to an activation domain tag. " [PMID:14755292]
+exact_synonym: "dna binding domain" []
+is_a: MI:0240 ! fusion protein
+
+[Term]
+id: MI:0689
+name: activation domain tag
+def: "Part of a transcription factor responsible for the activation of DNA transcription. Such tags are generally used in two hybrid experiments where they are fused to a prey polypeptide tested for its ability to interact with a bait fused to a DNA binding domain tag. " [PMID:14755292]
+exact_synonym: "activation domain" []
+is_a: MI:0240 ! fusion protein
+
+[Term]
+id: MI:0690
+name: gal4 activation domain
+def: "Part of the yeast transcription factor GAL4 (amino acids 766-881) specifically responsable for DNA transcription activation." [PMID:14755292]
+exact_synonym: "gal4 ad" []
+is_a: MI:0689 ! activation domain tag
+
+[Term]
+id: MI:0691
+name: vp16 activation domain
+def: "Full viral protein vp16 exclusively responsible for preferential transcriptional activation of viral genes. Activation requires the formation of a complex with the host cell transcription factor." [PMID:14755292]
+exact_synonym: "vp16 ad" []
+is_a: MI:0689 ! activation domain tag
+
+[Term]
+id: MI:0692
+name: b42 activation domain
+def: "B42 is an acidic sequence of 89 residues  derived from Escherichia coli acting as weak transcription activation domain. When use in two hybrid experiments\, the weakness of B42 as activator increases the sensitivity of the interaction detection." [PMID:14613974]
+exact_synonym: "b42 ad" []
+is_a: MI:0689 ! activation domain tag
+
+[Term]
+id: MI:0693
+name: gal4 dna binding domain
+def: "Part of the yeast transcription factor GAL4 (amino acids 11-38) specifically responsable for DNA binding of a 17 base-pair long sequence in the upstream activating sequence of galactose-induced genes.\n" [PMID:14755292]
+exact_synonym: "gal4 dna bd" []
+is_a: MI:0688 ! dna binding domain tag
+
+[Term]
+id: MI:0694
+name: lexa dna binding domain
+def: "Ammino terminal (1-220) part of the Escherichia coli lexA repressor\, binding to 16 base pair palindromic DNA sequences. " [PMID:14755292]
+exact_synonym: "lexa dna bd" []
+is_a: MI:0688 ! dna binding domain tag
+
+[Term]
+id: MI:0695
+name: sandwich immunoassay
+def: "Antibody array where proteins retained by the arrayed antibodies are identified using a detector antibody. The detector antibody is either modified with a directly detectable label (enzyme\, fluorescent molecule\, isotope\, etc.)\, or it is biotinylated for detection after subsequent probing with labeled streptavidin." [PMID:12454649]
+is_a: MI:0678 ! antibody array
+
+[Term]
+id: MI:0696
+name: polymerase assay
+def: "Measures the catalysis of the transfer of a free nucleotidyl group to a nucleic acid chain." [PMID:14755292]
+synonym: "nucleotidyltransferase assay" []
+is_a: MI:0415 ! enzymatic study
+
+[Term]
+id: MI:0697
+name: dna directed dna polymerase assay
+def: "Measures the catalysis of the reaction\: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1); the synthesis of DNA from deoxyribonucleotide triphosphates in the presence of a DNA template or primer." [PMID:14755292]
+exact_synonym: "dna dna pol assay" []
+is_a: MI:0696 ! polymerase assay
+
+[Term]
+id: MI:0698
+name: dna directed rna polymerase assay
+def: "Measures the catalysis of the reaction\: nucleoside triphosphate + RNA(n) = diphosphate + RNA(n+1). Utilizes a DNA template\, i.e. the catalysis of DNA-template-directed extension of the 3'-end of an RNA strand by one nucleotide at a time. Can initiate a chain 'de novo'." [PMID:14755292]
+exact_synonym: "dna rna pol assay" []
+is_a: MI:0696 ! polymerase assay
+
+[Term]
+id: MI:0699
+name: rna directed dna polymerase assay
+def: "Measures the catalysis of the reaction\: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1). Catalyzes RNA-template-directed extension of the 3'- end of a DNA strand by one deoxynucleotide at a time." [PMID:14755292]
+exact_synonym: "rna dna pol assay" []
+is_a: MI:0696 ! polymerase assay
+
+[Term]
+id: MI:0700
+name: rna directed rna polymerase assay
+def: "Measures the catalysis of the reaction\: nucleoside triphosphate + RNA (n) = diphosphate + RNA (n+1); uses an RNA template." [PMID:14755292]
+exact_synonym: "rna rna pol assay" []
+is_a: MI:0696 ! polymerase assay
+
+[Term]
+id: MI:0701
+name: dna strand elongation
+def: "The process by which a DNA strand is synthesized from template DNA by the action of polymerases\, which add nucleotides to the 3' end of the nascent DNA strand." [PMID:14755292, GO:0006271]
+synonym: "DNA replication elongation " []
+exact_synonym: "elongation" []
+is_a: MI:0414 ! enzymatic reaction
+
+[Term]
+id: MI:0702
+name: panther
+def: "The PANTHER (Protein ANalysis THrough Evolutionary Relationships) Classification System is a unique resource that classifies genes by their functions using published scientific experimental evidence and evolutionary relationships to predict function even in the absence of direct experimental evidence.\nwww.pantherdb.org/ " [PMID:14755292]
+synonym: "PANTHER" []
+is_a: MI:0449 ! interpro
+
+[Term]
+id: MI:0703
+name: gene3d
+def: "The Gene3D database provides a combined structural\, functional and evolutionary view of the protein world. It is focused on providing structural annotation for protein sequences without structural representatives--including the complete proteome sets of over 240 different species.\nhttp\://cathwww.biochem.ucl.ac.uk\:8080/Gene3D/ " [PMID:14755292]
+synonym: "Gene3D" []
+is_a: MI:0449 ! interpro
+
+[Term]
+id: MI:0705
+name: anti tag western blot
+def: "Western blot assay performed when specific antibodies for the protein of interest are not available. Therefore the  protein is expressed as a hybrid protein fused to a tag for which efficient antibodies are available.The antibody may be either monoclonal or polyclonal." [PMID:14755292]
+exact_synonym: "anti tag western" []
+is_a: MI:0113 ! western blot
+
+[Term]
+id: MI:0707
+name: anti tag immunostaining
+def: "Immunostaining assay performed when specific antibodies for the protein of interest are not available. Therefore the  protein is expressed as a hybrid protein fused to a tag peptide/protein for which efficient antibodies are available. The anti tag antibody may be either monoclonal or polyclonal." [PMID:14755292]
+exact_synonym: "anti tag immunost" []
+is_a: MI:0422 ! immunostaining
+
+[Term]
+id: MI:0708
+name: monoclonal antibody immunostaining
+def: "A monospecific antibody for the protein of interest is available\, this is used to detect a specific protein within a cell or tissue sample." [PMID:14755292]
+exact_synonym: "monoclonal immunost" []
+is_a: MI:0422 ! immunostaining
+
+[Term]
+id: MI:0709
+name: polyclonal antibody immunostaining
+def: "Immunostaining assay carried out using a mixture of different antibodies that represent the immune response\, normally in an experimental animal\, to the protein of interest. These antibodies are used to detect the protein within a cell or tissue sample." [PMID:14755292]
+exact_synonym: "polyclonal immunost" []
+is_a: MI:0422 ! immunostaining
 
 [Typedef]
 id: part_of
