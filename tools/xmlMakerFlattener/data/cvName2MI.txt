@@ -1,0 +1,625 @@
+MI:0001|interaction detect|interaction detection method
+MI:0002|participant ident|participant identification method
+MI:0003|feature detection|feature detection method
+MI:0004|affinity chrom|affinity chromatography technologies
+MI:0005|alanine scanning|alanine scanning
+MI:0006|anti bait coip|anti bait coimmunoprecipitation
+MI:0007|anti tag coip|anti tag coimmunoprecipitation
+MI:0008|array technologies|array technologies
+MI:0009|bacterial display|bacterial display
+MI:0010|beta galactosidase|beta galactosidase complementation
+MI:0011|beta lactamase|beta lactamase complementation
+MI:0012|bret|bioluminescence resonance energy transfer
+MI:0013|biophysical|biophysical
+MI:0014|adenylate cyclase|adenylate cyclase complementation
+MI:0016|cd|circular dichroism
+MI:0017|fluorescence spectr|classical fluorescence spectroscopy
+MI:0018|two hybrid|two hybrid
+MI:0019|coip|coimmunoprecipitation
+MI:0020|tem|transmission electron microscopy
+MI:0021|coloc fluoresc probe|colocalization by fluorescent probes cloning
+MI:0022|colocalization by im|colocalization by immunostaining
+MI:0023|colocalization-visua|colocalization/visualisation technologies
+MI:0024|conformational tm|confirmational text mining
+MI:0025|copurification|copurification
+MI:0026|correlated mutations|correlated mutations
+MI:0027|cosedimentation|cosedimentation
+MI:0028|solution sedimentati|cosedimentation in solution
+MI:0029|density sedimentatio|cosedimentation through density gradients
+MI:0030|crosslink|cross-linking studies
+MI:0031|protein crosslink|protein cross-linking with a bifunctional reagent
+MI:0032|ms protein sequence|de novo protein sequencing by mass spectrometry
+MI:0033|deletion analysis|deletion analysis
+MI:0034|display technologies|display technologies
+MI:0035|docking|docking
+MI:0036|domain fusion|domain fusion
+MI:0037|domain profile pairs|domain profile pairs
+MI:0038|dls|dynamic light scattering
+MI:0039|edman degradation|edman degradation
+MI:0040|electron microscopy|electron microscopy
+MI:0041|endor|electron nuclear double resonance
+MI:0042|epr|electron paramagnetic resonance
+MI:0043|electron resonance|electron resonance
+MI:0045|experimental interac|experimental interaction detection
+MI:0046|experimental info|experimental knowledge based
+MI:0047|far western blotting|far western blotting
+MI:0048|filamentous phage|filamentous phage display
+MI:0049|filter binding|filter binding
+MI:0050|flag tag|flag tag
+MI:0051|fluorescence|fluorescence technologies
+MI:0052|fcs|fluorescence correlation spectroscopy
+MI:0053|fps|fluorescence polarization spectroscopy
+MI:0054|facs|fluorescence-activated cell sorting
+MI:0055|fret|fluorescent resonance energy transfer
+MI:0056|full dna sequence|full identification by sequencing
+MI:0057|gene neighbourhoods|gene neighbourhoods
+MI:0058|genome prediction|genome based prediction
+MI:0059|gst pull down|gst pull down
+MI:0060|ha tag|ha tag
+MI:0061|his pull down|his pull down
+MI:0062|his tag|his tag
+MI:0063|predicted interac|interaction prediction
+MI:0063|prediction|prediction
+MI:0064|interologs mapping|interologs mapping
+MI:0065|itc|isothermal titration calorimetry
+MI:0066|lambda phage|lambda phage display
+MI:0067|light scattering|light scattering
+MI:0068|modified residue ms|mass detection of residue modification
+MI:0069|ms of complexes|mass spectrometry studies of complexes
+MI:0070|mobility shift|mobility shift
+MI:0071|molecular sieving|molecular sieving
+MI:0072|monoclonal antibody|monoclonal antibody
+MI:0073|mrna display|mrna display
+MI:0074|mutation analysis|mutation analysis
+MI:0075|myc tag|myc tag
+MI:0076|interface predictor|neural network on interface properties
+MI:0077|nmr|nuclear magnetic resonance
+MI:0078|nucleotide sequence|nucleotide sequence identification
+MI:0079|other biochemical te|other biochemical technologies
+MI:0080|partial dna sequence|partial dna sequence identification by hybridization
+MI:0081|peptide array|peptide array
+MI:0082|fingerprinting|peptide massfingerprinting
+MI:0083|peptide synthesis|peptide synthesis
+MI:0084|phage display|phage display
+MI:0085|phylogenetic profile|phylogenetic profile
+MI:0086|polyclonal antibody|polyclonal antibody
+MI:0087|predictive tm|predictive text mining
+MI:0088|primer specific pcr|primer specific pcr
+MI:0089|protein array|protein array
+MI:0090|complementation|protein complementation assay
+MI:0091|chromatography|chromatography technologies
+MI:0092|pisa|protein in situ array
+MI:0093|protein sequence|protein sequence identification
+MI:0094|protein staining|protein staining
+MI:0095|seldi chip|proteinchip(r) on a surface-enhanced laser desorption/ionization
+MI:0096|pull down|pull down
+MI:0097|reverse rrs|reverse ras recruitment system
+MI:0098|ribosome display|ribosome display
+MI:0099|spa|scintillation proximity assay
+MI:0100|sequence phylogeny|sequence based phylogenetic profile
+MI:0101|predict from sequenc|sequence based prediction
+MI:0102|sequence tag|sequence tag identification
+MI:0103|southern blot|southern blot
+MI:0104|sls|static light scattering
+MI:0105|predict from struct|structure based prediction
+MI:0106|surface patches|surface patches
+MI:0107|spr|surface plasmon resonance
+MI:0108|t7 phage|t7 phage display
+MI:0109|tandem affinity puri|tandem affinity purification
+MI:0110|text mining|text mining
+MI:0111|dhfr reconstruction|dihydrofolate reductase reconstruction
+MI:0112|ub reconstruction|ubiquitin reconstruction
+MI:0113|western blot|western blot
+MI:0114|x-ray|x-ray crystallography
+MI:0115|yeast display|yeast display
+MI:0116|feature type|feature type
+MI:0117|binding site|binding site
+MI:0118|mutation|mutation
+MI:0119|mutation decreasing|mutation decreasing interaction
+MI:0120|ptm|post translation modification
+MI:0121|acetylated residue|acetylated residue
+MI:0122|acetylalanine|n-acetyl-alanine
+MI:0123|acetylarginine|n2-acetyl-arginine
+MI:0124|acetylasparagine|n-acetyl-asparagine
+MI:0125|acetylaspartate|n-acetyl-aspartic acid
+MI:0126|acetylcysteine|n-acetyl-cysteine
+MI:0127|acetylglutamine|n-acetyl-glutamine
+MI:0128|acetylglutamate|n-acetyl-glutamic acid
+MI:0129|acetylglycine|n-acetylglycine
+MI:0130|acetylhistidine|n-acetyl-histidine
+MI:0131|acetylisoleucine|n-acetyl-isoleucine
+MI:0132|acetylleucine|n-acetyl-leucine
+MI:0133|n2-acetyllysine|n2-acetyl-lysine
+MI:0134|n6-acetyllysine|n6-acetyl-lysine
+MI:0135|acetylmethionine|n-acetyl-methionine
+MI:0136|acetylphenylalanine|n-acetyl-phenylalanine
+MI:0137|acetylproline|n-acetyl-proline
+MI:0138|acetylserine|n-acetyl-serine
+MI:0139|acetylthreonine|n-acetyl-threonine
+MI:0140|acetyltryptophan|n-acetyl-tryptophan
+MI:0141|acetyltyrosine|n-acetyl-tyrosine
+MI:0142|acetylvaline|n-acetyl-valine
+MI:0143|amidated residue|amidated residue
+MI:0144|alanineamide|alanine amide
+MI:0145|arginineamide|arginine amide
+MI:0146|formylated residue|formylated residue
+MI:0147|formylmethionine|n-formyl-methionine
+MI:0148|hydroxylated residue|hydroxylated residue
+MI:0149|4hydroxyproline|4-hydroxy-proline
+MI:0150|lipid modification|lipid modification
+MI:0151|farnesylcysteine|s-farnesyl-cysteine
+MI:0152|geranylgeranylcys|s-geranylgeranyl-cysteine
+MI:0153|n-palmitoylcysteine|n-palmitoyl-cysteine
+MI:0154|s-palmitoylcysteine|s-palmitoyl-cysteine
+MI:0155|myristoylglycine|n-myristoyl-glycine
+MI:0156|myristoyllysine|n6-myristoyl-lysine
+MI:0157|methylated residue|methylated residue
+MI:0158|methylalanine|n-methyl-alanine
+MI:0159|trimethylalanine|n,n,n-trimethyl-alanine
+MI:0160|dimethylarginine|omega-n,omega-n-dimethyl-arginine
+MI:0161|methylthioaspartate|beta-methylthioaspartic acid
+MI:0162|methylglutamine|n5-methyl-glutamine
+MI:0163|glutamatemethylester|glutamic acid 5-methyl ester
+MI:0164|methylhistidine|3'-methyl-histidine
+MI:0165|methyllysine|n6-methyl-lysine
+MI:0166|dimethyllysine|n6,n6-dimethyl-lysine
+MI:0167|trimethyllysine|n6,n6,n6-trimethyl-lysine
+MI:0168|methylmethionine|n-methyl-methionine
+MI:0169|methylphenylalanine|n-methyl-phenylalanine
+MI:0170|phosphorylated|phosphorylated residue
+MI:0171|phosphoarginine|omega-n-phospho-arginine
+MI:0172|phosphoaspartic acid|aspartic 4-phosphoric anhydride
+MI:0173|phosphocysteine|s-phospho-cysteine
+MI:0174|1-phosphohistidine|1'-phospho-histidine
+MI:0175|3-phosphohistidine|3'-phospho-histidine
+MI:0176|phosphoserine|o-phospho-serine
+MI:0177|phosphothreonine|o-phospho-threonine
+MI:0178|phosphotyrosine|o4'-phospho-tyrosine
+MI:0179|other modification|other modification
+MI:0180|selenocysteine|selenocysteine
+MI:0181|selenomethionine|selenomethionine
+MI:0182|oxoalanine|3-oxoalanine
+MI:0183|pyroglutamic acid|2-pyrrolidone-5-carboxylic acid
+MI:0184|glycerylpo4etohamine|glutamyl 5-glycerylphosphorylethanolamine
+MI:0185|diphthamide|2'-[3-carboxamido-3-(trimethylammonio)propyl]-histidine
+MI:0186|biotinyllysine|n6-biotinyl-lysine
+MI:0187|hypusine|n6-(4-amino-2-hydroxybutyl)-lysine
+MI:0188|retinallysine|n6-retinal-lysine
+MI:0189|ubiquitinated lysine|ubiquitinated lysine
+MI:0190|interaction type|interaction type
+MI:0191|aggregation|aggregation
+MI:0192|acetylation|acetylation reaction
+MI:0193|amidation|amidation reaction
+MI:0194|cleavage|cleavage reaction
+MI:0195|covalent binding|covalent binding
+MI:0196|covalent interaction|covalent interaction
+MI:0197|deacetylation|deacetylation reaction
+MI:0198|defarnesylation|defarnesylation reaction
+MI:0199|deformylation|deformylation reaction
+MI:0200|degeranylation|degeranylation reaction
+MI:0201|demyristoylation|demyristoylation reaction
+MI:0202|depalmitoylation|depalmitoylation reaction
+MI:0203|dephosphorylation|dephosphorylation reaction
+MI:0204|deubiquitination|deubiquitination reaction
+MI:0205|disaggregation|disaggregation
+MI:0206|farnesylation|farnesylation reaction
+MI:0207|formylation|formylation reaction
+MI:0208|genetic interaction|genetic interaction
+MI:0209|geranylgeranylation|geranylgeranylation reaction
+MI:0210|hydroxylation|hydroxylation reaction
+MI:0211|lipid addition|lipid addition
+MI:0212|lipid cleavage|lipid cleavage
+MI:0213|methylation|methylation reaction
+MI:0214|myristoylation|myristoylation reaction
+MI:0215|non covalent interac|non covalent interaction
+MI:0216|palmitoylation|palmitoylation reaction
+MI:0217|phosphorylation|phosphorylation reaction
+MI:0218|physical interaction|physical interaction
+MI:0219|synthetic lethal|synthetic lethal
+MI:0220|ubiquitination|ubiquitination reaction
+MI:0221|expression-level|expression level
+MI:0222|endogenous level|endogenous level
+MI:0223|under-expressed|under-expressed level
+MI:0225|chip-chip|chromatin immunoprecipitation array
+MI:0226|ion exchange chrom|ion exchange chromatography
+MI:0227|reverse phase chrom|reverse phase chromatography
+MI:0228|cytoplasmic compl|cytoplasmic complementation assay
+MI:0229|gfp complementation|green fluorescence protein complementation assay
+MI:0230|membrane compl|membrane bound complementation assay
+MI:0231|mappit|mammalian protein protein interaction trap
+MI:0232|transcription compl|transcriptional complementation assay
+MI:0233|protein dna complex|protein dna complex
+MI:0234|131i radiolabelled|131i radiolabelled
+MI:0235|14c radiolabelled|14c radiolabelled
+MI:0236|32p radiolabelled|32p radiolabelled
+MI:0237|33p radiolabelled|33p radiolabelled
+MI:0238|3h radiolabelled|3h radiolabelled
+MI:0239|biotin tagged|biotin tagged
+MI:0240|fusion proteins|fusion proteins
+MI:0241|hrp tagged|horseradish peroxidase tagged
+MI:0242|go-definition-ref|gene ontology definition reference
+MI:0243|isoform-parent|isoform parent sequence reference
+MI:0244|reactome complex|reactome complex
+MI:0245|reactome protein|reactome protein
+MI:0246|cabri|cabri
+MI:0247|newt|newt
+MI:0248|resid|resid
+MI:0249|huge|huge
+MI:0250|gene|gene
+MI:0251|gene product|gene product
+MI:0252|biological feature|biological feature
+MI:0253|isotope labelled|isotope labelled
+MI:0254|genetic interference|genetic interference
+MI:0255|expression interfer|post transcriptional interference
+MI:0256|rnai|rna interference
+MI:0257|antisense rna|antisense rna
+MI:0258|inhibitor antibodies|inhibitor antibodies
+MI:0259|perturbagens pep|perturbagens peptides
+MI:0260|inhibitor small mol|inhibitor small molecules
+MI:0261|suppression|suppression
+MI:0262|suppression mutation|suppression mutation
+MI:0263|suppress knockout|suppression knockout
+MI:0264|suppression partial|suppression partial alteration
+MI:0265|suppress expression|suppression expression alteration
+MI:0266|suppress overexpress|suppression overexpression
+MI:0267|suppression scalable|suppression scalable
+MI:0268|suppress underexpres|suppression underexpression
+MI:0269|synthetic phenotype|synthetic phenotype
+MI:0270|cond syntetic lethal|conditional synthetic lethal
+MI:0271|temprtr synt lethal|conditional synthetic lethal temperature-sensitivity
+MI:0273|synt growth effect|synthetic growth effect
+MI:0274|synt growth defect|synthetic growth defect
+MI:0275|synt growth increase|synthetic growth increase
+MI:0276|bn-page|blue native page
+MI:0300|alias type|alias type
+MI:0301|gene name|gene name
+MI:0302|gene name synonym|gene name synonym
+MI:0303|go synonym|gene ontology synonym
+MI:0304|isoform synonym|isoform synonym
+MI:0305|locus name|ordered locus name
+MI:0306|orf name|open reading frame name
+MI:0307|delivery-method|delivery method
+MI:0308|electroporation|electroporation
+MI:0309|genomic tagging|genomic tagging
+MI:0310|infection|infection
+MI:0311|microinjection|microinjection
+MI:0312|transfection|transfection
+MI:0313|interactor type|interactor type
+MI:0314|complex|complex
+MI:0315|protein complex|protein complex
+MI:0316|ribonucleoprot compl|ribonucleoprotein complex
+MI:0317|interaction|interaction
+MI:0318|nucleic acid|nucleic acid
+MI:0319|dna|deoxyribonucleic acid
+MI:0320|rna|ribonucleic acid
+MI:0321|crna|catalytic rna
+MI:0322|grna|guide rna
+MI:0323|hnrna|heterogeneous nuclear rna
+MI:0324|mrna|messenger rna
+MI:0325|trna|transfer rna
+MI:0326|protein|protein
+MI:0327|peptide|peptide
+MI:0328|small molecule|small molecule
+MI:0329|unknown participant|unknown participant
+MI:0330|molecular source|molecular source
+MI:0331|engineered|engineered
+MI:0332|naturally occurring|naturally occurring
+MI:0333|feature range status|feature range status
+MI:0334|c-terminal|c-terminal position
+MI:0335|certain|certain sequence position
+MI:0336|greater-than|greater-than
+MI:0337|less-than|less-than
+MI:0338|range|range
+MI:0339|undetermined|undetermined sequence position
+MI:0340|n-terminal|n-terminal position
+MI:0341|ragged n-terminus|ragged n-terminus
+MI:0342|sample-process|sample process
+MI:0343|cdna library|cdna library
+MI:0344|cell lysate|cell lysate
+MI:0345|author assigned name|author assigned name
+MI:0346|experimental prep|experimental preparation
+MI:0348|fixed cell|fixed cell
+MI:0349|living cell|living cell
+MI:0350|purified|purified
+MI:0351|homogeneous|homogeneous
+MI:0352|partially purified|partially purified
+MI:0353|xref type|cross-reference type
+MI:0354|component|gene ontology term for cellular component
+MI:0355|function|gene ontology term for cellular function
+MI:0356|identity|identical object
+MI:0357|method reference|method reference
+MI:0358|primary-reference|primary-reference
+MI:0359|process|gene ontology term for cellular process
+MI:0360|secondary-ac|secondary accession number
+MI:0361|see-also|see-also
+MI:0362|inference|inference
+MI:0363|inferred by author|inferred by author
+MI:0364|inferred by curator|inferred by curator
+MI:0365|enzyme tagged|enzyme tagged
+MI:0366|alk phosphatase tag|alkaline phosphatase tagged
+MI:0367|gfp tagged|gfp tagged
+MI:0368|yfp tagged|yfp tagged
+MI:0369|gallex|lex-a dimerization assay
+MI:0370|toxcat|tox-r dimerization assay
+MI:0371|35s radiolabelled|35s radiolabelled
+MI:0372|subcellular preparat|subcellular preparation
+MI:0373|dye labelled|dye labelled molecule
+MI:0374|cyanine labelled|cyanine labelled
+MI:0375|cy3 labelled|cy3 labelled
+MI:0376|cy5 labelled|cy5 labelled
+MI:0377|fitc labelled|fluorescein isothiocyanate labelled
+MI:0378|rare isotope label|rare isotope labelled molecule
+MI:0379|13c labelled|13c labelled
+MI:0380|15n labelled|15n labelled
+MI:0381|2h labelled|2h labelled
+MI:0382|mutation increasing|mutation increasing interaction
+MI:0383|biopolymer|biopolymer
+MI:0384|alexa labelled|alexa labelled
+MI:0385|alexa 350 labelled|alexa 350 labelled
+MI:0386|alexa 430 labelled|alexa 430 labelled
+MI:0387|alexa 488 labelled|alexa 488 labelled
+MI:0388|alexa 532 labelled|alexa 532 labelled
+MI:0389|alexa 546 labelled|alexa 546 labelled
+MI:0390|alexa 568 labelled|alexa 568 labelled
+MI:0391|alexa 594 labelled|alexa 594 labelled
+MI:0396|predetermined|predetermined participant
+MI:0397|two hybrid array|two hybrid array
+MI:0398|two hybrid pooling|two hybrid pooling approach
+MI:0399|2h fragment pooling|two hybrid fragment pooling approach
+MI:0400|affinity techniques|affinity technologies
+MI:0401|biochemical|biochemical
+MI:0402|ch-ip|chromatin immunoprecipitation assays
+MI:0403|colocalization|colocalization
+MI:0404|comigration in gel|comigration in non denaturing gel electrophoresis
+MI:0405|competition binding|competition binding
+MI:0406|deacetylase assay|deacetylase assay
+MI:0407|direct interaction|direct interaction
+MI:0408|disulfide bond|disulfide bond
+MI:0409|dna footprinting|dna footprinting
+MI:0410|sem|electron tomography
+MI:0411|elisa|enzyme linked immunosorbent assay
+MI:0412|emsa supershift|electrophoretic mobility supershift assay
+MI:0413|emsa|electrophoretic mobility shift assay
+MI:0414|enzymatic reaction|enzymatic reaction
+MI:0415|enzymatic studies|enzymatic studies
+MI:0416|fluorescence imaging|fluorescence microscopy
+MI:0417|footprinting|footprinting
+MI:0418|genetic|genetic
+MI:0419|gtpase assay|gtpase assay
+MI:0420|kinase htrf|kinase homogeneous time resolved fluorescence
+MI:0421|antibody detection|identification by antibody
+MI:0422|immunostaining|immunostaining
+MI:0423|in gel kinase assay|in-gel kinase assay
+MI:0424|protein kinase assay|protein kinase assay
+MI:0425|kinase spa|kinase scintillation proximity assay
+MI:0426|light microscopy|light microscopy
+MI:0427|mass spectrometry|mass spectrometry
+MI:0428|imaging techniques|imaging techniques
+MI:0429|required to bind|necessary binding site
+MI:0430|nucl ac uv crosslink|nucleic acid uv cross-linking assay
+MI:0431|obsolete term|Flag for controlled vocabulary terms that become obsolete
+MI:0432|one hybrid|one hybrid
+MI:0433|partial id prot seq|partial identification of protein sequence
+MI:0434|phosphatase assay|phosphatase assay
+MI:0435|protease assay|protease assay
+MI:0436|protein footprinting|protein footprinting
+MI:0437|protein tri hybrid|protein tri hybrid
+MI:0438|rna tri hybrid|rna tri hybrid
+MI:0439|rsa|random spore analysis
+MI:0440|saturation binding|saturation binding
+MI:0441|sga|synthetic genetic analysis
+MI:0442|sufficient to bind|sufficient binding site
+MI:0444|database citation|database citation
+MI:0445|experiment xref|experiment database xref
+MI:0446|pubmed|pubmed
+MI:0447|feature xref|feature database xref
+MI:0448|go|gene ontology
+MI:0449|interpro|interpro
+MI:0450|cdd|cdd
+MI:0451|pfam|pfam
+MI:0452|pirsf|pirsf
+MI:0453|prints|prints
+MI:0454|prodom|prodom
+MI:0455|prosite|prosite
+MI:0456|scop superfamily|scop superfamily
+MI:0457|smart|smart
+MI:0458|tigrfams|tigrfams
+MI:0459|mmdb|mmdb
+MI:0460|pdb|pdb
+MI:0461|interaction xref|interaction database xref
+MI:0462|bind|bind
+MI:0463|grid|grid
+MI:0464|cygd|cygd
+MI:0465|dip|dip
+MI:0466|ecocyc|ecocyc
+MI:0467|reactome|reactome
+MI:0468|hprd|hprd
+MI:0469|intact|intact
+MI:0470|kegg|kegg
+MI:0471|mint|mint
+MI:0472|msd|msd
+MI:0473|participant xref|participant database xref
+MI:0474|chebi|chebi
+MI:0475|ddbj/embl/genbank|ddbj/embl/genbank
+MI:0476|ensembl|ensembl
+MI:0477|entrezgene/locuslink|entrez gene/locuslink
+MI:0478|flybase|flybase
+MI:0479|mgd/mgi|mgd/mgi
+MI:0480|omim|omim
+MI:0481|refseq|refseq
+MI:0482|rfam|rfam
+MI:0483|rgd|rgd
+MI:0484|sgd|sgd
+MI:0485|uniparc|uniparc
+MI:0486|uniprotkb|uniprot knowledge base
+MI:0487|wormbase|wormbase
+MI:0488|psi-mi|psi-mi
+MI:0489|source database xref|source database xref
+MI:0495|experimental role|experimental role
+MI:0496|bait|bait
+MI:0497|neutral component|neutral component
+MI:0498|prey|prey
+MI:0499|unspecified|unspecified
+MI:0500|biological role|biological role
+MI:0501|enzyme|enzyme
+MI:0502|enzyme target|enzyme target
+MI:0503|self|self
+MI:0505|experimental feature|experimental feature
+MI:0506|over-expressed|over-expressed level
+MI:0507|tagged molecule|tagged molecule
+MI:0508|radiolabeled acetate|deacetylase radiometric assay
+MI:0509|phosphatase htrf|phosphatase homogeneous time resolved fluorescence
+MI:0510|htrf|homogeneous time resolved fluorescence
+MI:0511|protease htrf|protease homogeneous time resolved fluorescence
+MI:0512|zymography|zymography
+MI:0513|collagen film assay|collagen film assay
+MI:0514|in gel phosphatase|in gel phosphatase assay
+MI:0515|methyltransferase as|methyltransferase assay
+MI:0516|radiolabeled methyl|methyltransferase radiometric assay
+MI:0517|radiolabelled|radiolabelled molecule
+MI:0518|flag tagged|flag tagged
+MI:0519|gst tagged|gst tagged
+MI:0520|ha tagged|ha tagged
+MI:0521|his tagged|his tagged
+MI:0522|myc tagged|myc tagged
+MI:0523|t7 tagged|t7 tagged
+MI:0524|tap tagged|calmodulin binding peptide plus protein a tagged
+MI:0525|v5 tagged|v5 tagged
+MI:0526|acetyllysine|n-acetyl-lysine
+MI:0527|adp-ribosylated|adp ribosylated residue
+MI:0528|adp-ribosylarginine|omega-n-(adp-ribosyl)-arginine
+MI:0529|adp-ribosylcysteine|s-(adp-ribosyl)-cysteine
+MI:0530|adp-ribosylglutamate|glutamyl-5-poly(adp-ribose)
+MI:0531|adp-ribosylserine|o-(adp-ribosyl)-serine
+MI:0532|adpribosylasparagine|n4-(adp-ribosyl)-asparagine
+MI:0533|glycosylated residue|glycosylated residue
+MI:0534|glycosyl-cysteine|glycosyl-cysteine
+MI:0535|glycosyl-serine|glycosyl-serine
+MI:0536|glycosyl-threonine|glycosyl-threonine
+MI:0537|glycosylarginine|omega-n-glycosyl-arginine
+MI:0538|glycosylasparagine|n4-glycosyl-asparagine
+MI:0539|gpi anchor residue|gpi anchor residue
+MI:0540|gpi-alanine|gpi-anchor amidated alanine
+MI:0541|gpi-asparagine|gpi-anchor amidated asparagine
+MI:0542|gpi-aspartate|gpi-anchor amidated aspartate
+MI:0543|gpi-cysteine|gpi-anchor amidated cysteine
+MI:0544|gpi-glycine|gpi-anchor amidated glycine
+MI:0545|gpi-serine|gpi-anchor amidated serine
+MI:0546|gpi-threonine|gpi-anchor amidated threonine
+MI:0547|prenylcysteine|s-prenyl-cysteine
+MI:0548|methylatedlysine|methylated-lysine
+MI:0549|alkylated cysteine|alkylated cysteine
+MI:0550|carboxyglutamic acid|gamma-carboxyglutamic acid
+MI:0551|nitro-tyrosine|nitro-tyrosine
+MI:0552|nitrosylcysteine|s-nitrosyl-cysteine
+MI:0553|sulfotyrosine|o4'-sulfo-tyrosine
+MI:0554|sumoylated lysine|sumoylated lysine
+MI:0555|phosphoshistidine|phospho-histidine
+MI:0556|transglutamination|transglutamination reaction
+MI:0557|adp ribosylation|adp ribosylation reaction
+MI:0558|deglycosylation|deglycosylation reaction
+MI:0559|glycosylation|glycosylation reaction
+MI:0560|myristoylated aa|myristoylated residue
+MI:0561|palmitoylated aa|palmitoylated residue
+MI:0562|methylated alanine|methylated alanine
+MI:0563|methylated arginine|methylated arginine
+MI:0564|methylarginine|omega-n-methyl-arginine
+MI:0565|neddylated lysine|neddylated lysine
+MI:0566|sumoylation|sumoylation reaction
+MI:0567|neddylation|neddylation reaction
+MI:0568|desumoylation|desumoylation reaction
+MI:0569|deneddylation|deneddylation reaction
+MI:0570|protein cleavage|protein cleavage
+MI:0571|mrna cleavage|mrna cleavage
+MI:0572|dna cleavage|dna cleavage
+MI:0573|mutation disrupting|mutation disrupting interaction
+MI:0574|doi|digital object identifier
+MI:0575|afcs|alliance for cellulare signaling
+MI:0576|structural proximity|structural proximity
+MI:0577|feature struct pred|feature prediction from structure
+MI:0578|mbp tagged|maltose binding protein tagged
+MI:0579|electron donor|electron donor
+MI:0580|electron acceptor|electron acceptor
+MI:0581|suppressor gene|suppressor gene
+MI:0582|suppressed gene|suppressed gene
+MI:0583|fluorescence donor|fluorescence donor
+MI:0584|fluorescence accept|fluorescence acceptor
+MI:0585|intenz|intenz
+MI:0586|inhibitor|inhibitor
+MI:0587|inhibited|inhibited
+MI:0588|3 hybrid method|3 hybrid method
+MI:0589|in vitro translated |in vitro translated protein
+MI:0590|attribute name|attribute name
+MI:0591|experiment descripti|experiment description
+MI:0592|ipfam|ipfam
+MI:0593|translocation|translocation
+MI:0594|translocation start|translocation start
+MI:0595|translocation end|translocation end
+MI:0596|experimental form de|experimental form description
+MI:0597|feature description|feature description
+MI:0598|feature constrain|feature constrain
+MI:0599|figure legend|figure legend
+MI:0600|nutrition synt letal|conditional synthetic lethal nutrition-sensitivity
+MI:0601|so|sequence ontology
+MI:0602|chemical footprint|chemical footprinting
+MI:0603|dms footprinting|dimethylsulphate footprinting
+MI:0604|k-mn-04 footprinting|potassium permanganate footprinting
+MI:0605|enzymatic footprint|enzymatic footprinting
+MI:0606|dnase 1 footprinting|DNase I footprinting
+MI:0607|snrna|small nuclear rna
+MI:0608|rrna|ribosomal rna
+MI:0609|snorna|small nucleolar rna
+MI:0610|sirna|small interfering rna
+MI:0611|srprna|signal recognition particle rna
+MI:0612|comment|comment
+MI:0613|function|function
+MI:0614|url|url
+MI:0615|search-url|search-url
+MI:0616|example|example
+MI:0617|disease|disease
+MI:0618|caution|caution
+MI:0619|pathway|pathway
+MI:0620|search-url-ascii|search-url-ascii
+MI:0621|author-confidence|author-confidence
+MI:0622|confidence-mapping|confidence-mapping
+MI:0623|inhibition|inhibition
+MI:0624|stimulation|stimulation
+MI:0625|agonist|agonist
+MI:0626|antagonist|antagonist
+MI:0627|exp-modification|experiment modification
+MI:0628|id-validation-regexp|validation regular expression
+MI:0629|complex-properties|complex-properties
+MI:0630|3d-structure|3d-structure
+MI:0631|3d-r-factors|3d-r-factors
+MI:0632|3d-resolution|3d-resolution
+MI:0633|data-processing|data-processing
+MI:0634|contact-email|contact-email
+MI:0635|contact-comment|contact-comment
+MI:0636|author-list|author-list
+MI:0637|isoform-comment|isoform-comment
+MI:0638|prerequisite-ptm|prerequisite-ptm
+MI:0639|resulting-ptm|resulting-ptm
+MI:0655|lambda two hybrid|lambda repressor two hybrid
+MI:0656|identified peptide|identified peptide
+MI:0657|selex|systematic evolution of ligands by exponential enrichment
+MI:0658|mudpit|multidimensional protein identification technology
+MI:0659|experimental feature|experimental feature detection
+MI:0660|feature prediction|feature prediction
+MI:0661|experimental particp|experimental participant identification
+MI:0662|imex-primary|imex-primary
+MI:0663|confocal microscopy|confocal microscopy
+MI:0664|interaction att name|interaction attribute name
+MI:0665|experiment att name|experiment attibute name
+MI:0666|participant att name|participant attribute name
+MI:0667|cv att name|controlled vocabulary attribute name
+MI:0668|feature att name|feature attribute name
+MI:0669|organism att name|organism attribute name
+MI:0670|imex|imex
+MI:0671|antibodies|antibodies
+MI:0672|library-used|library-used
+MI:0673|complex-synonym|complex-synonym
+MI:0674|peptide-parent|peptide parent sequence reference
+MI:0675|ipi|international protein index
+MI:0676|tap|tandem affinity purification
+MI:0677|multiple tag|multiple tag
+MI:0678|antibody array|antibody array

@@ -1,0 +1,1 @@
+interactionTypeMI	detectionMI	pmid	uniprotkbXref1	taxId1	uniprotkbXref2	taxId2	proteinName1	proteinName2

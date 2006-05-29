@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_05" class="java.beans.XMLDecoder"> 
+ <object class="psidev.psi.mi.filemakers.xmlMaker.mapping.Mapping"> 
+  <void property="dictionaries"> 
+   <void method="add"> 
+    <object class="psidev.psi.mi.filemakers.xmlMaker.mapping.DictionaryMapping"> 
+     <void property="fileURL"> 
+      <string>/C:/Documents and Settings/alnotcheol/Documenti/workspace/psi-tools/xmlMakerFlattener/data/cvName2MI.txt</string> 
+     </void> 
+     <void property="separator"> 
+      <string>\|</string> 
+     </void> 
+    </object> 
+   </void> 
+  </void> 
+  <void property="flatFiles"> 
+   <void method="add"> 
+    <object class="psidev.psi.mi.filemakers.xmlMaker.mapping.FlatFileMapping"> 
+     <void property="fileURL"> 
+      <string>/C:/Documents and Settings/alnotcheol/Documenti/workspace/psi-tools/xmlMakerFlattener/data/psimaker-template.txt</string> 
+     </void> 
+     <void property="fisrtLineForTitle"> 
+      <boolean>true</boolean> 
+     </void> 
+     <void property="separators"> 
+      <void method="put"> 
+       <string></string> 
+       <string>\t</string> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <null/> 
+   </void> 
+  </void> 
+  <void property="tree"> 
+   <object class="psidev.psi.mi.filemakers.xmlMaker.mapping.TreeMapping"> 
+    <void property="associatedAutogeneration"> 
+     <void method="add"> 
+      <string>0.3.4.0.1</string> 
+     </void> 
+     <void method="add"> 
+      <string>0.3.4.0.5.0.0.0</string> 
+     </void> 
+     <void method="add"> 
+      <string>0.3.4.0.6.0.0</string> 
+     </void> 
+     <void method="add"> 
+      <string>0.3.4.0.6.0.3.0.0</string> 
+     </void> 
+     <void method="add"> 
+      <string>0.3.4.0.6.1.0</string> 
+     </void> 
+     <void method="add"> 
+      <string>0.3.4.0.6.1.3.0.0</string> 
+     </void> 
+    </void> 
+    <void property="associatedClosedDictionary"> 
+     <void method="put"> 
+      <string>0.3.4.0.5.0.0.5.0.0</string> 
+      <int>0</int> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.8.0.0</string> 
+      <int>0</int> 
+     </void> 
+    </void> 
+    <void property="associatedDictionaryColumn"> 
+     <void method="put"> 
+      <string>0.3.4.0.5.0.0.5.0.0</string> 
+      <int>1</int> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.8.0.0</string> 
+      <int>1</int> 
+     </void> 
+    </void> 
+    <void property="associatedFields"> 
+     <void method="put"> 
+      <string>0.3.4.0.5.0.0.5.0.0</string> 
+      <string>0.1</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.0.3.0.4.0</string> 
+      <string>0.4</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.5.0.0.5.1.0.2</string> 
+      <string>0.1</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.0.3.0.3.1.0.2</string> 
+      <string>0.3</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.8.1.0.2</string> 
+      <string>0.0</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.1.3.0.2.0.2</string> 
+      <string>0.5</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.1.3.0.1.0</string> 
+      <string>0.8</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.5.0.0.2.0.0.0.2</string> 
+      <string>0.2</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.0.3.0.1.0</string> 
+      <string>0.7</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.8.0.0</string> 
+      <string>0.0</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.1.3.0.4.0</string> 
+      <string>0.6</string> 
+     </void> 
+    </void> 
+    <void property="associatedFlatFiles"> 
+     <void method="add"> 
+      <string>0.3.4.0</string> 
+     </void> 
+    </void> 
+    <void property="associatedValues"> 
+     <void method="put"> 
+      <string>0.3.4.0.6.1.3.0.3.1.0.0</string> 
+      <string>psi-mi</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.0.3.0.3.1.0.0</string> 
+      <string>uniprokb</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.1.3.0.2.0.0</string> 
+      <string>uniprokb</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.1.3.0.3.1.0.1</string> 
+      <string>MI:0488</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.0.3.0.3.1.0.1</string> 
+      <string>MI:0488</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.0.3.0.3.0.0</string> 
+      <string>protein</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.5.0.0.5.1.0.0</string> 
+      <string>psi-mi</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.1.3.0.3.1.0.2</string> 
+      <string>protein</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.8.1.0.0</string> 
+      <string>psi-mi</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.0</string> 
+      <string>2</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.5.0.0.2.0.0.0.0</string> 
+      <string>pubmed</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.5.0.0.5.1.0.1</string> 
+      <string>MI:0488</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.6.1.3.0.3.0.0</string> 
+      <string>protein</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.3.4.0.8.1.0.1</string> 
+      <string>MI:0488</string> 
+     </void> 
+     <void method="put"> 
+      <string>0.1</string> 
+      <string>5</string> 
+     </void> 
+    </void> 
+    <void property="expendChoices"> 
+     <void method="add"> 
+      <string>0.3.4.0.4</string> 
+     </void> 
+     <void method="add"> 
+      <string>availabilityRef</string> 
+     </void> 
+     <void method="add"> 
+      <string>0.3.4.0.5.0</string> 
+     </void> 
+     <void method="add"> 
+      <string>experimentDescription</string> 
+     </void> 
+     <void method="add"> 
+      <string>0.3.4.0.5.0.0.2.0</string> 
+     </void> 
+     <void method="add"> 
+      <string>xref</string> 
+     </void> 
+     <void method="add"> 
+      <string>0.3.4.0.6.0.3</string> 
+     </void> 
+     <void method="add"> 
+      <string>interactor</string> 
+     </void> 
+     <void method="add"> 
+      <string>0.3.4.0.6.1.3</string> 
+     </void> 
+     <void method="add"> 
+      <string>interactor</string> 
+     </void> 
+    </void> 
+    <void property="id"> 
+     <string></string> 
+    </void> 
+    <void property="manageChoices"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="schemaURL"> 
+     <string>/C:/Documents and Settings/alnotcheol/Documenti/workspace/psi-tools/xmlMakerFlattener/data/MIF25.xsd</string> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

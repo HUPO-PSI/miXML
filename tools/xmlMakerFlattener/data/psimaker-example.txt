@@ -1,0 +1,2 @@
+interactionTypeMI	detectionMI	pmid	uniprotkbXref1	taxId1	uniprotkbXref2	taxId2	proteinName1	proteinName2
+MI:0218	MI:0019	8900110	P00519	9606	P04637	9606	ABL1 	TP53

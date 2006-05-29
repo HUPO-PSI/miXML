@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_05" class="java.beans.XMLDecoder"> 
+ <object class="psidev.psi.mi.filemakers.xmlFlattener.mapping.TreeMapping"> 
+  <void property="associatedNames"> 
+   <void method="put"> 
+    <string>0.3.4.0.5.1.5.0.0</string> 
+    <string>detection</string> 
+   </void> 
+   <void method="put"> 
+    <string>0.3.4.0.6.0.12.2.0.2</string> 
+    <string>interactorXref</string> 
+   </void> 
+   <void method="put"> 
+    <string>0.3.4.0.5.1.2.0.0.2</string> 
+    <string>pmid</string> 
+   </void> 
+   <void method="put"> 
+    <string>0.3.4.0.8.0.0</string> 
+    <string>interactionType</string> 
+   </void> 
+   <void method="put"> 
+    <string>0.3.4.0.6.0.12.1.0</string> 
+    <string>interactorName</string> 
+   </void> 
+  </void> 
+  <void property="expendChoices"> 
+   <void method="add"> 
+    <string>0.3.4.0.5.0</string> 
+   </void> 
+   <void method="add"> 
+    <string>0.3.4.0.5.1.2.0</string> 
+   </void> 
+   <void method="add"> 
+    <string>0.3.4.0.6.0.3</string> 
+   </void> 
+  </void> 
+  <void property="lineNode"> 
+   <string>0.3.4.0</string> 
+  </void> 
+  <void property="schemaURL"> 
+   <string>/C:/Documents and Settings/alnotcheol/Documenti/workspace/psi-tools/xmlMakerFlattener/data/MIF25.xsd</string> 
+  </void> 
+  <void property="selections"> 
+   <void method="add"> 
+    <string>0.3.4.0.5.1.2.0.0.2</string> 
+   </void> 
+   <void method="add"> 
+    <string>0.3.4.0.5.1.5.0.0</string> 
+   </void> 
+   <void method="add"> 
+    <string>0.3.4.0.8.0.0</string> 
+   </void> 
+   <void method="add"> 
+    <string>0.3.4.0.6.0.12.1.0</string> 
+   </void> 
+   <void method="add"> 
+    <string>0.3.4.0.6.0.12.2.0.2</string> 
+   </void> 
+  </void> 
+ </object> 
+</java> 

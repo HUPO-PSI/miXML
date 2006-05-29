@@ -1,0 +1,220 @@
+<html>
+<head>
+  <title>XML Maker tutorial</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<table width="100%" align="center">
+  <td><img src="images/titolo_mint.jpg" border=0></td>
+
+  <td><h1>XML Maker tutorial: how to create your PSI file</h1></td>
+</table>
+
+
+<p>The purpose of this tutorial is to is to lead you step by step
+through the creation of a the PSI XML file describing protein interactions 
+according to the PSI format.</p>
+
+
+<ol>
+<li>
+<h2>Open a schema</h2>
+<p>The first thing to do is to load the PSI schema. This file is called MIF.xsd and 
+is available at the <a href="http://psidev.sourceforge.net/">PSI</a> web page. 
+You can also find it in the directory called data.
+Once the schema is loaded, the root node should be displayed in the main frame. It 
+is named entrySet and is colored in <font color="red">red</font>, indicating that 
+something is missing (that's not
+a surprise, since do not have done any mapping yet).
+</p>
+</li>
+  
+<li>
+<h2>Set defaults values</h2>
+<h3>Set your prefix</h3>
+<p>By pressing the button <b>set your prefix</b>, you can enter a prefix value that describes
+ your institute
+(e.g. EBI, MINT...). This value will be used later if you want the application to generate 
+automatically some values, usually used as ids.</p>
+<h3>Associate first fields to default values:</h3>
+<p>We click for the first time on the node entrySet. This node is now extended and contains two attributes 
+(<b>level</b> and <b>version</b>), and an element 
+named entry.</p>
+<p><i> After the name of this element we can read <b>max: unbounded</b>; it means 
+that there is no limitation in the number of elements contained in an entrySet.
+ In our case, we just 
+need one that will contain all our data.</i></p>
+
+<p>We can already give a default value to the attributes <b>level</b> and <b>version</b>.
+After selecting the node level by clicking on it, 
+we set the radio button <b>association to default value</b>, and press the button <b>Associate</b>
+. A window 
+is opened where we can enter the value for this field (in our case it should be <b>1</b>).
+We can do it again for the attribute <b>version</b> (with the value <b>1</b>).</p>
+
+<p>Now we care ready to process.</p>
+</li>
+
+<li>
+<h2>Open a file</h2>
+<p>
+We can open the flat file that contains the description of the interaction. 
+</p>
+<ul>
+<li><b>line separator:</b> by default, it is assumed that each line describes the data about one 
+interaction. We can change it by specifying a line separator. For exemple 
+it can be the double character <b>//</b>.</li>
+<li><b>first line for title:</b> if the first line of the flat file contains the titles for the 
+columns, we have to check this box. If we do not do it, the final XML file will contain
+an element which data will be the titles.</li>
+</ul>
+</li>
+
+<li>
+<h2>Associate the file to a node</h2>
+<p>Now that the flat file describing the interactions is loaded, we have to tell to the 
+application to what node the file has to be mapped. The flat file describes a list of interactions
+(an interaction on each line) so we can map it to the element <b>interactionList</b> (entrySet, entry,
+ interactionList). In order to do it we select the node interactionList, select the radio button
+ <b>association to flat file</b> and click on <b>Associat</b>e.</p>
+ <p>Once the file associated to a node, the tab that displays this file takes
+ the name of the node associated (interactionList).</p>
+</li>
+
+<li>
+<h2>Choose the separator (for the flat file)</h2>
+<p>By default, no separator is selected, so a whole line of the flat file is displayed 
+in a cell from the list. So we can click on choose the separator and type the one we want to use.
+For example if the separator is <b>|</b>, we can write <b>\|</b> (see the documentation for more about the 
+regular expressions), if the separator is <b>;</b> we write <b>;</b> and if it can be <b>;</b>
+ , or <b>:</b> we write <b>;|,|:</b>.
+The line has now been splited and each field is displayed in a cell.
+</p>
+</li>
+
+<li>
+<h2>Do the mapping</h2>
+<p>It is now time to do the mapping beetween the flat file and the schema. I will just 
+give some examples of what can be done.</p>
+<ul>
+<li><b>short label:</b> if the first field/cell contains a label for the interaction, 
+we select the cell,
+select the node shortLabel (click on interaction to expand this node, then on names, and 
+on shortLabel), we choose the radio button <b>association to field</b> and click on 
+<b>associate</b>. 
+The node shortLabel is now displayed in black; it means that the node has been mapped.
+If an error message is displayed, it probably means that we have forgotten to associate the flat
+file to a node.</li>  
+
+<li><b>Interactors:</b> there are two ways to add interactors to the interaction, 
+the <b>normalize</b> one, 
+and the <b>unnormalized</b> one.
+<ul>
+<li><b>unnormalize</b>: an interaction contains the whole description of its components, 
+including 
+the description of the proteins. So we can click on <b>proteinParticipant</b>. As it is 
+expanded, we 
+can see a node named <b>(proteinInteractorRef|proteinInteractor)</b>. It means that we have
+ to choose 
+between <b>proteinInteractorRef</b> or <b>proteinInteractor</b>. As we want an 
+<b>unnormalized</b> file, we click
+on it and choose <b>proteinInteractor</b>. The element <b>proteinInteractor</b> is expanded 
+and we can do
+the mapping of the protein.
+</li>  
+<li><b>normalize</b>: an interaction contains only a reference to its interactors. 
+The whole description
+of those interactors is contained in the interactorList of the element entry, and should be mapped
+from another file. We choose <b>proteinInteractorRef</b>, and do the mapping 
+to the <b>attribute ref</b> and the field that contains the reference to an interactor.</li>
+</ul>
+<p><i>The minimum amount of interactors necessary is two, so by default two proteinInteractor are 
+displayed. If some interactions involve more than two proteins, we can select the node 
+proteinInteractor and click on <b>duplicate</b>. A new node proteinInteractor will be 
+created. This
+operation can be repeated as long as the maximum number of this element is not
+reached (as the number of proteinInterator is unbounded, we can do it as many time as we want).</i></p>
+</li>
+
+<li><b>PSI attributes</b>: mapping with a node that is not found in PSI, for example we have a field 
+named username 
+that contains the name of the user who has added the interaction. So we have to add a new 
+<b>attribute</b>
+in the <b>attributeList:</b> click on interaction, attributeList, attribute.
+The name of this new 
+attribute is username so we select the node, select the radio button <b>association to default
+ value</b>
+and click on <b>associate</b>. When requested, we enter the string username. Now we can select 
+the
+cell containing the username, the node named attribute, the radio button association to a field
+and click on <b>associate</b>.
+</li>
+
+<li><b>splitting a cell:</b> we want to fill the element <b>positionInterval</b> in the 
+feature <b>location </b>
+of the <b>proteinParticipant</b> (interaction, participantList, featureList, location, 
+choice of 
+positionInterval). This element contains two attributes <b>begin and end</b>, but in our 
+flat file
+we only have a field that contains this value formated as <b>begin-end</b>. We can manage it 
+by splitting the cell: we click ont the button <b>see next line</b> until such a cell is 
+displayed (because it is not possible with the title),
+we select this cell and click on <b>split cell</b>. A new list is displayed, which contains only
+one cell filled with the data from the cell that had been selected. As we have done for the
+main list, we choose a <b>separator</b>: <b>-</b>, and the list is now a list of two cells.
+ We can do the
+mapping between the first cell and the node <b>begin</b>, the second one and the node <b>end</b>
+, and click
+on <b>back to parent list</b> to return to the main list. The same process could have 
+been done to
+a cell of the sublist. The same mapping is kept for each line of the flat file.</li>
+</ul>
+</li>
+
+<li>
+<h2>Other files</h2>
+<p>We can do it again with <b>other flat files</b>. If we choosed to do a mapping of normalized 
+interactions,
+we are supposed to map another flat file to the <b>interactorList</b>. In that case we click on 
+<b>add tab</b>, a new tab is created that can be selected by clicking on it 
+(it doesn't have any name at this time as we do not have associated it to a node, whereas 
+the first one is called 
+interactionList, as the node it is associated to). Once selected, we can choose a file, 
+associate it to the node <b>interactorList</b>, and continue with the choice of a
+ separator and
+the mapping as we have done with the interactions.</p>
+<p>The same process can be repeated, for example for a list of experiments.</p>
+</li>
+
+<li>
+<h2>Checkings:</h2>
+<p>Once all the mappings done, there should not be anymore red elements, it means that the minimum mapping is 
+done. At any moment we can click on <b>check</b> and a new window will display all errors or warnings 
+found. We can also select a node and click on <b>about the node</b> to have some information 
+about it, 
+or select a node and click on <b>preview</b>, a window will display the XML code that would 
+be generated
+for this node if data is taken in the lines currently displayed from the flat file.</p>
+</li>
+
+<li>
+<h2>Print</h2>
+<p>It is almost over, it remains to click on <b>print</b> and choose the name of the file to print, and the name
+of the file where will be printed errors and warning messages.</p>
+</li>
+
+</ol>
+
+</ol> 
+
+<h3><a name="contact">Contacts</a></h3></li>
+	<p>This software has been created at the University of Roma "Tor Vergata"</b> by Arnaud Ceol 
+	with help of the <a href="http://cbm.bio.uniroma2.it/mint/">Mint Group</a>.
+	For any information you can contact me at 
+	<a href="mailto:arnaud@cbm.bio.uniroma2.it">arnaud@cbm.bio.uniroma2.it</a>.</p>
+	<p>PSI: the <a href="http://psidev.sourceforge.net/">Proteomics Standards Initiative</a></p>
+ 
+
+</body>
+</html>
