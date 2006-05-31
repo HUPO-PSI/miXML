@@ -5,7 +5,7 @@
    <void method="add"> 
     <object class="psidev.psi.mi.filemakers.xmlMaker.mapping.DictionaryMapping"> 
      <void property="fileURL"> 
-      <string>/C:/Documents and Settings/alnotcheol/Documenti/workspace/psi-tools/xmlMakerFlattener/data/cvName2MI.txt</string> 
+      <string>data/cvName2MI.txt</string> 
      </void> 
      <void property="separator"> 
       <string>\|</string> 
@@ -17,7 +17,7 @@
    <void method="add"> 
     <object class="psidev.psi.mi.filemakers.xmlMaker.mapping.FlatFileMapping"> 
      <void property="fileURL"> 
-      <string>/C:/Documents and Settings/alnotcheol/Documenti/workspace/psi-tools/xmlMakerFlattener/data/psimaker-template.txt</string> 
+      <string>data/psimaker-template.txt</string> 
      </void> 
      <void property="fisrtLineForTitle"> 
       <boolean>true</boolean> 
@@ -228,7 +228,7 @@
      <boolean>true</boolean> 
     </void> 
     <void property="schemaURL"> 
-     <string>/C:/Documents and Settings/alnotcheol/Documenti/workspace/psi-tools/xmlMakerFlattener/data/MIF25.xsd</string> 
+     <string>data/MIF25.xsd</string> 
     </void> 
    </object> 
   </void> 

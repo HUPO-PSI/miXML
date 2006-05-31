@@ -38,7 +38,7 @@
    <string>0.3.4.0</string> 
   </void> 
   <void property="schemaURL"> 
-   <string>/C:/Documents and Settings/alnotcheol/Documenti/workspace/psi-tools/xmlMakerFlattener/data/MIF25.xsd</string> 
+   <string>data/MIF25.xsd</string> 
   </void> 
   <void property="selections"> 
    <void method="add"> 
