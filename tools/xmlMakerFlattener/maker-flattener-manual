@@ -1,0 +1,111 @@
+NAME 
+
+XML Maker, XML flattener
+
+SYNOPSIS 
+
+Flattener without Graphical User Interface (GUI):
+java -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlFlattener.XmlFlattener -mapping <mapping-file.xml>  -xmlDocument <your PSI1.0 XML document> -o <output file>
+
+Flattener with GUI:
+java -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlFlattener.XmlFlattenerGui
+
+Maker  without Graphical User Interface:
+java -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlMaker.XmlMaker -mapping <mapping-file.xml>  -xmlDocument <your PSI2.5 XML document> -o <output file>
+
+Maker  without Graphical User Interface:
+java -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlMaker.XmlMakerGui
+
+
+
+DESCRIPTION 
+XML Maker and XML Flattener are two applications that allow to convert tab delimited files to XML documents and XML documents to tabdelimited files according to an XML schema.
+
+Both application can be used either with or without graphical interface. The graphical interface allows to load an XML schema and to create a mapping between 
+flat (tab delimited) files and XML document. Once a mapping has been created, it can be reused directly on command line.
+
+Flattener:
+To create a mapping file, an XML schema should first be loaded in the GUI . A graphical tree representation of this schema is then created. 
+On this tree it is possible first to choose the 'main node', i.e. the node that contains all information that will be displayed on a single 
+line of the output tab-delimited file. Then it is possible to select the elements and attributes that will be exported.
+The application will automaticaly calculate the number of columns necessary according to the number of sub-elements found.
+
+Maker:
+To create a mapping file, an XML schema should first be loaded in the GUI, then one (or more) flat file. A graphical tree representation of this schema is created. 
+On this tree it is possible first to associate a node to a flat file. An element corresponding to this node will be created in the output XML document 
+for each line of the flat file. At this point the fields of the file can be associated to the nodes of the schema.
+Other types of associations are possible:
+* to default value: specify the value that will be always associated to this node, whatever the flat files contains
+* to automatic value: a unic value will be automaticaly generated
+* to dictionnary: a dictionnary is a tab delimited file that contains synonyms of terms. It is possible to associate a node to which has already been 
+assigned a value (association to field, default value), to a dictionnary. When a synonym is found, it will be replace by its main value.
+
+Both applications have been develop on and required Java 1.4 environment (or newer) (http://www.java.com/en/download/index.jsp).
+
+
+OPTIONS
+
+Flattener (without GUI):
+-mapping  <mapping_file>: the mapping file
+-xmlDocument  <document.xml>: the XML document to parse
+-o: name of the output file
+
+Maker (without GUI):
+-mapping  <mapping_file>: the mapping file
+-o <xmlDocument>: name of the output XML document
+-dictionaries <dictionaries> :  names of the dictionary files in the right
+                                order, separated by comma
+-flatfiles <flat files>  :      names of the flat files in the right
+                                order, separated by comma
+
+
+ENVIRONMENT 
+more memory should be necessary for those applications. You can specified how much memory has to be reserved 
+by java with  -Xms  and -Xmx options, for instance
+java -Xms256M -Xmx512M 
+
+FILES
+
+Some files are available in the data directory. those files are relative to the Protein Standard Initiative (http://psidev.sourceforge.net/)
+for which this software has been created.
+mif.xsd, MIF2.5.xsd : PSI standard schema (version 1.0 and 2.5)
+
+flattener-mapping-psi10.xml, flattener-mapping-psi25.xml, maker-mapping-psi10.xml, maker-mapping-psi25.xml:
+	examples of mapping files for both applications
+	
+psimaker-template.txt: template flat file that can be used with the XML Maker application and its respective mapping files.
+psimaker-example.txt: an example  (one line) of use of this template.
+
+
+EXAMPLES
+
+PSI 1.0 flattener:
+java  -Xms256M -Xmx512M -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlFlattener.XmlFlattener -mapping data/flattener-mapping-psi10.xml  -xmlDocument <your PSI1.0 XML document> -o <output file>
+
+PSI 2.5 flattener:
+java  -Xms256M -Xmx512M -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlFlattener.XmlFlattener -mapping data/flattener-mapping-psi25.xml  -xmlDocument <your PSI2.5 XML document> -o <output file>
+
+PSI 1.0 maker:
+java  -Xms256M -Xmx512M -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlMaker.XmlMaker -mapping data/maker-mapping-psi10.xml -flatfiles <your flat file>  -xmlDocument <your PSI2.5 XML document> -o <output XML document>
+
+PSI 2.5
+java  -Xms256M -Xmx512M -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlMaker.XmlMaker -mapping data/maker-mapping-psi25.xml -flatfiles <your flat file>  -xmlDocument <your PSI2.5 XML document> -o <output XML document>
+
+
+SOURCE:
+all sources of this software are available in the src directory
+
+INSTALLATION:
+you can build the software using ANT (http://ant.apache.org/bindownload.cgi):
+
+ant compile jar
+
+classes will be compiled into the classes directory and a jar file will be added to the dist directory.
+
+
+SEE-ALSO
+This software has been develop for the Protein Standard Initiative (http://psidev.sourceforge.net/).
+It can be downloaded on SourceForge: http://psidev.cvs.sourceforge.net/psidev/psi/mi/tools/
+
+
+
