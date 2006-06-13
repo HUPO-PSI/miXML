@@ -1,0 +1,64 @@
+Current version is 0.2
+
+What's new
+==========
+
+[Validator]
+
+    - Added a short description of the software (doc/readme.html)
+    - Added SAX Validation against Schema
+      This is done before semantic validation. Should it fails, the validation process stops.
+    - Loading of ontology via HTTP (a URL can be specified in the validator configuration)
+    - Caching of Ontology loaded via HTTP on hard drive
+    - API for handling User preferences
+    - Add UserPreferences to Validator
+        - it contains the user directory by default for temp files
+        - it can be overriden
+        - take out 'last directory opened' and make it specific to the gui
+          though it uses user preference from the validator to find where is the temp directory.
+        - set is the SAX validation has to be done
+
+[GUI]
+
+    - Added Menu bar ( Some unix user seem not to be able to use the D7D feature :( )
+        - Open file to validate
+        - Memorize last directory opened
+        - Help section
+            - display current version of the validator
+
+TODOs
+=====
+
+[Validator]
+
+    - Integrate expand/conpact stylesheet (with possibility for the user to disable the feature )
+      The pipeline becomes: expand input file > SAX validation > semantic validation.
+
+[GUI]
+
+    - Add Option panel to:
+       - allow to disable SAX validation
+       - set time delay before ontology cache gets cleared
+
+    - Additional menus:
+        - messages: allowing filtering, clearing of the message list.
+        - log level: allowing to change the log level without restarting the application.
+
+
+------------------------------------------------------------------------------------------------------
+
+Older versions
+==============
+
+    Version 0.1.1
+    -------------
+
+        - No additional functionality, simply updated README
+
+    Version 0.1
+    -----------
+
+        - API for laoding and querying OBO ontologies
+        - Drag & Drop XML file to start their validation
+        - Tutorial on how to install the software (doc/tutorial.html)
+        - using the validator describe by an input parameter (configuration file)
