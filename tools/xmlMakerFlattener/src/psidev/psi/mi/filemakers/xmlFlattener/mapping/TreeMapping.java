@@ -164,7 +164,7 @@ public class TreeMapping {
 	 *            The expendChoices to set.
 	 *  
 	 */
-	public void setExpendChoices(ArrayList<String> expendChoices) {
+	public void setExpendChoices(ArrayList expendChoices) {
 		this.expendChoices = expendChoices;
 	}
 

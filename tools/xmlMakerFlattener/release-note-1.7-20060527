@@ -1,0 +1,37 @@
+new release : may 2006.
+
+
+what's new:
+* maker/flattener has been refactored, package mint.filemakers has been renamed psidev.psi.mi.filemakers
+To keep compatibility with old mapping files, you will have to update them.
+It could be done by the perl command:
+perl -pi -e 's/class\=\"mint\./class\=\"psidev\.psi\.mi\./g' $1
+(see scripts/updateMappings.sh)
+or with any text editor, by replacing the string "mint.filemakers" by "psidev.psi.mi.filemakers"
+
+
+* mapping files:
+four mapping files have been added in the data directory, one for the maker, one for the flattener, each one in either a PSI 1.0 and PSI 2.5 version.
+
+to use it on command line:
+
+Flattener: 
+find in th ePSI files the pmid related to each experiment, detection method, interaction type, xref and name of th enteractors:
+
+PSI 1.0 flattener:
+java -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlFlattener.XmlFlattener -mapping data/flattener-mapping-psi10.xml  -xmlDocument <your PSI1.0 XML document> -o <output file>
+
+PSI 2.5 flattener:
+java -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlFlattener.XmlFlattener -mapping data/flattener-mapping-psi25.xml  -xmlDocument <your PSI2.5 XML document> -o <output file>
+
+Maker:
+produce a denormalized PSI XML file, a template tab delimited file is contains in the data directory
+
+PSI 1.0 maker:
+java -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlMaker.XmlMaker -mapping data/maker-mapping-psi10.xml -flatfiles <your flat file>  -xmlDocument <your PSI2.5 XML document> -o <output XML document>
+
+PSI 2.5
+java -classpath classes/ -Djava.ext.dirs=libs psidev.psi.mi.filemakers.xmlMaker.XmlMaker -mapping data/maker-mapping-psi25.xml -flatfiles <your flat file>  -xmlDocument <your PSI2.5 XML document> -o <output XML document>
+
+
+Each mapping file can be edited with the GUI application.

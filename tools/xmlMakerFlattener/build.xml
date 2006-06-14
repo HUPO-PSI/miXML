@@ -43,14 +43,14 @@
    
    
     <target name="compile">     
-        <!-- Delete the class directory. -->
-        <delete dir="${dest.dir}"/>
+        <!-- Delete the class directory.
+            <delete dir="${dest.dir}"/> -->
 
-        <!-- Just compile without copying config files to the class dir; exclude tests. -->
-        <mkdir dir="${dest.dir}" />
+        <!-- Just compile without copying config files to the class dir; exclude tests. 
+            <mkdir dir="${dest.dir}" />-->
 
         <javac destdir="classes" 
-        	srcdir="${src.dir}">
+            srcdir="${src.dir}" source="1.4" target="1.4">
             <classpath refid="project.class.path"/>
         </javac>
     </target>
@@ -66,16 +66,16 @@
 
     <target name="jar">
 
-        <!-- Delete the class directory. -->
+        <!-- Delete the class directory.
         <delete dir="${dist.dir}"/>
-        <delete dir="${dest.dir}"/>
+            <delete dir="${dest.dir}"/> -->
 
-        <!-- Just compile without copying config files to the class dir; exclude tests. -->
+        <!-- Just compile without copying config files to the class dir; exclude tests. 
         <mkdir dir="${dest.dir}" />
-        <mkdir dir="${dist.dir}" />
+            <mkdir dir="${dist.dir}" />-->
 
          <javac destdir="${dest.dir}" 
-        	srcdir="${src.dir}" classpath="${project.class.path}">
+             srcdir="${src.dir}" classpath="${project.class.path}" source="1.4" target="1.4">
             <classpath refid="project.class.path"/>
         </javac>
  
@@ -93,8 +93,8 @@
     <target name="javadoc" depends="compile">
 
         <!-- Start with a fresh directory. -->
-        <delete dir="${jdoc.dir}" quiet="true"/>
-        <mkdir dir="${jdoc.dir}" />
+        <!-- <delete dir="${jdoc.dir}" quiet="true"/> 
+            <mkdir dir="${jdoc.dir}" />-->
 
         <javadoc destdir="${jdoc.dir}" author="true" version="true" use="true"
             windowtitle="Intact core API Documentation"

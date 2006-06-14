@@ -439,7 +439,7 @@ public class XmlMakerGui extends JFrame {
 				editorPane.setEditable(false);
 				try {
 					editorPane.setContentType("text/html");
-					editorPane.setPage("file:documentation.html");
+					editorPane.setPage("file:doc/documentation.html");
 
 					JScrollPane areaScrollPane = new JScrollPane(editorPane);
 					areaScrollPane
@@ -459,7 +459,7 @@ public class XmlMakerGui extends JFrame {
 				JEditorPane editorPane = new JEditorPane();
 				editorPane.setEditable(false);
 				try {
-					editorPane.setPage("file:about.html");
+					editorPane.setPage("file:doc/about.html");
 					editorPane.setContentType("text/html");
 					JScrollPane areaScrollPane = new JScrollPane(editorPane);
 					areaScrollPane
