@@ -695,3 +695,36 @@ MI:0076 	neural network on interface properties 	MI:0076 	neural network on inte
 MI:0362 	inference 	MI:0003	feature detection method	feature detection method
 MI:0363 	inferred by author 	MI:0003	feature detection method	feature detection method
 MI:0364 	inferred by curator 	MI:0003	feature detection method	feature detection method
+MI:0710	nucleic acid transformation by treatment with divalent cation		no remapping	delivery method
+MI:0711	nucleic acid electroporation		no remapping	delivery method
+MI:0712	nucleic acid microinjection		no remapping	delivery method
+MI:0713	nucleic acid passive uptake		no remapping	delivery method
+MI:0714	nucleic acid transduction		no remapping	delivery method
+MI:0715	nucleic acid conjugation		no remapping	delivery method
+MI:0716	passive uptake		no remapping	delivery method
+MI:0717	nucleic acid transfection with liposome		no remapping	delivery method
+MI:0718	nucleic acid transfection by treatment		no remapping	delivery method
+MI:0719	calcium phosphate nucleic acid transfection		no remapping	delivery method
+MI:0720	nucleic acid delivery by infection		no remapping	delivery method
+MI:0721	protein delivery		no remapping	delivery method
+MI:0722	protein electroporation		no remapping	delivery method
+MI:0723	protein microinjection		no remapping	delivery method
+MI:0724	protein delivery with cationic lipid		no remapping	delivery method
+MI:0725	protein delivery by infection		no remapping	delivery method
+MI:0726	reverse two hybrid	MI:0018	two hybrid 	interaction detection method
+MI:0727	lexa b52 complementation	MI:0018	two hybrid 	interaction detection method
+MI:0728	gal4 vp16 complementation	MI:0018	two hybrid 	interaction detection method
+MI:0729	luminescence-based mammalian interactome mapping	MI:0004	affinity chromatography technologies 	interaction detection method
+MI:0730	pubchem	pubchem	xrefType/primaryRef/db	database citation
+MI:0731	3d repertoire	3d repertoire	xrefType/primaryRef/db	database citation
+MI:0732	red fluorescent protein tag	TRUE	isTaggedProtein	feature type
+MI:0733	cyan fluorescent protein tag	TRUE	isTaggedProtein	feature type
+MI:0734	enhanced green fluorescent protein tag	TRUE	isTaggedProtein	feature type
+MI:0735	transactivating tag	TRUE	isTaggedProtein	feature type
+MI:0736	protein passive uptake		no remapping	delivery method
+MI:0737	peptide sequence database	peptide sequence database	xrefType/primaryRef/db	database citation
+MI:0738	pride	pride	xrefType/primaryRef/db	database citation
+MI:0739	penetrating tag	TRUE	isTaggedProtein	feature type
+MI:0740	cell penetrating peptide tag	TRUE	isTaggedProtein	feature type
+MI:0741	peptide atlas	peptide atlas	xrefType/primaryRef/db	database citation
+MI:0742	gpm	gpm	xrefType/primaryRef/db	database citation
