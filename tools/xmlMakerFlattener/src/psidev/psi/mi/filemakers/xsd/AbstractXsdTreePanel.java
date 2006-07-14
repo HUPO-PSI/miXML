@@ -62,7 +62,7 @@ public abstract class AbstractXsdTreePanel extends JPanel {
 		ToolTipManager.sharedInstance().registerComponent(xsdTree.tree);
 		setCellRenderer();
 		xsdTree.tree.addTreeSelectionListener(new XsdTreeSelectionListener());
-		xsdTree.tree.setShowsRootHandles(true);
+//		xsdTree.tree.setShowsRootHandles(true);
 	}
 
 	public JScrollPane scrollPane;

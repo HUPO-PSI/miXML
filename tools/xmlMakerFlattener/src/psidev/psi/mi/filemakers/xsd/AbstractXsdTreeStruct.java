@@ -1113,6 +1113,7 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 		if (node.max == getChildrenCount((XsdNode) node.getParent(), node
 				.toString()))
 			return;
+		
 		XsdNode child = node.createBrother();
 
 		XsdNode parentNode = (XsdNode) node.getParent();
@@ -1122,12 +1123,11 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 
 		/* be sure that this node is not already used */
 		child.init();
-
 		if (((Annotated) child.getUserObject()).getStructureType() != Structure.GROUP)
 			extendPath(child);
 		else if (((Group) child.getUserObject()).getOrder().getType() != Order.CHOICE)
 			extendPath(child);
-
+		
 		expendChoices.add(node.getPath2String());
 		expendChoices.add(null);
 		

@@ -1355,39 +1355,40 @@ public class XsdTreeStructImpl extends
 		return mapping;
 	}
 
-	/**
-	 * create a copy of the node and add it to the parent of this node if the
-	 * node is not duplicable or if the maximum amount of this type of node
-	 * according to the schema has been reached, do nothing
-	 * 
-	 * @param node
-	 *            the node to duplicate
-	 */
-	public void duplicateNode(XsdNode node) {
-		if (!node.isDuplicable())
-			return;
-		if (node.max == getChildrenCount((XsdNode) node.getParent(), node
-				.toString()))
-			return;
-
-		XsdNode child = node.createBrother();
-
-		XsdNode parentNode = (XsdNode) node.getParent();
-
-		/* add to the end for not corrupting the mapping */
-		treeModel.insertNodeInto(child, parentNode, parentNode.getChildCount());
-
-		/* be sure that this node is not already used */
-		child.init();
-
-		if (((Annotated) child.getUserObject()).getStructureType() != Structure.GROUP)
-			extendPath(child);
-		else if (((Group) child.getUserObject()).getOrder().getType() != Order.CHOICE)
-			extendPath(child);
-		
-		check((XsdNode) treeModel.getRoot());
-		treeModel.reload((XsdNode) treeModel.getRoot());
-	}
+//	/**
+//	 * create a copy of the node and add it to the parent of this node if the
+//	 * node is not duplicable or if the maximum amount of this type of node
+//	 * according to the schema has been reached, do nothing
+//	 * 
+//	 * @param node
+//	 *            the node to duplicate
+//	 */
+//	public void duplicateNode(XsdNode node) {
+//		if (!node.isDuplicable())
+//			return;
+//		if (node.max == getChildrenCount((XsdNode) node.getParent(), node
+//				.toString()))
+//			return;
+//
+//		XsdNode child = node.createBrother();
+//
+//		XsdNode parentNode = (XsdNode) node.getParent();
+//
+//		/* add to the end for not corrupting the mapping */
+//		treeModel.insertNodeInto(child, parentNode, parentNode.getChildCount());
+//
+//		/* be sure that this node is not already used */
+//		child.init();
+//
+//		if (((Annotated) child.getUserObject()).getStructureType() != Structure.GROUP)
+//			extendPath(child);
+//		else if (((Group) child.getUserObject()).getOrder().getType() != Order.CHOICE)
+//			extendPath(child);
+//		super.duplicateNode(node);
+//		
+//		check((XsdNode) treeModel.getRoot());
+//		treeModel.reload((XsdNode) treeModel.getRoot());
+//	}
 
 	public void loadMapping(TreeMapping mapping) throws MalformedURLException {
 		Iterator it;
@@ -1397,13 +1398,13 @@ public class XsdTreeStructImpl extends
 		this.setAutoDuplicate(mapping.autoDuplicate);
 		this.setManageChoices(mapping.manageChoices);
 
-		this.setExpendChoices(mapping.expendChoices);
+//		this.setExpendChoices(mapping.expendChoices);
 
 		int i = 0;
-		while (i < expendChoices.size()) {
-			String path = (String) expendChoices.get(i);
+		while (i < mapping.expendChoices.size()) {
+			String path = (String) mapping.expendChoices.get(i);
 			i++;
-			String choice = (String) expendChoices.get(i);
+			String choice = (String) mapping.expendChoices.get(i);
 			i++;
 			int index = path.indexOf(".");
 			String subpath = path;
