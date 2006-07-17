@@ -1392,7 +1392,6 @@ public class XsdTreeStructImpl extends
 
 	public void loadMapping(TreeMapping mapping) throws MalformedURLException {
 		Iterator it;
-
 		this.setId(mapping.id);
 		this.setSchemaURL(new File(mapping.getSchemaURL()).toURL());
 		this.setAutoDuplicate(mapping.autoDuplicate);

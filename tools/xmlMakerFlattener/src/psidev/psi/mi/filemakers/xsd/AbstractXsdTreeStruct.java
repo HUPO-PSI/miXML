@@ -746,7 +746,7 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 			int index = 0;
 			Annotated annotated = (Annotated) (currentNode.getUserObject());
 			/* for each element on the path */
-			while (nextIndexes.length() > 0) {
+			while (nextIndexes.length() > 0 && nextIndexes != "-1") {
 				/* if choice do it */
 				annotated = (Annotated) (currentNode.getUserObject());
 				/* if not extended, do it */
@@ -788,8 +788,9 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 					}
 				}
 			}
-
+			
 			/* add choice */
+			annotated = (Annotated) (currentNode.getUserObject());
 			Group g = (Group) annotated;
 			try {
 				if (g.getOrder().getType() == Order.CHOICE && manageChoices) {
@@ -814,8 +815,9 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 					newNode.min = currentNode.min;
 					newNode.max = currentNode.max;
 					newNode.originalParent = currentNode;
-
+					
 					currentNode.transparent = true;
+					currentNode.isExtended =true;
 					currentNode.add(newNode);
 
 					currentNode = newNode;
