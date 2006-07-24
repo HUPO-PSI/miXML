@@ -321,7 +321,7 @@ public class XsdTreeStructImpl extends
 			treeModel.reload(previousAssociation);
 
 		associatedFlatFiles.set(flatFile, node);
-		System.out.println(flatFile+ "#"+ node.getName());
+//		System.out.println(flatFile+ "#"+ node.getName());
 		/* root node is mandatory */
 		rootNode.use();
 	}
@@ -1413,6 +1413,7 @@ public class XsdTreeStructImpl extends
 			} else { /* duplication */
 				duplicateNode(getNodeByPath(path));
 			}
+			
 		}
 
 		for (i = 0; i < mapping.associatedAutogeneration.size(); i++) {

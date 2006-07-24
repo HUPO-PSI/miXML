@@ -745,16 +745,13 @@ public class XsdTreePanelImpl extends psidev.psi.mi.filemakers.xsd.AbstractXsdTr
 	/** used to duplicate the node selected */
 	public class DuplicateListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("et....");
 			XsdNode node = (XsdNode) ((XsdTreeStructImpl) xsdTree).tree
 					.getLastSelectedPathComponent();
 			if (node == null) {
 				xsdTree.getMessageManager().sendMessage("no node selected", MessageManagerInt.errorMessage);
 				return;
 			}
-			System.out.println("...hop");
 			xsdTree.duplicateNode(node);
-			System.out.println("..la");
 		}
 	}
 
@@ -1283,7 +1280,6 @@ public class XsdTreePanelImpl extends psidev.psi.mi.filemakers.xsd.AbstractXsdTr
 		public AssociateFieldPanel(String regexp,
 				boolean unduplicableAssociation) {
 			super();
-			System.out.println("ee" + regexp);
 			setLayout(new BorderLayout());
 			if (regexp != null) {
 				this.filter = regexp;

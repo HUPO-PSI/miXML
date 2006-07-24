@@ -100,7 +100,6 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 		Utils.lastVisitedSchemaDirectory = schemaURL.getPath();
 	}
 
-
 	private void getKeys(Node node) {
 		try {
 			for (int i = 0; i < node.getChildNodes().getLength(); i++) {
@@ -118,8 +117,7 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 			e.printStackTrace(System.err);
 		}
 	}
-	
-	
+
 	protected ArrayList keyz = new ArrayList();
 
 	protected ArrayList keyRefs = new ArrayList();
@@ -277,14 +275,14 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 	 */
 	public int getChildrenCount(XsdNode node, String childrenName) {
 		int count = 0;
-//		Enumeration childrens = node.children();
-//		while (childrens.hasMoreElements()) {
-//			if (((XsdNode) childrens.nextElement()).toString() == childrenName)
-//				count++;
-//		}
-//		return count;
+		// Enumeration childrens = node.children();
+		// while (childrens.hasMoreElements()) {
+		// if (((XsdNode) childrens.nextElement()).toString() == childrenName)
+		// count++;
+		// }
+		// return count;
 		;
-		for (Iterator  it = getChildren(node); it.hasNext(); ) {
+		for (Iterator it = getChildren(node); it.hasNext();) {
 			XsdNode child = (XsdNode) it.next();
 			if (child.toString() == childrenName)
 				count++;
@@ -321,18 +319,18 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 	 * retrun true if an element of this type is a reference to another element.
 	 */
 	public boolean isXsRefPath(Node node) {
-		if (node.getNodeName()== null)
+		if (node.getNodeName() == null)
 			return false;
 		return refType2referedType.keySet().contains(getDocumentXpath(node));
 	}
-	
+
 	/**
 	 * retrun true if an element of this type is a reference to another element.
 	 */
 	public boolean isRefType(String nodeName) {
 		return nodeName.equals(refType);
 	}
-	
+
 	/**
 	 * describes the node with informations such as its name or its XML type.
 	 * Other informations should probably have to be added when extending this
@@ -485,14 +483,14 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 				duplicateNode((XsdNode) currentNode.getChildAt(index - 1));
 				currentNode = (XsdNode) currentNode.getChildAt(index);
 			}
-			
-			if (treeChanged){
+
+			if (treeChanged) {
 				check((XsdNode) treeModel.getRoot());
 				treeModel.reload((XsdNode) treeModel.getRoot());
 			}
-			
+
 			return currentNode;
-			
+
 			/** TODO: add check? */
 		} catch (ArrayIndexOutOfBoundsException aoobe) {
 			System.out.println("Path not found: " + indexes);
@@ -554,22 +552,22 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 	// AbstractXsdTreeStruct.refType = refType;
 	// }
 
-//	/**
-//	 * @return Returns the refTypeList.
-//	 * 
-//	 * @uml.property name="refTypeList"
-//	 */
-//	public static ArrayList getRefTypeList() {
-//		return refTypeList;
-//	}
+	// /**
+	// * @return Returns the refTypeList.
+	// *
+	// * @uml.property name="refTypeList"
+	// */
+	// public static ArrayList getRefTypeList() {
+	// return refTypeList;
+	// }
 
-//	/**
-//	 * @param refTypeList
-//	 *            The refTypeList to set.
-//	 */
-//	public static void setRefTypeList(ArrayList refTypeList) {
-//		AbstractXsdTreeStruct.refTypeList = refTypeList;
-//	}
+	// /**
+	// * @param refTypeList
+	// * The refTypeList to set.
+	// */
+	// public static void setRefTypeList(ArrayList refTypeList) {
+	// AbstractXsdTreeStruct.refTypeList = refTypeList;
+	// }
 
 	/**
 	 * @return Returns the autoDuplicate.
@@ -788,7 +786,7 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 					}
 				}
 			}
-			
+
 			/* add choice */
 			annotated = (Annotated) (currentNode.getUserObject());
 			Group g = (Group) annotated;
@@ -815,9 +813,9 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 					newNode.min = currentNode.min;
 					newNode.max = currentNode.max;
 					newNode.originalParent = currentNode;
-					
+
 					currentNode.transparent = true;
-					currentNode.isExtended =true;
+					currentNode.isExtended = true;
 					currentNode.add(newNode);
 
 					currentNode = newNode;
@@ -825,13 +823,16 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 			} catch (StringIndexOutOfBoundsException e) {
 				return;
 			}
-			
+
 		} catch (ArrayIndexOutOfBoundsException aioobe) {
 			System.out.println("path not found: " + path);
 			throw aioobe;
 		}
 		check((XsdNode) treeModel.getRoot());
 		treeModel.reload((XsdNode) treeModel.getRoot());
+		
+		expendChoices.add(path);
+		expendChoices.add(choice);
 	}
 
 	/**
@@ -920,8 +921,7 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 	public void extendPath(XsdNode node) {
 		if (node.isExtended)
 			return;
-		
-		
+
 		Annotated annotated = (Annotated) (node.getUserObject());
 		String path = getPathForNode(node);
 
@@ -936,8 +936,7 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 			XsdNode parent = (XsdNode) node.getParent();
 
 			/* position is important when adding new node */
-//			int position = parent.getIndex(node);
-
+			// int position = parent.getIndex(node);
 			/*
 			 * if a sequence: add all childs, if a choice, ask user
 			 */
@@ -959,6 +958,7 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 								.choiceToString((Group) choices.get(i)));
 					}
 				}
+				System.out.println(choice + ": " + possibilities);
 				newNode = new XsdNode((Annotated) choices.get(possibilities
 						.indexOf(choice)));
 				newNode.isRequired = node.isRequired;
@@ -973,12 +973,11 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 				else if (((Group) newNode.getUserObject()).getOrder().getType() != Order.CHOICE)
 					extendPath(newNode);
 
-			}  else { /* sequence */
-				 if (g.getOrder().getType() == Order.CHOICE) {
-						expendChoices.add(path);
+			} else { /* sequence */
+				if (g.getOrder().getType() == Order.CHOICE) {
+					expendChoices.add(path);
 				}
-				
-				
+
 				int parentIndex = parent.getIndex(node);
 				((XsdNode) node.getParent()).remove(parent.getIndex(node));
 
@@ -988,18 +987,18 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 
 					Annotated element = (Annotated) elts.nextElement();
 					XsdNode newNode = new XsdNode(element);
-					
-					
-					/* In some cases the minOccurs argument is on the sequence 
-					 * element instead of the chidrens themseves.
-					 * In those cases propagat it from sequence element to the children
+
+					/*
+					 * In some cases the minOccurs argument is on the sequence
+					 * element instead of the chidrens themseves. In those cases
+					 * propagat it from sequence element to the children
 					 * elements
 					 */
 					if (node.min == 0) {
 						newNode.min = 0;
 						newNode.isRequired = false;
 					}
-					
+
 					if (firstElement) {
 						parent.insert(newNode, parentIndex);
 						firstElement = false;
@@ -1084,8 +1083,8 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 				/* no base type */
 			}
 
-//			check((XsdNode) treeModel.getRoot());
-//			treeModel.reload(node);
+			// check((XsdNode) treeModel.getRoot());
+			// treeModel.reload(node);
 			break;
 		default:
 			System.out.println("default type: " + annotated.getStructureType());
@@ -1115,7 +1114,7 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 		if (node.max == getChildrenCount((XsdNode) node.getParent(), node
 				.toString()))
 			return;
-		
+
 		XsdNode child = node.createBrother();
 
 		XsdNode parentNode = (XsdNode) node.getParent();
@@ -1129,32 +1128,31 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 			extendPath(child);
 		else if (((Group) child.getUserObject()).getOrder().getType() != Order.CHOICE)
 			extendPath(child);
-		
+
 		expendChoices.add(node.getPath2String());
 		expendChoices.add(null);
-		
+
 		check((XsdNode) treeModel.getRoot());
 		treeModel.reload((XsdNode) treeModel.getRoot());
 
 	}
 
-
 	/**
 	 * the name of an element in the schema is contained in the attribute 'name'
+	 * 
 	 * @param node
 	 * @return
 	 */
 	private String getName(Node node) {
-		if (node.hasAttributes() == false) 
+		if (node.hasAttributes() == false)
 			return null;
-		
-		for (int i = 0; i<node.getAttributes().getLength(); i++) {
-			if (node.getAttributes().item(i).getNodeName().equals("name")) 
+
+		for (int i = 0; i < node.getAttributes().getLength(); i++) {
+			if (node.getAttributes().item(i).getNodeName().equals("name"))
 				return node.getAttributes().item(i).getNodeValue();
 		}
 		return null;
 	}
-
 
 	protected String getSchemaXpath(Node node) {
 		String xpath = "";
@@ -1162,10 +1160,10 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 			xpath = getSchemaXpath(node.getParentNode());
 		}
 		String name = getName(node);
-		
+
 		if (name != null && xpath != null && xpath.equals("") == false)
 			xpath += "/";
-		
+
 		if (name != null)
 			xpath += name;
 		return xpath;
@@ -1175,22 +1173,21 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 		String xpath = "";
 		if (node.getParentNode() != null) {
 			xpath = getDocumentXpath(node.getParentNode());
-		String name = node.getNodeName();
-		
-		if (name != null && xpath != null && xpath.equals("") == false)
-			xpath += "/";
-		
-		if (name != null)
-			xpath += name;
+			String name = node.getNodeName();
+
+			if (name != null && xpath != null && xpath.equals("") == false)
+				xpath += "/";
+
+			if (name != null)
+				xpath += name;
 		}
 		return xpath;
 	}
 
-
 	/**
-	 * return an enumeration of all children of given node
-	 * if one of the chidren is transparent, add the child'children instead of the 
-	 * child itself
+	 * return an enumeration of all children of given node if one of the chidren
+	 * is transparent, add the child'children instead of the child itself
+	 * 
 	 * @return
 	 */
 	protected Iterator getChildren(XsdNode node) {
@@ -1207,8 +1204,8 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 				children.add(child);
 			}
 		}
-	
+
 		return children.iterator();
 	}
-	
+
 }
