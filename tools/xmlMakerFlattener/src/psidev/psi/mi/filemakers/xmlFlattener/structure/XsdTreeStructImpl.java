@@ -798,7 +798,7 @@ public class XsdTreeStructImpl extends AbstractXsdTreeStruct {
 				String value = getElementValue((Element) xmlElement);
 				/** TODO: done for managing filter */
 				/** if empty marshalling, we do not care about filters */
-				if (elementFilters.containsKey(xsdNode) && !empty) {
+				if (elementFilters.containsKey(xsdNode) && !empty &&  elementFilters.get(xsdNode) != null &&  ((String)elementFilters.get(xsdNode)).length() > 0) {
 					if (value.matches((String) elementFilters.get(xsdNode))) {
 						if (firstElement)
 							firstElement = false;
@@ -979,7 +979,8 @@ public class XsdTreeStructImpl extends AbstractXsdTreeStruct {
 
 	public void addFilter(XsdNode node, String regexp) {
 		elementFilters.remove(node);
-		elementFilters.put(node, regexp);
+		if (regexp == null || regexp.trim().equals(""))
+			elementFilters.put(node, regexp.trim());
 	}
 
 	public void selectNode(XsdNode node) {
@@ -1173,9 +1174,10 @@ public class XsdTreeStructImpl extends AbstractXsdTreeStruct {
 		while (i < expendChoices.size()) {
 			String path = (String) expendChoices.get(i);
 			i++;
-			int index = path.indexOf(".");
-			String subpath = path;
-			redoChoice(path, null);
+//			int index = path.indexOf(".");
+//			String subpath = path;
+//			redoChoice(path, null);
+			super.extendPath(super.getNodeByPath(path));
 		}
 
 		if (mapping.getLineNode() != null)

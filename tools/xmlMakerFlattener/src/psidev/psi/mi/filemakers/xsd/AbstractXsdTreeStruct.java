@@ -977,7 +977,6 @@ public abstract class AbstractXsdTreeStruct extends Observable {
 				if (g.getOrder().getType() == Order.CHOICE) {
 					expendChoices.add(path);
 				}
-
 				int parentIndex = parent.getIndex(node);
 				((XsdNode) node.getParent()).remove(parent.getIndex(node));
 
