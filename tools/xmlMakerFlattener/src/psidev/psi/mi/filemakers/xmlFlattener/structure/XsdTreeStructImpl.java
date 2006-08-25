@@ -25,6 +25,8 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.swing.tree.TreeNode;
 import javax.xml.parsers.DocumentBuilder;
@@ -36,6 +38,7 @@ import org.exolab.castor.xml.schema.Annotated;
 import org.exolab.castor.xml.schema.Structure;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
@@ -449,15 +452,42 @@ public class XsdTreeStructImpl extends AbstractXsdTreeStruct {
 	public String getElementValue(Element element) {
 		try {
 			NodeList children = element.getChildNodes();
+			String value = "";
 			for (int i = 0; i < children.getLength(); i++) {
+//				System.out.println("go "+i+children.item(i).getNodeValue()+" _ "+children.item(i).getNodeType()+"/"+Node.ATTRIBUTE_NODE);
+//				if (children.item(i).getNodeType() == Node.ATTRIBUTE_NODE) {
+//					System.out.println("attribute");
+//				
+//					if (elementFilters.containsKey(children.item(i))) {
+//						try {
+//							System.out.println("FSGFHGJJJFg");
+//							String value2 = children.item(i).getNodeValue();
+//							/** TODO: done for managing filter */
+//							if (!value.matches((String) elementFilters
+//									.get(children.item(i)))) {
+//								return "";
+//							}
+//						} catch (NullPointerException e) {
+//							return "";
+//						}
+//					}
+//					
+//				}
+				
 				if (children.item(i).getNodeName() == "#text")
-					return children.item(i).getNodeValue();
+					value = children.item(i).getNodeValue();
 			}
-			return "";
+			
+			
+			return value;
 		} catch (NullPointerException e) {
 			/** element is null */
 			return "";
 		}
+		
+
+		
+		
 	}
 
 	/**
@@ -777,8 +807,12 @@ public class XsdTreeStructImpl extends AbstractXsdTreeStruct {
 									.getAttributeNode(child.toString())
 									.getNodeValue();
 							/** TODO: done for managing filter */
-							if (!value.matches((String) elementFilters
-									.get(child))) {
+							 Pattern p = Pattern.compile((String) elementFilters
+										.get(child));
+							 Matcher m = p.matcher(value);
+							 boolean b = m.matches();
+							
+							 if (!b) {
 								return false;
 							}
 						} catch (NullPointerException e) {
@@ -979,10 +1013,11 @@ public class XsdTreeStructImpl extends AbstractXsdTreeStruct {
 
 	public void addFilter(XsdNode node, String regexp) {
 		elementFilters.remove(node);
-		if (regexp == null || regexp.trim().equals(""))
+		if (regexp != null && !regexp.trim().equals(""))
 			elementFilters.put(node, regexp.trim());
 	}
 
+	
 	public void selectNode(XsdNode node) {
 		selections.add(node);
 		node.use();
@@ -1072,7 +1107,33 @@ public class XsdTreeStructImpl extends AbstractXsdTreeStruct {
 			else
 				marshalling += separator;
 
-			if (element != null) {
+			
+			
+			Enumeration children = node.children();
+			boolean filtered = false;
+			while (children.hasMoreElements()) {
+				XsdNode child = (XsdNode) children.nextElement();
+			
+				if (((Annotated) child.getUserObject()).getStructureType() == Structure.ATTRIBUTE) {
+					if (elementFilters.containsKey(child)) {
+						try {
+							String value = ((Element) element)
+									.getAttributeNode(child.toString())
+									.getNodeValue();
+							/** TODO: done for managing filter */
+							if (!value.matches((String) elementFilters
+									.get(child))) {
+								filtered = true;
+							}
+						} catch (NullPointerException e) {
+			
+						}
+					}
+				}
+			}
+			
+			
+			if (element != null && filtered == false) {
 				marshalling += getElementValue((Element) element);
 			}
 		}

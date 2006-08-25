@@ -200,7 +200,7 @@ by java with  -Xms  and -Xmx options, for instance: <i>java -Xms256M -Xmx512M</i
 	  <li><b>Skip the first line:</b> the first line of a flat 
 	  file often contains the titles of the columns. This feature is particularly useful, in the context of this 
 	  application, as the column titles will be displayed in the cells and will make easier the mapping to the tree.
-	  In this case you should check the box ‘first line for titles’ in order to prompt the application to ignore
+	  In this case you should check the box "first line for titles" in order to prompt the application to ignore
 	  this line when writing the XML document.</li>
     </ul>
 	</li>
@@ -292,7 +292,7 @@ by java with  -Xms  and -Xmx options, for instance: <i>java -Xms256M -Xmx512M</i
   </ul>
   The associations:
   <ul>
-    <li><b>Target of the association</b> the ’associate’ and ‘cancel associations’ buttons 
+    <li><b>Target of the association</b> the "associate" and "cancel associations" buttons 
 	allow to establish or cancel an association.          
 	A set of radio buttons permits to indicate the item type that one wants to associate: 
 	<ul>
@@ -345,12 +345,12 @@ by java with  -Xms  and -Xmx options, for instance: <i>java -Xms256M -Xmx512M</i
 
  
  <li> <h3><a name="flattener">The flattener: from XML to flat file</a></h3>
-  <p>The “flattener” applicationwas developed  to give the opportunity to organize 
+  <p>The "flattener" applicationwas developed  to give the opportunity to organize 
   a subset of the elements of an XML document in a flat file. The flattener can 
   reckon the number of columns  that are needed to represent the information in the 
   XML document. For example, if an element named list can contain, according to the XML schema,
    an amount unbounded 
-  of another element called child, the ‘flattener’ will first check in every list for 
+  of another element called child, the "flattener" will first check in every list for 
   the maximum number of child elements
   (and <a href="#refs">references</a> to this type of element) and The output flat file will 
   then contain  have on each line the appropriate
@@ -399,6 +399,9 @@ by java with  -Xms  and -Xmx options, for instance: <i>java -Xms256M -Xmx512M</i
 	<li><b>Select this node:</b> the values for the element represented by the selected node 
 	will appear in the flat file.</li>
 	<li><b>Unselect the node:</b> it reverse the selection.</li>
+	<li><b>Filter:</b> you can associate a regular expression to this node. Only node with a value 
+	that match the regular expression will be exported. If the node filtered is an attribute,
+	the full element will be filtered. </li>
   </ul>
   The output:
   <ul>
@@ -408,7 +411,7 @@ by java with  -Xms  and -Xmx options, for instance: <i>java -Xms256M -Xmx512M</i
   </ul>
   <h4>About the references and the behaviour of the flattener:</h4>
 <p>When the flattener encounters an element of type "refType", it behaves as if it had 
-encountered the element the “refType” is referring to. Thus when an element is selected, the flat file 
+encountered the element the "refType" is referring to. Thus when an element is selected, the flat file 
 will contain all those elements and all those that are referenced.	
 </p>
 </li>

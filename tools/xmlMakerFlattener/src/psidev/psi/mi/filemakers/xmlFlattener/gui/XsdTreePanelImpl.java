@@ -701,10 +701,10 @@ public class XsdTreePanelImpl extends psidev.psi.mi.filemakers.xsd.AbstractXsdTr
 			oldValue = "";
 		String value = (String) JOptionPane.showInputDialog(new JFrame(),
 				"Enter the name, \n", oldValue);
+
 		((XsdTreeStructImpl) xsdTree).addFilter(node, value);
 		exampleLine = null;
 		updatePreview();
-
 		((XsdTreeStructImpl) xsdTree).treeModel.reload(node);
 	}
 
@@ -715,6 +715,7 @@ public class XsdTreePanelImpl extends psidev.psi.mi.filemakers.xsd.AbstractXsdTr
 					.getLastSelectedPathComponent();
 
 			associateFilter(node);
+			updatePreview();
 		}
 	}
 
