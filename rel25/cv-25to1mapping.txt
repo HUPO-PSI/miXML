@@ -254,38 +254,38 @@ MI:0250	 gene		No export because data type not suported by PSI 1	interactor type
 MI:0251	 gene product		no remapping	xref type
 MI:0252	 biological feature	TRUE	isTaggedProtein	feature type
 MI:0253	 isotope labelled	TRUE	isTaggedProtein	feature type
-MI:0254	 genetic interference		No export because data type not suported by PSI 1	interaction detection method
-MI:0255	 gene expression interference		No export because data type not suported by PSI 1	interaction detection method
-MI:0256	 RNAi		No export because data type not suported by PSI 1	interaction detection method
-MI:0257	 antisense RNA		No export because data type not suported by PSI 1	interaction detection method
-MI:0258	 inhibitor antibodies		No export because data type not suported by PSI 1	interaction detection method
-MI:0259	 perturbagens peptides		No export because data type not suported by PSI 1	interaction detection method
-MI:0260	 inhibitor small molecules		No export because data type not suported by PSI 1	interaction detection method
-MI:0261	 suppression		No export because data type not suported by PSI 1	interaction type 
-MI:0262	 suppression mutation		No export because data type not suported by PSI 1	interaction type 
-MI:0263	 suppress  knockout		No export because data type not suported by PSI 1	interaction type 
-MI:0264	 suppression partial		No export because data type not suported by PSI 1	interaction type 
-MI:0265	 suppress expression		No export because data type not suported by PSI 1	interaction type 
-MI:0266	 suppress overexpress		No export because data type not suported by PSI 1	interaction type 
-MI:0267	 suppression scalable		No export because data type not suported by PSI 1	interaction type 
-MI:0268	 suppress underexpres		No export because data type not suported by PSI 1	interaction type 
-MI:0269	 synthetic phenotype		No export because data type not suported by PSI 1	interaction type 
-MI:0270	 cond syntetic lethal		No export because data type not suported by PSI 1	interaction type 
-MI:0271	 temprtr  synt lethal		No export because data type not suported by PSI 1	interaction type 
-MI:0273	 synt growth effect		No export because data type not suported by PSI 1	interaction type 
-MI:0274	 synt growth defect		No export because data type not suported by PSI 1	interaction type 
-MI:0275	 synt growth increase		No export because data type not suported by PSI 1	interaction type 
-MI:0276	 bn-page	MI:0025	copurification 	interaction detection method
-MI:0300	 alias type		no remapping	alias type
-MI:0301	 gene name		no remapping	alias type
-MI:0302	 gene name synonym		no remapping	alias type
-MI:0303	 go synonym		no remapping	alias type
-MI:0304	 isoform synonym		no remapping	alias type
-MI:0305	 locus name		no remapping	alias type
-MI:0306	 orf name		no remapping	alias type
-MI:0307	 delivery method		no remapping	delivery method
-MI:0308	 electroporation		no remapping	delivery method
-MI:0309	 genomic tagging		no remapping	delivery method
+MI:0254	 genetic interference		No export because data type not suported by PSI 1	interaction detection method	
+MI:0255	 gene expression interference		No export because data type not suported by PSI 1	interaction detection method	
+MI:0256	 RNAi		No export because data type not suported by PSI 1	interaction detection method	
+MI:0257	 antisense RNA		No export because data type not suported by PSI 1	interaction detection method	
+MI:0258	 inhibitor antibodies		No export because data type not suported by PSI 1	interaction detection method	
+MI:0259	 perturbagens peptides		No export because data type not suported by PSI 1	interaction detection method	
+MI:0260	 inhibitor small molecules		No export because data type not suported by PSI 1	interaction detection method	
+MI:0261	 suppression		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0262	 suppression mutation		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0263	 suppress  knockout		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0264	 suppression partial		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0265	 suppress expression		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0266	 suppress overexpress		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0267	 suppression scalable		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0268	 suppress underexpres		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0269	 synthetic phenotype		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0270	 cond syntetic lethal		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0271	 temprtr  synt lethal		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0273	 synt growth effect		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0274	 synt growth defect		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0275	 synt growth increase		No export because data type not suported by PSI 1	interaction type 	obsolete
+MI:0276	 bn-page	MI:0025	copurification 	interaction detection method	
+MI:0300	 alias type		no remapping	alias type	
+MI:0301	 gene name		no remapping	alias type	
+MI:0302	 gene name synonym		no remapping	alias type	
+MI:0303	 go synonym		no remapping	alias type	
+MI:0304	 isoform synonym		no remapping	alias type	
+MI:0305	 locus name		no remapping	alias type	
+MI:0306	 orf name		no remapping	alias type	
+MI:0307	 delivery method		no remapping	delivery method	
+MI:0308	 electroporation		no remapping	delivery method	
+MI:0309	 genomic tagging		no remapping	delivery method	
 MI:0310	 infection		no remapping	delivery method
 MI:0311	 microinjection		no remapping	delivery method
 MI:0312	 transfection		no remapping	delivery method
@@ -728,3 +728,45 @@ MI:0739	penetrating tag	TRUE	isTaggedProtein	feature type
 MI:0740	cell penetrating peptide tag	TRUE	isTaggedProtein	feature type
 MI:0741	peptide atlas	peptide atlas	xrefType/primaryRef/db	database citation
 MI:0742	gpm	gpm	xrefType/primaryRef/db	database citation
+MI:0787	genetic experimental form		No export because data type not suported by PSI 1	
+MI:0788	knock out		No export because data type not suported by PSI 1	
+MI:0789	knock down		No export because data type not suported by PSI 1	
+MI:0790	hypermorph		No export because data type not suported by PSI 1	
+MI:0791	hypomorph		No export because data type not suported by PSI 1	
+MI:0792	antimorph		No export because data type not suported by PSI 1	
+MI:0793	amorph		No export because data type not suported by PSI 1	
+MI:0794	synthetic interaction		No export because data type not suported by PSI 1	interaction type 
+MI:0795	asynthetic interaction		No export because data type not suported by PSI 2	interaction type 
+MI:0796	suppressive interaction		No export because data type not suported by PSI 3	interaction type 
+MI:0797	epistatic interaction		No export because data type not suported by PSI 4	interaction type 
+MI:0798	conditional interaction		No export because data type not suported by PSI 5	interaction type 
+MI:0799	additive interaction		No export because data type not suported by PSI 6	interaction type 
+MI:0800	single nonmonotonic interaction		No export because data type not suported by PSI 7	interaction type 
+MI:0801	double nonmonotonic interaction		No export because data type not suported by PSI 8	interaction type 
+MI:0802	enhancement interaction		No export because data type not suported by PSI 9	interaction type 
+MI:0803	expression level alteration		No export because data type not suported by PSI 10	interaction type 
+MI:0804	mutated gene		No export because data type not suported by PSI 1	
+MI:0805	wwpdb		xrefType/primaryRef/db	database citation
+MI:0806	pdbj		xrefType/primaryRef/db	database citation
+MI:0807	comigration in gel electrophoresis	MI:0013	biophysical 	interaction detection method
+MI:0808	comigration in sds page	MI:0079	other biochemical technologies 	interaction detection method
+MI:0809	bimolecular fluorescence complementation	MI:0090	pca: protein complementation assay 	interaction detection method
+MI:0810	substitution analysis	MI:0074	mutation analysis 	feature detection method
+MI:0811	insertion analysis	MI:0074	mutation analysis 	feature detection method
+MI:0812	calmodulin binding protein tag	TRUE	isTaggedProtein	feature type
+MI:0813	proximity enzyme linked immunosorbent assay	MI:0044	elisa: enzyme-linked immunosorbent assay 	interaction detection method
+MI:0814	protease accessibility laddering	MI:0079	other biochemical technologies 	interaction detection method
+MI:0815	identification by weight	MI:0002	participant detection 	participant detection
+MI:0816	molecular weight estimation by staining	MI:0002	participant detection 	participant detection
+MI:0817	molecular weight estimation by silver staining	MI:0002	participant detection 	participant detection
+MI:0818	molecular weight estimation by coomasie staining	MI:0002	participant detection 	participant detection
+MI:0819	molecular weight estimation by bromide staining	MI:0002	participant detection 	participant detection
+MI:0820	molecular weight estimation by sybr staining	MI:0002	participant detection 	participant detection
+MI:0821	molecular weight estimation by autoradiography	MI:0002	participant detection 	participant detection
+MI:0822	molecular weight estimation by hoechst staining	MI:0002	participant detection 	participant detection
+MI:0823	predetermined feature	MI:0116	feature type 	feature type
+MI:0824	x-ray powder diffraction	MI:0114	x-ray: x-ray crystallography 	interaction detection method
+MI:0825	x-ray fiber diffraction	MI:0114	x-ray: x-ray crystallography 	interaction detection method
+MI:0826	x ray scattering	MI:0067	light scattering 	interaction detection method
+MI:0827	x-ray tomography	MI:0013	biophysical 	interaction detection method
+MI:0828	polyprotein fragment	MI:0117	binding site 	feature type
