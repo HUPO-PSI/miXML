@@ -1,12 +1,12 @@
 format-version: 1.0
-date: 25:10:2006 11:36
+date: 10:11:2006 10:06
 saved-by: luisa
 auto-generated-by: OBO-Edit 1.000
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.24 2006/10/25 10:56:16 luisa_montecchi Exp $
-remark: Notes: 
+remark: $Id: psi-mi25.obo,v 1.25 2006/11/10 10:16:01 luisa_montecchi Exp $
+remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
-remark: mapping an element of the PSI Molecular Interaction XML schema. 
+remark: mapping an element of the PSI Molecular Interaction XML schema.
 remark: To facilitate handling, they all have been merged in this file, though they
 remark: are essentially independent CVs describing different aspects of molecular interactions.
 remark: The PSI MI schema defines short labels for controlled vocabulary terms.
@@ -3505,7 +3505,7 @@ is_a: MI:0489 ! source database
 
 [Term]
 id: MI:0472
-name: msd
+name: msd pdb
 def: "The Macromolecular Structure Database (MSD) - the European project for the collection, management and distribution of data about macromolecular structures, derived in part from the Protein Data Bank (PDB).\nhttp://www.ebi.ac.uk/msd/" [PMID:16381867]
 related_synonym: "e-MSD" []
 related_synonym: "PQS" []
