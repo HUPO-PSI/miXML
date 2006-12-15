@@ -5,7 +5,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
 <!--
-@id: $Id: MIF25_view.xsl,v 1.6 2006/12/15 17:14:46 aquinn Exp $
+@id: $Id: MIF25_view.xsl,v 1.7 2006/12/15 17:25:15 aquinn Exp $
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 This XSLT-Script was designed for generating HTML out of a PSI-MI-XML-File,
 which satisfies MIF.xsd.
@@ -342,13 +342,22 @@ Notes:
     <tr>
       <td class="table-title">Inferred Interaction</td>
       <td>
-          <xsl:apply-templates/>
+        <table border="0">
+            <xsl:apply-templates select="psi:participant"/>
+            <tr>
+                <xsl:apply-templates select="psi:experimentRefList/psi:experimentRef"/>
+            </tr>
+        </table>
       </td>
     </tr>
 </xsl:template>
 
 <xsl:template match="psi:inferredInteraction/psi:participant">
-    <xsl:apply-templates/><br/>
+    <tr>
+        <td>
+            <xsl:apply-templates/>
+        </td>
+    </tr>
 </xsl:template>
 
 <xsl:template match="psi:biologicalRole">
