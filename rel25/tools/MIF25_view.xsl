@@ -5,7 +5,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
 <!--
-@id: $Id: MIF25_view.xsl,v 1.5 2006/04/05 08:46:56 aquinn Exp $
+@id: $Id: MIF25_view.xsl,v 1.6 2006/12/15 17:14:46 aquinn Exp $
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 This XSLT-Script was designed for generating HTML out of a PSI-MI-XML-File,
 which satisfies MIF.xsd.
@@ -314,7 +314,7 @@ Notes:
     <xsl:apply-templates/>
 </xsl:template>
 
-<xsl:template match="psi:participant">
+<xsl:template match="psi:participantList/psi:participant">
   <tr>
       <td class="table-title">Participant #<xsl:value-of select="@id"/></td>
       <td>
@@ -338,6 +338,19 @@ Notes:
   </tr>
 </xsl:template>
 
+<xsl:template match="psi:inferredInteraction">
+    <tr>
+      <td class="table-title">Inferred Interaction</td>
+      <td>
+          <xsl:apply-templates/>
+      </td>
+    </tr>
+</xsl:template>
+
+<xsl:template match="psi:inferredInteraction/psi:participant">
+    <xsl:apply-templates/><br/>
+</xsl:template>
+
 <xsl:template match="psi:biologicalRole">
     <xsl:apply-templates select="current()"  mode="cellrow">
         <xsl:with-param name="title" select="'Biological Role'"/>
@@ -353,6 +366,7 @@ Notes:
 <xsl:template match="psi:feature">
     <tr>
         <td class="table-title">
+            <a name="f{@id}"></a>
             Feature #<xsl:value-of select="@id"/>
         </td>
         <td>
@@ -395,6 +409,15 @@ Notes:
     </a>
 </xsl:template>
 
+<xsl:template match="psi:participantFeatureRef">
+    <a href="#f{.}">
+        <xsl:apply-templates select="/psi:entrySet/psi:entry/psi:interactionList/psi:interaction/psi:participantList/psi:participant/psi:featureList/psi:feature[@id = current()/text()]"
+                             mode="ref">
+            <xsl:with-param name="label" select="'Feature'"/>
+        </xsl:apply-templates>
+    </a>
+</xsl:template>
+
 <xsl:template match="node()" mode="ref">
     <xsl:param name="label"/>
     <xsl:choose>
@@ -405,8 +428,17 @@ Notes:
         <xsl:otherwise>
             <xsl:attribute name="title">
                 <xsl:apply-templates select="psi:names/psi:fullName/text()"/>
-            </xsl:attribute>            
-            <xsl:apply-templates select="psi:names/psi:shortLabel"/>      
+            </xsl:attribute>
+            <xsl:choose>
+                <xsl:when test="psi:names/psi:shortLabel">
+                    <xsl:apply-templates select="psi:names/psi:shortLabel"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <!-- No short label -->
+                    <xsl:value-of select="$label"/>
+                    #<xsl:apply-templates select="@id"/>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:otherwise>
     </xsl:choose>
 </xsl:template>
