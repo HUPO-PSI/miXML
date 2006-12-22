@@ -1,9 +1,9 @@
 format-version: 1.0
-date: 10:11:2006 10:06
+date: 22:12:2006 12:25
 saved-by: luisa
 auto-generated-by: OBO-Edit 1.000
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.25 2006/11/10 10:16:01 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.26 2006/12/22 12:47:02 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -16,6 +16,14 @@ remark: psi-mi.lastac.
 remark: It MUST be updated when this file is updated.
 remark: This file is published by the PSI MI working group see http://psidev.sourceforge.net/
 remark: Author Luisa Montecchi Palazzi luisa@ebi.ac.uk
+
+[Term]
+id: BS:00123
+name: 125i radiolabel
+def: "Molecule labelled with 125 radio isotope of iodine atoms." [PMID:14755292]
+related_synonym: "125I" []
+related_synonym: "I125" []
+is_a: MI:0517 ! radiolabel
 
 [Term]
 id: MI:0000
@@ -1914,13 +1922,15 @@ is_a: MI:0346 ! experimental preparation
 
 [Term]
 id: MI:0222
-name: endogenous
+name: physiological level
 def: "A molecule whose synthesis is under control of its natural gene promoter or estimated to be expressed at a similar rate." [PMID:14755292]
+related_synonym: "endogenous" []
+related_synonym: "endogenous level" []
 is_a: MI:0221 ! expression level
 
 [Term]
 id: MI:0223
-name: under expressed
+name: under expressed level
 def: "A molecule is estimated to be expressed at lower levels than in physiological condition." [PMID:14755292]
 exact_synonym: "under-expressed" []
 is_a: MI:0221 ! expression level
@@ -2519,6 +2529,7 @@ is_a: MI:0330 ! molecular source
 id: MI:0332
 name: naturally occurring
 def: "Unaltered endogenous molecule in its naturally occurring state." [PMID:14755292]
+related_synonym: "endogenous" []
 is_a: MI:0330 ! molecular source
 
 [Term]
@@ -3754,7 +3765,7 @@ is_a: MI:0116 ! feature type
 
 [Term]
 id: MI:0506
-name: over expressed
+name: over expressed level
 def: "A molecule is estimated to be expressed at higher levels than in physiological condition." [PMID:14755292]
 exact_synonym: "over-expressed" []
 is_a: MI:0221 ! expression level
@@ -4367,14 +4378,14 @@ is_a: MI:0461 ! interaction database
 [Term]
 id: MI:0586
 name: inhibitor
-def: "Molecule inhibiting its target functional activity or binding abilities." [PMID:14755292]
+def: "Molecule inhibiting an interaction by interacting with one or more of its participant. " [PMID:14755292]
 is_a: MI:0500 ! biological role
 
 [Term]
 id: MI:0587
 name: inhibited
-def: "Molecule being identified as target of an inhibitor." [PMID:14755292]
-is_a: MI:0500 ! biological role
+def: "Molecule being identified as target of an inhibitor.\nOBSOLETE as term is deprecated to describe the target of an inhibitor that can have any other biological role." [PMID:14755292]
+is_obsolete: true
 
 [Term]
 id: MI:0588
@@ -4777,8 +4788,8 @@ is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:0646
-name: kd
-def: "The equilibrium dissociation constant of a receptor/ligand or proteinA/proteinB complex. Unit Molar." [PMID:14755292]
+name: Kd
+def: "The equilibrium dissociation constant of a receptor/ligand or proteinA/proteinB complex. Unit Molar (generally M-1)." [PMID:14755292]
 related_synonym: "Kd" []
 is_a: MI:0640 ! parameter type
 
@@ -5769,6 +5780,138 @@ name: polyprotein fragment
 def: "Subpart of a polyprotein that is naturally cleaved in vivo." [PMID:14577292]
 exact_synonym: "polyprotein frag" []
 is_a: MI:0252 ! biological feature
+
+[Term]
+id: MI:0829
+name: multiple parent reference
+def: "This qualifier is used  for hybrid or composite molecules with more than one crossreference to parent molecules." [PMID:14755292]
+exact_synonym: "multiple parent" []
+is_a: MI:0353 ! cross-reference type
+
+[Term]
+id: MI:0830
+name: tissue list
+def: "List of tissue used as  topic in UniProt RC line.\nhttp://www.expasy.org/cgi-bin/lists?tisslist.txt" [PMID:14755292]
+xref_analog: id-validation-regexp:\"[0-9\]+|ACC\\s[A-Z0-9\]+|ECACC\\s[A-Z0-9\]+|LMBP\\s[A-Z0-9\]+|ICLC\\s[A-Z0-9\]+|CIP-[0-9\]+\"
+xref_analog: search-url: "http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?[libs%3d{dsmz_mutz%20ecacc_cell%20iclc%20CABI_BACT%20CIP_BACT%20CABI_YEAST%20DSMZ_PLANT_CELL}-id:${ac}]+-e"
+is_a: MI:0473 ! participant database
+
+[Term]
+id: MI:0831
+name: cell ontology
+def: "Ontology of cell types.\nhttp://obo.sourceforge.net/cgi-bin/detail.cgi?cell" [PMID:16381901]
+xref_analog: id-validation-regexp:\"[0-9\]+|ACC\\s[A-Z0-9\]+|ECACC\\s[A-Z0-9\]+|LMBP\\s[A-Z0-9\]+|ICLC\\s[A-Z0-9\]+|CIP-[0-9\]+\"
+xref_analog: search-url: "http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?[libs%3d{dsmz_mutz%20ecacc_cell%20iclc%20CABI_BACT%20CIP_BACT%20CABI_YEAST%20DSMZ_PLANT_CELL}-id:${ac}]+-e"
+is_a: MI:0473 ! participant database
+
+[Term]
+id: MI:0832
+name: half cystine
+def: "A protein modification that is effectively either one half of a cystine cross-link, or a cysteine residue with one hydrogen atom or proton removed" [MOD:00798, RESID:AA0025, UniMod:374]
+related_synonym: "Half of a disulfide bridge" []
+is_a: MI:0179 ! other modification
+
+[Term]
+id: MI:0833
+name: autoradiography
+def: "Experimental method by which radiolabel is detected by exposure to a photographic emulsion forming a pattern on the film." [PMID:14755292]
+exact_synonym: "full dna sequence" []
+is_a: MI:0078 ! nucleotide sequence identification
+is_a: MI:0659 ! experimental feature detection
+
+[Term]
+id: MI:0834
+name: ka
+def: "Association rate constant or rate of complex formation. Unit MOLE per SECOND (M-1 s-1)" [PMID:14755292]
+exact_synonym: "kon" []
+is_a: MI:0640 ! parameter type
+
+[Term]
+id: MI:0835
+name: kd
+def: "Dissociation rate constant measuring the stability of a complex. Unit SECOND (s-1)" [PMID:14755292]
+exact_synonym: "koff" []
+is_a: MI:0640 ! parameter type
+
+[Term]
+id: MI:0836
+name: temperature of interaction
+def: "Temperature at which interaction was determined. Unit KELVIN (K)" [PMID:14755292]
+related_synonym: "t interaction" []
+related_synonym: "Tint" []
+is_a: MI:0640 ! parameter type
+
+[Term]
+id: MI:0837
+name: pH of interaction
+def: "pH at which interaction was determined. " [PMID:14755292]
+related_synonym: "pHint" []
+is_a: MI:0640 ! parameter type
+
+[Term]
+id: MI:0838
+name: kelvin
+def: "A scale that measures an object's temperature over absolute zero, the theoretical coolest temperature where all molecular and atomic motion ceases. On the Kelvin scale, the freezing point of water is 273 (273 K = 0 o C = 32 o F)." [PMID:14755292]
+related_synonym: "K" []
+is_a: MI:0647 ! parameter unit
+
+[Term]
+id: MI:0839
+name: mole per second
+def: "Per mole per second, unit for association rate constant" [PMID:14755292]
+related_synonym: "M-1s-1" []
+is_a: MI:0647 ! parameter unit
+
+[Term]
+id: MI:0840
+name: stimulator
+def: "Molecule stimulating an interaction by interacting with one or more of the participants." [PMID:14755292]
+is_a: MI:0500 ! biological role
+
+[Term]
+id: MI:0841
+name: phosphotransfer assay
+def: "Measures the rate of a phosphate transfer between two proteins " [PMID:14755292]
+exact_synonym: "phosphotransfer assa" []
+is_a: MI:0415 ! enzymatic study
+
+[Term]
+id: MI:0842
+name: phospho donor
+def: "Any molecule that is able to transfer an phosphate to another chemical species." [PMID:14755292]
+is_a: MI:0500 ! biological role
+
+[Term]
+id: MI:0843
+name: phospho acceptor
+def: "Molecule to which a phosphate may be transferred from an phospho donor." [PMID:14755292]
+is_a: MI:0500 ! biological role
+
+[Term]
+id: MI:0844
+name: phosphotransfer reaction
+def: "Reaction where a phosphate is transferred between two proteins of a phosphorelay system. " [PMID:14755292, PMID:16712436]
+exact_synonym: "phosphotransfer" []
+is_a: MI:0414 ! enzymatic reaction
+
+[Term]
+id: MI:0845
+name: spin label
+def: "Paramagnetic fragment, most often a cyclic nitroxide derivative, covalently attached to a molecule of interest." [PMID:10966640]
+is_a: MI:0505 ! experimental feature
+
+[Term]
+id: MI:0846
+name: r1 spin label
+def: "Paramagnetic molecule (1-oxyl-2,2,5,5-tetramethylpyrroline-\n3-methyl)-methanethiosulfonate. that can be covalently attached to any cysteine aminoacid producing a nitroxide\nside chain designated R1." [PMID:10966640]
+is_a: MI:0845 ! spin label
+
+[Term]
+id: MI:0847
+name: dansyl tag
+def: "Dansyl is fluorescent tag. Dansyl is the acronyme of 5-dimethylaminonaphthalene-1-sulfonyl radical group reacting with any NH2 groups." [PMID:14755292]
+related_synonym: "5-dimethylaminonaphthalene-1-sulfonyl tag" []
+is_a: MI:0507 ! tag
 
 [Typedef]
 id: part_of

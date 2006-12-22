@@ -770,3 +770,21 @@ MI:0825	x-ray fiber diffraction	MI:0114	x-ray: x-ray crystallography 	interactio
 MI:0826	x ray scattering	MI:0067	light scattering 	interaction detection method
 MI:0827	x-ray tomography	MI:0013	biophysical 	interaction detection method
 MI:0828	polyprotein fragment	MI:0117	binding site 	feature type
+MI:0830	tissue list	tissue list	xrefType/primaryRef/db	database citation
+MI:0831	cell ontology	cell ontology	xrefType/primaryRef/db	database citation
+MI:0832	half cystine	MI:0120	ptm: post translation modification 	feature type
+MI:0833	autoradiography	MI:0094	protein staining 	feature detection method
+MI:0834	ka		no remapping	parameter type
+MI:0835	kd		no remapping	parameter type
+MI:0836	temperature of interaction		no remapping	parameter type
+MI:0837	pH of interaction		no remapping	parameter type
+MI:0838	kelvin		no remapping	parameter unit
+MI:0839	mole per second		no remapping	parameter unit
+MI:0840	stimulator		No export because data type not suported by PSI 1	biological role
+MI:0841	phosphotransfer assay	MI:0046	experimental knowledge based 	interaction detection method
+MI:0842	phospho donor	bait	proteinParticipantType/role	biological role
+MI:0843	phospho acceptor	prey	proteinParticipantType/role	biological role
+MI:0844	phosphotransfer reaction			interaction type 
+MI:0845	spin label	TRUE	isTaggedProtein	feature type
+MI:0846	r1 spin label	TRUE	isTaggedProtein	feature type
+MI:0847	dansyl tag	TRUE	isTaggedProtein	feature type
