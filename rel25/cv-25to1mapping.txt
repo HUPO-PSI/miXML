@@ -788,3 +788,4 @@ MI:0844	phosphotransfer reaction			interaction type
 MI:0845	spin label	TRUE	isTaggedProtein	feature type
 MI:0846	r1 spin label	TRUE	isTaggedProtein	feature type
 MI:0847	dansyl tag	TRUE	isTaggedProtein	feature type
+MI:0848	125i radiolabel	TRUE	isTaggedProtein	feature type
