@@ -3,7 +3,7 @@ date: 22:12:2006 12:25
 saved-by: luisa
 auto-generated-by: OBO-Edit 1.000
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.27 2006/12/22 12:58:25 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.28 2006/12/22 13:06:54 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
