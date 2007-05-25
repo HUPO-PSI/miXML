@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/MIF25_view.xsl" type="text/xsl"?>
+<entrySet level="2" version="5" xmlns="net:sf:psidev:mi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="net:sf:psidev:mi http://psidev.sourceforge.net/mi/rel25/src/MIF25.xsd">
+	<entry>
+		<source releaseDate="2007-05-16">
+			<names>
+				<shortLabel>"Institution A"</shortLabel>
+			</names>
+			<bibref>
+				<xref>
+					<primaryRef db="pubmed (a reference to an article, optional)" dbAc="MI:0446  (id (in the CV) of the database (pubmed) that is reference)" id="14681455 (PMID)" refType="primary-reference  (name of the reference type)" refTypeAc="MI:0358  (id of refType term in the CV)"/>
+				</xref>
+			</bibref>
+			<xref>
+				<primaryRef db="BinderDB (binder database)" dbAc="MI:XXXX  (id (in the CV) of the database that is reference)" id="MI:XXXX (id in the database)" refType="primary-reference (name of the reference type)" refTypeAc="MI:0358  (id of refType term in the CV)"/>
+			</xref>
+			<attributeList>
+				<attribute name="postalAddress">postal adress of the institution</attribute>
+				<attribute name="url">url of the institution</attribute>
+			</attributeList>
+		</source>
+		<experimentList>
+			<experimentDescription id="2">
+				<names>
+					<shortLabel>First author/responsible person-year-number, e.g. hayashi-2004-1</shortLabel>
+					<fullName>Cross-reactivity assessment for "binder A"</fullName>
+				</names>
+				<bibref>
+					<xref>
+						<primaryRef db="pubmed (article describing the experiment, optional)" dbAc="MI:0446 (id (in the CV) of the database (pubmed) that is referenced)" id="15003530 (PMID)" refType="primary-reference  (name of the reference type)" refTypeAc="MI:0358  (id of refType term in the CV)"/>
+					</xref>
+				</bibref>
+				<xref>
+					<primaryRef db="BinderDB (reference to experiment in the binder database, optional)" dbAc="MI:0469  (id (in the CV) of the database that is referenced)" id="PB-701582 (id/accession number of experiment in the database)" secondary="hayashi-2004-1 (see names-shortLabel)"/>
+					<secondaryRef db="cross-reactivity assessment (experimental scope/purpose)" id="MI:XXX (identifer of the db CV term)" refType="molecular interactions CV term for experimental scope (reference to a CV term that describes the experimental scope/purpose)" refTypeAc="MI:XXX (identifier of the refType CV term)"/>
+				</xref>
+				<hostOrganismList>
+					<hostOrganism ncbiTaxId="-1">
+						<names>
+							<shortLabel>in vitro</shortLabel>
+						</names>
+					</hostOrganism>
+				</hostOrganismList>
+				<interactionDetectionMethod>
+					<names>
+						<shortLabel>elisa</shortLabel>
+						<fullName>enzyme linked immunosorbent assay</fullName>
+						<alias>ELISA</alias>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi (name of the CV that is referenced)" dbAc="MI:0488 (id (in the CV) of the CV that is referenced)" id="MI:0411 (id of the (method) term in the CV)" refType="identity (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+						<secondaryRef db="pubmed (name of the database that is being referenced)" dbAc="MI:0446 (id (in the CV) of the database (pubmed) that is reference)" id="11906746 (PMID)" refType="primary-reference (name of the reference type)" refTypeAc="MI:0358 (id of refType term in the CV)"/>
+					</xref>
+				</interactionDetectionMethod>
+				<participantIdentificationMethod>
+					<names>
+						<shortLabel>predetermined (The identity of the particpant was known before the experiment.)</shortLabel>
+						<fullName>predetermined participant (The identity of the particpant was known before the experiment.)</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi  (name of the CV that is referenced)" dbAc="MI:0488  (id (in the CV) of the CV that is referenced)" id="MI:0396 (id of the (method) term in the CV)" refType="identity (name of the reference type)" refTypeAc="MI:0356  (id of refType term in the CV)"/>
+						<secondaryRef db="pubmed (reference to an article describing the method)" dbAc="MI:0446 (id (in the CV) of the database (pubmed)  that is referenced)" id="11906746 (PMID)" refType="go-definition-ref (This reference has been imported from the Gene Ontology tag definition_reference.)" refTypeAc="MI:0242  (id of refType term in the CV)"/>
+						<secondaryRef db="pubmed (reference to the article describing the exchange format (and CVs))" dbAc="MI:0446 (id (in the CV) of the database (pubmed)  that is referenced)" id="14755292 (PMID)" refType="primary-reference  (name of the reference type)" refTypeAc="MI:0358  (id of refType term in the CV)"/>
+					</xref>
+				</participantIdentificationMethod>
+				<attributeList>
+					<attribute name="author-list">Hayashi F., Ito H., Fujita M., Iwase R., Uzumaki T., Ishiura M.</attribute>
+					<attribute name="contact-email">ishiura@gene.nagoya-u.ac.jp</attribute>
+					<attribute name="elisa-protocol">www.url.com</attribute>
+				</attributeList>
+			</experimentDescription>
+		</experimentList>
+		<interactorList>
+			<interactor id="4">
+				<names>
+					<shortLabel>anti-p53 (Binder name)</shortLabel>
+					<fullName>anti-p53 antibody (full name)</fullName>
+				</names>
+				<xref>
+					<primaryRef db="BinderDB (reference to binder in the binder databasel)" dbAc="MI:0486  (id (in the CV) of the database that is referenced)" id="PB-701582 (id/accession number of binder in the database)" refType="identity  (the reference is to an identical object)" refTypeAc="MI:0356   (id of refType term in the CV)"/>
+				</xref>
+				<interactorType>
+					<names>
+						<shortLabel>monoclonal antibody</shortLabel>
+						<fullName>monoclonal antibody</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi  (name of the CV that is referenced)" dbAc="MI:0488  (id (in the CV) of the CV that is referenced)" id="MI:0326  (id of the (interactor type) term in the CV)" refType="identity  (name of the reference type)" refTypeAc="MI:0356  (id of refType term in the CV)"/>
+					</xref>
+				</interactorType>
+				<organism ncbiTaxId="10090">
+					<names>
+						<shortLabel>mouse</shortLabel>
+						<fullName>Mus musculus</fullName>
+					</names>
+				</organism>
+				<sequence>MAQSTALTICGLVYSPAIGQELVRLHTSDIDELVYFSSEREFCNYLEARRNSIACLILEWGEGTPQIITYLHHSATLLPAILIFPAAPAPPPAGPHYHIAEVILTTDQLDQLNRQIEEAITGFVKLCPGCAVPPHVLFRLPALKESSNVDPQHRLSQKLKERLGYLGVYYKRDTAFFFRRMSPADKRKLLDELRSIYRTIVLEYFNTDAKVNERIDEFVSKAFFADISVSQVLEIHVELMDTFSKQLKLEGRSEDILLDYRLTLIDVIAHLCEMYRRSIPREV</sequence>
+			</interactor>
+			<interactor id="7">
+				<names>
+					<shortLabel>tp53 (target protein)</shortLabel>
+					<fullName>tumor protein 53  (target protein, full name)</fullName>
+					<alias type="gene name (name of alias type (CV term))" typeAc="MI:0301 (id of CV term in the CV)">TP53</alias>
+				</names>
+				<xref>
+					<primaryRef db="uniprotkb" dbAc="MI:0486   (id (in the CV) of the database that is referenced)" id="Q96KQ4 (accession number of protein in the database)" refType="identity  (the reference is to an identical object)" refTypeAc="MI:0356  (id of refType term in the CV)"/>
+					<secondaryRef db="uniprotkb" dbAc="MI:0486" id="O94870" refType="secondary-ac" refTypeAc="MI:0360"/>
+					<secondaryRef db="refseq" dbAc="MI:0469" id="AAP30003"/>
+				</xref>
+				<interactorType>
+					<names>
+						<shortLabel>protein</shortLabel>
+						<fullName>protein</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi   (name of the CV that is referenced)" dbAc="MI:0488   (id (in the CV) of the CV that is referenced)" id="MI:0326  (id of the (interacor type) term in the CV)" refType="identity   (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+					</xref>
+				</interactorType>
+				<organism ncbiTaxId="9606">
+					<names>
+						<shortLabel>human</shortLabel>
+						<fullName>Homo Sapiens</fullName>
+					</names>
+				</organism>
+			</interactor>
+			<interactor id="13">
+				<names>
+					<shortLabel>HTR5B (cross-reactivity test protein)</shortLabel>
+					<fullName>serotonine receptor 5b  (cross-reactivity test protein, full name)</fullName>
+				</names>
+				<xref>
+					<primaryRef db="uniprotkb" dbAc="MI:0486   (id (in the CV) of the database that is referenced)" id="P31365 (accession number of protein in the database)" refType="identity  (the reference is to an identical object)" refTypeAc="MI:0356  (id of refType term in the CV)"/>
+				</xref>
+				<interactorType>
+					<names>
+						<shortLabel>protein</shortLabel>
+						<fullName>protein</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi   (name of the CV that is referenced)" dbAc="MI:0488   (id (in the CV) of the CV that is referenced)" id="MI:0326  (id of the (interacor type) term in the CV)" refType="identity   (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+					</xref>
+				</interactorType>
+				<organism ncbiTaxId="9606">
+					<names>
+						<shortLabel>human</shortLabel>
+						<fullName>Homo Sapiens</fullName>
+					</names>
+				</organism>
+			</interactor>
+			<interactor id="19">
+				<names>
+					<shortLabel>KLH (cross-reactivity test protein)</shortLabel>
+					<fullName>keyhole limpet hemocyanin (cross-reactivity test protein, full name)</fullName>
+				</names>
+				<xref>
+					<primaryRef db="uniprotkb" dbAc="MI:0486   (id (in the CV) of the database that is referenced)" id="Q10583 (accession number of protein in the database)" refType="identity  (the reference is to an identical object)" refTypeAc="MI:0356  (id of refType term in the CV)"/>
+				</xref>
+				<interactorType>
+					<names>
+						<shortLabel>protein</shortLabel>
+						<fullName>protein</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi   (name of the CV that is referenced)" dbAc="MI:0488   (id (in the CV) of the CV that is referenced)" id="MI:0326  (id of the (interacor type) term in the CV)" refType="identity   (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+					</xref>
+				</interactorType>
+				<organism ncbiTaxId="55429">
+					<names>
+						<shortLabel>megcr</shortLabel>
+						<fullName>Megathura crenulata</fullName>
+					</names>
+				</organism>
+			</interactor>
+			<interactor id="25">
+				<names>
+					<shortLabel>thy (cross-reactivity test protein)</shortLabel>
+					<fullName>thyroglobulin (cross-reactivity test protein, full name)</fullName>
+				</names>
+				<xref>
+					<primaryRef db="refseq" dbAc="MI:0481   (id (in the CV) of the database that is referenced)" id="CAA29104 (accession number of protein in the database)" refType="identity  (the reference is to an identical object)" refTypeAc="MI:0356  (id of refType term in the CV)"/>
+				</xref>
+				<interactorType>
+					<names>
+						<shortLabel>protein</shortLabel>
+						<fullName>protein</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi   (name of the CV that is referenced)" dbAc="MI:0488   (id (in the CV) of the CV that is referenced)" id="MI:0326  (id of the (interacor type) term in the CV)" refType="identity   (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+					</xref>
+				</interactorType>
+				<organism ncbiTaxId="9606">
+					<names>
+						<shortLabel>human</shortLabel>
+						<fullName>Homo Sapiens</fullName>
+					</names>
+				</organism>
+			</interactor>
+			<interactor id="31">
+				<names>
+					<shortLabel>myo (cross-reactivity test protein)</shortLabel>
+					<fullName>myoglobin  (cross-reactivity test protein, full name)</fullName>
+				</names>
+				<xref>
+					<primaryRef db="refseq" dbAc="MI:0486   (id (in the CV) of the database that is referenced)" id="NP_976312 (accession number of protein in the database)" refType="identity  (the reference is to an identical object)" refTypeAc="MI:0356  (id of refType term in the CV)"/>
+				</xref>
+				<interactorType>
+					<names>
+						<shortLabel>protein</shortLabel>
+						<fullName>protein</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi   (name of the CV that is referenced)" dbAc="MI:0488   (id (in the CV) of the CV that is referenced)" id="MI:0326  (id of the (interacor type) term in the CV)" refType="identity   (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+					</xref>
+				</interactorType>
+				<organism ncbiTaxId="9606">
+					<names>
+						<shortLabel>human</shortLabel>
+						<fullName>Homo Sapiens</fullName>
+					</names>
+				</organism>
+			</interactor>
+		</interactorList>
+		<interactionList>
+			<interaction id="1">
+				<names>
+					<shortLabel>antip53-tp53-1</shortLabel>
+					<fullName>anti-p55 and tp53 (target) binding assessment</fullName>
+				</names>
+				<xref>
+					<primaryRef db="BinderDB  (reference to  results in the binder database, optional)" dbAc="MI:0469  (id (in the CV) of the database that is referenced)" id="PB-XXXXXX (id/accession number of interaction in the database)" secondary="antip53-tp53-1 (shortLabel of interaction-name, used as reference)"/>
+				</xref>
+				<experimentList>
+					<experimentRef>2</experimentRef>
+				</experimentList>
+				<participantList>
+					<participant id="3">
+						<interactorRef>4</interactorRef>
+						<experimentalRoleList>
+							<experimentalRole>
+								<names>
+									<shortLabel>binder</shortLabel>
+									<fullName>binder</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi  (name of the CV that is referenced)" dbAc="MI:0488  (id (in the CV) of the CV that is referenced)" id="MI:XXXX" refType="identity (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+								</xref>
+							</experimentalRole>
+						</experimentalRoleList>
+						<featureList>
+							<feature id="5">
+								<names>
+									<shortLabel>tag</shortLabel>
+								</names>
+								<featureType>
+									<names>
+										<shortLabel>fluorescent prot tag</shortLabel>
+										<fullName>fluorescent prot tag</fullName>
+									</names>
+									<xref>
+										<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0687" refType="identity" refTypeAc="MI:0356"/>
+									</xref>
+								</featureType>
+								<featureRangeList>
+									<featureRange>
+										<startStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</startStatus>
+										<endStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</endStatus>
+									</featureRange>
+								</featureRangeList>
+							</feature>
+						</featureList>
+						<hostOrganismList>
+							<hostOrganism ncbiTaxId="562">
+								<names>
+									<shortLabel>ecoli</shortLabel>
+									<fullName>Escherichia coli</fullName>
+								</names>
+							</hostOrganism>
+						</hostOrganismList>
+					</participant>
+					<participant id="6">
+						<interactorRef>7</interactorRef>
+						<experimentalRoleList>
+							<experimentalRole>
+								<names>
+									<shortLabel>target</shortLabel>
+									<fullName>target</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi (name of the CV that is referenced)" dbAc="MI:0488 (id (in the CV) of the CV that is referenced)" id="MI:XXXX" refType="identity (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+								</xref>
+							</experimentalRole>
+						</experimentalRoleList>
+						<featureList>
+							<feature id="8">
+								<names>
+									<shortLabel>tag</shortLabel>
+								</names>
+								<featureType>
+									<names>
+										<shortLabel>fluorescent prot tag</shortLabel>
+										<fullName>fluorescent prot tag</fullName>
+									</names>
+									<xref>
+										<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0687" refType="identity" refTypeAc="MI:0356"/>
+									</xref>
+								</featureType>
+								<featureRangeList>
+									<featureRange>
+										<startStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</startStatus>
+										<endStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</endStatus>
+									</featureRange>
+								</featureRangeList>
+							</feature>
+						</featureList>
+						<hostOrganismList>
+							<hostOrganism ncbiTaxId="562">
+								<names>
+									<shortLabel>ecoli</shortLabel>
+									<fullName>Escherichia coli</fullName>
+								</names>
+							</hostOrganism>
+						</hostOrganismList>
+					</participant>
+				</participantList>
+				<interactionType>
+					<names>
+						<shortLabel>physical interaction</shortLabel>
+						<fullName>physical interaction</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi (name of reference CV)" dbAc="MI:0488 (id (in the CV) of the CV that is referenced)" id="MI:0218 (id of the CV term)" refType="identity  (name of the reference type)" refTypeAc="MI:0356 (CV id of the reference type)"/>
+					</xref>
+				</interactionType>
+				<negative>false</negative>
+				<parameterList>
+					<parameter factor="23385" term="numeric readout (parameter type)" termAc="MI:XXX (term id in CV)" unit="fluoroscence (fluoroscence units)" unitAc="PATO:0000018 (unit id in CV)">
+						<experimentRef>2</experimentRef>
+					</parameter>
+				</parameterList>
+			</interaction>
+			<interaction id="9">
+				<names>
+					<shortLabel>antip53-htr5b-1</shortLabel>
+					<fullName>anti-p55 and htr5b (cross-reactivity test) binding assessment</fullName>
+				</names>
+				<xref>
+					<primaryRef db="BinderDB  (reference to  results in the binder database, optional)" dbAc="MI:0469  (id (in the CV) of the database that is referenced)" id="PB-XXXXX (id/accession number of interaction in the database)" secondary="antip53-htr5b-1 (shortLabel of interaction-name, used as reference)"/>
+				</xref>
+				<experimentList>
+					<experimentRef>2</experimentRef>
+				</experimentList>
+				<participantList>
+					<participant id="10">
+						<interactorRef>4</interactorRef>
+						<experimentalRoleList>
+							<experimentalRole>
+								<names>
+									<shortLabel>binder</shortLabel>
+									<fullName>binder</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi  (name of the CV that is referenced)" dbAc="MI:0488  (id (in the CV) of the CV that is referenced)" id="MI:XXXX" refType="identity (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+								</xref>
+							</experimentalRole>
+						</experimentalRoleList>
+						<featureList>
+							<feature id="11">
+								<names>
+									<shortLabel>tag</shortLabel>
+								</names>
+								<featureType>
+									<names>
+										<shortLabel>fluorescent prot tag</shortLabel>
+										<fullName>fluorescent prot tag</fullName>
+									</names>
+									<xref>
+										<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0687" refType="identity" refTypeAc="MI:0356"/>
+									</xref>
+								</featureType>
+								<featureRangeList>
+									<featureRange>
+										<startStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</startStatus>
+										<endStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</endStatus>
+									</featureRange>
+								</featureRangeList>
+							</feature>
+						</featureList>
+						<hostOrganismList>
+							<hostOrganism ncbiTaxId="562">
+								<names>
+									<shortLabel>ecoli</shortLabel>
+									<fullName>Escherichia coli</fullName>
+								</names>
+							</hostOrganism>
+						</hostOrganismList>
+					</participant>
+					<participant id="12">
+						<interactorRef>13</interactorRef>
+						<experimentalRoleList>
+							<experimentalRole>
+								<names>
+									<shortLabel>potential target</shortLabel>
+									<fullName>potential target</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi  (name of the CV that is referenced)" dbAc="MI:0488  (id (in the CV) of the CV that is referenced)" id="MI:XXXX" refType="identity (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+								</xref>
+							</experimentalRole>
+						</experimentalRoleList>
+						<featureList>
+							<feature id="14">
+								<names>
+									<shortLabel>tag</shortLabel>
+								</names>
+								<featureType>
+									<names>
+										<shortLabel>fluorescent prot tag</shortLabel>
+										<fullName>fluorescent prot tag</fullName>
+									</names>
+									<xref>
+										<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0687" refType="identity" refTypeAc="MI:0356"/>
+									</xref>
+								</featureType>
+								<featureRangeList>
+									<featureRange>
+										<startStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</startStatus>
+										<endStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</endStatus>
+									</featureRange>
+								</featureRangeList>
+							</feature>
+						</featureList>
+						<hostOrganismList>
+							<hostOrganism ncbiTaxId="562">
+								<names>
+									<shortLabel>ecoli</shortLabel>
+									<fullName>Escherichia coli</fullName>
+								</names>
+							</hostOrganism>
+						</hostOrganismList>
+					</participant>
+				</participantList>
+				<interactionType>
+					<names>
+						<shortLabel>physical interaction</shortLabel>
+						<fullName>physical interaction</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi (name of reference CV)" dbAc="MI:0488 (id (in the CV) of the CV that is referenced)" id="MI:0218 (id of the CV term)" refType="identity  (name of the reference type)" refTypeAc="MI:0356 (CV id of the reference type)"/>
+					</xref>
+				</interactionType>
+				<negative>true</negative>
+				<parameterList>
+					<parameter factor="578" term="numeric readout (parameter type)" termAc="MI:XXX (term id in CV)" unit="fluoroscence (fluoroscence units)" unitAc="PATO:0000018 (unit id in CV)">
+						<experimentRef>2</experimentRef>
+					</parameter>
+				</parameterList>
+			</interaction>
+			<interaction id="15">
+				<names>
+					<shortLabel>antip53-klh-1</shortLabel>
+					<fullName>anti-p55 and klh (cross-reactivity test) binding assessment</fullName>
+				</names>
+				<xref>
+					<primaryRef db="BinderDB  (reference to  results in the binder database, optional)" dbAc="MI:0469  (id (in the CV) of the database that is referenced)" id="PB-XXXXX (id/accession number of interaction in the database)" secondary="antip53-htr5b-1 (shortLabel of interaction-name, used as reference)"/>
+				</xref>
+				<experimentList>
+					<experimentRef>2</experimentRef>
+				</experimentList>
+				<participantList>
+					<participant id="16">
+						<interactorRef>4</interactorRef>
+						<experimentalRoleList>
+							<experimentalRole>
+								<names>
+									<shortLabel>binder</shortLabel>
+									<fullName>binder</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi  (name of the CV that is referenced)" dbAc="MI:0488  (id (in the CV) of the CV that is referenced)" id="MI:XXXX" refType="identity (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+								</xref>
+							</experimentalRole>
+						</experimentalRoleList>
+						<featureList>
+							<feature id="17">
+								<names>
+									<shortLabel>tag</shortLabel>
+								</names>
+								<featureType>
+									<names>
+										<shortLabel>fluorescent prot tag</shortLabel>
+										<fullName>fluorescent prot tag</fullName>
+									</names>
+									<xref>
+										<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0687" refType="identity" refTypeAc="MI:0356"/>
+									</xref>
+								</featureType>
+								<featureRangeList>
+									<featureRange>
+										<startStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</startStatus>
+										<endStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</endStatus>
+									</featureRange>
+								</featureRangeList>
+							</feature>
+						</featureList>
+						<hostOrganismList>
+							<hostOrganism ncbiTaxId="562">
+								<names>
+									<shortLabel>ecoli</shortLabel>
+									<fullName>Escherichia coli</fullName>
+								</names>
+							</hostOrganism>
+						</hostOrganismList>
+					</participant>
+					<participant id="18">
+						<interactorRef>19</interactorRef>
+						<experimentalRoleList>
+							<experimentalRole>
+								<names>
+									<shortLabel>potential target</shortLabel>
+									<fullName>potential target</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi  (name of the CV that is referenced)" dbAc="MI:0488  (id (in the CV) of the CV that is referenced)" id="MI:XXXX" refType="identity (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+								</xref>
+							</experimentalRole>
+						</experimentalRoleList>
+						<featureList>
+							<feature id="20">
+								<names>
+									<shortLabel>tag</shortLabel>
+								</names>
+								<featureType>
+									<names>
+										<shortLabel>fluorescent prot tag</shortLabel>
+										<fullName>fluorescent prot tag</fullName>
+									</names>
+									<xref>
+										<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0687" refType="identity" refTypeAc="MI:0356"/>
+									</xref>
+								</featureType>
+								<featureRangeList>
+									<featureRange>
+										<startStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</startStatus>
+										<endStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</endStatus>
+									</featureRange>
+								</featureRangeList>
+							</feature>
+						</featureList>
+						<hostOrganismList>
+							<hostOrganism ncbiTaxId="562">
+								<names>
+									<shortLabel>ecoli</shortLabel>
+									<fullName>Escherichia coli</fullName>
+								</names>
+							</hostOrganism>
+						</hostOrganismList>
+					</participant>
+				</participantList>
+				<interactionType>
+					<names>
+						<shortLabel>physical interaction</shortLabel>
+						<fullName>physical interaction</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi (name of reference CV)" dbAc="MI:0488 (id (in the CV) of the CV that is referenced)" id="MI:0218 (id of the CV term)" refType="identity  (name of the reference type)" refTypeAc="MI:0356 (CV id of the reference type)"/>
+					</xref>
+				</interactionType>
+				<negative>true</negative>
+				<parameterList>
+					<parameter factor="2973" term="numeric readout (parameter type)" termAc="MI:XXX (term id in CV)" unit="fluoroscence (fluoroscence units)" unitAc="PATO:0000018 (unit id in CV)">
+						<experimentRef>2</experimentRef>
+					</parameter>
+				</parameterList>
+			</interaction>
+			<interaction id="21">
+				<names>
+					<shortLabel>antip53-thy-1</shortLabel>
+					<fullName>anti-p55 and thy (cross-reactivity test) binding assessment</fullName>
+				</names>
+				<xref>
+					<primaryRef db="BinderDB  (reference to  results in the binder database, optional)" dbAc="MI:0469  (id (in the CV) of the database that is referenced)" id="PB-XXXXX (id/accession number of interaction in the database)" secondary="antip53-htr5b-1 (shortLabel of interaction-name, used as reference)"/>
+				</xref>
+				<experimentList>
+					<experimentRef>2</experimentRef>
+				</experimentList>
+				<participantList>
+					<participant id="22">
+						<interactorRef>4</interactorRef>
+						<experimentalRoleList>
+							<experimentalRole>
+								<names>
+									<shortLabel>binder</shortLabel>
+									<fullName>binder</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi  (name of the CV that is referenced)" dbAc="MI:0488  (id (in the CV) of the CV that is referenced)" id="MI:XXXX" refType="identity (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+								</xref>
+							</experimentalRole>
+						</experimentalRoleList>
+						<featureList>
+							<feature id="23">
+								<names>
+									<shortLabel>tag</shortLabel>
+								</names>
+								<featureType>
+									<names>
+										<shortLabel>fluorescent prot tag</shortLabel>
+										<fullName>fluorescent prot tag</fullName>
+									</names>
+									<xref>
+										<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0687" refType="identity" refTypeAc="MI:0356"/>
+									</xref>
+								</featureType>
+								<featureRangeList>
+									<featureRange>
+										<startStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</startStatus>
+										<endStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</endStatus>
+									</featureRange>
+								</featureRangeList>
+							</feature>
+						</featureList>
+						<hostOrganismList>
+							<hostOrganism ncbiTaxId="562">
+								<names>
+									<shortLabel>ecoli</shortLabel>
+									<fullName>Escherichia coli</fullName>
+								</names>
+							</hostOrganism>
+						</hostOrganismList>
+					</participant>
+					<participant id="24">
+						<interactorRef>25</interactorRef>
+						<experimentalRoleList>
+							<experimentalRole>
+								<names>
+									<shortLabel>potential target</shortLabel>
+									<fullName>potential target</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi  (name of the CV that is referenced)" dbAc="MI:0488  (id (in the CV) of the CV that is referenced)" id="MI:XXXX" refType="identity (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+								</xref>
+							</experimentalRole>
+						</experimentalRoleList>
+						<featureList>
+							<feature id="26">
+								<names>
+									<shortLabel>tag</shortLabel>
+								</names>
+								<featureType>
+									<names>
+										<shortLabel>fluorescent prot tag</shortLabel>
+										<fullName>fluorescent prot tag</fullName>
+									</names>
+									<xref>
+										<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0687" refType="identity" refTypeAc="MI:0356"/>
+									</xref>
+								</featureType>
+								<featureRangeList>
+									<featureRange>
+										<startStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</startStatus>
+										<endStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</endStatus>
+									</featureRange>
+								</featureRangeList>
+							</feature>
+						</featureList>
+						<hostOrganismList>
+							<hostOrganism ncbiTaxId="562">
+								<names>
+									<shortLabel>ecoli</shortLabel>
+									<fullName>Escherichia coli</fullName>
+								</names>
+							</hostOrganism>
+						</hostOrganismList>
+					</participant>
+				</participantList>
+				<interactionType>
+					<names>
+						<shortLabel>physical interaction</shortLabel>
+						<fullName>physical interaction</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi (name of reference CV)" dbAc="MI:0488 (id (in the CV) of the CV that is referenced)" id="MI:0218 (id of the CV term)" refType="identity  (name of the reference type)" refTypeAc="MI:0356 (CV id of the reference type)"/>
+					</xref>
+				</interactionType>
+				<negative>true</negative>
+				<parameterList>
+					<parameter factor="234" term="numeric readout (parameter type)" termAc="MI:XXX (term id in CV)" unit="fluoroscence (fluoroscence units)" unitAc="PATO:0000018 (unit id in CV)">
+						<experimentRef>2</experimentRef>
+					</parameter>
+				</parameterList>
+			</interaction>
+			<interaction id="27">
+				<names>
+					<shortLabel>antip53-thy-1</shortLabel>
+					<fullName>anti-p55 and thy (cross-reactivity test) binding assessment</fullName>
+				</names>
+				<xref>
+					<primaryRef db="BinderDB  (reference to  results in the binder database, optional)" dbAc="MI:0469  (id (in the CV) of the database that is referenced)" id="PB-XXXXX (id/accession number of interaction in the database)" secondary="antip53-htr5b-1 (shortLabel of interaction-name, used as reference)"/>
+				</xref>
+				<experimentList>
+					<experimentRef>2</experimentRef>
+				</experimentList>
+				<participantList>
+					<participant id="28">
+						<interactorRef>4</interactorRef>
+						<experimentalRoleList>
+							<experimentalRole>
+								<names>
+									<shortLabel>binder</shortLabel>
+									<fullName>binder</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi  (name of the CV that is referenced)" dbAc="MI:0488  (id (in the CV) of the CV that is referenced)" id="MI:XXXX" refType="identity (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+								</xref>
+							</experimentalRole>
+						</experimentalRoleList>
+						<featureList>
+							<feature id="29">
+								<names>
+									<shortLabel>tag</shortLabel>
+								</names>
+								<featureType>
+									<names>
+										<shortLabel>fluorescent prot tag</shortLabel>
+										<fullName>fluorescent prot tag</fullName>
+									</names>
+									<xref>
+										<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0687" refType="identity" refTypeAc="MI:0356"/>
+									</xref>
+								</featureType>
+								<featureRangeList>
+									<featureRange>
+										<startStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</startStatus>
+										<endStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</endStatus>
+									</featureRange>
+								</featureRangeList>
+							</feature>
+						</featureList>
+						<hostOrganismList>
+							<hostOrganism ncbiTaxId="562">
+								<names>
+									<shortLabel>ecoli</shortLabel>
+									<fullName>Escherichia coli</fullName>
+								</names>
+							</hostOrganism>
+						</hostOrganismList>
+					</participant>
+					<participant id="30">
+						<interactorRef>31</interactorRef>
+						<experimentalRoleList>
+							<experimentalRole>
+								<names>
+									<shortLabel>potential target</shortLabel>
+									<fullName>potential target</fullName>
+								</names>
+								<xref>
+									<primaryRef db="psi-mi  (name of the CV that is referenced)" dbAc="MI:0488  (id (in the CV) of the CV that is referenced)" id="MI:XXXX" refType="identity (name of the reference type)" refTypeAc="MI:0356 (id of refType term in the CV)"/>
+								</xref>
+							</experimentalRole>
+						</experimentalRoleList>
+						<featureList>
+							<feature id="32">
+								<names>
+									<shortLabel>tag</shortLabel>
+								</names>
+								<featureType>
+									<names>
+										<shortLabel>fluorescent prot tag</shortLabel>
+										<fullName>fluorescent prot tag</fullName>
+									</names>
+									<xref>
+										<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0687" refType="identity" refTypeAc="MI:0356"/>
+									</xref>
+								</featureType>
+								<featureRangeList>
+									<featureRange>
+										<startStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</startStatus>
+										<endStatus>
+											<names>
+												<shortLabel>c-terminal position (last amino acid in sequence)</shortLabel>
+											</names>
+											<xref>
+												<primaryRef db="psi-mi" dbAc="MI:0488" id="MI:0334" refType="identity" refTypeAc="MI:0356"/>
+											</xref>
+										</endStatus>
+									</featureRange>
+								</featureRangeList>
+							</feature>
+						</featureList>
+						<hostOrganismList>
+							<hostOrganism ncbiTaxId="562">
+								<names>
+									<shortLabel>ecoli</shortLabel>
+									<fullName>Escherichia coli</fullName>
+								</names>
+							</hostOrganism>
+						</hostOrganismList>
+					</participant>
+				</participantList>
+				<interactionType>
+					<names>
+						<shortLabel>physical interaction</shortLabel>
+						<fullName>physical interaction</fullName>
+					</names>
+					<xref>
+						<primaryRef db="psi-mi (name of reference CV)" dbAc="MI:0488 (id (in the CV) of the CV that is referenced)" id="MI:0218 (id of the CV term)" refType="identity  (name of the reference type)" refTypeAc="MI:0356 (CV id of the reference type)"/>
+					</xref>
+				</interactionType>
+				<negative>true</negative>
+				<parameterList>
+					<parameter factor="2018" term="numeric readout (parameter type)" termAc="MI:XXX (term id in CV)" unit="fluoroscence (fluoroscence units)" unitAc="PATO:0000018 (unit id in CV)">
+						<experimentRef>2</experimentRef>
+					</parameter>
+				</parameterList>
+			</interaction>
+		</interactionList>
+	</entry>
+</entrySet>
