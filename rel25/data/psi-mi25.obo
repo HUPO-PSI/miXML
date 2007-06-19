@@ -1,9 +1,9 @@
 format-version: 1.0
-date: 31:05:2007 19:28
+date: 16:06:2007 23:34
 saved-by: luisa
-auto-generated-by: OBO-Edit 1.000
+auto-generated-by: OBO-Edit 1.100
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.29 2007/05/31 18:31:25 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.30 2007/06/19 16:41:37 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -2077,7 +2077,7 @@ is_a: MI:0353 ! cross-reference type
 id: MI:0244
 name: reactome complex
 def: "Collection of functional complexes within Reactome - a knowledgebase of biological processes.\nhttp://www.reactome.org/" [PMID:14755292]
-xref_analog: id-validation-regexp: REACT_[0-9\]\{1,4}\\.[0-9\]\{1,3}|[0-9\]+
+xref_analog: id-validation-regexp:\"REACT_[0-9\]\{1\,4}\\.[0-9\]\{1\,3}|[0-9\]+\"
 xref_analog: search-url: "http://www.reactome.org/cgi-bin/eventbrowser?ID=${ac}"
 is_a: MI:0467 ! reactome
 
@@ -2085,7 +2085,7 @@ is_a: MI:0467 ! reactome
 id: MI:0245
 name: reactome protein
 def: "Collection of protein within the Reactome database - a knowledgebase of biological processes.\nhttp://www.reactome.org/" [PMID:14755292]
-xref_analog: id-validation-regexp:\" REACT_[0-9\]\{1,4}\\.[0-9\]\{1,3}|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\]\{3}[0-9\]\{5}|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
+xref_analog: id-validation-regexp:\"REACT_[0-9\]\{1\,4}\\.[0-9\]\{1\,3}|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\]\{3}[0-9\]\{5}|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
 xref_analog: search-url: "http://www.reactome.org/cgi-bin/search?SUBMIT=1&QUERY_CLASS=DatabaseIdentifier&QUERY=SWALL:${ac}"
 is_a: MI:0467 ! reactome
 
@@ -2118,7 +2118,7 @@ is_a: MI:0473 ! participant database
 id: MI:0249
 name: huge
 def: "A Database of Human Unidentified Gene-Encoded Large Proteins Analyzed by Kazusa Human cDNA Project.\nhttp://www.kazusa.or.jp/huge/" [PMID:14755292]
-xref_analog: id-validation-regexp:\"KIAA[0-9\]\{4}[A-Z\]\{0,1}\"
+xref_analog: id-validation-regexp:\"KIAA[0-9\]\{4}[A-Z\]\{0\,1}\"
 xref_analog: search-url: "http://www.kazusa.or.jp/huge/gfpage/${ac}"
 is_a: MI:0683 ! sequence database
 
@@ -3502,7 +3502,7 @@ is_a: MI:0489 ! source database
 [Term]
 id: MI:0470
 name: kegg
-def: " KEGG (Kyoto Encyclopedia of Genes and Genomes) is a knowledge base for systematic analysis of gene functions, linking genomic information with higher order functional information and also supplies information about chemical compounds, enzyme molecules and enzymatic reactions.\nhttp://www.genome.ad.jp/kegg/" [PMID:14755292]
+def: "KEGG (Kyoto Encyclopedia of Genes and Genomes) is a knowledge base for systematic analysis of gene functions, linking genomic information with higher order functional information and also supplies information about chemical compounds, enzyme molecules and enzymatic reactions.\nhttp://www.genome.ad.jp/kegg/" [PMID:14755292]
 related_synonym: "KEGG" []
 xref_analog: id-validation-regexp:\"[a-zA-Z\]+\:[a-zA-Z\]+[0-9\]+\"
 is_a: MI:0461 ! interaction database
@@ -3568,7 +3568,7 @@ name: entrez gene/locuslink
 def: "LocusLink provides a single query interface to curated sequence and descriptive information about genetic loci.\nhttp://www.ncbi.nlm.nih.gov/LocusLink/" [PMID:14755292]
 related_synonym: "Entrez gene/locuslink" []
 exact_synonym: "entrezgene/locuslink" []
-xref_analog: id-validation-regexp:\"[0-9\]+|[A-Z\]\{1,2}_[0-9\]+|[A-Z\]\{1,2}_[A-Z\]\{1,4}[0-9\]+\"
+xref_analog: id-validation-regexp:\"[0-9\]+|[A-Z\]\{1\,2}_[0-9\]+|[A-Z\]\{1\,2}_[A-Z\]\{1\,4}[0-9\]+\"
 is_a: MI:0683 ! sequence database
 
 [Term]
@@ -4374,7 +4374,7 @@ is_a: MI:0495 ! experimental role
 id: MI:0585
 name: intenz
 def: "IntEnz is the name for the Integrated relational Enzyme database and is the official version of the Enzyme Nomenclature. The Enzyme Nomenclature comprises recommendations of the Nomenclature Committee of the International Union of Bio chemistry and Molecular Biology (NC-IUBMB) on the nomenclature and classification of enzyme-catalysed reactions. IntEnz is supported by NC-IUBMB and contains enzyme data curated and approved by this committee. The database IntEnz is available at.\nhttp://www.ebi.ac.uk/intenz" [PMID:14681451]
-xref_analog: id-validation-regexp:\"[0-6\]\{1}\\.[0-9\]+\\.[0-9\]+\\.[0-9\]+ \"
+xref_analog: id-validation-regexp:\"[0-6\]\{1}\\.(\\d+|-)\\.(\\d+|-)\\.(\\d+|-)\"
 xref_analog: search-url: "http://www.ebi.ac.uk/intenz/query?cmd=Search&q=${ac}&t=exact&fields=ec"
 is_a: MI:0461 ! interaction database
 
@@ -4489,7 +4489,6 @@ name: chemical footprinting
 def: "Sites of sequence-specific DNA-protein interaction are identified by altered reactivity of a chemical probe to DNA bound by a protein compared to the same nucleotide sequence in naked DNA. Nucleotides in close contact with the binding protein are protected from modification or cleavage by the probe. In certain case DNA-protein interactions can be indicated by enhanced modification or cleavage by the probe at particular nucleotides. When these probes are administrated to intact cells, the pattern of protection from the probes identifies the location of DNA-protein interactions in vivo." [PMID:8238889]
 exact_synonym: "chemical footprint" []
 is_a: MI:0409 ! dna footprinting
-is_a: MI:0814 ! protease accessibility laddering
 
 [Term]
 id: MI:0603
@@ -4511,7 +4510,6 @@ name: enzymatic footprinting
 def: "Sites of sequence-specific DNA-protein interaction are identified by altered reactivity of an enzymatic probe to DNA bound by a protein compared to the same nucleotide sequence in naked DNA. Nucleotides in close contact with the binding protein are protected from cleavage by the enzyme. When these enzymes are administrated to intact cells, the pattern of protection from the probes identifies the location of DNA-protein interactions in vivo." [PMID:8238889]
 exact_synonym: "enzymatic footprint" []
 is_a: MI:0409 ! dna footprinting
-is_a: MI:0814 ! protease accessibility laddering
 
 [Term]
 id: MI:0606
@@ -5446,7 +5444,7 @@ is_a: MI:0721 ! protein delivery
 [Term]
 id: MI:0737
 name: peptide sequence database
-def: "database storing sequences detected by peptide identification methods. " [PMID:14755292]
+def: "database storing sequences detected by peptide identification methods." [PMID:14755292]
 exact_synonym: "pep seq db" []
 is_a: MI:0683 ! sequence database
 
@@ -5800,16 +5798,12 @@ is_a: MI:0353 ! cross-reference type
 id: MI:0830
 name: tissue list
 def: "List of tissue used as  topic in UniProt RC line.\nhttp://www.expasy.org/cgi-bin/lists?tisslist.txt" [PMID:14755292]
-xref_analog: id-validation-regexp:\"[0-9\]+|ACC\\s[A-Z0-9\]+|ECACC\\s[A-Z0-9\]+|LMBP\\s[A-Z0-9\]+|ICLC\\s[A-Z0-9\]+|CIP-[0-9\]+\"
-xref_analog: search-url: "http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?[libs%3d{dsmz_mutz%20ecacc_cell%20iclc%20CABI_BACT%20CIP_BACT%20CABI_YEAST%20DSMZ_PLANT_CELL}-id:${ac}]+-e"
 is_a: MI:0473 ! participant database
 
 [Term]
 id: MI:0831
 name: cell ontology
 def: "Ontology of cell types.\nhttp://obo.sourceforge.net/cgi-bin/detail.cgi?cell" [PMID:16381901]
-xref_analog: id-validation-regexp:\"[0-9\]+|ACC\\s[A-Z0-9\]+|ECACC\\s[A-Z0-9\]+|LMBP\\s[A-Z0-9\]+|ICLC\\s[A-Z0-9\]+|CIP-[0-9\]+\"
-xref_analog: search-url: "http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?[libs%3d{dsmz_mutz%20ecacc_cell%20iclc%20CABI_BACT%20CIP_BACT%20CABI_YEAST%20DSMZ_PLANT_CELL}-id:${ac}]+-e"
 is_a: MI:0473 ! participant database
 
 [Term]
@@ -5997,7 +5991,7 @@ is_a: MI:0505 ! experimental feature
 [Term]
 id: MI:0857
 name: fluorescent dye label
-def: "Dye label containing a  fluorophore  which  absorb energy of a specific wavelength and re-emit energy at a different (but equally specific) wavelength. " [PMID:14755292]
+def: "Dye label containing a  fluorophore  which  absorb energy of a specific wavelength and re-emit energy at a different (but equally specific) wavelength." [PMID:14755292]
 exact_synonym: "fluorescent dye" []
 is_a: MI:0856 ! fluorophore
 
@@ -6053,8 +6047,6 @@ is_a: MI:0505 ! experimental feature
 id: MI:0864
 name: brenda
 def: "A structured controlled vocabulary for the source of an enzyme. It comprises terms for tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.\nhttp://www.brenda.uni-koeln.de/" [PMID:14755292]
-xref_analog: id-validation-regexp:\"[0-9\]+|ACC\\s[A-Z0-9\]+|ECACC\\s[A-Z0-9\]+|LMBP\\s[A-Z0-9\]+|ICLC\\s[A-Z0-9\]+|CIP-[0-9\]+\"
-xref_analog: search-url: "http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?[libs%3d{dsmz_mutz%20ecacc_cell%20iclc%20CABI_BACT%20CIP_BACT%20CABI_YEAST%20DSMZ_PLANT_CELL}-id:${ac}]+-e"
 is_a: MI:0473 ! participant database
 
 [Term]
@@ -6094,7 +6086,7 @@ is_a: MI:0353 ! cross-reference type
 [Term]
 id: MI:0871
 name: demethylation reaction
-def: "The cleavage of a methyl residue from a polypeptide." [GO:0006482, PMID:17277772]
+def: "The cleavage of a methyl group from a polypeptide. Methylation is generally an irreversible reaction except in mamalian." [GO:0006482, PMID:17277772]
 exact_synonym: "demethylation" []
 is_a: MI:0414 ! enzymatic reaction
 
