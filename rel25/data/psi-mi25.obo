@@ -3,7 +3,7 @@ date: 16:06:2007 23:34
 saved-by: luisa
 auto-generated-by: OBO-Edit 1.100
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.33 2007/06/23 12:55:38 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.34 2007/06/24 14:06:30 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -6060,7 +6060,6 @@ is_a: MI:0495 ! experimental role
 id: MI:0866
 name: tag visualisation
 def: "Molecule whose sequence identity is not checked after the interaction but its presence is detected through its tag" [PMID:14755292]
-exact_synonym: "predetermined" []
 is_a: MI:0396 ! predetermined participant
 
 [Term]
