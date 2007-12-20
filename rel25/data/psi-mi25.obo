@@ -1,9 +1,9 @@
 format-version: 1.0
-date: 11:07:2007 18:23
+date: 20:12:2007 14:05
 saved-by: luisa
-auto-generated-by: OBO-Edit 1.100
+auto-generated-by: OBO-Edit 1.101
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.36 2007/07/11 17:28:26 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.37 2007/12/20 14:12:50 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -358,7 +358,7 @@ id: MI:0047
 name: far western blotting
 def: "Proteins are fractionated by PAGE (SDS-polyacrylamide gel electrophoresis), transferred to a nitrocellulose membrane and tested for the ability to bind to a protein, a peptide, or any other ligand. Cell lysates can also be fractionated before gel electrophoresis to increase the sensitivity of the method for detecting interactions with rare proteins. Denaturants are removed during the blotting procedure, which allows many proteins to recover (or partially recover) activity. However, if biological activity is not recoverable, the proteins can be fractionated by a non denaturing gel system. This variation of the method eliminates the problem of activity regeneration and allows the detection of binding when the presence of a protein complex is required for binding. The protein probe can be prepared by any one of several procedures, while fusion affinity tags greatly facilitate purification. Synthesis in E. coli with a GST fusion, epitope tag, or other affinity tag is most commonly used. The protein of interest can then be radioactively labelled, biotinylated, or used in the blotting procedure as an unlabeled probe that is detected by a specific antibody." [PMID:7708014]
 related_synonym: "Affinity blotting" []
-is_a: MI:0400 ! affinity technology
+is_a: MI:0892 ! solid phase assay
 
 [Term]
 id: MI:0048
@@ -370,9 +370,9 @@ is_a: MI:0084 ! phage display
 [Term]
 id: MI:0049
 name: filter binding
-def: "A method in which separation depends upon the ability of one participant to bind to a filter or membrane which the other participants do not. Molecules interacting with the bound molecule will also be retain on the filter. For example, proteins expressed by different clones of an expression library are bound to a nitrocellulose membrane, by colony (bacterial library) or plaque (phage library) blotting. A labelled protein can then be used as a probe to identify clones expressing proteins that interact with the probe. Interactions occur on the nitrocellulose filters. The method is highly general and therefore widely applicable. A variety of approaches can be used to label the ligand, alternatively the ligand can be detected by a specific antibody. " [PMID:7708014]
+def: "A method in which separation depends upon the ability of one participant to bind to a filter or membrane which the other participants do not. Molecules interacting with the bound molecule will also be retain on the filter. For example, proteins expressed by different clones of an expression library are bound to a nitrocellulose membrane, by colony (bacterial library) or plaque (phage library) blotting. A labelled protein can then be used as a probe to identify clones expressing proteins that interact with the probe. Interactions occur on the nitrocellulose filters. The method is highly general and therefore widely applicable. A variety of approaches can be used to label the ligand, alternatively the ligand can be detected by a specific antibody." [PMID:7708014]
 related_synonym: "Filter overlay assay" []
-is_a: MI:0400 ! affinity technology
+is_a: MI:0892 ! solid phase assay
 
 [Term]
 id: MI:0050
@@ -3054,8 +3054,8 @@ name: enzyme linked immunosorbent assay
 def: "Following non-covalent binding of a purified primary ligand to a solid phase, a blocking reagent is added to prevent any non-specific binding. A specific antigen is then allowed to bind to the primary ligand. Unbound antigen is removed by washing and a secondary antibody conjugated to an enzyme (e.g. horseradish peroxidase) is added. Following a washing step to remove unbound secondary ligand, the extent to which a chromogenic substrate (e.g. 3,3', 5,5' tetramethyl benzidine chromogen [TMB]) is converted to a soluble coloured product by the conjugated enzyme in a given time is determined by spectrophotometry using a standard microplate absorbance reader. A similar type of approach can be utilized to detect enzymatic activities. The substrate, attached to a solid phase is incubated in the presence of the enzyme and the enzymatic modification is monitored by an antibody that is specific for the modified substrate (for instance a phosphorylated protein)." [PMID:11906746]
 related_synonym: "ELISA" []
 exact_synonym: "elisa" []
-is_a: MI:0400 ! affinity technology
 is_a: MI:0421 ! identification by antibody
+is_a: MI:0892 ! solid phase assay
 
 [Term]
 id: MI:0412
@@ -3071,7 +3071,7 @@ def: "This method proves the interaction between a nucleic acid and a protein pa
 related_synonym: "band shift" []
 related_synonym: "Gel retardation assay" []
 exact_synonym: "emsa" []
-is_a: MI:0400 ! affinity technology
+is_a: MI:0892 ! solid phase assay
 
 [Term]
 id: MI:0414
@@ -3452,7 +3452,7 @@ related_synonym: "CYGD" []
 related_synonym: "CYGD (MIPS)" []
 related_synonym: "MIPS" []
 related_synonym: "MPact" []
-xref_analog: id-validation-regexp:\"[0-9\]+\"
+xref_analog: id-validation-regexp:\"[0-9\]+|[A-Z\]\{3}[0-9\]\{3}[A-Za-z\](-[A-Za-z\])?|[A-Z0-9\]+\\.[0-9\]+|YM[A-Z\][0-9\]\{3}[a-z\][0-9\]\"
 is_a: MI:0461 ! interaction database
 is_a: MI:0489 ! source database
 is_a: MI:0683 ! sequence database
@@ -3540,6 +3540,7 @@ name: chebi
 def: "A definitive, freely available database of Chemical compounds of Biological Interest (ChEBI).\nhttp://www.ebi.ac.uk/chebi/" [PMID:14755292]
 related_synonym: "ChEBI" []
 xref_analog: id-validation-regexp:\"CHEBI\:[0-9\]+\"
+xref_analog: search-url: "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=${ac}"
 is_a: MI:0473 ! participant database
 
 [Term]
@@ -3557,9 +3558,9 @@ is_a: MI:0683 ! sequence database
 [Term]
 id: MI:0476
 name: ensembl
-def: " Ensembl is a joint project between the EMBL-EBI and the Wellcome Trust Sanger Institute that aims at developing a system that maintains automatic annotation of large eukaryotic genomes.\nhttp://www.ebi.ac.uk/ensembl" [PMID:15078858]
+def: "Ensembl is a joint project between the EMBL-EBI and the Wellcome Trust Sanger Institute that aims at developing a system that maintains automatic annotation of large eukaryotic genomes.\nhttp://www.ebi.ac.uk/ensembl" [PMID:15078858]
 related_synonym: "Ensembl" []
-xref_analog: id-validation-regexp:\"ENS[A-Z\]+[0-9\]\{11}\"
+xref_analog: id-validation-regexp:\"ENS[A-Z\]+[0-9\]\{11}|[A-Z\]\{3}[0-9\]\{3}[A-Za-z\](-[A-Za-z\])?|CG[0-9\]+|[A-Z0-9\]+\\.[0-9\]+|YM[A-Z\][0-9\]\{3}[a-z\][0-9\]\"
 is_a: MI:0683 ! sequence database
 
 [Term]
@@ -4298,7 +4299,7 @@ id: MI:0574
 name: digital object identifier
 def: "Identifier of a publication prior it pubmed indexing." [PMID:14755292]
 exact_synonym: "doi" []
-xref_analog: id-validation-regexp:\"doi\:[0-9\]+\\.[0-9\]+\"
+xref_analog: id-validation-regexp:\"\\d+.\\d+/[a-zA-Z0-9\\.\\\:\]+\"
 xref_analog: search-url: "http://dx.doi.org/${ac}"
 is_a: MI:0445 ! literature database
 
@@ -5085,7 +5086,7 @@ is_a: MI:0240 ! fusion protein
 [Term]
 id: MI:0688
 name: dna binding domain tag
-def: "Part of a transcription factor responsible for the binding of gene regulatory region prior to their transcription. Such tags are generally used in two hybrid experiments where they are fused to a bait polypeptide tested for its ability to interact with a prey fused to an activation domain tag. " [PMID:14755292]
+def: "Part of a transcription factor responsible for the binding of gene regulatory region prior to their transcription. Such tags are generally used in two hybrid experiments where they are fused to a bait polypeptide tested for its ability to interact with a prey fused to an activation domain tag." [PMID:14755292]
 exact_synonym: "dna binding domain" []
 is_a: MI:0240 ! fusion protein
 
@@ -5453,6 +5454,7 @@ is_a: MI:0683 ! sequence database
 id: MI:0738
 name: pride
 def: "PRIDE is a public repository of protein and peptide identifications for the proteomics community.\nhttp://www.ebi.ac.uk/pride/" [PMID:16381953]
+xref_analog: search-url: "http://www.ebi.ac.uk/pride/searchSummary.do?experimentCvAccession=PRIDE:0000156&queryTypeSelected=ExperimentCV&experimentCvValue=${ac}"
 is_a: MI:0737 ! peptide sequence database
 
 [Term]
@@ -5755,7 +5757,7 @@ is_a: MI:0659 ! experimental feature detection
 [Term]
 id: MI:0824
 name: x-ray powder diffraction
-def: "Analysis of a diffraction pattern generated by an isotropic sample composed of many randomly oriented crystals. " [PMID:14755292]
+def: "Analysis of a diffraction pattern generated by an isotropic sample composed of many randomly oriented crystals." [PMID:14755292]
 related_synonym: "X-ray" []
 exact_synonym: "x-ray powder diffrac" []
 is_a: MI:0114 ! x-ray crystallography
@@ -5763,7 +5765,7 @@ is_a: MI:0114 ! x-ray crystallography
 [Term]
 id: MI:0825
 name: x-ray fiber diffraction
-def: "Analysis  of diffraction pattern of a partially ordered sample composed of fibers oriented parallel to each other." [PMID:14755292]
+def: "Analysis  of diffraction pattern of a partially ordered sample composed of fibers oriented parallel to each other using Xray." [PMID:14755292]
 related_synonym: "X-ray" []
 exact_synonym: "x-ray fiber diffrac" []
 is_a: MI:0114 ! x-ray crystallography
@@ -5818,8 +5820,8 @@ is_a: MI:0179 ! other modification
 id: MI:0833
 name: autoradiography
 def: "Experimental method by which radiolabel is detected by exposure to a photographic emulsion forming a pattern on the film." [PMID:14755292]
-is_a: MI:0078 ! nucleotide sequence identification
 is_a: MI:0659 ! experimental feature detection
+is_a: MI:0866 ! tag visualisation
 
 [Term]
 id: MI:0834
@@ -5913,7 +5915,8 @@ id: MI:0847
 name: dansyl tag
 def: "Dansyl is fluorescent tag. Dansyl is the acronyme of 5-dimethylaminonaphthalene-1-sulfonyl radical group reacting with any NH2 groups." [PMID:14755292]
 related_synonym: "5-dimethylaminonaphthalene-1-sulfonyl tag" []
-is_a: MI:0507 ! tag
+related_synonym: "dansyl label" []
+is_a: MI:0857 ! fluorescent dye label
 
 [Term]
 id: MI:0848
@@ -6055,7 +6058,7 @@ id: MI:0865
 name: fluorescence acceptor donor pair
 def: "Pair of fluorophores attached to the same molecule used in a fret  experiment to observe the details of conformational  changes ." [PMID:14755292]
 exact_synonym: "fret pair" []
-is_a: MI:0495 ! experimental role
+is_a: MI:0898 ! putative self
 
 [Term]
 id: MI:0866
@@ -6172,6 +6175,88 @@ id: MI:0886
 name: publication year
 def: "Year of publication of a paper." [PMID:14755292]
 is_a: MI:0665 ! experiment attibute name
+
+[Term]
+id: MI:0887
+name: histone acetylation assay
+def: "In histone acetylation the histones are acetylated on lysine residues in the N-terminal tail as part of gene regulation. Typically, these reactions are catalyzed by enzymes with \"histone acetyltransferase\" (HAt)" [PMID:14755292]
+related_synonym: "HAt" []
+exact_synonym: "hat" []
+is_a: MI:0889 ! acetylation assay
+
+[Term]
+id: MI:0888
+name: small angle neutron scattering
+def: "During a SANS experiment a beam of neutrons is directed at a sample. The neutrons are elastically scattered by a sample and the resulting scattering pattern is analyzed to provide information about the size, shape and orientation of some component of the sample." [PMID:11578931]
+related_synonym: "SANS" []
+exact_synonym: "sans" []
+is_a: MI:0013 ! biophysical
+
+[Term]
+id: MI:0889
+name: acetylation assay
+def: "Measures the catalysis of the addition of an acetyl group to a target molecule." [PMID:14755292]
+is_a: MI:0415 ! enzymatic study
+
+[Term]
+id: MI:0890
+name: qdot
+def: "Qdot are nanocrystals fluorophores . Nanocrystals a are extremely efficient materials for generating and they have a highly customizable surface for directing their bioactivity, producing a fluorescent probe that outperforms traditional dyes in many fluorescence applications." [PMID:17569782]
+is_a: MI:0857 ! fluorescent dye label
+
+[Term]
+id: MI:0891
+name: neutron fiber diffraction
+def: "Analysis of diffraction pattern of a partially ordered sample composed of fibers oriented parallel to each other using neutron beam." [PMID:10771422, PMID:15272083, PMID:15546977, PMID:15914673, PMID:16041074, PMID:16707576]
+exact_synonym: "neutron fiber diff" []
+is_a: MI:0013 ! biophysical
+
+[Term]
+id: MI:0892
+name: solid phase assay
+def: "Assay where at least one molecule under analysis is bound to a solid surface, such as a microplate wall or the sides of a tube, the other reactants being free in solution." [PMID:14755292]
+is_a: MI:0400 ! affinity technology
+
+[Term]
+id: MI:0893
+name: neutron diffraction
+def: "Analysis of diffraction pattern using neutron beam" [PMID:10771422, PMID:15272083, PMID:15546977, PMID:15914673, PMID:16041074, PMID:16707576]
+is_a: MI:0013 ! biophysical
+
+[Term]
+id: MI:0894
+name: electron diffraction
+def: "Analysis of diffraction pattern using electron beam." [PMID:10949309, PMID:11034202, PMID:11171962, PMID:11532455, PMID:11700061, PMID:15141214, PMID:16325200]
+is_a: MI:0013 ! biophysical
+
+[Term]
+id: MI:0895
+name: protein kinase A complementation
+def: "This method uses Renilla luciferase (Rluc)-based protein fragment complementation assay (PCA) that is designed specifically to investigate dynamic protein complexes (association and dissociation). It is chose to generate a PCA based on the Rluc, which is, because of its simplicity and sensitivity, a widely used bioluminescence reporter. The general scheme for construction and detection of the Rluc-PCA PKA sensor consists of fusing complementary fragments of Rluc to the regulatory (Reg) and catalytic (Cat) PKA subunits of PKA." [PMID:17942691]
+exact_synonym: "pka complementation" []
+is_a: MI:0228 ! cytoplasmic complementation assay
+
+[Term]
+id: MI:0896
+name: renilla luciferase protein tag
+def: "Renilla luciferase, is an enzyme of the sea pansy catalyzing the oxidation of the lucifering pigment (reaction with ATP or oxigen)  that produces light. This protein is often used as a vizualisation tag because compare to many fluorescent tag it has a better signal to noise ratio." [PMID:14755292]
+exact_synonym: "renilla lucirefase" []
+is_a: MI:0240 ! fusion protein
+
+[Term]
+id: MI:0897
+name: protein modification ontology
+def: "Catalogue of covalent modification of, or a change resulting in an alteration of the measured molecular mass of, a peptide or protein amino acid residue." [PMID:14755292]
+exact_synonym: "psi-mod" []
+xref_analog: id-validation-regexp:\"MOD\:[0-9\]\{5}\"
+is_a: MI:0447 ! feature database
+
+[Term]
+id: MI:0898
+name: putative self
+def: "Molecule that interacts with sister molecules of identical sequence or type, but the experimental condition does not allow to resolve whether the interaction is intramolecular (true self interaction) or intermolecular (homodimer)." [PMID:14755292]
+is_a: MI:0495 ! experimental role
+is_a: MI:0500 ! biological role
 
 [Typedef]
 id: part_of
