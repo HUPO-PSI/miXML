@@ -3,8 +3,19 @@ date: 13:02:2008 18:02
 saved-by: luisa
 auto-generated-by: OBO-Edit 1.101
 default-namespace: PSI-MI
-remark: test 1
-remark: test 2
+remark: $Id: psi-mi25.obo,v 1.39 2008/02/13 18:15:15 luisa_montecchi Exp $
+remark: Notes:
+remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
+remark: mapping an element of the PSI Molecular Interaction XML schema.
+remark: To facilitate handling, they all have been merged in this file, though they
+remark: are essentially independent CVs describing different aspects of molecular interactions.
+remark: The PSI MI schema defines short labels for controlled vocabulary terms.
+remark: Where possible, short labels are reported as exact synonyms of a term in this file,
+remark: The last accession number used in this file is stored in a separate file,
+remark: psi-mi.lastac.
+remark: It MUST be updated when this file is updated.
+remark: This file is published by the PSI MI working group see http://psidev.sourceforge.net/
+remark: Author Luisa Montecchi Palazzi luisa@ebi.ac.uk
 
 [Term]
 id: MI:0000
