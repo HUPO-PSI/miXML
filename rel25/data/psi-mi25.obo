@@ -1,21 +1,10 @@
 format-version: 1.0
-date: 20:12:2007 14:05
+date: 13:02:2008 18:02
 saved-by: luisa
 auto-generated-by: OBO-Edit 1.101
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.37 2007/12/20 14:12:50 luisa_montecchi Exp $
-remark: Notes:
-remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
-remark: mapping an element of the PSI Molecular Interaction XML schema.
-remark: To facilitate handling, they all have been merged in this file, though they
-remark: are essentially independent CVs describing different aspects of molecular interactions.
-remark: The PSI MI schema defines short labels for controlled vocabulary terms.
-remark: Where possible, short labels are reported as exact synonyms of a term in this file,
-remark: The last accession number used in this file is stored in a separate file,
-remark: psi-mi.lastac.
-remark: It MUST be updated when this file is updated.
-remark: This file is published by the PSI MI working group see http://psidev.sourceforge.net/
-remark: Author Luisa Montecchi Palazzi luisa@ebi.ac.uk
+remark: test 1
+remark: test 2
 
 [Term]
 id: MI:0000
@@ -3038,8 +3027,8 @@ is_a: MI:0195 ! covalent binding
 [Term]
 id: MI:0409
 name: dna footprinting
-def: "Experimental method used to identify the region of a nucleic acid involved in an interaction with a protein. One sample of a radiolabeled nucleic acid of known sequence is submitted to partial digestion. A second sample is incubated with its interacting partner and then is submitted to the same partial digestion. The two samples are then analyzed in parallel by electrophoresis on a denaturing acrylamide gel. After autoradiography the identification of the bands that correspond to fragments missing from the lane loaded with the second sample reveals the region of the nucleic acid that is protected from nuclease digestion upon binding." [PMID:14755292]
-is_a: MI:0417 ! footprinting
+def: "Experimental method used to identify the region of a nucleic acid involved in an interaction with a protein. One sample of a radiolabeled nucleic acid of known sequence is submitted to partial digestion. A second sample is incubated with its interacting partner and then is submitted to the same partial digestion. The two samples are then analyzed in parallel by electrophoresis on a denaturing acrylamide gel. After autoradiography the identification of the bands that correspond to fragments missing from the lane loaded with the second sample reveals the region of the nucleic acid that is protected from nuclease digestion upon binding.\nOBSOLETE because redundant with MI:0417 'footprinting' combined with interactor type MI:0319 'DNA' \nreplace by:MI:0417" [PMID:14755292]
+is_obsolete: true
 
 [Term]
 id: MI:0410
@@ -4279,7 +4268,7 @@ is_a: MI:0194 ! cleavage reaction
 id: MI:0571
 name: mrna cleavage
 def: "Any process by which a pre-mRNA or mRNA molecule is cleaved at specific sites or in a regulated manner." [GO:0006379, PMID:14681407]
-is_a: MI:0194 ! cleavage reaction
+is_a: MI:0902 ! rna cleavage
 
 [Term]
 id: MI:0572
@@ -4488,9 +4477,9 @@ is_a: MI:0473 ! participant database
 [Term]
 id: MI:0602
 name: chemical footprinting
-def: "Sites of sequence-specific DNA-protein interaction are identified by altered reactivity of a chemical probe to DNA bound by a protein compared to the same nucleotide sequence in naked DNA. Nucleotides in close contact with the binding protein are protected from modification or cleavage by the probe. In certain case DNA-protein interactions can be indicated by enhanced modification or cleavage by the probe at particular nucleotides. When these probes are administrated to intact cells, the pattern of protection from the probes identifies the location of DNA-protein interactions in vivo." [PMID:8238889]
+def: "Binding sites are identified by altered reactivity of a complex to a chemical treatment compared to the unbound molecules. Residues in close contact with the binding partner are protected from cleavage by the enzyme. When these chemicals are administrated to intact cells, the pattern of protection from the probes identifies the location of DNA-protein or protein-protein interactions in vivo." [PMID:8238889]
 exact_synonym: "chemical footprint" []
-is_a: MI:0409 ! dna footprinting
+is_a: MI:0417 ! footprinting
 
 [Term]
 id: MI:0603
@@ -4509,9 +4498,9 @@ is_a: MI:0602 ! chemical footprinting
 [Term]
 id: MI:0605
 name: enzymatic footprinting
-def: "Sites of sequence-specific DNA-protein interaction are identified by altered reactivity of an enzymatic probe to DNA bound by a protein compared to the same nucleotide sequence in naked DNA. Nucleotides in close contact with the binding protein are protected from cleavage by the enzyme. When these enzymes are administrated to intact cells, the pattern of protection from the probes identifies the location of DNA-protein interactions in vivo." [PMID:8238889]
+def: "Binding sites are identified by altered reactivity of a complex to an enzymatic probe compared to the unbound molecules. Residues in close contact with the binding partner are protected from cleavage by the enzyme. When these enzymes are administrated to intact cells, the pattern of protection from the probes identifies the location of DNA-protein or protein-protein interactions in vivo." [PMID:8238889]
 exact_synonym: "enzymatic footprint" []
-is_a: MI:0409 ! dna footprinting
+is_a: MI:0417 ! footprinting
 
 [Term]
 id: MI:0606
@@ -4659,13 +4648,13 @@ is_a: MI:0664 ! interaction attribute name
 [Term]
 id: MI:0625
 name: agonist
-def: "Any chemical applied externally to cells or any type of environmental condition, such as hypoxia, that inhibits an interaction, potentially by alteration of amount or binding affinity of one or more of the interactors." [PMID:14755292]
+def: "Any chemical applied externally to cells or any type of environmental condition, such as hypoxia, that stimulates an interaction, potentially by causing modification of one or more of the interactors." [PMID:14755292]
 is_a: MI:0666 ! participant attribute name
 
 [Term]
 id: MI:0626
 name: antagonist
-def: "Any chemical applied externally to cells or any type of environmental condition, such as hypoxia, that stimulates an interaction, potentially by causing modification of one or more of the interactors." [PMID:14755292]
+def: "Any chemical applied externally to cells or any type of environmental condition, such as hypoxia, that inhibits an interaction, potentially by alteration of amount or binding affinity of one or more of the interactors." [PMID:14755292]
 is_a: MI:0666 ! participant attribute name
 
 [Term]
@@ -5686,7 +5675,7 @@ name: protease accessibility laddering
 def: "In protease accessibility laddering (PAL) tagged proteins are purified on magnetic beads in their natively folded  state. While attached to the beads, proteins are probed with proteases. Proteolytic fragments are eluted and detected by immunoblotting with antibodies against the tag (e.g., Protein A, GFP, and 6xHis)." [PMID:16615907]
 related_synonym: "pal" []
 exact_synonym: "protease access" []
-is_a: MI:0417 ! footprinting
+is_a: MI:0605 ! enzymatic footprinting
 
 [Term]
 id: MI:0815
@@ -6050,7 +6039,7 @@ is_a: MI:0505 ! experimental feature
 [Term]
 id: MI:0864
 name: brenda
-def: "A structured controlled vocabulary for the source of an enzyme. It comprises terms for tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.\nhttp://www.brenda.uni-koeln.de/" [PMID:14755292]
+def: "A structured controlled vocabulary for the source of an enzyme. It comprises terms for tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.\nhttp://www.brenda-enzymes.info" [PMID:14755292]
 is_a: MI:0473 ! participant database
 
 [Term]
@@ -6257,6 +6246,35 @@ name: putative self
 def: "Molecule that interacts with sister molecules of identical sequence or type, but the experimental condition does not allow to resolve whether the interaction is intramolecular (true self interaction) or intermolecular (homodimer)." [PMID:14755292]
 is_a: MI:0495 ! experimental role
 is_a: MI:0500 ! biological role
+
+[Term]
+id: MI:0899
+name: p3 filamentous phage display
+def: "pIII is one of the minor coat proteins that decorates in five copies the emerging tip of filamentous phage. Similarly to pVIII pIII also tolerates peptide insertions at the amino-terminus. The sequences to be displayed can either be encoded in the phage copy of the coat gene or in an extra pIII gene copy carried on a phagemid. In the first case 5 copies o the hybrid proteins are displayed while in the latter only a few capsid display one copy and the majority display none.  Because of the low copy number pIII display is often referred to as low valency display." [PMID:1696028]
+related_synonym: "low valency display" []
+exact_synonym: "p3 filamentous phage" []
+is_a: MI:0048 ! filamentous phage display
+
+[Term]
+id: MI:0900
+name: p8 filamentous phage display
+def: "pVIII is the major coat protein of filamentous phage. Its amino-terminus is exposed to solvent and tolerates the insertion of relatively large peptide fragments. By inserting the peptide coding sequence into the phage copy of the pVIII gene up to 3000 copies of the hybrid proteins can be displayed along the phage capsid. Alternatively the hybrid protein can be encoded on a phagemid that is incorporated in a virus like particle by infection with a helper phage. In this latter case one obtains a chimeric capsid where hybrid proteins are interspersed at different density in an otherwise wild type coat. Because of the high copy number pVIII display is also referred to as high valency display." [PMID:1720463]
+related_synonym: "high valency display" []
+exact_synonym: "p8 filamentous phage" []
+is_a: MI:0048 ! filamentous phage display
+
+[Term]
+id: MI:0901
+name: isotope label footprinting
+def: "Exposed amino acid residues undergo a rapid exchange of a specific radio-isotope e.g. hydrogen/deuterium. Residues involved in a molecular interaction are protected from this exchange and exhibit a much slower rate of exchange. This method of binding range identification must be coupled to NMR or mass spectrometry  technologies in order to detect the radio-isotope exchange." [PMID:18184591]
+exact_synonym: "isotope footprinting" []
+is_a: MI:0605 ! enzymatic footprinting
+
+[Term]
+id: MI:0902
+name: rna cleavage
+def: "Any process by which an RNA molecule is cleaved at specific sites or in a regulated manner." [GO:0006396, PMID:14681407]
+is_a: MI:0194 ! cleavage reaction
 
 [Typedef]
 id: part_of
