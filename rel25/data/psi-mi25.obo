@@ -7,7 +7,7 @@ subsetdef: PSI-MI slim "Subset of PSI-MI"
 synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.40 2008/05/13 12:23:09 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.41 2008/05/16 14:08:32 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -6754,7 +6754,7 @@ is_a: MI:0860 ! genbank indentifier
 [Term]
 id: MI:0853
 name: dna overhang
-def: "An overhang is a stretch of unpaired nucleotides in the end of a DNA molecule. These unpaired nucleotides can be in either strand, creating either 3' or 5' overhangs. Longer overhangs are called cohessive ends or sticky ends. They are most often created by restriction endonucleases when they cut DNA. Very often they cut the two DNA strands four base pairs from each other, creating a four-base 3' overhang in the other molecule and a complementary 5' overhang in the other. These ends are called cohessive since they are easily joined back together by a ligase" [PMID:A variety of crosslinkers are used to analyze subunit structure of proteins\, protein interactions and various parameters of protein function. Subunit structure is deduced since crosslinkers only bind surface amino residues in relatively close proximity in the native state. Protein interactions are often too weak or transient to be easily detected\, but by crosslinking\, the interactions can be captured and analyzed.]
+def: "An overhang is a stretch of unpaired nucleotides in the end of a DNA molecule. These unpaired nucleotides can be in either strand, creating either 3' or 5' overhangs. Longer overhangs are called cohessive ends or sticky ends. They are most often created by restriction endonucleases when they cut DNA. Very often they cut the two DNA strands four base pairs from each other, creating a four-base 3' overhang in the other molecule and a complementary 5' overhang in the other. These ends are called cohessive since they are easily joined back together by a ligase" [PMID:14755292]
 subset: PSI-MI slim
 synonym: "cohessive ends" EXACT PSI-MI-alternate []
 synonym: "sticky ends" EXACT PSI-MI-alternate []
@@ -7186,7 +7186,7 @@ is_a: MI:0194 ! cleavage reaction
 [Term]
 id: MI:0911
 name: cross linker
-def: "A variety of crosslinkers are used to analyze subunit structure of proteins, protein interactions and various parameters of protein function. Subunit structure is deduced since crosslinkers only bind surface amino residues in relatively close proximity in the native state. Protein interactions are often too weak or transient to be easily detected, but by crosslinking, the interactions can be captured and analyzed." [PMID:A variety of crosslinkers are used to analyze subunit structure of proteins\, protein interactions and various parameters of protein function. Subunit structure is deduced since crosslinkers only bind surface amino residues in relatively close proximity in the native state. Protein interactions are often too weak or transient to be easily detected\, but by crosslinking\, the interactions can be captured and analyzed.]
+def: "A variety of crosslinkers are used to analyze subunit structure of proteins, protein interactions and various parameters of protein function. Subunit structure is deduced since crosslinkers only bind surface amino residues in relatively close proximity in the native state. Protein interactions are often too weak or transient to be easily detected, but by crosslinking, the interactions can be captured and analyzed." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "crosslinker" EXACT PSI-MI-alternate []
 is_a: MI:0505 ! experimental feature
