@@ -7,7 +7,7 @@ subsetdef: PSI-MI slim "Subset of PSI-MI"
 synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.41 2008/05/16 14:08:32 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.42 2008/05/16 14:14:08 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -7290,14 +7290,14 @@ is_a: MI:0489 ! source database
 [Term]
 id: MI:2002
 name: drugbank
-def: "DrugBank Accession number consisting of the 4 letter prefix and a 5 number suffix. Each Accession number is unique to the drug's generic name. The 4 letter suffix (APRD, EXPT, BIOD, NUTR) indicates the type of drug (APRD=approved small molecule drug, EXPT=experimental drug, BIOD=biotech drug, NUTR=nutraceutical or natural product). Biotech drugs consist of FDA approved peptide, protein or nucleic acid drugs, approved small molecule drugs are FDA approved non-biotech drugs, nutraceuticals are natural products (amino acids, vitamins, other metabolites) and experimental drugs include drugs under trial, pre-clinical drugs, unapproved drugs, well known inhibitors and possible toxins." [pubmed:14755292]
+def: "DrugBank Accession number consisting of the 4 letter prefix and a 5 number suffix. Each Accession number is unique to the drug's generic name. The 4 letter suffix (APRD, EXPT, BIOD, NUTR) indicates the type of drug (APRD=approved small molecule drug, EXPT=experimental drug, BIOD=biotech drug, NUTR=nutraceutical or natural product). Biotech drugs consist of FDA approved peptide, protein or nucleic acid drugs, approved small molecule drugs are FDA approved non-biotech drugs, nutraceuticals are natural products (amino acids, vitamins, other metabolites) and experimental drugs include drugs under trial, pre-clinical drugs, unapproved drugs, well known inhibitors and possible toxins." [PMID:14755292]
 subset: Drugable
 is_a: MI:2054 ! bioactive entity reference
 
 [Term]
 id: MI:2003
 name: commercial name
-def: "Standard name of drug or any reagent as provided by its manufacturer." [pubmed:14755292]
+def: "Standard name of drug or any reagent as provided by its manufacturer." [PMID:14755292]
 subset: Drugable
 synonym: "generic name" EXACT PSI-MI-alternate []
 is_a: MI:0300 ! alias type
@@ -7305,14 +7305,14 @@ is_a: MI:0300 ! alias type
 [Term]
 id: MI:2004
 name: drug brand name
-def: "Alternate names of the drug, brand names from different manufacturers" [pubmed:14755292]
+def: "Alternate names of the drug, brand names from different manufacturers" [PMID:14755292]
 subset: Drugable
 is_a: MI:0300 ! alias type
 
 [Term]
 id: MI:2005
 name: drug mixture brand name
-def: "Brand names and composition of mixtures that include the drug described in this DrugCard file" [pubmed:14755292]
+def: "Brand names and composition of mixtures that include the drug described in this DrugCard file" [PMID:14755292]
 subset: Drugable
 synonym: "mix brand name" EXACT PSI-MI-short []
 is_a: MI:0300 ! alias type
@@ -7320,7 +7320,7 @@ is_a: MI:0300 ! alias type
 [Term]
 id: MI:2006
 name: biotech product preparation
-def: "Description of the drug (for biotech drugs) describing its composition and/or preparation." [pubmed:14755292]
+def: "Description of the drug (for biotech drugs) describing its composition and/or preparation." [PMID:14755292]
 subset: Drugable
 synonym: "biotech prep" EXACT PSI-MI-short []
 is_a: MI:2089 ! bioactive entity attribute name
@@ -7328,42 +7328,42 @@ is_a: MI:2089 ! bioactive entity attribute name
 [Term]
 id: MI:2007
 name: iupac name
-def: "IUPAC or standard chemical name for a drug, or a chemical." [pubmed:14755292]
+def: "IUPAC or standard chemical name for a drug, or a chemical." [PMID:14755292]
 subset: Drugable
 is_a: MI:0300 ! alias type
 
 [Term]
 id: MI:2008
 name: chemical formula
-def: "Chemical formula describing atomic or elemental composition" [pubmed:14755292]
+def: "Chemical formula describing atomic or elemental composition" [PMID:14755292]
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
 
 [Term]
 id: MI:2009
 name: chemical structure
-def: "Image of the drug structure (if small molecule) or its sequence (if biotech drug)" [pubmed:14755292]
+def: "Image of the drug structure (if small molecule) or its sequence (if biotech drug)" [PMID:14755292]
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
 
 [Term]
 id: MI:2010
 name: inchi id
-def: "IUPAC approved InCHI identifier" [pubmed:14755292]
+def: "IUPAC approved InCHI identifier" [PMID:14755292]
 subset: Drugable
 is_a: MI:2091 ! structure representation attribute name
 
 [Term]
 id: MI:2011
 name: cas registry number
-def: "Chemical Abstract Service identification number" [pubmed:14755292]
+def: "Chemical Abstract Service identification number" [PMID:14755292]
 subset: Drugable
 is_a: MI:2054 ! bioactive entity reference
 
 [Term]
 id: MI:2012
 name: kegg compound
-def: "Kyoto Encyclopedia of Genes and Genomes compound identification number (if molecule is in KEGG)" [pubmed:14755292]
+def: "Kyoto Encyclopedia of Genes and Genomes compound identification number (if molecule is in KEGG)" [PMID:14755292]
 subset: Drugable
 synonym: "KEGG Compound ID" EXACT PSI-MI-alternate []
 is_a: MI:0470 ! kegg
@@ -7371,7 +7371,7 @@ is_a: MI:0470 ! kegg
 [Term]
 id: MI:2013
 name: pubchem
-def: "NCBI's PubChem database identification number (if molecule is in PubChem)" [pubmed:14755292]
+def: "NCBI's PubChem database identification number (if molecule is in PubChem)" [PMID:14755292]
 subset: Drugable
 synonym: "PubChem ID" EXACT PSI-MI-alternate []
 is_a: MI:2054 ! bioactive entity reference
@@ -7379,14 +7379,14 @@ is_a: MI:2054 ! bioactive entity reference
 [Term]
 id: MI:2015
 name: pharmgkb
-def: "Pharmacogenomics Knowledge Base identification number (if molecule is in PharmGKB)" [pubmed:14755292]
+def: "Pharmacogenomics Knowledge Base identification number (if molecule is in PharmGKB)" [PMID:14755292]
 subset: Drugable
 is_a: MI:2054 ! bioactive entity reference
 
 [Term]
 id: MI:2016
 name: bind smid
-def: "BIND database Small Molecule Identification number (if molecule is in BIND)" [pubmed:14755292]
+def: "BIND database Small Molecule Identification number (if molecule is in BIND)" [PMID:14755292]
 comment: May not be publicly available any more since now owned by Thompson Scientific
 subset: Drugable
 is_a: MI:2054 ! bioactive entity reference
@@ -7394,7 +7394,7 @@ is_a: MI:2054 ! bioactive entity reference
 [Term]
 id: MI:2017
 name: heterogen
-def: "The HET records are used to describe non-standard residues, such as prosthetic groups, inhibitors, solvent molecules, and ions for\nwhich coordinates are supplied. Groups are considered HET if they are: \n- not one of the standard amino acids, and \n- not one of the nucleic acids (C, G, A, T, U, and I), and \n- not one of the modified versions of nucleic acids (+C, +G, +A,\n+T, +U, and +I), and \n- not an unknown amino acid or nucleic acid where UNK is used to\nindicate the unknown residue name. \nHet records also describe heterogens for which the chemical identity is unknown, in which case the group is assigned the hetID UNK." [pubmed:14755292]
+def: "The HET records are used to describe non-standard residues, such as prosthetic groups, inhibitors, solvent molecules, and ions for\nwhich coordinates are supplied. Groups are considered HET if they are: \n- not one of the standard amino acids, and \n- not one of the nucleic acids (C, G, A, T, U, and I), and \n- not one of the modified versions of nucleic acids (+C, +G, +A,\n+T, +U, and +I), and \n- not an unknown amino acid or nucleic acid where UNK is used to\nindicate the unknown residue name. \nHet records also describe heterogens for which the chemical identity is unknown, in which case the group is assigned the hetID UNK." [PMID:14755292]
 subset: Drugable
 synonym: "het" EXACT PSI-MI-short []
 is_a: MI:0460 ! rcsb pdb
@@ -7404,7 +7404,7 @@ is_a: MI:0806 ! pdbj
 [Term]
 id: MI:2020
 name: canadian drug identification number
-def: "Drug Identification Number (Canadian Drug ID system)" [pubmed:14755292]
+def: "Drug Identification Number (Canadian Drug ID system)" [PMID:14755292]
 subset: Drugable
 synonym: "din" EXACT PSI-MI-short []
 is_a: MI:2054 ! bioactive entity reference
@@ -7412,14 +7412,14 @@ is_a: MI:2054 ! bioactive entity reference
 [Term]
 id: MI:2021
 name: rxlist link
-def: "Hyperlink to RxList entry for the given drug (if it exists)" [pubmed:14755292]
+def: "Hyperlink to RxList entry for the given drug (if it exists)" [PMID:14755292]
 subset: Drugable
 is_a: MI:2054 ! bioactive entity reference
 
 [Term]
 id: MI:2023
 name: material safety data sheet
-def: "Material Safety Data Sheet (if it exists). A Material Safety Data Sheet (MSDS) is designed to provide both workers and emergency personnel with the proper procedures for handling or working with a particular substance. MSDS's include information such as physical data (melting point, boiling point, flash point etc.), toxicity, health effects, first aid, reactivity, storage, disposal, protective equipment, andspill/leak procedures. These are of particular use if a spill or other accident occurs." [pubmed:14755292]
+def: "Material Safety Data Sheet (if it exists). A Material Safety Data Sheet (MSDS) is designed to provide both workers and emergency personnel with the proper procedures for handling or working with a particular substance. MSDS's include information such as physical data (melting point, boiling point, flash point etc.), toxicity, health effects, first aid, reactivity, storage, disposal, protective equipment, andspill/leak procedures. These are of particular use if a spill or other accident occurs." [PMID:14755292]
 subset: Drugable
 synonym: "msds" EXACT PSI-MI-short []
 synonym: "MSDS Material Safety Sheet" EXACT PSI-MI-alternate []
@@ -7428,28 +7428,28 @@ is_a: MI:2086 ! physicochemical attribute name
 [Term]
 id: MI:2024
 name: patent number
-def: "Patent number to description of drug's synthesis" [pubmed:14755292]
+def: "Patent number to description of drug's synthesis" [PMID:14755292]
 subset: Drugable
 is_a: MI:0353 ! cross-reference type
 
 [Term]
 id: MI:2025
 name: molecular weight
-def: "Molecular weight in g/mol, determined from molecular formula or sequence." [pubmed:14755292]
+def: "Molecular weight in g/mol, determined from molecular formula or sequence." [PMID:14755292]
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
 
 [Term]
 id: MI:2026
 name: melting point
-def: "The melting point of a solid is the temperature range at which it changes state from solid to liquid." [pubmed:14755292]
+def: "The melting point of a solid is the temperature range at which it changes state from solid to liquid." [PMID:14755292]
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
 
 [Term]
 id: MI:2027
 name: water solubility
-def: "Water solubility in mg/mL or g/L" [pubmed:14755292]
+def: "Water solubility in mg/mL or g/L" [PMID:14755292]
 subset: Drugable
 synonym: "logSw" EXACT PSI-MI-alternate []
 is_a: MI:2160 ! logs
@@ -7457,56 +7457,56 @@ is_a: MI:2160 ! logs
 [Term]
 id: MI:2029
 name: logp
-def: "Water/octanol partition coefficient  of a small molecule." [pubmed:14755292]
+def: "Water/octanol partition coefficient  of a small molecule." [PMID:14755292]
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
 
 [Term]
 id: MI:2030
 name: isoelectric point
-def: "The isoelectric point (pI) is the pH at which a particular molecule or surface carries no net electrical charge. For an amino acid with only one amine and one carboxyl group, the pI can be calculated from the pKas of this molecule." [pubmed:14755292]
+def: "The isoelectric point (pI) is the pH at which a particular molecule or surface carries no net electrical charge. For an amino acid with only one amine and one carboxyl group, the pI can be calculated from the pKas of this molecule." [PMID:14755292]
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
 
 [Term]
 id: MI:2033
 name: hydrophobicity
-def: "Physical property of a molecule (known as a hydrophobe) that is repelled from a mass of water. Gravy score." [pubmed:14755292]
+def: "Physical property of a molecule (known as a hydrophobe) that is repelled from a mass of water. Gravy score." [PMID:14755292]
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
 
 [Term]
 id: MI:2036
 name: boiling point
-def: "The boiling point of a liquid is the temperature at which the vapor pressure of the liquid equals the environmental pressure surrounding the liquid. A liquid in a vacuum environment has a lower boiling point than when the liquid is at atmospheric pressure. A liquid in a high pressure environment has a higher boiling point than when the liquid is at atmospheric pressure. In other words, the boiling point of liquids varies with and depends upon the surrounding environmental pressure." [pubmed:14755292]
+def: "The boiling point of a liquid is the temperature at which the vapor pressure of the liquid equals the environmental pressure surrounding the liquid. A liquid in a vacuum environment has a lower boiling point than when the liquid is at atmospheric pressure. A liquid in a high pressure environment has a higher boiling point than when the liquid is at atmospheric pressure. In other words, the boiling point of liquids varies with and depends upon the surrounding environmental pressure." [PMID:14755292]
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
 
 [Term]
 id: MI:2039
 name: smiles string
-def: "SMILES string corresponding to drug structure" [pubmed:14755292]
+def: "SMILES string corresponding to drug structure" [PMID:14755292]
 subset: Drugable
 is_a: MI:2091 ! structure representation attribute name
 
 [Term]
 id: MI:2040
 name: drug type
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [pubmed:14755292]
+def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2041
 name: drug category
-def: "Therapeutic category or general category of drug (anti-convulsant, antibacterial, etc.)" [pubmed:14755292]
+def: "Therapeutic category or general category of drug (anti-convulsant, antibacterial, etc.)" [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2042
 name: disease indication
-def: "Description or common names of diseases that the drug is used to treat" [pubmed:14755292]
+def: "Description or common names of diseases that the drug is used to treat" [PMID:14755292]
 comment: source of further terms could be MeSH term or SNOWMAN
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
@@ -7514,28 +7514,28 @@ is_a: MI:2089 ! bioactive entity attribute name
 [Term]
 id: MI:2043
 name: pharmacology
-def: "Tesxt description of how the drug works at a clinical or physiological level" [pubmed:14755292]
+def: "Tesxt description of how the drug works at a clinical or physiological level" [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2044
 name: mechanism of action
-def: "Description of how the drug works or what it binds to at a molecular level" [pubmed:14755292]
+def: "Description of how the drug works or what it binds to at a molecular level" [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2045
 name: drug absorption
-def: "Determination of how quickly and how much of a drug reaches its intended target (site) of action." [pubmed:14755292]
+def: "Determination of how quickly and how much of a drug reaches its intended target (site) of action." [PMID:14755292]
 subset: Drugable
 is_a: MI:2115 ! pharmacokinetics
 
 [Term]
 id: MI:2046
 name: lethal dose 50
-def: "The LD50 is the dose that kills half (50%) of the animals tested" [pubmed:14755292]
+def: "The LD50 is the dose that kills half (50%) of the animals tested" [PMID:14755292]
 subset: Drugable
 synonym: "ld50" RELATED []
 synonym: "lethal dose 50 %" EXACT PSI-MI-alternate []
@@ -7544,7 +7544,7 @@ is_a: MI:2135 ! toxicity
 [Term]
 id: MI:2047
 name: plasma protein binding
-def: "Percentage of the drug that is bound in plasma proteins" [pubmed:14755292]
+def: "Percentage of the drug that is bound in plasma proteins" [PMID:14755292]
 subset: Drugable
 synonym: "protein binding %" EXACT PSI-MI-alternate []
 is_a: MI:2086 ! physicochemical attribute name
@@ -7552,7 +7552,7 @@ is_a: MI:2086 ! physicochemical attribute name
 [Term]
 id: MI:2048
 name: drug biotransformation
-def: "The chemical conversion of drugs to other compounds in the body, excluding degradation due to any inherent chemical instability of drugs in biological media." [pubmed:14755292]
+def: "The chemical conversion of drugs to other compounds in the body, excluding degradation due to any inherent chemical instability of drugs in biological media." [PMID:14755292]
 subset: Drugable
 synonym: "drug metabolism" EXACT PSI-MI-alternate []
 is_a: MI:2115 ! pharmacokinetics
@@ -7560,7 +7560,7 @@ is_a: MI:2115 ! pharmacokinetics
 [Term]
 id: MI:2049
 name: elimination half life
-def: "The time it takes for the body to eliminate or breakdown half of a dose of a pharmacologic agent, in practice the time taken for plasma concentration to reduce by 50%." [pubmed:14755292]
+def: "The time it takes for the body to eliminate or breakdown half of a dose of a pharmacologic agent, in practice the time taken for plasma concentration to reduce by 50%." [PMID:14755292]
 subset: Drugable
 synonym: "distribution halflife" EXACT PSI-MI-alternate []
 synonym: "elimin half life" EXACT PSI-MI-short []
@@ -7570,28 +7570,28 @@ is_a: MI:2115 ! pharmacokinetics
 [Term]
 id: MI:2050
 name: dosage forms
-def: "How the drug is dispensed (tablets, capsules, solutions), packing material." [pubmed:14755292]
+def: "How the drug is dispensed (tablets, capsules, solutions), packing material." [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2051
 name: patient information
-def: "Information on how the drug should and shouldn't be used" [pubmed:14755292]
+def: "Information on how the drug should and shouldn't be used" [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2053
 name: contraindications
-def: "Cautions or conditions indicating why or when the drug should not be taken" [pubmed:14755292]
+def: "Cautions or conditions indicating why or when the drug should not be taken" [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2054
 name: bioactive entity reference
-def: "General on-line reference to other details about the drug" [pubmed:14755292]
+def: "General on-line reference to other details about the drug" [PMID:14755292]
 subset: Drugable
 synonym: "bioactive entity ref" EXACT PSI-MI-short []
 is_a: MI:0473 ! participant database
@@ -7599,7 +7599,7 @@ is_a: MI:0473 ! participant database
 [Term]
 id: MI:2055
 name: chemical stability
-def: "chemical stability occurs when a substance is in a (dynamic) chemical equilibrium with its environment. In this well-defined state, the substance is expected to persist indefinitely (assuming that the environment does not change).  A substance which is not chemically stable (yet exists) is metastable or kinetically persistent." [pubmed:14755292]
+def: "chemical stability occurs when a substance is in a (dynamic) chemical equilibrium with its environment. In this well-defined state, the substance is expected to persist indefinitely (assuming that the environment does not change).  A substance which is not chemically stable (yet exists) is metastable or kinetically persistent." [PMID:14755292]
 subset: Drugable
 synonym: "thermodynamic stability" EXACT PSI-MI-alternate []
 is_a: MI:2086 ! physicochemical attribute name
@@ -7607,7 +7607,7 @@ is_a: MI:2086 ! physicochemical attribute name
 [Term]
 id: MI:2064
 name: solubility
-def: "Potential ability of a substance to dissolve in a liquid." [pubmed:14755292]
+def: "Potential ability of a substance to dissolve in a liquid." [PMID:14755292]
 subset: Drugable
 synonym: "dt theoretical pi" EXACT PSI-MI-short []
 is_a: MI:2086 ! physicochemical attribute name
@@ -7615,14 +7615,14 @@ is_a: MI:2086 ! physicochemical attribute name
 [Term]
 id: MI:2084
 name: organisms affected
-def: "Names of organisms for which the drug is most effective" [pubmed:14755292]
+def: "Names of organisms for which the drug is most effective" [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2086
 name: physicochemical attribute name
-def: "Chemical and physical properties of a molecule." [pubmed:14755292]
+def: "Chemical and physical properties of a molecule." [PMID:14755292]
 subset: Drugable
 synonym: "physicochemical att" EXACT PSI-MI-short []
 is_a: MI:0590 ! attribute name
@@ -7630,7 +7630,7 @@ is_a: MI:0590 ! attribute name
 [Term]
 id: MI:2089
 name: bioactive entity attribute name
-def: "Properties of a chemical tested or used as a drug, herbiced, insecticed etc.." [pubmed:14755292]
+def: "Properties of a chemical tested or used as a drug, herbiced, insecticed etc.." [PMID:14755292]
 subset: Drugable
 synonym: "bioactive entity att" EXACT PSI-MI-short []
 is_a: MI:0590 ! attribute name
@@ -7638,7 +7638,7 @@ is_a: MI:0590 ! attribute name
 [Term]
 id: MI:2091
 name: structure representation attribute name
-def: "Human artefact to describe and report the structure of a molecule." [pubmed:14755292]
+def: "Human artefact to describe and report the structure of a molecule." [PMID:14755292]
 subset: Drugable
 synonym: "struc representation" EXACT PSI-MI-short []
 is_a: MI:0590 ! attribute name
@@ -7646,49 +7646,49 @@ is_a: MI:0590 ! attribute name
 [Term]
 id: MI:2097
 name: anti-convulsant
-def: "Therapeutic category or general category of drug -anti-convulsant" [pubmed:14755292]
+def: "Therapeutic category or general category of drug -anti-convulsant" [PMID:14755292]
 subset: Drugable
 is_a: MI:2041 ! drug category
 
 [Term]
 id: MI:2098
 name: anti-bacterial
-def: "Therapeutic category or general category of drug -anti-bacterial" [pubmed:14755292]
+def: "Therapeutic category or general category of drug -anti-bacterial" [PMID:14755292]
 subset: Drugable
 is_a: MI:2041 ! drug category
 
 [Term]
 id: MI:2099
 name: fda approved drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [pubmed:14755292]
+def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
 subset: Drugable
 is_a: MI:2040 ! drug type
 
 [Term]
 id: MI:2100
 name: experimental drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [pubmed:14755292]
+def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
 subset: Drugable
 is_a: MI:2040 ! drug type
 
 [Term]
 id: MI:2101
 name: biotech drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [pubmed:14755292]
+def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
 subset: Drugable
 is_a: MI:2040 ! drug type
 
 [Term]
 id: MI:2102
 name: nutraceutical drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [pubmed:14755292]
+def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
 subset: Drugable
 is_a: MI:2040 ! drug type
 
 [Term]
 id: MI:2105
 name: pka
-def: "Negative decimal logarithm of Ka, acid dissiciation equilibrium constant for the dissociation of a weak acid." [pubmed:14755292]
+def: "Negative decimal logarithm of Ka, acid dissiciation equilibrium constant for the dissociation of a weak acid." [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
@@ -7696,7 +7696,7 @@ is_a: MI:2086 ! physicochemical attribute name
 [Term]
 id: MI:2106
 name: degree of ionisation ph 7.4
-def: "The degree of ionization refers to the proportion of neutral particles such as those in a gas or aqueous solution, that are ionized into charged particles. A low degree of ionization is sometimes called partially ionized, and a very high degree of ionization as fully ionized. This measurment is performed at pH 7.4" [pubmed:14755292]
+def: "The degree of ionization refers to the proportion of neutral particles such as those in a gas or aqueous solution, that are ionized into charged particles. A low degree of ionization is sometimes called partially ionized, and a very high degree of ionization as fully ionized. This measurment is performed at pH 7.4" [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "ionisation ph 7.4" EXACT PSI-MI-short []
@@ -7705,7 +7705,7 @@ is_a: MI:2086 ! physicochemical attribute name
 [Term]
 id: MI:2107
 name: logd
-def: "The LogD is the ratio of the equilibrium concentrations of all species (unionized and ionized) of a molecule in octanol to same species in the water phase at a given temperature, normally 25° C. It differs from LogP in that ionized species are considered as well as the neutral form of the molecule.pH 7.4" [pubmed:14755292]
+def: "The LogD is the ratio of the equilibrium concentrations of all species (unionized and ionized) of a molecule in octanol to same species in the water phase at a given temperature, normally 25° C. It differs from LogP in that ionized species are considered as well as the neutral form of the molecule.pH 7.4" [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
@@ -7713,7 +7713,7 @@ is_a: MI:2086 ! physicochemical attribute name
 [Term]
 id: MI:2108
 name: solubility ph 7.4
-def: "Solubility pH 7.4" [pubmed:14755292]
+def: "Solubility pH 7.4" [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 is_a: MI:2064 ! solubility
@@ -7721,14 +7721,14 @@ is_a: MI:2064 ! solubility
 [Term]
 id: MI:2109
 name: solubility in dmso
-def: "Solubility in DMSO" [pubmed:14755292]
+def: "Solubility in DMSO" [PMID:14755292]
 subset: Drugable
 is_a: MI:2064 ! solubility
 
 [Term]
 id: MI:2111
 name: diffusion coefficient
-def: "Diffusion coefficient D is proportional to the velocity of the diffusing particles, which depends on the temperature, viscosity of the fluid and the size of the particles according to the Stokes-Einstein relation. In dilute aqueous solutions the diffusion coefficients of most ions are similar and have values that at room temperature are in the range of 0.6x10-9 to 2x10-9 m2/s. For biological molecules the diffusion coefficients normally range from 10-11 to 10-10 m2/s." [pubmed:14755292]
+def: "Diffusion coefficient D is proportional to the velocity of the diffusing particles, which depends on the temperature, viscosity of the fluid and the size of the particles according to the Stokes-Einstein relation. In dilute aqueous solutions the diffusion coefficients of most ions are similar and have values that at room temperature are in the range of 0.6x10-9 to 2x10-9 m2/s. For biological molecules the diffusion coefficients normally range from 10-11 to 10-10 m2/s." [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
@@ -7736,7 +7736,7 @@ is_a: MI:2086 ! physicochemical attribute name
 [Term]
 id: MI:2112
 name: chemical stability at pH 2
-def: "Chemical stability at pH 2" [pubmed:14755292]
+def: "Chemical stability at pH 2" [PMID:14755292]
 comment: Qualitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "chem stab ph 2" EXACT PSI-MI-short []
@@ -7745,7 +7745,7 @@ is_a: MI:2055 ! chemical stability
 [Term]
 id: MI:2113
 name: dissolution profile
-def: "The rate of dissolution is a key target for controlling the duration of a drug's effect, and as such, several dosage forms that contain the same active ingredient may be available, differing only in the rate of dissolution. If a drug is supplied in a form that is not readily dissolved, the drug may be released more gradually over time with a longer duration of action. Having a longer duration of action may improve compliance since the medication will not have to be taken as often. Additionally, slow-release dosage forms may maintain concentrations within an acceptable therapeutic range over a long period of time, as opposed to quick-release dosage forms which may result in sharper peaks and troughs in serum concentrations." [pubmed:14755292]
+def: "The rate of dissolution is a key target for controlling the duration of a drug's effect, and as such, several dosage forms that contain the same active ingredient may be available, differing only in the rate of dissolution. If a drug is supplied in a form that is not readily dissolved, the drug may be released more gradually over time with a longer duration of action. Having a longer duration of action may improve compliance since the medication will not have to be taken as often. Additionally, slow-release dosage forms may maintain concentrations within an acceptable therapeutic range over a long period of time, as opposed to quick-release dosage forms which may result in sharper peaks and troughs in serum concentrations." [PMID:14755292]
 comment: The prediction of the value for this paramter is currently not possible.
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
@@ -7753,14 +7753,14 @@ is_a: MI:2086 ! physicochemical attribute name
 [Term]
 id: MI:2115
 name: pharmacokinetics
-def: "Determination of the fate of substances administered externally to a living organism i.e. the study of what the body does to a drug." [pubmed:14755292]
+def: "Determination of the fate of substances administered externally to a living organism i.e. the study of what the body does to a drug." [PMID:14755292]
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
 
 [Term]
 id: MI:2116
 name: cell permeability
-def: "The permitting or activating of the passage of substances into, out of, or through cells." [pubmed:14755292]
+def: "The permitting or activating of the passage of substances into, out of, or through cells." [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 is_a: MI:2115 ! pharmacokinetics
@@ -7768,7 +7768,7 @@ is_a: MI:2115 ! pharmacokinetics
 [Term]
 id: MI:2118
 name: volume of distribution
-def: "The Volume of Distribution is the amount of drug in the body divided by the concentration in the blood. Drugs that are highly lipid soluble have a very high volume of distribution (500 litres). Drugs which are lipid insoluble remain in the blood, and have a low Vd." [pubmed:14755292]
+def: "The Volume of Distribution is the amount of drug in the body divided by the concentration in the blood. Drugs that are highly lipid soluble have a very high volume of distribution (500 litres). Drugs which are lipid insoluble remain in the blood, and have a low Vd." [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "distribution volume" EXACT PSI-MI-alternate []
@@ -7779,7 +7779,7 @@ is_a: MI:2115 ! pharmacokinetics
 [Term]
 id: MI:2120
 name: tissue distribution
-def: "Accumulation of a drug or chemical substance in various organs (including those not relevant to its pharmacologic or therapeutic action). This distribution depends on the blood flow or perfusion rate of the organ, the ability of the drug to penetrate organ membranes, tissue specificity, protein binding. The distribution is usually expressed as tissue to plasma ratios." [pubmed:14755292]
+def: "Accumulation of a drug or chemical substance in various organs (including those not relevant to its pharmacologic or therapeutic action). This distribution depends on the blood flow or perfusion rate of the organ, the ability of the drug to penetrate organ membranes, tissue specificity, protein binding. The distribution is usually expressed as tissue to plasma ratios." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2115 ! pharmacokinetics
@@ -7787,7 +7787,7 @@ is_a: MI:2115 ! pharmacokinetics
 [Term]
 id: MI:2121
 name: transporter binding
-def: "Substrate of a carrier system allowing the intake of an agent into an organ or part of body." [pubmed:14755292]
+def: "Substrate of a carrier system allowing the intake of an agent into an organ or part of body." [PMID:14755292]
 comment: The prediction of the value for this parameter is currently not possible.
 subset: Drugable
 is_a: MI:2115 ! pharmacokinetics
@@ -7795,14 +7795,14 @@ is_a: MI:2115 ! pharmacokinetics
 [Term]
 id: MI:2122
 name: clearance
-def: "The ratio of excretion is or measure of the speed at which a constituent is lost from the body." [pubmed:14755292]
+def: "The ratio of excretion is or measure of the speed at which a constituent is lost from the body." [PMID:14755292]
 subset: Drugable
 is_a: MI:2115 ! pharmacokinetics
 
 [Term]
 id: MI:2123
 name: renal clearance
-def: "The renal clearance ratio or fractional excretion is a measure of the speed at which a constituent of urine passes through the kidneys, in this context the rate at which a pharmacological agent is lost from the body via urine." [pubmed:14755292]
+def: "The renal clearance ratio or fractional excretion is a measure of the speed at which a constituent of urine passes through the kidneys, in this context the rate at which a pharmacological agent is lost from the body via urine." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2122 ! clearance
@@ -7810,7 +7810,7 @@ is_a: MI:2122 ! clearance
 [Term]
 id: MI:2124
 name: total clearance
-def: "The clearance of a drug is the volume of plasma from which the drug is completely removed per unit time. The amount eliminated is proportional to the concentration of the drug in the blood." [pubmed:14755292]
+def: "The clearance of a drug is the volume of plasma from which the drug is completely removed per unit time. The amount eliminated is proportional to the concentration of the drug in the blood." [PMID:14755292]
 comment: The prediction of the value for this paramter is currently not possible.
 subset: Drugable
 synonym: "cl" EXACT PSI-MI-alternate []
@@ -7820,7 +7820,7 @@ is_a: MI:2122 ! clearance
 [Term]
 id: MI:2125
 name: maximum absorbable dose
-def: "The Maximum Absorbable Dose (MAD) represents the amount of drug that can permeate across a barrier." [pubmed:8987073]
+def: "The Maximum Absorbable Dose (MAD) represents the amount of drug that can permeate across a barrier." [PMID:8987073]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "mad" EXACT PSI-MI-short []
@@ -7829,7 +7829,7 @@ is_a: MI:2115 ! pharmacokinetics
 [Term]
 id: MI:2126
 name: paracellular absorption
-def: "Water soluble compounds are absorbed in the small intestine mainly via two pathways, the transcellular and the paracellular pathways. The paracellular absorption involves movement of solutes through a restrictive aqueous channel in the tight junctions of adjoining cells  by diffusion." [pubmed:14755292]
+def: "Water soluble compounds are absorbed in the small intestine mainly via two pathways, the transcellular and the paracellular pathways. The paracellular absorption involves movement of solutes through a restrictive aqueous channel in the tight junctions of adjoining cells  by diffusion." [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "paracellular absorp" EXACT PSI-MI-short []
@@ -7838,7 +7838,7 @@ is_a: MI:2115 ! pharmacokinetics
 [Term]
 id: MI:2127
 name: tmax/cmax -sandra
-def: "Ratio between the time value at Cmax (maximum concentration) in a dose response curve, and the Cmax value itself." [pubmed:14755292]
+def: "Ratio between the time value at Cmax (maximum concentration) in a dose response curve, and the Cmax value itself." [PMID:14755292]
 comment: The prediction of the value for this paramter is currently not possible.
 subset: Drugable
 is_a: MI:2115 ! pharmacokinetics
@@ -7846,7 +7846,7 @@ is_a: MI:2115 ! pharmacokinetics
 [Term]
 id: MI:2128
 name: ABCB1 transporter substrate
-def: "Substrate for the representitive member of the ABC transprorter family ABCB1 (MDR1, pgy1, P08183). ABC transporters preventing uptake or facilitating clearance of toxic substances, playing an important role in drug excretion through the bile." [pubmed:14755292]
+def: "Substrate for the representitive member of the ABC transprorter family ABCB1 (MDR1, pgy1, P08183). ABC transporters preventing uptake or facilitating clearance of toxic substances, playing an important role in drug excretion through the bile." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 synonym: "abcb1 substrate" EXACT PSI-MI-short []
@@ -7856,7 +7856,7 @@ is_a: MI:2121 ! transporter binding
 [Term]
 id: MI:2129
 name: bile transporter substrate
-def: "Substrate of the bile acid carrier system in both the intestinal tract and the liver. System catalyses of the transfer of bile acid from one side of the membrane to the other. Bile acids are any of a group of steroid carboxylic acids occurring in bile, where they are present as the sodium salts of their amides with glycine or taurine." [pubmed:14755292]
+def: "Substrate of the bile acid carrier system in both the intestinal tract and the liver. System catalyses of the transfer of bile acid from one side of the membrane to the other. Bile acids are any of a group of steroid carboxylic acids occurring in bile, where they are present as the sodium salts of their amides with glycine or taurine." [PMID:14755292]
 comment: The prediction of the value for this paramater is currently not possible.
 subset: Drugable
 synonym: "bile trans substrate" EXACT PSI-MI-short []
@@ -7865,7 +7865,7 @@ is_a: MI:2121 ! transporter binding
 [Term]
 id: MI:2130
 name: cyp-450 inhibition
-def: "Inhibitor of one or more of the family of cytochrome p450 enzymes, probably the most important elements of oxidative metabolism of exogenous compounds" [pubmed:14755292]
+def: "Inhibitor of one or more of the family of cytochrome p450 enzymes, probably the most important elements of oxidative metabolism of exogenous compounds" [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 synonym: "cyp-450 inhibition" EXACT PSI-MI-alternate []
@@ -7875,7 +7875,7 @@ is_a: MI:2135 ! toxicity
 [Term]
 id: MI:2131
 name: metabolite identification
-def: "Identification of the breakdown products of a substance, either through chemical instability or the actions of enzymes within the body" [pubmed:14755292]
+def: "Identification of the breakdown products of a substance, either through chemical instability or the actions of enzymes within the body" [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 synonym: "metabolite identific" EXACT PSI-MI-short []
@@ -7884,7 +7884,7 @@ is_a: MI:2115 ! pharmacokinetics
 [Term]
 id: MI:2132
 name: gsh adducts
-def: "Derivative molecule which has formed from a reaction with glutathione." [pubmed:14755292]
+def: "Derivative molecule which has formed from a reaction with glutathione." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2115 ! pharmacokinetics
@@ -7892,7 +7892,7 @@ is_a: MI:2115 ! pharmacokinetics
 [Term]
 id: MI:2133
 name: neutralization by glucuronidation or sulfatation
-def: "Neutralization of a compound occuring via its glucuronidation or sulfatation." [pubmed:14755292]
+def: "Neutralization of a compound occuring via its glucuronidation or sulfatation." [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "neutraliz gluc/sulf" EXACT PSI-MI-short []
@@ -7901,14 +7901,14 @@ is_a: MI:2048 ! drug biotransformation
 [Term]
 id: MI:2135
 name: toxicity
-def: "The degree to which a substance can harm humans or animals." [pubmed:14755292]
+def: "The degree to which a substance can harm humans or animals." [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2136
 name: herg binding
-def: "Binds to the hERG (human Ether-a-go-go Related Gene) (Q12809) which encodes the Kv11.1 potassium ion channel responsible for the repolarizing IKr current in the cardiac action potential." [pubmed:14755292]
+def: "Binds to the hERG (human Ether-a-go-go Related Gene) (Q12809) which encodes the Kv11.1 potassium ion channel responsible for the repolarizing IKr current in the cardiac action potential." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2135 ! toxicity
@@ -7916,7 +7916,7 @@ is_a: MI:2135 ! toxicity
 [Term]
 id: MI:2137
 name: genotoxicity
-def: "Tendency of a bioactive entity to induce damage at the level of the gene." [pubmed:14755292]
+def: "Tendency of a bioactive entity to induce damage at the level of the gene." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2135 ! toxicity
@@ -7924,7 +7924,7 @@ is_a: MI:2135 ! toxicity
 [Term]
 id: MI:2138
 name: mutagenicity
-def: "Tendency of a bioactive entity to induce genetic mutations at the nucleotide level e.g. substitution of nucleotide base-pairs and insertions and deletions of one or more nucleotides in DNA sequences.." [pubmed:14755292]
+def: "Tendency of a bioactive entity to induce genetic mutations at the nucleotide level e.g. substitution of nucleotide base-pairs and insertions and deletions of one or more nucleotides in DNA sequences.." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2135 ! toxicity
@@ -7932,7 +7932,7 @@ is_a: MI:2135 ! toxicity
 [Term]
 id: MI:2139
 name: carcinogenicity
-def: "Tendency of a bioactive entity to induce a cancer." [pubmed:14755292]
+def: "Tendency of a bioactive entity to induce a cancer." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 synonym: "cancerogenicity" EXACT PSI-MI-alternate []
@@ -7941,7 +7941,7 @@ is_a: MI:2135 ! toxicity
 [Term]
 id: MI:2140
 name: chromosome damage
-def: "Tendency of a bioactive entity to induce damage at the level of the chromosome e.g. induce a change in chromosome structure and number.." [pubmed:14755292]
+def: "Tendency of a bioactive entity to induce damage at the level of the chromosome e.g. induce a change in chromosome structure and number.." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2135 ! toxicity
@@ -7949,7 +7949,7 @@ is_a: MI:2135 ! toxicity
 [Term]
 id: MI:2141
 name: hepatotoxicity
-def: "Tendency of a bioactive entity to affect liver function." [pubmed:14755292]
+def: "Tendency of a bioactive entity to affect liver function." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2135 ! toxicity
@@ -7957,7 +7957,7 @@ is_a: MI:2135 ! toxicity
 [Term]
 id: MI:2142
 name: phospholipidosis
-def: "Causes excess phospholipids to accumulate within cells" [pubmed:14755292]
+def: "Causes excess phospholipids to accumulate within cells" [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2135 ! toxicity
@@ -7965,7 +7965,7 @@ is_a: MI:2135 ! toxicity
 [Term]
 id: MI:2145
 name: solubility ph 6.5
-def: "Solubility pH  6.5." [pubmed:14755292]
+def: "Solubility pH  6.5." [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 is_a: MI:2064 ! solubility
@@ -7973,7 +7973,7 @@ is_a: MI:2064 ! solubility
 [Term]
 id: MI:2146
 name: solubility ph 2.0
-def: "Solubility pH 2.0" [pubmed:14755292]
+def: "Solubility pH 2.0" [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "solubility ph2.0" EXACT PSI-MI-alternate []
@@ -7982,7 +7982,7 @@ is_a: MI:2064 ! solubility
 [Term]
 id: MI:2147
 name: chemical stability at pH 7.4
-def: "Chemical stabilityat at pH 7.4" [pubmed:14755292]
+def: "Chemical stabilityat at pH 7.4" [PMID:14755292]
 comment: Qualitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "chem stab ph 7.4" EXACT PSI-MI-short []
@@ -7991,7 +7991,7 @@ is_a: MI:2055 ! chemical stability
 [Term]
 id: MI:2148
 name: investigational drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [pubmed:14755292]
+def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
 comment: Intact.
 subset: Drugable
 is_a: MI:2040 ! drug type
@@ -7999,7 +7999,7 @@ is_a: MI:2040 ! drug type
 [Term]
 id: MI:2149
 name: withdrawn drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [pubmed:14755292]
+def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
 comment: Intact.
 subset: Drugable
 is_a: MI:2040 ! drug type
@@ -8007,7 +8007,7 @@ is_a: MI:2040 ! drug type
 [Term]
 id: MI:2150
 name: illicit drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [pubmed:14755292]
+def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
 comment: IntAct
 subset: Drugable
 is_a: MI:2040 ! drug type
@@ -8015,7 +8015,7 @@ is_a: MI:2040 ! drug type
 [Term]
 id: MI:2151
 name: other drug interaction
-def: "Effect of additional treatment on a given drug action." [pubmed:14755292]
+def: "Effect of additional treatment on a given drug action." [PMID:14755292]
 comment: IntAct MeSH term? SNOWMAN
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
@@ -8023,7 +8023,7 @@ is_a: MI:2089 ! bioactive entity attribute name
 [Term]
 id: MI:2152
 name: food interaction
-def: "Effect of food ingestion on a given drug treatment." [pubmed:14755292]
+def: "Effect of food ingestion on a given drug treatment." [PMID:14755292]
 comment: IntAct MeSH term? SNOWMAN
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
@@ -8031,7 +8031,7 @@ is_a: MI:2089 ! bioactive entity attribute name
 [Term]
 id: MI:2153
 name: pdr health
-def: "Hyperlink to PDRhealth entry for the given drug (if it exists)" [pubmed:14755292]
+def: "Hyperlink to PDRhealth entry for the given drug (if it exists)" [PMID:14755292]
 comment: IntAct
 subset: Drugable
 synonym: "PDRhealth" EXACT PSI-MI-alternate []
@@ -8040,7 +8040,7 @@ is_a: MI:2054 ! bioactive entity reference
 [Term]
 id: MI:2154
 name: wikipedia
-def: "Hyperlink to wikipedia entry for the given drug (if it exists)" [pubmed:14755292]
+def: "Hyperlink to wikipedia entry for the given drug (if it exists)" [PMID:14755292]
 comment: IntAct
 subset: Drugable
 is_a: MI:2054 ! bioactive entity reference
@@ -8048,7 +8048,7 @@ is_a: MI:2054 ! bioactive entity reference
 [Term]
 id: MI:2155
 name: average molecular weight
-def: "Molecular weight in g/mol, determined from molecular formula or sequence." [pubmed:14755292]
+def: "Molecular weight in g/mol, determined from molecular formula or sequence." [PMID:14755292]
 subset: Drugable
 synonym: "avrg mol weight" EXACT PSI-MI-short []
 is_a: MI:2025 ! molecular weight
@@ -8056,7 +8056,7 @@ is_a: MI:2025 ! molecular weight
 [Term]
 id: MI:2156
 name: monoisotopic molecular weight
-def: "Molecular weight in g/mol, determined from molecular formula or sequence." [pubmed:14755292]
+def: "Molecular weight in g/mol, determined from molecular formula or sequence." [PMID:14755292]
 subset: Drugable
 synonym: "monoisotopic mol wgt" EXACT PSI-MI-short []
 is_a: MI:2025 ! molecular weight
@@ -8064,7 +8064,7 @@ is_a: MI:2025 ! molecular weight
 [Term]
 id: MI:2157
 name: experimental water solubility
-def: "Water solubility in mg/mL or g/L" [pubmed:14755292]
+def: "Water solubility in mg/mL or g/L" [PMID:14755292]
 subset: Drugable
 synonym: "exp h2o solubilty" EXACT PSI-MI-short []
 synonym: "experimental h2o solubility" EXACT PSI-MI-alternate []
@@ -8074,7 +8074,7 @@ is_a: MI:2161 ! experimental logs
 [Term]
 id: MI:2158
 name: predicted water solubility
-def: "Water solubility in mg/mL or g/L" [pubmed:14755292]
+def: "Water solubility in mg/mL or g/L" [PMID:14755292]
 subset: Drugable
 synonym: "predicted h2o solub" EXACT PSI-MI-short []
 synonym: "predicted h2o solubility" EXACT PSI-MI-alternate []
@@ -8083,7 +8083,7 @@ is_a: MI:2027 ! water solubility
 [Term]
 id: MI:2160
 name: logs
-def: "Solubility of a molecule in a given solvant." [pubmed:14755292]
+def: "Solubility of a molecule in a given solvant." [PMID:14755292]
 subset: Drugable
 synonym: "logS" EXACT PSI-MI-alternate []
 is_a: MI:2086 ! physicochemical attribute name
@@ -8091,7 +8091,7 @@ is_a: MI:2086 ! physicochemical attribute name
 [Term]
 id: MI:2161
 name: experimental logs
-def: "Experimental derived value for the solubility of a molecule in a given solvant." [pubmed:14755292]
+def: "Experimental derived value for the solubility of a molecule in a given solvant." [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "experimental logS" EXACT PSI-MI-alternate []
@@ -8100,7 +8100,7 @@ is_a: MI:2160 ! logs
 [Term]
 id: MI:2162
 name: experimental CaCO2 permeability
-def: "Experimentally derived value for ability of a  compound to cross epithelial and endothelial cell barriers Using the CaCo2 cell line derived from a human colorectal adenocarcinoma. Used as an in vitro permeability models to predict human intestinal absorption" [pubmed:14755292]
+def: "Experimentally derived value for ability of a  compound to cross epithelial and endothelial cell barriers Using the CaCo2 cell line derived from a human colorectal adenocarcinoma. Used as an in vitro permeability models to predict human intestinal absorption" [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "caco2 permeability" EXACT PSI-MI-short []
@@ -8109,7 +8109,7 @@ is_a: MI:2116 ! cell permeability
 [Term]
 id: MI:2163
 name: by homology
-def: "Reference assigned to a molecule by sequence homology with another similar one." [pubmed:14755292]
+def: "Reference assigned to a molecule by sequence homology with another similar one." [PMID:14755292]
 subset: Drugable
 is_a: MI:0353 ! cross-reference type
 
