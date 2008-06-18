@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:05:2008 14:19
+date: 18:06:2008 11:17
 saved-by: luisa
 auto-generated-by: OBO-Edit 1.101
 subsetdef: Drugable "Drugable Genome Project"
@@ -7,7 +7,7 @@ subsetdef: PSI-MI slim "Subset of PSI-MI"
 synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.45 2008/05/29 10:26:55 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.46 2008/06/18 10:18:34 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -33,6 +33,7 @@ synonym: "mi" EXACT PSI-MI-short []
 id: MI:0001
 name: interaction detection method
 def: "Method to determine the interaction." [PMID:14755292]
+subset: Drugable
 subset: PSI-MI slim
 synonym: "interaction detect" EXACT PSI-MI-short []
 relationship: part_of MI:0000 ! molecular interaction
@@ -908,7 +909,7 @@ is_a: MI:0013 ! biophysical
 id: MI:0108
 name: t7 phage display
 def: "T7 is a double stranded DNA bacteriophage with a thin-walled icosahedral capsid, ~550 Angstrom in diameter, which is decorated by 415 copies of the capsid protein, the product of gene 10. gp10 can tolerate insertions at the carboxyterminus without loosing its ability to be inserted into functional phage capsids. Both low density and high density display (albeit only with short peptides) can be achieved." [PMID:14755292]
-comment: Reference not index in medline : Rosenberg, A., Griffin, K., Studier, W.S., McCormick, M., Berg, J., Novy, R., Mierendorf, R. inNovations, 1996, 6, 1.
+comment: Reference not index in medline: Rosenberg, A, Griffin, K, Studier, WS, McCormick, M, Berg, J, Novy, R, Mierendorf, R inNovations, 1996, 6, 1.
 subset: PSI-MI slim
 synonym: "t7 phage" EXACT PSI-MI-short []
 is_a: MI:0084 ! phage display
@@ -1012,14 +1013,14 @@ is_a: MI:0252 ! biological feature
 [Term]
 id: MI:0121
 name: acetylated residue
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 is_a: MI:0120 ! post translation modification
 
 [Term]
 id: MI:0122
 name: n-acetyl-alanine
-def: "residue modification." [PMID:11125103, RESID:AA0041]
+def: "Residue modification." [PMID:11125103, RESID:AA0041]
 subset: PSI-MI slim
 synonym: "(S)-2-(acetylamino)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[A:ac]" EXACT PSI-MI-alternate []
@@ -1032,7 +1033,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0123
 name: n2-acetyl-arginine
-def: "residue modification." [PMID:11125103, RESID:AA0354]
+def: "Residue modification." [PMID:11125103, RESID:AA0354]
 subset: PSI-MI slim
 synonym: "[R:ac]" EXACT PSI-MI-alternate []
 synonym: "acetylarginine" EXACT PSI-MI-alternate []
@@ -1045,7 +1046,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0124
 name: n-acetyl-asparagine
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 synonym: "[N:ac]" EXACT PSI-MI-alternate []
 synonym: "acetylasparagine" EXACT PSI-MI-short []
@@ -1056,7 +1057,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0125
 name: n-acetyl-aspartic acid
-def: "residue modification." [PMID:11125103, RESID:AA0042]
+def: "Residue modification." [PMID:11125103, RESID:AA0042]
 subset: PSI-MI slim
 synonym: "(S)-2-(acetylamino)butanedioic acid" EXACT PSI-MI-alternate []
 synonym: "[D:ac]" EXACT PSI-MI-alternate []
@@ -1069,7 +1070,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0126
 name: n-acetyl-cysteine
-def: "residue modification." [PMID:11125103, RESID:AA0043]
+def: "Residue modification." [PMID:11125103, RESID:AA0043]
 subset: PSI-MI slim
 synonym: "(R)-2-acetylamino-3-sulfanylpropanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-acetylamino-3-mercaptopropanoic acid" EXACT PSI-MI-alternate []
@@ -1083,7 +1084,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0127
 name: n-acetyl-glutamine
-def: "residue modification." [PMID:11125103, RESID:AA0045]
+def: "Residue modification." [PMID:11125103, RESID:AA0045]
 subset: PSI-MI slim
 synonym: "(S)-2-acetylamino-5-pentanediamic acid" EXACT PSI-MI-alternate []
 synonym: "[Q:ac]" EXACT PSI-MI-alternate []
@@ -1096,7 +1097,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0128
 name: n-acetyl-glutamic acid
-def: "residue modification." [PMID:11125103, RESID:AA0044]
+def: "Residue modification." [PMID:11125103, RESID:AA0044]
 subset: PSI-MI slim
 synonym: "(S)-2-(acetylamino)pentanedioic acid" EXACT PSI-MI-alternate []
 synonym: "[E:ac]" EXACT PSI-MI-alternate []
@@ -1109,7 +1110,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0129
 name: n-acetylglycine
-def: "residue modification." [PMID:11125103, RESID:AA0046]
+def: "Residue modification." [PMID:11125103, RESID:AA0046]
 subset: PSI-MI slim
 synonym: "2-(acetylamino)ethanoic acid" EXACT PSI-MI-alternate []
 synonym: "[G:ac]" EXACT PSI-MI-alternate []
@@ -1122,7 +1123,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0130
 name: n-acetyl-histidine
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 synonym: "[H:ac]" EXACT PSI-MI-alternate []
 synonym: "acetylhistidine" EXACT PSI-MI-short []
@@ -1133,7 +1134,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0131
 name: n-acetyl-isoleucine
-def: "residue modification." [PMID:11125103, RESID:AA0047]
+def: "Residue modification." [PMID:11125103, RESID:AA0047]
 subset: PSI-MI slim
 synonym: "(2S,3S)-2-acetylamino-3-methylpentanoic acid" EXACT PSI-MI-alternate []
 synonym: "[I:ac]" EXACT PSI-MI-alternate []
@@ -1146,7 +1147,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0132
 name: n-acetyl-leucine
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 synonym: "[L:ac]" EXACT PSI-MI-alternate []
 synonym: "acetylleucine" EXACT PSI-MI-short []
@@ -1157,7 +1158,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0133
 name: n2-acetyl-lysine
-def: "residue modification." [PMID:11125103, RESID:AA0048]
+def: "Residue modification." [PMID:11125103, RESID:AA0048]
 subset: PSI-MI slim
 synonym: "(S)-2-acetylamino-6-aminohexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:ac]" EXACT PSI-MI-alternate []
@@ -1170,7 +1171,7 @@ is_a: MI:0526 ! n-acetyl-lysine
 [Term]
 id: MI:0134
 name: n6-acetyl-lysine
-def: "residue modification." [PMID:11125103, RESID:AA0055]
+def: "Residue modification." [PMID:11125103, RESID:AA0055]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-6-(acetylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:N6ac]" EXACT PSI-MI-alternate []
@@ -1184,7 +1185,7 @@ is_a: MI:0526 ! n-acetyl-lysine
 [Term]
 id: MI:0135
 name: n-acetyl-methionine
-def: "residue modification." [PMID:11125103, RESID:AA0049]
+def: "Residue modification." [PMID:11125103, RESID:AA0049]
 subset: PSI-MI slim
 synonym: "(S)-2-acetylamino-4-(methylsulfanyl)butanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-acetylamino-4-(methylthio)butanoic acid" EXACT PSI-MI-alternate []
@@ -1199,7 +1200,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0136
 name: n-acetyl-phenylalanine
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 synonym: "[F:ac]" EXACT PSI-MI-alternate []
 synonym: "acetylphenylalanine" EXACT PSI-MI-short []
@@ -1210,7 +1211,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0137
 name: n-acetyl-proline
-def: "residue modification." [PMID:11125103, RESID:AA0050]
+def: "Residue modification." [PMID:11125103, RESID:AA0050]
 subset: PSI-MI slim
 synonym: "(2S)-1-acetyl-2-pyrrolidinecarboxylic acid" EXACT PSI-MI-alternate []
 synonym: "[P:ac]" EXACT PSI-MI-alternate []
@@ -1223,7 +1224,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0138
 name: n-acetyl-serine
-def: "residue modification." [PMID:11125103, RESID:AA0051]
+def: "Residue modification." [PMID:11125103, RESID:AA0051]
 subset: PSI-MI slim
 synonym: "(S)-2-acetylamino-3-hydroxypropanoic acid" EXACT PSI-MI-alternate []
 synonym: "[S:ac]" EXACT PSI-MI-alternate []
@@ -1236,7 +1237,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0139
 name: n-acetyl-threonine
-def: "residue modification." [PMID:11125103, RESID:AA0052]
+def: "Residue modification." [PMID:11125103, RESID:AA0052]
 subset: PSI-MI slim
 synonym: "(2S,3R)-2-acetylamino-3-hydroxybutanoic acid" EXACT PSI-MI-alternate []
 synonym: "[T:ac]" EXACT PSI-MI-alternate []
@@ -1249,7 +1250,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0140
 name: n-acetyl-tryptophan
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 synonym: "[W:ac]" EXACT PSI-MI-alternate []
 synonym: "acetyltryptophan" EXACT PSI-MI-short []
@@ -1260,7 +1261,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0141
 name: n-acetyl-tyrosine
-def: "residue modification." [PMID:11125103, RESID:AA0053]
+def: "Residue modification." [PMID:11125103, RESID:AA0053]
 subset: PSI-MI slim
 synonym: "(S)-2-acetylamino-3-(4-hydoxyphenyl)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[Y:ac]" EXACT PSI-MI-alternate []
@@ -1273,7 +1274,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0142
 name: n-acetyl-valine
-def: "residue modification." [PMID:11125103, RESID:AA0054]
+def: "Residue modification." [PMID:11125103, RESID:AA0054]
 subset: PSI-MI slim
 synonym: "(S)-2-acetylamino-3-methylbutanoic acid" EXACT PSI-MI-alternate []
 synonym: "[V:ac]" EXACT PSI-MI-alternate []
@@ -1286,14 +1287,14 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0143
 name: amidated residue
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 is_a: MI:0120 ! post translation modification
 
 [Term]
 id: MI:0144
 name: alanine amide
-def: "residue modification." [PMID:14755292]
+def: "Residue modification." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "(S)-2-aminopropanamide" EXACT PSI-MI-alternate []
 synonym: "[A:am]" EXACT PSI-MI-alternate []
@@ -1306,7 +1307,7 @@ is_a: MI:0143 ! amidated residue
 [Term]
 id: MI:0145
 name: arginine amide
-def: "residue modification." [PMID:11125103, RESID:AA0082]
+def: "Residue modification." [PMID:11125103, RESID:AA0082]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-5-guanidinopentanamide" EXACT PSI-MI-alternate []
 synonym: "[R:am]" EXACT PSI-MI-alternate []
@@ -1319,14 +1320,14 @@ is_a: MI:0143 ! amidated residue
 [Term]
 id: MI:0146
 name: formylated residue
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 is_a: MI:0120 ! post translation modification
 
 [Term]
 id: MI:0147
 name: n-formyl-methionine
-def: "residue modification." [PMID:11125103, RESID:AA0021]
+def: "Residue modification." [PMID:11125103, RESID:AA0021]
 subset: PSI-MI slim
 synonym: "(S)-2-formylamino-4-(methylsulfanyl)butanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-formylamino-4-(methylthio)butanoic acid" EXACT PSI-MI-alternate []
@@ -1339,14 +1340,14 @@ is_a: MI:0146 ! formylated residue
 [Term]
 id: MI:0148
 name: hydroxylated residue
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 is_a: MI:0120 ! post translation modification
 
 [Term]
 id: MI:0149
 name: 4-hydroxy-proline
-def: "residue modification." [PMID:11125103, RESID:AA0030]
+def: "Residue modification." [PMID:11125103, RESID:AA0030]
 subset: PSI-MI slim
 synonym: "4-hydroxy-L-proline" EXACT PSI-MI-alternate []
 synonym: "4hydroxyproline" EXACT PSI-MI-short []
@@ -1357,14 +1358,14 @@ is_a: MI:0148 ! hydroxylated residue
 [Term]
 id: MI:0150
 name: lipid modification
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 is_a: MI:0120 ! post translation modification
 
 [Term]
 id: MI:0151
 name: s-farnesyl-cysteine
-def: "residue modification." [PMID:11125103, RESID:AA0102]
+def: "Residue modification." [PMID:11125103, RESID:AA0102]
 subset: PSI-MI slim
 synonym: "(R,E,E)-2-amino-3-(3,7,11-trimethyl-2,6,10-dodecatrienylsulfanyl)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-amino-3-(3,7,11-trimethyl-2,6,10-dodecatrienylthio)propanoic acid" EXACT PSI-MI-alternate []
@@ -1377,7 +1378,7 @@ is_a: MI:0547 ! s-prenyl-cysteine
 [Term]
 id: MI:0152
 name: s-geranylgeranyl-cysteine
-def: "residue modification." [PMID:11125103, RESID:AA0104]
+def: "Residue modification." [PMID:11125103, RESID:AA0104]
 subset: PSI-MI slim
 synonym: "(R,E,E,E)-2-amino-3-(3,7,11,15-tetramethyl-2,6,10,14-hexadecatetraenylsulfanyl)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-amino-3-(3,7,11,15-tetramethyl-2,6,10,14-hexadecatetraenylthio)propanoic acid" EXACT PSI-MI-alternate []
@@ -1390,7 +1391,7 @@ is_a: MI:0547 ! s-prenyl-cysteine
 [Term]
 id: MI:0153
 name: n-palmitoyl-cysteine
-def: "residue modification." [PMID:11125103, RESID:AA0060]
+def: "Residue modification." [PMID:11125103, RESID:AA0060]
 subset: PSI-MI slim
 synonym: "(R)-2-hexadecanoylamino-3-sulfanylpropanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-hexadecanoylamino-3-mercaptopropanoic acid" EXACT PSI-MI-alternate []
@@ -1404,7 +1405,7 @@ is_a: MI:0561 ! palmitoylated residue
 [Term]
 id: MI:0154
 name: s-palmitoyl-cysteine
-def: "residue modification." [PMID:11125103, RESID:AA0106]
+def: "Residue modification." [PMID:11125103, RESID:AA0106]
 subset: PSI-MI slim
 synonym: "(R)-2-amino-3-(hexadecanoylsulfanyl)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-amino-3-(hexadecanoylthio)propanoic acid" EXACT PSI-MI-alternate []
@@ -1419,7 +1420,7 @@ is_a: MI:0561 ! palmitoylated residue
 [Term]
 id: MI:0155
 name: n-myristoyl-glycine
-def: "residue modification." [PMID:11125103, RESID:AA0059]
+def: "Residue modification." [PMID:11125103, RESID:AA0059]
 subset: PSI-MI slim
 synonym: "[G:myr]" EXACT PSI-MI-alternate []
 synonym: "GMY" EXACT PSI-MI-alternate []
@@ -1430,7 +1431,7 @@ is_a: MI:0560 ! myristoylated residue
 [Term]
 id: MI:0156
 name: n6-myristoyl-lysine
-def: "residue modification." [PMID:11125103, RESID:AA0078]
+def: "Residue modification." [PMID:11125103, RESID:AA0078]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-6-(tetradecanoylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:myr]" EXACT PSI-MI-alternate []
@@ -1445,14 +1446,14 @@ is_a: MI:0560 ! myristoylated residue
 [Term]
 id: MI:0157
 name: methylated residue
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 is_a: MI:0120 ! post translation modification
 
 [Term]
 id: MI:0158
 name: n-methyl-alanine
-def: "residue modification." [PMID:11125103, RESID:AA0061]
+def: "Residue modification." [PMID:11125103, RESID:AA0061]
 subset: PSI-MI slim
 synonym: "(S)-2-methylaminopropanoic acid" EXACT PSI-MI-alternate []
 synonym: "[A:meth_n]" EXACT PSI-MI-alternate []
@@ -1465,7 +1466,7 @@ is_a: MI:0562 ! methylated alanine
 [Term]
 id: MI:0159
 name: n,n,n-trimethyl-alanine
-def: "residue modification." [PMID:11125103, RESID:AA0062]
+def: "Residue modification." [PMID:11125103, RESID:AA0062]
 subset: PSI-MI slim
 synonym: "(S)-1-carboxy-N,N,N-trimethylethanaminium" EXACT PSI-MI-alternate []
 synonym: "(S)-2-(trimethylammonio)propanoic acid" EXACT PSI-MI-alternate []
@@ -1478,7 +1479,7 @@ is_a: MI:0562 ! methylated alanine
 [Term]
 id: MI:0160
 name: omega-n,omega-n-dimethyl-arginine
-def: "residue modification." [PMID:11125103, RESID:AA0068]
+def: "Residue modification." [PMID:11125103, RESID:AA0068]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-5-[((dimethylamino)iminomethyl)amino]pentanoic acid" EXACT PSI-MI-alternate []
 synonym: "[R:meth_n7]" EXACT PSI-MI-alternate []
@@ -1492,7 +1493,7 @@ is_a: MI:0563 ! methylated arginine
 [Term]
 id: MI:0161
 name: beta-methylthioaspartic acid
-def: "residue modification." [PMID:11125103, RESID:AA0232]
+def: "Residue modification." [PMID:11125103, RESID:AA0232]
 subset: PSI-MI slim
 synonym: "(2R,3Xi)-2-amino-3-methylsulfanylbutanedioic acid" EXACT PSI-MI-alternate []
 synonym: "3-carboxy-S-methyl-cysteine" EXACT PSI-MI-alternate []
@@ -1507,7 +1508,7 @@ is_a: MI:0157 ! methylated residue
 [Term]
 id: MI:0162
 name: n5-methyl-glutamine
-def: "residue modification." [PMID:11125103, RESID:AA0071]
+def: "Residue modification." [PMID:11125103, RESID:AA0071]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-N5-methylpentanediamic acid" EXACT PSI-MI-alternate []
 synonym: "[Q:meth_n5]" EXACT PSI-MI-alternate []
@@ -1522,7 +1523,7 @@ is_a: MI:0157 ! methylated residue
 [Term]
 id: MI:0163
 name: glutamic acid 5-methyl ester
-def: "residue modification." [PMID:11125103, RESID:AA0072]
+def: "Residue modification." [PMID:11125103, RESID:AA0072]
 subset: PSI-MI slim
 synonym: "(S)-2-aminopentanedioic acid 5-methyl ester" EXACT PSI-MI-alternate []
 synonym: "5-methyl-L-glutamate" EXACT PSI-MI-alternate []
@@ -1536,7 +1537,7 @@ is_a: MI:0157 ! methylated residue
 [Term]
 id: MI:0164
 name: 3'-methyl-histidine
-def: "residue modification." [PMID:11125103, RESID:AA0073]
+def: "Residue modification." [PMID:11125103, RESID:AA0073]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-3-(3-methyl-3H-imidazol-4-yl)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "1-methylhistidine [misnomer]" EXACT PSI-MI-alternate []
@@ -1552,7 +1553,7 @@ is_a: MI:0157 ! methylated residue
 [Term]
 id: MI:0165
 name: n6-methyl-lysine
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-6-methylaminohexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:meth_1]" EXACT PSI-MI-alternate []
@@ -1566,7 +1567,7 @@ is_a: MI:0548 ! methylated-lysine
 [Term]
 id: MI:0166
 name: n6,n6-dimethyl-lysine
-def: "residue modification." [PMID:11125103, RESID:AA0075]
+def: "Residue modification." [PMID:11125103, RESID:AA0075]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-6-dimethylaminohexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:meth_2]" EXACT PSI-MI-alternate []
@@ -1581,7 +1582,7 @@ is_a: MI:0548 ! methylated-lysine
 [Term]
 id: MI:0167
 name: n6,n6,n6-trimethyl-lysine
-def: "residue modification." [PMID:11125103, RESID:AA0074]
+def: "Residue modification." [PMID:11125103, RESID:AA0074]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-6-(trimethylammonio)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "(S)-5-amino-5-carboxy-N,N,N-trimethylpentanaminium" EXACT PSI-MI-alternate []
@@ -1596,7 +1597,7 @@ is_a: MI:0548 ! methylated-lysine
 [Term]
 id: MI:0168
 name: n-methyl-methionine
-def: "residue modification." [PMID:11125103, RESID:AA0064]
+def: "Residue modification." [PMID:11125103, RESID:AA0064]
 subset: PSI-MI slim
 synonym: "(S)-2-methylamino-4-(methylsulfanyl)butanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-methylamino-4-(methylthio)butanoic acid" EXACT PSI-MI-alternate []
@@ -1610,7 +1611,7 @@ is_a: MI:0157 ! methylated residue
 [Term]
 id: MI:0169
 name: n-methyl-phenylalanine
-def: "residue modification." [PMID:14755292]
+def: "Residue modification." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "(S)-2-methylamino-3-phenylpropanoic acid" EXACT PSI-MI-alternate []
 synonym: "[F:meth]" EXACT PSI-MI-alternate []
@@ -1623,7 +1624,7 @@ is_a: MI:0157 ! methylated residue
 [Term]
 id: MI:0170
 name: phosphorylated residue
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 synonym: "phosphorylated" EXACT PSI-MI-short []
 is_a: MI:0120 ! post translation modification
@@ -1631,7 +1632,7 @@ is_a: MI:0120 ! post translation modification
 [Term]
 id: MI:0171
 name: omega-n-phospho-arginine
-def: "residue modification." [PMID:11125103, RESID:AA0222]
+def: "Residue modification." [PMID:11125103, RESID:AA0222]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-5-[imino(phosphonoamino)methyl]aminopentanoic acid" EXACT PSI-MI-alternate []
 synonym: "[R:po]" EXACT PSI-MI-alternate []
@@ -1645,7 +1646,7 @@ is_a: MI:0170 ! phosphorylated residue
 [Term]
 id: MI:0172
 name: aspartic 4-phosphoric anhydride
-def: "residue modification." [PMID:11125103, RESID:AA0033]
+def: "Residue modification." [PMID:11125103, RESID:AA0033]
 subset: PSI-MI slim
 synonym: "(S)-2-aminobutanedioic 4-phosphoric anhydride" EXACT PSI-MI-alternate []
 synonym: "[D:po]" EXACT PSI-MI-alternate []
@@ -1659,7 +1660,7 @@ is_a: MI:0170 ! phosphorylated residue
 [Term]
 id: MI:0173
 name: s-phospho-cysteine
-def: "residue modification." [PMID:11125103, RESID:AA0034]
+def: "Residue modification." [PMID:11125103, RESID:AA0034]
 subset: PSI-MI slim
 synonym: "(R)-2-amino-3-(phosphonosulfanyl)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "[C:po]" EXACT PSI-MI-alternate []
@@ -1674,7 +1675,7 @@ is_a: MI:0170 ! phosphorylated residue
 [Term]
 id: MI:0174
 name: 1'-phospho-histidine
-def: "residue modification." [PMID:11125103, RESID:AA0035]
+def: "Residue modification." [PMID:11125103, RESID:AA0035]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-3-(1-phosphono-1H-imidazol-4-yl)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "1'-phospho-L-histidine" EXACT PSI-MI-alternate []
@@ -1691,7 +1692,7 @@ is_a: MI:0555 ! phospho-histidine
 [Term]
 id: MI:0175
 name: 3'-phospho-histidine
-def: "residue modification." [PMID:11125103, RESID:AA0036]
+def: "Residue modification." [PMID:11125103, RESID:AA0036]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-3-(3-phosphono-3H-imidazol-4-yl)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "3-phosphohistidine" EXACT PSI-MI-short []
@@ -1707,7 +1708,7 @@ is_a: MI:0555 ! phospho-histidine
 [Term]
 id: MI:0176
 name: o-phospho-serine
-def: "residue modification." [PMID:11125103, RESID:AA0037]
+def: "Residue modification." [PMID:11125103, RESID:AA0037]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-3-(phosphonooxy)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-amino-3-hydroxypropanoic acid 3-phosphate" EXACT PSI-MI-alternate []
@@ -1724,7 +1725,7 @@ is_a: MI:0170 ! phosphorylated residue
 [Term]
 id: MI:0177
 name: o-phospho-threonine
-def: "residue modification." [PMID:11125103, RESID:AA0038]
+def: "Residue modification." [PMID:11125103, RESID:AA0038]
 subset: PSI-MI slim
 synonym: "(2S,3R)-2-amino-3-phosphonooxybutanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-amino-3-hydroxybutanoic acid 3-phosphate" EXACT PSI-MI-alternate []
@@ -1739,7 +1740,7 @@ is_a: MI:0170 ! phosphorylated residue
 [Term]
 id: MI:0178
 name: o4'-phospho-tyrosine
-def: "residue modification." [PMID:11125103, RESID:AA0039]
+def: "Residue modification." [PMID:11125103, RESID:AA0039]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-3-(4-phosphonooxyphenyl)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-amino-3-(4-hydroxyphenyl)propanoic acid 4'-phosphate" EXACT PSI-MI-alternate []
@@ -1754,14 +1755,14 @@ is_a: MI:0170 ! phosphorylated residue
 [Term]
 id: MI:0179
 name: other modification
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 is_a: MI:0120 ! post translation modification
 
 [Term]
 id: MI:0180
 name: selenocysteine
-def: "residue modification." [PMID:11125103, RESID:AA0022]
+def: "Residue modification." [PMID:11125103, RESID:AA0022]
 subset: PSI-MI slim
 synonym: "3-selenylalanine" EXACT PSI-MI-alternate []
 synonym: "[C:sel]" EXACT PSI-MI-alternate []
@@ -1773,7 +1774,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0181
 name: selenomethionine
-def: "residue modification." [PMID:11125103]
+def: "Residue modification." [PMID:11125103]
 subset: PSI-MI slim
 synonym: "[M:sel]" EXACT PSI-MI-alternate []
 synonym: "L-selenomethionine" EXACT PSI-MI-alternate []
@@ -1783,7 +1784,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0182
 name: 3-oxoalanine
-def: "residue modification." [PMID:11125103, RESID:AA0185]
+def: "Residue modification." [PMID:11125103, RESID:AA0185]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-3-oxopropanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-amino-3-oxopropionic acid" EXACT PSI-MI-alternate []
@@ -1800,14 +1801,13 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0183
 name: 2-pyrrolidone-5-carboxylic acid
-def: "residue modification." [PMID:11125103, RESID:AA0031]
+def: "Residue modification." [PMID:11125103, RESID:AA0031]
 subset: PSI-MI slim
 synonym: "(S)-5-oxo-2-pyrrolidinecarboxylic acid" EXACT PSI-MI-alternate []
 synonym: "2-oxopyrrolidine-5-carboxylic acid" EXACT PSI-MI-alternate []
 synonym: "5-oxoproline" EXACT PSI-MI-alternate []
 synonym: "5-oxopyrrolidine-2-carboxylic acid" EXACT PSI-MI-alternate []
 synonym: "[E:pyro]" EXACT PSI-MI-alternate []
-synonym: "PCA" EXACT PSI-MI-alternate []
 synonym: "pyroglutamic acid" EXACT PSI-MI-alternate []
 synonym: "pyroglutamic acid" EXACT PSI-MI-short []
 is_a: MI:0179 ! other modification
@@ -1815,7 +1815,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0184
 name: glutamyl 5-glycerylphosphorylethanolamine
-def: "residue modification." [PMID:11125103, RESID:AA0170]
+def: "Residue modification." [PMID:11125103, RESID:AA0170]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-5-[2-([([2,3-dihydroxypropyl]oxy)(hydroxy)phosphoryl]oxy)ethyl]amino-5-oxopentanoic acid" EXACT PSI-MI-alternate []
 synonym: "[E:gpe]" EXACT PSI-MI-alternate []
@@ -1829,7 +1829,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0185
 name: 2'-[3-carboxamido-3-(trimethylammonio)propyl]-histidine
-def: "residue modification." [PMID:11125103, RESID:AA0040]
+def: "Residue modification." [PMID:11125103, RESID:AA0040]
 subset: PSI-MI slim
 synonym: "2'-[3-carboxamido-3-(trimethylammonio)propyl]-L-histidine" EXACT PSI-MI-alternate []
 synonym: "2-[(Xi)-3-carboxamido-3-(trimethylammonio)propyl]-4-((S)-2-amino-2-carboxyethyl)-1H-imidazole" EXACT PSI-MI-alternate []
@@ -1846,7 +1846,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0186
 name: n6-biotinyl-lysine
-def: "residue modification." [PMID:11125103, RESID:AA0117]
+def: "Residue modification." [PMID:11125103, RESID:AA0117]
 subset: PSI-MI slim
 synonym: "(3aS-(3aalpha,4beta,6aalpha))-N6-(5-(hexahydro-2-oxo-1H-thieno(3,4-d)imidazol-4-yl)-1-oxopentyl)-L-lysine" EXACT PSI-MI-alternate []
 synonym: "(S)-2-amino-6-[5-((3aS,4S,6aR)-hexahydro-2-oxo-1H-thieno[3,4-d]imidazol-4-yl)-1-oxopentyl]aminohexanoic acid" EXACT PSI-MI-alternate []
@@ -1863,7 +1863,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0187
 name: n6-(4-amino-2-hydroxybutyl)-lysine
-def: "residue modification." [PMID:11125103, RESID:AA0116]
+def: "Residue modification." [PMID:11125103, RESID:AA0116]
 subset: PSI-MI slim
 synonym: "(S,R)-2-amino-6-(4-amino-2-hydroxybutylamino)hexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:hypu]" EXACT PSI-MI-alternate []
@@ -1876,7 +1876,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0188
 name: n6-retinal-lysine
-def: "residue modification." [PMID:11125103, RESID:AA0120]
+def: "Residue modification." [PMID:11125103, RESID:AA0120]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-6-[(2E,4E,6E,8E)-3,7-dimethyl-9-(2,6,6-trimethylcyclohex-1-en-1-yl)-2,4,6,8-nonatetraenylidene]aminohexanoic acid" EXACT PSI-MI-alternate []
 synonym: "[K:retin]" EXACT PSI-MI-alternate []
@@ -2341,7 +2341,7 @@ id: MI:0246
 name: cabri
 def: "CABRI cell lines catalogue available at.\nhttp://www.cabri.org/" [PMID:14755292]
 subset: PSI-MI slim
-xref: id-validation-regexp:\"[0-9\]+|ACC\\s[A-Z0-9\]+|ECACC\\s[A-Z0-9\]+|LMBP\\s[A-Z0-9\]+|ICLC\\s[A-Z0-9\]+|CIP-[0-9\]+\"
+xref: id-validation-regexp:\"[0-9\]+|ACC\\s[A-Z0-9\]+|ECACC\\s[A-Z0-9\]+|LMBP\\s[A-Z0-9\]+|ICLC\\s[A-Z0-9\]+|CIP-[0-9\]+|DSMZ_MUTZ\\\:ACC\\s[0-9\]+ \"
 xref: search-url: "http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?[libs%3d{dsmz_mutz%20ecacc_cell%20iclc%20CABI_BACT%20CIP_BACT%20CABI_YEAST%20DSMZ_PLANT_CELL}-id:${ac}]+-e"
 is_a: MI:0473 ! participant database
 
@@ -2464,7 +2464,7 @@ is_obsolete: true
 [Term]
 id: MI:0262
 name: suppression mutation
-def: "a given (suppressed) mutation phenotype is reverted by a supressor gene mutation.\nOBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'mutated gene' MI:0804. " [PMID:15608217]
+def: "A given (suppressed) mutation phenotype is reverted by a supressor gene mutation.\nOBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'mutated gene' MI:0804. " [PMID:15608217]
 subset: PSI-MI slim
 is_obsolete: true
 
@@ -2627,7 +2627,7 @@ is_a: MI:0300 ! alias type
 id: MI:0306
 name: open reading frame name
 def: "A name temporarily attributed by a sequencing project to an open reading frame. This name is generally based on a cosmid numbering system." [PMID:14755292]
-comment: For instance MtCY277.28c, SYGP-ORF50, SpBC2F12.04, C06E1.1, CG10954. Also called Sequencing names or Contig names or Temporary ORFNames.
+comment: For instance MtCY277-28c, SYGP-ORF50, SpBC2F12-04, C06E1, CG10954. Also called Sequencing names or Contig names or Temporary ORFNames.
 subset: PSI-MI slim
 synonym: "orf name" EXACT PSI-MI-short []
 is_a: MI:0300 ! alias type
@@ -2649,7 +2649,7 @@ is_a: MI:0307 ! delivery method
 [Term]
 id: MI:0309
 name: genomic tagging
-def: "A cassette coding for a protein tag is inserted by homologous recombination onto the genomic copy of an open reading frame. The advantage of this delivery method is that the resulting engineered protein is expressed under its natural promoter control.\nOBSOLETE redundant term. Map to feature type : tag (MI:0507) " [PMID:14755292]
+def: "A cassette coding for a protein tag is inserted by homologous recombination onto the genomic copy of an open reading frame. The advantage of this delivery method is that the resulting engineered protein is expressed under its natural promoter control.\nOBSOLETE redundant term. Map to feature type : tag (MI:0507)." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "genetic tag insertion" EXACT PSI-MI-alternate []
 is_obsolete: true
@@ -3047,6 +3047,7 @@ is_a: MI:0353 ! cross-reference type
 id: MI:0358
 name: primary-reference
 def: "Used to indicate the PMID from which the experimental data is extracted." [PMID:14755292]
+subset: Drugable
 subset: PSI-MI slim
 is_a: MI:0353 ! cross-reference type
 
@@ -3523,7 +3524,7 @@ is_a: MI:0510 ! homogeneous time resolved fluorescence
 [Term]
 id: MI:0421
 name: identification by antibody
-def: "antibody mediated identification." [PMID:14755292]
+def: "Antibody mediated identification." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "antibody detection" EXACT PSI-MI-short []
 is_a: MI:0661 ! experimental participant identification
@@ -3716,6 +3717,7 @@ relationship: part_of MI:0000 ! molecular interaction
 id: MI:0445
 name: literature database
 def: "literature reference" [PMID:14755292]
+subset: Drugable
 subset: PSI-MI slim
 synonym: "experiment xref" EXACT PSI-MI-short []
 is_a: MI:0444 ! database citation
@@ -3724,6 +3726,7 @@ is_a: MI:0444 ! database citation
 id: MI:0446
 name: pubmed
 def: "PubMed is designed to provide access to citations from biomedical literature.\nhttp://www.ncbi.nlm.nih.gov/entrez/query.fcgi" [PMID:14755292]
+subset: Drugable
 subset: PSI-MI slim
 xref: id-validation-regexp:\"[0-9\]+\"
 xref: search-url: "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=${ac}&dopt=Abstract"
@@ -3852,6 +3855,7 @@ is_a: MI:0461 ! interaction database
 id: MI:0460
 name: rcsb pdb
 def: "The RCSB PDB provides a variety of tools and resources for studying the structures of biological macromolecules and their relationships to sequence, function, and disease. \nhttp://www.pdb.org/" [PMID:14634627]
+subset: Drugable
 subset: PSI-MI slim
 synonym: "PDB" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
@@ -3862,6 +3866,7 @@ is_a: MI:0805 ! wwpdb
 id: MI:0461
 name: interaction database
 def: "interaction database." [PMID:14755292]
+subset: Drugable
 subset: PSI-MI slim
 synonym: "interaction xref" EXACT PSI-MI-short []
 is_a: MI:0444 ! database citation
@@ -3931,6 +3936,7 @@ is_a: MI:0461 ! interaction database
 id: MI:0468
 name: hprd
 def: "The Human Protein Reference Database represents a centralized platform to visually depict and integrate information pertaining to domain architecture, post-translational modifications, interaction networks and disease association for each protein in the human proteome.\nhttp://www.hprd.org/" [PMID:14755292]
+subset: Drugable
 subset: PSI-MI slim
 synonym: "HPRD" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
@@ -3950,6 +3956,7 @@ is_a: MI:0489 ! source database
 id: MI:0470
 name: kegg
 def: "KEGG (Kyoto Encyclopedia of Genes and Genomes) is a knowledge base for systematic analysis of gene functions, linking genomic information with higher order functional information and also supplies information about chemical compounds, enzyme molecules and enzymatic reactions.\nhttp://www.genome.ad.jp/kegg/" [PMID:14755292]
+subset: Drugable
 subset: PSI-MI slim
 synonym: "KEGG" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[a-zA-Z\]+\:[a-zA-Z\]+[0-9\]+\"
@@ -3981,6 +3988,7 @@ is_a: MI:0805 ! wwpdb
 id: MI:0473
 name: participant database
 def: "participant database." [PMID:14755292]
+subset: Drugable
 subset: PSI-MI slim
 synonym: "participant xref" EXACT PSI-MI-short []
 is_a: MI:0444 ! database citation
@@ -4424,7 +4432,7 @@ is_a: MI:0507 ! tag
 [Term]
 id: MI:0526
 name: n-acetyl-lysine
-def: "residue modification." [PMID:14755292, RESID:AA0048, RESID:AA0055]
+def: "Residue modification." [PMID:14755292, RESID:AA0048, RESID:AA0055]
 subset: PSI-MI slim
 synonym: "acetyllysine" EXACT PSI-MI-short []
 is_a: MI:0121 ! acetylated residue
@@ -4432,7 +4440,7 @@ is_a: MI:0121 ! acetylated residue
 [Term]
 id: MI:0527
 name: adp ribosylated residue
-def: "residue modification." [PMID:14755292]
+def: "Residue modification." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "adp-ribosylated" EXACT PSI-MI-short []
 is_a: MI:0120 ! post translation modification
@@ -4440,7 +4448,7 @@ is_a: MI:0120 ! post translation modification
 [Term]
 id: MI:0528
 name: omega-n-(adp-ribosyl)-arginine
-def: "residue modification." [PMID:14755292, RESID:AA0168]
+def: "Residue modification." [PMID:14755292, RESID:AA0168]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-5-([imino([adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl]amino)methyl]amino)pentanoic acid" EXACT PSI-MI-alternate []
 synonym: "adp-ribosylarginine" EXACT PSI-MI-short []
@@ -4452,7 +4460,7 @@ is_a: MI:0527 ! adp ribosylated residue
 [Term]
 id: MI:0529
 name: s-(adp-ribosyl)-cysteine
-def: "residue modification." [PMID:14755292, RESID:AA0169]
+def: "Residue modification." [PMID:14755292, RESID:AA0169]
 subset: PSI-MI slim
 synonym: "(R)-2-amino-3-([adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl]sulfanyl)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "adp-ribosylcysteine" EXACT PSI-MI-short []
@@ -4464,7 +4472,7 @@ is_a: MI:0527 ! adp ribosylated residue
 [Term]
 id: MI:0530
 name: glutamyl-5-poly(adp-ribose)
-def: "residue modification." [PMID:14755292, RESID:AA0295]
+def: "Residue modification." [PMID:14755292, RESID:AA0295]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-5-poly[2'-adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with 1alpha-D-ribofuranosyl]oxy-5-oxopentanoic acid" EXACT PSI-MI-alternate []
 synonym: "adp-ribosylglutamate" EXACT PSI-MI-short []
@@ -4475,7 +4483,7 @@ is_a: MI:0527 ! adp ribosylated residue
 [Term]
 id: MI:0531
 name: o-(adp-ribosyl)-serine
-def: "residue modification." [PMID:14755292, RESID:AA0237]
+def: "Residue modification." [PMID:14755292, RESID:AA0237]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-3-([adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl]oxy)-propanoic acid Formula" EXACT PSI-MI-alternate []
 synonym: "adp-ribosylserine" EXACT PSI-MI-short []
@@ -4488,7 +4496,7 @@ is_a: MI:0527 ! adp ribosylated residue
 [Term]
 id: MI:0532
 name: n4-(adp-ribosyl)-asparagine
-def: "residue modification." [PMID:14755292, RESID:AA0231]
+def: "Residue modification." [PMID:14755292, RESID:AA0231]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-4-([adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with alpha-D-ribofuranosyl]amino)-4-oxobutanoic acid" EXACT PSI-MI-alternate []
 synonym: "adpribosylasparagine" EXACT PSI-MI-short []
@@ -4500,14 +4508,14 @@ is_a: MI:0527 ! adp ribosylated residue
 [Term]
 id: MI:0533
 name: glycosylated residue
-def: "residue modification." [PMID:14755292]
+def: "Residue modification." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0120 ! post translation modification
 
 [Term]
 id: MI:0534
 name: glycosyl-cysteine
-def: "residue modification." [PMID:14755292, RESID:AA0122]
+def: "Residue modification." [PMID:14755292, RESID:AA0122]
 subset: PSI-MI slim
 synonym: "S-glycosyl-L-cysteine" EXACT PSI-MI-alternate []
 is_a: MI:0533 ! glycosylated residue
@@ -4515,7 +4523,7 @@ is_a: MI:0533 ! glycosylated residue
 [Term]
 id: MI:0535
 name: glycosyl-serine
-def: "residue modification." [PMID:14755292, RESID:AA0154]
+def: "Residue modification." [PMID:14755292, RESID:AA0154]
 subset: PSI-MI slim
 synonym: "O-glycosyl-L-serine" EXACT PSI-MI-alternate []
 synonym: "O3-glycosyl-L-serine" EXACT PSI-MI-alternate []
@@ -4524,7 +4532,7 @@ is_a: MI:0533 ! glycosylated residue
 [Term]
 id: MI:0536
 name: glycosyl-threonine
-def: "residue modification." [PMID:14755292, RESID:AA0155]
+def: "Residue modification." [PMID:14755292, RESID:AA0155]
 subset: PSI-MI slim
 synonym: "O-glycosyl-L-threonine" EXACT PSI-MI-alternate []
 synonym: "O3-glycosyl-L-threonine" EXACT PSI-MI-alternate []
@@ -4533,7 +4541,7 @@ is_a: MI:0533 ! glycosylated residue
 [Term]
 id: MI:0537
 name: omega-n-glycosyl-arginine
-def: "residue modification." [PMID:14755292, RESID:AA0327]
+def: "Residue modification." [PMID:14755292, RESID:AA0327]
 subset: PSI-MI slim
 synonym: "glycosylarginine" EXACT PSI-MI-short []
 synonym: "omega-N-glycosyl-L-arginine" EXACT PSI-MI-alternate []
@@ -4542,7 +4550,7 @@ is_a: MI:0533 ! glycosylated residue
 [Term]
 id: MI:0538
 name: n4-glycosyl-asparagine
-def: "residue modification." [PMID:14755292, RESID:AA0151]
+def: "Residue modification." [PMID:14755292, RESID:AA0151]
 subset: PSI-MI slim
 synonym: "glycosylasparagine" EXACT PSI-MI-short []
 synonym: "N4-glycosyl-L-asparagine" EXACT PSI-MI-alternate []
@@ -4551,14 +4559,14 @@ is_a: MI:0533 ! glycosylated residue
 [Term]
 id: MI:0539
 name: gpi anchor residue
-def: "residue modification." [PMID:14755292]
+def: "Residue modification." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0150 ! lipid modification
 
 [Term]
 id: MI:0540
 name: gpi-anchor amidated alanine
-def: "residue modification." [PMID:14755292, RESID:AA0163]
+def: "Residue modification." [PMID:14755292, RESID:AA0163]
 subset: PSI-MI slim
 synonym: "gpi-alanine" EXACT PSI-MI-short []
 synonym: "N-alanyl-glycosylphosphatidylinositolethanolamine" EXACT PSI-MI-alternate []
@@ -4567,7 +4575,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0541
 name: gpi-anchor amidated asparagine
-def: "residue modification." [PMID:14755292, RESID:AA0158]
+def: "Residue modification." [PMID:14755292, RESID:AA0158]
 subset: PSI-MI slim
 synonym: "gpi-asparagine" EXACT PSI-MI-short []
 synonym: "N-asparaginyl-glycosylphosphatidylinositolethanolamine" EXACT PSI-MI-alternate []
@@ -4576,7 +4584,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0542
 name: gpi-anchor amidated aspartate
-def: "residue modification." [PMID:14755292, RESID:AA0159]
+def: "Residue modification." [PMID:14755292, RESID:AA0159]
 subset: PSI-MI slim
 synonym: "gpi-aspartate" EXACT PSI-MI-short []
 synonym: "N-aspartyl-glycosylphosphatidylinositolethanolamine" EXACT PSI-MI-alternate []
@@ -4585,7 +4593,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0543
 name: gpi-anchor amidated cysteine
-def: "residue modification." [PMID:14755292, RESID:AA0160]
+def: "Residue modification." [PMID:14755292, RESID:AA0160]
 subset: PSI-MI slim
 synonym: "gpi-cysteine" EXACT PSI-MI-short []
 synonym: "N-cysteinyl-glycosylphosphatidylinositolethanolamine" EXACT PSI-MI-alternate []
@@ -4594,7 +4602,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0544
 name: gpi-anchor amidated glycine
-def: "residue modification." [PMID:14755292, RESID:AA0161]
+def: "Residue modification." [PMID:14755292, RESID:AA0161]
 subset: PSI-MI slim
 synonym: "gpi-glycine" EXACT PSI-MI-short []
 synonym: "N-glycyl-glycosylphosphatidylinositolethanolamine" EXACT PSI-MI-alternate []
@@ -4603,7 +4611,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0545
 name: gpi-anchor amidated serine
-def: "residue modification." [PMID:14755292, RESID:AA0162]
+def: "Residue modification." [PMID:14755292, RESID:AA0162]
 subset: PSI-MI slim
 synonym: "gpi-serine" EXACT PSI-MI-short []
 synonym: "N-seryl-glycosylphosphatidylinositolethanolamine" EXACT PSI-MI-alternate []
@@ -4612,7 +4620,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0546
 name: gpi-anchor amidated threonine
-def: "residue modification." [PMID:14755292, RESID:AA0164]
+def: "Residue modification." [PMID:14755292, RESID:AA0164]
 subset: PSI-MI slim
 synonym: "gpi-threonine" EXACT PSI-MI-short []
 synonym: "N-threonyl-glycosylphosphatidylinositolethanolamine" EXACT PSI-MI-alternate []
@@ -4621,7 +4629,7 @@ is_a: MI:0539 ! gpi anchor residue
 [Term]
 id: MI:0547
 name: s-prenyl-cysteine
-def: "residue modification." [PMID:14755292]
+def: "Residue modification." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "prenylcysteine" EXACT PSI-MI-short []
 is_a: MI:0150 ! lipid modification
@@ -4629,7 +4637,7 @@ is_a: MI:0150 ! lipid modification
 [Term]
 id: MI:0548
 name: methylated-lysine
-def: "residue modification." [PMID:14755292, RESID:AA0074, RESID:AA0075, RESID:AA0076]
+def: "Residue modification." [PMID:14755292, RESID:AA0074, RESID:AA0075, RESID:AA0076]
 subset: PSI-MI slim
 synonym: "methylatedlysine" EXACT PSI-MI-short []
 is_a: MI:0157 ! methylated residue
@@ -4644,7 +4652,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0550
 name: gamma-carboxyglutamic acid
-def: "residue modification." [PMID:14755292, RESID:AA0032]
+def: "Residue modification." [PMID:14755292, RESID:AA0032]
 subset: PSI-MI slim
 synonym: "(S)-3-amino-1,1,3-propanetricarboxylic acid" EXACT PSI-MI-alternate []
 synonym: "1-carboxyglutamic acid [misnomer]" EXACT PSI-MI-alternate []
@@ -4656,7 +4664,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0551
 name: nitro-tyrosine
-def: "residue modification." [PMID:15657065, PMID:9636206]
+def: "Residue modification." [PMID:15657065, PMID:9636206]
 subset: PSI-MI slim
 synonym: "nitrated tyrosine" EXACT PSI-MI-alternate []
 is_a: MI:0179 ! other modification
@@ -4664,7 +4672,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0552
 name: s-nitrosyl-cysteine
-def: "residue modification." [PMID:14755292, RESID:AA0230]
+def: "Residue modification." [PMID:14755292, RESID:AA0230]
 subset: PSI-MI slim
 synonym: "(R)-2-amino-3-nitrososulfanyl-propanoic acid" EXACT PSI-MI-alternate []
 synonym: "L-cysteine nitrite ester" EXACT PSI-MI-alternate []
@@ -4676,7 +4684,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0553
 name: o4'-sulfo-tyrosine
-def: "residue modification." [PMID:14755292, RESID:AA0172]
+def: "Residue modification." [PMID:14755292, RESID:AA0172]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-3-(4-sulfooxyphenyl)propanoic acid" EXACT PSI-MI-alternate []
 synonym: "2-amino-3-(4-hydroxyphenyl)propanoic acid 4'-sulfate" EXACT PSI-MI-alternate []
@@ -4699,7 +4707,7 @@ is_a: MI:0179 ! other modification
 [Term]
 id: MI:0555
 name: phospho-histidine
-def: "residue modification." [PMID:14755292, RESID:AA0035, RESID:AA0036]
+def: "Residue modification." [PMID:14755292, RESID:AA0035, RESID:AA0036]
 subset: PSI-MI slim
 synonym: "phosphoshistidine" EXACT PSI-MI-short []
 is_a: MI:0170 ! phosphorylated residue
@@ -4739,7 +4747,7 @@ is_a: MI:0414 ! enzymatic reaction
 [Term]
 id: MI:0560
 name: myristoylated residue
-def: "residue modification." [PMID:14755292]
+def: "Residue modification." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "myristoylated aa" EXACT PSI-MI-short []
 is_a: MI:0150 ! lipid modification
@@ -4747,7 +4755,7 @@ is_a: MI:0150 ! lipid modification
 [Term]
 id: MI:0561
 name: palmitoylated residue
-def: "residue modification." [PMID:14755292]
+def: "Residue modification." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "palmitoylated aa" EXACT PSI-MI-short []
 is_a: MI:0150 ! lipid modification
@@ -4755,21 +4763,21 @@ is_a: MI:0150 ! lipid modification
 [Term]
 id: MI:0562
 name: methylated alanine
-def: "residue modification." [PMID:14755292, RESID:AA0061, RESID:AA0062]
+def: "Residue modification." [PMID:14755292, RESID:AA0061, RESID:AA0062]
 subset: PSI-MI slim
 is_a: MI:0157 ! methylated residue
 
 [Term]
 id: MI:0563
 name: methylated arginine
-def: "residue modification." [PMID:14755292, RESID:AA0068, RESID:AA0069]
+def: "Residue modification." [PMID:14755292, RESID:AA0068, RESID:AA0069]
 subset: PSI-MI slim
 is_a: MI:0157 ! methylated residue
 
 [Term]
 id: MI:0564
 name: omega-n-methyl-arginine
-def: "residue modification." [PMID:14755292, RESID:AA0069]
+def: "Residue modification." [PMID:14755292, RESID:AA0069]
 subset: PSI-MI slim
 synonym: "(S)-2-amino-5-[(imino(methylamino)methyl)amino]pentanoic acid" EXACT PSI-MI-alternate []
 synonym: "methylarginine" EXACT PSI-MI-short []
@@ -5760,7 +5768,7 @@ is_a: MI:0240 ! fusion protein
 [Term]
 id: MI:0689
 name: activation domain tag
-def: "Part of a transcription factor responsible for the activation of DNA transcription. Such tags are generally used in two hybrid experiments where they are fused to a prey polypeptide tested for its ability to interact with a bait fused to a DNA binding domain tag. " [PMID:14755292]
+def: "Part of a transcription factor responsible for the activation of DNA transcription. Such tags are generally used in two hybrid experiments where they are fused to a prey polypeptide tested for its ability to interact with a bait fused to a DNA binding domain tag." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "activation domain" EXACT PSI-MI-short []
 is_a: MI:0240 ! fusion protein
@@ -5800,7 +5808,7 @@ is_a: MI:0688 ! dna binding domain tag
 [Term]
 id: MI:0694
 name: lexa dna binding domain
-def: "Amino terminal (1-220) part of the Escherichia coli lexA repressor, binding to 16 base pair palindromic DNA sequences. " [PMID:14755292]
+def: "Amino terminal (1-220) part of the Escherichia coli lexA repressor, binding to 16 base pair palindromic DNA sequences." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "lexa dna bd" EXACT PSI-MI-short []
 is_a: MI:0688 ! dna binding domain tag
@@ -5872,7 +5880,7 @@ is_a: MI:0449 ! interpro
 [Term]
 id: MI:0703
 name: gene3d
-def: "The Gene3D database provides a combined structural, functional and evolutionary view of the protein world. It is focused on providing structural annotation for protein sequences without structural representatives--including the complete proteome sets of over 240 different species.\nhttp://cathwww.biochem.ucl.ac.uk:8080/Gene3D/ " [PMID:14755292]
+def: "The Gene3D database provides a combined structural, functional and evolutionary view of the protein world. It is focused on providing structural annotation for protein sequences without structural representatives--including the complete proteome sets of over 240 different species.\nhttp://cathwww.biochem.ucl.ac.uk:8080/Gene3D/" [PMID:14755292]
 subset: PSI-MI slim
 synonym: "Gene3D" EXACT PSI-MI-alternate []
 is_a: MI:0449 ! interpro
@@ -6105,7 +6113,7 @@ is_a: MI:0473 ! participant database
 [Term]
 id: MI:0731
 name: 3d repertoire
-def: "The aim of 3D Repertoire is to determine the structures of all amenable complexes in a cell at medium or high resolution,  which will later serve to integrate in toponomic and dynamic analyses of protein complexes in a cell. Complex models, EM pictures, expression and purification protocols obtained in the project will be collected in a database connected to the PDB repository." [PMID:14755292]
+def: "The aim of 3D Repertoire is to determine the structures of all amenable complexes in a cell at medium or high resolution, which will later serve to integrate in toponomic and dynamic analyses of protein complexes in a cell. Complex models, EM pictures, expression and purification protocols obtained in the project will be collected in a database connected to the PDB repository." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "3D Repertoire" EXACT PSI-MI-alternate []
 is_a: MI:0489 ! source database
@@ -6133,7 +6141,7 @@ is_a: MI:0687 ! fluorescent protein tag
 [Term]
 id: MI:0734
 name: enhanced green fluorescent protein tag
-def: "Variation of the green fluorescent protein derived from the bioluminescent jellyfish Aequorea victoria, can be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native. " [PMID:14755292]
+def: "Variation of the green fluorescent protein derived from the bioluminescent jellyfish Aequorea victoria, can be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "EGFP" EXACT PSI-MI-alternate []
 synonym: "egfp tag" EXACT PSI-MI-short []
@@ -6143,7 +6151,7 @@ is_a: MI:0367 ! green fluorescent protein tag
 [Term]
 id: MI:0735
 name: transactivating tag
-def: "Tag derived from the transactivating (Tat) protein of human immunodeficiency virus 1 (HIV-1) that can enter cells efficiently when added exogenously in tissue culture. The Tat tag can carry other molecules into cells, by fusion of Tat peptides (residues 1-72 or 37-72,) to any molecule under study. Tat-mediated uptake may allow the delivery of macromolecules previously thought to be impermeable to living cells. " [PMID:8290579]
+def: "Tag derived from the transactivating (Tat) protein of human immunodeficiency virus 1 (HIV-1) that can enter cells efficiently when added exogenously in tissue culture. The Tat tag can carry other molecules into cells, by fusion of Tat peptides (residues 1-72 or 37-72,) to any molecule under study. Tat-mediated uptake may allow the delivery of macromolecules previously thought to be impermeable to living cells." [PMID:8290579]
 subset: PSI-MI slim
 synonym: "Tat tag" EXACT PSI-MI-alternate []
 synonym: "tat tag" EXACT PSI-MI-short []
@@ -6186,6 +6194,7 @@ id: MI:0740
 name: cell penetrating peptide tag
 def: "The peptides named CPPs vary greatly in size, amino acid sequence, and charge, but share the common feature that they have the ability to rapidly translocate the plasma membrane and enable delivery to the cytoplasm or nucleus." [PMID:16574060]
 subset: PSI-MI slim
+synonym: "cell penetrating pep" EXACT PSI-MI-short []
 synonym: "cell-penetrating peptides" EXACT PSI-MI-alternate []
 synonym: "CPPs" EXACT PSI-MI-alternate []
 synonym: "membrane translocating sequences" EXACT PSI-MI-alternate []
@@ -6216,6 +6225,7 @@ id: MI:0787
 name: genetic experimental form
 def: "Descriptor of an experimental form involved in a genetic interaction" [PMID:14755292]
 subset: PSI-MI slim
+synonym: "genetic exp form" EXACT PSI-MI-short []
 is_a: MI:0346 ! experimental preparation
 
 [Term]
@@ -6237,14 +6247,14 @@ is_a: MI:0804 ! mutated gene
 [Term]
 id: MI:0790
 name: hypermorph
-def: "The gene function has been partially improved compared to wild-type by altering its sequence. " [PMID:14755292]
+def: "The gene function has been partially improved compared to wild-type by altering its sequence." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0787 ! genetic experimental form
 
 [Term]
 id: MI:0791
 name: hypomorph
-def: "The gene function has been partially reduced compared to wild-type by altering its sequence e.g. a temperature sensitive mutant \n " [PMID:14755292]
+def: "The gene function has been partially reduced compared to wild-type by altering its sequence e.g. a temperature sensitive mutant." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0787 ! genetic experimental form
 
@@ -6340,6 +6350,7 @@ id: MI:0803
 name: expression level alteration
 def: "Synthesis rate of a molecule under investigation differs from its naturally occurring expression level in a cell." [PMID:14755292]
 subset: PSI-MI slim
+synonym: "expression modif" EXACT PSI-MI-short []
 is_a: MI:0787 ! genetic experimental form
 
 [Term]
@@ -6353,6 +6364,7 @@ is_a: MI:0787 ! genetic experimental form
 id: MI:0805
 name: wwpdb
 def: "The Worldwide Protein Data Bank (wwPDB) consists of organizations that act as deposition, data processing and distribution centers for PDB data. The founding members are RCSB PDB (USA), MSD-EBI (Europe) and PDBj (Japan). The BMRB (USA) group joined the wwPDB in 2006. The mission of the wwPDB is to maintain a single Protein Data Bank Archive of macromolecular structural data that is freely and publicly available to the global community.\nhttp://www.wwpdb.org/" [PMID:14634627]
+subset: Drugable
 subset: PSI-MI slim
 synonym: "wwPDB" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
@@ -6533,7 +6545,7 @@ is_a: MI:0114 ! x-ray crystallography
 [Term]
 id: MI:0826
 name: x ray scattering
-def: "Method where the internal structure of a sample is derived from the intensity distribution of the scattered monochromatic X-ray beam at very low scattering angles. " [PMID:14755292]
+def: "Method where the internal structure of a sample is derived from the intensity distribution of the scattered monochromatic X-ray beam at very low scattering angles." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "saxs" EXACT PSI-MI-short []
 is_a: MI:0067 ! light scattering
@@ -6612,14 +6624,15 @@ id: MI:0836
 name: temperature of interaction
 def: "Temperature at which interaction was determined. Unit KELVIN (K)" [PMID:14755292]
 subset: PSI-MI slim
-synonym: "t interaction" EXACT PSI-MI-alternate []
+synonym: "T interaction" EXACT PSI-MI-alternate []
+synonym: "temp interaction" EXACT PSI-MI-short []
 synonym: "Tint" EXACT PSI-MI-alternate []
 is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:0837
 name: pH of interaction
-def: "pH at which interaction was determined. " [PMID:14755292]
+def: "pH at which interaction was determined." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "pHint" EXACT PSI-MI-alternate []
 is_a: MI:0640 ! parameter type
@@ -6878,7 +6891,7 @@ is_a: MI:0866 ! tag visualisation
 [Term]
 id: MI:0868
 name: author identifier
-def: "author published identifier" [PMID:14755292]
+def: "Author published identifier" [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0353 ! cross-reference type
 
@@ -6917,14 +6930,14 @@ is_a: MI:0428 ! imaging techniques
 [Term]
 id: MI:0873
 name: curation request
-def: "Annotation of a publiched paper which has been externally requested. " [PMID:14755292]
+def: "Annotation of a publiched paper which has been externally requested." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0875
 name: dataset
-def: "Targeted curation dataset grouping experiments by topic or dataset origin.\n\n\n" [PMID:14755292]
+def: "Targeted curation dataset grouping experiments by topic or dataset origin." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0665 ! experiment attibute name
 
@@ -7158,7 +7171,7 @@ id: MI:0907
 name: conformational status
 def: "Statement about the native/denatured conformation of the protein." [PMID:14755292]
 subset: PSI-MI slim
-synonym: "conformation" EXACT PSI-MI-alternate []
+synonym: "conformation" EXACT PSI-MI-short []
 is_a: MI:0346 ! experimental preparation
 
 [Term]
@@ -7387,7 +7400,7 @@ is_a: MI:2054 ! bioactive entity reference
 id: MI:2016
 name: bind smid
 def: "BIND database Small Molecule Identification number (if molecule is in BIND)" [PMID:14755292]
-comment: May not be publicly available any more since now owned by Thompson Scientific
+comment: May not be publicly available any more since now owned by Thompson Scientific.
 subset: Drugable
 is_a: MI:2054 ! bioactive entity reference
 
@@ -7499,7 +7512,7 @@ is_a: MI:2089 ! bioactive entity attribute name
 [Term]
 id: MI:2041
 name: drug category
-def: "Therapeutic category or general category of drug (anti-convulsant, antibacterial, etc.)" [PMID:14755292]
+def: "Therapeutic category or general category of drug (anti-convulsant, antibacterial, etc.)." [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
@@ -7507,7 +7520,7 @@ is_a: MI:2089 ! bioactive entity attribute name
 id: MI:2042
 name: disease indication
 def: "Description or common names of diseases that the drug is used to treat" [PMID:14755292]
-comment: source of further terms could be MeSH term or SNOWMAN
+comment: Source of further terms could be MeSH term or SNOWMAN.
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
@@ -7546,6 +7559,7 @@ id: MI:2047
 name: plasma protein binding
 def: "Percentage of the drug that is bound in plasma proteins" [PMID:14755292]
 subset: Drugable
+synonym: "plasma prot binding" EXACT PSI-MI-short []
 synonym: "protein binding %" EXACT PSI-MI-alternate []
 is_a: MI:2086 ! physicochemical attribute name
 
@@ -7554,7 +7568,7 @@ id: MI:2048
 name: drug biotransformation
 def: "The chemical conversion of drugs to other compounds in the body, excluding degradation due to any inherent chemical instability of drugs in biological media." [PMID:14755292]
 subset: Drugable
-synonym: "drug metabolism" EXACT PSI-MI-alternate []
+synonym: "drug metabolism" EXACT PSI-MI-short []
 is_a: MI:2115 ! pharmacokinetics
 
 [Term]
@@ -7731,6 +7745,7 @@ name: diffusion coefficient
 def: "Diffusion coefficient D is proportional to the velocity of the diffusing particles, which depends on the temperature, viscosity of the fluid and the size of the particles according to the Stokes-Einstein relation. In dilute aqueous solutions the diffusion coefficients of most ions are similar and have values that at room temperature are in the range of 0.6x10-9 to 2x10-9 m2/s. For biological molecules the diffusion coefficients normally range from 10-11 to 10-10 m2/s." [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
+synonym: "diffusion coeff" EXACT PSI-MI-short []
 is_a: MI:2086 ! physicochemical attribute name
 
 [Term]
@@ -8008,7 +8023,6 @@ is_a: MI:2040 ! drug type
 id: MI:2150
 name: illicit drug
 def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
-comment: IntAct
 subset: Drugable
 is_a: MI:2040 ! drug type
 
@@ -8016,15 +8030,15 @@ is_a: MI:2040 ! drug type
 id: MI:2151
 name: other drug interaction
 def: "Effect of additional treatment on a given drug action." [PMID:14755292]
-comment: IntAct MeSH term? SNOWMAN
 subset: Drugable
+synonym: "drug interaction" EXACT PSI-MI-short []
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2152
 name: food interaction
 def: "Effect of food ingestion on a given drug treatment." [PMID:14755292]
-comment: IntAct MeSH term? SNOWMAN
+comment: IntAct MeSH term or SNOWMAN.
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
@@ -8032,7 +8046,6 @@ is_a: MI:2089 ! bioactive entity attribute name
 id: MI:2153
 name: pdr health
 def: "Hyperlink to PDRhealth entry for the given drug (if it exists)" [PMID:14755292]
-comment: IntAct
 subset: Drugable
 synonym: "PDRhealth" EXACT PSI-MI-alternate []
 is_a: MI:2054 ! bioactive entity reference
@@ -8041,7 +8054,6 @@ is_a: MI:2054 ! bioactive entity reference
 id: MI:2154
 name: wikipedia
 def: "Hyperlink to wikipedia entry for the given drug (if it exists)" [PMID:14755292]
-comment: IntAct
 subset: Drugable
 is_a: MI:2054 ! bioactive entity reference
 
@@ -8064,7 +8076,7 @@ is_a: MI:2025 ! molecular weight
 [Term]
 id: MI:2157
 name: experimental water solubility
-def: "Water solubility in mg/mL or g/L" [PMID:14755292]
+def: "Water solubility in mg/mL or g/L." [PMID:14755292]
 subset: Drugable
 synonym: "exp h2o solubilty" EXACT PSI-MI-short []
 synonym: "experimental h2o solubility" EXACT PSI-MI-alternate []
