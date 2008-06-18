@@ -7,7 +7,7 @@ subsetdef: PSI-MI slim "Subset of PSI-MI"
 synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.46 2008/06/18 10:18:34 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.47 2008/06/18 10:41:35 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -6590,7 +6590,7 @@ is_a: MI:0473 ! participant database
 [Term]
 id: MI:0832
 name: half cystine
-def: "A protein modification that is effectively either one half of a cystine cross-link, or a cysteine residue with one hydrogen atom or proton removed" [MOD:00798, RESID:AA0025, UniMod:374]
+def: "A protein modification that is effectively either one half of a cystine cross-link, or a cysteine residue with one hydrogen atom or proton removed" [MOD:00798, RESID:AA0025]
 subset: PSI-MI slim
 synonym: "Half of a disulfide bridge" EXACT PSI-MI-alternate []
 is_a: MI:0179 ! other modification
