@@ -7,7 +7,7 @@ subsetdef: PSI-MI slim "Subset of PSI-MI"
 synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.47 2008/06/18 10:41:35 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.48 2008/06/18 14:51:53 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -2118,7 +2118,6 @@ is_a: MI:0414 ! enzymatic reaction
 id: MI:0218
 name: physical interaction
 def: "Interaction among molecules that can be direct or indirect.\nOBSOLETE: splitted to 'association' MI:0914 and 'physical association' MI:0915. For remapping consider the experimental setting of an interaction. For bulk remapping a possible criteria is to whatever physical interaction that has among its participant a bait should become 'association' MI:0914 the others can become 'physical association' MI:0915. Two hybrid interactions are an expection and can be 'physical association' MI:0915." [PMID:14755292]
-synonym: "aggregation" EXACT PSI-MI-alternate []
 is_obsolete: true
 
 [Term]
@@ -3033,6 +3032,7 @@ name: identical object
 def: "Reference to the corresponding object in another database. Correspondence may be complete or partial." [PMID:14755292]
 comment: For instance this qualifier, in an interaction entry, can be associated to a cross reference to the same interaction in an other database.
 subset: PSI-MI slim
+subset: Drugable
 synonym: "identity" EXACT PSI-MI-short []
 is_a: MI:0353 ! cross-reference type
 
@@ -7607,6 +7607,7 @@ id: MI:2054
 name: bioactive entity reference
 def: "General on-line reference to other details about the drug" [PMID:14755292]
 subset: Drugable
+subset: PSI-MI slim
 synonym: "bioactive entity ref" EXACT PSI-MI-short []
 is_a: MI:0473 ! participant database
 
