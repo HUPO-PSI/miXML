@@ -138,7 +138,7 @@
             <xs:documentation>PSI MI version within given level</xs:documentation>
           </xs:annotation>
         </xs:attribute>
-        <xs:attribute name="minorVersion" type="xs:int" use="optional" fixed="3"/>
+        <xs:attribute name="minorVersion" type="xs:int" use="optional" fixed="4"/>
   </xs:complexType>
 
 	<!--aministrative elements-->
