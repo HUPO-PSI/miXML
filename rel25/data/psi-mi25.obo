@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:06:2008 11:17
+date: 14:07:2008 12:22
 saved-by: luisa
 auto-generated-by: OBO-Edit 1.101
 subsetdef: Drugable "Drugable Genome Project"
@@ -7,7 +7,7 @@ subsetdef: PSI-MI slim "Subset of PSI-MI"
 synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.48 2008/06/18 14:51:53 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.49 2008/07/14 11:26:31 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -359,7 +359,7 @@ def: "Electron microscopy methods provide insights into the structure of biologi
 subset: PSI-MI slim
 synonym: "Electron cryomicroscopy" EXACT PSI-MI-alternate []
 synonym: "Electron crystallography" EXACT PSI-MI-alternate []
-is_a: MI:0428 ! imaging techniques
+is_a: MI:0428 ! imaging technique
 
 [Term]
 id: MI:0041
@@ -2040,7 +2040,7 @@ is_a: MI:0414 ! enzymatic reaction
 [Term]
 id: MI:0208
 name: genetic interaction
-def: "Functional relationship among genes revealed by the phenotype of cells carrying combined mutations of those genes." [PMID:14755292]
+def: "Two genes A and B \"genetically interact\" when the phenotype generated as the result of mutations in both genes (double mutant ab) is unexpectedly not just a combination of the phenotypes of the two single mutants a and b." [PMID:16527956]
 subset: PSI-MI slim
 is_a: MI:0190 ! interaction type
 
@@ -2167,7 +2167,7 @@ def: "The method combines a modified chromatin immunoprecipitation (ChIP) proced
 subset: PSI-MI slim
 synonym: "chip-chip" EXACT PSI-MI-short []
 is_a: MI:0008 ! array technology
-is_a: MI:0402 ! chromatin immunoprecipitation assays
+is_a: MI:0402 ! chromatin immunoprecipitation assay
 
 [Term]
 id: MI:0226
@@ -3031,8 +3031,8 @@ id: MI:0356
 name: identical object
 def: "Reference to the corresponding object in another database. Correspondence may be complete or partial." [PMID:14755292]
 comment: For instance this qualifier, in an interaction entry, can be associated to a cross reference to the same interaction in an other database.
-subset: PSI-MI slim
 subset: Drugable
+subset: PSI-MI slim
 synonym: "identity" EXACT PSI-MI-short []
 is_a: MI:0353 ! cross-reference type
 
@@ -3372,7 +3372,7 @@ is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0402
-name: chromatin immunoprecipitation assays
+name: chromatin immunoprecipitation assay
 def: "Chromatin immunoprecipitation (ChIP) is a powerful approach that allows one to define the interaction of factors with specific chromosomal sites in living cells. ChIP involves treating cells or tissue briefly with formaldehyde to crosslink proteins to DNA. An antibody against a protein suspected of binding a given cis-element is then used to immunoprecipitate chromatin fragments. Polymerase chain reaction analysis of the immunoprecipitate with primers flanking the cis-element reveals whether a specific DNA sequence is recovered in an immune-specific manner and therefore whether the protein contacted the site in living cells." [PMID:12054902]
 subset: PSI-MI slim
 synonym: "ch-ip" EXACT PSI-MI-short []
@@ -3485,7 +3485,7 @@ name: fluorescence microscopy
 def: "Fluorescent microscopy uses a high intensity light to illuminate the sample. This light excites fluorescence species in the sample, which then emit light of a longer wavelength. A fluorescent microscope also produces a magnified image of the sample, but the image is based on the second light source -- the light emanating from the fluorescent species -- rather than from the light originally used to illuminate, and excite, the sample." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "fluorescence imaging" EXACT PSI-MI-short []
-is_a: MI:0428 ! imaging techniques
+is_a: MI:0428 ! imaging technique
 
 [Term]
 id: MI:0417
@@ -3565,7 +3565,7 @@ id: MI:0426
 name: light microscopy
 def: "Light visible microscopy uses environmental light to illuminate the sample and produce a magnified image of the sample." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0428 ! imaging techniques
+is_a: MI:0428 ! imaging technique
 
 [Term]
 id: MI:0427
@@ -3576,7 +3576,7 @@ is_a: MI:0661 ! experimental participant identification
 
 [Term]
 id: MI:0428
-name: imaging techniques
+name: imaging technique
 def: "Methods that provide images of molecules at various resolution depending on the technology used." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "microscopy" EXACT PSI-MI-alternate []
@@ -5366,19 +5366,20 @@ id: MI:0638
 name: prerequisite-ptm
 def: "Post translational modification required for an interaction to occur." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0668 ! feature attribute name
+is_a: MI:0925 ! observed ptm
 
 [Term]
 id: MI:0639
 name: resulting-ptm
 def: "Post translational modification occurs subsequently to an interaction." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0668 ! feature attribute name
+is_a: MI:0925 ! observed ptm
 
 [Term]
 id: MI:0640
 name: parameter type
 def: "Parameter for enzymatic or binding kinetic studies." [PMID:14755292]
+subset: Drugable
 subset: PSI-MI slim
 relationship: part_of MI:0000 ! molecular interaction
 
@@ -5555,7 +5556,7 @@ is_a: MI:0002 ! participant identification method
 [Term]
 id: MI:0662
 name: imex-primary
-def: "IMEx primary identifier that is assigned to an interaction record by the database that created the record in the context of IMEx consortium. The identifiers are unique across all member database as they are all generated by a centralized key-assigner.\nhttp://imex.sourceforge.net/" [PMID:14755292]
+def: "IMEx primary identifier that is assigned to an experiment record by the database that created the record in the context of IMEx consortium. The identifiers are unique across all member database as they are all generated by a centralized key-assigner.\nhttp://imex.sourceforge.net/" [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0353 ! cross-reference type
 
@@ -5564,7 +5565,7 @@ id: MI:0663
 name: confocal microscopy
 def: "A confocal is a standard epifluorescence microscope with improvement essentially coming from the rejection of out-of-focus light interference. Confocal imaging system achieves this by two strategies: a) by illuminating a single point of the specimen at any one time with a focused beam, so that illumination intensity drops off rapidly and b) by the use of blocking a pinhole aperture in a conjugate focal plane to the specimen so that light emitted away from the point in the specimen being illuminated is blocked from reaching the detector. Only the light from the single point illuminated of the specimen passing through the image pinhole is detected by a photodetector. Usually a computer is used to control the sequential scanning of the sample and to assemble the image for display onto a video screen." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0428 ! imaging techniques
+is_a: MI:0428 ! imaging technique
 
 [Term]
 id: MI:0664
@@ -5737,7 +5738,7 @@ is_a: MI:0495 ! experimental role
 [Term]
 id: MI:0685
 name: source reference
-def: "Reference pointing to the originating database in which an interaction, or other curated information, was first described." [PMID:14755292]
+def: "Publication or document describing the originating resource where an interaction, or other curated information, was first described." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0353 ! cross-reference type
 
@@ -6274,56 +6275,56 @@ is_a: MI:0787 ! genetic experimental form
 
 [Term]
 id: MI:0794
-name: synthetic interaction
-def: "The phenotype resulting from genetic perturbation A and the phenotype resulting from genetic perturbation B have no effect on the WT background, but the combined genetic perturbation of A and B has a phenotypic effect. " [PMID:15833125]
+name: synthetic genetic interaction
+def: "The phenotype resulting from genetic perturbation a and the phenotype resulting from genetic perturbation b have no effect on the WT background, but the combined genetic perturbation of A and B has a phenotypic effect. E. g., WT = a = b > ab." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "synthetic" EXACT PSI-MI-short []
-is_a: MI:0208 ! genetic interaction
+is_a: MI:0933 ! negative genetic interaction
 
 [Term]
 id: MI:0795
-name: asynthetic interaction
-def: "The phenotype resulting from genetic perturbation of A alone,   B alone and AB combined have the same effect on the WT background." [PMID:15833125]
+name: asynthetic genetic interaction
+def: "The phenotype resulting from genetic perturbation of A alone,   B alone and AB combined have the same effect on the WT background. E. g., WT > a = b = ab." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "asynthetic" EXACT PSI-MI-short []
-is_a: MI:0208 ! genetic interaction
+is_a: MI:0797 ! epistatic genetic interaction
 
 [Term]
 id: MI:0796
-name: suppressive interaction
-def: "The phenotype resulting from genetic perturbation of A has an effect on WT, but that effect is abolished by adding the suppressor B, which itself shows no single-mutant effect (for example, WT = B = AB < A); " [PMID:15833125]
+name: suppressive genetic interaction
+def: "The phenotype resulting from genetic perturbation of A has an effect on WT, but that effect is abolished by adding the suppressor b, which itself shows no single-mutant effect. E. g., WT = b = ab > a." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "suppression" EXACT PSI-MI-short []
-is_a: MI:0208 ! genetic interaction
+is_a: MI:0797 ! epistatic genetic interaction
 
 [Term]
 id: MI:0797
-name: epistatic interaction
+name: epistatic genetic interaction
 def: "The phenotype resulting from genetic perturbation of A and B have different effects (in terms of direction or magnitude) on the wild-type background and the double mutant has the same phenotype as either A or B (for example, A < WT < B = AB)." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "epistatic" EXACT PSI-MI-short []
-is_a: MI:0208 ! genetic interaction
+is_a: MI:0935 ! positive genetic interaction
 
 [Term]
 id: MI:0798
-name: conditional interaction
-def: "The phenotype resulting from genetic perturbation of A has an effect only in the B background, or the B mutant has an effect only in the A background." [PMID:15833125]
+name: conditional genetic interaction
+def: "The phenotype resulting from genetic perturbation of A has an effect only in the b background, or the b mutant has an effect only in the a background. a has an effect only in the b background, or the b mutant has an effect only in the a background. E. g., WT = a > ab > b or WT > a > b > ab." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "conditional" EXACT PSI-MI-short []
 is_a: MI:0208 ! genetic interaction
 
 [Term]
 id: MI:0799
-name: additive interaction
-def: "Single-mutant phenotype effects combine to give a double-mutant effect different from the wild type and different from single mutant effect.  For instance WT < A= B < AB, B < WT = AB < A, WT < A < B < AB, B < WT < AB < A, and all additional inequalities obtained by interchanging A and B, or reversing the effect of both A and B. " [PMID:15833125]
+name: additive genetic interaction
+def: "Single-mutant phenotype effects combine to give a double-mutant effect different from the wild type and different from single mutant effect. For instance, WT < a = b < ab, b < WT = ab < a, WT < a < b < ab, b < WT < ab < a, and all additional inequalities obtained by interchanging a and b, or reversing the effect of both a and b." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "additive" EXACT PSI-MI-short []
 is_a: MI:0208 ! genetic interaction
 
 [Term]
 id: MI:0800
-name: single nonmonotonic interaction
-def: "The phenotype resulting from genetic perturbation of  B shows opposing effects in the WT and A backgrounds (for example, B > WT and AB< A); or, A shows opposing effects in the WT and B backgrounds, but not both. " [PMID:15833125]
+name: single nonmonotonic genetic interaction
+def: "The phenotype resulting from genetic perturbation of B shows opposing effects in the WT and a backgrounds (for example, b > WT and ab < a); or, a shows opposing effects in the WT and b backgrounds, but not both. E.g., WT > a > ab > b." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "single nonmonotonic" EXACT PSI-MI-short []
 is_a: MI:0208 ! genetic interaction
@@ -6331,19 +6332,19 @@ is_a: MI:0208 ! genetic interaction
 [Term]
 id: MI:0801
 name: double nonmonotonic interaction
-def: "The phenotype resulting from genetic perturbation of both A and B show opposing effects in the WT background and the background with the other mutant gene." [PMID:15833125]
+def: "The phenotype resulting from genetic perturbation of both A and B show opposing effects in the WT background and the background with the other mutant gene. E.g., WT >= ab > a >= b" [PMID:15833125]
 subset: PSI-MI slim
 synonym: "double nonmonotonic" EXACT PSI-MI-short []
-is_a: MI:0208 ! genetic interaction
+is_a: MI:0935 ! positive genetic interaction
 
 [Term]
 id: MI:0802
 name: enhancement interaction
-def: "The A genetic perturbation enhances the phenotype of the B perturbation, or vice versa (e.g. WT = A < B < AB or WT = B < A < AB). This could be conditional or additive by the above scheme. " [PMID:15833125]
+def: "The A genetic perturbation enhances the phenotype of the B perturbation, or vice versa (e.g. WT = A < B < AB or WT = B < A < AB). This could be conditional or additive by the above scheme." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "enhancement" EXACT PSI-MI-short []
-is_a: MI:0798 ! conditional interaction
-is_a: MI:0799 ! additive interaction
+is_a: MI:0798 ! conditional genetic interaction
+is_a: MI:0799 ! additive genetic interaction
 
 [Term]
 id: MI:0803
@@ -6555,7 +6556,7 @@ id: MI:0827
 name: x-ray tomography
 def: "X-ray Tomography is a branch of X-ray microscopy. A series of projection images are used to calculate a three dimensional reconstruction of an object. The technique has found many applications in materials science and later in biology and biomedical research. In terms of the latter, the National Center for X-ray Tomography (NCXT) is one of the principle developers of this technology, in particular for imaging whole, hydrated cells." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0428 ! imaging techniques
+is_a: MI:0428 ! imaging technique
 
 [Term]
 id: MI:0828
@@ -6871,7 +6872,7 @@ name: fluorescence acceptor donor pair
 def: "Pair of fluorophores attached to the same molecule used in a fret  experiment to observe the details of conformational  changes ." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "fret pair" EXACT PSI-MI-short []
-is_a: MI:0898 ! putative self
+is_a: MI:0495 ! experimental role
 
 [Term]
 id: MI:0866
@@ -6925,7 +6926,7 @@ def: "The atomic force microscope (AFM) is a very high-resolution type of scanni
 subset: PSI-MI slim
 synonym: "AFM" EXACT PSI-MI-alternate []
 synonym: "atomic force microsc" EXACT PSI-MI-short []
-is_a: MI:0428 ! imaging techniques
+is_a: MI:0428 ! imaging technique
 
 [Term]
 id: MI:0873
@@ -7301,6 +7302,84 @@ is_a: MI:0461 ! interaction database
 is_a: MI:0489 ! source database
 
 [Term]
+id: MI:0924
+name: camjedb
+def: "Camjedb is a comprehensive database for information on the genome of Campylobacter jejuni.\nhttp://www.sanger.ac.uk/Projects/C_jejuni/" [PMID:106882042]
+subset: PSI-MI slim
+is_a: MI:0683 ! sequence database
+
+[Term]
+id: MI:0925
+name: observed ptm
+def: "Post translational modification observed on a protein in the context of an interaction." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:0668 ! feature attribute name
+
+[Term]
+id: MI:0926
+name: fiash label
+def: "This fluorescent label is a small ligand  membrane-permeant and nonfluorescent until it binds with high affinity and specificity to the tetracysteine domain. Such in situ labeling adds much less mass than does green fluorescent protein and offers greater versatility in attachment sites as well as potential spectroscopic and chemical properties." [PMID:9657724]
+subset: PSI-MI slim
+synonym: "4',5'-bis(1,3,2-dithioarsolan-2-yl)fluorescein " EXACT PSI-MI-alternate []
+synonym: "FIAsH label" EXACT PSI-MI-alternate []
+is_a: MI:0857 ! fluorescent dye label
+
+[Term]
+id: MI:0927
+name: iaedans label
+def: "IAEDANS is fluorescent tag that bind to cysteines. IAEDANS is the acronyme of (5((((2-iodoacetyl)amino)ethyl)amino)-naphthalene-1-sulfonic acid)  with free SH groups." [PMID:11052891]
+subset: PSI-MI slim
+synonym: "(5((((2-iodoacetyl)amino)ethyl)amino)-naphthalene-1-sulfonic acid) " EXACT PSI-MI-alternate []
+synonym: "1,5-IAEDANS" EXACT PSI-MI-alternate []
+synonym: "IAEDANS" EXACT PSI-MI-alternate []
+is_a: MI:0857 ! fluorescent dye label
+
+[Term]
+id: MI:0928
+name: filter trap assay
+def: "Purified protein are mixed in a buffer and the resulting mixture is\nfiltered through a cellulose-acetate filters (0.2 ?m pore size). Big\naggregates are retained on the filter and later characterized by antibody." [PMID:10859365]
+subset: PSI-MI slim
+synonym: "Filter retention assay" EXACT PSI-MI-alternate []
+is_a: MI:0013 ! biophysical
+is_a: MI:0091 ! chromatography technology
+
+[Term]
+id: MI:0929
+name: nothern blot
+def: "A standard procedure to identify RNA fragments containing specific\nsequences. In this procedure RNA fragments are separated by\nelectrophoresis, the fragments are transferred to a membrane and the\nmembrane is incubated with a radio labelled probe that hybridises any\ncomplementary subsequence." [PMID:414220]
+subset: PSI-MI slim
+synonym: "northen" EXACT PSI-MI-alternate []
+is_a: MI:0078 ! nucleotide sequence identification
+
+[Term]
+id: MI:0932
+name: noninteractive genetic interaction
+def: "Mutation that has no effect in the WT and b backgrounds, or b has no effect in the a and WT backgrounds, or both hold true. E. g., WT = a > b = ab." [PMID:15833125]
+subset: PSI-MI slim
+is_a: MI:0934 ! neutral genetic interaction
+
+[Term]
+id: MI:0933
+name: negative genetic interaction
+def: "The phenotype of the double mutant ab is stronger than expected from the combination of the individual effects of a and b." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:0208 ! genetic interaction
+
+[Term]
+id: MI:0934
+name: neutral genetic interaction
+def: "The phenotype of the double mutant ab is equal to the phenotype expected from the combination of the individual effects of a and b." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:0208 ! genetic interaction
+
+[Term]
+id: MI:0935
+name: positive genetic interaction
+def: "The phenotype of the double mutant ab is weaker than expected from the combination of the individual effects of a and b." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:0208 ! genetic interaction
+
+[Term]
 id: MI:2002
 name: drugbank
 def: "DrugBank Accession number consisting of the 4 letter prefix and a 5 number suffix. Each Accession number is unique to the drug's generic name. The 4 letter suffix (APRD, EXPT, BIOD, NUTR) indicates the type of drug (APRD=approved small molecule drug, EXPT=experimental drug, BIOD=biotech drug, NUTR=nutraceutical or natural product). Biotech drugs consist of FDA approved peptide, protein or nucleic acid drugs, approved small molecule drugs are FDA approved non-biotech drugs, nutraceuticals are natural products (amino acids, vitamins, other metabolites) and experimental drugs include drugs under trial, pre-clinical drugs, unapproved drugs, well known inhibitors and possible toxins." [PMID:14755292]
@@ -7450,14 +7529,14 @@ id: MI:2025
 name: molecular weight
 def: "Molecular weight in g/mol, determined from molecular formula or sequence." [PMID:14755292]
 subset: Drugable
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2026
 name: melting point
 def: "The melting point of a solid is the temperature range at which it changes state from solid to liquid." [PMID:14755292]
 subset: Drugable
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2027
@@ -7472,28 +7551,28 @@ id: MI:2029
 name: logp
 def: "Water/octanol partition coefficient  of a small molecule." [PMID:14755292]
 subset: Drugable
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2030
 name: isoelectric point
 def: "The isoelectric point (pI) is the pH at which a particular molecule or surface carries no net electrical charge. For an amino acid with only one amine and one carboxyl group, the pI can be calculated from the pKas of this molecule." [PMID:14755292]
 subset: Drugable
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2033
 name: hydrophobicity
 def: "Physical property of a molecule (known as a hydrophobe) that is repelled from a mass of water. Gravy score." [PMID:14755292]
 subset: Drugable
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2036
 name: boiling point
 def: "The boiling point of a liquid is the temperature at which the vapor pressure of the liquid equals the environmental pressure surrounding the liquid. A liquid in a vacuum environment has a lower boiling point than when the liquid is at atmospheric pressure. A liquid in a high pressure environment has a higher boiling point than when the liquid is at atmospheric pressure. In other words, the boiling point of liquids varies with and depends upon the surrounding environmental pressure." [PMID:14755292]
 subset: Drugable
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2039
@@ -7543,7 +7622,7 @@ id: MI:2045
 name: drug absorption
 def: "Determination of how quickly and how much of a drug reaches its intended target (site) of action." [PMID:14755292]
 subset: Drugable
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2046
@@ -7552,16 +7631,16 @@ def: "The LD50 is the dose that kills half (50%) of the animals tested" [PMID:14
 subset: Drugable
 synonym: "ld50" EXACT PSI-MI-alternate []
 synonym: "lethal dose 50 %" EXACT PSI-MI-alternate []
-is_a: MI:2135 ! toxicity
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2047
-name: plasma protein binding
+name: percentage of plasma protein binding
 def: "Percentage of the drug that is bound in plasma proteins" [PMID:14755292]
 subset: Drugable
 synonym: "plasma prot binding" EXACT PSI-MI-short []
 synonym: "protein binding %" EXACT PSI-MI-alternate []
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2048
@@ -7569,21 +7648,21 @@ name: drug biotransformation
 def: "The chemical conversion of drugs to other compounds in the body, excluding degradation due to any inherent chemical instability of drugs in biological media." [PMID:14755292]
 subset: Drugable
 synonym: "drug metabolism" EXACT PSI-MI-short []
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:2115 ! pharmacokinetics attribute name
 
 [Term]
 id: MI:2049
 name: elimination half life
-def: "The time it takes for the body to eliminate or breakdown half of a dose of a pharmacologic agent, in practice the time taken for plasma concentration to reduce by 50%." [PMID:14755292]
+def: "Rate The time it takes for the body to eliminate or breakdown half of a dose of a pharmacologic agent, in practice the time taken for plasma concentration to reduce by 50%." [PMID:14755292]
 subset: Drugable
 synonym: "distribution halflife" EXACT PSI-MI-alternate []
 synonym: "elimin half life" EXACT PSI-MI-short []
 synonym: "t1/2" EXACT PSI-MI-alternate []
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2050
-name: dosage forms
+name: dosage form
 def: "How the drug is dispensed (tablets, capsules, solutions), packing material." [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
@@ -7625,7 +7704,7 @@ name: solubility
 def: "Potential ability of a substance to dissolve in a liquid." [PMID:14755292]
 subset: Drugable
 synonym: "dt theoretical pi" EXACT PSI-MI-short []
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2084
@@ -7703,10 +7782,10 @@ is_a: MI:2040 ! drug type
 [Term]
 id: MI:2105
 name: pka
-def: "Negative decimal logarithm of Ka, acid dissiciation equilibrium constant for the dissociation of a weak acid." [PMID:14755292]
+def: "Negative decimal logarithm of Ka, acid dissociation equilibrium constant for the dissociation of a weak acid." [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2106
@@ -7715,7 +7794,7 @@ def: "The degree of ionization refers to the proportion of neutral particles suc
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "ionisation ph 7.4" EXACT PSI-MI-short []
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2107
@@ -7723,7 +7802,7 @@ name: logd
 def: "The LogD is the ratio of the equilibrium concentrations of all species (unionized and ionized) of a molecule in octanol to same species in the water phase at a given temperature, normally 25° C. It differs from LogP in that ionized species are considered as well as the neutral form of the molecule.pH 7.4" [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2108
@@ -7747,7 +7826,7 @@ def: "Diffusion coefficient D is proportional to the velocity of the diffusing p
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "diffusion coeff" EXACT PSI-MI-short []
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2112
@@ -7764,11 +7843,11 @@ name: dissolution profile
 def: "The rate of dissolution is a key target for controlling the duration of a drug's effect, and as such, several dosage forms that contain the same active ingredient may be available, differing only in the rate of dissolution. If a drug is supplied in a form that is not readily dissolved, the drug may be released more gradually over time with a longer duration of action. Having a longer duration of action may improve compliance since the medication will not have to be taken as often. Additionally, slow-release dosage forms may maintain concentrations within an acceptable therapeutic range over a long period of time, as opposed to quick-release dosage forms which may result in sharper peaks and troughs in serum concentrations." [PMID:14755292]
 comment: The prediction of the value for this paramter is currently not possible.
 subset: Drugable
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2115
-name: pharmacokinetics
+name: pharmacokinetics attribute name
 def: "Determination of the fate of substances administered externally to a living organism i.e. the study of what the body does to a drug." [PMID:14755292]
 subset: Drugable
 is_a: MI:2086 ! physicochemical attribute name
@@ -7779,7 +7858,7 @@ name: cell permeability
 def: "The permitting or activating of the passage of substances into, out of, or through cells." [PMID:14755292]
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2118
@@ -7790,7 +7869,7 @@ subset: Drugable
 synonym: "distribution volume" EXACT PSI-MI-alternate []
 synonym: "vd" EXACT PSI-MI-alternate []
 synonym: "vol of distribution" EXACT PSI-MI-short []
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2120
@@ -7798,7 +7877,7 @@ name: tissue distribution
 def: "Accumulation of a drug or chemical substance in various organs (including those not relevant to its pharmacologic or therapeutic action). This distribution depends on the blood flow or perfusion rate of the organ, the ability of the drug to penetrate organ membranes, tissue specificity, protein binding. The distribution is usually expressed as tissue to plasma ratios." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2121
@@ -7806,14 +7885,14 @@ name: transporter binding
 def: "Substrate of a carrier system allowing the intake of an agent into an organ or part of body." [PMID:14755292]
 comment: The prediction of the value for this parameter is currently not possible.
 subset: Drugable
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:2115 ! pharmacokinetics attribute name
 
 [Term]
 id: MI:2122
 name: clearance
 def: "The ratio of excretion is or measure of the speed at which a constituent is lost from the body." [PMID:14755292]
 subset: Drugable
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2123
@@ -7821,7 +7900,7 @@ name: renal clearance
 def: "The renal clearance ratio or fractional excretion is a measure of the speed at which a constituent of urine passes through the kidneys, in this context the rate at which a pharmacological agent is lost from the body via urine." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
-is_a: MI:2122 ! clearance
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2124
@@ -7831,7 +7910,7 @@ comment: The prediction of the value for this paramter is currently not possible
 subset: Drugable
 synonym: "cl" EXACT PSI-MI-alternate []
 synonym: "clearance" EXACT PSI-MI-alternate []
-is_a: MI:2122 ! clearance
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2125
@@ -7840,7 +7919,7 @@ def: "The Maximum Absorbable Dose (MAD) represents the amount of drug that can p
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "mad" EXACT PSI-MI-short []
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2126
@@ -7849,7 +7928,7 @@ def: "Water soluble compounds are absorbed in the small intestine mainly via two
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "paracellular absorp" EXACT PSI-MI-short []
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2127
@@ -7857,7 +7936,7 @@ name: tmax/cmax
 def: "Ratio between the time value at Cmax (maximum concentration) in a dose response curve, and the Cmax value itself." [PMID:14755292]
 comment: The prediction of the value for this paramter is currently not possible.
 subset: Drugable
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2128
@@ -7886,7 +7965,7 @@ comment: Algorithms have been published to predict the value of this parameter b
 subset: Drugable
 synonym: "cyp-450 inhibition" EXACT PSI-MI-alternate []
 synonym: "Cytochrome P450 inhibition" EXACT PSI-MI-alternate []
-is_a: MI:2135 ! toxicity
+is_a: MI:2135 ! toxicity attribute name
 
 [Term]
 id: MI:2131
@@ -7895,7 +7974,7 @@ def: "Identification of the breakdown products of a substance, either through ch
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 synonym: "metabolite identific" EXACT PSI-MI-short []
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:2115 ! pharmacokinetics attribute name
 
 [Term]
 id: MI:2132
@@ -7903,7 +7982,7 @@ name: gsh adducts
 def: "Derivative molecule which has formed from a reaction with glutathione." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
-is_a: MI:2115 ! pharmacokinetics
+is_a: MI:2115 ! pharmacokinetics attribute name
 
 [Term]
 id: MI:2133
@@ -7916,7 +7995,7 @@ is_a: MI:2048 ! drug biotransformation
 
 [Term]
 id: MI:2135
-name: toxicity
+name: toxicity attribute name
 def: "The degree to which a substance can harm humans or animals." [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
@@ -7927,7 +8006,7 @@ name: herg binding
 def: "Binds to the hERG (human Ether-a-go-go Related Gene) (Q12809) which encodes the Kv11.1 potassium ion channel responsible for the repolarizing IKr current in the cardiac action potential." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
-is_a: MI:2135 ! toxicity
+is_a: MI:2135 ! toxicity attribute name
 
 [Term]
 id: MI:2137
@@ -7935,7 +8014,7 @@ name: genotoxicity
 def: "Tendency of a bioactive entity to induce damage at the level of the gene." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
-is_a: MI:2135 ! toxicity
+is_a: MI:2135 ! toxicity attribute name
 
 [Term]
 id: MI:2138
@@ -7943,7 +8022,7 @@ name: mutagenicity
 def: "Tendency of a bioactive entity to induce genetic mutations at the nucleotide level e.g. substitution of nucleotide base-pairs and insertions and deletions of one or more nucleotides in DNA sequences.." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
-is_a: MI:2135 ! toxicity
+is_a: MI:2135 ! toxicity attribute name
 
 [Term]
 id: MI:2139
@@ -7952,7 +8031,7 @@ def: "Tendency of a bioactive entity to induce a cancer." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 synonym: "cancerogenicity" EXACT PSI-MI-alternate []
-is_a: MI:2135 ! toxicity
+is_a: MI:2135 ! toxicity attribute name
 
 [Term]
 id: MI:2140
@@ -7960,7 +8039,7 @@ name: chromosome damage
 def: "Tendency of a bioactive entity to induce damage at the level of the chromosome e.g. induce a change in chromosome structure and number.." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
-is_a: MI:2135 ! toxicity
+is_a: MI:2135 ! toxicity attribute name
 
 [Term]
 id: MI:2141
@@ -7968,7 +8047,7 @@ name: hepatotoxicity
 def: "Tendency of a bioactive entity to affect liver function." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
-is_a: MI:2135 ! toxicity
+is_a: MI:2135 ! toxicity attribute name
 
 [Term]
 id: MI:2142
@@ -7976,7 +8055,7 @@ name: phospholipidosis
 def: "Causes excess phospholipids to accumulate within cells" [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
-is_a: MI:2135 ! toxicity
+is_a: MI:2135 ! toxicity attribute name
 
 [Term]
 id: MI:2145
@@ -8099,7 +8178,7 @@ name: logs
 def: "Solubility of a molecule in a given solvant." [PMID:14755292]
 subset: Drugable
 synonym: "logS" EXACT PSI-MI-alternate []
-is_a: MI:2086 ! physicochemical attribute name
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2161
@@ -8117,7 +8196,7 @@ def: "Experimentally derived value for ability of a  compound to cross epithelia
 comment: Quantitative prediction of this parameter is possible.
 subset: Drugable
 synonym: "caco2 permeability" EXACT PSI-MI-short []
-is_a: MI:2116 ! cell permeability
+is_a: MI:0640 ! parameter type
 
 [Term]
 id: MI:2163
