@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:07:2008 12:22
+date: 14:07:2008 12:40
 saved-by: luisa
 auto-generated-by: OBO-Edit 1.101
 subsetdef: Drugable "Drugable Genome Project"
@@ -7,7 +7,7 @@ subsetdef: PSI-MI slim "Subset of PSI-MI"
 synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.49 2008/07/14 11:26:31 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.50 2008/07/14 11:42:03 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -6340,11 +6340,10 @@ is_a: MI:0935 ! positive genetic interaction
 [Term]
 id: MI:0802
 name: enhancement interaction
-def: "The A genetic perturbation enhances the phenotype of the B perturbation, or vice versa (e.g. WT = A < B < AB or WT = B < A < AB). This could be conditional or additive by the above scheme." [PMID:15833125]
+def: "The A genetic perturbation enhances the phenotype of the B perturbation, or vice versa (e.g. WT = A < B < AB or WT = B < A < AB). This could be conditional or additive by the above scheme.\nOBSOLETE: remap to MI:0933 'negative genetic interaction'" [PMID:15833125]
 subset: PSI-MI slim
 synonym: "enhancement" EXACT PSI-MI-short []
-is_a: MI:0798 ! conditional genetic interaction
-is_a: MI:0799 ! additive genetic interaction
+is_obsolete: true
 
 [Term]
 id: MI:0803
