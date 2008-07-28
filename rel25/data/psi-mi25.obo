@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:07:2008 12:56
+date: 28:07:2008 18:51
 saved-by: luisa
 auto-generated-by: OBO-Edit 1.101
 subsetdef: Drugable "Drugable Genome Project"
@@ -7,7 +7,7 @@ subsetdef: PSI-MI slim "Subset of PSI-MI"
 synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.51 2008/07/14 11:55:18 luisa_montecchi Exp $
+remark: $Id: psi-mi25.obo,v 1.52 2008/07/28 17:54:57 luisa_montecchi Exp $
 remark: Notes:
 remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
 remark: mapping an element of the PSI Molecular Interaction XML schema.
@@ -6275,74 +6275,79 @@ is_a: MI:0787 ! genetic experimental form
 
 [Term]
 id: MI:0794
-name: synthetic genetic interaction
+name: synthetic genetic interaction defined by inequality
 def: "The phenotype resulting from genetic perturbation a and the phenotype resulting from genetic perturbation b have no effect on the WT background, but the combined genetic perturbation of A and B has a phenotypic effect. E. g., WT = a = b > ab." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "synthetic" EXACT PSI-MI-short []
 synonym: "synthetic genetic interaction (sensu inequality)" EXACT PSI-MI-alternate []
+is_a: MI:0931 ! genetic interaction defined by inequality
 is_a: MI:0933 ! negative genetic interaction
 
 [Term]
 id: MI:0795
-name: asynthetic genetic interaction
+name: asynthetic genetic interaction defined by inequality
 def: "The phenotype resulting from genetic perturbation of A alone,   B alone and AB combined have the same effect on the WT background. E. g., WT > a = b = ab." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "asynthetic" EXACT PSI-MI-short []
 synonym: "asynthetic genetic interaction (sensu inequality)" EXACT PSI-MI-alternate []
-is_a: MI:0935 ! positive genetic interaction
+is_a: MI:0930 ! epistatic genetic interaction
+is_a: MI:0931 ! genetic interaction defined by inequality
 
 [Term]
 id: MI:0796
-name: suppressive genetic interaction
+name: suppressive genetic interaction defined by inequality
 def: "The phenotype resulting from genetic perturbation of A has an effect on WT, but that effect is abolished by adding the suppressor b, which itself shows no single-mutant effect. E. g., WT = b = ab > a." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "suppression" EXACT PSI-MI-short []
 synonym: "suppressive genetic interaction (sensu inequality)" EXACT PSI-MI-alternate []
-is_a: MI:0935 ! positive genetic interaction
+is_a: MI:0930 ! epistatic genetic interaction
+is_a: MI:0931 ! genetic interaction defined by inequality
 
 [Term]
 id: MI:0797
-name: epistatic genetic interaction
+name: epistatic genetic interaction defined by inequality
 def: "The phenotype resulting from genetic perturbation of A and B have different effects (in terms of direction or magnitude) on the wild-type background and the double mutant has the same phenotype as either A or B (for example, A < WT < B = AB)." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "epistatic" EXACT PSI-MI-short []
 synonym: "epistatic genetic interaction (sensu inequality)" EXACT PSI-MI-alternate []
-is_a: MI:0935 ! positive genetic interaction
+is_a: MI:0930 ! epistatic genetic interaction
+is_a: MI:0931 ! genetic interaction defined by inequality
 
 [Term]
 id: MI:0798
-name: conditional genetic interaction
+name: conditional genetic interaction defined by inequality
 def: "The phenotype resulting from genetic perturbation of A has an effect only in the b background, or the b mutant has an effect only in the a background. a has an effect only in the b background, or the b mutant has an effect only in the a background. E. g., WT = a > ab > b or WT > a > b > ab." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "conditional" EXACT PSI-MI-short []
 synonym: "conditional genetic interaction (sensu inequality)" EXACT PSI-MI-alternate []
-is_a: MI:0208 ! genetic interaction
+is_a: MI:0931 ! genetic interaction defined by inequality
 
 [Term]
 id: MI:0799
-name: additive genetic interaction
+name: additive genetic interaction defined by inequality
 def: "Single-mutant phenotype effects combine to give a double-mutant effect different from the wild type and different from single mutant effect. For instance, WT < a = b < ab, b < WT = ab < a, WT < a < b < ab, b < WT < ab < a, and all additional inequalities obtained by interchanging a and b, or reversing the effect of both a and b." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "additive" EXACT PSI-MI-short []
 synonym: "additive genetic interaction (sensu inequality)" EXACT PSI-MI-alternate []
-is_a: MI:0208 ! genetic interaction
+is_a: MI:0931 ! genetic interaction defined by inequality
 
 [Term]
 id: MI:0800
-name: single nonmonotonic genetic interaction
+name: single nonmonotonic genetic interaction defined by inequality
 def: "The phenotype resulting from genetic perturbation of B shows opposing effects in the WT and a backgrounds (for example, b > WT and ab < a); or, a shows opposing effects in the WT and b backgrounds, but not both. E.g., WT > a > ab > b." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "single nonmonotonic" EXACT PSI-MI-short []
 synonym: "single nonmonotonic genetic interaction (sensu inequality)" EXACT PSI-MI-alternate []
-is_a: MI:0208 ! genetic interaction
+is_a: MI:0931 ! genetic interaction defined by inequality
 
 [Term]
 id: MI:0801
-name: double nonmonotonic genetic interaction
+name: double nonmonotonic genetic interaction defined by inequality
 def: "The phenotype resulting from genetic perturbation of both A and B show opposing effects in the WT background and the background with the other mutant gene. E.g., WT >= ab > a >= b" [PMID:15833125]
 subset: PSI-MI slim
 synonym: "double nonmonotonic" EXACT PSI-MI-short []
 synonym: "double nonmonotonic genetic interaction (sensu inequality)" EXACT PSI-MI-alternate []
+is_a: MI:0931 ! genetic interaction defined by inequality
 is_a: MI:0935 ! positive genetic interaction
 
 [Term]
@@ -7359,12 +7364,29 @@ synonym: "northen" EXACT PSI-MI-alternate []
 is_a: MI:0078 ! nucleotide sequence identification
 
 [Term]
+id: MI:0930
+name: epistatic genetic interaction
+def: "The genetic interaction between a group of genes, in which the effects of an allele of one member gene of the group hide the effects of alleles of other genes in the group." [PMID:11988766]
+subset: PSI-MI slim
+synonym: "epistatis" EXACT PSI-MI-short []
+is_a: MI:0935 ! positive genetic interaction
+
+[Term]
+id: MI:0931
+name: genetic interaction defined by inequality
+def: "Two genes A and B present an genetic interaction defined by inequality  if the phenotypes of the two single mutants a and b, the double mutant  ab and the wild-type WT can be measured quantitatively and described  relative to each other by an inequality relationship." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "genetic inequality" EXACT PSI-MI-short []
+is_a: MI:0208 ! genetic interaction
+
+[Term]
 id: MI:0932
-name: noninteractive genetic interaction
+name: noninteractive genetic interaction defined by inequality
 def: "Mutation that has no effect in the WT and b backgrounds, or b has no effect in the a and WT backgrounds, or both hold true. E. g., WT = a > b = ab." [PMID:15833125]
 subset: PSI-MI slim
 synonym: "noninteractive" EXACT PSI-MI-short []
 synonym: "noninteractive genetic interaction (sensu inequality)" EXACT PSI-MI-alternate []
+is_a: MI:0931 ! genetic interaction defined by inequality
 is_a: MI:0934 ! neutral genetic interaction
 
 [Term]
