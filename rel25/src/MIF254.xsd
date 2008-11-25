@@ -1,131 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2006 sp2 U (http://www.altova.com) by EBI Proteomics Services (EMBL Outstation) -->
-<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by HENNING HERMJAKOB (EMBL OUTSTATION THE EBI) -->
+
 <xs:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema"
         xmlns:mif="http://psi.hupo.org/mi/mif"
            targetNamespace="http://psi.hupo.org/mi/mif" elementFormDefault="qualified"
            attributeFormDefault="unqualified">
 	<!--Root element-->
-  <xs:element name="entrySet" type="mif:entrySetType">
+  <xs:element name="entrySet" type="mif:entrySet">
     <xs:annotation>
       <xs:documentation>Root element of the Molecular Interaction Format</xs:documentation>
     </xs:annotation>
   </xs:element>
 
-  <xs:complexType name="entrySetType">
+  <xs:complexType name="entrySet">
         <xs:sequence>
-          <xs:element name="entry" maxOccurs="unbounded">
+          <xs:element name="entry" maxOccurs="unbounded" type="mif:entry">
             <xs:annotation>
               <xs:documentation>Describes one or more interactions as a self-contained unit. Multiple entries from different files can be concatenated into a single entrySet.</xs:documentation>
             </xs:annotation>
-            <xs:complexType>
-              <xs:sequence>
-                <xs:element name="source" minOccurs="0">
-                  <xs:annotation>
-                    <xs:documentation>Desciption of the source of the entry, usually an organisation</xs:documentation>
-                  </xs:annotation>
-                  <xs:complexType>
-                    <xs:sequence>
-                      <xs:element name="names" type="mif:namesType" minOccurs="0">
-                        <xs:annotation>
-                          <xs:documentation>Name(s) of the data source, for example the organisation name.</xs:documentation>
-                        </xs:annotation>
-                      </xs:element>
-                      <xs:element name="bibref" type="mif:bibrefType" minOccurs="0">
-                        <xs:annotation>
-                          <xs:documentation>Bibliographic reference for the data source. Example: A paper which describes all interactions of the entry.</xs:documentation>
-                        </xs:annotation>
-                      </xs:element>
-                      <xs:element name="xref" type="mif:xrefType" minOccurs="0">
-                        <xs:annotation>
-                          <xs:documentation>Cross reference for the data source. Example: Entry in a database of databases. </xs:documentation>
-                        </xs:annotation>
-                      </xs:element>
-                      <xs:element name="attributeList" type="mif:attributeListType" minOccurs="0">
-                        <xs:annotation>
-                          <xs:documentation>Further description of the source.</xs:documentation>
-                        </xs:annotation>
-                      </xs:element>
-                    </xs:sequence>
-                    <xs:attribute name="release" use="optional">
-                      <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                          <xs:minLength value="1"/>
-                        </xs:restriction>
-                      </xs:simpleType>
-                    </xs:attribute>
-                    <xs:attribute name="releaseDate" type="xs:date" use="optional"/>
-                  </xs:complexType>
-                </xs:element>
-                <xs:element name="availabilityList" minOccurs="0">
-                  <xs:annotation>
-                    <xs:documentation>Data availability statements, for example copyrights</xs:documentation>
-                  </xs:annotation>
-                  <xs:complexType>
-                    <xs:sequence>
-                      <xs:element name="availability" type="mif:availabilityType" minOccurs="0" maxOccurs="unbounded">
-                        <xs:annotation>
-                          <xs:documentation>Describes data availability, e.g. through a copyright statement. If no availability is given, the data is assumed to be freely available.</xs:documentation>
-                        </xs:annotation>
-                      </xs:element>
-                    </xs:sequence>
-                  </xs:complexType>
-                </xs:element>
-                <xs:element name="experimentList" minOccurs="0">
-                  <xs:annotation>
-                    <xs:documentation>All experiments in which the interactions of this entry have been determined</xs:documentation>
-                  </xs:annotation>
-                  <xs:complexType>
-                    <xs:sequence>
-                      <xs:element name="experimentDescription" type="mif:experimentType" minOccurs="0" maxOccurs="unbounded">
-                        <xs:annotation>
-                          <xs:documentation>Describes one set of experimental parameters, usually associated with a single publication.</xs:documentation>
-                        </xs:annotation>
-                      </xs:element>
-                    </xs:sequence>
-                  </xs:complexType>
-                </xs:element>
-                <xs:element name="interactorList" minOccurs="0">
-                  <xs:annotation>
-                    <xs:documentation>List of all interactors occurring in the entry</xs:documentation>
-                  </xs:annotation>
-                  <xs:complexType>
-                    <xs:sequence>
-                      <xs:element name="interactor" type="mif:interactorElementType" minOccurs="0" maxOccurs="unbounded">
-                        <xs:annotation>
-                          <xs:documentation>A molecule object in its native state, as described in databases.</xs:documentation>
-                          <xs:documentation>Usage: A protein interactor must contain an xref to UniProt and NCBI-GI where possible. </xs:documentation>
-                        </xs:annotation>
-                      </xs:element>
-                    </xs:sequence>
-                  </xs:complexType>
-                </xs:element>
-                <xs:element name="interactionList">
-                  <xs:annotation>
-                    <xs:documentation>List of interactions</xs:documentation>
-                  </xs:annotation>
-                  <xs:complexType>
-                    <xs:sequence>
-                      <xs:element name="interaction" maxOccurs="unbounded">
-                        <xs:annotation>
-                          <xs:documentation>A set of molecules interacting. </xs:documentation>
-                        </xs:annotation>
-                        <xs:complexType>
-                          <xs:complexContent>
-                            <xs:extension base="mif:interactionElementType"/>
-                          </xs:complexContent>
-                        </xs:complexType>
-                      </xs:element>
-                    </xs:sequence>
-                  </xs:complexType>
-                </xs:element>
-                <xs:element name="attributeList" type="mif:attributeListType" minOccurs="0">
-                  <xs:annotation>
-                    <xs:documentation>Semi-structured additional description of the data contained in the entry.</xs:documentation>
-                  </xs:annotation>
-                </xs:element>
-              </xs:sequence>
-            </xs:complexType>
           </xs:element>
         </xs:sequence>
         <xs:attribute name="level" type="xs:int" use="required" fixed="2">
@@ -141,8 +32,149 @@
         <xs:attribute name="minorVersion" type="xs:int" use="optional" fixed="4"/>
   </xs:complexType>
 
-	<!--aministrative elements-->
-	<xs:complexType name="labelType">
+    <xs:complexType name="source">
+        <xs:annotation>
+            <xs:documentation>Desciption of the source of the entry, usually an organisation
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="names" type="mif:names" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Name(s) of the data source, for example the organisation name.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="bibref" type="mif:bibref" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Bibliographic reference for the data source. Example: A paper which
+                        describes all interactions of the entry.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="xref" type="mif:xref" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Cross reference for the data source. Example: Entry in a database of
+                        databases.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="attributeList" type="mif:attributeList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Further description of the source.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="release" use="optional">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="releaseDate" type="xs:date" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="experimentDescriptionList">
+        <xs:annotation>
+            <xs:documentation>All experiments in which the interactions of this entry have been determined
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="experimentDescription" type="mif:experimentDescription" minOccurs="0"
+                        maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Describes one set of experimental parameters, usually associated with
+                        a single publication.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="experimentList">
+        <xs:annotation>
+            <xs:documentation>List of experiments in which this interaction has been determined.</xs:documentation>
+        </xs:annotation>
+
+        <xs:choice maxOccurs="unbounded">
+            <xs:annotation>
+                <xs:documentation>Either refer to an already defined experiment in this entry or insert description.
+                </xs:documentation>
+            </xs:annotation>
+            <xs:element name="experimentRef" type="xs:int">
+                <xs:annotation>
+                    <xs:documentation>References an experiment already present in this entry.</xs:documentation>
+                </xs:annotation>
+
+            </xs:element>
+            <xs:element name="experimentDescription" type="mif:experimentDescription">
+                <xs:annotation>
+                    <xs:documentation>An experiment in which this interaction has been determined.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="interactorList">
+        <xs:annotation>
+            <xs:documentation>List of all interactors occurring in the entry</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="interactor" type="mif:interactor" minOccurs="0"
+                        maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A molecule object in its native state, as described in databases.
+                    </xs:documentation>
+                    <xs:documentation>Usage: A protein interactor must contain an xref to UniProt and
+                        NCBI-GI where possible.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="interactionList">
+        <xs:annotation>
+            <xs:documentation>List of interactions</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="interaction" type="mif:interaction" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="availabilityList">
+        <xs:annotation>
+            <xs:documentation>Data availability statements, for example copyrights</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="availability" type="mif:availability" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Describes data availability, e.g. through a copyright statement. If no
+                        availability is given, the data is assumed to be freely available.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!-- entry -->
+
+    <xs:complexType name="entry">
+        <xs:sequence>
+            <xs:element name="source" type="mif:source" minOccurs="0"/>
+            <xs:element name="availabilityList" type="mif:availabilityList" minOccurs="0"/>
+            <xs:element name="experimentList" type="mif:experimentDescriptionList" minOccurs="0"/>
+            <xs:element name="interactorList" type="mif:interactorList" minOccurs="0"/>
+
+            <xs:element name="interactionList" type="mif:interactionList"/>
+            <xs:element name="attributeList" type="mif:attributeList" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--aministrative elements-->
+	<xs:complexType name="label">
 		<xs:annotation>
 			<xs:documentation>A short alphanumeric label identifying an object. Not necessarily unique.</xs:documentation>
 		</xs:annotation>
@@ -150,7 +182,7 @@
 			<xs:extension base="xs:string"/>
 		</xs:simpleContent>
 	</xs:complexType>
-	<xs:complexType name="fullNameType">
+	<xs:complexType name="fullName">
 		<xs:annotation>
 			<xs:documentation>Full, descriptive object name.</xs:documentation>
 		</xs:annotation>
@@ -158,7 +190,7 @@
 			<xs:extension base="xs:string"/>
 		</xs:simpleContent>
 	</xs:complexType>
-	<xs:complexType name="experimentRefListType">
+	<xs:complexType name="experimentRefList">
 		<xs:annotation>
 			<xs:documentation>Refers to a list of experiments within the same entry.</xs:documentation>
 		</xs:annotation>
@@ -170,29 +202,29 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="xrefType">
+	<xs:complexType name="xref">
 		<xs:annotation>
 			<xs:documentation>Crossreference to an external database. Crossreferences to literature databases, e.g. PubMed, should not be put into this structure, but into the bibRef element where possible.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="primaryRef" type="mif:dbReferenceType">
+			<xs:element name="primaryRef" type="mif:dbReference">
 				<xs:annotation>
 					<xs:documentation>Primary reference to an external database.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="secondaryRef" type="mif:dbReferenceType" minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="secondaryRef" type="mif:dbReference" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>Further external objects describing the object.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="dbReferenceType">
+	<xs:complexType name="dbReference">
 		<xs:annotation>
 			<xs:documentation>Refers to a unique object in an external database.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence minOccurs="0">
-			<xs:element name="attributeList" type="mif:attributeListType"/>
+			<xs:element name="attributeList" type="mif:attributeList"/>
 		</xs:sequence>
 		<xs:attribute name="db" use="required">
 			<xs:annotation>
@@ -265,59 +297,60 @@
 			</xs:simpleType>
 		</xs:attribute>
 	</xs:complexType>
-	<xs:complexType name="bibrefType">
+	<xs:complexType name="bibref">
 		<xs:annotation>
 			<xs:documentation>Bibliographic reference.</xs:documentation>
 		</xs:annotation>
 		<xs:choice>
-			<xs:element name="xref" type="mif:xrefType">
+			<xs:element name="xref" type="mif:xref">
 				<xs:annotation>
 					<xs:documentation>Bibliographic reference in external database, usually PubMed.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="attributeList" type="mif:attributeListType">
+			<xs:element name="attributeList" type="mif:attributeList">
 				<xs:annotation>
 					<xs:documentation>Alternative description of bibliographic reference if no external database entry is available.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:choice>
 	</xs:complexType>
-	<xs:complexType name="attributeListType">
+	<xs:complexType name="attributeList">
 		<xs:annotation>
 			<xs:documentation>A list of additional attributes. Open tag-value list to allow the inclusion of additional data.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="attribute" maxOccurs="unbounded">
-				<xs:complexType>
-					<xs:simpleContent>
-						<xs:extension base="xs:string">
-							<xs:attribute name="name" use="required">
-								<xs:annotation>
-									<xs:documentation>The name of the attribute.</xs:documentation>
-								</xs:annotation>
-								<xs:simpleType>
-									<xs:restriction base="xs:string">
-										<xs:minLength value="1"/>
-									</xs:restriction>
-								</xs:simpleType>
-							</xs:attribute>
-							<xs:attribute name="nameAc" use="optional">
-								<xs:annotation>
-									<xs:documentation>Enables control of the attribute type through reference to an external controlled vocabulary. Root element in the PSI MI CV is MI:0590.</xs:documentation>
-								</xs:annotation>
-								<xs:simpleType>
-									<xs:restriction base="xs:string">
-										<xs:minLength value="1"/>
-									</xs:restriction>
-								</xs:simpleType>
-							</xs:attribute>
-						</xs:extension>
-					</xs:simpleContent>
-				</xs:complexType>
-			</xs:element>
+			<xs:element name="attribute" type="mif:attribute" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="confidenceType">
+    <xs:complexType name="attribute">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="name" use="required">
+                    <xs:annotation>
+                        <xs:documentation>The name of the attribute.</xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+                <xs:attribute name="nameAc" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>Enables control of the attribute type through reference to an external
+                            controlled vocabulary. Root element in the PSI MI CV is MI:0590.
+                        </xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="confidenceBase">
 		<xs:annotation>
 			<xs:documentation>A confidence value.</xs:documentation>
 		</xs:annotation>
@@ -332,12 +365,28 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="bioSourceType">
+    <xs:complexType name="confidence">
+        <xs:complexContent>
+            <xs:extension base="mif:confidenceBase">
+                <xs:sequence minOccurs="0">
+                    <xs:element name="experimentRefList" type="mif:experimentRefList" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>Each experiment might assign a different confidence to this object. If no
+                                experimentRef is given, it is assumed this confidence refers to all experiments linked
+                                to the object.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="bioSource">
 		<xs:annotation>
 			<xs:documentation>Describes the biological source of an object, in simple form only the NCBI taxid.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="names" type="mif:namesType" minOccurs="0">
+			<xs:element name="names" type="mif:names" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The names of the organism.  The short label should be a common name if it exists.  The full name should be the full name of the species (i.e. genus species).</xs:documentation>
 				</xs:annotation>
@@ -360,26 +409,12 @@
 		</xs:sequence>
 		<xs:attribute name="ncbiTaxId" type="xs:int" use="required"/>
 	</xs:complexType>
-	<xs:complexType name="confidenceListType">
+	<xs:complexType name="confidenceList">
 		<xs:annotation>
 			<xs:documentation>A list of confidence values.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="confidence" maxOccurs="unbounded">
-				<xs:complexType>
-					<xs:complexContent>
-						<xs:extension base="mif:confidenceType">
-							<xs:sequence minOccurs="0">
-								<xs:element name="experimentRefList" type="mif:experimentRefListType" minOccurs="0">
-									<xs:annotation>
-										<xs:documentation>Each experiment might assign a different confidence to this object. If no experimentRef is given, it is assumed this confidence refers to all experiments linked to the object.</xs:documentation>
-									</xs:annotation>
-								</xs:element>
-							</xs:sequence>
-						</xs:extension>
-					</xs:complexContent>
-				</xs:complexType>
-			</xs:element>
+			<xs:element name="confidence" type="mif:confidence" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="cvType">
@@ -387,12 +422,12 @@
 			<xs:documentation>Reference to an external controlled vocabulary.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="names" type="mif:namesType">
+			<xs:element name="names" type="mif:names">
 				<xs:annotation>
 					<xs:documentation>Name of the controlled vocabulary term.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="xref" type="mif:xrefType">
+			<xs:element name="xref" type="mif:xref">
 				<xs:annotation>
 					<xs:documentation>Source of the controlled vocabulary term.  E.g. the name of the CV and the term ID.</xs:documentation>
 				</xs:annotation>
@@ -404,24 +439,24 @@
 			<xs:documentation>Allows to reference an external controlled vocabulary, or to directly include a value if no suitable external definition is available.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="names" type="mif:namesType">
+			<xs:element name="names" type="mif:names">
 				<xs:annotation>
 					<xs:documentation>This contains the controlled vocabulary terms, as a short and optionally as a long form.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="xref" type="mif:xrefType" minOccurs="0">
+			<xs:element name="xref" type="mif:xref" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Refers to the term of the controlled vocabulary in an external database.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="attributeList" type="mif:attributeListType" minOccurs="0">
+			<xs:element name="attributeList" type="mif:attributeList" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>If no suitable external controlled vocabulary is available, this attributeList can be used to describe the term. Example: Attribute name: Mouse atlas tissue name; attribute value: spinal cord, day 30.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="namesType">
+	<xs:complexType name="names">
 		<xs:annotation>
 			<xs:documentation>Names for an object.</xs:documentation>
 		</xs:annotation>
@@ -446,31 +481,32 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="alias" minOccurs="0" maxOccurs="unbounded">
-				<xs:complexType>
-					<xs:simpleContent>
-						<xs:extension base="xs:string">
-							<xs:attribute name="typeAc" use="optional">
-								<xs:simpleType>
-									<xs:restriction base="xs:string">
-										<xs:minLength value="1"/>
-									</xs:restriction>
-								</xs:simpleType>
-							</xs:attribute>
-							<xs:attribute name="type" use="optional">
-								<xs:simpleType>
-									<xs:restriction base="xs:string">
-										<xs:minLength value="1"/>
-									</xs:restriction>
-								</xs:simpleType>
-							</xs:attribute>
-						</xs:extension>
-					</xs:simpleContent>
-				</xs:complexType>
-			</xs:element>
+			<xs:element name="alias" type="mif:alias" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="parameterType">
+
+    <xs:complexType name="alias">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="typeAc" use="optional">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+                <xs:attribute name="type" use="optional">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+	<xs:complexType name="parameterBase">
 		<xs:annotation>
 			<xs:documentation>A numeric parameter, e.g. for a kinetic value</xs:documentation>
 		</xs:annotation>
@@ -531,24 +567,24 @@
 		</xs:attribute>
 	</xs:complexType>
 	<!--Feature description-->
-	<xs:complexType name="featureElementType">
+	<xs:complexType name="feature">
 		<xs:annotation>
 			<xs:documentation>A feature, e.g. domain, on a sequence.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="names" type="mif:namesType" minOccurs="0">
+			<xs:element name="names" type="mif:names" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Names for the feature, e.g. SH3 domain.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="xref" type="mif:xrefType" minOccurs="0">
+			<xs:element name="xref" type="mif:xref" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Reference to an external feature description, for example InterPro entry.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="featureType" type="mif:cvType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Description and classification of the feature. This element is controlled by the PSI-MI controlled vocabulary "featureType", root term id MI:0116.</xs:documentation>
+					<xs:documentation>Description and classification of the feature. This element is controlled by the PSI-MI controlled vocabulary "feature", root term id MI:0116.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="featureDetectionMethod" type="mif:cvType" minOccurs="0">
@@ -556,7 +592,7 @@
 					<xs:documentation>Experimental method used to identify the feature. A setting here overrides the global setting given in the experimentDescription. External controlled vocabulary. </xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="experimentRefList" type="mif:experimentRefListType" minOccurs="0">
+			<xs:element name="experimentRefList" type="mif:experimentRefList" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
 				</xs:annotation>
@@ -564,7 +600,7 @@
 			<xs:element name="featureRangeList">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="featureRange" type="mif:baseLocationType" maxOccurs="unbounded">
+						<xs:element name="featureRange" type="mif:baseLocation" maxOccurs="unbounded">
 							<xs:annotation>
 								<xs:documentation>Location of the feature on the sequence of the interactor. One feature may have more than one featureRange, used e.g. for features which involve sequence positions close in the folded, three-dimensional state of a protein, but non-continuous along the sequence.</xs:documentation>
 							</xs:annotation>
@@ -572,7 +608,7 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="attributeList" type="mif:attributeListType" minOccurs="0">
+			<xs:element name="attributeList" type="mif:attributeList" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Semi-structured additional description of the data contained in the entry.</xs:documentation>
 				</xs:annotation>
@@ -580,14 +616,14 @@
 		</xs:sequence>
 		<xs:attribute name="id" type="xs:int" use="required"/>
 	</xs:complexType>
-	<xs:complexType name="intervalType">
+	<xs:complexType name="interval">
 		<xs:annotation>
 			<xs:documentation>A interval on a sequence.</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="begin" type="xs:unsignedLong" use="required"/>
 		<xs:attribute name="end" type="xs:unsignedLong" use="required"/>
 	</xs:complexType>
-	<xs:complexType name="baseLocationType">
+	<xs:complexType name="baseLocation">
 		<xs:annotation>
 			<xs:documentation>A location on a sequence. Both begin and end can be a defined position, a fuzzy position, or undetermined.</xs:documentation>
 		</xs:annotation>
@@ -599,12 +635,12 @@
 					</xs:annotation>
 				</xs:element>
 				<xs:choice minOccurs="0">
-					<xs:element name="begin" type="mif:positionType">
+					<xs:element name="begin" type="mif:position">
 						<xs:annotation>
 							<xs:documentation>The integer position gives the begin position of the feature. The first base or amino acid is position 1. In combination with the numeric value, the attribute 'status' allows to express fuzzy positions, e.g. 'less than 4'.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="beginInterval" type="mif:intervalType">
+					<xs:element name="beginInterval" type="mif:interval">
 						<xs:annotation>
 							<xs:documentation>The begin position may be varying or unclear, but localisable to a certain range. Usually written as e.g. 3..5.</xs:documentation>
 						</xs:annotation>
@@ -618,12 +654,12 @@
 					</xs:annotation>
 				</xs:element>
 				<xs:choice minOccurs="0">
-					<xs:element name="end" type="mif:positionType">
+					<xs:element name="end" type="mif:position">
 						<xs:annotation>
 							<xs:documentation>The integer position gives the end position of the feature. The first base or amino acid is position 1. In combination with the numeric value, the attribute 'status' allows to express fuzzy positions, e.g. 'more than 400'.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="endInterval" type="mif:intervalType">
+					<xs:element name="endInterval" type="mif:interval">
 						<xs:annotation>
 							<xs:documentation>The end position may be varying or unclear, but localisable to a certain range. Usually written as e.g. 3..5.</xs:documentation>
 						</xs:annotation>
@@ -637,11 +673,11 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="positionType">
+	<xs:complexType name="position">
 		<xs:attribute name="position" type="xs:unsignedLong" use="required"/>
 	</xs:complexType>
 	<!--Top level types-->
-	<xs:complexType name="availabilityType">
+	<xs:complexType name="availability">
 		<xs:annotation>
 			<xs:documentation>A text describing the availability of data, e.g. a copyright statement.</xs:documentation>
 		</xs:annotation>
@@ -651,38 +687,43 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	<xs:complexType name="experimentType">
+
+    <xs:complexType name="hostOrganismList">
+        <xs:annotation>
+            <xs:documentation>The host organism(s) in which the experiment has been performed.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="hostOrganism" type="mif:hostOrganism" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="hostOrganism">
+        <xs:complexContent>
+            <xs:extension base="mif:bioSource">
+                <xs:sequence minOccurs="0">
+                    <xs:element name="experimentRefList" type="mif:experimentRefList" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="experimentDescription">
 		<xs:annotation>
 			<xs:documentation>Describes one set of experimental parameters.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="names" type="mif:namesType" minOccurs="0"/>
-			<xs:element name="bibref" type="mif:bibrefType">
+			<xs:element name="names" type="mif:names" minOccurs="0"/>
+			<xs:element name="bibref" type="mif:bibref">
 				<xs:annotation>
 					<xs:documentation>Publication describing the experiment.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="xref" type="mif:xrefType" minOccurs="0">
+			<xs:element name="xref" type="mif:xref" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Refers to external database description of the experiment.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="hostOrganismList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The host organism(s) in which the experiment has been performed.</xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="hostOrganism" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="mif:bioSourceType"/>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
+			<xs:element name="hostOrganismList" type="mif:hostOrganismList" minOccurs="0"/>
 			<xs:element name="interactionDetectionMethod" type="mif:cvType">
 				<xs:annotation>
 					<xs:documentation>Experimental method to determine the interaction. This element is controlled by the PSI-MI controlled vocabulary "interaction detection method", root term id MI:0001.</xs:documentation>
@@ -698,12 +739,12 @@
 					<xs:documentation>Experimental method to determine the features of interactors. If this element is filled it is assumed to apply to all features described in the experiment. But can be overridden by the featureDetectionMethod given in the individual feature. This element is controlled by the PSI-MI controlled vocabulary "feature detection method", root term id MI:0003.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="confidenceList" type="mif:confidenceListType" minOccurs="0">
+			<xs:element name="confidenceList" type="mif:confidenceList" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Confidence in this experiment.  Usually a statistical measure.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="attributeList" type="mif:attributeListType" minOccurs="0">
+			<xs:element name="attributeList" type="mif:attributeList" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Semi-structured additional description of the experiment.</xs:documentation>
 				</xs:annotation>
@@ -715,17 +756,18 @@
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
-	<xs:complexType name="interactionElementType">
+
+	<xs:complexType name="interaction">
 		<xs:annotation>
 			<xs:documentation>A molecular interaction.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="names" type="mif:namesType" minOccurs="0">
+			<xs:element name="names" type="mif:names" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Name(s) of the interaction.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="xref" type="mif:xrefType" minOccurs="0">
+			<xs:element name="xref" type="mif:xref" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Interaction database ID</xs:documentation>
 				</xs:annotation>
@@ -739,75 +781,15 @@
 						<xs:documentation>References an availability statement already present in this entry.</xs:documentation>
 					</xs:annotation>
 				</xs:element>
-				<xs:element name="availability" type="mif:availabilityType">
+				<xs:element name="availability" type="mif:availability">
 					<xs:annotation>
 						<xs:documentation>Describes the availability of the interaction data. If no availability is given, the data is assumed to be freely available.</xs:documentation>
 					</xs:annotation>
 				</xs:element>
 			</xs:choice>
-			<xs:element name="experimentList">
-				<xs:annotation>
-					<xs:documentation>List of experiments in which this interaction has been determined.</xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:choice maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>Either refer to an already defined experiment in this entry or insert description.</xs:documentation>
-						</xs:annotation>
-						<xs:element name="experimentRef" type="xs:int">
-							<xs:annotation>
-								<xs:documentation>References an experiment already present in this entry.</xs:documentation>
-							</xs:annotation>
-						</xs:element>
-						<xs:element name="experimentDescription" type="mif:experimentType">
-							<xs:annotation>
-								<xs:documentation>An experiment in which this interaction has been determined.</xs:documentation>
-							</xs:annotation>
-						</xs:element>
-					</xs:choice>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="participantList">
-				<xs:annotation>
-					<xs:documentation>A list of molecules participating in this interaction. An interaction has one (intramolecular), two (binary), or more (n-ary, complexes)  participants.</xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="participant" type="mif:participantType" maxOccurs="unbounded"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="inferredInteractionList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Describes inferred interactions, usually combining data from more than one experiment. Examples: 1: Show the topology of binary interactions within a complex. 2: Interaction inferred from multiple experiments which on their own would not support the interaction. Example: A-B in experiment 1, B-C- in experiment 2, A-C is the inferred interaction.</xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="inferredInteraction" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="participant" minOccurs="2" maxOccurs="unbounded">
-										<xs:annotation>
-											<xs:documentation>Participant of the inferred interaction.</xs:documentation>
-										</xs:annotation>
-										<xs:complexType>
-											<xs:choice>
-												<xs:element name="participantRef" type="xs:int"/>
-												<xs:element name="participantFeatureRef" type="xs:int"/>
-											</xs:choice>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="experimentRefList" type="mif:experimentRefListType" minOccurs="0">
-										<xs:annotation>
-											<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
-										</xs:annotation>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
+			<xs:element name="experimentList" type="mif:experimentList" minOccurs="0"/>
+			<xs:element name="participantList" type="mif:participantList"/>
+			<xs:element name="inferredInteractionList" type="mif:inferredInteractionList" minOccurs="0"/>
 			<xs:element name="interactionType" type="mif:cvType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>External controlled vocabulary characterising the interaction type, for example "physical interaction".</xs:documentation>
@@ -828,72 +810,78 @@
 					<xs:documentation>If true, this interaction has been shown NOT to occur under the described experimental conditions. Default false. If this optional element is missing, it is assumed to be set to false.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="confidenceList" type="mif:confidenceListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Confidence in this interaction.  Usually a statistical measure.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="parameterList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Lists parameters which are relevant for the Interaction, e.g. kinetics.</xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="parameter" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="mif:parameterType">
-										<xs:sequence>
-											<xs:element name="experimentRef" type="xs:int">
-												<xs:annotation>
-													<xs:documentation>Reference to the experiment in which this parameter has been determined. If not given, it is assumed that this is valid for all experiments attached to the interaction.</xs:documentation>
-												</xs:annotation>
-											</xs:element>
-										</xs:sequence>
-										<xs:attribute name="uncertainty" type="xs:decimal" use="optional"/>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="attributeList" type="mif:attributeListType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Semi-structured additional description of the data contained in the entry.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+			<xs:element name="confidenceList" type="mif:confidenceList" minOccurs="0"/>
+			<xs:element name="parameterList" type="mif:parameterList" minOccurs="0"/>
+			<xs:element name="attributeList" type="mif:attributeList" minOccurs="0"/>
 		</xs:sequence>
-		<xs:attribute name="imexId" type="xs:string" use="optional">
-			<xs:annotation>
-				<xs:documentation>Interaction identifier assigned by the IMEx consortium. Will be unique for an interaction determined in one publication. Details defined in the IMEx documents.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
+		<xs:attribute name="imexId" type="xs:string" use="optional"/>
 		<xs:attribute name="id" type="xs:int" use="required">
 			<xs:annotation>
 				<xs:documentation>All major objects have a numerical id which is unique to that object within a PSI MI file. The object may be repeated, though, e.g. in the denormalised representation.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
+
+    <xs:complexType name="participantList">
+        <xs:annotation>
+            <xs:documentation>A list of molecules participating in this interaction. An interaction has one
+                (intramolecular), two (binary), or more (n-ary, complexes) participants.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="participant" type="mif:participant" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="inferredInteractionList">
+        <xs:annotation>
+            <xs:documentation>Describes inferred interactions, usually combining data from more than one experiment.
+                Examples: 1: Show the topology of binary interactions within a complex. 2: Interaction inferred from
+                multiple experiments which on their own would not support the interaction. Example: A-B in experiment 1,
+                B-C- in experiment 2, A-C is the inferred interaction.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="inferredInteraction" type="mif:inferredInteraction" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="inferredInteraction">
+        <xs:sequence>
+            <xs:element name="participant" type="mif:inferredInteractionParticipant" minOccurs="2" maxOccurs="unbounded"/>
+            <xs:element name="experimentRefList" type="mif:experimentRefList" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="inferredInteractionParticipant">
+        <xs:annotation>
+            <xs:documentation>Participant of the inferred interaction.</xs:documentation>
+        </xs:annotation>
+        <xs:choice>
+            <xs:element name="participantRef" type="xs:int"/>
+            <xs:element name="participantFeatureRef" type="xs:int"/>
+        </xs:choice>
+    </xs:complexType>
+
 	<!--interactors and participants-->
-	<xs:complexType name="interactorElementType">
+	<xs:complexType name="interactor">
 		<xs:annotation>
 			<xs:documentation>Describes a molecular interactor.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="names" type="mif:namesType">
+			<xs:element name="names" type="mif:names">
 				<xs:annotation>
 					<xs:documentation>Name(s).  The short label is typically a short name that could appear as a label on a diagram.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="xref" type="mif:xrefType" minOccurs="0">
+			<xs:element name="xref" type="mif:xref" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>An interactor should have an xref whenever possible. If the interactor is not available in external databases, it must be characterised within this object e.g. by its sequence.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="interactorType" type="mif:cvType">
 				<xs:annotation>
-					<xs:documentation>The molecule type of the participant, e.g. protein. This element is controlled by the PSI-MI controlled vocabulary "interactorType", root term id MI:0313.</xs:documentation>
+					<xs:documentation>The molecule type of the participant, e.g. protein. This element is controlled by the PSI-MI controlled vocabulary "interactor", root term id MI:0313.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="organism" minOccurs="0">
@@ -902,7 +890,7 @@
 				</xs:annotation>
 				<xs:complexType>
 					<xs:complexContent>
-						<xs:extension base="mif:bioSourceType"/>
+						<xs:extension base="mif:bioSource"/>
 					</xs:complexContent>
 				</xs:complexType>
 			</xs:element>
@@ -917,7 +905,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="attributeList" type="mif:attributeListType" minOccurs="0">
+			<xs:element name="attributeList" type="mif:attributeList" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Allows semi-structured additional annotation of the interactor.</xs:documentation>
 				</xs:annotation>
@@ -929,17 +917,17 @@
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
-	<xs:complexType name="participantType">
+	<xs:complexType name="participant">
 		<xs:annotation>
 			<xs:documentation>A molecule participating in an interaction.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="names" type="mif:namesType" minOccurs="0">
+			<xs:element name="names" type="mif:names" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>This contains the name(s) for the participant given by the authors of a publication.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="xref" type="mif:xrefType" minOccurs="0">
+			<xs:element name="xref" type="mif:xref" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Contains the xref(s) for the participant given by the authors of a publication.</xs:documentation>
 				</xs:annotation>
@@ -953,7 +941,7 @@
 						<xs:documentation>References an interactor described in the interactorList of the entry</xs:documentation>
 					</xs:annotation>
 				</xs:element>
-				<xs:element name="interactor" type="mif:interactorElementType">
+				<xs:element name="interactor" type="mif:interactor">
 					<xs:annotation>
 						<xs:documentation>Fully describes an interactor</xs:documentation>
 					</xs:annotation>
@@ -964,192 +952,24 @@
 					</xs:annotation>
 				</xs:element>
 			</xs:choice>
-			<xs:element name="participantIdentificationMethodList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The method(s) by which this participant has been determined. If this element is present, its value supersedes experimentDescription/ participantIdentificationMethod.</xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="participantIdentificationMethod" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:documentation>Experimental method to determine the interactors involved in the interaction. This element is controlled by the PSI-MI controlled vocabulary "participant identification method", root term id MI:0002.</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="mif:cvType">
-										<xs:sequence minOccurs="0">
-											<xs:element name="experimentRefList" type="mif:experimentRefListType" minOccurs="0">
-												<xs:annotation>
-													<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
-												</xs:annotation>
-											</xs:element>
-										</xs:sequence>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
+			<xs:element name="participantIdentificationMethodList" type="mif:participantIdentificationMethodList" minOccurs="0"/>
 			<xs:element name="biologicalRole" type="mif:cvType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The role of the participant in the interaction. This describes the biological role, e.g. enzyme or enzyme target. The experimental role of the participant, e.g. 'bait', is shown in experimentalForm. This element is controlled by the PSI-MI controlled vocabulary "biologicalRole", root term id MI:0500.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="experimentalRoleList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The role(s) of the participant in the interaction, e.g. bait. </xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="experimentalRole" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:documentation>This element is controlled by the PSI-MI controlled vocabulary "experimentalRole", root term id MI:0495.</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="mif:cvType">
-										<xs:sequence minOccurs="0">
-											<xs:element name="experimentRefList" type="mif:experimentRefListType" minOccurs="0">
-												<xs:annotation>
-													<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
-												</xs:annotation>
-											</xs:element>
-										</xs:sequence>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="experimentalPreparationList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Terms describing the experimental sample preparation. </xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="experimentalPreparation" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:documentation>This element is controlled by the PSI-MI controlled vocabulary "experimentalPreparation", root term id MI:0346.</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="mif:cvType">
-										<xs:sequence minOccurs="0">
-											<xs:element name="experimentRefList" type="mif:experimentRefListType" minOccurs="0">
-												<xs:annotation>
-													<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
-												</xs:annotation>
-											</xs:element>
-										</xs:sequence>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="experimentalInteractorList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Describes molecules which have been used in specific experiments if these molecules are different from the one listed as interactors. Example: The author of a paper makes a statement about human proteins, but has really worked with mouse proteins. In this case the human protein would be the main interactor, while the experimentalForm would be the mouse protein listed in this element. Optionally this can refer to the experiment(s) in which this form has been used. </xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="experimentalInteractor" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:choice>
-										<xs:annotation>
-											<xs:documentation>Either refer to an already defined protein interactor in this entry or insert description.</xs:documentation>
-										</xs:annotation>
-										<xs:element name="interactorRef" type="xs:int">
-											<xs:annotation>
-												<xs:documentation>References an interactor described in the interactorList of the entry</xs:documentation>
-											</xs:annotation>
-										</xs:element>
-										<xs:element name="interactor" type="mif:interactorElementType">
-											<xs:annotation>
-												<xs:documentation>Fully describes an interactor</xs:documentation>
-											</xs:annotation>
-										</xs:element>
-									</xs:choice>
-									<xs:element name="experimentRefList" type="mif:experimentRefListType" minOccurs="0">
-										<xs:annotation>
-											<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
-										</xs:annotation>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="featureList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Sequence features relevant for the interaction, for example binding domains, and experimental modifications, e.g. protein tags. </xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="feature" type="mif:featureElementType" maxOccurs="unbounded"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="hostOrganismList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The host organism(s) in which the protein has been expressed. If not given, it is assumed to be the native species of the protein.</xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="hostOrganism" minOccurs="0" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="mif:bioSourceType">
-										<xs:sequence minOccurs="0">
-											<xs:element name="experimentRefList" type="mif:experimentRefListType" minOccurs="0">
-												<xs:annotation>
-													<xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked to the interaction.</xs:documentation>
-												</xs:annotation>
-											</xs:element>
-										</xs:sequence>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="confidenceList" type="mif:confidenceListType" minOccurs="0">
+			<xs:element name="experimentalRoleList" type="mif:experimentalRoleList" minOccurs="0"/>
+			<xs:element name="experimentalPreparationList" type="mif:experimentalPreparationList" minOccurs="0"/>
+			<xs:element name="experimentalInteractorList" type="mif:experimentalInteractorList" minOccurs="0"/>
+			<xs:element name="featureList" type="mif:featureList" minOccurs="0"/>
+			<xs:element name="hostOrganismList" type="mif:hostOrganismList" minOccurs="0"/>
+			<xs:element name="confidenceList" type="mif:confidenceList" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Confidence in participant detection.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="parameterList" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Lists parameters which are relevant for the Interaction, e.g. kinetics.</xs:documentation>
-				</xs:annotation>
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="parameter" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="mif:parameterType">
-										<xs:sequence>
-											<xs:element name="experimentRef" type="xs:int">
-												<xs:annotation>
-													<xs:documentation>Reference to the experiment in which this parameter has been determined. If not given, it is assumed that this is valid for all experiments attached to the interaction.</xs:documentation>
-												</xs:annotation>
-											</xs:element>
-										</xs:sequence>
-										<xs:attribute name="uncertainty" type="xs:decimal" use="optional"/>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="attributeList" type="mif:attributeListType" minOccurs="0">
+			<xs:element name="parameterList" type="mif:parameterList" minOccurs="0"/>
+			<xs:element name="attributeList" type="mif:attributeList" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Semi-structured additional description of the data contained in the entry.</xs:documentation>
 				</xs:annotation>
@@ -1157,4 +977,178 @@
 		</xs:sequence>
 		<xs:attribute name="id" type="xs:int" use="required"/>
 	</xs:complexType>
+
+    <xs:complexType name="participantIdentificationMethodList">
+        <xs:annotation>
+            <xs:documentation>The method(s) by which this participant has been determined. If this element is present,
+                its value supersedes experimentDescription/ participantIdentificationMethod.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="participantIdentificationMethod" type="mif:participantIdentificationMethod" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="participantIdentificationMethod">
+        <xs:annotation>
+            <xs:documentation>Experimental method to determine the interactors involved in the interaction. This
+                element is controlled by the PSI-MI controlled vocabulary "participant identification method",
+                root term id MI:0002.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="mif:cvType">
+                <xs:sequence minOccurs="0">
+                    <xs:element name="experimentRefList" type="mif:experimentRefList" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>If no experimentRef is given, it is assumed this refers to all
+                                experiments linked to the interaction.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="experimentalRoleList">
+        <xs:annotation>
+            <xs:documentation>The role(s) of the participant in the interaction, e.g. bait.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="experimentalRole" type="mif:experimentalRole" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="experimentalRole">
+        <xs:annotation>
+            <xs:documentation>This element is controlled by the PSI-MI controlled vocabulary "experimentalRole",
+                root term id MI:0495.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="mif:cvType">
+                <xs:sequence minOccurs="0">
+                    <xs:element name="experimentRefList" type="mif:experimentRefList" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>If no experimentRef is given, it is assumed this refers to all
+                                experiments linked to the interaction.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="experimentalPreparationList">
+        <xs:annotation>
+            <xs:documentation>Terms describing the experimental sample preparation.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="experimentalPreparation" type="mif:experimentalPreparation" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="experimentalPreparation">
+        <xs:annotation>
+            <xs:documentation>This element is controlled by the PSI-MI controlled vocabulary
+                "experimentalPreparation", root term id MI:0346.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="mif:cvType">
+                <xs:sequence minOccurs="0">
+                    <xs:element name="experimentRefList" type="mif:experimentRefList" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>If no experimentRef is given, it is assumed this refers to all
+                                experiments linked to the interaction.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="experimentalInteractorList">
+        <xs:annotation>
+            <xs:documentation>Describes molecules which have been used in specific experiments if these molecules are
+                different from the one listed as interactors. Example: The author of a paper makes a statement about
+                human proteins, but has really worked with mouse proteins. In this case the human protein would be the
+                main interactor, while the experimentalForm would be the mouse protein listed in this element.
+                Optionally this can refer to the experiment(s) in which this form has been used.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="experimentalInteractor" type="mif:experimentalInteractor" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="experimentalInteractor">
+        <xs:sequence>
+            <xs:choice>
+                <xs:annotation>
+                    <xs:documentation>Either refer to an already defined protein interactor in this entry or insert
+                        description.
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:element name="interactorRef" type="xs:int">
+                    <xs:annotation>
+                        <xs:documentation>References an interactor described in the interactorList of the entry
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="interactor" type="mif:interactor">
+                    <xs:annotation>
+                        <xs:documentation>Fully describes an interactor</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="experimentRefList" type="mif:experimentRefList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>If no experimentRef is given, it is assumed this refers to all experiments linked
+                        to the interaction.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="featureList">
+        <xs:annotation>
+            <xs:documentation>Sequence features relevant for the interaction, for example binding domains, and
+                experimental modifications, e.g. protein tags.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="feature" type="mif:feature" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="parameterList">
+        <xs:annotation>
+            <xs:documentation>Lists parameters which are relevant for the Interaction, e.g. kinetics.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="parameter" type="mif:parameter" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+     <xs:complexType name="parameter">
+         <xs:complexContent>
+             <xs:extension base="mif:parameterBase">
+                 <xs:sequence>
+                     <xs:element name="experimentRef" type="xs:int">
+                         <xs:annotation>
+                             <xs:documentation>Reference to the experiment in which this parameter has been
+                                 determined. If not given, it is assumed that this is valid for all
+                                 experiments attached to the interaction.
+                             </xs:documentation>
+                         </xs:annotation>
+                     </xs:element>
+                 </xs:sequence>
+                 <xs:attribute name="uncertainty" type="xs:decimal" use="optional"/>
+             </xs:extension>
+         </xs:complexContent>
+     </xs:complexType>
 </xs:schema>
