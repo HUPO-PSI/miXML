@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:07:2008 18:51
+date: 15:05:2009 14:41
 saved-by: luisa
 auto-generated-by: OBO-Edit 1.101
 subsetdef: Drugable "Drugable Genome Project"
@@ -7,19 +7,9 @@ subsetdef: PSI-MI slim "Subset of PSI-MI"
 synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 default-namespace: PSI-MI
-remark: $Id: psi-mi25.obo,v 1.52 2008/07/28 17:54:57 luisa_montecchi Exp $
-remark: Notes:
-remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
-remark: mapping an element of the PSI Molecular Interaction XML schema.
-remark: To facilitate handling, they all have been merged in this file, though they
-remark: are essentially independent CVs describing different aspects of molecular interactions.
-remark: The PSI MI schema defines short labels for controlled vocabulary terms.
-remark: Where possible, short labels are reported as exact synonyms of a term in this file,
-remark: The last accession number used in this file is stored in a separate file,
-remark: psi-mi.lastac.
-remark: It MUST be updated when this file is updated.
-remark: This file is published by the PSI MI working group see http://psidev.sourceforge.net/
-remark: Author Luisa Montecchi Palazzi luisa@ebi.ac.uk
+remark: coverage: This is a small meaningless CV aiming at describing the structure of an OBO file.
+remark: publisher: The institution backing this document is the proteomics standard organization (PSI)
+remark: CVversion: 0.1
 
 [Term]
 id: MI:0000
@@ -41,7 +31,7 @@ relationship: part_of MI:0000 ! molecular interaction
 [Term]
 id: MI:0002
 name: participant identification method
-def: "Method to determine the proteins involved in the interaction." [PMID:14755292]
+def: "Method to determine the molecules involved in the interaction." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "participant detection" EXACT PSI-MI-alternate []
 synonym: "participant ident" EXACT PSI-MI-short []
@@ -68,14 +58,14 @@ is_a: MI:0400 ! affinity technology
 [Term]
 id: MI:0005
 name: alanine scanning
-def: "This approach is used to identify the residues that are involved in an interaction. Several variants of the native protein are prepared by mutating each residue of interest to an alanine. The mutated proteins are expressed, tested for proper folding and probed in the binding assay." [PMID:14755292]
+def: "This approach is used to identify the residues that are involved in an interaction. Several variants of the native protein are prepared by sequentially  mutating each residue of interest to an alanine. The mutated proteins are expressed and probed in the binding assay." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0810 ! substitution analysis
 
 [Term]
 id: MI:0006
 name: anti bait coimmunoprecipitation
-def: "A specific antibody for the protein of interest (bait) is available, this is used to generate a high affinity resin to capture the endogenous bait present in a sample." [PMID:7708014]
+def: "A specific antibody for the molecule of interest (bait) is available, this is used to generate a high affinity resin to capture the endogenous bait present in a sample." [PMID:7708014]
 subset: PSI-MI slim
 synonym: "anti bait coip" EXACT PSI-MI-short []
 is_a: MI:0019 ! coimmunoprecipitation
@@ -83,7 +73,7 @@ is_a: MI:0019 ! coimmunoprecipitation
 [Term]
 id: MI:0007
 name: anti tag coimmunoprecipitation
-def: "A specific antibody for the protein of interest is not available, therefore the bait protein is expressed as a hybrid protein fused to a tag peptide/protein for which efficient and specific antibodies or a specific ligand are available." [PMID:7708014]
+def: "A specific antibody for the molecule of interest is not available, therefore the bait protein is expressed as a hybrid protein fused to a tag peptide/protein for which efficient and specific antibodies or a specific ligand are available." [PMID:7708014]
 subset: PSI-MI slim
 synonym: "anti tag coip" EXACT PSI-MI-short []
 is_a: MI:0019 ! coimmunoprecipitation
@@ -180,7 +170,7 @@ is_a: MI:0232 ! transcriptional complementation assay
 [Term]
 id: MI:0019
 name: coimmunoprecipitation
-def: "In this approach an antibody, specific for the protein of interest (bait) or any tag expressed within a fusion protein, is used to separate the bait from a protein mixture or a cell lysate and to capture its ligand simultaneously. The protein partners that bind to the bait protein retained by the resin can then be eluted and identified." [PMID:7708014]
+def: "In this approach an antibody, specific for the molecule of interest (bait) or any tag expressed within a fusion protein, is used to separate the bait from a protein mixture or a cell lysate and to capture its ligand simultaneously. The partners that bind to the bait molecule retained by the resin can then be eluted and identified. The antibody may be free or bound to a matrix during this process." [PMID:7708014]
 subset: PSI-MI slim
 synonym: "co-immunoprecipitation" EXACT PSI-MI-alternate []
 synonym: "Co-IP" EXACT PSI-MI-alternate []
@@ -290,11 +280,12 @@ is_a: MI:0030 ! cross-linking study
 [Term]
 id: MI:0032
 name: de novo protein sequencing by mass spectrometry
-def: "The strategy to determine the complete amino acid sequence of a protein by mass spectrometry relies on the generation of a nested set of fragments differing by one amino acid. This permits to reveal the identity of the residue that has been removed at each degradation step by measuring the mass difference of fragments differing of one residue. Peptide fragments can be obtained by protease treatment combined with the fragmentation promoted by collision (or other methods) within a tandem mass spectrometer. This approach can be carried out with LC MS/MS (Liquid Chromatography Tandem Mass Spectrometry), nanoESI MS/MS (nanoElectrospray Ionisation tandem mass spectrometry), or FTMS (Fourier Transform mass spectrometry) instruments." [PMID:10984529]
+def: "The strategy to determine the complete amino acid sequence of a protein by mass spectrometry relies on the generation of a nested set of fragments differing by one amino acid. This reveals the identity of the residue that has been removed at each degradation step by measuring the mass difference of fragments differing of one residue. Peptide fragments can be obtained by protease treatment combined with the fragmentation promoted by collision (or other methods) within a tandem mass spectrometer. This approach can be carried out with LC MS/MS (Liquid Chromatography Tandem Mass Spectrometry), nanoESI MS/MS (nanoElectrospray Ionisation tandem mass spectrometry), or FTMS (Fourier Transform mass spectrometry) instruments." [PMID:10984529]
 subset: PSI-MI slim
 synonym: "ms protein sequence" EXACT PSI-MI-short []
+synonym: "MS/MS" RELATED []
 is_a: MI:0093 ! protein sequence identification
-is_a: MI:0427 ! mass spectrometry
+is_a: MI:0427 ! Identification by mass spectrometry
 is_a: MI:0659 ! experimental feature detection
 
 [Term]
@@ -314,7 +305,7 @@ is_a: MI:0400 ! affinity technology
 [Term]
 id: MI:0035
 name: docking
-def: "Predicts the structure of a protein-protein complex from the unbound structures of its components. The initial approach in the majority of docking procedures is based largely on the 'rigid-body' assumption, whereby the proteins are treated as solid objects. Initial scoring of a complex is based on geometric fit or surface complementarity. This generally requires some knowledge of the binding site to limit the number of solutions." [PMID:9631301, PMID for application instance:11478868]
+def: "Predicts the structure of a molecular complex from the unbound structures of its components. The initial approach in the majority of docking procedures is based largely on the 'rigid-body' assumption, whereby the proteins are treated as solid objects. Initial scoring of a complex is based on geometric fit or surface complementarity. This generally requires some knowledge of the binding site to limit the number of solutions." [PMID:9631301, PMID for application instance:11478868]
 subset: PSI-MI slim
 is_a: MI:0105 ! structure based prediction
 is_a: MI:0577 ! feature prediction from structure
@@ -391,7 +382,7 @@ is_a: MI:0659 ! experimental feature detection
 [Term]
 id: MI:0045
 name: experimental interaction detection
-def: "Methods based on laboratory experiments." [PMID:14755292]
+def: "Methods based on laboratory experiments to determine an interaction." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "experimental interac" EXACT PSI-MI-short []
 is_a: MI:0001 ! interaction detection method
@@ -486,8 +477,8 @@ is_a: MI:0051 ! fluorescence technology
 
 [Term]
 id: MI:0056
-name: full identification by sequencing
-def: "sequencing occurs during the course of the experiment. The DNA to be sequenced is used as template for the in vitro synthesis, by DNA polymerase, of a set of partial replicas, all beginning at the same place, but terminating at different points along the DNA chain. The key to this method is the use of dideoxyribonucleoside triphosphates in which the deoxyribose 3'-OH group present in normal nucleotides is missing; when such a modified nucleotide is incorporated into a DNA chain, it blocks the elongation of the chain. To determine the full sequence, the four different chain-terminating dideoxyribonucleosides are used in competition with an excess of deoxyribonucleosides in separate DNA synthesis reactions on the same DNA template. When the products of these four reactions are analysed by electrophoresis in four parallel lanes of a denaturing polyacrylamide gel, the DNA sequence can be derived. Every lane displays a family of DNA fragments of different lengths, reflecting the different sites at which a specific residue occurs in the original DNA." [PMID:14755292]
+name: full identification by DNA sequencing
+def: "Sequencing occurs during the course of the experiment. The DNA to be sequenced is used as template for the in vitro synthesis, by DNA polymerase, of a set of partial replicas, all beginning at the same place, but terminating at different points along the DNA chain. The key to this method is the use of dideoxyribonucleoside triphosphates in which the deoxyribose 3'-OH group present in normal nucleotides is missing; when such a modified nucleotide is incorporated into a DNA chain, it blocks the elongation of the chain. To determine the full sequence, the four different chain-terminating dideoxyribonucleosides are used in competition with an excess of deoxyribonucleosides in separate DNA synthesis reactions on the same DNA template. When the products of these four reactions are analysed by electrophoresis in four parallel lanes of a denaturing polyacrylamide gel, the DNA sequence can be derived. Every lane displays a family of DNA fragments of different lengths, reflecting the different sites at which a specific residue occurs in the original DNA." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "full dna sequence" EXACT PSI-MI-short []
 is_a: MI:0078 ! nucleotide sequence identification
@@ -594,12 +585,12 @@ name: mass spectrometry studies of complexes
 def: "Mass spectrometric approaches to the study of protein in complexes permits the identification of subunit stoichiometry and transient associations. By preserving complexes intact in the mass spectrometer, mass measurement can be used for monitoring changes in different experimental conditions, or to investigate how variations of collision energy affect their dissociation." [PMID:12504676, PMID for application instance:12057199]
 subset: PSI-MI slim
 synonym: "ms of complexes" EXACT PSI-MI-short []
-is_a: MI:0013 ! biophysical
+is_a: MI:0943 ! detection by mass spectrometry
 
 [Term]
 id: MI:0070
 name: mobility shift
-def: "Protein modifications can be identified by gel electrophoresis since any change in the mass and/or the charge of the protein can alter its mobility in PAGE. Although this method does not allow the unequivocally identification of the type of modification that has caused the shift, it is possible, by combining this approach with more direct methods, to correlate the extent of the shift to a specific modification." [PMID:14755292]
+def: "Protein modifications can be identified by gel electrophoresis since any change in the mass and/or the charge of the protein can alter its mobility in PAGE. Although this method does not allow the unequivocal identification of the type of modification that has caused the shift, it is possible, by combining this approach with more direct methods, to correlate the extent of the shift to a specific modification." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0659 ! experimental feature detection
 
@@ -632,7 +623,7 @@ is_a: MI:0034 ! display technology
 [Term]
 id: MI:0074
 name: mutation analysis
-def: "Several mutant molecules are produced by random or directed techniques and assayed for their ability to support binding. Mutants defective in binding are tested for correct folding to pinpoint the residues that are directly involved in binding." [PMID:14755292]
+def: "Mutant molecules are produced by random or directed techniques and assayed for their ability to support binding." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0659 ! experimental feature detection
 
@@ -655,7 +646,7 @@ is_a: MI:0577 ! feature prediction from structure
 [Term]
 id: MI:0077
 name: nuclear magnetic resonance
-def: "NMR requires a small volume of concentrated protein solution that is placed in a strong magnetic field. Certain atomic nuclei, and in particular hydrogen, have a magnetic moment or spin; that is, they have an intrinsic magnetisation, like a bar magnet. The spin aligns along the strong magnetic field, but can be changed to a misaligned excited state in response to applied radio frequency (RF) pulses of electromagnetic radiation. When the excited hydrogen nuclei relax to their aligned state, they emit RF radiation, which can be measured and displayed as a spectrum. The nature of the emitted radiation depends on the environment of each hydrogen nucleus, and if one nucleus is excited, it will influence the absorption and emission of radiation by other nuclei that lie close to it. It is consequently possible, by an ingenious elaboration of the basic NMR technique known as two-dimensional NMR, to distinguish the signals from hydrogen nuclei in different amino acid residues and to identify and measure the small shifts in these signals that occur when these hydrogen nuclei lie close enough to interact: the size of such a shift reveals the distance between the interacting pair of hydrogen atoms. In this way NMR can give information about the distances between the parts of the protein molecule. NMR provides information about interacting atoms thereby permitting to obtain information about protein structure and protein-protein interaction." [PMID:12120505, PMID for application instance:12062432]
+def: "NMR requires a small volume of concentrated compound solution that is placed in a strong magnetic field. Certain atomic nuclei, and in particular hydrogen, have a magnetic moment or spin; that is, they have an intrinsic magnetisation, like a bar magnet. The spin aligns along the strong magnetic field, but can be changed to a misaligned excited state in response to applied radio frequency (RF) pulses of electromagnetic radiation. When the excited hydrogen nuclei relax to their aligned state, they emit RF radiation, which can be measured and displayed as a spectrum. The nature of the emitted radiation depends on the environment of each hydrogen nucleus, and if one nucleus is excited, it will influence the absorption and emission of radiation by other nuclei that lie close to it. It is consequently possible, by an ingenious elaboration of the basic NMR technique known as two-dimensional NMR, to distinguish the signals from hydrogen nuclei in different amino acid residues and to identify and measure the small shifts in these signals that occur when these hydrogen nuclei lie close enough to interact: the size of such a shift reveals the distance between the interacting pair of hydrogen atoms. In this way NMR can give information about the distances between the parts of the interacting molecule. NMR provides information about interacting atoms thereby permitting to obtain information about macromolecular structure and molecular interactions." [PMID:12120505, PMID for application instance:12062432]
 subset: PSI-MI slim
 synonym: "NMR" EXACT PSI-MI-alternate []
 synonym: "nmr" EXACT PSI-MI-short []
@@ -700,7 +691,7 @@ name: peptide massfingerprinting
 def: "This approach leads to protein identification by matching peptide masses, as measured by mass spectrometry, to the ones calculated from in silico fragmentation of a protein sequence database. A peptide mixture from a tryptic digest is analysed by MALDI-MS (Matrix-assisted laser desorption ionization mass spectrometry). The list of peptide masses obtained by MALDI MS is automatically compared to the calculated masses of the predicted peptide fragments for each entry in the database. High mass accuracy is very important in order to obtain a statistically significant and unambiguous match This method is best applied to completely sequenced genomes and well characterised proteomes. However, depending on the data quality, proteins that are highly homologous to already characterised proteins (greater than 80 to 90% sequence identity) can also be identified. The retrieved sequence are evaluated by mass accuracy of the peptides, matching of additional peptide masses in the MALDI spectrum after accounting for common modifications such as oxidation, acrylamidation of cysteine and missed cleavages and the use of secondary information (apparent isoelectric point and molecular weight). If any ambiguity about the identification by MALDI-MS still exists, the results must verified by an other identification method. Peptide mass fingerprint is generally carried out with a MALDI-TOF (Matrix-assisted laser desorption ionization time-of-flight ) instrument but can also be achieved ESI-TOF (Electrospray Ionisation time-of-flight) or LC-MS (Liquid Chromatography-Mass Spectrometry) mass spectrometer." [PMID:10967324, PMID:11752590, PMID for application instance:11805826]
 subset: PSI-MI slim
 synonym: "fingerprinting" EXACT PSI-MI-short []
-is_a: MI:0427 ! mass spectrometry
+is_a: MI:0427 ! Identification by mass spectrometry
 is_a: MI:0433 ! partial identification of protein sequence
 is_a: MI:0815 ! confirmation by molecular weight
 
@@ -780,7 +771,7 @@ def: "Protein In Situ Array is a method by which protein arrays are rapidly gene
 subset: PSI-MI slim
 synonym: "PISA" EXACT PSI-MI-alternate []
 synonym: "pisa" EXACT PSI-MI-short []
-is_a: MI:0008 ! array technology
+is_a: MI:0089 ! protein array
 
 [Term]
 id: MI:0093
@@ -804,12 +795,12 @@ def: "ProteinChip(r) Array technology is a surface-enhanced laser desorption/ion
 subset: PSI-MI slim
 synonym: "seldi chip" EXACT PSI-MI-short []
 synonym: "SELDI ProteinChip" EXACT PSI-MI-alternate []
-is_a: MI:0008 ! array technology
+is_a: MI:0089 ! protein array
 
 [Term]
 id: MI:0096
 name: pull down
-def: "A specific affinity chromatography method where a protein of interest (bait) is expressed as a fusion to an affinity tag (GST, HIS tag and others) and linked at high concentration to a support that has affinity for the tag. Purified proteins or cellular extracts are then adsorbed to the resin and the retained binding proteins are identified. Thus, in this approach, the protein that has affinity for the solid support (bait) is expressed and purified first, often in an heterologous system, and then challenged with a solution containing the candidate partner proteins. no antibodies to retain bait but other affinity stuffs." [PMID:14755292]
+def: "A specific affinity chromatography method where a molecule of interest (bait) is expressed as a fusion to an affinity tag (GST, HIS tag and others) and binds to a support that has affinity for the tag. The protein may be expressed and purified first, often in an heterologous system, bound to the matrix at high concentration and then challenged with a solution or cellular extract containing the candidate partner molecules. Alternatively, a protein complex may be adsorbed to the resin and the retained binding proteins subsequently identified." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0004 ! affinity chromatography technology
 
@@ -862,7 +853,7 @@ name: sequence tag identification
 def: "This approach leads to protein identification by combining mass measurement and short amino acid sequence information obtained by tandem mass spectrometry. This information is then used to automatically find the best match in a sequence database. A mixture of peptides derived from a protease digestion is analysed by nanoelectrospray LC-MS/MS (Liquid Chromatography Tandem Mass Spectrometer or nanoESI MS/MS) mass spectrometry. Electrospray mass spectrometry cannot be applied to dilute samples and is affected by high salt. As a consequence peptides, normally extracted from acrylamide gels by in situ proteolysis, are desalted and concentrated on a microcolumn followed by elution into a capillary used for nanoelectrospray tandem mass spectrometry. A first mass spectrum (Normal mass spectrum or Q1 mass spectrum) gives information about the masses of all the peptides. Peptides observed in the normal mass spectrum are isolated in turn and dissociated into fragments by collision with gas molecules within the mass spectrometer. Some of the fragments obtained from a peptide constitute a nested set, differing by one amino acid, and the mass difference between them allows assignment of a partial sequence. The masses of the fragments define the position of the partial sequence in the peptide. Together with the cleavage specificity of the protease used to cleave the protein, and mass information such sequence tag provides much higher search specificity to match the a database entry. The procedure is repeated with several peptides from the digest, resulting in multiple identifications of the same protein or identification of several proteins from the peptide mixture. Unknown proteins can easily be identified by using the high specificity of the peptide sequence tag for searches in most sequence databases including EST or genome databases." [PMID:10967324, PMID:11752590, PMID for application instance:11805837]
 subset: PSI-MI slim
 synonym: "sequence tag" EXACT PSI-MI-short []
-is_a: MI:0427 ! mass spectrometry
+is_a: MI:0427 ! Identification by mass spectrometry
 is_a: MI:0433 ! partial identification of protein sequence
 
 [Term]
@@ -957,7 +948,7 @@ is_a: MI:0659 ! experimental feature detection
 [Term]
 id: MI:0114
 name: x-ray crystallography
-def: "Analysis of a diffraction pattern generated by a single crystal. X-rays have a wavelength, typically around 1 Angstrom (the diameter of a hydrogen atom). If a narrow parallel beam of X-rays is directed at a sample of a pure protein, most of the X-rays will pass straight through it. A small fraction, however, will be scattered by the atoms in the sample. If the sample is a well-ordered crystal, the scattered waves will reinforce one another at certain points and will appear as diffraction spots when the X-rays are recorded by a suitable detector. The position and intensity of each spot in the X-ray diffraction pattern contain information about the position and nature of the atoms in the crystal. The three-dimensional structure of a large molecule can be deduced from the electron-density map of its crystal. In recent years X-ray diffraction analysis has become increasingly automated, and now the slowest step is likely to be the production of suitable protein crystals. This requires high concentration of very pure protein and empirical searching for the proper crystallisation conditions." [PMID:14755292]
+def: "Analysis of a diffraction pattern generated by a single crystal. X-rays have a wavelength, typically around 1 Angstrom (the diameter of a hydrogen atom). If a narrow parallel beam of X-rays is directed at a sample of a pure protein, most of the X-rays will pass straight through it. A small fraction, however, will be scattered by the atoms in the sample. If the sample is a well-ordered crystal, the scattered waves will reinforce one another at certain points and will appear as diffraction spots when the X-rays are recorded by a suitable detector. The position and intensity of each spot in the X-ray diffraction pattern contain information about the position and nature of the atoms in the crystal. The three-dimensional structure of a large molecule can be deduced from the electron-density map of its crystal. In recent years X-ray diffraction analysis has become increasingly automated, and now the slowest step is likely to be the production of suitable macromolecule crystals. This requires high concentration of very pure macromolecule and empirical searching for the proper crystallisation conditions." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "X-ray" EXACT PSI-MI-alternate []
 synonym: "x-ray diffraction" EXACT PSI-MI-short []
@@ -982,7 +973,7 @@ relationship: part_of MI:0000 ! molecular interaction
 [Term]
 id: MI:0117
 name: binding site
-def: "A sequence range within a protein identified as involved in an interaction." [PMID:14755292]
+def: "A region of a molecule identified as being involved in an interaction." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0252 ! biological feature
 
@@ -996,7 +987,7 @@ is_a: MI:0252 ! biological feature
 [Term]
 id: MI:0119
 name: mutation decreasing interaction
-def: "Residue of a protein whose identity mutation or deletion decreases significantly interaction strength." [PMID:14755292]
+def: "Region of a molecule whose mutation or deletion decreases significantly interaction strength." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "hotspot" EXACT PSI-MI-alternate []
 synonym: "mutation decreasing" EXACT PSI-MI-short []
@@ -2347,11 +2338,11 @@ is_a: MI:0473 ! participant database
 [Term]
 id: MI:0247
 name: newt
-def: "New EBI Web Taxonomy.\nhttp://www.ebi.ac.uk/newt" [PMID:14755292]
+def: "New EBI Web Taxonomy.\nhttp://www.ebi.ac.uk/newt OBSOLETE: Consider remapping to uniprot taxonomy MI:0942" [PMID:14755292]
 subset: PSI-MI slim
 xref: id-validation-regexp:\"[0-9\]+\"
 xref: search-url: "http://www.ebi.ac.uk/newt/display?search=${ac}"
-is_a: MI:0473 ! participant database
+is_obsolete: true
 
 [Term]
 id: MI:0248
@@ -2389,7 +2380,7 @@ is_a: MI:0353 ! cross-reference type
 [Term]
 id: MI:0252
 name: biological feature
-def: "Property of a subsequence that may interfere with the binding of a molecule and are supported by experimental evidences." [PMID:14755292]
+def: "Property of a subsequence that may be involved with or interfere with the binding of a molecule and are supported by experimental evidences." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0116 ! feature type
 
@@ -2956,7 +2947,7 @@ is_a: MI:0300 ! alias type
 [Term]
 id: MI:0346
 name: experimental preparation
-def: "Set of terms to describe the participant experimental treatment and status. This term group in fact 4 orthologues short controlled vocabularies delivery method, expression level, molecular source, and sample process. Each participant can then be annotated with a maximum of 4 terms selected from each short list." [PMID:14755292]
+def: "Set of terms to describe the participant experimental treatment and status. This term groups a number of orthologous short controlled vocabularies delivery method, expression level, molecular source, and sample process. Each participant can then be annotated with a maximum of 4 terms selected from each short list." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "experimental prep" EXACT PSI-MI-short []
 relationship: part_of MI:0000 ! molecular interaction
@@ -3063,7 +3054,7 @@ is_a: MI:0353 ! cross-reference type
 [Term]
 id: MI:0360
 name: secondary accession number
-def: "Reference to the corresponding object in another database (like identity xref qualifier) but the identifier used in the external database is a secondary identifier or former accesion numbers" [PMID:14755292]
+def: "Reference to the corresponding object in another database (like identity xref qualifier) but the identifier used in the external database is a secondary identifier or former accession number." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "secondary-ac" EXACT PSI-MI-short []
 is_a: MI:0353 ! cross-reference type
@@ -3071,7 +3062,7 @@ is_a: MI:0353 ! cross-reference type
 [Term]
 id: MI:0361
 name: see-also
-def: "Related object within the same database or pointing to external database." [PMID:14755292]
+def: "Related object within the same database or pointing to an external database." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0353 ! cross-reference type
 
@@ -3214,7 +3205,7 @@ synonym: "FITC labelled" EXACT PSI-MI-alternate []
 synonym: "fitc labelled" EXACT PSI-MI-short []
 synonym: "fluorescein isothiocyanate labbeled" EXACT PSI-MI-alternate []
 is_a: MI:0373 ! dye label
-is_a: MI:0857 ! fluorescent dye label
+is_a: MI:0939 ! fluorescein label
 
 [Term]
 id: MI:0378
@@ -3255,7 +3246,7 @@ is_a: MI:0378 ! rare isotope label
 [Term]
 id: MI:0382
 name: mutation increasing interaction
-def: "Residue of a protein whose identity mutation or deletion increases significantly interaction strength." [PMID:14577292]
+def: "Region of a molecule whose mutation or deletion increases significantly interaction strength." [PMID:14577292]
 subset: PSI-MI slim
 synonym: "mutation increasing" EXACT PSI-MI-short []
 is_a: MI:0118 ! mutation
@@ -3342,7 +3333,7 @@ is_a: MI:0018 ! two hybrid
 [Term]
 id: MI:0398
 name: two hybrid pooling approach
-def: "In the pooling strategy the sets of bait and prey hybrid vectors are randomly mated. The positives double hybrid clones are sequenced to identify the interacting partners." [PMID:12634794, PMID for application instance:11283351]
+def: "In the pooling strategy the sets of bait and prey hybrid vectors are randomly mated. The positives double hybrid clones are the interacting partners." [PMID:12634794, PMID for application instance:11283351]
 subset: PSI-MI slim
 synonym: "two hybrid pooling" EXACT PSI-MI-short []
 is_a: MI:0018 ! two hybrid
@@ -3350,7 +3341,7 @@ is_a: MI:0018 ! two hybrid
 [Term]
 id: MI:0399
 name: two hybrid fragment pooling approach
-def: "This two hybrid approach involves the screening of a large number of individual proteins against a comprehensive library of randomly generated fragment as prey. The usage of degenerated fragment allows identification of the minimal protein region required for the interaction. since multiple clones that encode overlapping regions of protein are often identified, the minimal domain for interaction may be readily apparent from the initial screen." [PMID:12634794, PMID for application instance:11196647]
+def: "This two hybrid approach involves the screening of a large number of individual proteins against a comprehensive library of randomly generated fragment as prey. The usage of degenerated fragment allows identification of the minimal protein region required for the interaction. Since multiple clones that encode overlapping regions of protein are often identified, the minimal domain for interaction may be readily apparent from the initial screen." [PMID:12634794, PMID for application instance:11196647]
 subset: PSI-MI slim
 synonym: "2h fragment pooling" EXACT PSI-MI-short []
 is_a: MI:0398 ! two hybrid pooling approach
@@ -3366,7 +3357,7 @@ is_a: MI:0401 ! biochemical
 [Term]
 id: MI:0401
 name: biochemical
-def: "The application of chemical principles and methods to biological experiments." [PMID:14755292]
+def: "The application of chemical principles and methods to biological experiments to demonstrate an interaction." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0045 ! experimental interaction detection
 
@@ -3524,7 +3515,7 @@ is_a: MI:0510 ! homogeneous time resolved fluorescence
 [Term]
 id: MI:0421
 name: identification by antibody
-def: "Antibody mediated identification." [PMID:14755292]
+def: "Antibody mediated participant identification." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "antibody detection" EXACT PSI-MI-short []
 is_a: MI:0661 ! experimental participant identification
@@ -3569,9 +3560,10 @@ is_a: MI:0428 ! imaging technique
 
 [Term]
 id: MI:0427
-name: mass spectrometry
-def: "mass spectrometry." [PMID:14755292]
+name: Identification by mass spectrometry
+def: "identification by mass spectrometry." [PMID:14755292]
 subset: PSI-MI slim
+synonym: "ms participant" EXACT PSI-MI-short []
 is_a: MI:0661 ! experimental participant identification
 
 [Term]
@@ -3585,7 +3577,7 @@ is_a: MI:0045 ! experimental interaction detection
 [Term]
 id: MI:0429
 name: necessary binding site
-def: "A sequence range within a protein identified as being absolutely required for an interaction." [PMID:14755292]
+def: "A sequence range within a molecule identified as being absolutely required for an interaction." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "required to bind" EXACT PSI-MI-short []
 is_a: MI:0117 ! binding site
@@ -3647,7 +3639,7 @@ is_a: MI:0659 ! experimental feature detection
 [Term]
 id: MI:0437
 name: protein tri hybrid
-def: "Two hybrid assay performed with a third protein component is co-transfected into a recombinant yeast strain together with a bait and a prey construct. Negative control show that the interaction between the bait and the prey do not occur when the third protein is not co-transfected." [PMID:12052864, PMID:12761205, PMID:12935900]
+def: "Two hybrid assay performed with a third protein component co-transfected into a recombinant yeast strain together with a bait and a prey construct. Negative control shows that the interaction between the bait and the prey do not occur when the third protein is not co-transfected." [PMID:12052864, PMID:12761205, PMID:12935900]
 subset: PSI-MI slim
 synonym: "bridge assay" EXACT PSI-MI-alternate []
 synonym: "trihybrid" EXACT PSI-MI-alternate []
@@ -3693,7 +3685,7 @@ is_a: MI:0254 ! genetic interference
 [Term]
 id: MI:0442
 name: sufficient binding site
-def: "Binding will occur when this sequence range is present within a protein." [PMID:14755292]
+def: "Binding will occur when this sequence range is present within a molecule of part of a molecule." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "sufficient to bind" EXACT PSI-MI-short []
 is_a: MI:0117 ! binding site
@@ -3716,7 +3708,7 @@ relationship: part_of MI:0000 ! molecular interaction
 [Term]
 id: MI:0445
 name: literature database
-def: "literature reference" [PMID:14755292]
+def: "Databases acting as a source of literature information." [PMID:14755292]
 subset: Drugable
 subset: PSI-MI slim
 synonym: "experiment xref" EXACT PSI-MI-short []
@@ -3735,7 +3727,7 @@ is_a: MI:0445 ! literature database
 [Term]
 id: MI:0447
 name: feature database
-def: "feature database." [PMID:14755292]
+def: "A database describing a feature on a molecule." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "feature xref" EXACT PSI-MI-short []
 is_a: MI:0444 ! database citation
@@ -3753,7 +3745,7 @@ is_a: MI:0461 ! interaction database
 [Term]
 id: MI:0449
 name: interpro
-def: "InterPro combines a number of databases (referred to as member databases) that use different methodologies and a varying degree of biological information on well-characterised proteins to derive protein signatures.\nhttp://www.ebi.ac.uk/interpro/" [PMID:1252001]
+def: "InterPro combines a number of databases (referred to as member databases) that use different methodologies and a varying degree of biological information on well-characterised proteins to derive protein signatures that predict family membership and domain composition of naive protein sequences.\nhttp://www.ebi.ac.uk/interpro/" [PMID:1252001]
 subset: PSI-MI slim
 synonym: "InterPro" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"IPR[0-9\]\{6}\"
@@ -3865,7 +3857,7 @@ is_a: MI:0805 ! wwpdb
 [Term]
 id: MI:0461
 name: interaction database
-def: "interaction database." [PMID:14755292]
+def: "Databases that contain experimental or predictive molecular interaction data." [PMID:14755292]
 subset: Drugable
 subset: PSI-MI slim
 synonym: "interaction xref" EXACT PSI-MI-short []
@@ -3917,7 +3909,7 @@ is_a: MI:0489 ! source database
 [Term]
 id: MI:0466
 name: ecocyc
-def: " EcoCyc is a bioinformatics database that describes the genome and the biochemical machinery of E. coli K12 MG1655.\nhttp://ecocyc.org/" [PMID:14755292]
+def: "EcoCyc is a bioinformatics database that describes the genome and the biochemical machinery of E. coli K12 MG1655.\nhttp://ecocyc.org/" [PMID:14755292]
 subset: PSI-MI slim
 synonym: "EcoCyc" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
@@ -3975,19 +3967,21 @@ is_a: MI:0489 ! source database
 
 [Term]
 id: MI:0472
-name: msd pdb
-def: "The Macromolecular Structure Database (MSD) - the European project for the collection, management and distribution of data about macromolecular structures, derived in part from the Protein Data Bank (PDB).\nhttp://www.ebi.ac.uk/msd/" [PMID:16381867]
+name: pdbe
+def: "The Protein Data Bank in Europe - the European project for the collection, management and distribution of data about macromolecular structures, derived in part from the Protein Data Bank (PDB).\nhttp://www.ebi.ac.uk/pdbe/" [PMID:16381867]
 subset: PSI-MI slim
-synonym: "e-MSD" EXACT PSI-MI-alternate []
+synonym: "<new synonym>" RELATED []
+synonym: "e-MSD" EXACT []
+synonym: "MSD" RELATED []
 synonym: "PQS" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
-xref: search-url: "http://www.ebi.ac.uk/msd-srv/atlas?id=${ac}"
+xref: search-url: "http://www.ebi.ac.uk/pdbe-srv/atlas?id=${ac}"
 is_a: MI:0805 ! wwpdb
 
 [Term]
 id: MI:0473
 name: participant database
-def: "participant database." [PMID:14755292]
+def: "Database of molecules participating in molecular interactions." [PMID:14755292]
 subset: Drugable
 subset: PSI-MI slim
 synonym: "participant xref" EXACT PSI-MI-short []
@@ -4145,7 +4139,7 @@ is_a: MI:0444 ! database citation
 [Term]
 id: MI:0489
 name: source database
-def: "Database that orignally provided the interaction record for exchange purposes." [PMID:14755292]
+def: "Database that originally provided the interaction record for exchange purposes." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0444 ! database citation
 
@@ -4224,21 +4218,21 @@ is_a: MI:0500 ! biological role
 [Term]
 id: MI:0500
 name: biological role
-def: "Description of molecules polarity on a directional interaction." [PMID:14755292]
+def: "Physiological role of an interactor in a cell or in vivo environment, which is reproduced in the current experiment." [PMID:14755292]
 subset: PSI-MI slim
 relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0501
 name: enzyme
-def: "Molecule doing a modification on its interacting partner." [PMID:14755292]
+def: "Molecule catalyzing a modification on its interacting partner." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0500 ! biological role
 
 [Term]
 id: MI:0502
 name: enzyme target
-def: "Molecule that is the target of its binding partner activity." [PMID:14755292]
+def: "Molecule that is the target of its binding partner catalytic activity." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "substrate" EXACT PSI-MI-alternate []
 is_a: MI:0500 ! biological role
@@ -4848,7 +4842,7 @@ is_a: MI:0910 ! nucleic acid cleavage
 [Term]
 id: MI:0573
 name: mutation disrupting interaction
-def: "Residue of a protein whose identity mutation or deletion totally disrupt an interaction." [PMID:14755292]
+def: "Region of a molecule whose mutation or deletion totally disrupts an interaction." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "mutation disrupting" EXACT PSI-MI-short []
 is_a: MI:0119 ! mutation decreasing interaction
@@ -4856,7 +4850,7 @@ is_a: MI:0119 ! mutation decreasing interaction
 [Term]
 id: MI:0574
 name: digital object identifier
-def: "Identifier of a publication prior it pubmed indexing." [PMID:14755292]
+def: "Identifier of a publication prior to pubmed indexing." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "doi" EXACT PSI-MI-short []
 xref: id-validation-regexp:\"\\d+.\\d+/[a-zA-Z0-9\\.\\\:\]+\"
@@ -4937,7 +4931,7 @@ is_a: MI:0495 ! experimental role
 [Term]
 id: MI:0584
 name: fluorescence acceptor
-def: "Fluorophore able to absord the electromagnetic radiation at given wavelength from a specific donor fluorophore, the re-emission of its own charateristic fluorescence." [PMID:14755292]
+def: "Fluorophore able to absorb the electromagnetic radiation at given wavelength from a specific donor fluorophore, the re-emission of its own characteristic fluorescence." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "fluorescence accept" EXACT PSI-MI-short []
 is_a: MI:0495 ! experimental role
@@ -4954,7 +4948,7 @@ is_a: MI:0461 ! interaction database
 [Term]
 id: MI:0586
 name: inhibitor
-def: "Molecule inhibiting an interaction by interacting with one or more of its participant." [PMID:14755292]
+def: "Molecule inhibiting an interaction by interacting with one or more of its participants." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0500 ! biological role
 
@@ -4983,7 +4977,7 @@ is_a: MI:0342 ! sample process
 [Term]
 id: MI:0590
 name: attribute name
-def: "Collection of topic describing the free text stored as an attribute value." [PMID:14755292]
+def: "Collection of topics describing the free text stored as an attribute value." [PMID:14755292]
 subset: Drugable
 subset: PSI-MI slim
 synonym: "CvTopic" EXACT PSI-MI-alternate []
@@ -5042,15 +5036,15 @@ is_a: MI:0668 ! feature attribute name
 
 [Term]
 id: MI:0598
-name: feature constrain
-def: "The feature constrain free text will specificity whether a biological feature is shown to be possible (just observed) or required (experimentally demonstrated to be necessary for an interaction)." [PMID:14755292]
+name: feature constraint
+def: "The feature constraint free text will specificity whether a biological feature is shown to be possible (just observed) or required (experimentally demonstrated to be necessary for an interaction)." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0668 ! feature attribute name
 
 [Term]
 id: MI:0599
 name: figure legend
-def: "Text pointing to a specific paper figure legend where the experimental evidences for an interaction are shown." [PMID:14755292]
+def: "Text pointing to a specific paper figure legend where the experimental evidences for an interaction are to be found." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0664 ! interaction attribute name
 is_a: MI:0665 ! experiment attibute name
@@ -5163,7 +5157,7 @@ is_a: MI:0320 ! ribonucleic acid
 [Term]
 id: MI:0612
 name: comment
-def: "Comment for public view. This attribute can be associated to interaction, experiment, Cv term, an organism and any participant." [PMID:14755292]
+def: "Comment for public view. This attribute can be associated to interaction, experiment, CV term, an organism and any participant." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0664 ! interaction attribute name
 is_a: MI:0665 ! experiment attibute name
@@ -5208,14 +5202,14 @@ is_a: MI:0667 ! controlled vocabulary attribute name
 [Term]
 id: MI:0617
 name: disease
-def: "The interaction that has a disease association." [PMID:14755292]
+def: "The interaction has a known or demonstrated disease association." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0664 ! interaction attribute name
 
 [Term]
 id: MI:0618
 name: caution
-def: "Warning about errors/ grounds for confusion. Can be associated to interaction, experiment, Cv term or any participant." [PMID:14755292]
+def: "Warning about errors or grounds for confusion. Can be associated to an interaction, experiment, CV term or any participant." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0664 ! interaction attribute name
 is_a: MI:0665 ! experiment attibute name
@@ -5227,7 +5221,7 @@ is_a: MI:0669 ! organism attribute name
 [Term]
 id: MI:0619
 name: pathway
-def: "Refers to the metabolic pathway involving an interaction or a complex." [PMID:14755292]
+def: "Refers to the metabolic or signalling pathway involving an interaction or a complex." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0664 ! interaction attribute name
 
@@ -5335,14 +5329,14 @@ is_a: MI:0665 ! experiment attibute name
 [Term]
 id: MI:0634
 name: contact-email
-def: "E-mail address to contact the author/organisation which has produced the data. This attribute is generally associated to an experiment." [PMID:14755292]
+def: "E-mail address to contact the author or organisation which has produced the data. This attribute is generally associated to an experiment." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0635
 name: contact-comment
-def: "Free text notes on how to contact the author organisation which has produced the data This attribute is generally associated to an experiment." [PMID:14755292]
+def: "Free text notes on how to contact the author or organisation which has produced the data This attribute is generally associated to an experiment." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0665 ! experiment attibute name
 
@@ -5527,13 +5521,13 @@ def: "MudPIT is a method for rapid and large-scale protein identification by mul
 subset: PSI-MI slim
 synonym: "mudpit" EXACT PSI-MI-short []
 is_a: MI:0093 ! protein sequence identification
-is_a: MI:0427 ! mass spectrometry
+is_a: MI:0427 ! Identification by mass spectrometry
 is_a: MI:0815 ! confirmation by molecular weight
 
 [Term]
 id: MI:0659
 name: experimental feature detection
-def: "experimental feature detection." [PMID:14755292]
+def: "Experimental method by which a feature is detected or identified." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "exp feature detect" EXACT PSI-MI-short []
 is_a: MI:0003 ! feature detection method
@@ -5647,7 +5641,7 @@ is_a: MI:0300 ! alias type
 [Term]
 id: MI:0674
 name: peptide parent sequence reference
-def: "Describe cross link pointing to a peptide parent sequence." [PMID:14755292]
+def: "Describe a cross reference pointing to a peptide parent sequence." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "peptide-parent" EXACT PSI-MI-short []
 is_a: MI:0353 ! cross-reference type
@@ -5724,7 +5718,7 @@ is_a: MI:0500 ! biological role
 [Term]
 id: MI:0683
 name: sequence database
-def: "Database collecting nucleic or amino acid sequences mainly derived from genomic sequence." [PMID:14755292]
+def: "Database collecting nucleic or amino acid sequences mainly derived from genomic or mRNA sequencing." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0473 ! participant database
 
@@ -5873,7 +5867,7 @@ is_a: MI:0414 ! enzymatic reaction
 [Term]
 id: MI:0702
 name: panther
-def: "The PANTHER (Protein ANalysis THrough Evolutionary Relationships) Classification System is a unique resource that classifies genes by their functions using published scientific experimental evidence and evolutionary relationships to predict function even in the absence of direct experimental evidence.\nwww.pantherdb.org/ " [PMID:14755292]
+def: "The PANTHER (Protein ANalysis THrough Evolutionary Relationships) Classification System is a unique resource that classifies genes by their functions using published scientific experimental evidence and evolutionary relationships to predict function even in the absence of direct experimental evidence.\nwww.pantherdb.org/" [PMID:14755292]
 subset: PSI-MI slim
 synonym: "PANTHER" EXACT PSI-MI-alternate []
 is_a: MI:0449 ! interpro
@@ -5897,7 +5891,7 @@ is_a: MI:0307 ! delivery method
 [Term]
 id: MI:0705
 name: anti tag western blot
-def: "Western blot assay performed when specific antibodies for the protein of interest are not available. Therefore the protein is expressed as a hybrid protein fused to a tag for which efficient antibodies are available.The antibody may be either monoclonal or polyclonal." [PMID:14755292]
+def: "Western blot assay performed when specific antibodies for the protein of interest are not available. Therefore the protein is expressed as a hybrid protein fused to a tag for which efficient antibodies are available. The antibody may be either monoclonal or polyclonal." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "anti tag western" EXACT PSI-MI-short []
 is_a: MI:0113 ! western blot
@@ -5989,7 +5983,7 @@ is_a: MI:0704 ! nucleic acid delivery
 [Term]
 id: MI:0716
 name: passive uptake
-def: "Entrance of molecules into cells that does not involved specific treatments but rely on natural cellular processes." [PMID:14755292]
+def: "Entrance of molecules into cells that does not involved specific treatments but relies on natural cellular processes." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0307 ! delivery method
 
@@ -6098,7 +6092,7 @@ is_a: MI:0018 ! two hybrid
 [Term]
 id: MI:0729
 name: luminescence based mammalian interactome mapping
-def: "This strategy uses Renilla luciferase enzyme (RL) fused to proteins of interest, which are then coexpressed with individual Flag-tagged partners in mammalian cells. Their interactions were determined by performing an RL enzymatic assay on immunoprecipitates using an antibody against Flag." [PMID:15761153]
+def: "This strategy uses Renilla luciferase enzyme (RL) fused to proteins of interest, which are then coexpressed with individual Flag-tagged partners in mammalian cells. Their interactions are determined by performing an RL enzymatic assay on anti-Flag immunoprecipitates." [PMID:15761153]
 subset: PSI-MI slim
 synonym: "lumier" EXACT PSI-MI-short []
 is_a: MI:0004 ! affinity chromatography technology
@@ -6530,11 +6524,11 @@ is_a: MI:0816 ! molecular weight estimation by staining
 [Term]
 id: MI:0823
 name: predetermined feature
-def: "Feature detection not  verified in the context of an experiment but  assumed from external or previous experimental evidence(s)." [PMID:14755292]
+def: "Feature detection not verified in the context of an experiment but assumed from external or previous experimental evidence(s)." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "predetermined featur" EXACT PSI-MI-short []
 is_a: MI:0093 ! protein sequence identification
-is_a: MI:0427 ! mass spectrometry
+is_a: MI:0427 ! Identification by mass spectrometry
 is_a: MI:0659 ! experimental feature detection
 
 [Term]
@@ -6549,7 +6543,7 @@ is_a: MI:0114 ! x-ray crystallography
 [Term]
 id: MI:0825
 name: x-ray fiber diffraction
-def: "Analysis  of diffraction pattern of a partially ordered sample composed of fibers oriented parallel to each other using Xray." [PMID:14755292]
+def: "Analysis of the diffraction pattern of a partially ordered sample composed of fibers oriented parallel to each other using X-ray." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "X-ray" EXACT PSI-MI-alternate []
 synonym: "x-ray fiber diffrac" EXACT PSI-MI-short []
@@ -6575,13 +6569,14 @@ id: MI:0828
 name: polyprotein fragment
 def: "Subpart of a polyprotein that is naturally cleaved in vivo." [PMID:14577292]
 subset: PSI-MI slim
+synonym: "chain" RELATED []
 synonym: "polyprotein frag" EXACT PSI-MI-short []
 is_a: MI:0252 ! biological feature
 
 [Term]
 id: MI:0829
 name: multiple parent reference
-def: "This qualifier is used  for hybrid or composite molecules with more than one crossreference to parent molecules." [PMID:14755292]
+def: "This qualifier is used  for hybrid or composite molecules with more than one cross-reference to parent molecules." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "multiple parent" EXACT PSI-MI-short []
 is_a: MI:0353 ! cross-reference type
@@ -6683,15 +6678,15 @@ is_a: MI:0415 ! enzymatic study
 
 [Term]
 id: MI:0842
-name: phospho donor
+name: phosphate donor
 def: "Any molecule that is able to transfer an phosphate to another chemical species." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0918 ! donor
 
 [Term]
 id: MI:0843
-name: phospho acceptor
-def: "Molecule to which a phosphate may be transferred from an phospho donor." [PMID:14755292]
+name: phosphate acceptor
+def: "Molecule to which a phosphate may be transferred from a phosphate donor." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0919 ! acceptor
 
@@ -6820,7 +6815,7 @@ is_a: MI:0856 ! fluorophore
 [Term]
 id: MI:0858
 name: immunodepleted coimmunoprecipitation
-def: "Method involving consecutives  CoIps on the same sample, a control one where an interaction is detected, and other CoIPs where the sample is previously treated with a specific antibody that precipitate a candidate interactor and lead to an interaction supression or a change in composition od a complex." [PMID:17081976]
+def: "Method involving consecutive coimmunoimmunoprecipitations on the same sample, a control  where an interaction is detected, and other CoIPs where the sample is previously treated with a specific antibody that precipitates a candidate interactor and leads to the suppression of an interaction or a change in composition of a complex." [PMID:17081976]
 subset: PSI-MI slim
 synonym: "immunodepleted coip" EXACT PSI-MI-alternate []
 synonym: "immunodepletion" EXACT PSI-MI-short []
@@ -6904,7 +6899,7 @@ is_a: MI:0866 ! tag visualisation
 [Term]
 id: MI:0868
 name: author identifier
-def: "Author published identifier" [PMID:14755292]
+def: "Author published identifier." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0353 ! cross-reference type
 
@@ -6943,7 +6938,7 @@ is_a: MI:0428 ! imaging technique
 [Term]
 id: MI:0873
 name: curation request
-def: "Annotation of a publiched paper which has been externally requested." [PMID:14755292]
+def: "Annotation of a published paper which has been externally requested." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0665 ! experiment attibute name
 
@@ -6957,7 +6952,7 @@ is_a: MI:0665 ! experiment attibute name
 [Term]
 id: MI:0878
 name: author submitted
-def: "Data directly submitted by the authors to a database prior publication" [PMID:14755292]
+def: "Data directly submitted by the authors to a database prior to publication." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0665 ! experiment attibute name
 
@@ -7109,7 +7104,7 @@ is_a: MI:0447 ! feature database
 [Term]
 id: MI:0898
 name: putative self
-def: "Molecule that interacts with sister molecules of identical sequence or type, but the experimental condition does not allow to resolve whether the interaction is intramolecular (true self interaction) or intermolecular (homodimer)." [PMID:14755292]
+def: "Molecule that is reported to self-interact but the experimental condition does not allow to resolve whether the interaction is intramolecular (true self interaction) or intermolecular (homodimer)." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0495 ! experimental role
 is_a: MI:0500 ! biological role
@@ -7259,7 +7254,7 @@ is_a: MI:0018 ! two hybrid
 [Term]
 id: MI:0917
 name: matrixdb
-def: "Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions." [PMID:14755292]
+def: "Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions." [PMID:19147664]
 subset: PSI-MI slim
 is_a: MI:0461 ! interaction database
 is_a: MI:0489 ! source database
@@ -7307,7 +7302,7 @@ is_a: MI:0353 ! cross-reference type
 [Term]
 id: MI:0923
 name: irefindex
-def: "iRefIndex provides an index of protein interactions available in a number of primary interaction databases including BIND, BioGRID, DIP, HPRD, IntAct, MINT, MPact, MPPI and OPHID.  This index allows the user to search for a protein and retrieve a non-redundant list of interactors for that protein. iRefIndex uses the Sequence Global Unique Identifier (SEGUID) to group proteins and interactions into redundant groups.  This method allows users to integrate their own data with the iRefIndex in a way that ensures proteins with the exact same sequence will be represented only once.\nhttp://irefindex.uio.no/" [PMID:14681455]
+def: "iRefIndex provides an index of protein interactions available in a number of primary interaction databases including BIND, BioGRID, DIP, HPRD, IntAct, MINT, MPact, MPPI and OPHID.  This index allows the user to search for a protein and retrieve a non-redundant list of interactors for that protein. iRefIndex uses the Sequence Global Unique Identifier (SEGUID) to group proteins and interactions into redundant groups.  This method allows users to integrate their own data with the iRefIndex in a way that ensures proteins with the exact same sequence will be represented only once.\nhttp://irefindex.uio.no/" [PMID:18823568]
 subset: PSI-MI slim
 synonym: "iRefIndex" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
@@ -7349,8 +7344,11 @@ is_a: MI:0857 ! fluorescent dye label
 [Term]
 id: MI:0928
 name: filter trap assay
-def: "Purified protein are mixed in a buffer and the resulting mixture is\nfiltered through a cellulose-acetate filters (0.2 ?m pore size). Big\naggregates are retained on the filter and later characterized by antibody." [PMID:10859365]
+def: "Biomolecules are mixed in a buffer and the resulting mixture is\npassed through a filter. Large\naggregates are retained on the filter and the pariticipants may then be identified." [PMID:10859365]
 subset: PSI-MI slim
+synonym: "<new synonym>" RELATED []
+synonym: "filter binding" EXACT []
+synonym: "filter retardation assay" RELATED []
 synonym: "Filter retention assay" EXACT PSI-MI-alternate []
 is_a: MI:0013 ! biophysical
 is_a: MI:0091 ! chromatography technology
@@ -7414,6 +7412,226 @@ synonym: "positive gent int" EXACT PSI-MI-short []
 is_a: MI:0208 ! genetic interaction
 
 [Term]
+id: MI:0936
+name: emdb
+def: "The Electron Microscopy Data Bank (EMDB) contains experimentally determined three-dimensional maps and associated experimental data and files." [PMID:14643225]
+subset: PSI-MI slim
+synonym: "Electron Microscopy Data Bank" EXACT PSI-MI-alternate []
+synonym: "eMDB" EXACT PSI-MI-short []
+is_a: MI:0472 ! pdbe
+
+[Term]
+id: MI:0937
+name: glu tag
+def: "This peptide is a 314 to 319 amino acids fragment of the middle T antigen of mouse polymavirus. Glu-Glu epitope peptide." [PMID:8077219]
+subset: PSI-MI slim
+synonym: "glu tag" EXACT PSI-MI-short []
+is_a: MI:0507 ! tag
+
+[Term]
+id: MI:0938
+name: rheology measurement
+def: "Characterization of viscoelastic properties of biomolecule solution is used to infer interactions between molecules." [PMID:18445655]
+subset: PSI-MI slim
+synonym: "rheology" EXACT PSI-MI-short []
+is_a: MI:0013 ! biophysical
+
+[Term]
+id: MI:0939
+name: fluorescein label
+def: "Fluorescence label used to monitor the presence of a protein." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "fluorescein" EXACT PSI-MI-short []
+is_a: MI:0857 ! fluorescent dye label
+
+[Term]
+id: MI:0940
+name: fluorescein-5-maleimide label
+def: "Fluorescein-5-maleimide is one of the most popular fluorescent dyes for thiol modifications of proteins at cysteine residues that either are intrinsically present or result from reduction of cystines. Unlike iodoacetamides, maleimides do not react with histidines and methionines under physiological conditions." [PMID:18066077]
+subset: PSI-MI slim
+synonym: "fluor-5-maleimide" EXACT PSI-MI-short []
+is_a: MI:0939 ! fluorescein label
+
+[Term]
+id: MI:0941
+name: competitor
+def: "Binds to the bait molecule in competition with other prey molecules, for example at a shared binding site." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "competitor" EXACT PSI-MI-short []
+is_a: MI:0500 ! biological role
+
+[Term]
+id: MI:0942
+name: uniprot taxonomy
+def: "Based on NCBO Taxonomy but adapted for UniProt\nhttp://www.uniprot.org/taxonomy/" [PMID:18836194]
+subset: PSI-MI slim
+synonym: "uniprot taxon" EXACT PSI-MI-alternate []
+xref: id-validation-regexp:\"[0-9\]+\"
+xref: search-url: "http://www.uniprot.org/taxonomy/${ac}"
+is_a: MI:0473 ! participant database
+
+[Term]
+id: MI:0943
+name: detection by mass spectrometry
+def: "'Study of interactions by an analytical technique based on measurements of mass-to-charge ratio of charged particles in a mass spectrometer." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "ms interact detect" EXACT PSI-MI-short []
+is_a: MI:0013 ! biophysical
+
+[Term]
+id: MI:0944
+name: mass spectrometry study of hydrogen/deuterium exchange
+def: "Mass spectroscopy based measurement of the rate and/or extent of the hydrogen/deuterium exchange." [PMID:18948593]
+subset: PSI-MI slim
+synonym: "h1-h2 ms" EXACT PSI-MI-short []
+is_a: MI:0943 ! detection by mass spectrometry
+
+[Term]
+id: MI:0945
+name: oxidoreductase activity electron transfer assay
+def: "An oxidation-reduction (redox) reaction, a reversible chemical reaction in which the oxidation state of an atom or atoms within a molecule is altered. One substrate acts as a hydrogen or electron donor and becomes oxidized, while the other acts as hydrogen or electron acceptor and becomes reduced." [GO:GO\:0016491, PMID:14755292]
+subset: PSI-MI slim
+synonym: "redox reaction" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+
+[Term]
+id: MI:0946
+name: ping
+def: "Combines on-chip in-vitro protein synthesis with an in situ microfluidic affinity assay." [PMID:19098921]
+subset: PSI-MI slim
+is_a: MI:0092 ! protein in situ array
+
+[Term]
+id: MI:0947
+name: bead aggregation assay
+def: "Binding of proteins bound to beads leads to a measurable aggregation of the beads." [PMID:19114658]
+subset: PSI-MI slim
+synonym: "bead aggregation" EXACT PSI-MI-short []
+is_a: MI:0892 ! solid phase assay
+
+[Term]
+id: MI:0948
+name: kinetic conditions
+def: "A brief description (such as temp, pH) of the conditions under which a kinetic measurment has been performed." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "kinetic_conditions" EXACT PSI-MI-short []
+is_a: MI:0664 ! interaction attribute name
+
+[Term]
+id: MI:0949
+name: gdp/gtp exchange assay
+def: "Experiments monitoring\ninteractions of GTP-GDP exchange factors with their cognate GTPases." [PMID:17925023]
+subset: PSI-MI slim
+synonym: "gdp_gtp exchange" EXACT PSI-MI-short []
+synonym: "gtp/gdp exchange" EXACT PSI-MI-alternate []
+synonym: "guanine nucleotide exchange assay" EXACT PSI-MI-alternate []
+is_a: MI:0401 ! biochemical
+
+[Term]
+id: MI:0950
+name: trapping mutant
+def: "Permits the identification of substrates of enzymes by mutating residues, usually in the active site such that the enzyme will bind but not act on its substrate." [PMID:9050838]
+subset: PSI-MI slim
+synonym: "trap-mutant" EXACT PSI-MI-short []
+is_a: MI:0505 ! experimental feature
+
+[Term]
+id: MI:0951
+name: chain parent sequence reference
+def: "Reference to the master sequence from which this chain has been derived." [PMID:17925023]
+subset: PSI-MI slim
+synonym: "chain-parent" EXACT PSI-MI-short []
+is_a: MI:0353 ! cross-reference type
+
+[Term]
+id: MI:0952
+name: imex secondary
+def: "Deprecated IMEx identifiers should be exchanged in IMEx records and stored as cross reference with this qualifier." [PMID:17925023]
+subset: PSI-MI slim
+is_a: MI:0353 ! cross-reference type
+
+[Term]
+id: MI:0953
+name: polymerization
+def: "Interaction inferred by monitoring polymerization/depolymerization of an interactor" [PMID:19081060]
+subset: PSI-MI slim
+synonym: "polymerization" EXACT []
+is_a: MI:0401 ! biochemical
+
+[Term]
+id: MI:0954
+name: curation quality
+def: "An assessment of the depth and extent to which a paper has been curated" [PMID:17893861]
+subset: PSI-MI slim
+relationship: part_of MI:0000 ! molecular interaction
+
+[Term]
+id: MI:0955
+name: curation depth
+def: "Assessment of the depth to which a paper has been curated" [PMID:17893861]
+relationship: part_of MI:0954 ! curation quality
+
+[Term]
+id: MI:0956
+name: curation coverage
+def: "Assessment to the extent of interactions captured in this paper" [PMID:17893861]
+subset: PSI-MI slim
+relationship: part_of MI:0954 ! curation quality
+
+[Term]
+id: MI:0957
+name: full coverage
+def: "All interactions which can be ascribed to an unambiguous identified in this paper have been captured." [PMID:17893861]
+subset: PSI-MI slim
+is_a: MI:0956 ! curation coverage
+
+[Term]
+id: MI:0958
+name: partial coverage
+def: "Not all interactions which can be ascribed to an unambiguous identified in this paper have been captured." [PMID:17893861]
+subset: PSI-MI slim
+is_a: MI:0956 ! curation coverage
+
+[Term]
+id: MI:0959
+name: imex curation
+def: "Paper has been curated to full IMEx specifications" [PMID:17893861]
+subset: PSI-MI slim
+is_a: MI:0955 ! curation depth
+
+[Term]
+id: MI:0960
+name: mimix curation
+def: "Paper has been curated to meet MIMIx specifications" [PMID:17687370]
+subset: PSI-MI slim
+is_a: MI:0955 ! curation depth
+
+[Term]
+id: MI:0961
+name: rapid curation
+def: "Minimal interaction data has been extracted from the paper" [PMID:17687370]
+subset: PSI-MI slim
+is_a: MI:0955 ! curation depth
+
+[Term]
+id: MI:0962
+name: strep ii tag
+def: "The protein of interest is expressed with a StrepII fusion peptide (WSHPQFEK)." [PMID:17571060]
+subset: PSI-MI slim
+synonym: "Strep (II)" EXACT PSI-MI-alternate []
+synonym: "Strep II" EXACT PSI-MI-alternate []
+is_a: MI:0507 ! tag
+
+[Term]
+id: MI:0963
+name: interactome parallel affinity capture
+def: "A specific pull down method where the protein of interest (bait) is endogenously expressed with at least two affinity tags (GFP, FLAG or others). The bait is purified in parallel using different purification protocols in contrast to tandem affinity purification (TAP) (publication currently in press)." [PMID:14681455]
+synonym: "ipac" EXACT PSI-MI-short []
+is_a: MI:0096 ! pull down
+created_by: orchard
+creation_date: 2009-05-14T10:56:21Z
+
+[Term]
 id: MI:2002
 name: drugbank
 def: "DrugBank Accession number consisting of the 4 letter prefix and a 5 number suffix. Each Accession number is unique to the drug's generic name. The 4 letter suffix (APRD, EXPT, BIOD, NUTR) indicates the type of drug (APRD=approved small molecule drug, EXPT=experimental drug, BIOD=biotech drug, NUTR=nutraceutical or natural product). Biotech drugs consist of FDA approved peptide, protein or nucleic acid drugs, approved small molecule drugs are FDA approved non-biotech drugs, nutraceuticals are natural products (amino acids, vitamins, other metabolites) and experimental drugs include drugs under trial, pre-clinical drugs, unapproved drugs, well known inhibitors and possible toxins." [PMID:14755292]
@@ -7431,14 +7649,14 @@ is_a: MI:0300 ! alias type
 [Term]
 id: MI:2004
 name: drug brand name
-def: "Alternate names of the drug, brand names from different manufacturers" [PMID:14755292]
+def: "Alternate names of the drug, brand names from different manufacturers." [PMID:14755292]
 subset: Drugable
 is_a: MI:0300 ! alias type
 
 [Term]
 id: MI:2005
 name: drug mixture brand name
-def: "Brand names and composition of mixtures that include the drug described in this DrugCard file" [PMID:14755292]
+def: "Brand names and composition of mixtures that include the drug described in this DrugCard file." [PMID:14755292]
 subset: Drugable
 synonym: "mix brand name" EXACT PSI-MI-short []
 is_a: MI:0300 ! alias type
@@ -7524,7 +7742,7 @@ def: "The HET records are used to describe non-standard residues, such as prosth
 subset: Drugable
 synonym: "het" EXACT PSI-MI-short []
 is_a: MI:0460 ! rcsb pdb
-is_a: MI:0472 ! msd pdb
+is_a: MI:0472 ! pdbe
 is_a: MI:0806 ! pdbj
 
 [Term]
@@ -7554,7 +7772,7 @@ is_a: MI:2086 ! physicochemical attribute name
 [Term]
 id: MI:2024
 name: patent number
-def: "Patent number to description of drug's synthesis" [PMID:14755292]
+def: "number of the patent describing a drug's synthesis or use." [PMID:14755292]
 subset: Drugable
 is_a: MI:0353 ! cross-reference type
 
@@ -7632,7 +7850,7 @@ is_a: MI:2089 ! bioactive entity attribute name
 [Term]
 id: MI:2042
 name: disease indication
-def: "Description or common names of diseases that the drug is used to treat" [PMID:14755292]
+def: "Description or common names of diseases that the drug is used to treat." [PMID:14755292]
 comment: Source of further terms could be MeSH term or SNOWMAN.
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
@@ -7640,14 +7858,14 @@ is_a: MI:2089 ! bioactive entity attribute name
 [Term]
 id: MI:2043
 name: pharmacology
-def: "Tesxt description of how the drug works at a clinical or physiological level" [PMID:14755292]
+def: "Text description of how the drug works at a clinical or physiological level." [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2044
 name: mechanism of action
-def: "Description of how the drug works or what it binds to at a molecular level" [PMID:14755292]
+def: "Description of how the drug works or what it binds to at a molecular level." [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
@@ -7704,21 +7922,21 @@ is_a: MI:2089 ! bioactive entity attribute name
 [Term]
 id: MI:2051
 name: patient information
-def: "Information on how the drug should and shouldn't be used" [PMID:14755292]
+def: "Information on the disease indications and treatment regime for the drug. May also include contra-indications." [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2053
 name: contraindications
-def: "Cautions or conditions indicating why or when the drug should not be taken" [PMID:14755292]
+def: "Cautions or conditions indicating why or when the drug should not be taken or prescribed." [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
 [Term]
 id: MI:2054
 name: bioactive entity reference
-def: "General on-line reference to other details about the drug" [PMID:14755292]
+def: "General on-line reference to other details about a drug or other bioactive entity." [PMID:14755292]
 subset: Drugable
 subset: PSI-MI slim
 synonym: "bioactive entity ref" EXACT PSI-MI-short []
@@ -7743,7 +7961,7 @@ is_a: MI:0640 ! parameter type
 [Term]
 id: MI:2084
 name: organisms affected
-def: "Names of organisms for which the drug is most effective" [PMID:14755292]
+def: "Names of organisms which are affected, positively or negatively, by the drug." [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
@@ -7758,7 +7976,7 @@ is_a: MI:0590 ! attribute name
 [Term]
 id: MI:2089
 name: bioactive entity attribute name
-def: "Properties of a chemical tested or used as a drug, herbiced, insecticed etc.." [PMID:14755292]
+def: "Properties of a chemical tested or used as a drug, herbicide, insecticide etc." [PMID:14755292]
 subset: Drugable
 synonym: "bioactive entity att" EXACT PSI-MI-short []
 is_a: MI:0590 ! attribute name
@@ -7788,28 +8006,28 @@ is_a: MI:2041 ! drug category
 [Term]
 id: MI:2099
 name: fda approved drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
+def: "A drug licensed for sale in the USA by the FDA." [PMID:14755292]
 subset: Drugable
 is_a: MI:2040 ! drug type
 
 [Term]
 id: MI:2100
 name: experimental drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
+def: "A drug which has yet to be formally approved for the indication which it is currently being used to treat." [PMID:14755292]
 subset: Drugable
 is_a: MI:2040 ! drug type
 
 [Term]
 id: MI:2101
 name: biotech drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
+def: "A natural product, such as a protein or peptide, which is produced used biotechnology as a drug." [PMID:14755292]
 subset: Drugable
 is_a: MI:2040 ! drug type
 
 [Term]
 id: MI:2102
 name: nutraceutical drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
+def: "A drug which may also be regarded as a foodstuff." [PMID:14755292]
 subset: Drugable
 is_a: MI:2040 ! drug type
 
@@ -7994,7 +8212,7 @@ is_a: MI:2121 ! transporter binding
 [Term]
 id: MI:2130
 name: cyp-450 inhibition
-def: "Inhibitor of one or more of the family of cytochrome p450 enzymes, probably the most important elements of oxidative metabolism of exogenous compounds" [PMID:14755292]
+def: "Inhibitor of one or more of the family of cytochrome p450 enzymes, probably the most important elements of oxidative metabolism of exogenous compounds." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 synonym: "cyp-450 inhibition" EXACT PSI-MI-alternate []
@@ -8030,7 +8248,7 @@ is_a: MI:2048 ! drug biotransformation
 [Term]
 id: MI:2135
 name: toxicity attribute name
-def: "The degree to which a substance can harm humans or animals." [PMID:14755292]
+def: "The mechanism by which a substance can harm humans or animals." [PMID:14755292]
 subset: Drugable
 is_a: MI:2089 ! bioactive entity attribute name
 
@@ -8053,7 +8271,7 @@ is_a: MI:2135 ! toxicity attribute name
 [Term]
 id: MI:2138
 name: mutagenicity
-def: "Tendency of a bioactive entity to induce genetic mutations at the nucleotide level e.g. substitution of nucleotide base-pairs and insertions and deletions of one or more nucleotides in DNA sequences.." [PMID:14755292]
+def: "Tendency of a bioactive entity to induce genetic mutations at the nucleotide level e.g. substitution of nucleotide base-pairs and insertions and deletions of one or more nucleotides in DNA sequences." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2135 ! toxicity attribute name
@@ -8070,7 +8288,7 @@ is_a: MI:2135 ! toxicity attribute name
 [Term]
 id: MI:2140
 name: chromosome damage
-def: "Tendency of a bioactive entity to induce damage at the level of the chromosome e.g. induce a change in chromosome structure and number.." [PMID:14755292]
+def: "Tendency of a bioactive entity to induce damage at the level of the chromosome e.g. induce a change in chromosome structure and number." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2135 ! toxicity attribute name
@@ -8086,7 +8304,7 @@ is_a: MI:2135 ! toxicity attribute name
 [Term]
 id: MI:2142
 name: phospholipidosis
-def: "Causes excess phospholipids to accumulate within cells" [PMID:14755292]
+def: "Causes excess phospholipids to accumulate within cells." [PMID:14755292]
 comment: Algorithms have been published to predict the value of this parameter but the quality of the prediction is unknown.
 subset: Drugable
 is_a: MI:2135 ! toxicity attribute name
@@ -8120,7 +8338,7 @@ is_a: MI:2055 ! chemical stability
 [Term]
 id: MI:2148
 name: investigational drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
+def: "A drug currently under clinical development." [PMID:14755292]
 comment: Intact.
 subset: Drugable
 is_a: MI:2040 ! drug type
@@ -8128,7 +8346,7 @@ is_a: MI:2040 ! drug type
 [Term]
 id: MI:2149
 name: withdrawn drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
+def: "A drug for which the licencing for prescriptive use has been withdrawn." [PMID:14755292]
 comment: Intact.
 subset: Drugable
 is_a: MI:2040 ! drug type
@@ -8136,14 +8354,14 @@ is_a: MI:2040 ! drug type
 [Term]
 id: MI:2150
 name: illicit drug
-def: "Type of drug (approved, experimental, biotech, nutraceutical)" [PMID:14755292]
+def: "A drug which has not been approved for sale, a drug taken for recreational purposes or a licensed drug sold without a prescription." [PMID:14755292]
 subset: Drugable
 is_a: MI:2040 ! drug type
 
 [Term]
 id: MI:2151
 name: other drug interaction
-def: "Effect of additional treatment on a given drug action." [PMID:14755292]
+def: "Effect of additional drug treatments on a given drug action." [PMID:14755292]
 subset: Drugable
 synonym: "drug interaction" EXACT PSI-MI-short []
 is_a: MI:2089 ! bioactive entity attribute name
@@ -8235,7 +8453,7 @@ is_a: MI:0640 ! parameter type
 [Term]
 id: MI:2163
 name: by homology
-def: "Reference assigned to a molecule by sequence homology with another similar one." [PMID:14755292]
+def: "Reference assigned to a molecule by sequence homology with another similar sequence." [PMID:14755292]
 subset: Drugable
 is_a: MI:0353 ! cross-reference type
 
