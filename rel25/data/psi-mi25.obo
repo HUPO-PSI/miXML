@@ -7,9 +7,19 @@ subsetdef: PSI-MI slim "Subset of PSI-MI"
 synonymtypedef: PSI-MI-alternate "Alternate label curated by PSI-MI" EXACT
 synonymtypedef: PSI-MI-short "Unique short label curated by PSI-MI" EXACT
 default-namespace: PSI-MI
-remark: coverage: This is a small meaningless CV aiming at describing the structure of an OBO file.
-remark: publisher: The institution backing this document is the proteomics standard organization (PSI)
-remark: CVversion: 0.1
+remark: Notes:
+remark: Each of the top level terms in this file is the root term of an independent controlled vocabulary
+remark: mapping an element of the PSI Molecular Interaction XML schema.
+remark: The correct use of these vocabularies in the PSI Molecular Interaction XML schema is
+remark: formalized in a mapping file available at http://www.psidev.info/files/validator/xml/MI-CVMapping.xml.
+remark: The PSI MI schema defines short labels for controlled vocabulary terms
+remark: short labels are reported as PSI-MI-short synonyms that are created when a term is more than 20 characteres long.
+remark: The last accession number used in this file is stored in a separate file,
+remark: psi-mi.lastac. It MUST be updated when this file is updated.
+remark: The maintenance of this file is ensured by Sandra Orchard orchard@ebi.ac.uk and Luisa Montecchi Palazzi luisa@ebi.ac.uk
+remark: coverage: This file collect controlled vocabularies describing different aspects of molecular interactions.
+remark: publisher: This file is published by the PSI MI working group see http://psidev.info/MI
+remark: CVversion: 2.5.4
 
 [Term]
 id: MI:0000
