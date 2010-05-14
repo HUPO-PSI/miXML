@@ -8619,7 +8619,6 @@ namespace: PSI-MI
 def: "The protein is expressed as a hybrid protein fused to a tag containing an enzyme activity e.g. peroxidase. Subsequence observation or measurement of enzyme activity is used to identify the presence of the molecule in an interaction." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "tag enzyme assay" EXACT PSI-MI-short []
-xref: XX:<new dbxref>
 is_a: MI:0866 ! tag visualisation
 created_by: orchard
 creation_date: 2010-04-21T03:18:09Z
@@ -8704,7 +8703,7 @@ creation_date: 2010-04-26T11:00:08Z
 id: MI:0988
 name: strep tag
 namespace: PSI-MI
-def: "Synthetic peptide consisting of 8 amino acids (Trp-Ser-His-Pro-Gln-Phe-Glu-Lys)." [PMID:17571060, XX:<new dbxref>]
+def: "Synthetic peptide consisting of 8 amino acids (Trp-Ser-His-Pro-Gln-Phe-Glu-Lys)." [PMID:17571060]
 subset: PSI-MI slim
 is_a: MI:0507 ! tag
 created_by: orchard
