@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:05:2010 08:13
+date: 11:11:2010 15:34
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.0-rc1
 subsetdef: Drugable "Drugable Genome Project"
@@ -290,7 +290,7 @@ is_a: MI:0660 ! feature prediction
 id: MI:0027
 name: cosedimentation
 namespace: PSI-MI
-def: "Separation of a protein mixture under the influence of artificial gravity." [PMID:14755292]
+def: "Separation of a protein mixture under the influence of a force such as artificial gravity. Molecules sedimenting together are assumed to interact." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0401 ! biochemical
 
@@ -3691,10 +3691,10 @@ is_a: MI:0045 ! experimental interaction detection
 id: MI:0402
 name: chromatin immunoprecipitation assay
 namespace: PSI-MI
-def: "Chromatin immunoprecipitation (ChIP) is a powerful approach that allows one to define the interaction of factors with specific chromosomal sites in living cells. ChIP involves treating cells or tissue briefly with formaldehyde to crosslink proteins to DNA. An antibody against a protein suspected of binding a given cis-element is then used to immunoprecipitate chromatin fragments. Polymerase chain reaction analysis of the immunoprecipitate with primers flanking the cis-element reveals whether a specific DNA sequence is recovered in an immune-specific manner and therefore whether the protein contacted the site in living cells." [PMID:12054902]
+def: "Chromatin immunoprecipitation (ChIP) is a powerful approach that allows one to define the interaction of factors with specific chromosomal sites in living cells. An antibody against a protein suspected of binding a given cis-element is used to immunoprecipitate fragmented chromatin fragments. Cells or tissue may first be briefly treated with an agent such formaldehyde to crosslink proteins to DNA.  Nucleic acids are then identified by sequencing, for example polymerase chain reaction analysis of the immunoprecipitate with primers flanking the cis-element  or next-generation sequencing techniques" [PMID:12054902]
 subset: PSI-MI slim
 synonym: "ch-ip" EXACT PSI-MI-short []
-is_a: MI:0400 ! affinity technology
+is_a: MI:0019 ! coimmunoprecipitation
 
 [Term]
 id: MI:0403
@@ -3759,7 +3759,7 @@ name: electron tomography
 namespace: PSI-MI
 def: "Electron tomography is a general method for three-dimensional (3D) reconstruction of single, transparent objects from a series of projection images (i.e. from a tilt series) recorded with a transmission electron microscope. It offers the opportunity to obtain 3D information on structural cellular arrangements with a high resolution." [PMID:12160704]
 subset: PSI-MI slim
-synonym: "sem" EXACT PSI-MI-short []
+synonym: "electron tomog" EXACT PSI-MI-short []
 is_a: MI:0040 ! electron microscopy
 
 [Term]
@@ -3771,6 +3771,7 @@ subset: PSI-MI slim
 synonym: "ELISA" EXACT PSI-MI-alternate []
 synonym: "elisa" EXACT PSI-MI-short []
 is_a: MI:0421 ! identification by antibody
+is_a: MI:0892 ! solid phase assay
 
 [Term]
 id: MI:0412
@@ -3977,7 +3978,7 @@ is_a: MI:0093 ! protein sequence identification
 id: MI:0434
 name: phosphatase assay
 namespace: PSI-MI
-def: "Measures the catalysis of the reaction: a phosphoprotein + H2O = a protein + phosphate." [PMID:14755292]
+def: "Measures the catalysis of the reaction: a phosphosubstrate + H2O = a substrate + phosphate." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0415 ! enzymatic study
 
@@ -4706,7 +4707,7 @@ is_a: MI:0505 ! experimental feature
 id: MI:0508
 name: deacetylase radiometric assay
 namespace: PSI-MI
-def: "Measures the release of radiolabelled acetic acid from pre-labeled histone." [PMID:14755292]
+def: "Measures the release of radiolabelled acetic acid from a pre-labeled molecule." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "radiolabeled acetate" EXACT PSI-MI-short []
 is_a: MI:0406 ! deacetylase assay
@@ -4764,7 +4765,7 @@ is_a: MI:0435 ! protease assay
 id: MI:0514
 name: in gel phosphatase assay
 namespace: PSI-MI
-def: "Substrate protein pre-radiolabelled either synthetically or through the action of a kinase transferring an isotope of phosphate from a nucleotide. Substrate then exposed to phosphate under assay conditions. Substrate isolated by gel electrophoresis and loss of radiolabelling confirmed by autoradiography." [PMID:14755292]
+def: "Substrate pre-radiolabelled either synthetically or through the action of a kinase transferring an isotope of phosphate from a nucleotide. Substrate then exposed to phosphate under assay conditions. Substrate isolated by gel electrophoresis and loss of radiolabelling confirmed by autoradiography." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "in gel phosphatase" EXACT PSI-MI-short []
 is_a: MI:0434 ! phosphatase assay
@@ -7101,10 +7102,12 @@ is_a: MI:0240 ! fusion protein
 id: MI:0813
 name: proximity enzyme linked immunosorbent assay
 namespace: PSI-MI
-def: "Method allowing efficient and precise interaction detection, along with extensive repertoires of specific binding reagents.  It is based on proximity a ligation mechanism that enables sensitive high-capacity protein measurements by converting the detection of specific proteins to the analysis of DNA sequences. Proximity probes containing oligonucleotide extensions are designed to bind pairwise to target proteins and to form amplifiable tag sequences by ligation when brought in proximity." [PMID:15155907]
+def: "Method allowing efficient and precise interaction detection, along with extensive repertoires of specific binding reagents.  It is based on proximity a ligation mechanism that enables sensitive high-capacity protein measurements by converting the detection of specific proteins to the analysis of DNA sequences. Proximity probes containing oligonucleotide extensions are designed to bind pairwise to target proteins and to form amplifiable tag sequences by ligation when brought in proximity." [PMID:15155907, PMID:\:17072308]
 subset: PSI-MI slim
 synonym: "p elisa" EXACT PSI-MI-short []
 synonym: "pELISA" EXACT PSI-MI-alternate []
+synonym: "pLISA" RELATED []
+synonym: "proximity ligation" RELATED []
 is_a: MI:0400 ! affinity technology
 is_a: MI:0421 ! identification by antibody
 
@@ -7358,11 +7361,12 @@ is_a: MI:0500 ! biological role
 
 [Term]
 id: MI:0841
-name: phosphotransfer assay
+name: phosphotransferase assay
 namespace: PSI-MI
-def: "Measures the rate of a phosphate transfer between two proteins" [PMID:14755292]
+def: "Measures the rate of a phosphate transfer between two molecules." [PMID:14755292]
 subset: PSI-MI slim
-synonym: "phosphotransfer assa" EXACT PSI-MI-short []
+synonym: "phosphotransfer assay" RELATED []
+synonym: "phosphotransferase" EXACT PSI-MI-short []
 is_a: MI:0415 ! enzymatic study
 
 [Term]
@@ -7684,7 +7688,7 @@ is_a: MI:0665 ! experiment attibute name
 id: MI:0879
 name: nucleoside triphosphatase assay
 namespace: PSI-MI
-def: "Measures the catalysis of the hydrolisis of a  nucleoside triphosphate into a nucleoside diphosphate plus phosphate." [PMID:14755292]
+def: "Measures the catalysis of the hydrolysis of a nucleoside triphosphate into a nucleoside diphosphate plus phosphate." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "triphosphatase ass" EXACT PSI-MI-short []
 is_a: MI:0415 ! enzymatic study
@@ -7693,7 +7697,7 @@ is_a: MI:0415 ! enzymatic study
 id: MI:0880
 name: atpase assay
 namespace: PSI-MI
-def: "Measures the catalysis of the hydrolisis of ATP+ H2O = ADP + phosphate." [PMID:14755292]
+def: "Measures the catalysis of the hydrolysis of ATP+ H2O = ADP + phosphate." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0879 ! nucleoside triphosphatase assay
 
@@ -7749,13 +7753,14 @@ is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0887
-name: histone acetylation assay
+name: histone acetylase assay
 namespace: PSI-MI
 def: "In histone acetylation the histones are acetylated on lysine residues in the N-terminal tail as part of gene regulation. Typically, these reactions are catalyzed by enzymes with \"histone acetyltransferase\" (HAt)" [PMID:14755292]
 subset: PSI-MI slim
 synonym: "HAt" EXACT PSI-MI-alternate []
 synonym: "hat" EXACT PSI-MI-short []
-is_a: MI:0889 ! acetylation assay
+synonym: "histone acetylation" RELATED []
+is_a: MI:0889 ! acetylase assay
 
 [Term]
 id: MI:0888
@@ -7769,10 +7774,11 @@ is_a: MI:0013 ! biophysical
 
 [Term]
 id: MI:0889
-name: acetylation assay
+name: acetylase assay
 namespace: PSI-MI
 def: "Measures the catalysis of the addition of an acetyl group to a target molecule." [PMID:14755292]
 subset: PSI-MI slim
+synonym: "acetylation" RELATED []
 is_a: MI:0415 ! enzymatic study
 
 [Term]
@@ -8045,7 +8051,7 @@ name: ribonuclease assay
 namespace: PSI-MI
 def: "Measures the catalysis of the hydrolysis of phosphodiester bonds in chains of RNA." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0415 ! enzymatic study
+is_a: MI:1034 ! nuclease assay
 
 [Term]
 id: MI:0921
@@ -8322,6 +8328,7 @@ synonym: "gdp_gtp exchange" EXACT PSI-MI-short []
 synonym: "gtp/gdp exchange" EXACT PSI-MI-alternate []
 synonym: "guanine nucleotide exchange assay" EXACT PSI-MI-alternate []
 is_a: MI:0401 ! biochemical
+is_a: MI:1036 ! nucleotide exchange assay
 
 [Term]
 id: MI:0950
@@ -8532,10 +8539,11 @@ creation_date: 2009-10-28T01:20:40Z
 
 [Term]
 id: MI:0972
-name: phosphopantetheinylation assay
+name: phosphopantetheinylase assay
 namespace: PSI-MI
 def: "Assay of the posttranslational phosphopantetheinylation of peptidyl-serine to form peptidyl-O-phosphopantetheine-L-serine." [PMID:19346479]
 synonym: "p_pantethinyl assay" EXACT PSI-MI-short []
+synonym: "phosphopantetheinylation" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2009-10-28T01:23:19Z
@@ -8619,6 +8627,7 @@ namespace: PSI-MI
 def: "The protein is expressed as a hybrid protein fused to a tag containing an enzyme activity e.g. peroxidase. Subsequence observation or measurement of enzyme activity is used to identify the presence of the molecule in an interaction." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "tag enzyme assay" EXACT PSI-MI-short []
+xref: XX:<new dbxref>
 is_a: MI:0866 ! tag visualisation
 created_by: orchard
 creation_date: 2010-04-21T03:18:09Z
@@ -8657,7 +8666,7 @@ creation_date: 2010-04-26T10:36:41Z
 
 [Term]
 id: MI:0984
-name: deamination assay
+name: deaminase assay
 namespace: PSI-MI
 def: "The measurement of the removal of an amine group from a molecule." [PMID:14755292]
 subset: PSI-MI slim
@@ -8703,7 +8712,7 @@ creation_date: 2010-04-26T11:00:08Z
 id: MI:0988
 name: strep tag
 namespace: PSI-MI
-def: "Synthetic peptide consisting of 8 amino acids (Trp-Ser-His-Pro-Gln-Phe-Glu-Lys)." [PMID:17571060]
+def: "Synthetic peptide consisting of 8 amino acids (Trp-Ser-His-Pro-Gln-Phe-Glu-Lys)." [PMID:17571060, XX:<new dbxref>]
 subset: PSI-MI slim
 is_a: MI:0507 ! tag
 created_by: orchard
@@ -8711,7 +8720,7 @@ creation_date: 2010-04-26T11:07:37Z
 
 [Term]
 id: MI:0989
-name: amidation assay
+name: amidase assay
 namespace: PSI-MI
 def: "The measurement of the addition of an amine group to a molecule." [PMID:14760721]
 subset: PSI-MI slim
@@ -8787,33 +8796,37 @@ creation_date: 2010-04-26T12:42:00Z
 
 [Term]
 id: MI:0996
-name: deformylation assay
+name: deformylase assay
 namespace: PSI-MI
 def: "Measures the removal of N6-formyl-L-lysine, which is cleaved and returns a K residue." [PMID:14760721]
 subset: PSI-MI slim
 synonym: "deformylase reaction" EXACT PSI-MI-short []
+synonym: "deformylation" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2010-04-26T12:50:38Z
 
 [Term]
 id: MI:0997
-name: ubiquitination assay
+name: ubiquitinase assay
 namespace: PSI-MI
 def: "Measures the reversible reaction that creates a covalent bond between a C-terminus G of ubiquitin and a K residue of the target." [PMID:14760721]
 subset: PSI-MI slim
 synonym: "ubiquitinase assay" EXACT PSI-MI-short []
+synonym: "ubiquitination" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2010-04-26T12:54:02Z
 
 [Term]
 id: MI:0998
-name: deubiquination assay>
+name: deubiquitinase assay
 namespace: PSI-MI
 def: "Measures the cleavage of the G-K bond and release of ubiquitin or ubiquitin like proteins." [PMID:14760721]
 subset: PSI-MI slim
+synonym: "deubiquinase assay" RELATED []
 synonym: "deubiquitinase assay" EXACT PSI-MI-short []
+synonym: "deubiquitination" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2010-04-26T12:56:41Z
@@ -8840,53 +8853,58 @@ creation_date: 2010-04-26T01:05:19Z
 
 [Term]
 id: MI:1001
-name: lipidation assay
+name: lipidase assay
 namespace: PSI-MI
 def: "The covalent binding of a lipid group to a peptide chain." [PMID:14760721]
 subset: PSI-MI slim
+synonym: "lipidation" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2010-04-26T01:09:49Z
 
 [Term]
 id: MI:1002
-name: myristoylation assay
+name: myristoylase assay
 namespace: PSI-MI
 def: "Measurement of the irreversible covalent addition of a myristoyl group via an amide bond to the alpha-amino group of an amino acid." [PMID:14707621]
 subset: PSI-MI slim
-is_a: MI:1001 ! lipidation assay
+synonym: "myristoylation" RELATED []
+is_a: MI:1001 ! lipidase assay
 created_by: orchard
 creation_date: 2010-04-26T01:16:11Z
 
 [Term]
 id: MI:1003
-name: geranylgeranylation assay
+name: geranylgeranylase assay
 namespace: PSI-MI
 def: "Measurement of the attachment of one or two 20-carbon lipophilic geranylgeranyl isoprene units from geranylgeranyl diphosphate to one or more cysteine residue(s)." [PMID:14760721]
 subset: PSI-MI slim
 synonym: "geranylgeranylase" EXACT PSI-MI-short []
-is_a: MI:1001 ! lipidation assay
+synonym: "geranylgeranylation" RELATED []
+is_a: MI:1001 ! lipidase assay
 created_by: orchard
 creation_date: 2010-04-26T01:20:07Z
 
 [Term]
 id: MI:1004
-name: palmitoylation assay
+name: palmitoylase assay
 namespace: PSI-MI
 def: "Measurement of the covalent attachment of palmitic acid to a protein." [PMID:14760721]
 subset: PSI-MI slim
+synonym: "myristoylation" RELATED []
 synonym: "palmitoylase assay" EXACT PSI-MI-short []
-is_a: MI:1001 ! lipidation assay
+is_a: MI:1001 ! lipidase assay
 created_by: orchard
 creation_date: 2010-04-26T01:27:50Z
 
 [Term]
 id: MI:1005
-name: adp ribosylation assay
+name: adp ribosylase assay
 namespace: PSI-MI
-def: "Measurement of the addition of one or more ADP-ribose moieties to proteins." [PMID:14760721]
+def: "Measurement of the addition of one or more ADP-ribose moieties to molecules." [PMID:14760721]
 subset: PSI-MI slim
 synonym: "adp ribosylase" EXACT PSI-MOD-short []
+synonym: "adp ribosylation" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2010-04-26T01:30:24Z
@@ -8895,7 +8913,7 @@ creation_date: 2010-04-26T01:30:24Z
 id: MI:1006
 name: deglycosylase assay
 namespace: PSI-MI
-def: "Measurement of the hydrolysis of the beta-aspartylglycosylamine bond of aspargine-linked glycopeptides and glycoproteins." [PMID:14760721]
+def: "Measurement of the removal of a glycosyl residue to one or more monomeric units in a polypeptide, polynucleotide, polysaccharide, or other biological polymer." [PMID:14760721]
 subset: PSI-MI slim
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
@@ -8903,50 +8921,55 @@ creation_date: 2010-04-26T01:34:07Z
 
 [Term]
 id: MI:1007
-name: glycosylation assay
+name: glycosylase assay
 namespace: PSI-MI
 def: "Measurement of the covalent attachment of a glycosyl residue to one or more monomeric units in a polypeptide, polynucleotide, polysaccharide, or other biological polymer." [PMID:14760721]
 subset: PSI-MI slim
+synonym: "glycosylation" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2010-04-26T01:35:37Z
 
 [Term]
 id: MI:1008
-name: sumoylation assay
+name: sumoylase assay
 namespace: PSI-MI
 def: "Measurement of the reversible reaction that creates a covalent bond between a C-terminus G of an ubiquitine like sumo protein and a K residue of the target." [PMID:14760721]
 subset: PSI-MI slim
+synonym: "sumoylation" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2010-04-26T01:37:31Z
 
 [Term]
 id: MI:1009
-name: desumoylation assay
+name: desumoylase assay
 namespace: PSI-MI
 def: "Measurement of the reaction that breaks a covalent bond between a C-terminus G of an ubiquitine like sumo protein and a K residue of the target." [PMID:14760721]
 subset: PSI-MI slim
+synonym: "desumylation" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2010-04-26T01:38:56Z
 
 [Term]
 id: MI:1010
-name: neddylation assay
+name: neddylase assay
 namespace: PSI-MI
 def: "Measurement of a reversible reaction that create a covalent bond between a Glycine residue of an ubiquitine like NEDD8 protein and a lysine residue of the target." [PMID:14760721]
 subset: PSI-MI slim
+synonym: "neddylation" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2010-04-26T01:41:40Z
 
 [Term]
 id: MI:1011
-name: deneddylation assay
+name: deneddylase assay
 namespace: PSI-MI
-def: "measurement of thereaction that breaks a covalent bond between a Glycine residue of an ubiquitine like NEDD8 protein and a lysine residue of the target." [PMID:14760721]
+def: "Measurement of the reaction that breaks a covalent bond between a Glycine residue of an ubiquitine like NEDD8 protein and a lysine residue of the target." [PMID:14760721]
 subset: PSI-MI slim
+synonym: "deneddylation" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2010-04-26T01:42:49Z
@@ -8971,6 +8994,298 @@ subset: PSI-MI slim
 is_a: MI:0683 ! sequence database
 created_by: orchard
 creation_date: 2010-05-06T08:09:20Z
+
+[Term]
+id: MI:1014
+name: string
+namespace: PSI-MI
+def: "STRING is a database and web resource dedicated to protein–protein interactions, including both physical and functional interactions. It weights and integrates information from numerous sources, including experimental repositories, computational prediction methods and public text collections, thus acting as a meta-database that maps all interaction evidence onto a common set of genomes and proteins." [PMID:18940858]
+subset: PSI-MI slim
+is_a: MI:0461 ! interaction database
+created_by: orchard
+creation_date: 2010-07-15T11:00:57Z
+
+[Term]
+id: MI:1015
+name: dictybase
+namespace: PSI-MI
+def: "dictyBase (http://dictybase.org) is the model organism database for Dictyostelium discoideum. It houses the complete genome sequence, ESTs and the entire body of literature relevant to Dictyostelium. This information is curated to provide accurate gene models and functional annotations, with the goal of fully annotating the genome." []
+subset: PSI-MI slim
+xref: id-validation-regexp:\"DDB_G(0-9)\{7}\"
+is_a: MI:0683 ! sequence database
+created_by: orchard
+creation_date: 2010-07-29T01:19:40Z
+
+[Term]
+id: MI:1016
+name: fluorescence recovery after photobleaching
+namespace: PSI-MI
+def: "Slow rate of FRAP recovery when molecule is bound to another compared to inert, non-binding molecule taken as a measure of an interaction." [PMID:15695095, PMID:17711354]
+subset: PSI-MI slim
+synonym: "<new synonym>" RELATED []
+synonym: "frap" EXACT PSI-MI-short []
+is_a: MI:0051 ! fluorescence technology
+created_by: orchard
+creation_date: 2010-11-11T10:39:37Z
+
+[Term]
+id: MI:1017
+name: rna immunoprecipitation
+namespace: PSI-MI
+def: "Proteins are crosslinked to nucleic acids, for example by the addition of formaldehyde. RNA sequences that cross-link with a given protein are isolated by immunoprecipitation of the protein, and reversal of the cross-linking permits recovery and quantitative analysis of the immunoprecipitated RNA by reverse transcription PCR." [PMID:18265380]
+subset: PSI-MI slim
+synonym: "rip" RELATED []
+synonym: "rna-ip" EXACT PSI-MI-short []
+is_a: MI:0019 ! coimmunoprecipitation
+created_by: orchard
+creation_date: 2010-11-11T10:58:47Z
+
+[Term]
+id: MI:1018
+name: deltamass
+namespace: PSI-MI
+def: "A database of protein post translational modifications. www.abrf.org/index.cfm/dm.home" [PMID:8322616]
+subset: PSI-MI slim
+is_a: MI:0447 ! feature database
+created_by: orchard
+creation_date: 2010-11-11T11:04:13Z
+
+[Term]
+id: MI:1019
+name: protein phosphatase assay
+namespace: PSI-MI
+def: "Measures the catalysis of the reaction: a phosphoprotein + H2O = a protein + phosphate." []
+subset: PSI-MI slim
+is_a: MI:0434 ! phosphatase assay
+created_by: orchard
+creation_date: 2010-11-11T11:30:47Z
+
+[Term]
+id: MI:1020
+name: hilyte fluor 488
+namespace: PSI-MI
+def: "A carbonyl-reactive fluorescent labelling dye." [PMID:19795889]
+subset: PSI-MI slim
+synonym: "hilyte 488" EXACT PSI-MI-short []
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2010-11-11T11:35:48Z
+
+[Term]
+id: MI:1021
+name: qx 520
+namespace: PSI-MI
+def: "Nonfluorescent dye, act as a quencher in FRET assays." []
+subset: PSI-MI slim
+is_a: MI:0373 ! dye label
+created_by: orchard
+creation_date: 2010-11-11T11:40:16Z
+
+[Term]
+id: MI:1022
+name: field flow fractionation
+namespace: PSI-MI
+def: "A separation technique where a field is applied to a mixture perpendicular to the mixtures flow. The filed can be graviational, centrifugal, magnetic or a cross flow of fluids." [PMID:959835]
+subset: PSI-MI slim
+is_a: MI:0027 ! cosedimentation
+created_by: orchard
+creation_date: 2010-11-11T11:55:40Z
+
+[Term]
+id: MI:1023
+name: luminogreen
+namespace: PSI-MI
+def: "A  nonfluorescent, biarsenical derivative of fluorescein. LumioGreen is supplied pre-complexed to EDT, is membrane-permeable, and readily enters the cell." [PMID:19935683]
+subset: PSI-MI slim
+is_a: MI:0373 ! dye label
+created_by: orchard
+creation_date: 2010-11-11T12:10:26Z
+
+[Term]
+id: MI:1024
+name: scanning electron microscopy
+namespace: PSI-MI
+def: "A type of electron microscope that images the sample surface by scanning it with a high-energy beam of electrons  in a raster scan pattern. The electrons interact with the atoms that make up the sample producing signals that contain information about the sample's surface topography, composition and other properties such as electrical conductivity." [PMID:20463740]
+subset: PSI-MI slim
+synonym: "sem" EXACT PSI-MI-alternate []
+is_a: MI:0040 ! electron microscopy
+created_by: orchard
+creation_date: 2010-11-11T12:17:54Z
+
+[Term]
+id: MI:1025
+name: unimod
+namespace: PSI-MI
+def: "A database of protein modifications for mass spectrometry. www.unimod.org" [PMID:15174123]
+is_a: MI:0447 ! feature database
+created_by: orchard
+creation_date: 2010-11-11T12:24:10Z
+
+[Term]
+id: MI:1026
+name: diphtamidase assay
+namespace: PSI-MI
+def: "Measurement of a modification that converts an L-histidine residue to diphthamide." [PMID:14760721]
+subset: PSI-MI slim
+synonym: "diphtamidase" EXACT PSI-MI-short []
+is_a: MI:0415 ! enzymatic study
+created_by: orchard
+creation_date: 2010-11-11T12:33:29Z
+
+[Term]
+id: MI:1027
+name: diphtamidation reaction
+namespace: PSI-MI
+def: "A modification that converts an L-histidine residue to diphthamide." [PMID:14760721]
+subset: PSI-MI slim
+synonym: "diphthamidation" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+created_by: orchard
+creation_date: 2010-11-11T12:36:51Z
+
+[Term]
+id: MI:1028
+name: modified chromatin immunoprecipitation
+namespace: PSI-MI
+def: "Chromatin-bound protein networks isolated using magnetic beads coated with antibodies." [PMID:19106085]
+subset: PSI-MI slim
+synonym: "mch-ip" EXACT PSI-MI-short []
+is_a: MI:0402 ! chromatin immunoprecipitation assay
+created_by: orchard
+creation_date: 2010-11-11T12:58:52Z
+
+[Term]
+id: MI:1029
+name: proteomics of isolated chromatin segments
+namespace: PSI-MI
+def: "Specific nucleic acid probes are fixed to solid supports (e.g. beads) and act as affinity probes. The molecules associated with the nucleic acid probes can then be isolated and identified." [PMID:19135898]
+subset: PSI-MI slim
+synonym: "pich" EXACT PSI-MI-alternate []
+is_a: MI:0402 ! chromatin immunoprecipitation assay
+created_by: orchard
+creation_date: 2010-11-11T01:03:21Z
+
+[Term]
+id: MI:1030
+name: excimer fluorescence
+namespace: PSI-MI
+def: "Excimer (excited-dimer) fluorescence is produced by complexes formed by two molecules, at least one of which is in an excited state. It is characterized by a lower energy (i.e. red shift) than fluorescence of a single, non-interacting molecule." [PMID:18480256]
+subset: PSI-MI slim
+synonym: "excimer fluoresc" EXACT PSI-MI-short []
+is_a: MI:0051 ! fluorescence technology
+created_by: orchard
+creation_date: 2010-11-11T01:15:19Z
+
+[Term]
+id: MI:1031
+name: protein folding/unfolding
+namespace: PSI-MI
+def: "A change in the rate of protein folding/unfolding is taken as a measure of chaperone protein binding." [PMID:19940245]
+subset: PSI-MI slim
+synonym: "protein folding" EXACT PSI-MI-short []
+is_a: MI:0400 ! affinity technology
+created_by: orchard
+creation_date: 2010-11-11T01:24:11Z
+
+[Term]
+id: MI:1032
+name: atto 488
+namespace: PSI-MI
+def: "Fluorescent tag - maleimide couples to thiols." [PMID:14760721]
+subset: PSI-MI slim
+synonym: "atto 488 maleimide" EXACT []
+synonym: "atto488" RELATED []
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2010-11-11T01:33:13Z
+
+[Term]
+id: MI:1033
+name: atto 550
+namespace: PSI-MI
+def: "Fluorescent tag - maleimide couples to thiols" [PMID:14760721]
+subset: PSI-MI slim
+synonym: "atto550" RELATED []
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2010-11-11T01:39:43Z
+
+[Term]
+id: MI:1034
+name: nuclease assay
+namespace: PSI-MI
+def: "Measures the cleavage of phosphodiesterase bonds between the nucleotide subunits of nucleic acids." [PMID:14760721]
+subset: PSI-MI slim
+is_a: MI:0415 ! enzymatic study
+created_by: orchard
+creation_date: 2010-11-11T01:43:11Z
+
+[Term]
+id: MI:1035
+name: deoxyribonuclease assay
+namespace: PSI-MI
+def: "Measures the catalysis of the hydrolysis of phosphodiester bonds in chains of DNA." [PMID:14760721]
+subset: PSI-MI slim
+synonym: "deoxyribonuclease" EXACT PSI-MI-short []
+is_a: MI:1034 ! nuclease assay
+created_by: orchard
+creation_date: 2010-11-11T01:45:29Z
+
+[Term]
+id: MI:1036
+name: nucleotide exchange assay
+namespace: PSI-MI
+def: "Experiments monitoring\ninteractions of nucleotide exchange factors with their cognate nucleotidases." [PMID:14760721]
+subset: PSI-MI slim
+synonym: "nucleotide exchange" EXACT PSI-MI-short []
+is_a: MI:0401 ! biochemical
+created_by: orchard
+creation_date: 2010-11-11T01:54:00Z
+
+[Term]
+id: MI:1037
+name: Split renilla luciferase complementation
+namespace: PSI-MI
+def: "The N-terminal portion of synthetic renilla luciferase (hrluc) is attached to one protein through the linker peptide (GGGS)2 and C-terminal portion of synthetic renilla luciferase is connected to the second protein through the linker (GGGGS)2. Interaction of the 2 proteins recovers hrluc activity and produces light." [PMID:12705589]
+subset: PSI-MI slim
+synonym: "renilla luciferase" EXACT PSI-MI-alternate []
+is_a: MI:0228 ! cytoplasmic complementation assay
+created_by: orchard
+creation_date: 2010-11-11T02:54:08Z
+
+[Term]
+id: MI:1038
+name: silicon nanowire field-effect transistor
+namespace: PSI-MI
+def: "Measures selective electrical response to molecules binding to the immobilised bait." [PMID:20080536]
+subset: PSI-MI slim
+synonym: "nanowire transistor" EXACT PSI-MI-alternate []
+is_a: MI:0968 ! biosensor
+created_by: orchard
+creation_date: 2010-11-11T03:11:33Z
+
+[Term]
+id: MI:1039
+name: c-terminal range
+namespace: PSI-MI
+def: "The C-terminal region of a sequence, exact coordinates not available." [PMID:14760721]
+subset: PSI-MI slim
+synonym: "<new synonym>" RELATED []
+synonym: "c-term range" EXACT PSI-MI-short []
+is_a: MI:0333 ! feature range status
+created_by: orchard
+creation_date: 2010-11-11T03:20:34Z
+
+[Term]
+id: MI:1040
+name: n-terminal range
+namespace: PSI-MI
+def: "The N-terminal region of a sequence, exact coordinates not available." [PMID:14760721]
+subset: PSI-MI slim
+synonym: "n-term range" EXACT PSI-MI-short []
+is_a: MI:0333 ! feature range status
+created_by: orchard
+creation_date: 2010-11-11T03:27:57Z
 
 [Term]
 id: MI:2002
