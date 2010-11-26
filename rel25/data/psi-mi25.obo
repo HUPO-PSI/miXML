@@ -4371,7 +4371,6 @@ name: pdbe
 namespace: PSI-MI
 def: "The Protein Data Bank in Europe - the European project for the collection, management and distribution of data about macromolecular structures, derived in part from the Protein Data Bank (PDB).\nhttp://www.ebi.ac.uk/pdbe/" [PMID:16381867]
 subset: PSI-MI slim
-synonym: "<new synonym>" RELATED []
 synonym: "e-MSD" EXACT []
 synonym: "MSD" RELATED []
 synonym: "PQS" EXACT PSI-MI-alternate []
@@ -8127,7 +8126,6 @@ name: filter trap assay
 namespace: PSI-MI
 def: "Biomolecules are mixed in a buffer and the resulting mixture is\npassed through a filter. Large\naggregates are retained on the filter and the pariticipants may then be identified." [PMID:10859365]
 subset: PSI-MI slim
-synonym: "<new synonym>" RELATED []
 synonym: "filter binding" EXACT []
 synonym: "filter retardation assay" RELATED []
 synonym: "Filter retention assay" EXACT PSI-MI-alternate []
@@ -8627,7 +8625,6 @@ namespace: PSI-MI
 def: "The protein is expressed as a hybrid protein fused to a tag containing an enzyme activity e.g. peroxidase. Subsequence observation or measurement of enzyme activity is used to identify the presence of the molecule in an interaction." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "tag enzyme assay" EXACT PSI-MI-short []
-xref: XX:<new dbxref>
 is_a: MI:0866 ! tag visualisation
 created_by: orchard
 creation_date: 2010-04-21T03:18:09Z
@@ -8712,7 +8709,7 @@ creation_date: 2010-04-26T11:00:08Z
 id: MI:0988
 name: strep tag
 namespace: PSI-MI
-def: "Synthetic peptide consisting of 8 amino acids (Trp-Ser-His-Pro-Gln-Phe-Glu-Lys)." [PMID:17571060, XX:<new dbxref>]
+def: "Synthetic peptide consisting of 8 amino acids (Trp-Ser-His-Pro-Gln-Phe-Glu-Lys)." [PMID:17571060]
 subset: PSI-MI slim
 is_a: MI:0507 ! tag
 created_by: orchard
@@ -8787,7 +8784,7 @@ creation_date: 2010-04-26T12:39:30Z
 id: MI:0995
 name: depalmitoylation assay
 namespace: PSI-MI
-def: "Measures the removal of S-palmitoyl-L-cysteine, N6-palmitoyl-L-lysine, O-palmitoyl-L-threonine or O-palmitoyl-L-serine, which are cleaved and return C,K,T or S residues." [PMID:<new dbxref>14760721]
+def: "Measures the removal of S-palmitoyl-L-cysteine, N6-palmitoyl-L-lysine, O-palmitoyl-L-threonine or O-palmitoyl-L-serine, which are cleaved and return C,K,T or S residues." [PMID:14760721]
 subset: PSI-MI slim
 synonym: "depalmitoylase assay" EXACT PSI-MI-short []
 is_a: MI:0991 ! lipid cleavage assay
@@ -9022,7 +9019,6 @@ name: fluorescence recovery after photobleaching
 namespace: PSI-MI
 def: "Slow rate of FRAP recovery when molecule is bound to another compared to inert, non-binding molecule taken as a measure of an interaction." [PMID:15695095, PMID:17711354]
 subset: PSI-MI slim
-synonym: "<new synonym>" RELATED []
 synonym: "frap" EXACT PSI-MI-short []
 is_a: MI:0051 ! fluorescence technology
 created_by: orchard
@@ -9270,7 +9266,6 @@ name: c-terminal range
 namespace: PSI-MI
 def: "The C-terminal region of a sequence, exact coordinates not available." [PMID:14760721]
 subset: PSI-MI slim
-synonym: "<new synonym>" RELATED []
 synonym: "c-term range" EXACT PSI-MI-short []
 is_a: MI:0333 ! feature range status
 created_by: orchard
