@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:11:2010 15:34
+date: 08:07:2011 10:25
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.0-rc1
 subsetdef: Drugable "Drugable Genome Project"
@@ -197,7 +197,7 @@ is_a: MI:0051 ! fluorescence technology
 id: MI:0018
 name: two hybrid
 namespace: PSI-MI
-def: "The classical two-hybrid system is a method that uses transcriptional activity as a measure of protein-protein interaction. It relies on the modular nature of many site-specific transcriptional activators (GAL 4) , which consist of a DNA-binding domain and a transcriptional activation domain. The DNA-binding domain serves to target the activator to the specific genes that will be expressed, and the activation domain contacts other proteins of the transcriptional machinery to enable transcription to occur. The two-hybrid system is based on the observation that the two domains of the activator need to be non-covalently brought together by the interaction of any two proteins. The application of this system requires the expression of two hybrid. Generally this assay is performed in yeast cell, but it can also be carried out in other organism." [PMID:10967325, PMID:12634794, PMID:1946372]
+def: "The classical two-hybrid system is a method that uses transcriptional activity as a measure of protein-protein interaction. It relies on the modular nature of many site-specific transcriptional activators (GAL 4) , which consist of a DNA-binding domain and a transcriptional activation domain. The DNA-binding domain serves to target the activator to the specific genes that will be expressed, and the activation domain contacts other proteins of the transcriptional machinery to enable transcription to occur. The two-hybrid system is based on the observation that the two domains of the activator need to be non-covalently brought together by the interaction of any two proteins. The application of this system requires the expression of two hybrid. Generally this assay is performed in yeast cell, but it can also be carried out in other organism. The bait protein is fused to the DNA binding molecule, the prey to the transcriptional activator." [PMID:10967325, PMID:12634794, PMID:1946372]
 subset: PSI-MI slim
 synonym: "2 hybrid" EXACT PSI-MI-short []
 synonym: "2-hybrid" EXACT PSI-MI-alternate []
@@ -206,6 +206,7 @@ synonym: "2h" EXACT PSI-MI-alternate []
 synonym: "classical two hybrid" EXACT PSI-MI-alternate []
 synonym: "Gal4 transcription regeneration" EXACT PSI-MI-alternate []
 synonym: "two-hybrid" EXACT PSI-MI-alternate []
+synonym: "Y2H" EXACT []
 synonym: "yeast two hybrid" EXACT PSI-MI-alternate []
 is_a: MI:0232 ! transcriptional complementation assay
 
@@ -213,7 +214,7 @@ is_a: MI:0232 ! transcriptional complementation assay
 id: MI:0019
 name: coimmunoprecipitation
 namespace: PSI-MI
-def: "In this approach an antibody, specific for the molecule of interest (bait) or any tag expressed within a fusion protein, is used to separate the bait from a protein mixture or a cell lysate and to capture its ligand simultaneously. The partners that bind to the bait molecule retained by the resin can then be eluted and identified. The antibody may be free or bound to a matrix during this process." [PMID:7708014]
+def: "In this approach an antibody, specific for the molecule of interest (bait) or any tag expressed within a fusion protein, is used to separate the bait from a molecular mixture or a cell lysate and to capture its ligand simultaneously. The partners that bind to the bait molecule retained by the resin can then be eluted and identified. The antibody may be free or bound to a matrix during this process." [PMID:7708014]
 subset: PSI-MI slim
 synonym: "co-immunoprecipitation" EXACT PSI-MI-alternate []
 synonym: "Co-IP" EXACT PSI-MI-alternate []
@@ -290,7 +291,7 @@ is_a: MI:0660 ! feature prediction
 id: MI:0027
 name: cosedimentation
 namespace: PSI-MI
-def: "Separation of a protein mixture under the influence of a force such as artificial gravity. Molecules sedimenting together are assumed to interact." [PMID:14755292]
+def: "Separation of a mixture of molecules under the influence of a force such as artificial gravity. Molecules sedimenting together are assumed to interact." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0401 ! biochemical
 
@@ -338,7 +339,7 @@ name: de novo protein sequencing by mass spectrometry
 namespace: PSI-MI
 def: "The strategy to determine the complete amino acid sequence of a protein by mass spectrometry relies on the generation of a nested set of fragments differing by one amino acid. This reveals the identity of the residue that has been removed at each degradation step by measuring the mass difference of fragments differing of one residue. Peptide fragments can be obtained by protease treatment combined with the fragmentation promoted by collision (or other methods) within a tandem mass spectrometer. This approach can be carried out with LC MS/MS (Liquid Chromatography Tandem Mass Spectrometry), nanoESI MS/MS (nanoElectrospray Ionisation tandem mass spectrometry), or FTMS (Fourier Transform mass spectrometry) instruments." [PMID:10984529]
 subset: PSI-MI slim
-synonym: "ms protein sequence" EXACT PSI-MI-short []
+synonym: "de novo protein sequence" EXACT PSI-MI-short []
 synonym: "MS/MS" RELATED []
 is_a: MI:0093 ! protein sequence identification
 is_a: MI:0427 ! Identification by mass spectrometry
@@ -518,6 +519,7 @@ def: "FCS monitors the random motion of fluorescently labelled molecules inside 
 subset: PSI-MI slim
 synonym: "FCS" EXACT PSI-MI-alternate []
 synonym: "fcs" EXACT PSI-MI-short []
+synonym: "fluctuation correlation specctrometry" RELATED []
 is_a: MI:0051 ! fluorescence technology
 
 [Term]
@@ -747,7 +749,7 @@ is_a: MI:0577 ! feature prediction from structure
 id: MI:0077
 name: nuclear magnetic resonance
 namespace: PSI-MI
-def: "NMR requires a small volume of concentrated compound solution that is placed in a strong magnetic field. Certain atomic nuclei, and in particular hydrogen, have a magnetic moment or spin; that is, they have an intrinsic magnetisation, like a bar magnet. The spin aligns along the strong magnetic field, but can be changed to a misaligned excited state in response to applied radio frequency (RF) pulses of electromagnetic radiation. When the excited hydrogen nuclei relax to their aligned state, they emit RF radiation, which can be measured and displayed as a spectrum. The nature of the emitted radiation depends on the environment of each hydrogen nucleus, and if one nucleus is excited, it will influence the absorption and emission of radiation by other nuclei that lie close to it. It is consequently possible, by an ingenious elaboration of the basic NMR technique known as two-dimensional NMR, to distinguish the signals from hydrogen nuclei in different amino acid residues and to identify and measure the small shifts in these signals that occur when these hydrogen nuclei lie close enough to interact: the size of such a shift reveals the distance between the interacting pair of hydrogen atoms. In this way NMR can give information about the distances between the parts of the interacting molecule. NMR provides information about interacting atoms thereby permitting to obtain information about macromolecular structure and molecular interactions." [PMID:12120505, PMID for application instance:12062432]
+def: "Nuclear magnetic resonance (NMR) is an effect whereby magnetic nuclei in a magnetic field absorb and re-emit electromagnetic (EM) energy. Certain atomic nuclei, and in particular hydrogen, have a magnetic moment or spin; i.e., they have an intrinsic magnetisation, like a bar magnet. The spin aligns along the strong magnetic field, but can be changed to a misaligned excited state in response to applied radio frequency (RF) pulses of electromagnetic radiation. When the excited hydrogen nuclei relax to their aligned state, they emit RF radiation, which can be measured and displayed as a spectrum. The nature of the emitted radiation depends on the environment of each hydrogen nucleus, and if one nucleus is excited, it will influence the absorption and emission of radiation by other nuclei that lie close to it. It is consequently possible, by an ingenious elaboration of the basic NMR technique known as two-dimensional NMR, to distinguish the signals from hydrogen nuclei in different amino acid residues and to identify and measure the small shifts in these signals that occur when these hydrogen nuclei lie close enough to interact: the size of such a shift reveals the distance between the interacting pair of hydrogen atoms. In this way NMR can give information about the distances between the parts of the interacting molecule. NMR provides information about interacting atoms thereby permitting to obtain information about macromolecular structure and molecular interactions." [PMID:12120505, PMID for application instance:12062432]
 subset: PSI-MI slim
 synonym: "NMR" EXACT PSI-MI-alternate []
 synonym: "nmr" EXACT PSI-MI-short []
@@ -799,7 +801,6 @@ subset: PSI-MI slim
 synonym: "fingerprinting" EXACT PSI-MI-short []
 is_a: MI:0427 ! Identification by mass spectrometry
 is_a: MI:0433 ! partial identification of protein sequence
-is_a: MI:0815 ! confirmation by molecular weight
 
 [Term]
 id: MI:0083
@@ -863,7 +864,7 @@ is_a: MI:0008 ! array technology
 id: MI:0090
 name: protein complementation assay
 namespace: PSI-MI
-def: "The function of numerous proteins or ribonucleic particles (enzymes, transcription factors, and others) can be rationally dissected into two fragments that fold autonomously but cannot complement to reconstitute the complex function, unless they are located in close proximity. In a two hybrid experiment, restoration of the activity by complementation of the two fragments when expressed as fusion with two polypeptides is taken as an evidence that the two polypeptides interact together." [PMID:11495741]
+def: "In the protein-fragment complementation assay, the proteins of interest (\"Bait\" and \"Prey\") are covalently linked at the genetic level to incomplete fragments of a third protein (known as the \"reporter\") and are expressed in vivo, Interaction between the \"bait\" and the \"prey\" proteins brings the fragments of the \"reporter\" protein in close enough proximity to allow them to reform and become the functional reporter protein. Typically enzymes which confer resistance to antibiotics, such as Dihydrofolate reductase or Beta-lactamase, or proteins that give colorimetric or fluorescent signals are used. The Bait protein is generally the protein under study and the methods are readily adaptable to highthroughput mode." [PMID:11495741]
 subset: PSI-MI slim
 synonym: "complementation" EXACT PSI-MI-short []
 synonym: "PCA" EXACT PSI-MI-alternate []
@@ -920,7 +921,7 @@ is_a: MI:0089 ! protein array
 id: MI:0096
 name: pull down
 namespace: PSI-MI
-def: "A specific affinity chromatography method where a molecule of interest (bait) is expressed as a fusion to an affinity tag (GST, HIS tag and others) and binds to a support that has affinity for the tag. The protein may be expressed and purified first, often in an heterologous system, bound to the matrix at high concentration and then challenged with a solution or cellular extract containing the candidate partner molecules. Alternatively, a protein complex may be adsorbed to the resin and the retained binding proteins subsequently identified." [PMID:14755292]
+def: "A specific affinity chromatography method where a molecule of interest (bait) is expressed as a fusion to an affinity tag (GST, HIS tag and others) and binds to a support that has affinity for the tag. The molecule may be expressed or synthesised and purified first, often in an heterologous system, bound to the matrix at high concentration and then challenged with a solution or cellular extract containing the candidate partner molecules. Alternatively, a multi-molecular complex may be adsorbed to the resin and the retained binding molecules subsequently identified." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0004 ! affinity chromatography technology
 
@@ -978,6 +979,7 @@ name: sequence tag identification
 namespace: PSI-MI
 def: "This approach leads to protein identification by combining mass measurement and short amino acid sequence information obtained by tandem mass spectrometry. This information is then used to automatically find the best match in a sequence database. A mixture of peptides derived from a protease digestion is analysed by nanoelectrospray LC-MS/MS (Liquid Chromatography Tandem Mass Spectrometer or nanoESI MS/MS) mass spectrometry. Electrospray mass spectrometry cannot be applied to dilute samples and is affected by high salt. As a consequence peptides, normally extracted from acrylamide gels by in situ proteolysis, are desalted and concentrated on a microcolumn followed by elution into a capillary used for nanoelectrospray tandem mass spectrometry. A first mass spectrum (Normal mass spectrum or Q1 mass spectrum) gives information about the masses of all the peptides. Peptides observed in the normal mass spectrum are isolated in turn and dissociated into fragments by collision with gas molecules within the mass spectrometer. Some of the fragments obtained from a peptide constitute a nested set, differing by one amino acid, and the mass difference between them allows assignment of a partial sequence. The masses of the fragments define the position of the partial sequence in the peptide. Together with the cleavage specificity of the protease used to cleave the protein, and mass information such sequence tag provides much higher search specificity to match the a database entry. The procedure is repeated with several peptides from the digest, resulting in multiple identifications of the same protein or identification of several proteins from the peptide mixture. Unknown proteins can easily be identified by using the high specificity of the peptide sequence tag for searches in most sequence databases including EST or genome databases." [PMID:10967324, PMID:11752590, PMID for application instance:11805837]
 subset: PSI-MI slim
+synonym: "MS/MS" RELATED []
 synonym: "sequence tag" EXACT PSI-MI-short []
 is_a: MI:0427 ! Identification by mass spectrometry
 is_a: MI:0433 ! partial identification of protein sequence
@@ -2509,9 +2511,9 @@ is_a: MI:0353 ! cross-reference type
 id: MI:0244
 name: reactome complex
 namespace: PSI-MI
-def: "Collection of functional complexes within Reactome - a knowledgebase of biological processes.\nhttp://www.reactome.org/" [PMID:14755292]
+def: "Collection of functional complexes within Reactome - a knowledgebase of biological processes.\nhttp://www.reactome.org/" [PMID:21067998]
 subset: PSI-MI slim
-xref: id-validation-regexp:\"REACT_[0-9\]\{1\,4}\\.[0-9\]\{1\,3}|[0-9\]+\"
+xref: id-validation-regexp:\"REACT_[0-9\]\{1\,5}\\.[0-9\]\{1\,3}|[0-9\]+\"
 xref: search-url: "http://www.reactome.org/cgi-bin/eventbrowser?ID=${ac}"
 is_a: MI:0467 ! reactome
 
@@ -2519,10 +2521,10 @@ is_a: MI:0467 ! reactome
 id: MI:0245
 name: reactome protein
 namespace: PSI-MI
-def: "Collection of protein within the Reactome database - a knowledgebase of biological processes.\nhttp://www.reactome.org/" [PMID:14755292]
+def: "Collection of protein within the Reactome database - a knowledgebase of biological processes.\nhttp://www.reactome.org/" [PMID:21067998]
 subset: PSI-MI slim
 xref: id-validation-regexp:\"REACT_[0-9\]\{1\,4}\\.[0-9\]\{1\,3}|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\]\{3}[0-9\]\{5}|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
-xref: search-url: "http://www.reactome.org/cgi-bin/search?SUBMIT=1&QUERY_CLASS=DatabaseIdentifier&QUERY=SWALL:${ac}"
+xref: search-url: "http://www.reactome.org/cgi-bin/link?SOURCE=UNIPROT&ID=${ac}"
 is_a: MI:0467 ! reactome
 
 [Term]
@@ -2554,7 +2556,6 @@ subset: PSI-MI slim
 xref: id-validation-regexp:\"AA[0-9\]\{4}\"
 xref: search-url: "http://srs.ebi.ac.uk/cgi-bin/wgetz?[resid-id:${ac}]+-e"
 is_a: MI:0447 ! feature database
-is_a: MI:0473 ! participant database
 
 [Term]
 id: MI:0249
@@ -2806,7 +2807,7 @@ namespace: PSI-MI
 def: "Gene name." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "gene" EXACT PSI-MI-alternate []
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:0302
@@ -2814,7 +2815,7 @@ name: gene name synonym
 namespace: PSI-MI
 def: "Gene name synonym." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:0303
@@ -2823,7 +2824,7 @@ namespace: PSI-MI
 def: "Synonym as used in Gene Ontology." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "go synonym" EXACT PSI-MI-short []
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:0304
@@ -2831,7 +2832,7 @@ name: isoform synonym
 namespace: PSI-MI
 def: "Isoform synonym." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:0305
@@ -2846,7 +2847,7 @@ synonym: "ONL" EXACT PSI-MI-alternate []
 synonym: "Ordered locus name" EXACT PSI-MI-alternate []
 synonym: "ORF number" EXACT PSI-MI-alternate []
 synonym: "systematic gene number" EXACT PSI-MI-alternate []
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:0306
@@ -2856,7 +2857,7 @@ def: "A name temporarily attributed by a sequencing project to an open reading f
 comment: For instance MtCY277-28c, SYGP-ORF50, SpBC2F12-04, C06E1, CG10954. Also called Sequencing names or Contig names or Temporary ORFNames.
 subset: PSI-MI slim
 synonym: "orf name" EXACT PSI-MI-short []
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:0307
@@ -3061,7 +3062,7 @@ namespace: PSI-MI
 def: "Molecule not part of or directly encoded by the genome, encompasses any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer, etc., identifiable as a separately distinguishable entity." [PMID:14755292]
 subset: Drugable
 subset: PSI-MI slim
-is_a: MI:0313 ! interactor type
+is_a: MI:1100 ! bioactive entity
 
 [Term]
 id: MI:0329
@@ -3217,7 +3218,7 @@ name: author assigned name
 namespace: PSI-MI
 def: "Name assigned to a molecule by the authors within a paper that may differ from the reference database." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:0346
@@ -3656,7 +3657,7 @@ is_a: MI:0018 ! two hybrid
 id: MI:0398
 name: two hybrid pooling approach
 namespace: PSI-MI
-def: "In the pooling strategy the sets of bait and prey hybrid vectors are randomly mated. The positives double hybrid clones are the interacting partners." [PMID:12634794, PMID for application instance:11283351]
+def: "In the pooling strategy sets of bait and prey hybrid vectors are randomly mated.  This approach required cloning all of the ORFs into both two-hybrid vectors, followed by pooling sets of transformants . The positives double hybrid clones are the interacting partners." [PMID:12634794, PMID for application instance:11283351]
 subset: PSI-MI slim
 synonym: "two hybrid pooling" EXACT PSI-MI-short []
 is_a: MI:0018 ! two hybrid
@@ -3890,7 +3891,7 @@ name: protein kinase assay
 namespace: PSI-MI
 def: "Catalysis of the transfer of a phosphate group, usually from ATP, to a protein substrate." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0415 ! enzymatic study
+is_a: MI:0841 ! phosphotransferase assay
 
 [Term]
 id: MI:0425
@@ -4263,11 +4264,11 @@ is_a: MI:0489 ! source database
 
 [Term]
 id: MI:0463
-name: grid
+name: biogrid
 namespace: PSI-MI
-def: "The General Repository for Interaction Datasets (GRID) is a database of genetic and physical interactions.\nhttp://biodata.mshri.on.ca/grid" [PMID:14755292]
+def: "The General Repository for Interaction Datasets (BioGRID) is a database of genetic and physical interactions.\nhttp://thebiogrid.org" [PMID:21071413]
 subset: PSI-MI slim
-synonym: "GRID" EXACT PSI-MI-alternate []
+synonym: "BioGRID" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
 is_a: MI:0489 ! source database
 
@@ -4282,9 +4283,9 @@ synonym: "CYGD (MIPS)" EXACT PSI-MI-alternate []
 synonym: "MIPS" EXACT PSI-MI-alternate []
 synonym: "MPact" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\]+|[A-Z\]\{3}[0-9\]\{3}[A-Za-z\](-[A-Za-z\])?|[A-Z0-9\]+\\.[0-9\]+|YM[A-Z\][0-9\]\{3}[a-z\][0-9\]\"
-is_a: MI:0461 ! interaction database
 is_a: MI:0489 ! source database
-is_a: MI:0683 ! sequence database
+is_a: MI:1094 ! genome databases
+is_a: MI:1106 ! pathways database
 
 [Term]
 id: MI:0465
@@ -4305,18 +4306,18 @@ namespace: PSI-MI
 def: "EcoCyc is a bioinformatics database that describes the genome and the biochemical machinery of E. coli K12 MG1655.\nhttp://ecocyc.org/" [PMID:14755292]
 subset: PSI-MI slim
 synonym: "EcoCyc" EXACT PSI-MI-alternate []
-is_a: MI:0461 ! interaction database
+is_a: MI:1106 ! pathways database
 
 [Term]
 id: MI:0467
 name: reactome
 namespace: PSI-MI
-def: "The Reactome project is a collaboration among Cold Spring Harbor Laboratory, The European Bioinformatics Institute, and The Gene Ontology Consortium to develop a curated resource of core pathways and reactions in human biology.\nhttp://www.reactome.org/" [PMID:14755292]
+def: "The Reactome project is a collaboration among Cold Spring Harbor Laboratory, The European Bioinformatics Institute, and The Gene Ontology Consortium to develop a curated resource of core pathways and reactions in human biology.\nhttp://www.reactome.org/" [PMID:21067998]
 subset: PSI-MI slim
 synonym: "Genome Knowledge Base" EXACT PSI-MI-alternate []
 synonym: "GKB" EXACT PSI-MI-alternate []
 synonym: "Reactome" EXACT PSI-MI-alternate []
-is_a: MI:0461 ! interaction database
+is_a: MI:1106 ! pathways database
 
 [Term]
 id: MI:0468
@@ -4350,8 +4351,8 @@ subset: Drugable
 subset: PSI-MI slim
 synonym: "KEGG" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[a-zA-Z\]+\:[a-zA-Z\]+[0-9\]+\"
-is_a: MI:0461 ! interaction database
 is_a: MI:0473 ! participant database
+is_a: MI:1106 ! pathways database
 
 [Term]
 id: MI:0471
@@ -4371,6 +4372,7 @@ name: pdbe
 namespace: PSI-MI
 def: "The Protein Data Bank in Europe - the European project for the collection, management and distribution of data about macromolecular structures, derived in part from the Protein Data Bank (PDB).\nhttp://www.ebi.ac.uk/pdbe/" [PMID:16381867]
 subset: PSI-MI slim
+synonym: "<new synonym>" RELATED []
 synonym: "e-MSD" EXACT []
 synonym: "MSD" RELATED []
 synonym: "PQS" EXACT PSI-MI-alternate []
@@ -4422,7 +4424,7 @@ def: "Ensembl is a joint project between the EMBL-EBI and the Wellcome Trust San
 subset: PSI-MI slim
 synonym: "Ensembl" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"ENS[A-Z\]+[0-9\]\{11}|[A-Z\]\{3}[0-9\]\{3}[A-Za-z\](-[A-Za-z\])?|CG[0-9\]+|[A-Z0-9\]+\\.[0-9\]+|YM[A-Z\][0-9\]\{3}[a-z\][0-9\]\"
-is_a: MI:0683 ! sequence database
+is_a: MI:1094 ! genome databases
 
 [Term]
 id: MI:0477
@@ -4433,7 +4435,7 @@ subset: PSI-MI slim
 synonym: "Entrez gene/locuslink" EXACT PSI-MI-alternate []
 synonym: "entrezgene/locuslink" EXACT PSI-MI-short []
 xref: id-validation-regexp:\"[0-9\]+|[A-Z\]\{1\,2}_[0-9\]+|[A-Z\]\{1\,2}_[A-Z\]\{1\,4}[0-9\]+\"
-is_a: MI:0683 ! sequence database
+is_a: MI:1109 ! gene database
 
 [Term]
 id: MI:0478
@@ -4444,7 +4446,7 @@ subset: PSI-MI slim
 synonym: "FlyBase" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"FBgn[0-9\]\{7}\"
 xref: search-url: "http://flybase.net/cgi-bin/fbannq.html?acc=${ac}"
-is_a: MI:0683 ! sequence database
+is_a: MI:1094 ! genome databases
 
 [Term]
 id: MI:0479
@@ -4454,7 +4456,7 @@ def: "Mouse Genome Informatics (MGI) provides integrated access to data on the g
 subset: PSI-MI slim
 synonym: "MGD/MGI" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"MGI\:[0-9\]+\"
-is_a: MI:0683 ! sequence database
+is_a: MI:1094 ! genome databases
 
 [Term]
 id: MI:0480
@@ -4475,7 +4477,7 @@ def: "The Reference Sequence (RefSeq) collection aims to provide a comprehensive
 subset: PSI-MI slim
 synonym: "Refseq" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[XNZ\][A-Z\]_[0-9\]+|[0-9\]+|[XNZ\][A-Z\]_[0-9\]+\\.[0-9\]+\"
-is_a: MI:0683 ! sequence database
+is_a: MI:1096 ! protein sequence databases
 
 [Term]
 id: MI:0482
@@ -4495,7 +4497,7 @@ def: "The Rat Genome Database (RGD) curates and integrates rat genetic and genom
 subset: PSI-MI slim
 synonym: "RGD" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\]+\"
-is_a: MI:0683 ! sequence database
+is_a: MI:1094 ! genome databases
 
 [Term]
 id: MI:0484
@@ -4506,7 +4508,7 @@ subset: PSI-MI slim
 synonym: "SGD" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"S[0-9\]\{9}\"
 xref: search-url: "http://genome-www4.stanford.edu/cgi-bin/SGD/locus.pl?locus=${ac}"
-is_a: MI:0683 ! sequence database
+is_a: MI:1094 ! genome databases
 
 [Term]
 id: MI:0485
@@ -4517,7 +4519,7 @@ subset: PSI-MI slim
 synonym: "UniParc" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"UPI[A-F0-9\]\{10}\"
 xref: search-url: "http://www.ebi.uniprot.org/entry/${ac}"
-is_a: MI:0683 ! sequence database
+is_a: MI:1097 ! uniprot
 
 [Term]
 id: MI:0486
@@ -4529,7 +4531,7 @@ synonym: "UniProt" EXACT PSI-MI-alternate []
 synonym: "uniprotkb" EXACT PSI-MI-short []
 xref: id-validation-regexp:\"[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
 xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
-is_a: MI:0683 ! sequence database
+is_a: MI:1097 ! uniprot
 
 [Term]
 id: MI:0487
@@ -4539,7 +4541,7 @@ def: "WormBase is the central worm database that houses the gene reports, locus 
 subset: PSI-MI slim
 synonym: "WormBase" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"WBGene[0-9\]\{8}\"
-is_a: MI:0683 ! sequence database
+is_a: MI:1094 ! genome databases
 
 [Term]
 id: MI:0488
@@ -5374,7 +5376,7 @@ is_a: MI:0918 ! donor
 id: MI:0580
 name: electron acceptor
 namespace: PSI-MI
-def: "Molecule to which and electron may be transferred from an electron donor." [PMID:14755292]
+def: "Molecule to which an electron may be transferred from an electron donor." [PMID:14755292]
 subset: PSI-MI slim
 is_a: MI:0919 ! acceptor
 
@@ -5441,8 +5443,9 @@ is_obsolete: true
 id: MI:0588
 name: 3 hybrid method
 namespace: PSI-MI
-def: "Group of method based on complementation assay where a third participant is shown to be necessary for the binding of a given bait prey pair." [PMID:14755292]
+def: "Group of methods based on complementation assay where a third participant is shown to be necessary for the binding of a given bait prey pair. The molecule fused to the DNA binding domain is the bait, that fused to the transcriptional activator is the prey." [PMID:14755292]
 subset: PSI-MI slim
+synonym: "tri-hybrid assay" EXACT []
 is_a: MI:0090 ! protein complementation assay
 
 [Term]
@@ -5703,8 +5706,8 @@ name: example
 namespace: PSI-MI
 def: "Example generally associated to Cv terms. Test." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0300 ! alias type
 is_a: MI:0667 ! controlled vocabulary attribute name
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:0617
@@ -5856,7 +5859,7 @@ name: contact-email
 namespace: PSI-MI
 def: "E-mail address to contact the author or organisation which has produced the data. This attribute is generally associated to an experiment." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:1093 ! bibliographic attribute name
 
 [Term]
 id: MI:0635
@@ -5864,7 +5867,7 @@ name: contact-comment
 namespace: PSI-MI
 def: "Free text notes on how to contact the author or organisation which has produced the data This attribute is generally associated to an experiment." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:1093 ! bibliographic attribute name
 
 [Term]
 id: MI:0636
@@ -5872,7 +5875,7 @@ name: author-list
 namespace: PSI-MI
 def: "List of authors associated to a publication. This attribute is generally associated to an experiment." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:1093 ! bibliographic attribute name
 
 [Term]
 id: MI:0637
@@ -6200,7 +6203,7 @@ name: complex-synonym
 namespace: PSI-MI
 def: "Alternative names to describe a complex." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:0674
@@ -6219,7 +6222,7 @@ def: "IPI provides a top level guide to the main databases that describe the pro
 subset: PSI-MI slim
 synonym: "ipi" EXACT PSI-MI-short []
 xref: id-validation-regexp:\"IPI[0-9\]+.[0-9\]+|IPI[0-9\]+\"
-is_a: MI:0683 ! sequence database
+is_a: MI:1096 ! protein sequence databases
 
 [Term]
 id: MI:0676
@@ -6725,7 +6728,7 @@ namespace: PSI-MI
 def: "PubChem provides information on the biological activities of small molecules.\nhttp://pubchem.ncbi.nlm.nih.gov/" [PMID:16381840]
 subset: PSI-MI slim
 synonym: "PubChem" EXACT PSI-MI-alternate []
-is_a: MI:0473 ! participant database
+is_a: MI:2054 ! bioactive entity reference
 
 [Term]
 id: MI:0731
@@ -7447,7 +7450,7 @@ def: "ENCODE (the Encyclopedia Of DNA Elements) seeks to identify all protein-co
 subset: PSI-MI slim
 synonym: "ENCODE" EXACT PSI-MI-alternate []
 synonym: "Encyclopedia Of DNA Elements" EXACT PSI-MI-alternate []
-is_a: MI:0683 ! sequence database
+is_a: MI:1094 ! genome databases
 
 [Term]
 id: MI:0851
@@ -7665,7 +7668,7 @@ name: curation request
 namespace: PSI-MI
 def: "Annotation of a published paper which has been externally requested." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:1093 ! bibliographic attribute name
 
 [Term]
 id: MI:0875
@@ -7673,7 +7676,7 @@ name: dataset
 namespace: PSI-MI
 def: "Targeted curation dataset grouping experiments by topic or dataset origin." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:1093 ! bibliographic attribute name
 
 [Term]
 id: MI:0878
@@ -7691,6 +7694,7 @@ def: "Measures the catalysis of the hydrolysis of a nucleoside triphosphate into
 subset: PSI-MI slim
 synonym: "triphosphatase ass" EXACT PSI-MI-short []
 is_a: MI:0415 ! enzymatic study
+is_a: MI:0434 ! phosphatase assay
 
 [Term]
 id: MI:0880
@@ -7740,7 +7744,7 @@ name: journal
 namespace: PSI-MI
 def: "Name and details of a journal from which paper has been taken." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:1093 ! bibliographic attribute name
 
 [Term]
 id: MI:0886
@@ -7748,7 +7752,7 @@ name: publication year
 namespace: PSI-MI
 def: "Year of publication of a paper." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0665 ! experiment attibute name
+is_a: MI:1093 ! bibliographic attribute name
 
 [Term]
 id: MI:0887
@@ -7910,7 +7914,7 @@ name: polysaccharide
 namespace: PSI-MI
 def: "A polysaccharide is a complex polymer of carbohydrate monormers. They are polymers made up of many monosaccharides joined together by glycosidic bonds. They are therefore very large, often branched, macromolecules." [PMID:14755292]
 subset: PSI-MI slim
-is_a: MI:0383 ! biopolymer
+is_a: MI:1100 ! bioactive entity
 
 [Term]
 id: MI:0905
@@ -8089,7 +8093,7 @@ name: camjedb
 namespace: PSI-MI
 def: "Camjedb is a comprehensive database for information on the genome of Campylobacter jejuni.\nhttp://www.sanger.ac.uk/Projects/C_jejuni/" [PMID:106882042]
 subset: PSI-MI slim
-is_a: MI:0683 ! sequence database
+is_a: MI:1094 ! genome databases
 
 [Term]
 id: MI:0925
@@ -8126,9 +8130,11 @@ name: filter trap assay
 namespace: PSI-MI
 def: "Biomolecules are mixed in a buffer and the resulting mixture is\npassed through a filter. Large\naggregates are retained on the filter and the pariticipants may then be identified." [PMID:10859365]
 subset: PSI-MI slim
+synonym: "<new synonym>" RELATED []
 synonym: "filter binding" EXACT []
 synonym: "filter retardation assay" RELATED []
 synonym: "Filter retention assay" EXACT PSI-MI-alternate []
+synonym: "membrane filtration" RELATED []
 is_a: MI:0013 ! biophysical
 is_a: MI:0091 ! chromatography technology
 
@@ -8518,9 +8524,10 @@ creation_date: 2009-10-28T11:48:40Z
 id: MI:0970
 name: inchi key
 namespace: PSI-MI
-def: "The condensed, 25 character InChIKey is a hashed version of the full InChI (using the SHA-256 algorithm), designed to allow for easy web searches of chemical compounds." [PMID:15889163]
+def: "InChIKeys consist of 14 characters resulting from a hash of the connectivity information of the InChI, followed by a hyphen, followed by 9 characters resulting from a hash of the remaining layers of the InChI, followed by a single character indication the version of InChI used, another hyphen, followed by single checksum character" [PMID:15889163]
 subset: Drugable
-is_a: MI:2010 ! inchi id
+synonym: "inchi key" EXACT PSI-MI-short []
+is_a: MI:2010 ! standard inchi
 created_by: orchard
 creation_date: 2009-10-28T01:13:25Z
 
@@ -8625,6 +8632,7 @@ namespace: PSI-MI
 def: "The protein is expressed as a hybrid protein fused to a tag containing an enzyme activity e.g. peroxidase. Subsequence observation or measurement of enzyme activity is used to identify the presence of the molecule in an interaction." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "tag enzyme assay" EXACT PSI-MI-short []
+xref: XX:<new dbxref>
 is_a: MI:0866 ! tag visualisation
 created_by: orchard
 creation_date: 2010-04-21T03:18:09Z
@@ -8709,7 +8717,7 @@ creation_date: 2010-04-26T11:00:08Z
 id: MI:0988
 name: strep tag
 namespace: PSI-MI
-def: "Synthetic peptide consisting of 8 amino acids (Trp-Ser-His-Pro-Gln-Phe-Glu-Lys)." [PMID:17571060]
+def: "Synthetic peptide consisting of 8 amino acids (Trp-Ser-His-Pro-Gln-Phe-Glu-Lys)." [PMID:17571060, XX:<new dbxref>]
 subset: PSI-MI slim
 is_a: MI:0507 ! tag
 created_by: orchard
@@ -8749,44 +8757,44 @@ creation_date: 2010-04-26T11:30:12Z
 
 [Term]
 id: MI:0992
-name: defarnesylation assay
+name: defarnesylase assay
 namespace: PSI-MI
 def: "Measures the removal of S-farnesyl-L-cysteined, which is cleaved and returns a C residue." [PMID:14760721]
 subset: PSI-MI slim
-synonym: "defarnesylase assay" EXACT PSI-MI-short []
+synonym: "defarnesylation assay" EXACT PSI-MI-short []
 is_a: MI:0991 ! lipid cleavage assay
 created_by: orchard
 creation_date: 2010-04-26T12:27:47Z
 
 [Term]
 id: MI:0993
-name: degeranylation assay
+name: degeranylase assay
 namespace: PSI-MI
 def: "Measures the removal of S-geranylgeranyl-L-cysteine, which is cleaved and returns a C residue." [PMID:14760721]
 subset: PSI-MI slim
-synonym: "degeranylase assay" EXACT PSI-MI-short []
+synonym: "degeranylation assay" EXACT PSI-MI-short []
 is_a: MI:0991 ! lipid cleavage assay
 created_by: orchard
 creation_date: 2010-04-26T12:36:51Z
 
 [Term]
 id: MI:0994
-name: demyristoylation assay
+name: demyristoylase assay
 namespace: PSI-MI
 def: "measures the removal of N6-myristoyl-L-lysine, which is cleaved and returns a K residue." [PMID:14760721]
 subset: PSI-MI slim
-synonym: "demyristoylase assay" EXACT PSI-MI-short []
+synonym: "demyristoylation assay" EXACT PSI-MI-short []
 is_a: MI:0991 ! lipid cleavage assay
 created_by: orchard
 creation_date: 2010-04-26T12:39:30Z
 
 [Term]
 id: MI:0995
-name: depalmitoylation assay
+name: depalmitoylase assay
 namespace: PSI-MI
-def: "Measures the removal of S-palmitoyl-L-cysteine, N6-palmitoyl-L-lysine, O-palmitoyl-L-threonine or O-palmitoyl-L-serine, which are cleaved and return C,K,T or S residues." [PMID:14760721]
+def: "Measures the removal of S-palmitoyl-L-cysteine, N6-palmitoyl-L-lysine, O-palmitoyl-L-threonine or O-palmitoyl-L-serine, which are cleaved and return C,K,T or S residues." [PMID:<new dbxref>14760721]
 subset: PSI-MI slim
-synonym: "depalmitoylase assay" EXACT PSI-MI-short []
+synonym: "depalmitoylation assay" EXACT PSI-MI-short []
 is_a: MI:0991 ! lipid cleavage assay
 created_by: orchard
 creation_date: 2010-04-26T12:42:00Z
@@ -8988,7 +8996,7 @@ name: ensemblgenomes
 namespace: PSI-MI
 def: "Genome browser complementary to Ensembl which extends the search space across a broader taxonomic range.\nhttp://www.ensemblgenomes.org" [PMID:19884133]
 subset: PSI-MI slim
-is_a: MI:0683 ! sequence database
+is_a: MI:1094 ! genome databases
 created_by: orchard
 creation_date: 2010-05-06T08:09:20Z
 
@@ -9009,7 +9017,7 @@ namespace: PSI-MI
 def: "dictyBase (http://dictybase.org) is the model organism database for Dictyostelium discoideum. It houses the complete genome sequence, ESTs and the entire body of literature relevant to Dictyostelium. This information is curated to provide accurate gene models and functional annotations, with the goal of fully annotating the genome." []
 subset: PSI-MI slim
 xref: id-validation-regexp:\"DDB_G(0-9)\{7}\"
-is_a: MI:0683 ! sequence database
+is_a: MI:1094 ! genome databases
 created_by: orchard
 creation_date: 2010-07-29T01:19:40Z
 
@@ -9019,6 +9027,7 @@ name: fluorescence recovery after photobleaching
 namespace: PSI-MI
 def: "Slow rate of FRAP recovery when molecule is bound to another compared to inert, non-binding molecule taken as a measure of an interaction." [PMID:15695095, PMID:17711354]
 subset: PSI-MI slim
+synonym: "<new synonym>" RELATED []
 synonym: "frap" EXACT PSI-MI-short []
 is_a: MI:0051 ! fluorescence technology
 created_by: orchard
@@ -9191,7 +9200,7 @@ def: "Fluorescent tag - maleimide couples to thiols." [PMID:14760721]
 subset: PSI-MI slim
 synonym: "atto 488 maleimide" EXACT []
 synonym: "atto488" RELATED []
-is_a: MI:0857 ! fluorescent dye label
+is_a: MI:1092 ! atto label
 created_by: orchard
 creation_date: 2010-11-11T01:33:13Z
 
@@ -9199,10 +9208,10 @@ creation_date: 2010-11-11T01:33:13Z
 id: MI:1033
 name: atto 550
 namespace: PSI-MI
-def: "Fluorescent tag - maleimide couples to thiols" [PMID:14760721]
+def: "Fluorescent tag - maleimide couples to thiols." [PMID:14760721]
 subset: PSI-MI slim
 synonym: "atto550" RELATED []
-is_a: MI:0857 ! fluorescent dye label
+is_a: MI:1092 ! atto label
 created_by: orchard
 creation_date: 2010-11-11T01:39:43Z
 
@@ -9266,6 +9275,7 @@ name: c-terminal range
 namespace: PSI-MI
 def: "The C-terminal region of a sequence, exact coordinates not available." [PMID:14760721]
 subset: PSI-MI slim
+synonym: "<new synonym>" RELATED []
 synonym: "c-term range" EXACT PSI-MI-short []
 is_a: MI:0333 ! feature range status
 created_by: orchard
@@ -9283,6 +9293,765 @@ created_by: orchard
 creation_date: 2010-11-11T03:27:57Z
 
 [Term]
+id: MI:1041
+name: synonym
+namespace: PSI-MI
+def: "Alternative name or descriptor for an entity." [PMID:14681455]
+subset: PSI-MI slim
+is_a: MI:0300 ! alias type
+created_by: orchard
+creation_date: 2010-12-02T10:26:35Z
+
+[Term]
+id: MI:1042
+name: pubmed central
+namespace: PSI-MI
+def: "PubMed Central is the US National Institute of Health free digital archive of biomedical and life science journals." [PMID:12519941]
+subset: PSI-MI slim
+synonym: "<pmc" EXACT PSI-MI-short []
+is_a: MI:0445 ! literature database
+created_by: orchard
+creation_date: 2010-12-08T01:20:48Z
+
+[Term]
+id: MI:1043
+name: flannotator
+namespace: PSI-MI
+def: "A repository for collecting, storing and and searching the annotation of gene or protein expression patterns in Drosophila melongaster. CPTI (Cambridge Protein Trap Identifier)" [PMID:19126575]
+subset: PSI-MI slim
+xref: id-validation-regexp:\"CPTO-[0-9\]\{6}\"
+is_a: MI:0683 ! sequence database
+created_by: orchard
+creation_date: 2011-01-06T01:16:48Z
+
+[Term]
+id: MI:1044
+name: rice genome annotation project
+namespace: PSI-MI
+def: "NSF funded annotation project." [PMID:17145706]
+subset: PSI-MI slim
+synonym: "RGAP" RELATED []
+is_a: MI:1094 ! genome databases
+created_by: orchard
+creation_date: 2011-02-11T01:33:28Z
+
+[Term]
+id: MI:1045
+name: curation content
+namespace: PSI-MI
+def: "Indicates source, depth and standards by which an entry has been  added to a database." []
+subset: PSI-MI slim
+synonym: "" RELATED []
+xref: PMID:14755292
+is_a: MI:0000 ! molecular interaction
+created_by: orchard
+creation_date: 2011-03-11T01:16:55Z
+
+[Term]
+id: MI:1046
+name: interacting molecules
+namespace: PSI-MI
+def: "Defines an interaction by the type of binary molecule pairs it can generates." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1045 ! curation content
+created_by: orchard
+creation_date: 2011-03-11T01:19:27Z
+
+[Term]
+id: MI:1047
+name: protein-protein
+namespace: PSI-MI
+def: "Interaction between a protein or peptide and a corresponding protein or peptide." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1046 ! interacting molecules
+created_by: orchard
+creation_date: 2011-03-11T01:21:28Z
+
+[Term]
+id: MI:1048
+name: smallmolecule-protein
+namespace: PSI-MI
+def: "Interaction between a small molecule and a corresponding protein or peptide." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1046 ! interacting molecules
+created_by: orchard
+creation_date: 2011-03-11T01:22:36Z
+
+[Term]
+id: MI:1049
+name: nucleicacid-protein
+namespace: PSI-MI
+def: "Interaction between a nucleic acid and a corresponding protein or peptide." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1046 ! interacting molecules
+created_by: orchard
+creation_date: 2011-03-11T01:23:29Z
+
+[Term]
+id: MI:1050
+name: interaction representation
+namespace: PSI-MI
+def: "Provides an indication of the level of post-processing of experimental data relating to specific binary pairs" [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1045 ! curation content
+created_by: orchard
+creation_date: 2011-03-11T01:25:29Z
+
+[Term]
+id: MI:1051
+name: evidence
+namespace: PSI-MI
+def: "Binary pair is defined by a single piece of experimental evidence." [PMID:<new dbxref>14755292]
+subset: PSI-MI slim
+is_a: MI:1050 ! interaction representation
+created_by: orchard
+creation_date: 2011-03-11T01:27:00Z
+
+[Term]
+id: MI:1052
+name: clustered
+namespace: PSI-MI
+def: "Binary pair is defined by multiple pieces of experimental evidence which have been clustered together." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1050 ! interaction representation
+created_by: orchard
+creation_date: 2011-03-11T01:28:50Z
+
+[Term]
+id: MI:1053
+name: data source
+namespace: PSI-MI
+def: "The source of the data entered into the database." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1045 ! curation content
+created_by: orchard
+creation_date: 2011-03-11T01:32:16Z
+
+[Term]
+id: MI:1054
+name: experimentally-observed
+namespace: PSI-MI
+def: "Data has been directly curated into the database from the paper describing the experimental evidence or by direct submission by the experimenter." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1053 ! data source
+created_by: orchard
+creation_date: 2011-03-11T01:33:48Z
+
+[Term]
+id: MI:1055
+name: internally-curated
+namespace: PSI-MI
+def: "Data has been directly curated into this database from the paper describing the experimental evidence" [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1053 ! data source
+created_by: orchard
+creation_date: 2011-03-11T01:35:12Z
+
+[Term]
+id: MI:1056
+name: text-mining
+namespace: PSI-MI
+def: "The data has been entered into the database following extraction from the literature by a computational process." [PMID:<new dbxref>14755292]
+subset: PSI-MI slim
+is_a: MI:1053 ! data source
+created_by: orchard
+creation_date: 2011-03-11T01:36:34Z
+
+[Term]
+id: MI:1057
+name: predicted
+namespace: PSI-MI
+def: "The interaction has been predicted using a specific algorithm." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1053 ! data source
+created_by: orchard
+creation_date: 2011-03-11T01:37:47Z
+
+[Term]
+id: MI:1058
+name: imported
+namespace: PSI-MI
+def: "The data has been imported into the database form an external resource." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1053 ! data source
+created_by: orchard
+creation_date: 2011-03-11T01:39:23Z
+
+[Term]
+id: MI:1059
+name: complex expansion
+namespace: PSI-MI
+def: "The method by which complex n-ary data is expanded into binary data. This may be performed manually on data input, or computationally on data export." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1045 ! curation content
+created_by: orchard
+creation_date: 2011-03-11T01:41:16Z
+
+[Term]
+id: MI:1060
+name: spoke expansion
+namespace: PSI-MI
+def: "Complex n-ary data has been expanded to binary using the spoke model. This assumes that all molecules in the complex interact with a single designated molecule, usually the bait." [PMID:14755292]
+subset: PSI-MI slim
+is_a: MI:1059 ! complex expansion
+created_by: orchard
+creation_date: 2011-03-11T01:42:35Z
+
+[Term]
+id: MI:1061
+name: matrix expansion
+namespace: PSI-MI
+def: "Complex n-ary data has been expanded to binary using the spoke model. This assumes that all molecules in the complex interact with each other." [PMID:<new dbxref>14755292]
+subset: PSI-MI slim
+is_a: MI:1059 ! complex expansion
+created_by: orchard
+creation_date: 2011-03-11T01:45:52Z
+
+[Term]
+id: MI:1062
+name: bipartite expansion
+namespace: PSI-MI
+def: "Complex n-ary data has been expanded to binary using the bipartite model. This assumes that all molecules in the complex interact with a single externally designated entity." [PMID:<new dbxref>14755292]
+subset: PSI-MI slim
+is_a: MI:1059 ! complex expansion
+created_by: orchard
+creation_date: 2011-03-11T01:49:08Z
+
+[Term]
+id: MI:1063
+name: consensuspathdb
+namespace: PSI-MI
+def: "ConsensusPathDB-human integrates functional interaction networks including complex protein-protein, metabolic, signaling and gene regulatory interaction networks in Homo sapiens. Data originate from currently 20 public resources for functional interactions (listed below), as well as interactions that we have curated from literature. Data are integrated in a complementary manner and redundancies are avoided." [PMID:21071422]
+subset: PSI-MI slim
+is_a: MI:1106 ! pathways database
+created_by: orchard
+creation_date: 2011-06-21T02:40:16Z
+
+[Term]
+id: MI:1064
+name: interaction confidence
+namespace: PSI-MI
+def: "A method used to derive a numerical or empirical measure of confidence in a particular interaction, or in the identification of the participants in an interaction." [PMID:19420069]
+subset: PSI-MI slim
+synonym: "confidence" EXACT PSI-MI-short []
+synonym: "scoring system" EXACT []
+is_a: MI:0000 ! molecular interaction
+created_by: orchard
+creation_date: 2011-07-05T07:13:57Z
+
+[Term]
+id: MI:1065
+name: replication-based confidence
+namespace: PSI-MI
+def: "Methods based on counting the number of replicates in which an interaction has been observed." [PMID:19420069]
+subset: PSI-MI slim
+synonym: "replication score" EXACT PSI-MI-alternate []
+synonym: "replication-based scoring system" RELATED []
+is_a: MI:1064 ! interaction confidence
+created_by: orchard
+creation_date: 2011-07-05T07:22:02Z
+
+[Term]
+id: MI:1066
+name: structure-based confidence
+namespace: PSI-MI
+def: "Confidence score based on similarity to interacting molecules of known structure, presence of known interacting domains etc." [PMID:15044803]
+subset: PSI-MI slim
+synonym: "structure score" EXACT PSI-MI-alternate []
+synonym: "structure-based scoring system" EXACT []
+is_a: MI:1064 ! interaction confidence
+created_by: orchard
+creation_date: 2011-07-05T07:38:50Z
+
+[Term]
+id: MI:1067
+name: function-based confidence
+namespace: PSI-MI
+def: "Confidence in an interaction is based on shared functionality of interacting molecules e.g. co-occurrence of GO function terms." [PMID:21443973]
+subset: PSI-MI slim
+synonym: "function score" EXACT PSI-MI-short []
+synonym: "function-based scoring system" EXACT []
+is_a: MI:1064 ! interaction confidence
+created_by: orchard
+creation_date: 2011-07-05T07:46:28Z
+
+[Term]
+id: MI:1068
+name: location-based confidence
+namespace: PSI-MI
+def: "Confidence in an interaction is based on shared functionality of interacting molecules e.g. co-occurrence of GO component terms or co-occurrence in the same tissues." [PMID:18624398]
+subset: PSI-MI slim
+synonym: "colocation score" EXACT PSI-MI-short []
+synonym: "location-based scoring system" EXACT []
+is_a: MI:1064 ! interaction confidence
+created_by: orchard
+creation_date: 2011-07-05T07:52:36Z
+
+[Term]
+id: MI:1069
+name: network-based confidence
+namespace: PSI-MI
+def: "Network-based confidence scoring systems assign confidence based on multiple parameters, potentially shared by interacting proteins e.g. interaction partners, topological parameters, comparison\nwith genetic interactions." [PMID:19010802]
+subset: PSI-MI slim
+synonym: "network score" EXACT PSI-MI-short []
+synonym: "network-based scoring system" EXACT PSI-MI-short []
+is_a: MI:1064 ! interaction confidence
+created_by: orchard
+creation_date: 2011-07-05T07:59:13Z
+
+[Term]
+id: MI:1070
+name: standard-based confidence
+namespace: PSI-MI
+def: "Confidence scoring system based on comparison to a 'gold standard' set of known interacting molecules." [PMID:16554755]
+subset: PSI-MI slim
+synonym: "gold standard" RELATED []
+synonym: "standard score" EXACT PSI-MI-short []
+synonym: "standard-based scoring system" EXACT []
+is_a: MI:1064 ! interaction confidence
+created_by: orchard
+creation_date: 2011-07-05T08:09:46Z
+
+[Term]
+id: MI:1071
+name: literature-based confidence
+namespace: PSI-MI
+def: "Confidence in an interaction is based on co-occurrence of an interacting pair or molecules in the same article, or sentence within an article, usually identified by text-mining." [PMID:18005433]
+subset: PSI-MI slim
+synonym: "literature score" EXACT PSI-MI-short []
+synonym: "literature-based scoring system" EXACT []
+is_a: MI:1064 ! interaction confidence
+created_by: orchard
+creation_date: 2011-07-05T08:24:46Z
+
+[Term]
+id: MI:1072
+name: method-based confidence
+namespace: PSI-MI
+def: "The confidence of an interaction is assessed on the number of different methods by which it is observed." [PMID:19420069]
+subset: PSI-MI slim
+synonym: "method score" EXACT PSI-MI-short []
+synonym: "method-based scoring system" EXACT []
+is_a: MI:1064 ! interaction confidence
+created_by: orchard
+creation_date: 2011-07-05T08:42:47Z
+
+[Term]
+id: MI:1073
+name: statistical-based confidence
+namespace: PSI-MI
+def: "Confidence in an interaction is based on a measure of the probability of these molecules interacting." [PMID:19420069]
+subset: PSI-MI slim
+synonym: "statistical score" EXACT PSI-MI-short []
+synonym: "statistical-based scoring system" EXACT []
+is_a: MI:1064 ! interaction confidence
+created_by: orchard
+creation_date: 2011-07-05T08:50:05Z
+
+[Term]
+id: MI:1074
+name: rgs-his tag
+namespace: PSI-MI
+def: "The protein of interest is expressed as a fusion to a RGS(His)n tag." [PMID:19223579]
+synonym: "rgs-his" EXACT PSI-MI-short []
+is_a: MI:0521 ! his tag
+created_by: orchard
+creation_date: 2011-07-05T09:52:28Z
+
+[Term]
+id: MI:1075
+name: beilstein
+namespace: PSI-MI
+def: "The Beilstein database is in the field of organic chemistry, in which compounds are uniquely identified by their Beilstein Registry Number." [PMID:ID\:11604014]
+subset: PSI-MI slim
+synonym: "beilstein" EXACT PSI-MI-short []
+is_a: MI:2054 ! bioactive entity reference
+created_by: orchard
+creation_date: 2011-07-05T10:03:13Z
+
+[Term]
+id: MI:1076
+name: einecs
+namespace: PSI-MI
+def: "The EINECS database provides general information such as CAS number, EINECS number, Substance Name and Chemical Formula for 100,204 chemical substances. Where available each compound entry is linked to risk and safety phrases and IUCLID and OECD chemical data sheets." [PMID:17125194]
+subset: PSI-MI slim
+synonym: "einecs" EXACT PSI-MI-short []
+synonym: "European Inventory of Existing Commercial Chemical Substances " EXACT []
+is_a: MI:2054 ! bioactive entity reference
+created_by: orchard
+creation_date: 2011-07-05T10:09:35Z
+
+[Term]
+id: MI:1077
+name: merck index
+namespace: PSI-MI
+def: "Comprehensive information on chemicals, drugs, and biologicals." [PMID:17832605]
+subset: PSI-MI slim
+synonym: "merck index" EXACT PSI-MI-short []
+is_a: MI:2054 ! bioactive entity reference
+created_by: orchard
+creation_date: 2011-07-05T10:15:56Z
+
+[Term]
+id: MI:1078
+name: plantgdb
+namespace: PSI-MI
+def: "PlantGDB  develops plant species-specific EST and GSS databases, to provide web-accessible tools and inter-species query capabilities, and to provide genome browsing and annotation capabilities." [PMID:18063570]
+subset: PSI-MI slim
+synonym: "plantgdb" EXACT PSI-MI-short []
+is_a: MI:1094 ! genome databases
+created_by: orchard
+creation_date: 2011-07-05T10:27:50Z
+
+[Term]
+id: MI:1079
+name: ratmap
+namespace: PSI-MI
+def: "The rat genome database RatMap (http://ratmap.org or http://ratmap.gen.gu.se) has been one of the main resources for rat genome information since 1994. The database is maintained by CMB–Genetics at Göteborg University in Sweden and provides information on rat genes, polymorphic rat DNA-markers and rat quantitative trait loci (QTLs), all curated at RatMap." [PMID:15608244]
+subset: PSI-MI slim
+synonym: "ratmap" EXACT PSI-MI-short []
+is_a: MI:1094 ! genome databases
+created_by: orchard
+creation_date: 2011-07-05T10:32:10Z
+
+[Term]
+id: MI:1080
+name: tair
+namespace: PSI-MI
+def: "The Arabidopsis Information Resource (TAIR) maintains a database of genetic and molecular biology data for the model higher plant Arabidopsis thaliana . Data available from TAIR includes the complete genome sequence along with gene structure, gene product information, metabolism, gene expression, DNA and seed stocks, genome maps, genetic and physical markers, publications, and information about the Arabidopsis research community." [PMID:20521243]
+subset: PSI-MI slim
+synonym: "tair" EXACT PSI-MI-short []
+synonym: "The Arabidopsis Information Resource" EXACT []
+is_a: MI:1094 ! genome databases
+created_by: orchard
+creation_date: 2011-07-05T10:34:26Z
+
+[Term]
+id: MI:1081
+name: tigr/jcvi
+namespace: PSI-MI
+def: "The J. Craig Venter Institute was formed in October 2006 through the merger of several affiliated and legacy organizations including The Institute for Genomic Research (TIGR)." [PMID:18287690]
+subset: PSI-MI slim
+synonym: "J. Craig Venter Institute" EXACT []
+synonym: "The Institute for Genomic Research" EXACT PSI-MI-short []
+synonym: "tigr/jcvi" EXACT PSI-MI-short []
+is_a: MI:1094 ! genome databases
+created_by: orchard
+creation_date: 2011-07-05T10:44:11Z
+
+[Term]
+id: MI:1082
+name: zfin
+namespace: PSI-MI
+def: "Extensive information on Danio rerio, including genomics databases, developmental stages, publications and molecular tools." [PMID:21036866]
+synonym: "The Zebrafish Model Organism Database " EXACT []
+synonym: "zfin" EXACT PSI-MI-short []
+is_a: MI:1094 ! genome databases
+created_by: orchard
+creation_date: 2011-07-05T10:53:21Z
+
+[Term]
+id: MI:1083
+name: cog
+namespace: PSI-MI
+def: "Clusters of Orthologous Groups of proteins (COGs) were delineated by comparing protein sequences encoded in complete genomes, representing major phylogenetic lineages. Each COG consists of individual proteins or groups of paralogs from at least 3 lineages and thus corresponds to an ancient conserved domain." [PMID:11125040]
+subset: PSI-MI slim
+synonym: "Clusters of Orthologous Groups" EXACT []
+synonym: "cogg" EXACT PSI-MI-short []
+is_a: MI:0447 ! feature database
+created_by: orchard
+creation_date: 2011-07-05T10:59:06Z
+
+[Term]
+id: MI:1084
+name: photon donor
+namespace: PSI-MI
+def: "Any molecule that is able to transfer a photon to another chemical species." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "photon donor" EXACT PSI-MI-short []
+is_a: MI:0918 ! donor
+created_by: orchard
+creation_date: 2011-07-05T11:03:38Z
+
+[Term]
+id: MI:1085
+name: photon acceptor
+namespace: PSI-MI
+def: "Molecule to which a photon may be transferred from an photon donor." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "photon acceptor" EXACT PSI-MI-short []
+is_a: MI:0919 ! acceptor
+created_by: orchard
+creation_date: 2011-07-05T11:06:47Z
+
+[Term]
+id: MI:1086
+name: equilibrium dialysis
+namespace: PSI-MI
+def: "Two chambers are separated by a dialysis membrane.  The molecular weight cut off\n(MWCO) of this membrane is\nchosen such that it will retain the\nreceptor component of the sample\n(the element which will bind\nthe ligand).\nA known concentration and volume\nof ligand is placed into one of\nthe chambers. The ligand is small\nenough to pass freely through the\nmembrane.\nA known concentration of receptor\nis then placed in the remaining\nchamber in an equivalent volume\nto that placed in the first chamber.\nAs the ligand diffuses across the\nmembrane some of it will bind to\nthe receptor and some will remain\nfree in solution. The higher the\naffinity of the interaction, the higher\nthe concentration of ligand that\nwill be bound at any time." [PMID:21609686]
+synonym: "equilib. dialysis" EXACT PSI-MI-short []
+is_a: MI:0013 ! biophysical
+created_by: orchard
+creation_date: 2011-07-05T11:12:25Z
+
+[Term]
+id: MI:1087
+name: monoclonal antibody blockade
+namespace: PSI-MI
+def: "Method to block a binding site on a molecule, such as a protein, using a monoclonal antibody to test that the binding site is involved in an interaction with another molecule." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "mab blockade" EXACT PSI-MI-short []
+is_a: MI:0400 ! affinity technology
+created_by: orchard
+creation_date: 2011-07-05T11:19:37Z
+
+[Term]
+id: MI:1088
+name: phenotype-based detection assay
+namespace: PSI-MI
+def: "Assays that are used to determine interactions by monitoring, for example activation of a certain pathway when screening for inhibitors of a given receptor." [PMID:14755292]
+synonym: "phenotype-based" EXACT PSI-MI-short []
+is_a: MI:0045 ! experimental interaction detection
+created_by: orchard
+creation_date: 2011-07-05T11:24:37Z
+
+[Term]
+id: MI:1089
+name: nuclear translocation assay
+namespace: PSI-MI
+def: "Method to detect interaction by inducing nuclear localization of one participant, which would then pull an interacting participant along with it into the nucleus. As both participants are labeled, the difference in nuclear localization between the induced and noninduced states provides an indication of the interaction between the two molecules" [PMID:21684252]
+subset: PSI-MI slim
+synonym: "nuclear translocation" EXACT PSI-MOD-short []
+is_a: MI:1088 ! phenotype-based detection assay
+created_by: orchard
+creation_date: 2011-07-05T11:27:16Z
+
+[Term]
+id: MI:1090
+name: bimane label
+namespace: PSI-MI
+def: "Bromobimanes are low molecular weight non-fluorescent alkyl halides which react with thiol groups to produce highly fluorescent derivatives. The bimane labels, monobromobimane, dibromobimane, and monobromotrimethylammoniobimane, are derivatives of syn-9,10-dioxabimane:1,5-diazabicyclo[3.3.0]octa-3,6-diene-2,8-dione." [PMID:7378449]
+subset: PSI-MI slim
+synonym: "bimane" EXACT PSI-MI-short []
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2011-07-05T12:03:52Z
+
+[Term]
+id: MI:1091
+name: publication title
+namespace: PSI-MI
+def: "Title of the publication." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "title" EXACT PSI-MI-short []
+is_a: MI:1093 ! bibliographic attribute name
+created_by: orchard
+creation_date: 2011-07-05T12:07:49Z
+
+[Term]
+id: MI:1092
+name: atto label
+namespace: PSI-MI
+def: "Fluorescent dyes - spectral range 500 to 700 nm." [PMID:14755292]
+synonym: "atto label" EXACT PSI-MI-short []
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2011-07-05T12:14:52Z
+
+[Term]
+id: MI:1093
+name: bibliographic attribute name
+namespace: PSI-MI
+def: "Attributes specific to the publication." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "bib attribute" EXACT PSI-MI-short []
+synonym: "publication attribute" EXACT []
+is_a: MI:0665 ! experiment attibute name
+created_by: orchard
+creation_date: 2011-07-05T12:55:21Z
+
+[Term]
+id: MI:1094
+name: genome databases
+namespace: PSI-MI
+def: "Databases which are the responsible for the maintenance and subsequent annotation of one or more genomic sequences." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "genome databases" EXACT PSI-MI-short []
+is_a: MI:0683 ! sequence database
+created_by: orchard
+creation_date: 2011-07-06T07:57:46Z
+
+[Term]
+id: MI:1095
+name: hgnc
+namespace: PSI-MI
+def: "HGNC is the nomenclature committee responsible for the naming of human genes." [PMID:20929869]
+synonym: "hgnc" EXACT PSI-MI-short []
+synonym: "Human Genome Nomenclature Committee" EXACT PSI-MI-short []
+is_a: MI:1109 ! gene database
+created_by: orchard
+creation_date: 2011-07-06T08:02:03Z
+
+[Term]
+id: MI:1096
+name: protein sequence databases
+namespace: PSI-MI
+def: "Databases dedicated to the collection and annotation of protein sequences." [PMID:21447597]
+subset: PSI-MI slim
+synonym: "protein seq db" EXACT PSI-MI-short []
+is_a: MI:0683 ! sequence database
+created_by: orchard
+creation_date: 2011-07-06T08:10:40Z
+
+[Term]
+id: MI:1097
+name: uniprot
+namespace: PSI-MI
+def: "UniProt is a centralized repository of protein sequences with comprehensive coverage and a systematic approach to protein annotation, incorporating, interpreting, integrating and standardizing data from numerous sources and is the most comprehensive catalog of protein sequences and functional annotation." [PMID:21051339]
+subset: PSI-MI slim
+synonym: "uniprot" EXACT PSI-MI-short []
+is_a: MI:1096 ! protein sequence databases
+created_by: orchard
+creation_date: 2011-07-06T08:14:40Z
+
+[Term]
+id: MI:1098
+name: uniprot/swiss-prot
+namespace: PSI-MI
+def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot, TrEMBL, and PIR.\nhttp://www.uniprot.org. UniProtKB/Swiss-Prot is manually curated which means that the information in each entry is annotated and reviewed by a curator" [PMID:14681372, PMID:21447597]
+subset: PSI-MI slim
+synonym: "UniProt" EXACT PSI-MI-alternate []
+synonym: "uniprotkb" EXACT PSI-MI-short []
+xref: id-validation-regexp:\"[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
+xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
+is_a: MI:0486 ! uniprot knowledge base
+created_by: orchard
+creation_date: 2011-07-06T08:17:34Z
+
+[Term]
+id: MI:1099
+name: uniprot/trembl
+namespace: PSI-MI
+def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot, TrEMBL, and PIR.\nhttp://www.uniprot.org. The records in UniProtKB/TrEMBL are automatically generated and are enriched with automatic annotation and classification." [PMID:14681372, PMID:21447597]
+subset: PSI-MI slim
+synonym: "UniProt" EXACT PSI-MI-alternate []
+synonym: "uniprotkb" EXACT PSI-MI-short []
+xref: id-validation-regexp:\"[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
+xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
+is_a: MI:0486 ! uniprot knowledge base
+created_by: orchard
+creation_date: 2011-07-06T08:20:24Z
+
+[Term]
+id: MI:1100
+name: bioactive entity
+namespace: PSI-MI
+def: "Molecules showing activity in a living system but not encoded by a genomic sequence." [PMID:14760721]
+synonym: "bioactive entity" EXACT PSI-MI-short []
+is_a: MI:0313 ! interactor type
+created_by: orchard
+creation_date: 2011-07-06T08:23:48Z
+
+[Term]
+id: MI:1101
+name: standard inchi key
+namespace: PSI-MI
+def: "The Standard InChIKey has five distinct components, a 14-character hash of the basic (Mobile-H) InChI layer, an 8-character hash of the remaining layers (except for the “/p” segment, which accounts for added or removed protons: it is not hashed at all; the number of protons is encoded at the end of the standard InChIKey.) , a 1 flag character, a 1 version character and the last character is a [de]protonation indicator. The overall length of InChIKey is fixed at 27 characters, including separators (dashes)" [PMC:2867152 ]
+synonym: "standard inchi key" EXACT PSI-MI-short []
+synonym: "standard inchikey" EXACT PSI-MI-short []
+is_a: MI:0970 ! inchi key
+created_by: orchard
+creation_date: 2011-07-06T09:02:25Z
+
+[Term]
+id: MI:1102
+name: mapped-identity
+namespace: PSI-MI
+def: "Sequence has been computationally remapped following removal or update of the original sequence in the underlying sequence database." [PMID:14760721]
+synonym: "mapped-identity" EXACT PSI-MI-short []
+is_a: MI:0353 ! cross-reference type
+created_by: orchard
+creation_date: 2011-07-06T09:07:02Z
+
+[Term]
+id: MI:1103
+name: solution state nmr
+namespace: PSI-MI
+def: "NMR solution state analysis provides useful data regarding the type, quantity and arrangement of different atoms in chemical systems, liquids and solids. Samples are dissolved in deuterated solvents and spectra consist of a series of very sharp\ntransitions, due to averaging of anisotropic NMR interactions\nby rapid random tumbling. Solution-state NMR only requires that the molecule be soluble at sufficient concentration for data collection, but becomes increasingly difficult for biomolecules over 30 kDa so that a practical size limitation is placed on full structure determinations." [PMID:20951674 ]
+subset: PSI-MI slim
+synonym: "solution state nmr" EXACT []
+synonym: "soultion nmr" EXACT PSI-MI-short []
+is_a: MI:0077 ! nuclear magnetic resonance
+created_by: orchard
+creation_date: 2011-07-06T09:16:45Z
+
+[Term]
+id: MI:1104
+name: solid state nmr
+namespace: PSI-MI
+def: "Solid-state NMR (ssNMR) does not require that the sample be soluble or form a crystal, and the approach can be used to study molecules larger than 100 kD. Solid-state NMR spectra are very broad, as the full\neffects of anisotropic or orientation-dependent interactions are observed in the spectrum." [PMID:20951674]
+subset: PSI-MI slim
+synonym: "solid state nmr" EXACT PSI-MI-short []
+synonym: "ssnmr" EXACT []
+is_a: MI:0077 ! nuclear magnetic resonance
+created_by: orchard
+creation_date: 2011-07-06T09:23:11Z
+
+[Term]
+id: MI:1105
+name: biocyc
+namespace: PSI-MI
+def: "BioCyc is a collection of  Pathway/Genome Databases. Each database in the BioCyc collection describes the genome and metabolic pathways of a single organism. (http://biocyc.org/)." [PMID:19850718]
+subset: PSI-MI slim
+synonym: "biocyc" EXACT PSI-MI-short []
+is_a: MI:1106 ! pathways database
+created_by: orchard
+creation_date: 2011-07-06T09:43:03Z
+
+[Term]
+id: MI:1106
+name: pathways database
+namespace: PSI-MI
+def: "Databases which primarily exist to display biomolecular information in structured pathways. Interactions data can be inferred from the published pathways." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "pathways db" EXACT PSI-MI-short []
+is_a: MI:0461 ! interaction database
+created_by: orchard
+creation_date: 2011-07-07T02:52:18Z
+
+[Term]
+id: MI:1107
+name: pid
+namespace: PSI-MI
+def: "Curated collection of information about known biomolecular interactions and key cellular processes assembled into signaling pathways. It is a collaborative project between the US National Cancer Institute (NCI) and Nature Publishing Group (NPG), and is an open access online resource (http://pid.nci.nih.gov/)." [PMID:18832364]
+synonym: "pathways interaction database" EXACT []
+synonym: "pid" EXACT PSI-MI-short []
+is_a: MI:1106 ! pathways database
+created_by: orchard
+creation_date: 2011-07-07T03:00:27Z
+
+[Term]
+id: MI:1108
+name: biocarta
+namespace: PSI-MI
+def: "BioCarta, whose core business is in assays and reagents, has also developed a collection of diagrams representing molecular and cellular signal transduction pathways." [PMID:14760721]
+synonym: "biocarta" EXACT PSI-MI-short []
+is_a: MI:1106 ! pathways database
+created_by: orchard
+creation_date: 2011-07-07T03:05:55Z
+
+[Term]
+id: MI:1109
+name: gene database
+namespace: PSI-MI
+def: "Primarily nomenclature/cross-reference databases, used by curators to establish a link between a gene and protein ID.  In some cases, database records do not contain actual sequence but point to loci on specific reference genomes." [PMID:14755292 ]
+subset: PSI-MI slim
+synonym: "gene dbs" EXACT PSI-MI-short []
+is_a: MI:0473 ! participant database
+created_by: orchard
+creation_date: 2011-07-08T08:00:33Z
+
+[Term]
 id: MI:2002
 name: drugbank
 namespace: PSI-MI
@@ -9297,7 +10066,7 @@ namespace: PSI-MI
 def: "Standard name of drug or any reagent as provided by its manufacturer." [PMID:14755292]
 subset: Drugable
 synonym: "generic name" EXACT PSI-MI-alternate []
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:2004
@@ -9305,7 +10074,7 @@ name: drug brand name
 namespace: PSI-MI
 def: "Alternate names of the drug, brand names from different manufacturers." [PMID:14755292]
 subset: Drugable
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:2005
@@ -9314,7 +10083,7 @@ namespace: PSI-MI
 def: "Brand names and composition of mixtures that include the drug described in this DrugCard file." [PMID:14755292]
 subset: Drugable
 synonym: "mix brand name" EXACT PSI-MI-short []
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:2006
@@ -9331,7 +10100,7 @@ name: iupac name
 namespace: PSI-MI
 def: "IUPAC or standard chemical name for a drug, or a chemical." [PMID:14755292]
 subset: Drugable
-is_a: MI:0300 ! alias type
+is_a: MI:1041 ! synonym
 
 [Term]
 id: MI:2008
@@ -9351,10 +10120,12 @@ is_a: MI:2086 ! physicochemical attribute name
 
 [Term]
 id: MI:2010
-name: inchi id
+name: standard inchi
 namespace: PSI-MI
-def: "IUPAC approved InCHI identifier" [PMID:14755292]
-subset: Drugable
+def: "IUPAC International Chemical Identifier (InChI) - a machine-readable character string describing a chemical structure, developed by IUPAC and the InChI Trust as a standard to allow interoperability and linking between chemical resources. The standard InChI differs from the non-standard InChI in that it is generated with a fixed set of parameters, ensuring consistency between different resources. The current version of the standard InChI software is 1.03." [PMID:14755292]
+subset: PSI-MI slim
+synonym: "inchi id" RELATED []
+synonym: "standard inchi" EXACT PSI-MI-short []
 is_a: MI:2091 ! structure representation attribute name
 
 [Term]
