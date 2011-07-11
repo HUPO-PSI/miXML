@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:07:2011 10:25
+date: 11:07:2011 12:41
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.0-rc1
 subsetdef: Drugable "Drugable Genome Project"
@@ -4333,7 +4333,7 @@ is_a: MI:0461 ! interaction database
 id: MI:0469
 name: intact
 namespace: PSI-MI
-def: "INTerAction datanase (IntAct) provides an open source database and toolkit for the storage, presentation and analysis of protein interactions.\nhttp://www.ebi.ac.uk/intact" [PMID:14681455]
+def: "INTerAction database (IntAct) provides an open source database and toolkit for the storage, presentation and analysis of protein interactions.\nhttp://www.ebi.ac.uk/intact" [PMID:14681455, PMID:19850723]
 subset: PSI-MI slim
 synonym: "IntAct" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"EBI-[0-9\]+|IA\:[0-9\]+\"
@@ -9343,7 +9343,7 @@ def: "Indicates source, depth and standards by which an entry has been  added to
 subset: PSI-MI slim
 synonym: "" RELATED []
 xref: PMID:14755292
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 created_by: orchard
 creation_date: 2011-03-11T01:16:55Z
 
@@ -9535,7 +9535,7 @@ def: "A method used to derive a numerical or empirical measure of confidence in 
 subset: PSI-MI slim
 synonym: "confidence" EXACT PSI-MI-short []
 synonym: "scoring system" EXACT []
-is_a: MI:0000 ! molecular interaction
+relationship: part_of MI:0000 ! molecular interaction
 created_by: orchard
 creation_date: 2011-07-05T07:13:57Z
 
@@ -9956,7 +9956,7 @@ creation_date: 2011-07-06T08:23:48Z
 id: MI:1101
 name: standard inchi key
 namespace: PSI-MI
-def: "The Standard InChIKey has five distinct components, a 14-character hash of the basic (Mobile-H) InChI layer, an 8-character hash of the remaining layers (except for the “/p” segment, which accounts for added or removed protons: it is not hashed at all; the number of protons is encoded at the end of the standard InChIKey.) , a 1 flag character, a 1 version character and the last character is a [de]protonation indicator. The overall length of InChIKey is fixed at 27 characters, including separators (dashes)" [PMC:2867152 ]
+def: "The Standard InChIKey has five distinct components, a 14-character hash of the basic (Mobile-H) InChI layer, an 8-character hash of the remaining layers (except for the “/p” segment, which accounts for added or removed protons: it is not hashed at all; the number of protons is encoded at the end of the standard InChIKey.) , a 1 flag character, a 1 version character and the last character is a [de]protonation indicator. The overall length of InChIKey is fixed at 27 characters, including separators (dashes)" [PMC:2867152]
 synonym: "standard inchi key" EXACT PSI-MI-short []
 synonym: "standard inchikey" EXACT PSI-MI-short []
 is_a: MI:0970 ! inchi key
@@ -9977,7 +9977,7 @@ creation_date: 2011-07-06T09:07:02Z
 id: MI:1103
 name: solution state nmr
 namespace: PSI-MI
-def: "NMR solution state analysis provides useful data regarding the type, quantity and arrangement of different atoms in chemical systems, liquids and solids. Samples are dissolved in deuterated solvents and spectra consist of a series of very sharp\ntransitions, due to averaging of anisotropic NMR interactions\nby rapid random tumbling. Solution-state NMR only requires that the molecule be soluble at sufficient concentration for data collection, but becomes increasingly difficult for biomolecules over 30 kDa so that a practical size limitation is placed on full structure determinations." [PMID:20951674 ]
+def: "NMR solution state analysis provides useful data regarding the type, quantity and arrangement of different atoms in chemical systems, liquids and solids. Samples are dissolved in deuterated solvents and spectra consist of a series of very sharp\ntransitions, due to averaging of anisotropic NMR interactions\nby rapid random tumbling. Solution-state NMR only requires that the molecule be soluble at sufficient concentration for data collection, but becomes increasingly difficult for biomolecules over 30 kDa so that a practical size limitation is placed on full structure determinations." [PMID:20951674]
 subset: PSI-MI slim
 synonym: "solution state nmr" EXACT []
 synonym: "soultion nmr" EXACT PSI-MI-short []
@@ -10044,7 +10044,7 @@ creation_date: 2011-07-07T03:05:55Z
 id: MI:1109
 name: gene database
 namespace: PSI-MI
-def: "Primarily nomenclature/cross-reference databases, used by curators to establish a link between a gene and protein ID.  In some cases, database records do not contain actual sequence but point to loci on specific reference genomes." [PMID:14755292 ]
+def: "Primarily nomenclature/cross-reference databases, used by curators to establish a link between a gene and protein ID.  In some cases, database records do not contain actual sequence but point to loci on specific reference genomes." [PMID:14755292]
 subset: PSI-MI slim
 synonym: "gene dbs" EXACT PSI-MI-short []
 is_a: MI:0473 ! participant database
