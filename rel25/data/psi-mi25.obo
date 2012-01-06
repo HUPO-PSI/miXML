@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:11:2011 08:57
+date: 03:01:2012 16:25
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.1-rc2
 subsetdef: Drugable "Drugable Genome Project"
@@ -134,7 +134,7 @@ namespace: PSI-MI
 def: "Beta-galactosidase activity can be used to monitor the interaction of chimeric proteins. Pairs of inactive beta gal deletion mutants are capable of complementing to restore activity when fused to interacting protein partners. Critical to the success of this system is the choice of two poorly complementing mutant moieties, since strongly complementing mutants spontaneously assemble and produce functional beta-gal activity detectable in absence of any fused protein fragment." [PMID:12042868, PMID:9237989]
 subset: PSI-MI_slim
 synonym: "beta galactosidase" EXACT PSI-MI-short []
-is_a: MI:0228 ! cytoplasmic complementation assay
+is_a: MI:0090 ! protein complementation assay
 
 [Term]
 id: MI:0011
@@ -143,7 +143,7 @@ namespace: PSI-MI
 def: "This strategy is based on a protein fragment complementation assay (PCA) of the enzyme TEM-1 beta-lactamase. The approach includes a simple colorimetric in vitro assays using the cephalosporin nitrocefin and assays in intact cells using the fluorescent substrate CCF2/AM. The combination of in vitro colorimetric and in vivo fluorescence assays of beta-lactamase in mammalian cells permits a variety of sensitive and high-throughput large-scale applications." [PMID:12042868]
 subset: PSI-MI_slim
 synonym: "beta lactamase" EXACT PSI-MI-short []
-is_a: MI:0228 ! cytoplasmic complementation assay
+is_a: MI:0090 ! protein complementation assay
 
 [Term]
 id: MI:0012
@@ -172,7 +172,7 @@ def: "Adenylate cyclase is encoded by the cyaA gene and contains a catalytic dom
 subset: PSI-MI_slim
 synonym: "adenylate cyclase" EXACT PSI-MI-short []
 synonym: "bacterial two-hybrid" EXACT PSI-MI-alternate []
-is_a: MI:0228 ! cytoplasmic complementation assay
+is_a: MI:0090 ! protein complementation assay
 
 [Term]
 id: MI:0016
@@ -245,7 +245,7 @@ is_obsolete: true
 id: MI:0022
 name: colocalization by immunostaining
 namespace: PSI-MI
-def: "The subcellular location of a protein can be demonstrated by treating cells fixed on a microscope slide with an antibody specific for the protein of interest. A secondary antibody conjugated with a reactive enzyme (e.g. horseradish peroxidase) is then added. Following a washing step to remove the unbound secondary ligand, a chromogenic substrate (e.g. 3,3', 5,5' tetramethyl benzidine chromogen [TMB]) is converted to a soluble coloured product by the conjugated enzyme and can then be visualised by standard microscopic techniques.\nOBSOLETE since combination of Interaction Detection Method and Interaction Type. Consider using the Interaction Detection Method imaging techniques (MI:0428) coupled with Interaction Type colocalisation (MI:0401) and Participant detection immunostaining (MI:0402) instead." [PMID:14755292]
+def: "The subcellular location of a protein can be demonstrated by treating cells fixed on a microscope slide with an antibody specific for the protein of interest. A secondary antibody conjugated with a reactive enzyme (e.g. horseradish peroxidase) is then added. Following a washing step to remove the unbound secondary ligand, a chromogenic substrate (e.g. 3,3', 5,5' tetramethyl benzidine chromogen [TMB]) is converted to a soluble coloured product by the conjugated enzyme and can then be visualised by standard microscopic techniques.\nOBSOLETE since combination of Interaction Detection Method and Interaction Type.Consider using the Interaction Detection Method imaging techniques (MI:0428) coupled with Interaction Type colocalisation (MI:0403) and Participant detection immunostaining (MI:0422) instead." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "coloc immunostaining" EXACT PSI-MI-short []
 synonym: "Immunofluorescence Staining" EXACT PSI-MI-alternate []
@@ -933,7 +933,7 @@ def: "In this complementation approach the bait can be any membrane protein (for
 subset: PSI-MI_slim
 synonym: "reverse RRS" EXACT PSI-MI-alternate []
 synonym: "reverse rrs" EXACT PSI-MI-short []
-is_a: MI:0228 ! cytoplasmic complementation assay
+is_a: MI:0090 ! protein complementation assay
 
 [Term]
 id: MI:0098
@@ -1027,6 +1027,7 @@ subset: PSI-MI_slim
 synonym: "BIAcore(r)" EXACT PSI-MI-alternate []
 synonym: "Optical biosensor" EXACT PSI-MI-alternate []
 synonym: "spr" EXACT PSI-MI-short []
+is_a: MI:0659 ! experimental feature detection
 is_a: MI:0968 ! biosensor
 
 [Term]
@@ -1063,7 +1064,7 @@ namespace: PSI-MI
 def: "The gene for DHFR is rationally dissected into two fragments called F[1,2] and F[3]. Two proteins or protein domains that are thought to bind to each other can then be fused to either of the two DHFR fragments. Reconstitution of enzyme activity can be monitored in vivo by cell survival in DHFR-negative cells grown in the absence of nucleotides. A fluorescence assay can also be carried out taking advantage of fMTX binding to reconstituted DHFR. The basis of this assay is that complementary fragments of DHFR, when expressed and reassembled in cells, will bind with high affinity (Kd 5 540 pM) to fMTX in a 1:1 complex. fMTX is retained in cells by this complex, whereas the unbound fMTX is actively and rapidly transported out of the cells. Survival depends only on the number of molecules of DHFR reassembled." [PMID:10318894]
 subset: PSI-MI_slim
 synonym: "dhfr reconstruction" EXACT PSI-MI-short []
-is_a: MI:0228 ! cytoplasmic complementation assay
+is_a: MI:0090 ! protein complementation assay
 
 [Term]
 id: MI:0112
@@ -1072,7 +1073,7 @@ namespace: PSI-MI
 def: "In this method the two proteins, whose interaction is under investigation, (in this case mostly membrane proteins) are fused to an terminal fragment (Nub) and to a C-terminal fragment of ubiquitin (Cub). The two fragments do not associate to form a functional ubiquitin unless the two fused membrane proteins form a complex. The association is monitored by an ingenious trick. The C-term fragment of ubiquitin is expressed as a fusion to a transcription factor that being linked to a membrane protein cannot perform its function unless it is released form the ubiquitin fusion by a specific protease. This achieved through the activity of UBP (an ubiquitin specific protease) that cleaves off the reporter protein only when a functional ubiquitin is reconstituted." [PMID:9560251]
 subset: PSI-MI_slim
 synonym: "ub reconstruction" EXACT PSI-MI-short []
-is_a: MI:0228 ! cytoplasmic complementation assay
+is_a: MI:0090 ! protein complementation assay
 
 [Term]
 id: MI:0113
@@ -1114,10 +1115,12 @@ relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0117
-name: binding site
+name: binding-associated region
 namespace: PSI-MI
-def: "A region of a molecule identified as being involved in an interaction." [PMID:14755292]
+def: "A region of a molecule identified as being involved in an interaction. This may or may not be a region of the protein in direct contact with the interacting partner." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "binding region" EXACT PSI-MI-short []
+synonym: "binding site" BROAD []
 is_a: MI:0252 ! biological feature
 
 [Term]
@@ -1132,7 +1135,7 @@ is_a: MI:0252 ! biological feature
 id: MI:0119
 name: mutation decreasing interaction
 namespace: PSI-MI
-def: "Region of a molecule whose mutation or deletion decreases significantly interaction strength." [PMID:14755292]
+def: "Region of a molecule whose mutation or deletion decreases significantly interaction strength  or rate (in the case of interactions inferred from enzymatic reaction)." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "hotspot" EXACT PSI-MI-alternate []
 synonym: "mutation decreasing" EXACT PSI-MI-short []
@@ -2364,28 +2367,19 @@ is_a: MI:0091 ! chromatography technology
 id: MI:0228
 name: cytoplasmic complementation assay
 namespace: PSI-MI
-def: "Protein complementation assay performed by dissecting a cytoplasmic protein activity and restoring it through the two hybrid proteins interaction." [PMID:14755292]
+def: "Protein complementation assay performed by dissecting a cytoplasmic protein activity and restoring it through the two hybrid proteins interaction. OBSOLETE remap to MI:0090 protein complementation assay" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "cytoplasmic compl" EXACT PSI-MI-short []
-is_a: MI:0090 ! protein complementation assay
-
-[Term]
-id: MI:0229
-name: green fluorescence protein complementation assay
-namespace: PSI-MI
-def: "Protein-protein interaction trap based on fusions of bait and prey protein to two dissected fragment of GFP. The system implemented in E. coli, allow screening of partners, including membrane proteins and also detect transient interaction that are stabilized by the complemented GFP." [PMID:15631464]
-subset: PSI-MI_slim
-synonym: "gfp complementation" EXACT PSI-MI-short []
-is_a: MI:0228 ! cytoplasmic complementation assay
+is_obsolete: true
 
 [Term]
 id: MI:0230
 name: membrane bound complementation assay
 namespace: PSI-MI
-def: "Protein complementation assay based on dissection of a membrane protein." [PMID:14755292]
+def: "OBSOLETE remap to MI:0090 protein complementation assay." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "membrane compl" EXACT PSI-MI-short []
-is_a: MI:0090 ! protein complementation assay
+is_obsolete: true
 
 [Term]
 id: MI:0231
@@ -2394,7 +2388,7 @@ namespace: PSI-MI
 def: "The MAPPIT(mammalian protein-protein interaction Trap) is a screening method for protein-protein interaction in mammalian cells, based on the reconstitution of a membrane STAT (signal transducers and activators of transcription) receptor. The bait protein is fused to a STAT recruitment-deficient receptor and the prey protein to a functional STAT recruitment sites. In such a configuration, a given baitprey interaction restores a STAT-dependent responses leading to the expression of a reporter gene. This system, enable to demonstrate not only protein interaction but also modification-independent and tyrosine phosphorylation- dependent interactions." [PMID:12853652]
 subset: PSI-MI_slim
 synonym: "mappit" EXACT PSI-MI-short []
-is_a: MI:0230 ! membrane bound complementation assay
+is_a: MI:0090 ! protein complementation assay
 
 [Term]
 id: MI:0232
@@ -3410,7 +3404,7 @@ is_a: MI:0365 ! enzyme tag
 id: MI:0367
 name: green fluorescent protein tag
 namespace: PSI-MI
-def: "The green fluorescent protein of the bioluminescent jellyfish Aequorea victoria can be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native." [PMID:7491768]
+def: "The green fluorescent protein of organisms such as the bioluminescent jellyfish Aequorea victoria can be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native." [PMID:7491768]
 subset: PSI-MI_slim
 synonym: "GFP" EXACT PSI-MI-alternate []
 synonym: "gfp tag" EXACT PSI-MI-short []
@@ -3421,7 +3415,7 @@ is_a: MI:0687 ! fluorescent protein tag
 id: MI:0368
 name: yellow fluorescent protein tag
 namespace: PSI-MI
-def: "Yellow fluorescent protein from Vibrio fischeri can be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native." [PMID:10929120]
+def: "Yellow fluorescent protein from species such as Vibrio fischeri can be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native." [PMID:10929120]
 subset: PSI-MI_slim
 synonym: "yellow fluorescent protein" EXACT PSI-MI-alternate []
 synonym: "YFP" EXACT PSI-MI-alternate []
@@ -3446,7 +3440,7 @@ def: "This assay allow identification of interactions in the inner membrane of E
 subset: PSI-MI_slim
 synonym: "toxcat" EXACT PSI-MI-alternate []
 synonym: "toxcat" EXACT PSI-MI-short []
-is_a: MI:0230 ! membrane bound complementation assay
+is_a: MI:0090 ! protein complementation assay
 
 [Term]
 id: MI:0371
@@ -3558,7 +3552,7 @@ is_a: MI:0378 ! rare isotope label
 id: MI:0382
 name: mutation increasing interaction
 namespace: PSI-MI
-def: "Region of a molecule whose mutation or deletion increases significantly interaction strength." [PMID:14577292]
+def: "Region of a molecule whose mutation or deletion increases significantly interaction strength or rate (in the case of interactions inferred from enzymatic reaction)." [PMID:14577292]
 subset: PSI-MI_slim
 synonym: "mutation increasing" EXACT PSI-MI-short []
 is_a: MI:0118 ! mutation
@@ -3931,12 +3925,17 @@ is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0429
-name: necessary binding site
+name: necessary binding region
 namespace: PSI-MI
-def: "A sequence range within a molecule identified as being absolutely required for an interaction." [PMID:14755292]
+def: "A sequence range within a molecule identified as being absolutely required for an interaction. The sequence may or may not be in direct physical contact with the interaction partner." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "deletion disrupting interaction" EXACT []
+synonym: "necessary binding site" EXACT []
 synonym: "required to bind" EXACT PSI-MI-short []
-is_a: MI:0117 ! binding site
+is_a: MI:0117 ! binding-associated region
+is_a: MI:0573 ! mutation disrupting interaction
+is_a: MI:1128 ! mutation disrupting interaction strength
+is_a: MI:1129 ! mutation disrupting interaction rate
 
 [Term]
 id: MI:0430
@@ -4052,12 +4051,13 @@ is_a: MI:0254 ! genetic interference
 
 [Term]
 id: MI:0442
-name: sufficient binding site
+name: sufficient binding region
 namespace: PSI-MI
-def: "Binding will occur when this sequence range is present within a molecule of part of a molecule." [PMID:14755292]
+def: "Binding will occur when this sequence range is present within a molecule or part of a molecule. This region will contain the direct binding region but may be longer." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "sufficient binding site" EXACT []
 synonym: "sufficient to bind" EXACT PSI-MI-short []
-is_a: MI:0117 ! binding site
+is_a: MI:0117 ! binding-associated region
 
 [Term]
 id: MI:0443
@@ -4337,7 +4337,7 @@ def: "INTerAction database (IntAct) provides an open source database and toolkit
 subset: PSI-MI_slim
 synonym: "IntAct" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"EBI-[0-9\]+|IA\:[0-9\]+\"
-xref: search-url: "http://www.ebi.ac.uk/intact/search/do/hvWelcome?searchString=${ac}"
+xref: search-url: "http://www.ebi.ac.uk/intact/pages/interactions/interactions.xhtml?query=${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0489 ! source database
 is_a: MI:0973 ! imex source
@@ -5308,7 +5308,7 @@ is_a: MI:0910 ! nucleic acid cleavage
 id: MI:0573
 name: mutation disrupting interaction
 namespace: PSI-MI
-def: "Region of a molecule whose mutation or deletion totally disrupts an interaction." [PMID:14755292]
+def: "Region of a molecule whose mutation or deletion totally disrupts an interaction strength or rate (in the case of interactions inferred from enzymatic reaction).." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "mutation disrupting" EXACT PSI-MI-short []
 is_a: MI:0119 ! mutation decreasing interaction
@@ -6743,7 +6743,7 @@ is_a: MI:0489 ! source database
 id: MI:0732
 name: red fluorescent protein tag
 namespace: PSI-MI
-def: "The red fluorescent protein derived from Discosoma reef coral can be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native." [PMID:14755292]
+def: "The red fluorescent protein derived from marine anemone Discosoma striata and reef corals belonging to the class Anthozoacan be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "red fluorescent protein" EXACT PSI-MI-alternate []
 synonym: "RFP" EXACT PSI-MI-alternate []
@@ -7068,9 +7068,12 @@ is_a: MI:0807 ! comigration in gel electrophoresis
 id: MI:0809
 name: bimolecular fluorescence complementation
 namespace: PSI-MI
-def: "The bimolecular fluorescence complementation (BiFC) is an assay for determination of the locations of protein interactions in living cells. This approach is based on complementation between two non fluorescent fragments of the yellow fluorescent protein (YFP) when they are brought together by interactions between proteins fused to each fragment." [PMID:11983170]
+alt_id: MI:0229
+def: "The bimolecular fluorescence complementation (BiFC) is an assay for determination of protein interactions and/or their location in living cells. This approach is based on complementation between two non- fluorescent fragments of a protein fluorophore such as green fluorescent protein (GFP) or its derivatives. Interactions between proteins fused to each fragment bring the fragments together resulting in the reconstitution of a fully functional flourophore that can be identified through fluorescence spectroscopy or microscopy." [PMID:11983170]
 subset: PSI-MI_slim
 synonym: "bifc" EXACT PSI-MI-short []
+synonym: "gfp complementation" EXACT []
+synonym: "green fluorescence protein complementation assay" EXACT []
 is_a: MI:0051 ! fluorescence technology
 is_a: MI:0090 ! protein complementation assay
 
@@ -7832,7 +7835,7 @@ namespace: PSI-MI
 def: "This method uses Renilla luciferase (Rluc)-based protein fragment complementation assay (PCA) that is designed specifically to investigate dynamic protein complexes (association and dissociation). It is chose to generate a PCA based on the Rluc, which is, because of its simplicity and sensitivity, a widely used bioluminescence reporter. The general scheme for construction and detection of the Rluc-PCA PKA sensor consists of fusing complementary fragments of Rluc to the regulatory (Reg) and catalytic (Cat) PKA subunits of PKA." [PMID:17942691]
 subset: PSI-MI_slim
 synonym: "pka complementation" EXACT PSI-MI-short []
-is_a: MI:0228 ! cytoplasmic complementation assay
+is_a: MI:0090 ! protein complementation assay
 
 [Term]
 id: MI:0896
@@ -9254,7 +9257,7 @@ namespace: PSI-MI
 def: "The N-terminal portion of synthetic renilla luciferase (hrluc) is attached to one protein through the linker peptide (GGGS)2 and C-terminal portion of synthetic renilla luciferase is connected to the second protein through the linker (GGGGS)2. Interaction of the 2 proteins recovers hrluc activity and produces light." [PMID:12705589]
 subset: PSI-MI_slim
 synonym: "renilla luciferase" EXACT PSI-MI-alternate []
-is_a: MI:0228 ! cytoplasmic complementation assay
+is_a: MI:0090 ! protein complementation assay
 created_by: orchard
 creation_date: 2010-11-11T02:54:08Z
 
@@ -10198,6 +10201,277 @@ subset: PSI-MI_slim
 is_a: MI:0461 ! interaction database
 created_by: orchard
 creation_date: 2011-11-28T08:55:26Z
+
+[Term]
+id: MI:1124
+name: pathwaycommons
+namespace: PSI-MI
+def: "Allows the user to browse and search pathways across multiple public pathway databases.\nhttp://www.pathwaycommons.org" [PMID:21071392]
+subset: PSI-MI_slim
+synonym: "Pathway Commons" EXACT []
+is_a: MI:1106 ! pathways database
+created_by: orchard
+creation_date: 2011-11-30T03:04:14Z
+
+[Term]
+id: MI:1125
+name: direct binding region
+namespace: PSI-MI
+def: "The defined region of protein which makes physical contact with the interacting partner." [PMID:14755292 ]
+comment: Should normally be used with X-ray crystallography or NMR data.
+subset: PSI-MI_slim
+synonym: "direct binding" EXACT PSI-MI-short []
+is_a: MI:0442 ! sufficient binding region
+created_by: orchard
+creation_date: 2012-01-03T01:10:25Z
+
+[Term]
+id: MI:1126
+name: self interaction
+namespace: PSI-MI
+def: "A region of a molecule which is  involved in an inter-molecular interaction." [PMID:14755292 ]
+comment: The corresponding experimental role will be self/putative self. Not to be used for autocatalysis, when the additional biological role self/putative self will supply this information.
+subset: PSI-MI_slim
+is_a: MI:0407 ! direct interaction
+created_by: orchard
+creation_date: 2012-01-03T01:19:22Z
+
+[Term]
+id: MI:1127
+name: putative self interaction
+namespace: PSI-MI
+def: "A region of a molecule which is putatively involved in an inter-molecular interaction." [PMID:<new dbxref>14755292 ]
+comment: The corresponding experimental role should be self/putative self. Not to be used for autocatalysis, when the additional biological role self/putative self will supply this information.
+subset: PSI-MI_slim
+is_a: MI:0407 ! direct interaction
+created_by: orchard
+creation_date: 2012-01-03T01:21:58Z
+
+[Term]
+id: MI:1128
+name: mutation disrupting interaction strength
+namespace: PSI-MI
+def: "Region of a molecule whose mutation or deletion totally disrupts an interaction strength." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "mutation disrupting strength" EXACT PSI-MI-short []
+is_a: MI:0573 ! mutation disrupting interaction
+created_by: orchard
+creation_date: 2012-01-03T01:36:37Z
+
+[Term]
+id: MI:1129
+name: mutation disrupting interaction rate
+namespace: PSI-MI
+def: "Region of a molecule whose mutation or deletion totally disrupts an interaction  rate (in the case of interactions inferred from enzymatic reaction).." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "mutation disrupting rate" EXACT PSI-MI-short []
+is_a: MI:0573 ! mutation disrupting interaction
+created_by: orchard
+creation_date: 2012-01-03T01:37:43Z
+
+[Term]
+id: MI:1130
+name: mutation decreasing interaction rate
+namespace: PSI-MI
+def: "Region of a molecule whose mutation or deletion decreases significantly interaction rate (in the case of interactions inferred from enzymatic reaction)." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "mutation deceasing rate" EXACT PSI-MI-short []
+is_a: MI:0119 ! mutation decreasing interaction
+created_by: orchard
+creation_date: 2012-01-03T01:38:58Z
+
+[Term]
+id: MI:1131
+name: mutation increasing interaction rate
+namespace: PSI-MI
+def: "Region of a molecule whose mutation or deletion increases significantly interaction rate (in the case of interactions inferred from enzymatic reaction)." [PMID:14577292]
+subset: PSI-MI_slim
+synonym: "mutation increasing rate" EXACT PSI-MI-short []
+is_a: MI:0382 ! mutation increasing interaction
+created_by: orchard
+creation_date: 2012-01-03T01:45:09Z
+
+[Term]
+id: MI:1132
+name: mutation increasing interaction strength
+namespace: PSI-MI
+def: "Region of a molecule whose mutation or deletion increases significantly interaction strength." [PMID:14577292]
+subset: PSI-MI_slim
+synonym: "mutation increasing strength" EXACT PSI-MI-short []
+is_a: MI:0382 ! mutation increasing interaction
+created_by: orchard
+creation_date: 2012-01-03T01:45:42Z
+
+[Term]
+id: MI:1133
+name: mutation decreasing interaction strength
+namespace: PSI-MI
+def: "Region of a molecule whose mutation or deletion decreases significantly interaction strength." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "mutation deceasing strength" EXACT PSI-MI-short []
+is_a: MI:0119 ! mutation decreasing interaction
+created_by: orchard
+creation_date: 2012-01-03T01:48:40Z
+
+[Term]
+id: MI:1134
+name: mcherry fluorescent protein tag
+namespace: PSI-MI
+def: "mCherry is a red monomer which matures extremely rapidly, making it possible to see results very soon after activating transcription. It is highly photostable and resistant to photobleaching. Excitation maximum: 587 nm. Emission maximum: 610 nm." []
+synonym: "mcherry" EXACT PSI-MI-short []
+is_a: MI:0732 ! red fluorescent protein tag
+created_by: orchard
+creation_date: 2012-01-03T02:53:23Z
+
+[Term]
+id: MI:1135
+name: venus fluorescent protein tag
+namespace: PSI-MI
+def: "Introduction of a point mutation into Aequorea-derived YFP, the substitution of leucine for phenylalanine at position 46 (F46L), produced  Venus. This mutation dramatically accelerates oxidation of the chromophore, the rate-limiting step in fluorescent protein maturation. Additional mutations were also introduced in order to increase the tolerance of Venus to acidic environments and to reduce the sensitivity to chloride. The absorption and emission spectral peaks are 515 and 528 nanometers, respectively." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "venus" EXACT PSI-MI-short []
+is_a: MI:0368 ! yellow fluorescent protein tag
+created_by: orchard
+creation_date: 2012-01-03T03:05:01Z
+
+[Term]
+id: MI:1136
+name: kusabira-green protein tag
+namespace: PSI-MI
+def: "Monomeric coral fluorescent reporter protein." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "kusabira-green" EXACT PSI-MI-short []
+is_a: MI:0367 ! green fluorescent protein tag
+created_by: orchard
+creation_date: 2012-01-03T03:10:28Z
+
+[Term]
+id: MI:1137
+name: carboxylation assay
+namespace: PSI-MI
+def: "The measurement of a the introduction of a carboxylic acid group into a substrate." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "carboxylation assay" EXACT PSI-MI-short []
+is_a: MI:0415 ! enzymatic study
+created_by: orchard
+creation_date: 2012-01-03T03:17:56Z
+
+[Term]
+id: MI:1138
+name: decarboxylation assay
+namespace: PSI-MI
+def: "The measurement of a the introduction of a carboxylic acid group into a substrate." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "decarboxxylation assay" EXACT PSI-MI-short []
+is_a: MI:0415 ! enzymatic study
+created_by: orchard
+creation_date: 2012-01-03T03:22:04Z
+
+[Term]
+id: MI:1139
+name: carboxylation reaction
+namespace: PSI-MI
+def: "Carboxylation is a posttranslational modification of glutamate residues, to gamma-carboxyglutamate, in proteins." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "carboxylation" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+created_by: orchard
+creation_date: 2012-01-03T03:24:05Z
+
+[Term]
+id: MI:1140
+name: decarboxylation reaction
+namespace: PSI-MI
+def: "Decarboxylation is a chemical reaction that releases carbon dioxide (CO2). Usually, decarboxylation refers to a reaction of carboxylic acids, removing a carbon atom from a carbon chain. Enzymes that catalyze decarboxylations are called decarboxylases or, the more formal term, carboxy-lyases (EC number 4.1.1)." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "decarboxylation" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+created_by: orchard
+creation_date: 2012-01-03T03:31:42Z
+
+[Term]
+id: MI:1141
+name: s tag
+namespace: PSI-MI
+def: "S-tag is the name of an oligopeptide derived from pancreatic ribonuclease A (RNase A). The amino acid sequence of the S-tag is: Lys-Glu-Thr-Ala-Ala-Ala-Lys-Phe-Glu-Arg-Gln-His-Met-Asp-Ser." [PMID:14755292 ]
+subset: PSI-MI_slim
+is_a: MI:0507 ! tag
+created_by: orchard
+creation_date: 2012-01-03T03:37:51Z
+
+[Term]
+id: MI:1142
+name: aminoacylation assay
+namespace: PSI-MI
+def: "The measurement of the addition of an aminoacyl group to a compound." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "aminoacylation" EXACT PSI-MI-short []
+is_a: MI:0415 ! enzymatic study
+created_by: orchard
+creation_date: 2012-01-03T03:46:46Z
+
+[Term]
+id: MI:1143
+name: aminoacylation reaction
+namespace: PSI-MI
+def: "Aminoacylation is the process of adding an aminoacyl group to a compound." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "aminoacylation" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+created_by: orchard
+creation_date: 2012-01-03T03:49:50Z
+
+[Term]
+id: MI:1144
+name: protein a tag visualisation
+namespace: PSI-MI
+def: "Protein A tag is visualized by interacting with IgG antibodies (or their derivatives) that are specifically recognized by protein A." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "protein a visualisation" EXACT PSI-MI-short []
+is_a: MI:0866 ! tag visualisation
+created_by: orchard
+creation_date: 2012-01-03T03:54:35Z
+
+[Term]
+id: MI:1145
+name: phospholipase assay
+namespace: PSI-MI
+def: "A phospholipase is an enzyme that hydrolyzes phospholipids into fatty acids and other lipophilic substances. There are four major classes, termed A, B, C and D, distinguished by the type of reaction which they catalyze." [PMID:14755292 ]
+subset: PSI-MI_slim
+is_a: MI:0415 ! enzymatic study
+created_by: orchard
+creation_date: 2012-01-03T04:04:16Z
+
+[Term]
+id: MI:1146
+name: phospholipase reaction
+namespace: PSI-MI
+def: "Measurement of the hydrolysis of phospholipids into fatty acids and other lipophilic substances. There are four major classes, termed A, B, C and D, distinguished by the type of reaction which they catalyze." [PMID:14755292 ]
+subset: PSI-MI_slim
+is_a: MI:0414 ! enzymatic reaction
+created_by: orchard
+creation_date: 2012-01-03T04:08:14Z
+
+[Term]
+id: MI:1147
+name: ampylation assay
+namespace: PSI-MI
+def: "Measurement of AMPylation, the formation of a phosphodiester or phosphoramide ester of AMP on Tyr (RESID:AA0203), Lys (RESID:AA0227), Thr (RESID:AA0267), His (RESID:AA0371) and other amino\nacids." [PMID:14755292 ]
+subset: PSI-MI_slim
+is_a: MI:0415 ! enzymatic study
+created_by: orchard
+creation_date: 2012-01-03T04:18:27Z
+
+[Term]
+id: MI:1148
+name: ampylation reaction
+namespace: PSI-MI
+def: "AMPylation, previously known as adenylylation, is formation of a\nphosphodiester or phosphoramide ester of AMP on Tyr (RESID:AA0203), Lys\n(RESID:AA0227), Thr (RESID:AA0267), His (RESID:AA0371) and other amino\nacids." [PMID:14755292 ]
+subset: PSI-MI_slim
+synonym: "ampylation" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+created_by: orchard
+creation_date: 2012-01-03T04:21:12Z
 
 [Term]
 id: MI:2002
