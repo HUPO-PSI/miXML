@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:01:2012 16:25
+date: 13:02:2012 19:03
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.1-rc2
 subsetdef: Drugable "Drugable Genome Project"
@@ -4000,24 +4000,28 @@ is_a: MI:0659 ! experimental feature detection
 
 [Term]
 id: MI:0437
-name: protein tri hybrid
+name: protein three hybrid
 namespace: PSI-MI
 def: "Two hybrid assay performed with a third protein component co-transfected into a recombinant yeast strain together with a bait and a prey construct. Negative control shows that the interaction between the bait and the prey do not occur when the third protein is not co-transfected." [PMID:12052864, PMID:12761205, PMID:12935900]
 subset: PSI-MI_slim
 synonym: "bridge assay" EXACT PSI-MI-alternate []
+synonym: "protein 3-hybrid" EXACT PSI-MI-alternate []
+synonym: "protein tri hybrid" EXACT PSI-MI-alternate []
 synonym: "trihybrid" EXACT PSI-MI-alternate []
 is_a: MI:0018 ! two hybrid
-is_a: MI:0588 ! 3 hybrid method
+is_a: MI:0588 ! three hybrid
 
 [Term]
 id: MI:0438
-name: rna tri hybrid
+name: rna three hybrid
 namespace: PSI-MI
 def: "In vivo reconstruction of specific RNA-proteins interactions. The DNA binding and transcription activator domains of GAL4 are brought together via the interaction of recombinant RNA. The first hybrid protein contains the DNA binding domain of GAL4 fused to RevM10 (a mutated RNA binding protein of HIV-1 that binds specifically to the Rev responsive element RRE of the env gene). A recombinant RNA contains the RRE sequence and a target RNA sequence X. The second hybrid protein contains the activation domain of GAL4 fused to protein Y tested for its ability to bind the target RNA X. If this interaction occurs the three hybrid reconstructs GAL4 and the transcription of a reporter gene is activated." [PMID:12162957, PMID:8972875]
 subset: PSI-MI_slim
+synonym: "rna 3-hybrid" EXACT PSI-MI-alternate []
+synonym: "rna tri hybrid" EXACT PSI-MI-alternate []
+synonym: "rna-three hybrid" EXACT PSI-MI-alternate []
 synonym: "Three hybrid system" EXACT PSI-MI-alternate []
-is_a: MI:0232 ! transcriptional complementation assay
-is_a: MI:0588 ! 3 hybrid method
+is_a: MI:0588 ! three hybrid
 
 [Term]
 id: MI:0439
@@ -4333,7 +4337,7 @@ is_a: MI:0461 ! interaction database
 id: MI:0469
 name: intact
 namespace: PSI-MI
-def: "INTerAction database (IntAct) provides an open source database and toolkit for the storage, presentation and analysis of protein interactions.\nhttp://www.ebi.ac.uk/intact" [PMID:14681455, PMID:19850723]
+def: "INTerAction database (IntAct) provides an open source database and toolkit for the storage, presentation and analysis of protein interactions.\nhttp://www.ebi.ac.uk/intact" [PMID:14681455, PMID:19850723, PMID:22121220]
 subset: PSI-MI_slim
 synonym: "IntAct" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"EBI-[0-9\]+|IA\:[0-9\]+\"
@@ -4527,8 +4531,8 @@ name: uniprot knowledge base
 namespace: PSI-MI
 def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot, TrEMBL, and PIR.\nhttp://www.uniprot.org" [PMID:14681372]
 subset: PSI-MI_slim
-synonym: "UniProt" EXACT PSI-MI-alternate []
 synonym: "uniprotkb" EXACT PSI-MI-short []
+synonym: "UniProtKB" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
 xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
 is_a: MI:1097 ! uniprot
@@ -5441,12 +5445,15 @@ is_obsolete: true
 
 [Term]
 id: MI:0588
-name: 3 hybrid method
+name: three hybrid
 namespace: PSI-MI
 def: "Group of methods based on complementation assay where a third participant is shown to be necessary for the binding of a given bait prey pair. The molecule fused to the DNA binding domain is the bait, that fused to the transcriptional activator is the prey." [PMID:14755292]
 subset: PSI-MI_slim
-synonym: "tri-hybrid assay" EXACT []
-is_a: MI:0090 ! protein complementation assay
+synonym: "3 hybrid" EXACT PSI-MI-short []
+synonym: "3-hybrid" EXACT PSI-MI-alternate []
+synonym: "tri hybrid" EXACT PSI-MI-alternate []
+synonym: "tri-hybrid assay" EXACT PSI-MI-alternate []
+is_a: MI:0232 ! transcriptional complementation assay
 
 [Term]
 id: MI:0589
@@ -8711,7 +8718,7 @@ name: rna strand elongation
 namespace: PSI-MI
 def: "The process by which an RNA strand is synthesized from template DNA by the action of polymerases, which add nucleotides to the 3' end of the nascent RNA strand." [PMID:14755292]
 subset: PSI-MI_slim
-synonym: "rna elongation" EXACT PSI-MOD-short []
+synonym: "rna elongation" EXACT PSI-MI-short []
 is_a: MI:0986 ! nucleic acid strand elongation reaction
 created_by: orchard
 creation_date: 2010-04-26T11:00:08Z
@@ -8911,7 +8918,7 @@ name: adp ribosylase assay
 namespace: PSI-MI
 def: "Measurement of the addition of one or more ADP-ribose moieties to molecules." [PMID:14760721]
 subset: PSI-MI_slim
-synonym: "adp ribosylase" EXACT PSI-MOD-short []
+synonym: "adp ribosylase" EXACT PSI-MI-short []
 synonym: "adp ribosylation" RELATED []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
@@ -9822,9 +9829,9 @@ creation_date: 2011-07-05T11:24:37Z
 id: MI:1089
 name: nuclear translocation assay
 namespace: PSI-MI
-def: "Method to detect interaction by inducing nuclear localization of one participant, which would then pull an interacting participant along with it into the nucleus. As both participants are labeled, the difference in nuclear localization between the induced and noninduced states provides an indication of the interaction between the two molecules" [PMID:21684252]
+def: "Method to detect interaction by inducing nuclear localization of one participant, which would then pull an interacting participant along with it into the nucleus. As both participants are labeled, the difference in nuclear localization between the induced and non-induced states provides an indication of the interaction between the two molecules." [PMID:21684252]
 subset: PSI-MI_slim
-synonym: "nuclear translocation" EXACT PSI-MOD-short []
+synonym: "nuclear translocation" EXACT PSI-MI-short []
 is_a: MI:1088 ! phenotype-based detection assay
 created_by: orchard
 creation_date: 2011-07-05T11:27:16Z
@@ -9923,8 +9930,8 @@ name: uniprot/swiss-prot
 namespace: PSI-MI
 def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot, TrEMBL, and PIR.\nhttp://www.uniprot.org. UniProtKB/Swiss-Prot is manually curated which means that the information in each entry is annotated and reviewed by a curator" [PMID:14681372, PMID:21447597]
 subset: PSI-MI_slim
+synonym: "swiss-prot" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
-synonym: "uniprotkb" EXACT PSI-MI-short []
 xref: id-validation-regexp:\"[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
 xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
 is_a: MI:0486 ! uniprot knowledge base
@@ -9937,8 +9944,8 @@ name: uniprot/trembl
 namespace: PSI-MI
 def: "UniProt (Universal Protein Resource) is the world's most comprehensive catalogue of information on proteins. It is a central repository of protein sequence and function created by joining the information contained in Swiss-Prot, TrEMBL, and PIR.\nhttp://www.uniprot.org. The records in UniProtKB/TrEMBL are automatically generated and are enriched with automatic annotation and classification." [PMID:14681372, PMID:21447597]
 subset: PSI-MI_slim
+synonym: "trembl" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
-synonym: "uniprotkb" EXACT PSI-MI-short []
 xref: id-validation-regexp:\"[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
 xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
 is_a: MI:0486 ! uniprot knowledge base
@@ -10217,7 +10224,7 @@ creation_date: 2011-11-30T03:04:14Z
 id: MI:1125
 name: direct binding region
 namespace: PSI-MI
-def: "The defined region of protein which makes physical contact with the interacting partner." [PMID:14755292 ]
+def: "The defined region of protein which makes physical contact with the interacting partner." [PMID:14755292]
 comment: Should normally be used with X-ray crystallography or NMR data.
 subset: PSI-MI_slim
 synonym: "direct binding" EXACT PSI-MI-short []
@@ -10229,7 +10236,7 @@ creation_date: 2012-01-03T01:10:25Z
 id: MI:1126
 name: self interaction
 namespace: PSI-MI
-def: "A region of a molecule which is  involved in an inter-molecular interaction." [PMID:14755292 ]
+def: "A region of a molecule which is  involved in an inter-molecular interaction." [PMID:14755292]
 comment: The corresponding experimental role will be self/putative self. Not to be used for autocatalysis, when the additional biological role self/putative self will supply this information.
 subset: PSI-MI_slim
 is_a: MI:0407 ! direct interaction
@@ -10240,7 +10247,7 @@ creation_date: 2012-01-03T01:19:22Z
 id: MI:1127
 name: putative self interaction
 namespace: PSI-MI
-def: "A region of a molecule which is putatively involved in an inter-molecular interaction." [PMID:<new dbxref>14755292 ]
+def: "A region of a molecule which is putatively involved in an inter-molecular interaction." [PMID:<new dbxref>14755292]
 comment: The corresponding experimental role should be self/putative self. Not to be used for autocatalysis, when the additional biological role self/putative self will supply this information.
 subset: PSI-MI_slim
 is_a: MI:0407 ! direct interaction
@@ -10273,7 +10280,7 @@ creation_date: 2012-01-03T01:37:43Z
 id: MI:1130
 name: mutation decreasing interaction rate
 namespace: PSI-MI
-def: "Region of a molecule whose mutation or deletion decreases significantly interaction rate (in the case of interactions inferred from enzymatic reaction)." [PMID:14755292 ]
+def: "Region of a molecule whose mutation or deletion decreases significantly interaction rate (in the case of interactions inferred from enzymatic reaction)." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "mutation deceasing rate" EXACT PSI-MI-short []
 is_a: MI:0119 ! mutation decreasing interaction
@@ -10306,7 +10313,7 @@ creation_date: 2012-01-03T01:45:42Z
 id: MI:1133
 name: mutation decreasing interaction strength
 namespace: PSI-MI
-def: "Region of a molecule whose mutation or deletion decreases significantly interaction strength." [PMID:14755292 ]
+def: "Region of a molecule whose mutation or deletion decreases significantly interaction strength." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "mutation deceasing strength" EXACT PSI-MI-short []
 is_a: MI:0119 ! mutation decreasing interaction
@@ -10327,7 +10334,7 @@ creation_date: 2012-01-03T02:53:23Z
 id: MI:1135
 name: venus fluorescent protein tag
 namespace: PSI-MI
-def: "Introduction of a point mutation into Aequorea-derived YFP, the substitution of leucine for phenylalanine at position 46 (F46L), produced  Venus. This mutation dramatically accelerates oxidation of the chromophore, the rate-limiting step in fluorescent protein maturation. Additional mutations were also introduced in order to increase the tolerance of Venus to acidic environments and to reduce the sensitivity to chloride. The absorption and emission spectral peaks are 515 and 528 nanometers, respectively." [PMID:14755292 ]
+def: "Introduction of a point mutation into Aequorea-derived YFP, the substitution of leucine for phenylalanine at position 46 (F46L), produced  Venus. This mutation dramatically accelerates oxidation of the chromophore, the rate-limiting step in fluorescent protein maturation. Additional mutations were also introduced in order to increase the tolerance of Venus to acidic environments and to reduce the sensitivity to chloride. The absorption and emission spectral peaks are 515 and 528 nanometers, respectively." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "venus" EXACT PSI-MI-short []
 is_a: MI:0368 ! yellow fluorescent protein tag
@@ -10338,7 +10345,7 @@ creation_date: 2012-01-03T03:05:01Z
 id: MI:1136
 name: kusabira-green protein tag
 namespace: PSI-MI
-def: "Monomeric coral fluorescent reporter protein." [PMID:14755292 ]
+def: "Monomeric coral fluorescent reporter protein." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "kusabira-green" EXACT PSI-MI-short []
 is_a: MI:0367 ! green fluorescent protein tag
@@ -10349,7 +10356,7 @@ creation_date: 2012-01-03T03:10:28Z
 id: MI:1137
 name: carboxylation assay
 namespace: PSI-MI
-def: "The measurement of a the introduction of a carboxylic acid group into a substrate." [PMID:14755292 ]
+def: "The measurement of a the introduction of a carboxylic acid group into a substrate." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "carboxylation assay" EXACT PSI-MI-short []
 is_a: MI:0415 ! enzymatic study
@@ -10360,7 +10367,7 @@ creation_date: 2012-01-03T03:17:56Z
 id: MI:1138
 name: decarboxylation assay
 namespace: PSI-MI
-def: "The measurement of a the introduction of a carboxylic acid group into a substrate." [PMID:14755292 ]
+def: "The measurement of a the introduction of a carboxylic acid group into a substrate." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "decarboxxylation assay" EXACT PSI-MI-short []
 is_a: MI:0415 ! enzymatic study
@@ -10371,7 +10378,7 @@ creation_date: 2012-01-03T03:22:04Z
 id: MI:1139
 name: carboxylation reaction
 namespace: PSI-MI
-def: "Carboxylation is a posttranslational modification of glutamate residues, to gamma-carboxyglutamate, in proteins." [PMID:14755292 ]
+def: "Carboxylation is a posttranslational modification of glutamate residues, to gamma-carboxyglutamate, in proteins." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "carboxylation" EXACT PSI-MI-short []
 is_a: MI:0414 ! enzymatic reaction
@@ -10382,7 +10389,7 @@ creation_date: 2012-01-03T03:24:05Z
 id: MI:1140
 name: decarboxylation reaction
 namespace: PSI-MI
-def: "Decarboxylation is a chemical reaction that releases carbon dioxide (CO2). Usually, decarboxylation refers to a reaction of carboxylic acids, removing a carbon atom from a carbon chain. Enzymes that catalyze decarboxylations are called decarboxylases or, the more formal term, carboxy-lyases (EC number 4.1.1)." [PMID:14755292 ]
+def: "Decarboxylation is a chemical reaction that releases carbon dioxide (CO2). Usually, decarboxylation refers to a reaction of carboxylic acids, removing a carbon atom from a carbon chain. Enzymes that catalyze decarboxylations are called decarboxylases or, the more formal term, carboxy-lyases (EC number 4.1.1)." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "decarboxylation" EXACT PSI-MI-short []
 is_a: MI:0414 ! enzymatic reaction
@@ -10393,7 +10400,7 @@ creation_date: 2012-01-03T03:31:42Z
 id: MI:1141
 name: s tag
 namespace: PSI-MI
-def: "S-tag is the name of an oligopeptide derived from pancreatic ribonuclease A (RNase A). The amino acid sequence of the S-tag is: Lys-Glu-Thr-Ala-Ala-Ala-Lys-Phe-Glu-Arg-Gln-His-Met-Asp-Ser." [PMID:14755292 ]
+def: "S-tag is the name of an oligopeptide derived from pancreatic ribonuclease A (RNase A). The amino acid sequence of the S-tag is: Lys-Glu-Thr-Ala-Ala-Ala-Lys-Phe-Glu-Arg-Gln-His-Met-Asp-Ser." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0507 ! tag
 created_by: orchard
@@ -10403,7 +10410,7 @@ creation_date: 2012-01-03T03:37:51Z
 id: MI:1142
 name: aminoacylation assay
 namespace: PSI-MI
-def: "The measurement of the addition of an aminoacyl group to a compound." [PMID:14755292 ]
+def: "The measurement of the addition of an aminoacyl group to a compound." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "aminoacylation" EXACT PSI-MI-short []
 is_a: MI:0415 ! enzymatic study
@@ -10414,7 +10421,7 @@ creation_date: 2012-01-03T03:46:46Z
 id: MI:1143
 name: aminoacylation reaction
 namespace: PSI-MI
-def: "Aminoacylation is the process of adding an aminoacyl group to a compound." [PMID:14755292 ]
+def: "Aminoacylation is the process of adding an aminoacyl group to a compound." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "aminoacylation" EXACT PSI-MI-short []
 is_a: MI:0414 ! enzymatic reaction
@@ -10425,7 +10432,7 @@ creation_date: 2012-01-03T03:49:50Z
 id: MI:1144
 name: protein a tag visualisation
 namespace: PSI-MI
-def: "Protein A tag is visualized by interacting with IgG antibodies (or their derivatives) that are specifically recognized by protein A." [PMID:14755292 ]
+def: "Protein A tag is visualized by interacting with IgG antibodies (or their derivatives) that are specifically recognized by protein A." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "protein a visualisation" EXACT PSI-MI-short []
 is_a: MI:0866 ! tag visualisation
@@ -10436,7 +10443,7 @@ creation_date: 2012-01-03T03:54:35Z
 id: MI:1145
 name: phospholipase assay
 namespace: PSI-MI
-def: "A phospholipase is an enzyme that hydrolyzes phospholipids into fatty acids and other lipophilic substances. There are four major classes, termed A, B, C and D, distinguished by the type of reaction which they catalyze." [PMID:14755292 ]
+def: "A phospholipase is an enzyme that hydrolyzes phospholipids into fatty acids and other lipophilic substances. There are four major classes, termed A, B, C and D, distinguished by the type of reaction which they catalyze." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
@@ -10446,7 +10453,7 @@ creation_date: 2012-01-03T04:04:16Z
 id: MI:1146
 name: phospholipase reaction
 namespace: PSI-MI
-def: "Measurement of the hydrolysis of phospholipids into fatty acids and other lipophilic substances. There are four major classes, termed A, B, C and D, distinguished by the type of reaction which they catalyze." [PMID:14755292 ]
+def: "Measurement of the hydrolysis of phospholipids into fatty acids and other lipophilic substances. There are four major classes, termed A, B, C and D, distinguished by the type of reaction which they catalyze." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0414 ! enzymatic reaction
 created_by: orchard
@@ -10456,7 +10463,7 @@ creation_date: 2012-01-03T04:08:14Z
 id: MI:1147
 name: ampylation assay
 namespace: PSI-MI
-def: "Measurement of AMPylation, the formation of a phosphodiester or phosphoramide ester of AMP on Tyr (RESID:AA0203), Lys (RESID:AA0227), Thr (RESID:AA0267), His (RESID:AA0371) and other amino\nacids." [PMID:14755292 ]
+def: "Measurement of AMPylation, the formation of a phosphodiester or phosphoramide ester of AMP on Tyr (RESID:AA0203), Lys (RESID:AA0227), Thr (RESID:AA0267), His (RESID:AA0371) and other amino\nacids." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
@@ -10466,7 +10473,7 @@ creation_date: 2012-01-03T04:18:27Z
 id: MI:1148
 name: ampylation reaction
 namespace: PSI-MI
-def: "AMPylation, previously known as adenylylation, is formation of a\nphosphodiester or phosphoramide ester of AMP on Tyr (RESID:AA0203), Lys\n(RESID:AA0227), Thr (RESID:AA0267), His (RESID:AA0371) and other amino\nacids." [PMID:14755292 ]
+def: "AMPylation, previously known as adenylylation, is formation of a\nphosphodiester or phosphoramide ester of AMP on Tyr (RESID:AA0203), Lys\n(RESID:AA0227), Thr (RESID:AA0267), His (RESID:AA0371) and other amino\nacids." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "ampylation" EXACT PSI-MI-short []
 is_a: MI:0414 ! enzymatic reaction
