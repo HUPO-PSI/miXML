@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:02:2012 19:03
+date: 11:06:2012 18:45
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.1-rc2
 subsetdef: Drugable "Drugable Genome Project"
@@ -560,7 +560,7 @@ is_a: MI:0051 ! fluorescence technology
 id: MI:0056
 name: full identification by DNA sequencing
 namespace: PSI-MI
-def: "Sequencing occurs during the course of the experiment. The DNA to be sequenced is used as template for the in vitro synthesis, by DNA polymerase, of a set of partial replicas, all beginning at the same place, but terminating at different points along the DNA chain. The key to this method is the use of dideoxyribonucleoside triphosphates in which the deoxyribose 3'-OH group present in normal nucleotides is missing; when such a modified nucleotide is incorporated into a DNA chain, it blocks the elongation of the chain. To determine the full sequence, the four different chain-terminating dideoxyribonucleosides are used in competition with an excess of deoxyribonucleosides in separate DNA synthesis reactions on the same DNA template. When the products of these four reactions are analysed by electrophoresis in four parallel lanes of a denaturing polyacrylamide gel, the DNA sequence can be derived. Every lane displays a family of DNA fragments of different lengths, reflecting the different sites at which a specific residue occurs in the original DNA." [PMID:14755292]
+def: "Sequencing occurs during the course of the experiment. DNA sequencing is the process of determining the nucleotide order of a given DNA fragment. Thus far, most DNA sequencing has been performed using the chain termination method developed by Frederick Sanger. This technique uses sequence-specific termination of a DNA synthesis reaction using modified nucleotide substrates. However, new sequencing technologies such as Pyrosequencing are generating the majority of data." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "full dna sequence" EXACT PSI-MI-short []
 is_a: MI:0078 ! nucleotide sequence identification
@@ -777,12 +777,12 @@ is_obsolete: true
 
 [Term]
 id: MI:0080
-name: partial dna sequence identification by hybridization
+name: partial DNA sequence identification by hybridization
 namespace: PSI-MI
 def: "Genes are recognised by hybridization of a probe with a fragment of the gene sequence." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "partial dna sequence" EXACT PSI-MI-short []
-is_a: MI:0078 ! nucleotide sequence identification
+is_a: MI:1180 ! partial DNA sequence identification
 
 [Term]
 id: MI:0081
@@ -850,7 +850,7 @@ name: primer specific pcr
 namespace: PSI-MI
 def: "Sequences can be identified in a DNA mixture by launching a PCR (Polymerase Chain Reaction) controlled by sequence specific primers. Such reaction starts only when the hybridization of the primer with a complementary sequence occurs." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0080 ! partial dna sequence identification by hybridization
+is_a: MI:0080 ! partial DNA sequence identification by hybridization
 
 [Term]
 id: MI:0089
@@ -958,7 +958,7 @@ is_a: MI:0013 ! biophysical
 id: MI:0100
 name: sequence based phylogenetic profile
 namespace: PSI-MI
-def: "Multiple alignments of orthologous sequences in the same species and their corresponding phylogenetic trees are built. Every phylogenetic tree is computed as a matrix of distances between all possible protein pairs. The covariation of the distance matrices reveals interacting protein pairs." [PMID:11707606]
+def: "Multiple alignments of orthologous sequences in the same species and their corresponding phylogenetic trees are built. Every phylogenetic tree is computed as a matrix of distances between all possible interacting pairs. The covariation of the distance matrices reveals interacting pairs." [PMID:11707606]
 subset: PSI-MI_slim
 synonym: "sequence phylogeny" EXACT PSI-MI-short []
 is_a: MI:0058 ! genome based prediction
@@ -990,7 +990,7 @@ name: southern blot
 namespace: PSI-MI
 def: "A standard procedure to identify DNA fragments containing specific gene sequences. In this procedure i) a genome is fragmented using a restriction enzyme ii) the generated fragments are separated by electrophoresis iii) the fragments are transferred to a membrane iv)the membrane is incubated with a radio labelled probe that hybridises any complementary subsequence." [PMID:14755292]
 subset: PSI-MI_slim
-is_a: MI:0080 ! partial dna sequence identification by hybridization
+is_a: MI:0080 ! partial DNA sequence identification by hybridization
 
 [Term]
 id: MI:0104
@@ -3960,6 +3960,7 @@ name: one hybrid
 namespace: PSI-MI
 def: "Protein-DNA complementation assay where a single promoter act as bait and is screened against a library of prey transcription factors." [PMID:10589421]
 subset: PSI-MI_slim
+synonym: "1 hybrid" EXACT PSI-MI-short []
 synonym: "one-hybrid" EXACT PSI-MI-alternate []
 synonym: "yeast one hybrid" EXACT PSI-MI-alternate []
 synonym: "yeast one-hybrid" EXACT PSI-MI-alternate []
@@ -5609,10 +5610,11 @@ is_a: MI:0417 ! footprinting
 id: MI:0606
 name: DNase I footprinting
 namespace: PSI-MI
-def: "Deoxyribonuclease I (DNase I) do not have high specificity for given sequences or residues, thus footprinting with DNase I permits the exact delineation of the protein-DNA binding site. Moreover DNase I, can be used for in vivo footprinting by treating intact cells with permeabilising drugs. In this latter case DNase I in vivo footprinting allow studies of the chromatin structure in genomic DNA." [PMID:8238889]
+def: "Deoxyribonuclease I (DNase I) does not have high specificity for given sequences or residues, thus footprinting with DNase I permits the exact delineation of the protein-DNA binding site. Moreover DNase I, can be used for in vivo footprinting by treating intact cells with permeabilising drugs. In this latter case DNase I in vivo footprinting allow studies of the chromatin structure in genomic DNA." [PMID:8238889]
 subset: PSI-MI_slim
 synonym: "dnase 1 footprinting" EXACT PSI-MI-short []
-is_a: MI:0605 ! enzymatic footprinting
+synonym: "DNase I protection" RELATED []
+is_a: MI:1183 ! nuclease footprinting
 
 [Term]
 id: MI:0607
@@ -7848,10 +7850,10 @@ is_a: MI:0090 ! protein complementation assay
 id: MI:0896
 name: renilla luciferase protein tag
 namespace: PSI-MI
-def: "Renilla luciferase, is an enzyme of the sea pansy catalyzing the oxidation of the lucifering pigment (reaction with ATP or oxigen)  that produces light. This protein is often used as a vizualisation tag because compare to many fluorescent tag it has a better signal to noise ratio." [PMID:14755292]
+def: "Renilla luciferase, is an enzyme of the sea pansy catalyzing the oxidation of the coelenterazine pigment)  that produces light.. Renilla luciferase produces a blue light of 480nm." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "renilla lucirefase" EXACT PSI-MI-short []
-is_a: MI:0240 ! fusion protein
+is_a: MI:1205 ! luciferase tag
 
 [Term]
 id: MI:0897
@@ -8446,7 +8448,7 @@ is_a: MI:0955 ! curation depth
 id: MI:0962
 name: strep ii tag
 namespace: PSI-MI
-def: "The protein of interest is expressed with a StrepII fusion peptide (WSHPQFEK)." [PMID:17571060]
+def: "The protein of interest is expressed with a StrepII fusion peptide Ser-Ala-Trp-Ser-His-Pro-Gln-Phe-Glu-Lys (SAWSHPQFEK)." [PMID:17571060]
 subset: PSI-MI_slim
 synonym: "Strep (II)" EXACT PSI-MI-alternate []
 synonym: "Strep II" EXACT PSI-MI-alternate []
@@ -8727,7 +8729,7 @@ creation_date: 2010-04-26T11:00:08Z
 id: MI:0988
 name: strep tag
 namespace: PSI-MI
-def: "Synthetic peptide consisting of 8 amino acids (Trp-Ser-His-Pro-Gln-Phe-Glu-Lys)." [PMID:17571060, XX:<new dbxref>]
+def: "Synthetic peptide consisting of 8 amino acids Trp-Ser-His-Pro-Gln-Phe-Glu-Lys (WSHPQFEK)." [PMID:17571060]
 subset: PSI-MI_slim
 is_a: MI:0507 ! tag
 created_by: orchard
@@ -9261,10 +9263,10 @@ creation_date: 2010-11-11T01:54:00Z
 id: MI:1037
 name: Split renilla luciferase complementation
 namespace: PSI-MI
-def: "The N-terminal portion of synthetic renilla luciferase (hrluc) is attached to one protein through the linker peptide (GGGS)2 and C-terminal portion of synthetic renilla luciferase is connected to the second protein through the linker (GGGGS)2. Interaction of the 2 proteins recovers hrluc activity and produces light." [PMID:12705589]
+def: "The N-terminal portion of synthetic renilla luciferase (hrluc) is attached to one protein through the linker peptide (GGGS)2 and C-terminal portion of synthetic renilla luciferase is connected to the second protein through the linker (GGGGS)2. Interaction of the 2 proteins recovers hrluc activity and produces light." [PMID:12705589, PMID:22070901]
 subset: PSI-MI_slim
 synonym: "renilla luciferase" EXACT PSI-MI-alternate []
-is_a: MI:0090 ! protein complementation assay
+is_a: MI:1203 ! split luciferase complementation
 created_by: orchard
 creation_date: 2010-11-11T02:54:08Z
 
@@ -9582,6 +9584,7 @@ subset: PSI-MI_slim
 synonym: "function score" EXACT PSI-MI-short []
 synonym: "function-based scoring system" EXACT []
 is_a: MI:1064 ! interaction confidence
+is_a: MI:1221 ! author-based confidence
 created_by: orchard
 creation_date: 2011-07-05T07:46:28Z
 
@@ -10163,6 +10166,7 @@ def: "n-terminal fragment of yellow fluorescent protein used as a tag in bimolec
 subset: PSI-MI_slim
 synonym: "N-terminal part of YFP" RELATED []
 is_a: MI:0368 ! yellow fluorescent protein tag
+is_a: MI:1215 ! bifc tag
 created_by: orchard
 creation_date: 2011-11-24T03:30:18Z
 
@@ -10174,6 +10178,7 @@ def: "c-terminal fragment of yellow fluorescent protein used as a tag in bimolec
 subset: PSI-MI_slim
 synonym: "C-terminal part of YFP" RELATED []
 is_a: MI:0368 ! yellow fluorescent protein tag
+is_a: MI:1215 ! bifc tag
 created_by: orchard
 creation_date: 2011-11-24T03:43:07Z
 
@@ -10203,7 +10208,7 @@ creation_date: 2011-11-24T03:44:40Z
 id: MI:1123
 name: bindingdb
 namespace: PSI-MI
-def: "A web-accessible database of experimentally determined protein-ligand binding affinities." [PMID:17145705]
+def: "BindingDB is a web-accessible public database of experimentally determined protein-ligand binding affinities for drug discovery. http://BindingDB.org" [PMID:11812264, PMID:11836221, PMID:11987162, PMID:17145705]
 subset: PSI-MI_slim
 is_a: MI:0461 ! interaction database
 created_by: orchard
@@ -10282,7 +10287,7 @@ name: mutation decreasing interaction rate
 namespace: PSI-MI
 def: "Region of a molecule whose mutation or deletion decreases significantly interaction rate (in the case of interactions inferred from enzymatic reaction)." [PMID:14755292]
 subset: PSI-MI_slim
-synonym: "mutation deceasing rate" EXACT PSI-MI-short []
+synonym: "mutation decreasing rate" EXACT PSI-MI-short []
 is_a: MI:0119 ! mutation decreasing interaction
 created_by: orchard
 creation_date: 2012-01-03T01:38:58Z
@@ -10315,7 +10320,7 @@ name: mutation decreasing interaction strength
 namespace: PSI-MI
 def: "Region of a molecule whose mutation or deletion decreases significantly interaction strength." [PMID:14755292]
 subset: PSI-MI_slim
-synonym: "mutation deceasing strength" EXACT PSI-MI-short []
+synonym: "mutation decreasing strength" EXACT PSI-MI-short []
 is_a: MI:0119 ! mutation decreasing interaction
 created_by: orchard
 creation_date: 2012-01-03T01:48:40Z
@@ -10465,6 +10470,7 @@ name: ampylation assay
 namespace: PSI-MI
 def: "Measurement of AMPylation, the formation of a phosphodiester or phosphoramide ester of AMP on Tyr (RESID:AA0203), Lys (RESID:AA0227), Thr (RESID:AA0267), His (RESID:AA0371) and other amino\nacids." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "ampylation assay" EXACT PSI-MI-short []
 is_a: MI:0415 ! enzymatic study
 created_by: orchard
 creation_date: 2012-01-03T04:18:27Z
@@ -10479,6 +10485,866 @@ synonym: "ampylation" EXACT PSI-MI-short []
 is_a: MI:0414 ! enzymatic reaction
 created_by: orchard
 creation_date: 2012-01-03T04:21:12Z
+
+[Term]
+id: MI:1149
+name: cooperative interaction
+namespace: PSI-MI
+def: "A set of molecular binding events that influence each other either positively or negatively through allostery or pre-assembly. In this context, covalent post-translational modifications are considered as binding events. CV terms that are part of this term allow the description of cooperative interactions using the current PSI-MI schema." [PMID:18641616]
+subset: PSI-MI_slim
+synonym: "cooperativity" EXACT []
+relationship: part_of MI:0000 ! molecular interaction
+created_by: orchard
+creation_date: 2012-06-07T12:21:30Z
+
+[Term]
+id: MI:1150
+name: affected interaction
+namespace: PSI-MI
+def: "For an interaction that has a cooperative effect on a subsequent interaction, this term indicates which subsequent interaction is affected. The affected interaction is identified by referring to its interaction id." [PMID:18641616]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+relationship: part_of MI:1149 ! cooperative interaction
+created_by: orchard
+creation_date: 2012-06-07T12:26:42Z
+
+[Term]
+id: MI:1151
+name: participant-ref
+namespace: PSI-MI
+def: "Referring to a previously described interaction as a participant allows the description of ordered assembly of molecular complexes in PSI-MI2.5. When one of the components of the preformed complex has a feature, the participant-ref term indicates on which component this feature is located. The component is identified by referring to its participant id in the previous interaction." [PMID:18641616]
+subset: PSI-MI_slim
+is_a: MI:0668 ! feature attribute name
+created_by: orchard
+creation_date: 2012-06-07T12:30:48Z
+
+[Term]
+id: MI:1152
+name: cooperative effect value
+namespace: PSI-MI
+def: "This value quantifies the cooperative effect of an interaction on a subsequent interaction. It is the fold change of the affinity or a catalytic parameter of a molecule for one ligand in the absence, versus presence, of a second ligand or a post-translational modification." [PMID:18706817]
+subset: PSI-MI_slim
+synonym: "cooperative coupling" EXACT []
+is_a: MI:0664 ! interaction attribute name
+relationship: part_of MI:1149 ! cooperative interaction
+created_by: orchard
+creation_date: 2012-06-07T12:35:01Z
+
+[Term]
+id: MI:1153
+name: cooperative effect outcome
+namespace: PSI-MI
+def: "For an interaction that has a cooperative effect on a subsequent interaction, this term indicates whether this effect is positive or negative, i.e. whether the subsequent interaction is augmented or diminished." [PMID:18706817]
+relationship: part_of MI:1149 ! cooperative interaction
+created_by: orchard
+creation_date: 2012-06-07T12:40:41Z
+
+[Term]
+id: MI:1154
+name: positive cooperative effect
+namespace: PSI-MI
+def: "This term specifies that an interaction augments a subsequent interaction." [PMID:18706817]
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1153 ! cooperative effect outcome
+created_by: orchard
+creation_date: 2012-06-07T12:42:19Z
+
+[Term]
+id: MI:1155
+name: negative cooperative effect
+namespace: PSI-MI
+def: "This term specifies that an interaction diminishes a subsequent interaction." [PMID:18706817]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1153 ! cooperative effect outcome
+created_by: orchard
+creation_date: 2012-06-07T12:43:48Z
+
+[Term]
+id: MI:1156
+name: cooperative mechanism
+namespace: PSI-MI
+def: "For an interaction that has a cooperative effect on a subsequent interaction, this term indicates the process that mediates this effect." [PMID:18641616]
+subset: PSI-MI_slim
+relationship: part_of MI:1149 ! cooperative interaction
+created_by: orchard
+creation_date: 2012-06-07T12:46:30Z
+
+[Term]
+id: MI:1157
+name: allostery
+namespace: PSI-MI
+def: "Reciprocal energetic coupling between two binding events at distinct sites on the same molecule. The first binding event alters the binding or catalytic properties of the molecule for the second binding event." [PMID:18641616, PMID:18706817]
+subset: PSI-MI_slim
+synonym: "allosteric regulation" EXACT []
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1156 ! cooperative mechanism
+created_by: orchard
+creation_date: 2012-06-07T12:50:20Z
+
+[Term]
+id: MI:1158
+name: pre-assembly
+namespace: PSI-MI
+def: "A non-allosteric mechanism where the strength of an interaction depends on whether or not a particular molecular complex already exists." [PMID:18641616]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1156 ! cooperative mechanism
+created_by: orchard
+creation_date: 2012-06-07T12:52:44Z
+
+[Term]
+id: MI:1159
+name: allosteric molecule
+namespace: PSI-MI
+def: "A molecule whose binding or catalytic properties at one site are altered by allosteric post-translational modification or binding of an allosteric effector at a distinct site. An allosteric molecule is identified by referring to its participant id." [PMID:18706817]
+subset: PSI-MI_slim
+is_a: MI:0500 ! biological role
+is_a: MI:0664 ! interaction attribute name
+relationship: part_of MI:1149 ! cooperative interaction
+created_by: orchard
+creation_date: 2012-06-07T12:55:09Z
+
+[Term]
+id: MI:1160
+name: allosteric effector
+namespace: PSI-MI
+def: "A ligand that elicits an allosteric response upon binding to a target molecule." [PMID:18706817]
+subset: PSI-MI_slim
+is_a: MI:0500 ! biological role
+is_a: MI:0664 ! interaction attribute name
+relationship: part_of MI:1149 ! cooperative interaction
+created_by: orchard
+creation_date: 2012-06-07T12:57:50Z
+
+[Term]
+id: MI:1161
+name: allosteric response
+namespace: PSI-MI
+def: "This term describes the effect of an allosteric binding event. It specifies which properties of the allosteric molecule are altered, i.e. whether the interaction alters either (a) binding or (b) catalytic properties of the allosteric molecule at a site distinct from the allosteric site." []
+subset: PSI-MI_slim
+relationship: part_of MI:1149 ! cooperative interaction
+created_by: orchard
+creation_date: 2012-06-07T01:05:17Z
+
+[Term]
+id: MI:1162
+name: allosteric k-type response
+namespace: PSI-MI
+def: "An allosteric response in which the affinity of a molecule is altered." [PMID:18706817]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1161 ! allosteric response
+created_by: orchard
+creation_date: 2012-06-07T01:08:01Z
+
+[Term]
+id: MI:1163
+name: allosteric v-type response
+namespace: PSI-MI
+def: "An allosteric response in which catalysis (kcat or Vmax) of an enzyme is altered." [PMID:18706817]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1161 ! allosteric response
+created_by: orchard
+creation_date: 2012-06-07T01:09:07Z
+
+[Term]
+id: MI:1164
+name: allosteric mechanism
+namespace: PSI-MI
+def: "The process that mediates the allosteric response of a molecule upon allosteric post-translational modification or binding of an allosteric effector." []
+relationship: part_of MI:1149 ! cooperative interaction
+created_by: orchard
+creation_date: 2012-06-07T01:10:45Z
+
+[Term]
+id: MI:1165
+name: allosteric change in structure
+namespace: PSI-MI
+def: "The allosteric mechanism where changes in the local structure of an allosteric molecule result in altered binding or catalytic properties." [PMID:18706817]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1164 ! allosteric mechanism
+created_by: orchard
+creation_date: 2012-06-07T01:16:20Z
+
+[Term]
+id: MI:1166
+name: allosteric change in dynamics
+namespace: PSI-MI
+def: "The allosteric mechanism where changes in the local dynamics of an allosteric molecule result in altered binding or catalytic properties." [PMID:18706817]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1164 ! allosteric mechanism
+created_by: orchard
+creation_date: 2012-06-07T01:17:54Z
+
+[Term]
+id: MI:1167
+name: allostery type
+namespace: PSI-MI
+def: "This term indicates the chemical relationship between the two ligands whose binding is allosterically coupled." [PMID:18706817]
+subset: PSI-MI_slim
+relationship: part_of MI:1149 ! cooperative interaction
+created_by: orchard
+creation_date: 2012-06-07T01:19:57Z
+
+[Term]
+id: MI:1168
+name: heterotropic allostery
+namespace: PSI-MI
+def: "The type of allostery that occurs when the two ligands whose binding is allosterically coupled are not chemically identical." [PMID:18706817]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1167 ! allostery type
+created_by: orchard
+creation_date: 2012-06-07T01:21:25Z
+
+[Term]
+id: MI:1169
+name: homotropic allostery
+namespace: PSI-MI
+def: "The type of allostery that occurs when the two ligands whose binding is allosterically coupled are chemically identical." [PMID:18706817]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1167 ! allostery type
+created_by: orchard
+creation_date: 2012-06-07T01:22:35Z
+
+[Term]
+id: MI:1170
+name: pre-assembly response
+namespace: PSI-MI
+def: "This term describes the way in which preformation of a molecular complex has a non-allosteric cooperative effect on subsequent interactions of its components." [PMID:18641616]
+subset: PSI-MI_slim
+relationship: part_of MI:1149 ! cooperative interaction
+created_by: orchard
+creation_date: 2012-06-07T01:24:42Z
+
+[Term]
+id: MI:1171
+name: composite binding site formation
+namespace: PSI-MI
+def: "The preformation of a complex results in the generation of a continuous binding site that spans more than one component of this complex. The functional binding site does not exist outside the context of the preformed complex." [PMID:18641616]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1170 ! pre-assembly response
+created_by: orchard
+creation_date: 2012-06-07T01:25:50Z
+
+[Term]
+id: MI:1172
+name: altered physicochemical compatibility
+namespace: PSI-MI
+def: "The addition of a PTM to an interaction interface affects the physicochemical compatibility of the binding site with its binding partner. This can either induce or enhance an interaction, or result in inhibition or even abrogation of an interaction. Multisite modification can mediate rheostatic regulation of the interaction." [PMID:22480932, XX:<new dbxref>]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1170 ! pre-assembly response
+created_by: orchard
+creation_date: 2012-06-07T01:26:56Z
+
+[Term]
+id: MI:1173
+name: binding site hiding
+namespace: PSI-MI
+def: "The occurrence of overlapping or adjacent, mutually exclusive binding sites promotes competitive binding. When there is a large difference in affinity of the different sites or in local abundance of competitors, binding at one site results in hiding of the second site, thereby precluding it from interacting when the hiding molecule is present." [PMID:22480932]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1170 ! pre-assembly response
+created_by: orchard
+creation_date: 2012-06-07T01:28:07Z
+
+[Term]
+id: MI:1174
+name: configurational pre-organization
+namespace: PSI-MI
+def: "Multivalent ligands form multiple discrete interactions with one or more binding partners. In some cases, An initial binding event can pre-organize other sites for binding. This reduces the degrees of freedom of these sites, thus reducing the entropic costs of their interactions. In addition, the combined strength of multiple interactions increases the enthalpic stability of each interaction (avidity effect). As a result of such effects, interactions of this kind can have a cooperative effect on subsequent interactions." [PMID:18641616]
+subset: PSI-MI_slim
+is_a: MI:0664 ! interaction attribute name
+is_a: MI:1170 ! pre-assembly response
+created_by: orchard
+creation_date: 2012-06-07T01:29:13Z
+
+[Term]
+id: MI:1175
+name: allosteric post-translational modification
+namespace: PSI-MI
+def: "A post-translational modification that elicits an allosteric response upon addition to a target molecule. An allosteric post-translational modification is identified by referring to its feature id." [PMID:18706817]
+subset: PSI-MI_slim
+synonym: "allosteric ptm" EXACT PSI-MI-short []
+is_a: MI:0252 ! biological feature
+is_a: MI:0664 ! interaction attribute name
+relationship: part_of MI:1149 ! cooperative interaction
+created_by: orchard
+creation_date: 2012-06-07T01:33:16Z
+
+[Term]
+id: MI:1176
+name: sequence based prediction of gene regulatory region binding sites
+namespace: PSI-MI
+def: "Sequence analysis of the regulatory region of a gene used to predict specific elements, transcription factor binding sites (TFBS), where binding of specific transcription factors can occur." [PMID:15131651]
+subset: PSI-MI_slim
+synonym: "gene regulatory region prediction" RELATED []
+synonym: "sequence based prediction of TG regulatory region binding sites  for TF " RELATED []
+is_a: MI:0101 ! sequence based prediction
+created_by: orchard
+creation_date: 2012-06-07T01:40:25Z
+
+[Term]
+id: MI:1177
+name: phylogenetic profiling of predicted gene regulatory region binding sites
+namespace: PSI-MI
+def: "Sequence analysis based on multiple homologous alignments of the regulatory region of a gene used to predict specific elements, transcription factor binding sites (TFBS), where binding of specific transcription factors can occur. These methods often also use transcription factor binding motif models." [PMID:12671656]
+subset: PSI-MI_slim
+synonym: "gene regulatory region phylogeny" EXACT []
+synonym: "phylogenetic footprinting" RELATED []
+is_a: MI:0100 ! sequence based phylogenetic profile
+is_a: MI:1176 ! sequence based prediction of gene regulatory region binding sites
+created_by: orchard
+creation_date: 2012-06-07T01:41:59Z
+
+[Term]
+id: MI:1178
+name: sequence based prediction of binding of transcription factor to transcribed gene regulatory elements
+namespace: PSI-MI
+def: "Computational methods based on evolutionary hypothesis, used as criteria to browse sequences and predict a transcription factor using structural and sequence features of the protein, e.g., by evaluating if the potential transcription factor protein contains a DNA-binding domain that is known to bind to some regulatory elements, or prediction of transcription factor functional domains (DNA binding, transcription factor dimerization, etc.), all based on sequence or structural features of the transcription factor." [PMID:16381970]
+subset: PSI-MI_slim
+synonym: "sequence based prediction of binding of TF to TG promoter" EXACT []
+synonym: "transcription factor prediction" EXACT []
+is_a: MI:0101 ! sequence based prediction
+created_by: orchard
+creation_date: 2012-06-07T01:43:57Z
+
+[Term]
+id: MI:1179
+name: partial nucleotide sequence identification
+namespace: PSI-MI
+def: "Identification of a part of a nucleotide sequence, usually then related to the full length sequence by alignment. Depending on the experimental design, nucleotide sequence can be determined before the interaction detection while building a collection of clones or after the selection of randomly generated clone.s" [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "partial nucleotide sequence" EXACT PSI-MI-short []
+is_a: MI:0078 ! nucleotide sequence identification
+created_by: orchard
+creation_date: 2012-06-07T01:47:03Z
+
+[Term]
+id: MI:1180
+name: partial DNA sequence identification
+namespace: PSI-MI
+def: "Identification of a part of a DNA sequence, usually then related to the full length sequence by alignment. Depending on the experimental design, nucleotide sequence can be determined before the interaction detection while building a collection of clones or after the selection of randomly generated clone.s" [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "partial dna sequence" EXACT PSI-MI-short []
+is_a: MI:1179 ! partial nucleotide sequence identification
+created_by: orchard
+creation_date: 2012-06-07T01:52:27Z
+
+[Term]
+id: MI:1181
+name: paired end tags sequence identification
+namespace: PSI-MI
+def: "Paired-end tags (PET) are the short sequences at the 5 prime and 3 prime ends of the DNA fragment of interest, which can be a piece of genomic DNA or cDNA." [PMID:19339662]
+subset: PSI-MI_slim
+synonym: "paired end tags" EXACT PSI-MI-short []
+is_a: MI:1180 ! partial DNA sequence identification
+created_by: orchard
+creation_date: 2012-06-07T01:53:38Z
+
+[Term]
+id: MI:1182
+name: full identification by RNA sequencing
+namespace: PSI-MI
+def: "Sequencing occurs during the course of the experiment. To sequence RNA, the usual method is first to reverse transcribe the sample to generate cDNA fragments." []
+subset: PSI-MI_slim
+is_a: MI:0078 ! nucleotide sequence identification
+created_by: orchard
+creation_date: 2012-06-07T02:02:37Z
+
+[Term]
+id: MI:1183
+name: nuclease footprinting
+namespace: PSI-MI
+def: "Binding of a molecule to a strand of nucleic acid protects that region of nucleic acid from the action of a nuclease. The protected region can subsequently be sequenced and the binding site identified." [PMID:7685766]
+subset: PSI-MI_slim
+synonym: "<new synonym>" RELATED []
+synonym: "nuclease protection" RELATED []
+is_a: MI:0605 ! enzymatic footprinting
+created_by: orchard
+creation_date: 2012-06-07T02:08:36Z
+
+[Term]
+id: MI:1184
+name: dna adenine methyltransferase identification
+namespace: PSI-MI
+def: "DNA adenine methyltransferase identification is used to map the binding sites of DNA- and chromatin-binding proteins in eukaryotes. DamID identifies binding sites by expressing the proposed DNA-binding protein as a fusion protein with DNA methyltransferase. Binding of the protein of interest to DNA localizes the methyltransferase in the region of the binding site. Adenosine methylation does not occur naturally in eukaryotes and therefore adenine methylation in any region can be concluded to have been caused by the fusion protein, implying the region is located near a binding site." [PMID:10748524]
+subset: PSI-MI_slim
+synonym: "DamID" EXACT PSI-MOD-short []
+is_a: MI:0400 ! affinity technology
+created_by: orchard
+creation_date: 2012-06-07T02:13:03Z
+
+[Term]
+id: MI:1185
+name: tag visualisation by dna adenine methyltransferase
+namespace: PSI-MI
+def: "Proteins of interest are tagged with Escherichia coli DNA adenine methyltransferase (dam). Expression of this fusion protein in vivo leads to preferential methylation of adenines in DNA surrounding the native binding sites of the dam fusion partner. Because adenine methylation does not occur endogenously in most eukaryotes, it provides a unique tag to mark protein interaction sites. The adenine-methylated DNA fragments are isolated by selective polymerase chain reaction amplification and can be identified by microarray hybridization." [PMID:10748524]
+subset: PSI-MI_slim
+synonym: "tag DNA methyltransferase" EXACT PSI-MI-short []
+is_a: MI:0980 ! tag visualisation by enzyme assay
+created_by: orchard
+creation_date: 2012-06-07T02:22:19Z
+
+[Term]
+id: MI:1186
+name: dna methyltransferase tag
+namespace: PSI-MI
+def: "The protein of interest is fused to Escherichia coli DNA adenine methyltransferase (dam). Expression of this fusion protein in vivo leads to preferential methylation of adenines in DNA surrounding the native binding sites of the dam fusion partner. Because adenine methylation does not occur endogenously in most eukaryotes, it provides a unique tag to mark protein interaction sites." [PMID:10748524]
+subset: PSI-MI_slim
+is_a: MI:0365 ! enzyme tag
+created_by: orchard
+creation_date: 2012-06-07T02:32:02Z
+
+[Term]
+id: MI:1187
+name: damip
+namespace: PSI-MI
+def: "A mutant form of DNA adenine methyltransferase (DamK9A) from E. coli is fused to the protein of interest and expressed. The fusion protein will bind to target binding sites and introduce N-6-adenine methylation in nearby sites in the genomic DNA. Methylated DNA fragments are enriched with an antibody against N-6-methyladenine and used for further analysis." [PMID:21472695]
+subset: PSI-MI_slim
+is_a: MI:1184 ! dna adenine methyltransferase identification
+created_by: orchard
+creation_date: 2012-06-07T02:41:40Z
+
+[Term]
+id: MI:1188
+name: tag visualisation by mutated dna adenine methyltransferase
+namespace: PSI-MI
+def: "A mutant form of DNA adenine methyltransferase (DamK9A) from E. coli is fused to the protein of interest and expressed. The fusion protein will bind to target binding sites and introduce N-6-adenine methylation in nearby sites in the genomic DNA." []
+is_a: MI:1185 ! tag visualisation by dna adenine methyltransferase
+created_by: orchard
+creation_date: 2012-06-07T02:46:08Z
+
+[Term]
+id: MI:1189
+name: methylation interference assay
+namespace: PSI-MI
+def: "In interference assays, the DNA will be methylated before the binding assay.  Protein binding to DNA protects DNA from methylation  by dimethylsulphate. If the contact points are methylated, the protein binding is prevented. After isolating the protein-DNA complex, the methylation sites are cleaved by chemical method. As a result, only those regions out of the binding sites will be cleaved. The protein binding region is not methylated; hence, this region is not cleaved. Although the pattern looks like a footprint, the blank region means \"contact points\"." [PMID:21720958]
+subset: PSI-MI_slim
+synonym: "contact point analysis" RELATED []
+synonym: "methylation interference" EXACT PSI-MI-short []
+synonym: "methylation protection assay" RELATED []
+is_a: MI:0605 ! enzymatic footprinting
+created_by: orchard
+creation_date: 2012-06-07T02:54:00Z
+
+[Term]
+id: MI:1190
+name: hydroxy radical footprinting
+namespace: PSI-MI
+def: "Hydroxyl radicals are created from the Fenton reaction, which involves reducing Fe2+ with H2O2 to form free hydroxyl molecules. These hydroxyl molecules react with the DNA backbone, resulting in a break. Protein bound regions of the DNA are protected." [PMID:3090544]
+subset: PSI-MI_slim
+is_a: MI:0602 ! chemical footprinting
+created_by: orchard
+creation_date: 2012-06-07T03:10:48Z
+
+[Term]
+id: MI:1191
+name: ultraviolet (uv) footprinting
+namespace: PSI-MI
+def: "Ultraviolet irradiation excites nucleic acids and creates photoreactions, which results in damaged bases in the DNA strand. Protein bound regions of the DNA are protected. UV footprinting technique can detect sequence-specific protein-DNA interactions in vivo. Protein contacts can inhibit of enhance UV photoproduct formation by affecting the ability of DNA to adopt a geometry necessary for the formation of a UV photoproduct. Thus, differences in the strand-breakage patterns of protein-free and protein-bound DNA can be used to detect protein-DNA contacts." [PMID:2842760, PMID:6728031]
+subset: PSI-MI_slim
+is_a: MI:0417 ! footprinting
+created_by: orchard
+creation_date: 2012-06-07T03:13:02Z
+
+[Term]
+id: MI:1192
+name: antisense oligonucleotides
+namespace: PSI-MI
+def: "This approach is based on the observation that  a synthesized nucleic acid that is complementary to a specific mRNA can decrease the synthesis of its gene product either by increasing the degradation of the targeted mRNA or by interfering with its translation." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0255 ! post transcriptional interference
+created_by: orchard
+creation_date: 2012-06-07T03:19:22Z
+
+[Term]
+id: MI:1193
+name: partial RNA sequence identification
+namespace: PSI-MI
+def: "Identification of a part of a RNA sequence, usually then related to the full length sequence by alignment." [PMID:14755292]
+synonym: "partial rna sequence" EXACT PSI-MI-short []
+is_a: MI:1179 ! partial nucleotide sequence identification
+created_by: orchard
+creation_date: 2012-06-07T03:40:14Z
+
+[Term]
+id: MI:1194
+name: reverse transcription pcr
+namespace: PSI-MI
+def: "Reverse Transcription PCR (RT-PCR) is used for amplifying DNA from RNA. Reverse transcriptase reverse transcribes RNA into cDNA, which is then amplified by PCR." [PMID:12958470]
+subset: PSI-MI_slim
+synonym: "reverse PCR" RELATED []
+synonym: "RPCR" RELATED []
+synonym: "RT-PCR" EXACT PSI-MI-short []
+is_a: MI:0088 ! primer specific pcr
+created_by: orchard
+creation_date: 2012-06-07T03:47:13Z
+
+[Term]
+id: MI:1195
+name: quantitative pcr
+namespace: PSI-MI
+def: "Quantitative PCR (Q-PCR) is used to measure the quantity of a PCR product (commonly in real-time). It quantitatively measures starting amounts of DNA, cDNA, or RNA." [PMID:12958470]
+subset: PSI-MI_slim
+synonym: "q-pcr" EXACT PSI-MI-short []
+synonym: "QRT-PCR" RELATED []
+synonym: "RQ-PCR" RELATED []
+synonym: "RTQ-PCR" RELATED []
+is_a: MI:0088 ! primer specific pcr
+created_by: orchard
+creation_date: 2012-06-07T03:56:38Z
+
+[Term]
+id: MI:1196
+name: quantitative reverse transcription pcr
+namespace: PSI-MI
+def: "Technique used to measure the quantity of DNA amplified from RNA." [PMID:12958470]
+subset: PSI-MI_slim
+synonym: "QRT-PCR" EXACT PSI-MI-short []
+synonym: "RTQ-PCR" RELATED []
+is_a: MI:1194 ! reverse transcription pcr
+created_by: orchard
+creation_date: 2012-06-07T04:04:42Z
+
+[Term]
+id: MI:1197
+name: radioimmunoassay
+namespace: PSI-MI
+def: "To perform a radioimmunoassay, a known quantity of an antigen is made radioactive, frequently by labeling it with gamma-radioactive isotopes of iodine attached to tyrosine. This radiolabeled antigen is then mixed with a known amount of antibody for that antigen, and as a result, the two chemically bind to one another. Then, a sample containing an unknown quantity of that same antigen is added. This causes the unlabeled (or \"cold\") antigen from the serum to compete with the radiolabeled antigen (\"hot\") for antibody binding sites. As the concentration of \"cold\" antigen is increased, more of it binds to the antibody, displacing the radiolabeled variant, and reducing the ratio of antibody-bound radiolabeled antigen to free radiolabeled antigen. The bound antigens are then separated from the unbound ones, and the radioactivity of the free antigen remaining in the supernatant is measured." [PMID:13846364.]
+synonym: "RIA" EXACT []
+is_a: MI:0421 ! identification by antibody
+created_by: orchard
+creation_date: 2012-06-07T04:13:30Z
+
+[Term]
+id: MI:1198
+name: immunohistochemistry
+namespace: PSI-MI
+def: "Method using an antibody coupled with some colouring agent to detect a specific protein within a tissue sample. In some cases the primary antibody is directly linked to a colouring agent, more often the primary antibody is targeted by a secondary antibody, targeting the primary antibody." [PMID:16006601]
+subset: PSI-MI_slim
+is_a: MI:0422 ! immunostaining
+created_by: orchard
+creation_date: 2012-06-07T04:17:12Z
+
+[Term]
+id: MI:1199
+name: anti-tag immunohistochemistry
+namespace: PSI-MI
+def: "Method using an antibody coupled with some colouring agent to detect a tag fused to a specific protein within a tissue sample. In some cases the primary antibody is directly linked to a colouring agent, more often the primary antibody is targeted by a secondary antibody, targeting the primary antibody." [PMID:16006601]
+subset: PSI-MI_slim
+is_a: MI:1198 ! immunohistochemistry
+created_by: orchard
+creation_date: 2012-06-07T04:21:23Z
+
+[Term]
+id: MI:1200
+name: immunocytochemistry
+namespace: PSI-MI
+def: "Method using an antibody coupled with some colouring agent to detect a specific protein within a cell. In some cases the primary antibody is directly linked to a colouring agent, more often the primary antibody is targeted by a secondary antibody, targeting the primary antibody." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0422 ! immunostaining
+created_by: orchard
+creation_date: 2012-06-07T04:22:00Z
+
+[Term]
+id: MI:1201
+name: anti-tag immunocytochemistry
+namespace: PSI-MI
+def: "Method using an antibody coupled with some colouring agent to detect a specific tag fused to a protein within a cell. In some cases the primary antibody is directly linked to a colouring agent, more often the primary antibody is targeted by a secondary antibody, targeting the primary antibody." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:1200 ! immunocytochemistry
+created_by: orchard
+creation_date: 2012-06-07T04:33:37Z
+
+[Term]
+id: MI:1202
+name: one-strep-tag
+namespace: PSI-MI
+def: "Synthetic peptide tag (SAWSHPQFEK-(GGGS)2-SAWSHPQFEK)" [PMID:19688738]
+subset: PSI-MI_slim
+is_a: MI:0507 ! tag
+created_by: orchard
+creation_date: 2012-06-07T04:44:55Z
+
+[Term]
+id: MI:1203
+name: split luciferase complementation
+namespace: PSI-MI
+def: "Two proteins of interest, a bait and prey, which are genetically fused to amino- and carboxy-terminal fragments of luciferase, are transiently expressed. Physical interactions of these bait and prey proteins reconstitute some of the luciferase activity and result in light emission in the presence of the luciferase substrate." [PMID:20734273]
+subset: PSI-MI_slim
+is_a: MI:0090 ! protein complementation assay
+created_by: orchard
+creation_date: 2012-06-07T04:56:59Z
+
+[Term]
+id: MI:1204
+name: split firefly luciferase complementation
+namespace: PSI-MI
+def: "Two proteins of interest, a bait and prey, which are genetically fused to amino- and carboxy-terminal fragments of firefly (Photinus pyralis) luciferase, are transiently expressed. Physical interactions of these bait and prey proteins reconstitute some of the luciferase activity and result in light emission in the presence of the luciferase substrate." [PMID:20734273, PMID:22070901]
+subset: PSI-MI_slim
+is_a: MI:1203 ! split luciferase complementation
+created_by: orchard
+creation_date: 2012-06-07T05:05:36Z
+
+[Term]
+id: MI:1205
+name: luciferase tag
+namespace: PSI-MI
+def: "Luciferase is a generic term for the class of oxidative enzymes used in bioluminescence and is distinct from a photoprotein. Luciferase catalyzes a bioluminescent reaction which requires the substrate luciferin as well as Mg2+ and ATP, produces green light with a wavelength of 562 nm." []
+subset: PSI-MI_slim
+is_a: MI:0240 ! fusion protein
+created_by: orchard
+creation_date: 2012-06-07T05:20:20Z
+
+[Term]
+id: MI:1206
+name: renilla-n
+namespace: PSI-MI
+def: "The n-terminus of the renilla luciferase protein, fused to a protein of interest for use in the split renilla complementation assay." [PMID:12705589]
+subset: PSI-MI_slim
+synonym: "N-terminal fragment of renilla luciferase" RELATED []
+is_a: MI:0896 ! renilla luciferase protein tag
+is_a: MI:1215 ! bifc tag
+created_by: orchard
+creation_date: 2012-06-07T05:26:34Z
+
+[Term]
+id: MI:1207
+name: renilla-c
+namespace: PSI-MI
+def: "The c-terminus of the renilla luciferase protein, fused to a protein of interest for use in the split renilla complementation assay." [PMID:12705589]
+synonym: "C-terminal fragment of renilla luciferase" EXACT []
+is_a: MI:0896 ! renilla luciferase protein tag
+is_a: MI:1215 ! bifc tag
+created_by: orchard
+creation_date: 2012-06-07T05:31:32Z
+
+[Term]
+id: MI:1208
+name: firefly luciferase protein tag
+namespace: PSI-MI
+def: "Firefly luciferase, is an enzyme from beetles (Photinus pyralis) catalyzing the oxidation of the lucifering pigment (reaction with ATP or oxygen)  that produces light. Firefly luciferase produces a greenish yellow light in the 550-570nm range." [PMID:22070901]
+subset: PSI-MI_slim
+is_a: MI:1205 ! luciferase tag
+created_by: orchard
+creation_date: 2012-06-07T05:32:53Z
+
+[Term]
+id: MI:1209
+name: firefly-c
+namespace: PSI-MI
+def: "The c-terminus of the firefly luciferase protein, fused to a protein of interest for use in the split renilla complementation assay." [PMID:22070901]
+subset: PSI-MI_slim
+synonym: "C-terminal fragment of firefly luciferase" EXACT []
+is_a: MI:1208 ! firefly luciferase protein tag
+is_a: MI:1215 ! bifc tag
+created_by: orchard
+creation_date: 2012-06-07T05:40:04Z
+
+[Term]
+id: MI:1210
+name: firefly-n
+namespace: PSI-MI
+def: "The n-terminus of the firefly luciferase protein, fused to a protein of interest for use in the split renilla complementation assay." [PMID:22070901]
+subset: PSI-MI_slim
+synonym: "N-terminal fragment of firefly luciferase" RELATED []
+is_a: MI:1208 ! firefly luciferase protein tag
+is_a: MI:1215 ! bifc tag
+created_by: orchard
+creation_date: 2012-06-07T05:41:30Z
+
+[Term]
+id: MI:1211
+name: liposome binding assay
+namespace: PSI-MI
+def: "Lipid binding proteins incubated with liposomes of known lipid content. Mixture is then centrifuged and proteins bound to liposomes separated out." [PMID:14734570]
+subset: PSI-MI_slim
+synonym: "liposome centrifugation assay" RELATED []
+is_a: MI:0027 ! cosedimentation
+created_by: orchard
+creation_date: 2012-06-07T05:51:15Z
+
+[Term]
+id: MI:1212
+name: checksum
+namespace: PSI-MI
+def: "A fixed-size datum calculated (by using a hash function) for a molecular sequence or structure, typically for purposes of error detection or indexing." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "hashsum" RELATED []
+is_a: MI:0666 ! participant attribute name
+is_a: MI:2091 ! structure representation attribute name
+created_by: orchard
+creation_date: 2012-06-07T05:54:41Z
+
+[Term]
+id: MI:1213
+name: n-venus
+namespace: PSI-MI
+def: "N-terminal region of the Venus fusion protein, created by the introduction of a point mutation into Aequorea-derived YFP, the substitution of leucine for phenylalanine at position 46 (F46L). This tag is used for split flurescence complementation assays." [PMID:22229727]
+subset: PSI-MI_slim
+is_a: MI:1135 ! venus fluorescent protein tag
+created_by: orchard
+creation_date: 2012-06-07T06:33:51Z
+
+[Term]
+id: MI:1214
+name: c-venus
+namespace: PSI-MI
+def: "C-terminal region of the Venus fusion protein, created by the introduction of a point mutation into Aequorea-derived YFP, the substitution of leucine for phenylalanine at position 46 (F46L). This tag is used for split flurescence complementation assays." [PMID:22229727]
+subset: PSI-MI_slim
+is_a: MI:1135 ! venus fluorescent protein tag
+created_by: orchard
+creation_date: 2012-06-07T06:39:30Z
+
+[Term]
+id: MI:1215
+name: bifc tag
+namespace: PSI-MI
+def: "Fusion protein which consists of either the N- or C-terminal sequence of a fluorescent or luciferase protein. Binding of the proteins of interest enable the reassembly of the molecule, indicating that an interaction has occured." [PMID:17406412]
+subset: PSI-MI_slim
+is_a: MI:0240 ! fusion protein
+created_by: orchard
+creation_date: 2012-06-07T07:13:53Z
+
+[Term]
+id: MI:1216
+name: cGFP
+namespace: PSI-MI
+def: "c-terminal fragment of green fluorescent protein used as a tag in bimolecular fluorescence complementation (BiFC)." [PMID:17406412]
+subset: PSI-MI_slim
+is_a: MI:0367 ! green fluorescent protein tag
+is_a: MI:1215 ! bifc tag
+created_by: orchard
+creation_date: 2012-06-07T07:19:55Z
+
+[Term]
+id: MI:1217
+name: nGFP
+namespace: PSI-MI
+def: "n-terminal fragment of green fluorescent protein used as a tag in bimolecular fluorescence complementation (BiFC)." [PMID:17406412]
+subset: PSI-MI_slim
+is_a: MI:0367 ! green fluorescent protein tag
+is_a: MI:1215 ! bifc tag
+created_by: orchard
+creation_date: 2012-06-07T07:20:57Z
+
+[Term]
+id: MI:1218
+name: chromosome conformation capture assay
+namespace: PSI-MI
+def: "Chromosome conformation capture,[1] or 3C, is a high-throughput molecular biology technique used to analyze the organization of chromosomes in a cell's natural state. The basic 3C technique consists of cross-linking by addition of formaldehyde followed by addition of a restriction enzyme in excess to the cross-linked DNA, separating the non-cross-linked DNA from the cross-linked chromatin. A intramolecular ligation step using very low concentrations of DNA favors the ligation of relevant DNA fragments with the corresponding junctions instead of the ligation of random fragments. There are two major types of ligation junctions that are over-represented. One is the junction that forms between neighboring DNA fragments due to incomplete digestion, which represents about 20-30% of all junctions. This number is decreased by reducing the cross-linking stringency in the first step. The other type of junctions over-represented in this technique is the junction that forms when one end of the fragment ligates with the other end of the same fragment, and contributes up to 30% of all junctions formed. High temperature then results in the reversal of the previously formed cross-links. The resulting linear DNA fragment has specific restriction ends as well as a central restriction site corresponding to the site of ligation. The pool of these fragments is collectively referred to as the 3C library." [PMID:11847345]
+subset: PSI-MI_slim
+synonym: "chip-3c" EXACT PSI-MI-short []
+is_a: MI:0402 ! chromatin immunoprecipitation assay
+created_by: orchard
+creation_date: 2012-06-07T07:25:28Z
+
+[Term]
+id: MI:1219
+name: enzyme-mediated activation of radical sources
+namespace: PSI-MI
+def: "Enzyme-mediated activation of radical sources is used  to identify partners of a given molecule on the cell surface in living cells Activation of the cross-linking reagent arylazide-biotin tag is accomplished  by an enzyme, horseradish peroxidase is featured by radical formation of the labelling reagent by horseradish peroxidase (HRP)." [PMID:21214558]
+subset: PSI-MI_slim
+synonym: "emars" EXACT PSI-MI-short []
+is_a: MI:0013 ! biophysical
+created_by: orchard
+creation_date: 2012-06-07T07:34:30Z
+
+[Term]
+id: MI:1220
+name: tag visualisation by luciferase assay
+namespace: PSI-MI
+def: "The protein is expressed as a hybrid protein fused to a tag containing a luciferase activity. Subsequence observation or measurement of luciferase activity is used to identify the presence of the molecule in an interaction." [PMID:20609414]
+subset: PSI-MI_slim
+synonym: "tag luciferase" EXACT PSI-MI-short []
+is_a: MI:0980 ! tag visualisation by enzyme assay
+created_by: orchard
+creation_date: 2012-06-11T11:52:57Z
+
+[Term]
+id: MI:1221
+name: author-based confidence
+namespace: PSI-MI
+def: "A score generated by an author, usually only relevant for that particular dataset." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "author score" EXACT PSI-MI-short []
+is_a: MI:1064 ! interaction confidence
+created_by: orchard
+creation_date: 2012-06-11T11:54:23Z
+
+[Term]
+id: MI:1222
+name: mbinfo
+namespace: PSI-MI
+def: "MBInfo is a wiki based, multimedia, educational resource providing up to date reviews on topics relating to mechanobiology (http://www.mechanobio.info/)." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0461 ! interaction database
+created_by: orchard
+creation_date: 2012-06-11T12:20:53Z
+
+[Term]
+id: MI:1223
+name: ptm decreasing an interaction	
+namespace: PSI-MI
+def: "Post translational modification on a protein observed to decrease the strength or rate of an interaction." [PMID:14744292]
+subset: PSI-MI_slim
+synonym: "decreasing-ptm" EXACT PSI-MI-short []
+is_a: MI:0925 ! observed ptm
+created_by: orchard
+creation_date: 2012-06-11T12:56:47Z
+
+[Term]
+id: MI:1224
+name: ptm increasing an interaction	
+namespace: PSI-MI
+def: "Post translational modification on a protein observed to increase the strength or rate of an interaction." [PMID:14744292]
+subset: PSI-MI_slim
+synonym: "increasing-ptm" EXACT PSI-MI-short []
+is_a: MI:0925 ! observed ptm
+created_by: orchard
+creation_date: 2012-06-11T12:58:43Z
+
+[Term]
+id: MI:1225
+name: ptm disrupting an interaction	
+namespace: PSI-MI
+def: "Post translational modification on a protein observed to disrupt the strength or rate of an interaction." [PMID:14744292]
+subset: PSI-MI_slim
+synonym: "disrupting-ptm" EXACT PSI-MI-short []
+is_a: MI:0925 ! observed ptm
+created_by: orchard
+creation_date: 2012-06-11T12:59:28Z
+
+[Term]
+id: MI:1226
+name: ampylation assay
+namespace: PSI-MI
+def: "Formation of phosphodiester or phosphoramide ester of AMP on Tyr (RESID:AA0203), Lys (RESID:AA0227), Thr (RESID:AA0267), His (RESID:AA0371) and other amino acids" [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "ampylation" RELATED []
+is_obsolete: true
+created_by: orchard
+creation_date: 2012-06-11T01:06:07Z
+
+[Term]
+id: MI:1227
+name: lap tag
+namespace: PSI-MI
+def: "Tag encoding green fluorescent protein (GFP) , a TEV cleavage site, and a second purification tag such as S peptide or 6xHis. The tag can therefore be used for both localisation and affinity purification." [PMID:15644491]
+subset: PSI-MI_slim
+synonym: "lap tag" EXACT PSI-MI-short []
+synonym: "location and purification tag" RELATED []
+is_a: MI:0677 ! tandem tag
+created_by: orchard
+creation_date: 2012-06-11T01:16:05Z
 
 [Term]
 id: MI:2002
@@ -10555,6 +11421,7 @@ def: "IUPAC International Chemical Identifier (InChI) - a machine-readable chara
 subset: PSI-MI_slim
 synonym: "inchi id" RELATED []
 synonym: "standard inchi" EXACT PSI-MI-short []
+is_a: MI:2039 ! smiles string
 is_a: MI:2091 ! structure representation attribute name
 
 [Term]
@@ -10709,7 +11576,7 @@ name: smiles string
 namespace: PSI-MI
 def: "SMILES string corresponding to drug structure" [PMID:14755292]
 subset: Drugable
-is_a: MI:2091 ! structure representation attribute name
+is_a: MI:1212 ! checksum
 
 [Term]
 id: MI:2040
