@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:06:2012 18:45
+date: 17:08:2012 07:52
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.1-rc2
 subsetdef: Drugable "Drugable Genome Project"
@@ -677,7 +677,7 @@ is_a: MI:0659 ! experimental feature detection
 id: MI:0069
 name: mass spectrometry studies of complexes
 namespace: PSI-MI
-def: "Mass spectrometric approaches to the study of protein in complexes permits the identification of subunit stoichiometry and transient associations. By preserving complexes intact in the mass spectrometer, mass measurement can be used for monitoring changes in different experimental conditions, or to investigate how variations of collision energy affect their dissociation." [PMID:12504676, PMID for application instance:12057199]
+def: "Mass spectrometric approaches to the study of macromolecular complexes permits the identification of subunit stoichiometry and transient associations. By preserving complexes intact in the mass spectrometer, mass measurement can be used for monitoring changes in different experimental conditions, or to investigate how variations of collision energy affect their dissociation." [PMID:12504676, PMID for application instance:12057199]
 subset: PSI-MI_slim
 synonym: "ms of complexes" EXACT PSI-MI-short []
 is_a: MI:0943 ! detection by mass spectrometry
@@ -1127,7 +1127,7 @@ is_a: MI:0252 ! biological feature
 id: MI:0118
 name: mutation
 namespace: PSI-MI
-def: "Sequence variation due to insertion, deletion or substitution event." [PMID:14755292]
+def: "A natural change in a sequence or structure in comparison to a reference entity due toa  insertion, deletion or substitution event." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0252 ! biological feature
 
@@ -3475,7 +3475,7 @@ is_a: MI:0505 ! experimental feature
 id: MI:0374
 name: cyanine label
 namespace: PSI-MI
-def: "The organic cyanine dyes emit in the red range (>550 nm), offer a number of advantages. Their emission range is such that background fluorescence is often reduced. In addition these molecules can be linked directly to specific locations in synthetically produced nucleic acids." [PMID:14577292]
+def: "The organic polymethine  cyanine dyes which, depending on  structure, cover the spectrum from IR to UV.s. Their emission range is such that background fluorescence is often reduced. In addition these molecules can be linked directly to specific locations in synthetically produced nucleic acids." [PMID:14577292]
 subset: PSI-MI_slim
 is_a: MI:0373 ! dye label
 is_a: MI:0857 ! fluorescent dye label
@@ -3505,7 +3505,6 @@ subset: PSI-MI_slim
 synonym: "FITC labelled" EXACT PSI-MI-alternate []
 synonym: "fitc labelled" EXACT PSI-MI-short []
 synonym: "fluorescein isothiocyanate labbeled" EXACT PSI-MI-alternate []
-is_a: MI:0373 ! dye label
 is_a: MI:0939 ! fluorescein label
 
 [Term]
@@ -3571,7 +3570,6 @@ name: alexa label
 namespace: PSI-MI
 def: "All Alexa dyes are fluorescent iodoacetamide dyes that can be conjugated with the primary amines of biomolecules. All Alexa dyes and their conjugates are more fluorescent and more photostable than the commonly used dyes. The numbers in the Alexa names indicate the approximate excitation wavelength maximum in nm)." [PMID:10449539]
 subset: PSI-MI_slim
-is_a: MI:0373 ! dye label
 is_a: MI:0857 ! fluorescent dye label
 
 [Term]
@@ -6725,7 +6723,7 @@ is_a: MI:0018 ! two hybrid
 id: MI:0729
 name: luminescence based mammalian interactome mapping
 namespace: PSI-MI
-def: "This strategy uses Renilla luciferase enzyme (RL) fused to proteins of interest, which are then coexpressed with individual Flag-tagged partners in mammalian cells. Their interactions are determined by performing an RL enzymatic assay on anti-Flag immunoprecipitates." [PMID:15761153]
+def: "This strategy uses Renilla luciferase enzyme (RL) fused to proteins of interest, which are then coexpressed with individual epitope-tagged partners in mammalian cells. Their interactions are determined by performing an RL enzymatic assay on anti-tag immunoprecipitates." [PMID:15761153]
 subset: PSI-MI_slim
 synonym: "lumier" EXACT PSI-MI-short []
 is_a: MI:0004 ! affinity chromatography technology
@@ -6752,7 +6750,7 @@ is_a: MI:0489 ! source database
 id: MI:0732
 name: red fluorescent protein tag
 namespace: PSI-MI
-def: "The red fluorescent protein derived from marine anemone Discosoma striata and reef corals belonging to the class Anthozoacan be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native." [PMID:14755292]
+def: "The red fluorescent protein derived from, for example, marine anemone Discosoma striata and reef corals belonging to the class Anthozoacan can be fused to individual proteins which then acquire fluorescence excitation and emission spectra virtually identical to those of the native." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "red fluorescent protein" EXACT PSI-MI-alternate []
 synonym: "RFP" EXACT PSI-MI-alternate []
@@ -7114,10 +7112,11 @@ is_a: MI:0240 ! fusion protein
 
 [Term]
 id: MI:0813
-name: proximity enzyme linked immunosorbent assay
+name: proximity ligation assay
 namespace: PSI-MI
-def: "Method allowing efficient and precise interaction detection, along with extensive repertoires of specific binding reagents.  It is based on proximity a ligation mechanism that enables sensitive high-capacity protein measurements by converting the detection of specific proteins to the analysis of DNA sequences. Proximity probes containing oligonucleotide extensions are designed to bind pairwise to target proteins and to form amplifiable tag sequences by ligation when brought in proximity." [PMID:15155907, PMID:\:17072308]
+def: "Upon binding of two proximity probes (usually antibodies conjugated to DNA) to the same target protein complex, the oligonucleotides on the proximity probes are brought close together. These antibody-conjugated oligonucleotides hybridize to two connector oligonucleotides that are ligated to form a circular DNA molecule. This newly formed DNA-molecule can be amplified by rolling circle amplification. The resulting single-stranded DNA-molecule collapses into a bundle, which is detectable through hybridization of fluorescently labeled complementary oligonucleotides." [PMID:15155907, PMID:\:17072308]
 subset: PSI-MI_slim
+synonym: "in situ proximity ligation assay" RELATED []
 synonym: "p elisa" EXACT PSI-MI-short []
 synonym: "pELISA" EXACT PSI-MI-alternate []
 synonym: "pLISA" RELATED []
@@ -7426,12 +7425,12 @@ is_a: MI:0845 ! spin label
 
 [Term]
 id: MI:0847
-name: dansyl tag
+name: dansyl label
 namespace: PSI-MI
-def: "Dansyl is fluorescent tag. Dansyl is the acronyme of 5-dimethylaminonaphthalene-1-sulfonyl radical group reacting with any NH2 groups." [PMID:14755292]
+def: "Dansyl is the acronym of 5-dimethylaminonaphthalene-1-sulfonyl radical group reacting with any NH2 groups." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "5-dimethylaminonaphthalene-1-sulfonyl tag" EXACT PSI-MI-alternate []
-synonym: "dansyl label" EXACT PSI-MI-alternate []
+synonym: "dansyl tag" EXACT PSI-MI-alternate []
 is_a: MI:0857 ! fluorescent dye label
 
 [Term]
@@ -7534,6 +7533,7 @@ namespace: PSI-MI
 def: "Dye label containing a  fluorophore  which  absorb energy of a specific wavelength and re-emit energy at a different (but equally specific) wavelength." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "fluorescent dye" EXACT PSI-MI-short []
+is_a: MI:0373 ! dye label
 is_a: MI:0856 ! fluorophore
 
 [Term]
@@ -7590,11 +7590,11 @@ is_a: MI:0861 ! protein a tag
 id: MI:0863
 name: thiol reactive lanthanide label
 namespace: PSI-MI
-def: "Thiol-reactive lanthanide complexes have been synthesized that are luminescent when bound to terbium and/or europium. The Tb3+-DTPA-cs124-EMCH complexes consist of a diethylenetriaminepentaacetate (DTPA) chelate covalently joined through one amide bond to a chromophore, carbostyril 124, and via a second amide bond to a maleimide, bromoacetamide, or pyridyldithio moiety. This label can be Site-specific attachted to both proteins and DNA." [PMID:10077482]
+def: "Thiol-reactive lanthanide complexes have been synthesized that are luminescent when bound to terbium and/or europium. The Tb3+-DTPA-cs124-EMCH complexes consist of a diethylenetriaminepentaacetate (DTPA) chelate covalently joined through one amide bond to a chromophore, carbostyril 124, and via a second amide bond to a maleimide, bromoacetamide, or pyridyldithio moiety. This label can be Site-specific attached to both proteins and DNA." [PMID:10077482]
 subset: PSI-MI_slim
 synonym: "Tb3+-DTPA-cs124-EMCH" EXACT PSI-MI-alternate []
 synonym: "thiol lanthanide" EXACT PSI-MI-short []
-is_a: MI:0505 ! experimental feature
+is_a: MI:1256 ! luminscent dye label
 
 [Term]
 id: MI:0864
@@ -8589,7 +8589,7 @@ creation_date: 2010-04-09T03:11:54Z
 id: MI:0975
 name: fc-igg tag
 namespace: PSI-MI
-def: "A fusion protein tag consisting of a portion of the constant region of human IgG1." [PMID:11757069]
+def: "A fusion protein tag consisting of a portion of the constant region of IgG." [PMID:11757069]
 subset: PSI-MI_slim
 is_a: MI:0240 ! fusion protein
 created_by: orchard
@@ -8940,7 +8940,7 @@ creation_date: 2010-04-26T01:34:07Z
 id: MI:1007
 name: glycosylase assay
 namespace: PSI-MI
-def: "Measurement of the covalent attachment of a glycosyl residue to one or more monomeric units in a polypeptide, polynucleotide, polysaccharide, or other biological polymer." [PMID:14760721]
+def: "Measurement of the covalently attachment of glycosyl residues to one or more monomeric units in a polypeptide, polynucleotide, polysaccharide, or other biological polymer." [PMID:14760721]
 subset: PSI-MI_slim
 synonym: "glycosylation" RELATED []
 is_a: MI:0415 ! enzymatic study
@@ -11292,7 +11292,7 @@ creation_date: 2012-06-11T12:20:53Z
 
 [Term]
 id: MI:1223
-name: ptm decreasing an interaction	
+name: ptm decreasing an interaction
 namespace: PSI-MI
 def: "Post translational modification on a protein observed to decrease the strength or rate of an interaction." [PMID:14744292]
 subset: PSI-MI_slim
@@ -11303,7 +11303,7 @@ creation_date: 2012-06-11T12:56:47Z
 
 [Term]
 id: MI:1224
-name: ptm increasing an interaction	
+name: ptm increasing an interaction
 namespace: PSI-MI
 def: "Post translational modification on a protein observed to increase the strength or rate of an interaction." [PMID:14744292]
 subset: PSI-MI_slim
@@ -11314,7 +11314,7 @@ creation_date: 2012-06-11T12:58:43Z
 
 [Term]
 id: MI:1225
-name: ptm disrupting an interaction	
+name: ptm disrupting an interaction
 namespace: PSI-MI
 def: "Post translational modification on a protein observed to disrupt the strength or rate of an interaction." [PMID:14744292]
 subset: PSI-MI_slim
@@ -11345,6 +11345,368 @@ synonym: "location and purification tag" RELATED []
 is_a: MI:0677 ! tandem tag
 created_by: orchard
 creation_date: 2012-06-11T01:16:05Z
+
+[Term]
+id: MI:1228
+name: pyo tag
+namespace: PSI-MI
+def: "A polyoma virus-derived (Pyo) epitope tag (amino acids MEYMPME)." [PMID:9371754]
+subset: PSI-MI_slim
+is_a: MI:0507 ! tag
+created_by: orchard
+creation_date: 2012-08-10T07:28:55Z
+
+[Term]
+id: MI:1229
+name: uridylation assay
+namespace: PSI-MI
+def: "Measures  the formation of a phosphodiester or phosphoramide ester of UMP and an amino acid (MOD:01166)." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0415 ! enzymatic study
+created_by: orchard
+creation_date: 2012-08-10T07:46:07Z
+
+[Term]
+id: MI:1230
+name: uridylation reaction
+namespace: PSI-MI
+def: "The formation of a phosphodiester or phosphoramide ester of UMP and amino acid (MOD:01166)." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "umpylation" RELATED []
+synonym: "uridylation" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+created_by: orchard
+creation_date: 2012-08-10T07:50:08Z
+
+[Term]
+id: MI:1231
+name: aminomethylcoumarin label
+namespace: PSI-MI
+def: "AMC (aminomethylcoumarin ) is a blue fluorescent tag with reactive derivatives that are used as contrasting probes for double- and triple-labeling in immunofluorescence microscopy, arrays and in situ hybridization and can be attached to proteins or small molecules for reaction monitoring." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "AMC label" EXACT PSI-MI-short []
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2012-08-10T07:59:18Z
+
+[Term]
+id: MI:1232
+name: aggregation assay
+namespace: PSI-MI
+def: "An interaction between two proteins is inferred from monitoring the effect of the presence of one of them  on the aggregation state of the second." [PMID:22179788]
+subset: PSI-MI_slim
+synonym: "aggregation" EXACT PSI-MI-short []
+is_a: MI:0401 ! biochemical
+created_by: orchard
+creation_date: 2012-08-10T08:07:15Z
+
+[Term]
+id: MI:1233
+name: resulting-cleavage
+namespace: PSI-MI
+def: "The cleavage which results due to the action of a proteolytic enzyme on its substrate." [PMID:14755292]
+comment: Any feature range given should span the cleavage region e.g. 102-103 if the peptide bond between residues 102 and 103 is cut.
+subset: PSI-MI_slim
+is_a: MI:0639 ! resulting-ptm
+created_by: orchard
+creation_date: 2012-08-10T08:14:45Z
+
+[Term]
+id: MI:1234
+name: silac
+namespace: PSI-MI
+def: "SILAC (Stable Isotope Labeling by Amino acids in Cell culture) can be used to detect  features (typically PTMs) required for a given interaction." [PMID:17139335, PMID:18369856]
+subset: PSI-MI_slim
+is_a: MI:0659 ! experimental feature detection
+created_by: orchard
+creation_date: 2012-08-10T08:45:50Z
+
+[Term]
+id: MI:1235
+name: thermal shift binding
+namespace: PSI-MI
+def: "Ligand binding to a target protein can stabilize a protein's native state, as shown in the increase of the bound protein's melting temperature. The midpoint of the melting curve of a protein will increase in the presence of ligands that bind more tightly to the native state than the unfolded state." [PMID: 22052482]
+subset: PSI-MI_slim
+synonym: "thermal shift" EXACT PSI-MI-short []
+synonym: "thermshift binding assay" RELATED []
+is_a: MI:0013 ! biophysical
+created_by: orchard
+creation_date: 2012-08-10T08:52:14Z
+
+[Term]
+id: MI:1236
+name: proline isomerase assay
+namespace: PSI-MI
+def: "Measurment of the  conversion between cis- and trans- peptide bonds formed by the amine group of a proline. Peptide bonds to proline, and to other N-substituted amino acids (such as sarcosine), are able to populate both the cis and trans isomers  the cis and trans isomers of the X-Pro peptide bond (where X represents any amino acid) both experience steric clashes with the neighboring substitution and are nearly equal energetically. Hence, the fraction of X-Pro peptide bonds in the cis isomer under unstrained conditions ranges from 10-40%; the fraction depends slightly on the preceding amino acid, with aromatic residues favoring the cis isomer slightly." [PMID:9344417]
+subset: PSI-MI_slim
+is_a: MI:1249 ! isomerase assay
+created_by: orchard
+creation_date: 2012-08-10T08:56:38Z
+
+[Term]
+id: MI:1237
+name: proline isomerization  reaction
+namespace: PSI-MI
+def: "The conversion between cis- and trans- peptide bonds formed by the amine group of a proline." [PMID:9344417]
+subset: PSI-MI_slim
+is_a: MI:1250 ! isomerase reaction
+created_by: orchard
+creation_date: 2012-08-10T09:02:28Z
+
+[Term]
+id: MI:1238
+name: mass spectrometry studies of subunit exchange
+namespace: PSI-MI
+def: "Heavy/light isotope-labelled subunits are prepared and allowed to form their respective mature oligomeric structure. Oligomers are then mixed and subunit exchange is monitored, usually by electrospray ionisation-ion mobility spectrometry-mass spectrometry." [PMID:20351246]
+subset: PSI-MI_slim
+synonym: "ms subunit exchange" EXACT PSI-MI-short []
+is_a: MI:0069 ! mass spectrometry studies of complexes
+created_by: orchard
+creation_date: 2012-08-10T09:11:36Z
+
+[Term]
+id: MI:1239
+name: amino-acid variant
+namespace: PSI-MI
+def: "A naturally-occuring amino-acid variation to the reference sequence, including polymorphisms, variations between strains, isolates or cultivars, disease-associated mutations and RNA editing events." [PMID:18175334]
+subset: PSI-MI_slim
+synonym: "SAP" RELATED []
+synonym: "single amino-acid polymorphism" RELATED []
+is_a: MI:1241 ! variant
+created_by: orchard
+creation_date: 2012-08-10T09:20:55Z
+
+[Term]
+id: MI:1240
+name: disease causing amino-acid variant
+namespace: PSI-MI
+def: "A naturally-occuring amino-acid variation to the reference sequence which results in the organism developing, or becoming susceptible to a particular disease condition." [PMID:18175334]
+synonym: "disease aa variant" EXACT PSI-MI-short []
+synonym: "disease sap" RELATED []
+synonym: "disease single amino acid polymorphism" RELATED []
+is_a: MI:1239 ! amino-acid variant
+created_by: orchard
+creation_date: 2012-08-10T09:28:06Z
+
+[Term]
+id: MI:1241
+name: variant
+namespace: PSI-MI
+def: "A natural change in a sequence or structure in comparison to a reference entity." []
+is_a: MI:0118 ! mutation
+is_a: MI:0252 ! biological feature
+created_by: orchard
+creation_date: 2012-08-10T09:32:29Z
+
+[Term]
+id: MI:1242
+name: fc-igg1
+namespace: PSI-MI
+def: "A fusion protein tag consisting of a portion of the constant region of IgG1." [PMID:11757069]
+subset: PSI-MI_slim
+is_a: MI:0975 ! fc-igg tag
+created_by: orchard
+creation_date: 2012-08-10T10:10:25Z
+
+[Term]
+id: MI:1243
+name: fc-igg2
+namespace: PSI-MI
+def: "A fusion protein tag consisting of a portion of the constant region of IgG2." [PMID:11757069]
+subset: PSI-MI_slim
+is_a: MI:0975 ! fc-igg tag
+created_by: orchard
+creation_date: 2012-08-10T10:14:13Z
+
+[Term]
+id: MI:1244
+name: mkate2
+namespace: PSI-MI
+def: "Monomeric far-red fluorescent protein generated from the wild-type RFP from sea anemone Entacmaea quadricolor. It possesses bright fluorescence with excitation/emission maxima at 588 and 635 nm, respectively." [PMID:17721542]
+subset: PSI-MI_slim
+is_a: MI:0732 ! red fluorescent protein tag
+created_by: orchard
+creation_date: 2012-08-10T11:22:13Z
+
+[Term]
+id: MI:1245
+name: mkate
+namespace: PSI-MI
+def: "Monomeric far-red fluorescent protein generated from the wild-type RFP from sea anemone Entacmaea quadricolor. It possesses bright fluorescence with excitation/emission maxima at 588 and 635 nm, respectively." [PMID:17721542]
+subset: PSI-MI_slim
+synonym: "TagFP635" RELATED []
+is_a: MI:0732 ! red fluorescent protein tag
+created_by: orchard
+creation_date: 2012-08-10T11:48:12Z
+
+[Term]
+id: MI:1246
+name: ion mobility mass spectrometry of complexes
+namespace: PSI-MI
+def: "IM-MS analysis is performed by first ionizing the protein complex of interest followed by ion mobility separation according to their cross-section-to-charge (Q/z) ratio. After separation, ions are sampled by a mass spectrometer and analyzed according to their mass-to-charge (m/z) ratio. Combined knowledge of both Q/z and m/z can be used to infer the size and shape of the complex." [PMID:18600219]
+subset: PSI-MI_slim
+synonym: "<new synonym>iM-MS" RELATED []
+synonym: "ion mobility mass spec" EXACT PSI-MI-short []
+is_a: MI:0069 ! mass spectrometry studies of complexes
+created_by: orchard
+creation_date: 2012-08-10T11:56:05Z
+
+[Term]
+id: MI:1247
+name: mst
+namespace: PSI-MI
+def: "Measurement of the directed movement of particles in a microscopic temperature gradient. Any change of the hydration shell of biomolecules due to changes in their structure/conformation results in a relative change of movement along the temperature gradient and is used to determine binding affinities, binding kinetics and activity kinetics. Events such as the phosphorylation of a protein or the binding of small molecules to a target can be monitored." [PMID: 17164337]
+subset: PSI-MI_slim
+synonym: "mst" EXACT PSI-MI-short []
+is_a: MI:0013 ! biophysical
+created_by: orchard
+creation_date: 2012-08-10T12:20:37Z
+
+[Term]
+id: MI:1248
+name: bodipy label
+namespace: PSI-MI
+def: "Composed of dipyrromethene complexed with a disubstituted boron atom, typically a BF2 unit. Notable for their uniquely small Stokes shift, high, environment-independent fluorescence quantum yields." [PMID:19067126]
+subset: PSI-MI_slim
+synonym: "4,4-difluoro-4-bora-3a,4a-diaza-s-indacene" RELATED []
+synonym: "boron-dipyrromethene label" RELATED []
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2012-08-10T12:34:54Z
+
+[Term]
+id: MI:1249
+name: isomerase assay
+namespace: PSI-MI
+def: "Measurement of the catalysis of the structural rearrangement of isomers." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0415 ! enzymatic study
+created_by: orchard
+creation_date: 2012-08-10T12:45:27Z
+
+[Term]
+id: MI:1250
+name: isomerase reaction
+namespace: PSI-MI
+def: "The catalysis of the structural rearrangement of isomers." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0414 ! enzymatic reaction
+created_by: orchard
+creation_date: 2012-08-10T12:51:00Z
+
+[Term]
+id: MI:1251
+name: methylmalonyl-CoA isomerase reaction
+namespace: PSI-MI
+def: "The catalysis of the conversion of methylmalonyl-CoA to succinyl-CoA by transfer of the carbonyl group. It requires a cobamide coenzyme. EC 5.4.99.2." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:1250 ! isomerase reaction
+created_by: orchard
+creation_date: 2012-08-10T01:23:35Z
+
+[Term]
+id: MI:1252
+name: methylmalonyl-CoA isomerase asf say
+namespace: PSI-MI
+def: "The catalysis othe conversion of methylmalonyl-CoA to succinyl-CoA by transfer of the carbonyl group. It requires a cobamide coenzyme. EC 5.4.99.2" [PMID:147292]
+subset: PSI-MI_slim
+is_a: MI:1249 ! isomerase assay
+created_by: orchard
+creation_date: 2012-08-10T01:29:23Z
+
+[Term]
+id: MI:1253
+name: atto 532
+namespace: PSI-MI
+def: "Fluorescent tag - maleimide couples to thiols." [PMID:14760721]
+subset: PSI-MI_slim
+synonym: "atto 532 maleimide" EXACT []
+synonym: "atto532" RELATED []
+is_a: MI:1092 ! atto label
+created_by: orchard
+creation_date: 2012-08-10T01:49:01Z
+
+[Term]
+id: MI:1254
+name: atto 647
+namespace: PSI-MI
+def: "Fluorescent tag - maleimide couples to thiols." [PMID:14760721]
+subset: PSI-MI_slim
+synonym: "atto 647 maleimide" EXACT []
+synonym: "atto647" RELATED []
+is_a: MI:1092 ! atto label
+created_by: orchard
+creation_date: 2012-08-10T01:51:00Z
+
+[Term]
+id: MI:1255
+name: stilbene label
+namespace: PSI-MI
+def: "1,2-Diphenylethene" [PMID:16287229]
+subset: PSI-MI_slim
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2012-08-10T01:56:28Z
+
+[Term]
+id: MI:1256
+name: luminscent dye label
+namespace: PSI-MI
+def: "Luminescent dyes such as cyanines,commonly used for DNA labelling." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0373 ! dye label
+created_by: orchard
+creation_date: 2012-08-10T02:18:02Z
+
+[Term]
+id: MI:1257
+name: rhodamine label
+namespace: PSI-MI
+def: "Rhodamines are supplements to fluoresceins, as they offer longer wavelength emission maxima and provide opportunities for multicolor labeling or staining." [PMID:12622145]
+subset: PSI-MI_slim
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2012-08-10T02:39:00Z
+
+[Term]
+id: MI:1258
+name: tetramethyl rhodamine label
+namespace: PSI-MI
+def: "Tetramethyl rhodamine - a derivative of rhodamine." [PMID:12622145]
+subset: PSI-MI_slim
+is_a: MI:1257 ! rhodamine label
+created_by: orchard
+creation_date: 2012-08-10T02:44:52Z
+
+[Term]
+id: MI:1259
+name: acrylodan label
+namespace: PSI-MI
+def: "The thiol reactive acrylodan (6-acryloyl-2-dimethylaminonaphthalene) generally reacts with thiols more slowly than iodoacetamides or maleimides, but does form very strong thioether bonds that are expected to remain stable under conditions required for complete amino acid analysis. The fluorescence emission peak and intensity of these adducts are particularly sensitive to conformational changes or ligand binding." [PMID:12622145]
+subset: PSI-MI_slim
+synonym: "6-acryloyl-2-dimethylaminonaphthalene" RELATED []
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2012-08-10T02:55:26Z
+
+[Term]
+id: MI:1260
+name: pyrene label
+namespace: PSI-MI
+def: "Pyrene is a polycyclic aromatic hydrocarbon (PAH) consisting of four fused benzene rings, resulting in a flat aromatic system. The chemical formula is C16H10. Its derivatives are  valuable molecular probes via fluorescence spectroscopy, having a high quantum yield and lifetime." [PMID:12622145]
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2012-08-10T03:09:54Z
+
+[Term]
+id: MI:1261
+name: oregon green label
+namespace: PSI-MI
+def: "Oregon Green 488 and Oregon Green 514 dyes are fluorinated analogs of fluoresceins" [PMID:12622145]
+subset: PSI-MI_slim
+is_a: MI:0939 ! fluorescein label
+created_by: orchard
+creation_date: 2012-08-10T03:17:05Z
 
 [Term]
 id: MI:2002
