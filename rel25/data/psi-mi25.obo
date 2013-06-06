@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:06:2013 10:50
+date: 06:06:2013 11:31
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Drugable "Drugable Genome Project"
@@ -6934,7 +6934,7 @@ is_a: MI:0933 ! negative genetic interaction
 
 [Term]
 id: MI:0795
-name: asynthetic 
+name: asynthetic
 namespace: PSI-MI
 def: "An effect in which individual perturbations of different genes and their combination result in the same mutant phenotype, to the same degree of severity/penetrance. With respect to any single quantifiable phenotype, this may be expressed as an inequality as: \n\na = b = ab != wt\n\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations, 'ab' is the observed phenotype value of the double perturbation, and 'wt' is the wild type phenotype value." [PMID:15833125]
 subset: PSI-MI_slim
@@ -8180,7 +8180,7 @@ is_obsolete: true
 
 [Term]
 id: MI:0932
-name: noninteractive 
+name: noninteractive
 namespace: PSI-MI
 def: "The observation that, when tested, no interaction was observed between two or more genes, for a given phenotype. In other words, the phenotype of the combined perturbations a and b result in the expected phenotype." [PMID:15833125]
 subset: PSI-MI_slim
@@ -10882,7 +10882,7 @@ namespace: PSI-MI
 def: "DNA adenine methyltransferase identification is used to map the binding sites of DNA- and chromatin-binding proteins in eukaryotes. DamID identifies binding sites by expressing the proposed DNA-binding protein as a fusion protein with DNA methyltransferase. Binding of the protein of interest to DNA localizes the methyltransferase in the region of the binding site. Adenosine methylation does not occur naturally in eukaryotes and therefore adenine methylation in any region can be concluded to have been caused by the fusion protein, implying the region is located near a binding site." [PMID:10748524]
 subset: PSI-MI_slim
 synonym: "DamID" EXACT PSI-MOD-short []
-is_a: MI:0400 ! affinity technology
+is_a: MI:1313 ! proximity labelling technology
 created_by: orchard
 creation_date: 2012-06-07T02:13:03Z
 
@@ -12199,7 +12199,7 @@ creation_date: 2013-06-06T10:26:19Z
 id: MI:1309
 name: de-ADP-ribosylation assay
 namespace: PSI-MI
-def: "Hydrolytic reactions that release ADP-ribose." [PMID:23474712 , PMID:23474714]
+def: "Hydrolytic reactions that release ADP-ribose." [PMID:23474712, PMID:23474714]
 subset: PSI-MI_slim
 synonym: "mono-ADP-ribosylhydrolase" EXACT []
 is_a: MI:0415 ! enzymatic study
@@ -12210,7 +12210,7 @@ creation_date: 2013-06-06T10:31:58Z
 id: MI:1310
 name: de-ADP-ribosylation reaction
 namespace: PSI-MI
-def: "Measure of  hydrolytic reactions that release ADP-ribose." [PMID:23474712 , PMID:23474714]
+def: "Measure of  hydrolytic reactions that release ADP-ribose." [PMID:23474712, PMID:23474714]
 subset: PSI-MI_slim
 synonym: "mono-ADP-ribosylhydrolase reaction" RELATED []
 is_a: MI:0414 ! enzymatic reaction
@@ -12238,6 +12238,27 @@ synonym: "acetic acid/urea/triton PAGE" RELATED []
 is_a: MI:0807 ! comigration in gel electrophoresis
 created_by: orchard
 creation_date: 2013-06-06T10:43:24Z
+
+[Term]
+id: MI:1313
+name: proximity labelling technology
+namespace: PSI-MI
+def: "Methods depend on the close proximity of two molecules - a protein fused to the bait can then modify any neighbouring prey proteins. The resulting tag can be used for isolation and/or identification." [PMID:22412018]
+subset: PSI-MI_slim
+is_a: MI:0400 ! affinity technology
+created_by: orchard
+creation_date: 2013-06-06T11:20:43Z
+
+[Term]
+id: MI:1314
+name: proximity-dependent biotin identification
+namespace: PSI-MI
+def: "A promiscuous biotin protein ligase is fused to the bait protein, neighbouring prey are then biotinylated. The biotin tag may be used for isolation and/or identification." [PMID:22412018]
+subset: PSI-MI_slim
+synonym: "BioID" RELATED []
+is_a: MI:1313 ! proximity labelling technology
+created_by: orchard
+creation_date: 2013-06-06T11:23:53Z
 
 [Term]
 id: MI:2002
