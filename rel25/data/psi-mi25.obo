@@ -12482,14 +12482,6 @@ created_by: orchard
 creation_date: 2014-01-09T11:17:32Z
 
 [Term]
-id: MI:1335
-name: <new term>
-namespace: PSI-MI
-is_obsolete: true
-created_by: orchard
-creation_date: 2014-01-20T11:55:35Z
-
-[Term]
 id: MI:1336
 name: experiment database
 namespace: PSI-MI
