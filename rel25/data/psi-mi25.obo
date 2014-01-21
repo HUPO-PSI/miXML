@@ -12469,6 +12469,7 @@ namespace: PSI-MI
 def: "A global unique identifier to identify interactions that are identical. A RIG identifier (RIGID) is constructed by concatenating ROGID MI:1335 (after sorting them in ascending lexicographical order ), applying the SHA-1 algorithm to the resulting string, converting the digest to its base64 representation and removing all trailing \"=\" characters used for padding." [PMID:18823568]
 subset: PSI-MI_slim
 is_a: MI:1212 ! checksum
+is_a: MI:0664 ! interaction attribute name
 created_by: orchard
 creation_date: 2014-01-09T11:17:32Z
 
