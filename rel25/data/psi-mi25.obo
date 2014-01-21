@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:01:2014 15:09
+date: 21:01:2014 10:18
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Drugable "Drugable Genome Project"
@@ -3888,7 +3888,6 @@ namespace: PSI-MI
 def: "Catalysis of the transfer of a phosphate group, usually from ATP, to a protein substrate." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0841 ! phosphotransferase assay
-is_a: MI:1325 ! sulfurtransferase assay
 
 [Term]
 id: MI:0425
@@ -12289,27 +12288,29 @@ namespace: PSI-MI
 def: "The ELM resource provides a database of curated short linear motif classes and instances, as well as a sequence analysis tool to detect putative short linear motif instances in query sequences. http://elm.eu.org/" [PMID:22110040]
 synonym: "elm" EXACT PSI-MI-short []
 xref: id-validation-regexp:\"[A-Za-z_0-9\]+$\"
-xref: search-url:http\://elm.eu.org/elms/elmPages/\{ac}.html 
+xref: search-url:http\://elm.eu.org/elms/elmPages/\{ac}.html
 is_a: MI:0447 ! feature database
 created_by: orchard
 creation_date: 2013-10-22T09:49:10Z
 
 [Term]
 id: MI:1318
-name: sulphate donor
+name: sulfate donor
 namespace: PSI-MI
 def: "Any molecule that is able to transfer a sulphate group to another chemical species." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "sulphate donor" RELATED []
 is_a: MI:0918 ! donor
 created_by: orchard
 creation_date: 2014-01-08T07:51:29Z
 
 [Term]
 id: MI:1319
-name: sulphate acceptor
+name: sulfate acceptor
 namespace: PSI-MI
 def: "Molecule to which a sulphate group may be transferred from a sulphate donor." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "sulphate acceptor" RELATED []
 is_a: MI:0919 ! acceptor
 created_by: orchard
 creation_date: 2014-01-08T07:52:46Z
@@ -12480,6 +12481,16 @@ subset: PSI-MI_slim
 is_a: MI:1212 ! checksum
 created_by: orchard
 creation_date: 2014-01-09T11:17:32Z
+
+[Term]
+id: MI:1335
+name: standard inchi key
+namespace: PSI-MI
+def: "The Standard InChIKey has five distinct components, a 14-character hash of the basic (Mobile-H) InChI layer, an 8-character hash of the remaining layers (except for the /p segment, which accounts for added or removed protons: it is not hashed at all; the number of protons is encoded at the end of the standard InChIKey.) , a 1 flag character, a 1 version character and the last character is a [de]protonation indicator. The overall length of InChIKey is fixed at 27 characters, including separators (dashes)." [PMID:23343401]
+subset: PSI-MI_slim
+is_a: MI:2010 ! standard inchi
+created_by: orchard
+creation_date: 2014-01-21T10:14:02Z
 
 [Term]
 id: MI:1336
