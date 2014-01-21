@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:06:2013 11:31
+date: 20:01:2014 15:09
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Drugable "Drugable Genome Project"
@@ -1078,7 +1078,7 @@ synonym: "membrane yeast two-hybrid" RELATED []
 synonym: "myth" RELATED []
 synonym: "split-ubiquitin" RELATED []
 synonym: "ub reconstruction" EXACT PSI-MI-short []
-is_a: MI:0090 ! protein complementation assay
+is_a: MI:1320 ! membrane yeast two hybrid
 
 [Term]
 id: MI:0113
@@ -2510,21 +2510,21 @@ is_a: MI:0353 ! cross-reference type
 id: MI:0244
 name: reactome complex
 namespace: PSI-MI
-def: "Collection of functional complexes within Reactome - a knowledgebase of biological processes.\nhttp://www.reactome.org/" [PMID:21067998]
+def: "Collection of functional complexes within Reactome - a knowledgebase of biological processes.\nhttp://www.reactome.org/. OSOLETE - this concept no longer exists within Reactome." [PMID:21067998]
 subset: PSI-MI_slim
 xref: id-validation-regexp:\"REACT_[0-9\]\{1\,5}\\.[0-9\]\{1\,3}|[0-9\]+\"
 xref: search-url: "http://www.reactome.org/cgi-bin/eventbrowser?ID=${ac}"
-is_a: MI:0467 ! reactome
+is_obsolete: true
 
 [Term]
 id: MI:0245
 name: reactome protein
 namespace: PSI-MI
-def: "Collection of protein within the Reactome database - a knowledgebase of biological processes.\nhttp://www.reactome.org/" [PMID:21067998]
+def: "Collection of protein within the Reactome database - a knowledgebase of biological processes.\nhttp://www.reactome.org/. OBSOLETE - this concept no longer exists within Reactome." [PMID:21067998]
 subset: PSI-MI_slim
 xref: id-validation-regexp:\"REACT_[0-9\]\{1\,4}\\.[0-9\]\{1\,3}|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\]\{3}[0-9\]\{5}|[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
 xref: search-url: "http://www.reactome.org/cgi-bin/link?SOURCE=UNIPROT&ID=${ac}"
-is_a: MI:0467 ! reactome
+is_obsolete: true
 
 [Term]
 id: MI:0246
@@ -3731,7 +3731,7 @@ is_a: MI:0415 ! enzymatic study
 id: MI:0407
 name: direct interaction
 namespace: PSI-MI
-def: "Interaction that is proven to involve only its interactors." [PMID:14755292]
+def: "Interaction between molecules that are in direct contact with each other." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0915 ! physical association
 
@@ -3790,7 +3790,6 @@ synonym: "band shift" EXACT PSI-MI-alternate []
 synonym: "emsa" EXACT PSI-MI-short []
 synonym: "Gel retardation assay" EXACT PSI-MI-alternate []
 is_a: MI:0807 ! comigration in gel electrophoresis
-is_a: MI:0892 ! solid phase assay
 
 [Term]
 id: MI:0414
@@ -3889,6 +3888,7 @@ namespace: PSI-MI
 def: "Catalysis of the transfer of a phosphate group, usually from ATP, to a protein substrate." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0841 ! phosphotransferase assay
+is_a: MI:1325 ! sulfurtransferase assay
 
 [Term]
 id: MI:0425
@@ -4324,6 +4324,7 @@ subset: PSI-MI_slim
 synonym: "Genome Knowledge Base" EXACT PSI-MI-alternate []
 synonym: "GKB" EXACT PSI-MI-alternate []
 synonym: "Reactome" EXACT PSI-MI-alternate []
+xref: id-validation-regexp:\"REACT_\\d+(\\.\\d+)?$\"
 is_a: MI:1106 ! pathways database
 
 [Term]
@@ -6187,7 +6188,7 @@ is_a: MI:0590 ! attribute name
 id: MI:0670
 name: imex
 namespace: PSI-MI
-def: "International Molecular Interaction Exchange." [PMID:14755292]
+def: "International Molecular Interaction Exchange." [PMID:22453911]
 subset: PSI-MI_slim
 synonym: "IMEx" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
@@ -6210,10 +6211,11 @@ is_a: MI:0665 ! experiment attibute name
 
 [Term]
 id: MI:0673
-name: complex-synonym
+name: complex synonym
 namespace: PSI-MI
 def: "Alternative names to describe a complex." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "complex-synonym" EXACT []
 is_a: MI:1041 ! synonym
 
 [Term]
@@ -7387,7 +7389,7 @@ is_a: MI:0415 ! enzymatic study
 id: MI:0842
 name: phosphate donor
 namespace: PSI-MI
-def: "Any molecule that is able to transfer an phosphate to another chemical species." [PMID:14755292]
+def: "Any molecule that is able to transfer a phosphate group to another chemical species." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0918 ! donor
 
@@ -7395,7 +7397,7 @@ is_a: MI:0918 ! donor
 id: MI:0843
 name: phosphate acceptor
 namespace: PSI-MI
-def: "Molecule to which a phosphate may be transferred from a phosphate donor." [PMID:14755292]
+def: "Molecule to which a phosphate group may be transferred from a phosphate donor." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0919 ! acceptor
 
@@ -7403,7 +7405,7 @@ is_a: MI:0919 ! acceptor
 id: MI:0844
 name: phosphotransfer reaction
 namespace: PSI-MI
-def: "Reaction where a phosphate is transferred between two proteins of a phosphorelay system. " [PMID:14755292, PMID:16712436]
+def: "Reaction where a phosphate is transferred between two proteins of a phosphorelay system." [PMID:14755292, PMID:16712436]
 subset: PSI-MI_slim
 synonym: "phosphotransfer" EXACT PSI-MI-short []
 is_a: MI:0414 ! enzymatic reaction
@@ -8014,7 +8016,7 @@ is_a: MI:0912 ! spdp cross linker
 id: MI:0914
 name: association
 namespace: PSI-MI
-def: "Molecules that are experimentally shown to be associated potentially by sharing just one interactor. Often associated molecules are co-purified by a pull-down or coimmunoprecipitation and share the same bait molecule." [PMID:14755292]
+def: "Interaction between molecules that may participate in formation of one, but possibly more, physical complexes. Often describes a set of molecules that are co-purified in a single pull-down or coimmunoprecipitation but might participate in formation of distinct physical complexes sharing a common bait." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0190 ! interaction type
 
@@ -8022,7 +8024,7 @@ is_a: MI:0190 ! interaction type
 id: MI:0915
 name: physical association
 namespace: PSI-MI
-def: "Molecules that are experimentally shown to belong to the same functional or structural complex." [PMID:14755292]
+def: "Interaction between molecules within the same physical complex. Often identified under conditions which suggest that the molecules are in close proximity but not necessarily in direct contact with each other." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0914 ! association
 
@@ -8543,7 +8545,7 @@ namespace: PSI-MI
 def: "InChIKeys consist of 14 characters resulting from a hash of the connectivity information of the InChI, followed by a hyphen, followed by 9 characters resulting from a hash of the remaining layers of the InChI, followed by a single character indication the version of InChI used, another hyphen, followed by single checksum character" [PMID:15889163]
 subset: Drugable
 synonym: "inchi key" EXACT PSI-MI-short []
-is_a: MI:2010 ! standard inchi
+is_a: MI:2091 ! structure representation attribute name
 created_by: orchard
 creation_date: 2009-10-28T01:13:25Z
 
@@ -8658,7 +8660,7 @@ creation_date: 2010-04-21T03:18:09Z
 id: MI:0981
 name: tag visualisation by peroxidase activity
 namespace: PSI-MI
-def: "The protein is expressed as a hybrid protein fused to a tag containing a peroxidase activity. Subsequence observation or measurement of peroxidase activity is used to identify the presence of the molecule in an interaction." [PMID:14755292]
+def: "The protein is expressed as a hybrid protein fused to a tag containing a peroxidase activity. Subsequent observation or measurement of peroxidase activity is used to identify the presence of the molecule in an interaction." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "tag perox activity" EXACT PSI-MI-short []
 is_a: MI:0980 ! tag visualisation by enzyme assay
@@ -9976,7 +9978,7 @@ namespace: PSI-MI
 def: "The Standard InChIKey has five distinct components, a 14-character hash of the basic (Mobile-H) InChI layer, an 8-character hash of the remaining layers (except for the /p segment, which accounts for added or removed protons: it is not hashed at all; the number of protons is encoded at the end of the standard InChIKey.) , a 1 flag character, a 1 version character and the last character is a [de]protonation indicator. The overall length of InChIKey is fixed at 27 characters, including separators (dashes)" [PMC:2867152]
 synonym: "standard inchi key" EXACT PSI-MI-short []
 synonym: "standard inchikey" EXACT PSI-MI-short []
-is_a: MI:0970 ! inchi key
+is_obsolete: true
 created_by: orchard
 creation_date: 2011-07-06T09:02:25Z
 
@@ -10245,7 +10247,7 @@ creation_date: 2012-01-03T01:10:25Z
 id: MI:1126
 name: self interaction
 namespace: PSI-MI
-def: "A region of a molecule which is  involved in an inter-molecular interaction." [PMID:14755292]
+def: "Intra-molecular interaction between two or more regions of the same molecule." [PMID:14755292]
 comment: The corresponding experimental role will be self/putative self. Not to be used for autocatalysis, when the additional biological role self/putative self will supply this information.
 subset: PSI-MI_slim
 is_a: MI:0407 ! direct interaction
@@ -10256,7 +10258,7 @@ creation_date: 2012-01-03T01:19:22Z
 id: MI:1127
 name: putative self interaction
 namespace: PSI-MI
-def: "A region of a molecule which is putatively involved in an inter-molecular interaction." [PMID:<new dbxref>14755292]
+def: "Interaction between two or more regions of possibly the same molecule but it is also possible that the observation is due to an interaction between two identical molecules." [PMID:<new dbxref>14755292]
 comment: The corresponding experimental role should be self/putative self. Not to be used for autocatalysis, when the additional biological role self/putative self will supply this information.
 subset: PSI-MI_slim
 is_a: MI:0407 ! direct interaction
@@ -11184,7 +11186,6 @@ def: "A fixed-size datum calculated (by using a hash function) for a molecular s
 subset: PSI-MI_slim
 synonym: "hashsum" RELATED []
 is_a: MI:0666 ! participant attribute name
-is_a: MI:2091 ! structure representation attribute name
 created_by: orchard
 creation_date: 2012-06-07T05:54:41Z
 
@@ -11291,6 +11292,7 @@ namespace: PSI-MI
 def: "MBInfo is a wiki based, multimedia, educational resource providing up to date reviews on topics relating to mechanobiology (http://www.mechanobio.info/)." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0461 ! interaction database
+is_a: MI:0973 ! imex source
 created_by: orchard
 creation_date: 2012-06-11T12:20:53Z
 
@@ -11389,7 +11391,7 @@ namespace: PSI-MI
 def: "AMC (aminomethylcoumarin ) is a blue fluorescent tag with reactive derivatives that are used as contrasting probes for double- and triple-labeling in immunofluorescence microscopy, arrays and in situ hybridization and can be attached to proteins or small molecules for reaction monitoring." [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "AMC label" EXACT PSI-MI-short []
-is_a: MI:0857 ! fluorescent dye label
+is_a: MI:1328 ! coumarin label
 created_by: orchard
 creation_date: 2012-08-10T07:59:18Z
 
@@ -11556,7 +11558,7 @@ creation_date: 2012-08-10T11:56:05Z
 
 [Term]
 id: MI:1247
-name: mst
+name: microscale thermophoresis
 namespace: PSI-MI
 def: "Measurement of the directed movement of particles in a microscopic temperature gradient. Any change of the hydration shell of biomolecules due to changes in their structure/conformation results in a relative change of movement along the temperature gradient and is used to determine binding affinities, binding kinetics and activity kinetics. Events such as the phosphorylation of a protein or the binding of small molecules to a target can be monitored." [PMID: 17164337]
 subset: PSI-MI_slim
@@ -12261,6 +12263,279 @@ created_by: orchard
 creation_date: 2013-06-06T11:23:53Z
 
 [Term]
+id: MI:1315
+name: complex recommended name
+namespace: PSI-MI
+def: "The most accepted name in the literature for this complex." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:1041 ! synonym
+created_by: orchard
+creation_date: 2013-10-14T15:00:37Z
+
+[Term]
+id: MI:1316
+name: complex systematic name
+namespace: PSI-MI
+def: "A name for a complex built of the component parts of that complex." []
+subset: PSI-MI_slim
+is_a: MI:1041 ! synonym
+created_by: orchard
+creation_date: 2013-10-14T15:04:57Z
+
+[Term]
+id: MI:1317
+name: eukaryotic linear motif resource
+namespace: PSI-MI
+def: "The ELM resource provides a database of curated short linear motif classes and instances, as well as a sequence analysis tool to detect putative short linear motif instances in query sequences. http://elm.eu.org/" [PMID:22110040]
+synonym: "elm" EXACT PSI-MI-short []
+xref: id-validation-regexp:\"[A-Za-z_0-9\]+$\"
+xref: search-url:http\://elm.eu.org/elms/elmPages/\{ac}.html 
+is_a: MI:0447 ! feature database
+created_by: orchard
+creation_date: 2013-10-22T09:49:10Z
+
+[Term]
+id: MI:1318
+name: sulphate donor
+namespace: PSI-MI
+def: "Any molecule that is able to transfer a sulphate group to another chemical species." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0918 ! donor
+created_by: orchard
+creation_date: 2014-01-08T07:51:29Z
+
+[Term]
+id: MI:1319
+name: sulphate acceptor
+namespace: PSI-MI
+def: "Molecule to which a sulphate group may be transferred from a sulphate donor." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0919 ! acceptor
+created_by: orchard
+creation_date: 2014-01-08T07:52:46Z
+
+[Term]
+id: MI:1320
+name: membrane yeast two hybrid
+namespace: PSI-MI
+def: "Traditional yeast two hybrid assays are not suitable for the analysis of membrane proteins, as they require the interactions to occur in the nucleus. Methods have been specifically developed to assay for interactions of membrane proteins with both cytosolic or membrane-bound partners." [PMID:2261051]
+subset: PSI-MI_slim
+synonym: "MYTH" EXACT []
+is_a: MI:0232 ! transcriptional complementation assay
+created_by: orchard
+creation_date: 2014-01-08T10:14:46Z
+
+[Term]
+id: MI:1321
+name: ire1 reconstruction
+namespace: PSI-MI
+def: "Upon interaction of N-terminal generated Ire1p-fusions, the Ire1p kinase domains oligomerize, transphosphorylate and activate their C-terminal RNAseL domains, which specifically splice the mRNA of a transcriptional activator, Hac1.  The expression of the mature form of Hac1p leads to the interaction-specific expression of a reporter. Specifically designed to identify interactors of proteins found in the endoplasmic reticulum." [PMID:22665516]
+subset: PSI-MI_slim
+synonym: "endoplasmic reticulum membrane yeast-two hybrid" RELATED []
+synonym: "ER-MYTH" RELATED []
+is_a: MI:1320 ! membrane yeast two hybrid
+created_by: orchard
+creation_date: 2014-01-08T10:17:38Z
+
+[Term]
+id: MI:1322
+name: atto 465
+namespace: PSI-MI
+def: "Fluorescent tag - maleimide couples to thiols." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "atto 465 maleimide" EXACT []
+synonym: "atto465" EXACT []
+is_a: MI:1092 ! atto label
+created_by: orchard
+creation_date: 2014-01-08T10:27:34Z
+
+[Term]
+id: MI:1323
+name: tag visualisation by alkaline phosphatase activity
+namespace: PSI-MI
+def: "The protein is expressed as a hybrid protein fused to a tag containing an alkaline phosphatase activity. Subsequent observation or measurement of alkaline phosphatase activity is used to identify the presence of the molecule in an interaction." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "tag alk phosphatase activity" EXACT PSI-MI-short []
+is_a: MI:0980 ! tag visualisation by enzyme assay
+created_by: orchard
+creation_date: 2014-01-08T11:00:36Z
+
+[Term]
+id: MI:1324
+name: conditioned medium
+namespace: PSI-MI
+def: "Molecule present in media harvested from cultured cells." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0342 ! sample process
+created_by: orchard
+creation_date: 2014-01-08T11:07:44Z
+
+[Term]
+id: MI:1325
+name: sulfurtransferase assay
+namespace: PSI-MI
+def: "Measures the rate of a sulphate molecule transfer between two molecules." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "sulfertransferase" EXACT PSI-MI-short []
+synonym: "sulfurtransfer assay" RELATED []
+synonym: "sulphurtransferase assay" RELATED []
+is_a: MI:0415 ! enzymatic study
+created_by: orchard
+creation_date: 2014-01-08T11:13:39Z
+
+[Term]
+id: MI:1326
+name: CLONE OF phosphotransfer reaction
+namespace: PSI-MI
+def: "Reaction where a phosphate is transferred between two proteins of a phosphorelay system. " [PMID:14755292, PMID:16712436]
+subset: PSI-MI_slim
+synonym: "phosphotransfer" EXACT PSI-MI-short []
+is_a: MI:0414 ! enzymatic reaction
+created_by: orchard
+creation_date: 2014-01-08T11:15:51Z
+
+[Term]
+id: MI:1327
+name: sulfurtransfer reaction
+namespace: PSI-MI
+def: "Reaction where a sulfate group is transferred between two proteins" [GO:GO\:0016783, PMID:14755292]
+subset: PSI-MI_slim
+synonym: "sulfurtransfer" EXACT PSI-MI-short []
+synonym: "sulphurtransfer reaction" EXACT []
+is_a: MI:0414 ! enzymatic reaction
+created_by: orchard
+creation_date: 2014-01-08T11:16:12Z
+
+[Term]
+id: MI:1328
+name: coumarin label
+namespace: PSI-MI
+def: "A class of labels derived from the benzopyrone coumarin." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2014-01-08T11:25:00Z
+
+[Term]
+id: MI:1329
+name: cpm
+namespace: PSI-MI
+def: "The thiol-reactive coumarin, CPM is very weakly fluorescent until reacted with thiols producing a conjugate with excitation/emission maxima of ~384/470 nm." [PMID:14755292]
+synonym: "7-diethylamino-3-(4' maleimidylphenyl)-4-methylcoumarin" EXACT []
+is_a: MI:1328 ! coumarin label
+created_by: orchard
+creation_date: 2014-01-08T11:36:48Z
+
+[Term]
+id: MI:1330
+name: dnp
+namespace: PSI-MI
+def: "Fluorescent dye. Also acts as an uncoupler of oxidative phosphorylation in the mitochondria." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "2, 4-DNP" EXACT []
+synonym: "2,4-Dinitrophenol" EXACT []
+synonym: "dinitrophenol" EXACT []
+is_a: MI:0857 ! fluorescent dye label
+created_by: orchard
+creation_date: 2014-01-08T12:01:24Z
+
+[Term]
+id: MI:1331
+name: evidence ontology
+namespace: PSI-MI
+def: "The Evidence Ontology (ECO) describes types of scientific evidence within the realm of biological research that can arise from laboratory experiments, computational methods, manual literature curation, and other means." [PMID:14755292]
+synonym: "ECO" RELATED []
+is_a: MI:0461 ! interaction database
+created_by: orchard
+creation_date: 2014-01-08T12:48:33Z
+
+[Term]
+id: MI:1332
+name: bhf-ucl
+namespace: PSI-MI
+def: "The Cardiovascular Gene Annotation Initiative represents a collaboration between University College London and the European Bioinformatics Institute (EBI), funded by the British Heart Foundation.  This annotation group is a member of the IMEx Consortium." [PMID:21419760]
+subset: PSI-MI_slim
+synonym: "Cardiovascular Gene Annotation Initiative" RELATED []
+is_a: MI:0461 ! interaction database
+is_a: MI:0973 ! imex source
+created_by: orchard
+creation_date: 2014-01-08T12:56:27Z
+
+[Term]
+id: MI:1333
+name: rogid
+namespace: PSI-MI
+def: "SEGUID's are SHA-1 keys written in canonical base64 form with trailing = characters removed. ROG identifiers concatenate a SEGUID with a numerical taxonomy identifier. Therefore, the allowable characters in a SEGUID or ROG identifier are (in ascending ASCII or Unicode value):\n\n+/0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\n\nLists of SEGUID or ROG identifiers were sorted in ascending ASCII-based lexicographical order." [PMID:18823568]
+subset: PSI-MI_slim
+is_a: MI:1212 ! checksum
+created_by: orchard
+creation_date: 2014-01-09T11:17:18Z
+
+[Term]
+id: MI:1334
+name: rigid
+namespace: PSI-MI
+def: "A global unique identifier to identify interactions that are identical. A RIG identifier (RIGID) is constructed by concatenating ROGID MI:1335 (after sorting them in ascending lexicographical order ), applying the SHA-1 algorithm to the resulting string, converting the digest to its base64 representation and removing all trailing \"=\" characters used for padding." [PMID:18823568]
+subset: PSI-MI_slim
+is_a: MI:1212 ! checksum
+created_by: orchard
+creation_date: 2014-01-09T11:17:32Z
+
+[Term]
+id: MI:1335
+name: <new term>
+namespace: PSI-MI
+is_obsolete: true
+created_by: orchard
+creation_date: 2014-01-20T11:55:35Z
+
+[Term]
+id: MI:1336
+name: experiment database
+namespace: PSI-MI
+def: "Databases that contain information used to add additional information to experiments (meta-data)." [PMID:14755292]
+subset: Drugable
+subset: PSI-MI_slim
+synonym: "interaction xref" EXACT PSI-MI-short []
+is_a: MI:0444 ! database citation
+created_by: orchard
+creation_date: 2014-01-20T11:56:03Z
+
+[Term]
+id: MI:1337
+name: efo
+namespace: PSI-MI
+def: "The Experimental Factor Ontology provides a systematic description of many experimental variables, combining parts of several biological ontologies to additional new terms." [pmid:20200009]
+subset: PSI-MI_slim
+synonym: "Experimental facto ontology" EXACT []
+xref: id-validation-regexp:\"\\d\{7}$\"
+is_a: MI:1336 ! experiment database
+created_by: orchard
+creation_date: 2014-01-20T11:58:47Z
+
+[Term]
+id: MI:1338
+name: eef tag
+namespace: PSI-MI
+def: "Glu-Glu-Phe epitope tag, allowing its detection with rat monoclonal antibody YL1/2" [PMID:6204858]
+subset: PSI-MI_slim
+synonym: "Glu-Glu-Phe epitope tag" RELATED []
+is_a: MI:0507 ! tag
+created_by: orchard
+creation_date: 2014-01-20T12:13:30Z
+
+[Term]
+id: MI:1339
+name: supercharged green fluorescent protein
+namespace: PSI-MI
+def: "Mutated green fluorescent protein with altered net charge and thus altered intermolecular properties, such as resistence to aggregation." [PMID:17665911]
+subset: PSI-MI_slim
+synonym: "stGFP" RELATED []
+is_a: MI:0367 ! green fluorescent protein tag
+created_by: orchard
+creation_date: 2014-01-20T13:13:03Z
+
+[Term]
 id: MI:2002
 name: drugbank
 namespace: PSI-MI
@@ -12335,7 +12610,6 @@ def: "IUPAC International Chemical Identifier (InChI) - a machine-readable chara
 subset: PSI-MI_slim
 synonym: "inchi id" RELATED []
 synonym: "standard inchi" EXACT PSI-MI-short []
-is_a: MI:2039 ! smiles string
 is_a: MI:2091 ! structure representation attribute name
 
 [Term]
@@ -12490,7 +12764,7 @@ name: smiles string
 namespace: PSI-MI
 def: "SMILES string corresponding to drug structure" [PMID:14755292]
 subset: Drugable
-is_a: MI:1212 ! checksum
+is_a: MI:2091 ! structure representation attribute name
 
 [Term]
 id: MI:2040
