@@ -8545,6 +8545,7 @@ def: "InChIKeys consist of 14 characters resulting from a hash of the connectivi
 subset: Drugable
 synonym: "inchi key" EXACT PSI-MI-short []
 is_a: MI:2091 ! structure representation attribute name
+is_a: MI:1212 ! checksum
 created_by: orchard
 creation_date: 2009-10-28T01:13:25Z
 
@@ -9969,17 +9970,6 @@ synonym: "bioactive entity" EXACT PSI-MI-short []
 is_a: MI:0313 ! interactor type
 created_by: orchard
 creation_date: 2011-07-06T08:23:48Z
-
-[Term]
-id: MI:1101
-name: standard inchi key
-namespace: PSI-MI
-def: "The Standard InChIKey has five distinct components, a 14-character hash of the basic (Mobile-H) InChI layer, an 8-character hash of the remaining layers (except for the /p segment, which accounts for added or removed protons: it is not hashed at all; the number of protons is encoded at the end of the standard InChIKey.) , a 1 flag character, a 1 version character and the last character is a [de]protonation indicator. The overall length of InChIKey is fixed at 27 characters, including separators (dashes)" [PMC:2867152]
-synonym: "standard inchi key" EXACT PSI-MI-short []
-synonym: "standard inchikey" EXACT PSI-MI-short []
-is_obsolete: true
-created_by: orchard
-creation_date: 2011-07-06T09:02:25Z
 
 [Term]
 id: MI:1102
@@ -12483,12 +12473,12 @@ created_by: orchard
 creation_date: 2014-01-09T11:17:32Z
 
 [Term]
-id: MI:1335
+id: MI:1101
 name: standard inchi key
 namespace: PSI-MI
 def: "The Standard InChIKey has five distinct components, a 14-character hash of the basic (Mobile-H) InChI layer, an 8-character hash of the remaining layers (except for the /p segment, which accounts for added or removed protons: it is not hashed at all; the number of protons is encoded at the end of the standard InChIKey.) , a 1 flag character, a 1 version character and the last character is a [de]protonation indicator. The overall length of InChIKey is fixed at 27 characters, including separators (dashes)." [PMID:23343401]
 subset: PSI-MI_slim
-is_a: MI:2010 ! standard inchi
+is_a: MI:0970 ! inchi key
 created_by: orchard
 creation_date: 2014-01-21T10:14:02Z
 
@@ -12614,6 +12604,7 @@ subset: PSI-MI_slim
 synonym: "inchi id" RELATED []
 synonym: "standard inchi" EXACT PSI-MI-short []
 is_a: MI:2091 ! structure representation attribute name
+is_a: MI:1212 ! checksum
 
 [Term]
 id: MI:2011
@@ -12768,6 +12759,7 @@ namespace: PSI-MI
 def: "SMILES string corresponding to drug structure" [PMID:14755292]
 subset: Drugable
 is_a: MI:2091 ! structure representation attribute name
+is_a: MI:1212 ! checksum
 
 [Term]
 id: MI:2040
