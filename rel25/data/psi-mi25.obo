@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:03:2014 13:32
+date: 08:04:2014 16:09
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Drugable "Drugable Genome Project"
@@ -3179,27 +3179,29 @@ relationship: part_of MI:0000 ! molecular interaction
 
 [Term]
 id: MI:0354
-name: gene ontology term for cellular component
+name: cellular component
 namespace: PSI-MI
 def: "Cross reference pointing to a Gene Ontology -'cellular component' term." [PMID:14681407]
 subset: PSI-MI_slim
 synonym: "component" EXACT PSI-MI-short []
 synonym: "go component term" EXACT PSI-MI-alternate []
+xref: search-url: "http://www.ebi.ac.uk/QuickGO/GTerm?id=${ac}"
 is_a: MI:0353 ! cross-reference type
 
 [Term]
 id: MI:0355
-name: gene ontology term for cellular function
+name: molecular function
 namespace: PSI-MI
-def: "Cross reference pointing to a Gene Ontology -'cellular function' term." [PMID:14681407]
+def: "Cross reference pointing to a Gene Ontology -'molecular function' term." [PMID:14681407]
 subset: PSI-MI_slim
 synonym: "function" EXACT PSI-MI-short []
 synonym: "go function term" EXACT PSI-MI-alternate []
+xref: search-url: "http://www.ebi.ac.uk/QuickGO/GTerm?id=${ac}"
 is_a: MI:0353 ! cross-reference type
 
 [Term]
 id: MI:0356
-name: identical object
+name: identical object in an external resource
 namespace: PSI-MI
 def: "Reference to the corresponding object in another database. Correspondence may be complete or partial." [PMID:14755292]
 comment: For instance this qualifier, in an interaction entry, can be associated to a cross reference to the same interaction in an other database.
@@ -3227,12 +3229,13 @@ is_a: MI:0353 ! cross-reference type
 
 [Term]
 id: MI:0359
-name: gene ontology term for cellular process
+name: biological process
 namespace: PSI-MI
 def: "Cross reference pointing to a Gene Ontology -'cellular process' term." [PMID:14681407]
 subset: PSI-MI_slim
 synonym: "go process term" EXACT PSI-MI-alternate []
 synonym: "process" EXACT PSI-MI-short []
+xref: search-url: "http://www.ebi.ac.uk/QuickGO/GTerm?id=${ac}"
 is_a: MI:0353 ! cross-reference type
 
 [Term]
@@ -3246,10 +3249,11 @@ is_a: MI:0353 ! cross-reference type
 
 [Term]
 id: MI:0361
-name: see-also
+name: additional information
 namespace: PSI-MI
 def: "Related object within the same database or pointing to an external database." [PMID:14755292]
 subset: PSI-MI_slim
+synonym: "see-also" EXACT PSI-MI-short []
 is_a: MI:0353 ! cross-reference type
 
 [Term]
@@ -4017,6 +4021,7 @@ def: "The objective of Gene Ontology (GO) is to provide controlled vocabularies 
 subset: PSI-MI_slim
 synonym: "go" EXACT PSI-MI-short []
 xref: id-validation-regexp:\"GO\:[0-9\]\{7}\"
+xref: search-url:<new xref> "http://www.ebi.ac.uk/QuickGO/GTerm?id=${ac}"
 is_a: MI:0447 ! feature database
 is_a: MI:0461 ! interaction database
 
@@ -4220,6 +4225,7 @@ synonym: "Genome Knowledge Base" EXACT PSI-MI-alternate []
 synonym: "GKB" EXACT PSI-MI-alternate []
 synonym: "Reactome" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"REACT_\\d+(\\.\\d+)?$\"
+xref: search-url:<new xref> " http://www.reactome.org/cgi-bin/eventbrowser_st_id?FROM_REACTOME=1&ST_ID=${ac}"
 is_a: MI:1106 ! pathways database
 
 [Term]
@@ -4278,7 +4284,7 @@ synonym: "e-MSD" EXACT []
 synonym: "MSD" RELATED []
 synonym: "PQS" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
-xref: search-url: "http://www.ebi.ac.uk/pdbe-srv/atlas?id=${ac}"
+xref: search-url: "http://www.ebi.ac.uk/pdbe-srv/view/entry/${ac}"
 is_a: MI:0805 ! wwpdb
 
 [Term]
@@ -4367,7 +4373,7 @@ def: "Online Mendelian Inheritance in Man (OMIM) is a catalogue of human genes a
 subset: PSI-MI_slim
 synonym: "OMIM" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\]+\"
-xref: search-url: "http://www.ncbi.nlm.nih.gov/entrez/dispomim.cgi?id=${ac}"
+xref: search-url: "http://www.omim.org/entry/${ac}"
 is_a: MI:0683 ! sequence database
 
 [Term]
@@ -6935,6 +6941,7 @@ subset: Drugable
 subset: PSI-MI_slim
 synonym: "wwPDB" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
+xref: search-url: "http://www.ebi.ac.uk/pdbe-srv/view/entry/${ac}"
 is_a: MI:0447 ! feature database
 is_a: MI:0461 ! interaction database
 is_a: MI:0489 ! source database
@@ -12397,7 +12404,7 @@ namespace: PSI-MI
 def: "Databases that contain information used to add additional information to experiments (meta-data)." [PMID:14755292]
 subset: Drugable
 subset: PSI-MI_slim
-synonym: "interaction xref" EXACT PSI-MI-short []
+synonym: "experiment xref" EXACT PSI-MI-short []
 is_a: MI:0444 ! database citation
 created_by: orchard
 creation_date: 2014-01-20T11:56:03Z
