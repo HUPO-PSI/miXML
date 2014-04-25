@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:04:2014 16:09
+date: 25:04:2014 09:35
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Drugable "Drugable Genome Project"
@@ -4021,7 +4021,7 @@ def: "The objective of Gene Ontology (GO) is to provide controlled vocabularies 
 subset: PSI-MI_slim
 synonym: "go" EXACT PSI-MI-short []
 xref: id-validation-regexp:\"GO\:[0-9\]\{7}\"
-xref: search-url:<new xref> "http://www.ebi.ac.uk/QuickGO/GTerm?id=${ac}"
+xref: search-url: "http://www.ebi.ac.uk/QuickGO/GTerm?id=${ac}"
 is_a: MI:0447 ! feature database
 is_a: MI:0461 ! interaction database
 
@@ -4225,7 +4225,7 @@ synonym: "Genome Knowledge Base" EXACT PSI-MI-alternate []
 synonym: "GKB" EXACT PSI-MI-alternate []
 synonym: "Reactome" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"REACT_\\d+(\\.\\d+)?$\"
-xref: search-url:<new xref> " http://www.reactome.org/cgi-bin/eventbrowser_st_id?FROM_REACTOME=1&ST_ID=${ac}"
+xref: search-url: "http://www.reactome.org/cgi-bin/eventbrowser_st_id?FROM_REACTOME=1&ST_ID=${ac}"
 is_a: MI:1106 ! pathways database
 
 [Term]
@@ -8414,7 +8414,7 @@ def: "ChEMBL focuses on mapping the interactions of small molecules binding to t
 subset: Drugable
 subset: PSI-MI_slim
 xref: id-validation-regexp:\"[0-9\]+\"
-xref: search-url:http\://www.ebi.ac.uk/chembldb/index.php/compound/inspect/$(ac)
+xref: search-url: "http://www.ebi.ac.uk/chembldb/index.php/compound/inspect/${ac}"
 is_a: MI:0461 ! interaction database
 created_by: orchard
 creation_date: 2009-10-28T11:20:55Z
@@ -11698,7 +11698,7 @@ name: duplicated protein
 namespace: PSI-MI
 def: "An identical protein sequence is coded for by the multiple genes within the same organism. These proteins may previously be merged into a single entry by UniProt and subsequently demerged." [PMID:21051339]
 subset: PSI-MI_slim
-is_a: MI:0353 ! cross-reference type
+is_a: MI:1341 ! set member
 created_by: orchard
 creation_date: 2012-11-28T03:23:28Z
 
@@ -12442,6 +12442,27 @@ synonym: "stGFP" RELATED []
 is_a: MI:0367 ! green fluorescent protein tag
 created_by: orchard
 creation_date: 2014-01-20T13:13:03Z
+
+[Term]
+id: MI:1340
+name: human orfeome collection
+namespace: PSI-MI
+def: "A central resource of single-colony, fully-sequenced cloned human ORFs which can be readily transferred to Gateway compatible destination vectors for various functional proteomics studies. This set of ORFs ranges in size from 75 to more than 10,000 base pairs, and contains over 1,000 ORFs from genes with multiple splice variants." [PMID:14755292]
+subset: PSI-MI_slim
+xref: search-url:<new xref>
+is_a: MI:1096 ! protein sequence databases
+created_by: orchard
+creation_date: 2014-04-08T16:15:19Z
+
+[Term]
+id: MI:1341
+name: set member
+namespace: PSI-MI
+def: "Indicates that this protein is a member of a set of proteins with similar sequence and/or function." [PMID:14755292, XX:<new dbxref>]
+subset: PSI-MI_slim
+is_a: MI:0353 ! cross-reference type
+created_by: orchard
+creation_date: 2014-04-25T09:19:21Z
 
 [Term]
 id: MI:2002
