@@ -1,0 +1,424 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Schema documentation for </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript">
+         <!--
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    --></script></head>
+   <body>
+      <h2><a id="INDEX">Table of Contents</a></h2>
+      <div class="toc">
+         <form action="none">
+            <div><span> Group by: <select id="selectTOC" onchange="selectTOCGroupBy(this.options[this.selectedIndex].value, true, 'MIF300.indexList.html', 'MIF300.indexListns.html', 'MIF300.indexListcomp.html');">
+                     <option value="toc_group_by_namespace">Namespace</option>
+                     <option value="toc_group_by_location">Location</option>
+                     <option value="toc_group_by_component_type" selected="selected">Component Type</option></select></span></div>
+         </form>
+         <div class="level1" id="toc_group_by_component_type" style="display:block">
+            <div>
+               <div class="horizontalLayout">
+                  <table class="rt">
+                     <tr>
+                        <td class="rt_cornerTopLeft"></td>
+                        <td class="rt_lineTop"></td>
+                        <td class="rt_cornerTopRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_lineLeft"></td>
+                        <td class="rt_content">
+                           <table class="componentGroup">
+                              <tbody>
+                                 <tr>
+                                    <td class="componentGroup"><input id="button_Element" type="image" value="-" src="img/btM.gif" onclick="switchState('Element');" class="control" /></td>
+                                    <td class="componentGroup">
+                                       <div class="componentGroupTitle">Elements</div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="componentGroup"></td>
+                                    <td class="componentGroup">
+                                       <div id="Element" class="componentGroup" style="display:block">
+                                          <div><b><a href="MIF300_xsd.html#entrySet" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:entrySet</a></b></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td class="rt_lineRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_cornerBottomLeft"></td>
+                        <td class="rt_lineBottom"></td>
+                        <td class="rt_cornerBottomRight"></td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="horizontalLayout">
+                  <table class="rt">
+                     <tr>
+                        <td class="rt_cornerTopLeft"></td>
+                        <td class="rt_lineTop"></td>
+                        <td class="rt_cornerTopRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_lineLeft"></td>
+                        <td class="rt_content">
+                           <table class="componentGroup">
+                              <tbody>
+                                 <tr>
+                                    <td class="componentGroup"><input id="button_Complex_Type" type="image" value="-" src="img/btM.gif" onclick="switchState('Complex_Type');" class="control" /></td>
+                                    <td class="componentGroup">
+                                       <div class="componentGroupTitle">Complex Types</div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="componentGroup"></td>
+                                    <td class="componentGroup">
+                                       <div id="Complex_Type" class="componentGroup" style="display:block">
+                                          <div><b><a href="MIF300_xsd.html#abstractConfidence" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:abstractConfidence</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#abstractConfidenceList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:abstractConfidenceList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#abstractFeature" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:abstractFeature</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#abstractFeatureList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:abstractFeatureList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#abstractInteraction" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:abstractInteraction</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#abstractParameter" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:abstractParameter</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#abstractParameterList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:abstractParameterList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#abstractParticipant" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:abstractParticipant</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#abstractParticipantList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:abstractParticipantList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#alias" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:alias</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#allostery" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:allostery</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#attribute" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:attribute</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#attributeList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:attributeList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#availability" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:availability</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#availabilityList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:availabilityList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#baseLocation" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:baseLocation</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#bibref" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:bibref</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#bindingFeatures" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:bindingFeatures</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#bindingFeaturesList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:bindingFeaturesList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#bioSource" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:bioSource</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#causalRelationship" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:causalRelationship</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#causalRelationshipList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:causalRelationshipList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#confidence" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:confidence</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#confidenceBase" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:confidenceBase</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#confidenceList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:confidenceList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#cooperativeEffectList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:cooperativeEffectList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#cooperativeEffectType" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:cooperativeEffectType</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#cvType" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:cvType</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#dbReference" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:dbReference</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#entry" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:entry</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#http___psi.hupo.org_mi_mif300_entrySet" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:entrySet</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#evidenceType" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:evidenceType</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentDescription" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentDescription</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentDescriptionList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentDescriptionList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentRefList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentRefList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentalInteractor" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentalInteractor</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentalInteractorList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentalInteractorList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentalPreparation" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentalPreparation</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentalPreparationList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentalPreparationList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentalRole" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentalRole</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentalRoleList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentalRoleList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentalVariableValueList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentalVariableValueList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#experimentalVariableValues" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:experimentalVariableValues</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#feature" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:feature</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#featureList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:featureList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#fullName" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:fullName</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#hostOrganism" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:hostOrganism</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#hostOrganismList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:hostOrganismList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#inferredInteraction" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:inferredInteraction</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#inferredInteractionList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:inferredInteractionList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#inferredInteractionParticipant" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:inferredInteractionParticipant</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#interaction" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:interaction</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#interactionList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:interactionList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#interactor" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:interactor</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#interactorList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:interactorList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#interval" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:interval</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#label" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:label</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#names" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:names</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#openCvType" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:openCvType</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#parameter" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:parameter</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#parameterBase" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:parameterBase</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#parameterList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:parameterList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#participant" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:participant</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#participantIdentificationMethod" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:participantIdentificationMethod</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#participantIdentificationMethodList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:participantIdentificationMethodList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#participantList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:participantList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#position" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:position</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#resultingSequenceType" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:resultingSequenceType</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#source" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:source</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#stoichiometryRangeType" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:stoichiometryRangeType</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#stoichiometryType" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:stoichiometryType</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#variableParameter" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:variableParameter</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#variableParameterList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:variableParameterList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#variableValue" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:variableValue</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#variableValueList" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:variableValueList</a></b></div>
+                                          <div><b><a href="MIF300_xsd.html#xref" target="mainFrame" title="http://psi.hupo.org/mi/mif300" onclick="updatePageTitle('Schema documentation for MIF300.xsd')">mif:xref</a></b></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td class="rt_lineRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_cornerBottomLeft"></td>
+                        <td class="rt_lineBottom"></td>
+                        <td class="rt_cornerBottomRight"></td>
+                     </tr>
+                  </table>
+               </div>
+               <div style="clear:left"></div>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <hr />
+         <div align="center">XML Schema documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.
+         </div>
+      </div>
+   </body>
+</html>
