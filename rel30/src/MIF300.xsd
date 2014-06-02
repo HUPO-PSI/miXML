@@ -639,7 +639,7 @@
                     <xs:documentation>Reference to an external feature description, for example InterPro entry.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="featureType" type="mif:cvType" maxOccurs="unbounded">
+            <xs:element name="featureType" type="mif:cvType" maxOccurs="1" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>Description and classification of the feature. This element is controlled by the PSI-MI controlled vocabulary
                         "feature",
@@ -1779,7 +1779,7 @@
                     <xs:documentation>Reference to an external feature description, for example InterPro entry.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="featureType" type="mif:cvType" maxOccurs="unbounded">
+            <xs:element name="featureType" type="mif:cvType" maxOccurs="1" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>Description and classification of the feature. This element is controlled by the PSI-MI controlled vocabulary
                         "feature",
