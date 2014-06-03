@@ -678,6 +678,12 @@
                         (Ex: prerequisite-ptm,...).</xs:documentation>
                 </xs:annotation>
             </xs:element>
+            <xs:element name="parameterList" type="mif:parameterList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>List of experimental parameters attached to this feature. For instance,
+                        the changes in the kd of the interaction will be added at the feature level with the description of the mutation</xs:documentation>
+                </xs:annotation>
+            </xs:element>
             <xs:element name="attributeList" type="mif:attributeList" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>Semi-structured additional description of the data contained in the entry.</xs:documentation>
