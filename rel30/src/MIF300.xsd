@@ -919,7 +919,7 @@
                     <xs:documentation>Free description of the variable parameter (such as cell cycle, PMA treatment, ...).</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="unit" type="mif:cvType" minOccurs="0">
+            <xs:element name="unit" type="mif:openCvType" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>Unit of the variable parameter values.</xs:documentation>
                 </xs:annotation>
