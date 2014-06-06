@@ -459,7 +459,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
-            <xs:element name="bibRef" type="mif:bibref" minOccurs="0"/>
+            <xs:element name="bibref" type="mif:bibref" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -1846,7 +1846,7 @@
         <xs:complexContent>
             <xs:extension base="mif:parameterBase">
                 <xs:sequence>
-                    <xs:element name="bibRef" type="mif:bibref" minOccurs="0">
+                    <xs:element name="bibref" type="mif:bibref" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>Reference to the publication (or publications) where this parameter has been shown.
                             </xs:documentation>
