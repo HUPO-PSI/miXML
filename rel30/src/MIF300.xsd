@@ -1164,10 +1164,10 @@
                     <xs:documentation>Refers to the participant that is the source of the causality statement.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="causalityStatement" type="mif:cvType" minOccurs="1" maxOccurs="1">
+            <xs:element name="causalityStatement" type="mif:openCvType" minOccurs="1" maxOccurs="1">
                 <xs:annotation>
-                    <xs:documentation>The causality statement. This element is controlled by the PSI-MI controlled vocabulary "causality statement",
-                        root term id MI:xxxx.</xs:documentation>
+                    <xs:documentation>The causality statement. Allows to reference an external controlled vocabulary, or to directly include a value if no suitable external definition
+                        is available.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="targetParticipantRef" type="xs:int" minOccurs="1" maxOccurs="1">
