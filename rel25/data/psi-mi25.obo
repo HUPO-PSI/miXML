@@ -12531,7 +12531,7 @@ namespace: PSI-MI
 def: "PRO provides an ontological representation of protein-related entities by explicitly defining them and showing the relationships between them. Each PRO term represents a distinct class of entities, including specific modified forms, orthologous isoforms, and protein complexes." [PMID:24270789]
 subset: PSI-MI_slim
 synonym: "PRO" RELATED []
-xref: id-validation-regexp:[0-9\]\{9}|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[1-9\]+
+xref: id-validation-regexp:\"[0-9\]\{9}|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[1-9\]+\"
 is_a: MI:0461 ! interaction database
 created_by: orchard
 creation_date: 2014-09-26T14:06:25Z
@@ -12542,7 +12542,7 @@ name: chembl target
 namespace: PSI-MI
 def: "ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets." []
 subset: PSI-MI_slim
-xref: regexp:CHEMBL\: [0-9\]+
+xref: regexp:\"CHEMBL\: [0-9\]+\"
 is_a: MI:0683 ! sequence database
 created_by: orchard
 creation_date: 2014-10-16T10:10:03Z
@@ -12563,7 +12563,7 @@ name: orphanet
 namespace: PSI-MI
 def: "Orphanet is a reference portal for information on rare diseases and orphan drugs. Its aim is to help improve the diagnosis, care and treatment of patients with rare diseases." [PMID:<new dbxref>19058507]
 subset: PSI-MI_slim
-xref: regexp:^\\d+$
+xref: regexp:\"^\\d+$\"
 xref: search-url:http\://www.orpha.net/consor/cgi-bin/OC_Exp.php?Lng=EN&Expert=$id
 is_a: MI:1336 ! experiment database
 created_by: orchard
