@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:10:2014 09:50
+date: 13:02:2015 09:18
 saved-by: orchard
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Drugable "Drugable Genome Project"
@@ -2016,7 +2016,7 @@ namespace: PSI-MI
 def: "S-farnesyl-L-cysteined is cleaved and returns a C residue." [PMID:14755292, RESID:AA0102]
 subset: PSI-MI_slim
 synonym: "defarnesylation" EXACT PSI-MI-short []
-is_a: MI:0212 ! lipid cleavage reaction
+is_a: MI:0212 ! lipoprotein cleavage reaction
 
 [Term]
 id: MI:0199
@@ -2034,7 +2034,7 @@ namespace: PSI-MI
 def: "S-geranylgeranyl-L-cysteine is cleaved and returns a C residue." [PMID:14755292, RESID:AA0104]
 subset: PSI-MI_slim
 synonym: "degeranylation" EXACT PSI-MI-short []
-is_a: MI:0212 ! lipid cleavage reaction
+is_a: MI:0212 ! lipoprotein cleavage reaction
 
 [Term]
 id: MI:0201
@@ -2043,7 +2043,7 @@ namespace: PSI-MI
 def: "N6-myristoyl-L-lysine is cleaved and returns a K residue." [PMID:14755292, RESID:AA0078]
 subset: PSI-MI_slim
 synonym: "demyristoylation" EXACT PSI-MI-short []
-is_a: MI:0212 ! lipid cleavage reaction
+is_a: MI:0212 ! lipoprotein cleavage reaction
 
 [Term]
 id: MI:0202
@@ -2052,7 +2052,7 @@ namespace: PSI-MI
 def: "S-palmitoyl-L-cysteine, N6-palmitoyl-L-lysine, O-palmitoyl-L-threonine or O-palmitoyl-L-serine are cleaved and return C,K,T or S residues." [PMID:14755292, RESID:AA0060, RESID:AA0077, RESID:AA0106]
 subset: PSI-MI_slim
 synonym: "depalmitoylation" EXACT PSI-MI-short []
-is_a: MI:0212 ! lipid cleavage reaction
+is_a: MI:0212 ! lipoprotein cleavage reaction
 
 [Term]
 id: MI:0203
@@ -2134,7 +2134,7 @@ is_a: MI:0414 ! enzymatic reaction
 
 [Term]
 id: MI:0212
-name: lipid cleavage reaction
+name: lipoprotein cleavage reaction
 namespace: PSI-MI
 def: "Cleavage of a lipid group covalently bound to a protein residue." [PMID:14755292]
 subset: PSI-MI_slim
@@ -2432,7 +2432,7 @@ namespace: PSI-MI
 def: "CABRI cell lines catalogue available at.\nhttp://www.cabri.org/" [PMID:14755292]
 subset: PSI-MI_slim
 xref: id-validation-regexp:\"[0-9\]+|ACC\\s[A-Z0-9\]+|ECACC\\s[A-Z0-9\]+|LMBP\\s[A-Z0-9\]+|ICLC\\s[A-Z0-9\]+|CIP-[0-9\]+|DSMZ_MUTZ\\\:ACC\\s[0-9\]+ \"
-xref: search-url: "http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?[libs%3d{dsmz_mutz%20ecacc_cell%20iclc%20CABI_BACT%20CIP_BACT%20CABI_YEAST%20DSMZ_PLANT_CELL}-id:${ac}]+-e"
+xref: search-url: "http://www.cabri.org/CABRI/srs-bin/wgetz?-e+-page+EntryPage+[$id]"
 is_a: MI:0473 ! participant database
 
 [Term]
@@ -4206,6 +4206,7 @@ def: "The database of interacting protein (DIP) database stores experimentally d
 subset: PSI-MI_slim
 synonym: "DIP" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"DIP[0-9\]+[NE\]\"
+xref: search-url:<new xref> "http://identifiers.org/dip/"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
@@ -4272,7 +4273,7 @@ namespace: PSI-MI
 def: "The Moleculer INTeraction database (MINT) is a relational database designed to store interactions between biological molecules.\nhttp://mint.bio.uniroma2.it/mint/" [PMID:14755292]
 subset: PSI-MI_slim
 synonym: "MINT" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"MINT_[0-9\]+\"
+xref: id-validation-regexp:\"MINT-[0-9\]+\"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
@@ -4287,7 +4288,7 @@ synonym: "e-MSD" EXACT []
 synonym: "MSD" RELATED []
 synonym: "PQS" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
-xref: search-url: "http://www.ebi.ac.uk/pdbe-srv/view/entry/${ac}"
+xref: search-url: "http://www.pdbe.org/$id"
 is_a: MI:0805 ! wwpdb
 
 [Term]
@@ -4439,7 +4440,7 @@ def: "UniProt (Universal Protein Resource) is the world's most comprehensive cat
 subset: PSI-MI_slim
 synonym: "uniprotkb" EXACT PSI-MI-short []
 synonym: "UniProtKB" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
+xref: id-validation-regexp:\"[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-NR-Z\][0-9\]([A-Z\][A-Z0-9\]\{2}[0-9\])\{1\,2}-PRO_[0-9\]\{10}\"
 xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
@@ -6944,7 +6945,7 @@ subset: Drugable
 subset: PSI-MI_slim
 synonym: "wwPDB" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
-xref: search-url: "http://www.ebi.ac.uk/pdbe-srv/view/entry/${ac}"
+xref: search-url: "http://www.pdbe.org/$id"
 is_a: MI:0447 ! feature database
 is_a: MI:0461 ! interaction database
 is_a: MI:0489 ! source database
@@ -8130,6 +8131,7 @@ def: "The Electron Microscopy Data Bank (EMDB) contains experimentally determine
 subset: PSI-MI_slim
 synonym: "Electron Microscopy Data Bank" EXACT PSI-MI-alternate []
 synonym: "eMDB" EXACT PSI-MI-short []
+xref: search-url:<new xref> "http://www.pdbe.org/emd-$id"
 is_a: MI:0472 ! pdbe
 
 [Term]
@@ -8673,7 +8675,7 @@ creation_date: 2010-04-26T11:27:22Z
 
 [Term]
 id: MI:0991
-name: lipid cleavage assay
+name: lipoprotein cleavage assay
 namespace: PSI-MI
 def: "The cleavage of a lipid molecule from a larger biomolecule." [PMID:14760721]
 subset: PSI-MI_slim
@@ -8688,7 +8690,7 @@ namespace: PSI-MI
 def: "Measures the removal of S-farnesyl-L-cysteined, which is cleaved and returns a C residue." [PMID:14760721]
 subset: PSI-MI_slim
 synonym: "defarnesylation assay" EXACT PSI-MI-short []
-is_a: MI:0991 ! lipid cleavage assay
+is_a: MI:0991 ! lipoprotein cleavage assay
 created_by: orchard
 creation_date: 2010-04-26T12:27:47Z
 
@@ -8699,7 +8701,7 @@ namespace: PSI-MI
 def: "Measures the removal of S-geranylgeranyl-L-cysteine, which is cleaved and returns a C residue." [PMID:14760721]
 subset: PSI-MI_slim
 synonym: "degeranylation assay" EXACT PSI-MI-short []
-is_a: MI:0991 ! lipid cleavage assay
+is_a: MI:0991 ! lipoprotein cleavage assay
 created_by: orchard
 creation_date: 2010-04-26T12:36:51Z
 
@@ -8710,7 +8712,7 @@ namespace: PSI-MI
 def: "measures the removal of N6-myristoyl-L-lysine, which is cleaved and returns a K residue." [PMID:14760721]
 subset: PSI-MI_slim
 synonym: "demyristoylation assay" EXACT PSI-MI-short []
-is_a: MI:0991 ! lipid cleavage assay
+is_a: MI:0991 ! lipoprotein cleavage assay
 created_by: orchard
 creation_date: 2010-04-26T12:39:30Z
 
@@ -8721,7 +8723,7 @@ namespace: PSI-MI
 def: "Measures the removal of S-palmitoyl-L-cysteine, N6-palmitoyl-L-lysine, O-palmitoyl-L-threonine or O-palmitoyl-L-serine, which are cleaved and return C,K,T or S residues." [PMID:<new dbxref>14760721]
 subset: PSI-MI_slim
 synonym: "depalmitoylation assay" EXACT PSI-MI-short []
-is_a: MI:0991 ! lipid cleavage assay
+is_a: MI:0991 ! lipoprotein cleavage assay
 created_by: orchard
 creation_date: 2010-04-26T12:42:00Z
 
@@ -9848,7 +9850,7 @@ def: "UniProt (Universal Protein Resource) is the world's most comprehensive cat
 subset: PSI-MI_slim
 synonym: "swiss-prot" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
+xref: id-validation-regexp:\"[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-NR-Z\][0-9\]([A-Z\][A-Z0-9\]\{2}[0-9\])\{1\,2}-PRO_[0-9\]\{10}\"
 xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
 is_a: MI:0486 ! uniprot knowledge base
 created_by: orchard
@@ -9862,7 +9864,7 @@ def: "UniProt (Universal Protein Resource) is the world's most comprehensive cat
 subset: PSI-MI_slim
 synonym: "trembl" EXACT PSI-MI-short []
 synonym: "UniProt" EXACT PSI-MI-alternate []
-xref: id-validation-regexp:\"[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[0-9\]+|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-PRO_[0-9\]\{10}\"
+xref: id-validation-regexp:\"[OPQ\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-NR-Z\][0-9\]([A-Z\][A-Z0-9\]\{2}[0-9\])\{1\,2}-PRO_[0-9\]\{10}\"
 xref: search-url: "http://www.uniprot.org/uniprot/{ac}"
 is_a: MI:0486 ! uniprot knowledge base
 created_by: orchard
@@ -12352,7 +12354,10 @@ id: MI:1331
 name: evidence ontology
 namespace: PSI-MI
 def: "The Evidence Ontology (ECO) describes types of scientific evidence within the realm of biological research that can arise from laboratory experiments, computational methods, manual literature curation, and other means." [PMID:14755292]
+subset: PSI-MI_slim
 synonym: "ECO" RELATED []
+xref: id-validation-regexp:\"ECO\:\\d\{7}$\"
+xref: search-url:<new xref> "http://identifiers.org/eco/"
 is_a: MI:0461 ! interaction database
 created_by: orchard
 creation_date: 2014-01-08T12:48:33Z
@@ -12421,6 +12426,7 @@ def: "The Experimental Factor Ontology provides a systematic description of many
 subset: PSI-MI_slim
 synonym: "Experimental facto ontology" EXACT []
 xref: id-validation-regexp:\"\\d\{7}$\"
+xref: search-url:<new xref> "http://identifiers.org/efo/"
 is_a: MI:1336 ! experiment database
 created_by: orchard
 creation_date: 2014-01-20T11:58:47Z
@@ -12532,6 +12538,7 @@ def: "PRO provides an ontological representation of protein-related entities by 
 subset: PSI-MI_slim
 synonym: "PRO" RELATED []
 xref: id-validation-regexp:\"[0-9\]\{9}|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[1-9\]+\"
+xref: search-url:<new xref> "purl.obolibrary.org/obo/PR_{ac}"
 is_a: MI:0461 ! interaction database
 created_by: orchard
 creation_date: 2014-09-26T14:06:25Z
@@ -12542,7 +12549,7 @@ name: chembl target
 namespace: PSI-MI
 def: "ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets." []
 subset: PSI-MI_slim
-xref: regexp:\"CHEMBL\: [0-9\]+\"
+xref: regexp:CHEMBL\: [0-9\]+
 is_a: MI:0683 ! sequence database
 created_by: orchard
 creation_date: 2014-10-16T10:10:03Z
@@ -12563,8 +12570,8 @@ name: orphanet
 namespace: PSI-MI
 def: "Orphanet is a reference portal for information on rare diseases and orphan drugs. Its aim is to help improve the diagnosis, care and treatment of patients with rare diseases." [PMID:<new dbxref>19058507]
 subset: PSI-MI_slim
-xref: regexp:\"^\\d+$\"
-xref: search-url:http\://www.orpha.net/consor/cgi-bin/OC_Exp.php?Lng=EN&Expert=$id
+xref: regexp:^\\d+$
+xref: search-url: "http://identifiers.org/orphanet/"
 is_a: MI:1336 ! experiment database
 created_by: orchard
 creation_date: 2014-10-16T10:27:01Z
@@ -12578,6 +12585,68 @@ subset: PSI-MI_slim
 is_a: MI:0353 ! cross-reference type
 created_by: orchard
 creation_date: 2014-10-16T10:39:21Z
+
+[Term]
+id: MI:1352
+name: uracil interference assay
+namespace: PSI-MI
+def: "In uracil interference assays, the DNA will be amplified by PCR in the presence of a mixture of TTP and dUTP to randomly replace thymine by deoxyuracil residues before the binding assay. If T nucleotides involved in protein-DNA interactions are replaced by deoxyuracil, protein binding is prevented. After isolating the protein-DNA complex, DNA is cleaved with uracil-N-glycosylase, which specifically targets uracil bases, and the products are electrophoresed on a denaturing polyacrylamide gel. As a result, DNA in which a thymine involved in binding is replaced by uracil will be depleted. Hence, although the pattern looks like a footprint, the blank region means \"contact points\"." [PMID:18265086]
+subset: PSI-MI_slim
+is_a: MI:0605 ! enzymatic footprinting
+created_by: orchard
+creation_date: 2015-01-28T10:12:25Z
+
+[Term]
+id: MI:1353
+name: au5 tag
+namespace: PSI-MI
+def: "Epitope tag engineered onto the N- or C- terminus of a protein of interest so that the tagged protein can be analyzed and visualized by immunochemical methods. The recognized AU5 epitope represents the amino acid sequence TDFYLK." [PMID:9765280]
+subset: PSI-MI_slim
+is_a: MI:0507 ! tag
+created_by: orchard
+creation_date: 2015-01-28T10:23:06Z
+
+[Term]
+id: MI:1354
+name: lipase assay
+namespace: PSI-MI
+def: "Cleavage (hydrolysis) of a lipid molecule." [PMID:14760721, XX:<new dbxref>]
+subset: PSI-MI_slim
+is_a: MI:0990 ! cleavage assay
+created_by: orchard
+creation_date: 2015-02-03T13:18:55Z
+
+[Term]
+id: MI:1355
+name: lipid cleavage
+namespace: PSI-MI
+def: "Reaction monitoring the cleavage (hydrolysis) or a lipid molecule." [PMID:14760721]
+subset: PSI-MI_slim
+is_a: MI:0194 ! cleavage reaction
+created_by: orchard
+creation_date: 2015-02-03T13:25:21Z
+
+[Term]
+id: MI:1356
+name: validated two hybrid
+namespace: PSI-MI
+def: "The protein pairs, often initially identified by a separate 2-hybrid screening methodology, are subjected to a rigorous re-analysis which may include independent re-screening of the entire search space, retesting the  assay in different strain backgrounds, and multiple retesting of identified protein pairs reversing bait-prey orientations. Orthogonal data from other experimental and bioinformatic approaches may also be used to support the identification of the final high-confidence protein pairs but the primary means of selection must be experimentally based. This method would be expected to identify protein pairs with a higher degree of confidence than any single protein complementation technique." [PMID:25416956]
+subset: PSI-MI_slim
+is_a: MI:0018 ! two hybrid
+created_by: orchard
+creation_date: 2015-02-03T13:36:20Z
+
+[Term]
+id: MI:1357
+name: RNAcentral
+namespace: PSI-MI
+def: "Provides unified access to the ncRNA sequence data supplied by the expert databases." [PMID:25352543]
+subset: PSI-MI_slim
+xref: id-validation-regexp:\"URS[0-9A-F\]\{10}\"
+xref: search-url: "http://rnacentral.org/$id"
+is_a: MI:0683 ! sequence database
+created_by: orchard
+creation_date: 2015-02-03T13:37:23Z
 
 [Term]
 id: MI:2002
