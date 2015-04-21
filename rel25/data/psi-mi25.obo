@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 13:02:2015 09:18
-saved-by: orchard
-auto-generated-by: OBO-Edit 2.2
+date: 20:04:2015 12:48
+saved-by: ppm
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
 subsetdef: PSI-MI_slim "Subset of PSI-MI"
 subsetdef: PSI-MOD_slim "subset of protein modifications"
@@ -4288,7 +4288,7 @@ synonym: "e-MSD" EXACT []
 synonym: "MSD" RELATED []
 synonym: "PQS" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
-xref: search-url: "http://www.pdbe.org/$id"
+xref: search-url: "http://www.ebi.ac.uk/pdbe/entry/pdb/${ac}"
 is_a: MI:0805 ! wwpdb
 
 [Term]
@@ -12357,7 +12357,7 @@ def: "The Evidence Ontology (ECO) describes types of scientific evidence within 
 subset: PSI-MI_slim
 synonym: "ECO" RELATED []
 xref: id-validation-regexp:\"ECO\:\\d\{7}$\"
-xref: search-url:<new xref> "http://identifiers.org/eco/"
+xref: search-url:<new xref> "http://www.ebi.ac.uk/ontology-lookup/?termId=${ac}"
 is_a: MI:0461 ! interaction database
 created_by: orchard
 creation_date: 2014-01-08T12:48:33Z
@@ -12643,7 +12643,7 @@ namespace: PSI-MI
 def: "Provides unified access to the ncRNA sequence data supplied by the expert databases." [PMID:25352543]
 subset: PSI-MI_slim
 xref: id-validation-regexp:\"URS[0-9A-F\]\{10}\"
-xref: search-url: "http://rnacentral.org/$id"
+xref: search-url: "http://rnacentral.org/rna/${ac}"
 is_a: MI:0683 ! sequence database
 created_by: orchard
 creation_date: 2015-02-03T13:37:23Z
