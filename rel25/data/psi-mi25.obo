@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:04:2015 16:24
+date: 22:04:2015 12:08
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -6945,7 +6945,7 @@ subset: Drugable
 subset: PSI-MI_slim
 synonym: "wwPDB" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[0-9\][a-zA-Z0-9\]\{3}\"
-xref: search-url: "http://www.pdbe.org/$id"
+xref: search-url: "http://www.pdbe.org/${ac}"
 is_a: MI:0447 ! feature database
 is_a: MI:0461 ! interaction database
 is_a: MI:0489 ! source database
@@ -8131,7 +8131,7 @@ def: "The Electron Microscopy Data Bank (EMDB) contains experimentally determine
 subset: PSI-MI_slim
 synonym: "Electron Microscopy Data Bank" EXACT PSI-MI-alternate []
 synonym: "eMDB" EXACT PSI-MI-short []
-xref: search-url:<new xref> "http://www.pdbe.org/emd-$id"
+xref: search-url: "http://www.pdbe.org/emd-${ac}"
 is_a: MI:0472 ! pdbe
 
 [Term]
