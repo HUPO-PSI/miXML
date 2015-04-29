@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:04:2015 15:54
+date: 29:04:2015 14:24
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -7028,7 +7028,7 @@ def: "AlphaScreen relies on the use of Donor and Acceptor beads that are coated 
 subset: PSI-MI_slim
 synonym: "alfa-screen" EXACT PSI-MI-short []
 synonym: "AlphaScreen" EXACT PSI-MI-alternate []
-is_a: MI:0013 ! biophysical
+is_a: MI:0051 ! fluorescence technology
 
 [Term]
 id: MI:0906
@@ -10927,7 +10927,7 @@ creation_date: 2013-06-06T10:43:24Z
 [Term]
 id: MI:1313
 name: proximity labelling technology
-def: "Methods depend on the close proximity of two molecules - a protein fused to the bait can then modify any neighbouring prey proteins. The resulting tag can be used for isolation and/or identification." [PMID:22412018]
+def: "Methods depend on a modification that only takes place with the close proximity of two molecules - a protein fused to the bait can then modify any neighbouring prey proteins, for example. The resulting tag can be used for isolation and/or identification." [PMID:22412018]
 subset: PSI-MI_slim
 is_a: MI:0400 ! affinity technology
 created_by: orchard
@@ -12247,6 +12247,52 @@ synonym: "kinexa" EXACT PSI-MI-alternate []
 is_a: MI:0892 ! solid phase assay
 created_by: ppm
 creation_date: 2015-04-27T15:51:46Z
+
+[Term]
+id: MI:2168
+name: conditional site labelling
+def: "The interaction is detected through labelling of a specific site -which can be an active site- that is only accessible once the participants are interacting. This conditional site is then marked with a chemical label for detection." [PMID:19416890]
+subset: PSI-MI_slim
+synonym: "active site labelling" RELATED []
+is_a: MI:1313 ! proximity labelling technology
+created_by: ppm
+creation_date: 2015-04-29T10:19:28Z
+
+[Term]
+id: MI:2169
+name: luminiscence technology
+def: "Techniques based upon the measurement of the emission of one or more photons in a bioluminescent reaction. Such reactions are typically catalyzed by two groups of enzymes: photoproteins and luciferases. Photoproteins emit light in proportion to the concentration of the protein itself, while in a luciferin-luciferase reaction, photon emission is directly proportional to the amount of luciferin." [PMID:24166364]
+is_a: MI:0013 ! biophysical
+created_by: ppm
+creation_date: 2015-04-29T11:50:41Z
+
+[Term]
+id: MI:2170
+name: bimolecular luminiscence complementation
+def: "The bimolecular luminescence complementation (BiLC) is an assay for determination of protein interactions and/or their location in living cells. This approach is based on complementation between two fragments of a bioluminescent enzyme such as luciferin or aequorin. Interactions between proteins fused to each fragment bring the fragments together resulting in the reconstitution of a fully functional bioluminescent enzyme that can be identified through microscopy or luminescence detection." [PMID:25859972]
+synonym: "bilc" EXACT PSI-MI-short []
+synonym: "bioluminescence complementation" EXACT PSI-MI-alternate []
+synonym: "bioluminescence complementation assay" EXACT PSI-MI-alternate []
+synonym: "luminescence complementation assay" EXACT PSI-MI-alternate []
+synonym: "luminiscence complementation" EXACT PSI-MI-alternate []
+synonym: "split-luciferase complementation" RELATED []
+synonym: "split-luciferase complementation assay" RELATED []
+is_a: MI:2169 ! luminiscence technology
+created_by: ppm
+creation_date: 2015-04-29T12:03:27Z
+
+[Term]
+id: MI:2171
+name: complemented donor-acceptor resonance energy transfer
+def: "This technology is based on quantifying the BRET between a pair of participants bearing complementation tags and a participant tagged with a bioluminescent enzyme or a fluorescent tag. The tags held by the pair of participants are complementary halves of either a fluorescent tag (N- and C- fragments of the Venus fluorescent protein, for example) or a bioluminescent enzyme (N- and C- fragments of Renilla luciferase, for example). Interaction between the pair of participants leads to reconstruction of the bioluminescent enzyme/fluorescent protein, which can then emit/accept photons that are accepted/emitted by the tag in the third participant, generating the signal used to detect the interaction. The signals emitted by the bioluminescent enzyme and the fluorescent tag have different wavelengths, so they can be distinguished." [PMID:21785426, PMID:25706338]
+subset: PSI-MI_slim
+synonym: "bret complementation" EXACT PSI-MI-alternate []
+synonym: "bret complementation assay" EXACT PSI-MI-alternate []
+synonym: "copa-ret" EXACT PSI-MI-short []
+is_a: MI:0051 ! fluorescence technology
+is_a: MI:2169 ! luminiscence technology
+created_by: ppm
+creation_date: 2015-04-29T13:25:55Z
 
 [Typedef]
 id: contains
