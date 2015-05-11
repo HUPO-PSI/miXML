@@ -12405,8 +12405,8 @@ def: "AgBase is a curated, open-source, Web-accessible resource for functional a
 subset: PSI-MI_slim
 synonym: "agbase" EXACT PSI-MI-short []
 synonym: "AgBase" EXACT PSI-MI-alternate []
-xref: search-url:http\://www.agbase.msstate.edu/cgi-bin/getEntry.pl?db_pick=[ChickGO/MaizeGO\]&uid=$\{ac}
-xref: url:http\://www.agbase.msstate.edu/
+xref: search-url:"http://www.agbase.msstate.edu/cgi-bin/getEntry.pl?db_pick=[ChickGO/MaizeGO]&uid=${ac}"
+xref: url:"http://www.agbase.msstate.edu/"
 is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-11T10:23:14Z
@@ -12419,8 +12419,8 @@ subset: PSI-MI_slim
 synonym: "cacao" EXACT PSI-MI-short []
 synonym: "CACAO" EXACT PSI-MI-alternate []
 synonym: "Community Assessment of Community Annotation with Ontologies" EXACT PSI-MI-alternate []
-xref: search-url:http\://gowiki.tamu.edu/wiki/index.php/$\{ac}
-xref: url:http\://gowiki.tamu.edu/wiki/index.php/Category\:CACAO
+xref: search-url:"http://gowiki.tamu.edu/wiki/index.php/${ac}"
+xref: url:"http://gowiki.tamu.edu/wiki/index.php/Category:CACAO"
 is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-11T10:51:57Z
@@ -12433,7 +12433,7 @@ subset: PSI-MI_slim
 synonym: "Developmental FunctionaL Annotation at Tufts" EXACT PSI-MI-alternate []
 synonym: "dflat" EXACT PSI-MI-short []
 synonym: "DFLAT" EXACT PSI-MI-alternate []
-xref: url:http\://bcb.cs.tufts.edu/dflat/
+xref: url:"http://bcb.cs.tufts.edu/dflat/"
 is_a: MI:0473 ! participant database
 created_by: ppm
 creation_date: 2015-05-11T11:01:34Z
@@ -12447,7 +12447,7 @@ synonym: "GO central" EXACT PSI-MI-alternate []
 synonym: "go_central" EXACT PSI-MI-short []
 synonym: "GO_central" EXACT PSI-MI-alternate []
 synonym: "The Reference Genome Annotation Project" EXACT PSI-MI-alternate []
-xref: url:http\://www.geneontology.org/GO.refgenome.shtml
+xref: url:"http://www.geneontology.org/GO.refgenome.shtml"
 is_a: MI:0448 ! gene ontology
 created_by: ppm
 creation_date: 2015-05-11T11:10:30Z
@@ -12459,7 +12459,7 @@ def: "Collection and Refinement of Physiological Data on Mycobacterium tuberculo
 subset: PSI-MI_slim
 synonym: "MTBBASE" EXACT PSI-MI-alternate []
 synonym: "mtbbase" EXACT PSI-MI-short []
-xref: url:http\://www.ark.in-berlin.de/Site/MTBbase.html
+xref: url:"http://www.ark.in-berlin.de/Site/MTBbase.html"
 is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-11T11:34:15Z
@@ -12473,7 +12473,7 @@ synonym: "Parkinson-UCL" EXACT PSI-MI-alternate []
 synonym: "Parkinsons Disease Gene Ontology Initiative" EXACT PSI-MI-alternate []
 synonym: "ParkinsonsUK-UCL" EXACT PSI-MI-alternate []
 synonym: "parkinsonsuk-ucl" EXACT PSI-MI-short []
-xref: url:http\://www.ucl.ac.uk/functional-gene-annotation/neurological
+xref: url:"http://www.ucl.ac.uk/functional-gene-annotation/neurological"
 is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-11T11:45:34Z
@@ -12487,7 +12487,7 @@ synonym: "alut" EXACT PSI-MI-short []
 synonym: "Alzheimers Project at University of Toronto" EXACT PSI-MI-alternate []
 synonym: "Alzheimers University of Toronto" EXACT PSI-MI-alternate []
 synonym: "Alzheimers_University_of_Toronto" EXACT PSI-MI-alternate []
-xref: url:http\://www.ims.utoronto.ca/
+xref: url:"http://www.ims.utoronto.ca/"
 is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-11T13:13:02Z
@@ -12502,7 +12502,7 @@ synonym: "RI" EXACT PSI-MI-alternate []
 synonym: "Roslin Institute" EXACT PSI-MI-alternate []
 synonym: "roslin_institute" EXACT PSI-MI-alternate []
 synonym: "Roslin_Institute" EXACT PSI-MI-alternate []
-xref: url:http\://www.roslin.ac.uk/
+xref: url:"http://www.roslin.ac.uk/"
 is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-11T13:18:36Z
