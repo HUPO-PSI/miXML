@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:05:2015 16:28
+date: 11:05:2015 14:17
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -11151,7 +11151,7 @@ creation_date: 2014-01-09T11:17:32Z
 [Term]
 id: MI:1335
 name: hpidb
-def: "Host-pathogen database. HPIDB integrates experimental PPIs from several public databases into a single, non-redundant web accessible resource.  Manual curation is perfromed via the IntAct (ww.ebi.ac.uk/intact) curation interface.\nhttp://www.agbase.msstate.edu/hpi/main.html" [PMID:20946599]
+def: "Host-pathogen database. HPIDB integrates experimental PPIs from several public databases into a single, non-redundant web accessible resource.  Manual curation is performed via the IntAct (ww.ebi.ac.uk/intact) curation interface.\nhttp://www.agbase.msstate.edu/hpi/main.html" [PMID:20946599]
 subset: PSI-MI_slim
 synonym: "Host Pathogen Interaction database" EXACT []
 is_a: MI:0461 ! interaction database
@@ -12304,7 +12304,7 @@ synonym: "AspGD" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"ASPL[0-9\]\{10}\"
 xref: search-url: "http://www.aspergillusgenome.org/cgi-bin/locus.pl?dbid=${ac}"
 xref: url: "www.aspergillusgenome.org/"
-is_a: MI:1094 ! genome databases
+is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-05T14:28:59Z
 
@@ -12318,7 +12318,7 @@ synonym: "CGD" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"(CAL|CAF)[0-9\]\{7}\"
 xref: search-url: "http://www.candidagenome.org/cgi-bin/locus.pl?dbid=${ac}"
 xref: url: "www.candidagenome.org"
-is_a: MI:1094 ! genome databases
+is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-05T14:41:00Z
 
@@ -12329,9 +12329,9 @@ def: "Community annotation portal associated with PortEco (formerly EcoliHub, ht
 synonym: "ecoliwiki" EXACT PSI-MI-short []
 synonym: "EcoliWiki" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[A-Za-z\]\{3\,4}\"
-xref: search-url:"http://ecoliwiki.net/colipedia/${ac}"
+xref: search-url: "http://ecoliwiki.net/colipedia/${ac}"
 xref: url: "http://ecoliwiki.net/colipedia/"
-is_a: MI:1094 ! genome databases
+is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-05T14:55:06Z
 
@@ -12344,7 +12344,7 @@ synonym: "genedb" EXACT PSI-MI-short []
 xref: id-validation-regexp:\"((LmjF|LinJ|LmxM)\\.[0-9\]\{2}\\.[0-9\]\{4})|(PF3D7_[0-9\]\{7})|(Tb[0-9\]+\\.[A-Za-z0-9\]+\\.[0-9\]+)|(TcCLB\\.[0-9\]\{6}\\.[0-9\]+)\"
 xref: search-url: "www.genedb.org/gene/${ac}"
 xref: url: "www.genedb.org"
-is_a: MI:1094 ! genome databases
+is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-05T15:04:16Z
 
@@ -12357,7 +12357,7 @@ synonym: "Gramene" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]\"
 xref: search-url: "http://tools.gramene.org/search?query=${ac}"
 xref: url: "http://www.gramene.org"
-is_a: MI:1094 ! genome databases
+is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-05T15:12:03Z
 
@@ -12370,7 +12370,7 @@ synonym: "PomBase" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"S\\w+(\\.)?\\w+(\\.)?\"
 xref: search-url: "www.pombase.org/spombe/result/${ac}"
 xref: url: "www.pombase.org"
-is_a: MI:1094 ! genome databases
+is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-05T15:17:42Z
 
@@ -12383,9 +12383,129 @@ synonym: "AGI_LocusCode" EXACT PSI-MI-alternate []
 synonym: "Arabidopsis Genome Initiative" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"A[Tt\][MmCc0-5\][Gg\][0-9\]\{5}(\\.[0-9\]\{1})?\"
 xref: search-url: "http://arabidopsis.org/servlets/TairObject?type=locus&name=${ac}"
-is_a: MI:1094 ! genome databases
+is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-05-05T16:12:18Z
+
+[Term]
+id: MI:2179
+name: subset
+def: "Reference to the corresponding object in another database. It implies the object is part of a cross-referenced entity (usually a complex)." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "part of" EXACT PSI-MI-alternate []
+synonym: "subset" EXACT PSI-MI-short []
+is_a: MI:0353 ! cross-reference type
+created_by: ppm
+creation_date: 2015-05-11T09:59:36Z
+
+[Term]
+id: MI:2180
+name: agbase
+def: "AgBase is a curated, open-source, Web-accessible resource for functional analysis of agricultural plant and animal gene products. Their long-term goal is to serve the needs of the agricultural research communities by facilitating post-genome biology for agriculture researchers and for those researchers primarily using agricultural species as biomedical models. They use the Gene Ontology for functional annotation." [PMID:21075795]
+subset: PSI-MI_slim
+synonym: "agbase" EXACT PSI-MI-short []
+synonym: "AgBase" EXACT PSI-MI-alternate []
+xref: search-url:http\://www.agbase.msstate.edu/cgi-bin/getEntry.pl?db_pick=[ChickGO/MaizeGO\]&uid=$\{ac}
+xref: url:http\://www.agbase.msstate.edu/
+is_a: MI:0461 ! interaction database
+created_by: ppm
+creation_date: 2015-05-11T10:23:14Z
+
+[Term]
+id: MI:2181
+name: cacao
+def: "The Community Assessment of Community Annotation with Ontologies (CACAO) is a project to do large-scale manual community annotation of gene function using the Gene Ontology as a multi-institution student competition." []
+subset: PSI-MI_slim
+synonym: "cacao" EXACT PSI-MI-short []
+synonym: "CACAO" EXACT PSI-MI-alternate []
+synonym: "Community Assessment of Community Annotation with Ontologies" EXACT PSI-MI-alternate []
+xref: search-url:http\://gowiki.tamu.edu/wiki/index.php/$\{ac}
+xref: url:http\://gowiki.tamu.edu/wiki/index.php/Category\:CACAO
+is_a: MI:0461 ! interaction database
+created_by: ppm
+creation_date: 2015-05-11T10:51:57Z
+
+[Term]
+id: MI:2182
+name: dflat
+def: "Database dedicated to annotating gene function related to human fetal development using the Gene Ontology for functional annotation." []
+subset: PSI-MI_slim
+synonym: "Developmental FunctionaL Annotation at Tufts" EXACT PSI-MI-alternate []
+synonym: "dflat" EXACT PSI-MI-short []
+synonym: "DFLAT" EXACT PSI-MI-alternate []
+xref: url:http\://bcb.cs.tufts.edu/dflat/
+is_a: MI:0473 ! participant database
+created_by: ppm
+creation_date: 2015-05-11T11:01:34Z
+
+[Term]
+id: MI:2183
+name: go_central
+def: "The GO Consortium coordinated an effort to maximize and optimize GO annotations for a large and representative set of key genomes, known as 'reference genomes'. The Reference Genome Annotation Project aimed to completely annotate twelve reference genomes, producing a resource that may effectively seed automatic annotation efforts of other genomes. This resource represents manual annotation from PAINT curators into the UniProt Protein2GO curation tool." [PMID:19578431]
+subset: PSI-MI_slim
+synonym: "GO central" EXACT PSI-MI-alternate []
+synonym: "go_central" EXACT PSI-MI-short []
+synonym: "GO_central" EXACT PSI-MI-alternate []
+synonym: "The Reference Genome Annotation Project" EXACT PSI-MI-alternate []
+xref: url:http\://www.geneontology.org/GO.refgenome.shtml
+is_a: MI:0448 ! gene ontology
+created_by: ppm
+creation_date: 2015-05-11T11:10:30Z
+
+[Term]
+id: MI:2184
+name: mtbbase
+def: "Collection and Refinement of Physiological Data on Mycobacterium tuberculosis in the form of GO annitations. MTBBASE data has also been rendered as pathway information in Reactome (http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=REACT_121237.1)." []
+subset: PSI-MI_slim
+synonym: "MTBBASE" EXACT PSI-MI-alternate []
+synonym: "mtbbase" EXACT PSI-MI-short []
+xref: url:http\://www.ark.in-berlin.de/Site/MTBbase.html
+is_a: MI:0461 ! interaction database
+created_by: ppm
+creation_date: 2015-05-11T11:34:15Z
+
+[Term]
+id: MI:2185
+name: parkinsonsuk-ucl
+def: "The Parkinson's UK Gene Ontology Project represents a collaboration between University College London and the European Bioinformatics Institute (EBI), funded by Parkinson's UK. This annotation group is a member of the IMEx Consortium." []
+subset: PSI-MI_slim
+synonym: "Parkinson-UCL" EXACT PSI-MI-alternate []
+synonym: "Parkinsons Disease Gene Ontology Initiative" EXACT PSI-MI-alternate []
+synonym: "ParkinsonsUK-UCL" EXACT PSI-MI-alternate []
+synonym: "parkinsonsuk-ucl" EXACT PSI-MI-short []
+xref: url:http\://www.ucl.ac.uk/functional-gene-annotation/neurological
+is_a: MI:0461 ! interaction database
+created_by: ppm
+creation_date: 2015-05-11T11:45:34Z
+
+[Term]
+id: MI:2186
+name: alut
+def: "The Alzheimers-University of Toronto project adds functional annotation to Alzheimer's related gene products using the Gene Ontology." []
+subset: PSI-MI_slim
+synonym: "alut" EXACT PSI-MI-short []
+synonym: "Alzheimers Project at University of Toronto" EXACT PSI-MI-alternate []
+synonym: "Alzheimers University of Toronto" EXACT PSI-MI-alternate []
+synonym: "Alzheimers_University_of_Toronto" EXACT PSI-MI-alternate []
+xref: url:http\://www.ims.utoronto.ca/
+is_a: MI:0461 ! interaction database
+created_by: ppm
+creation_date: 2015-05-11T13:13:02Z
+
+[Term]
+id: MI:2187
+name: ri
+def: "The Roslin Institute uses the Gene Ontology to add functional annotation to different gene products." []
+subset: PSI-MI_slim
+synonym: "ri" EXACT PSI-MI-short []
+synonym: "RI" EXACT PSI-MI-alternate []
+synonym: "Roslin Institute" EXACT PSI-MI-alternate []
+synonym: "roslin_institute" EXACT PSI-MI-alternate []
+synonym: "Roslin_Institute" EXACT PSI-MI-alternate []
+xref: url:http\://www.roslin.ac.uk/
+is_a: MI:0461 ! interaction database
+created_by: ppm
+creation_date: 2015-05-11T13:18:36Z
 
 [Typedef]
 id: contains
