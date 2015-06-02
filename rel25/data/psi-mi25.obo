@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:05:2015 15:51
+date: 02:06:2015 11:47
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12504,6 +12504,30 @@ synonym: "Photoactivatable-Ribonucleoside-Enhanced Crosslinking and Immunoprecip
 is_a: MI:0430 ! nucleic acid uv cross-linking assay
 created_by: ppm
 creation_date: 2015-05-11T15:13:05Z
+
+[Term]
+id: MI:2189
+name: avexis
+def: "Low-affinity interaction detection method designed specifically to detect interactions between extracellular proteins. Recombinant soluble fragments of these proteins are produced in a (generally) mammalian expression cell line and secreted into the medium and produced in two forms: a biotinylated bait which can be captured on a streptavidin-coated solid phase suitable for screening, and a pentamerised enzyme-tagged (beta-lactamase) prey. The bait and prey proteins are presented to each other in a binary fashion to detect direct interactions between them, similar to a conventional ELISA. The pentamerisation of the proteins in the prey is achieved through a peptide sequence from the cartilage oligomeric matrix protein (COMP) and increases the local concentration of the ectodomains thereby providing significant avidity gains to enable even very transient interactions to be detected. By normalising the activities of both the bait and prey to predetermined levels prior to screening, interactions having monomeric half-lives of 0.1 sec can be detected with low false positive rates." [pmid:22414956]
+synonym: "avexis" EXACT PSI-MI-short []
+synonym: "AVidity-based EXtracellular Interaction Screen" EXACT PSI-MI-alternate []
+synonym: "avidity-based extracellular interaction screen" EXACT PSI-MI-alternate []
+is_a: MI:0892 ! solid phase assay
+created_by: ppm
+creation_date: 2015-06-01T15:05:13Z
+
+[Term]
+id: MI:2190
+name: long non-coding ribonucleic acid
+def: "Non-protein coding transcripts longer than 200 nucleotides and that can be involved in a number of functions, like transcription, post-translational and epigenetic regulation. Most lncRNAs do not have a known function so far." [PMID:23750541]
+synonym: "lncrna" EXACT PSI-MI-short []
+synonym: "lncRNA" EXACT PSI-MI-alternate []
+synonym: "long non coding ribonucleic acid" EXACT PSI-MI-alternate []
+synonym: "long non coding RNA" EXACT PSI-MI-alternate []
+synonym: "long non-coding RNA" EXACT PSI-MI-alternate []
+is_a: MI:0320 ! ribonucleic acid
+created_by: ppm
+creation_date: 2015-06-02T11:33:27Z
 
 [Typedef]
 id: contains
