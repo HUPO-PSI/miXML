@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:06:2015 11:47
+date: 15:06:2015 17:07
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12496,12 +12496,12 @@ creation_date: 2015-05-11T13:18:36Z
 [Term]
 id: MI:2188
 name: par-clip
-def: "Photoactivatable-Ribonucleoside-Enhanced Crosslinking and Immunoprecipitation (PAR-CLIP) is a biochemical method used for identifying the binding sites of cellular RNA-binding proteins (RBPs) and microRNA-containing ribonucleoprotein complexes (miRNPs). The method relies on the incorporation of photoreactive ribonucleoside analogs, such as 4-thiouridine (4-SU) and 6-thioguanosine (6-SG) into nascent RNA transcripts by living cells. Irradiation of the cells by UV light of 365 nm induces efficient crosslinking of photoreactive nucleoside-labeled cellular RNAs to interacting RBPs. Immunoprecipitation of the RBP of interest is followed by isolation of the crosslinked and coimmunoprecipitated RNA. The isolated RNA is converted into a cDNA library and deep sequenced using next-generation sequencing technology.\nhttp://en.wikipedia.org/wiki/PAR-CLIP" [PMID:20644507]
+def: "Photoactivatable-Ribonucleoside-Enhanced Crosslinking and Immunoprecipitation (PAR-CLIP) is a biochemical method used for identifying the binding sites of cellular RNA-binding proteins (RBPs) and microRNA-containing ribonucleoprotein complexes (miRNPs). The method relies on the incorporation of photoreactive ribonucleoside analogs, such as 4-thiouridine (4-SU) and 6-thioguanosine (6-SG) into nascent RNA transcripts by living cells. Irradiation of the cells by UV light of 365 nm induces efficient crosslinking of photoreactive nucleoside-labeled cellular RNAs to interacting RBPs. Immunoprecipitation of the RBP of interest is followed by isolation of the crosslinked and coimmunoprecipitated RNA. The isolated RNA is converted into a cDNA library and deep sequenced using next-generation sequencing technology.\nhttp://en.wikipedia.org/wiki/PAR-CLIP" [PMID:20371350, PMID:20644507]
 subset: PSI-MI_slim
 synonym: "PAR-CLIP" EXACT PSI-MI-alternate []
 synonym: "par-clip" EXACT PSI-MI-short []
 synonym: "Photoactivatable-Ribonucleoside-Enhanced Crosslinking and Immunoprecipitation" EXACT PSI-MI-alternate []
-is_a: MI:0430 ! nucleic acid uv cross-linking assay
+is_a: MI:2191 ! clip
 created_by: ppm
 creation_date: 2015-05-11T15:13:05Z
 
@@ -12528,6 +12528,67 @@ synonym: "long non-coding RNA" EXACT PSI-MI-alternate []
 is_a: MI:0320 ! ribonucleic acid
 created_by: ppm
 creation_date: 2015-06-02T11:33:27Z
+
+[Term]
+id: MI:2191
+name: clip
+def: "Combination of cross-linking and co-immunoprecipitation aimed to find protein-RNA interactions. The canonical method uses first a cross-linking procedure over a tissue sample or lysate, and the immunoprecipitated with specific antibodies for the protein of interest. Unspecific proteins are digested via proteinase K treatment. RNA can be then identified via Northern blotting or using RT-PCR and then sequencing of the generated cDNA.\nhttps://en.wikipedia.org/wiki/CLIP" [PMID:14615540]
+subset: PSI-MI_slim
+synonym: "CLIP" EXACT PSI-MI-alternate []
+synonym: "clip" EXACT PSI-MI-short []
+synonym: "cross linking immunoprecipitation" EXACT PSI-MI-alternate []
+synonym: "cross-linking immunoprecipitation" EXACT PSI-MI-alternate []
+is_a: MI:0430 ! nucleic acid uv cross-linking assay
+created_by: ppm
+creation_date: 2015-06-15T10:17:34Z
+
+[Term]
+id: MI:2192
+name: clip-seq
+def: "This method combines UV cross-linking and immunoprecipitation with high-throughput sequencing to identify binding sites of RNA-binding proteins.\nhttps://en.wikipedia.org/wiki/HITS-CLIP" [PMID:18978773, PMID:21633356]
+subset: PSI-MI_slim
+synonym: "CLIP-Seq" EXACT PSI-MI-alternate []
+synonym: "clip-seq" EXACT PSI-MOD-short []
+synonym: "HITS-CLIP" EXACT PSI-MI-alternate []
+synonym: "UV cross-linking immunoprecipitation combined with high-throughput sequencing" EXACT PSI-MI-alternate []
+is_a: MI:2191 ! clip
+created_by: ppm
+creation_date: 2015-06-15T10:44:44Z
+
+[Term]
+id: MI:2193
+name: iclip
+def: "iCLIP allows for the stringent purification of UV cross-linked protein-RNA complexes, using immunoprecipitation followed by SDS-PAGE and membrane transfer. The radiolabelled protein-RNA complexes are then excised from the membrane, and treated with proteinase to release the RNA. This leaves one or two amino acids at the RNA cross-link site. The RNA is then reverse transcribed using barcoded primers. Because reverse transcription stops prematurely at the cross-link site, iCLIP allows RNA-protein interaction sites to be identified at high resolution.\nhttps://en.wikipedia.org/wiki/ICLIP" [PMID:20601959]
+subset: PSI-MI_slim
+synonym: "iclip" EXACT PSI-MI-short []
+synonym: "iCLIP" EXACT PSI-MI-alternate []
+synonym: "individual-nucleotide resolution cross-linking and immunoprecipitation" EXACT PSI-MI-alternate []
+is_a: MI:2191 ! clip
+created_by: ppm
+creation_date: 2015-06-15T11:17:22Z
+
+[Term]
+id: MI:2194
+name: crac
+def: "Combination of UV cross-linking and affinity purification where the protein of interest bears a tag used for pull-down or immunoprecipitation. As in CLIP, unspecific proteins are digested via proteinase K treatment and RNAs are tagged with oligonucleotide linkers. RNA can be then identified via Northern blotting or using RT-PCR and then sequencing of the generated cDNA." [PMID:19482942]
+synonym: "crac" EXACT PSI-MI-short []
+synonym: "CRAC" EXACT PSI-MI-alternate []
+synonym: "cross-linking and analysis of cDNAs" EXACT PSI-MI-alternate []
+is_a: MI:0430 ! nucleic acid uv cross-linking assay
+created_by: ppm
+creation_date: 2015-06-15T11:26:33Z
+
+[Term]
+id: MI:2195
+name: clash
+def: "This method is a variation of CRAC where after combined cross-linking and affinity purification of protein-RNA complexes, RNA-RNA interactions are specifically detected. Base-paired RNA molecules can be linked together during while tagging RNA with oligonucleotides, generating chimeric RNAs that allow identification of RNA-RNA pairs." [PMID:21610164]
+subset: PSI-MI_slim
+synonym: "clash" EXACT PSI-MI-short []
+synonym: "CLASH" EXACT PSI-MI-alternate []
+synonym: "cross-linking, ligation, and sequencing of hybrids" EXACT PSI-MI-alternate []
+is_a: MI:2194 ! crac
+created_by: ppm
+creation_date: 2015-06-15T11:45:38Z
 
 [Typedef]
 id: contains
