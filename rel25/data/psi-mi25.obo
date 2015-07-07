@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:06:2015 17:07
+date: 07:07:2015 13:39
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3346,7 +3346,7 @@ is_a: MI:0428 ! imaging technique
 [Term]
 id: MI:0417
 name: footprinting
-def: "footprinting analysis is used to identify regions of molecules directly involved in binding other macromolecules and therefore protected from the effects of degradative enzymes." [PMID:14755292]
+def: "Footprinting analysis is used to identify regions of molecules involved in binding other macromolecules and therefore protected from the effects of degradative enzymes, chemical treatment or other deleterious treatments." [PMID:14755292]
 subset: PSI-MI_slim
 is_a: MI:0401 ! biochemical
 
@@ -4920,7 +4920,7 @@ is_a: MI:0473 ! participant database
 [Term]
 id: MI:0602
 name: chemical footprinting
-def: "Binding sites are identified by altered reactivity of a complex to a chemical treatment compared to the unbound molecules. Residues in close contact with the binding partner are protected from cleavage by the enzyme. When these chemicals are administrated to intact cells, the pattern of protection from the probes identifies the location of DNA-protein or protein-protein interactions in vivo." [PMID:8238889]
+def: "Binding sites are identified by altered reactivity of a complex to a chemical treatment compared to the unbound molecules. Residues in close contact with the binding partner are protected from chemical modification. When these chemicals are administrated to intact cells, the pattern of protection from the probes identifies the location of DNA-protein or protein-protein interactions in vivo." [PMID:8238889]
 subset: PSI-MI_slim
 synonym: "chemical footprint" EXACT PSI-MI-short []
 is_a: MI:0417 ! footprinting
@@ -7120,6 +7120,7 @@ id: MI:0917
 name: matrixdb
 def: "Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions." [PMID:19147664]
 subset: PSI-MI_slim
+xref: url: "http://matrixdb.ibcp.fr/cgi-bin/current/newPort?type=biomolecule&value={ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
@@ -8730,6 +8731,7 @@ def: "Method to block a binding site on a molecule, such as a protein, using a m
 subset: PSI-MI_slim
 synonym: "mab blockade" EXACT PSI-MI-short []
 is_a: MI:0400 ! affinity technology
+is_a: MI:2197 ! probe interaction assay
 created_by: orchard
 creation_date: 2011-07-05T11:19:37Z
 
@@ -10929,7 +10931,7 @@ id: MI:1313
 name: proximity labelling technology
 def: "Methods depend on a modification that only takes place with the close proximity of two molecules - a protein fused to the bait can then modify any neighbouring prey proteins, for example. The resulting tag can be used for isolation and/or identification." [PMID:22412018]
 subset: PSI-MI_slim
-is_a: MI:0400 ! affinity technology
+is_a: MI:2198 ! labelling assay
 created_by: orchard
 creation_date: 2013-06-06T11:20:43Z
 
@@ -11278,7 +11280,7 @@ def: "PRO provides an ontological representation of protein-related entities by 
 subset: PSI-MI_slim
 synonym: "PRO" RELATED []
 xref: id-validation-regexp:\"[0-9\]\{9}|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]|[A-Z\][0-9\][A-Z0-9\]\{3}[0-9\]-[1-9\]+\"
-xref: search-url: "purl.obolibrary.org/obo/PR_{ac}"
+xref: search-url: "http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id={ac}"
 is_a: MI:0461 ! interaction database
 created_by: orchard
 creation_date: 2014-09-26T14:06:25Z
@@ -11372,7 +11374,7 @@ id: MI:1357
 name: RNAcentral
 def: "Provides unified access to the ncRNA sequence data supplied by the expert databases." [PMID:25352543]
 subset: PSI-MI_slim
-xref: id-validation-regexp:\"URS[0-9A-F\]\{10}\"
+xref: id-validation-regexp:\"/URS[0-9A-F\]\{10}/i\"
 xref: search-url: "http://rnacentral.org/rna/${ac}"
 is_a: MI:0683 ! sequence database
 created_by: orchard
@@ -12589,6 +12591,48 @@ synonym: "cross-linking, ligation, and sequencing of hybrids" EXACT PSI-MI-alter
 is_a: MI:2194 ! crac
 created_by: ppm
 creation_date: 2015-06-15T11:45:38Z
+
+[Term]
+id: MI:2196
+name: quartz crystal microbalance
+def: "A method that monitors ligand binding by measuring the change in frequency of a quartz crystal resonator resulting from the addition or removal of a small mass of a ligand specifically binding at the surface of the resonator." [PMID:23504432]
+subset: PSI-MI_slim
+synonym: "qcm" EXACT PSI-MI-short []
+synonym: "QCM" EXACT PSI-MI-alternate []
+is_a: MI:0968 ! biosensor
+created_by: ppm
+creation_date: 2015-07-07T09:46:51Z
+
+[Term]
+id: MI:2197
+name: probe interaction assay
+def: "An assay that uses molecular probes, such as ions, small molecules or antibodies to monitor interactions between biomolecules under study." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "probe interaction assay" EXACT PSI-MI-short []
+is_a: MI:0401 ! biochemical
+created_by: ppm
+creation_date: 2015-07-07T10:11:26Z
+
+[Term]
+id: MI:2198
+name: labelling assay
+def: "The interaction is inferred from the effect it exerts on specific chemical labelling of one of the interacting partners." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "labelling assay" EXACT PSI-MI-short []
+is_a: MI:2197 ! probe interaction assay
+created_by: ppm
+creation_date: 2015-07-07T10:14:29Z
+
+[Term]
+id: MI:2199
+name: specific site-labelling technology
+def: "The interaction is detected through selective, chemical blockage of a specific site -which can be an active site- that becomes inaccessible once the participants are interacting. The interaction is detected through loss of signal of the chemical label" [PMID:8441405]
+subset: PSI-MI_slim
+synonym: "site-labelling technology" EXACT PSI-MI-short []
+synonym: "specific site-labelling technology" EXACT PSI-MI-alternate []
+is_a: MI:2198 ! labelling assay
+created_by: ppm
+creation_date: 2015-07-07T11:51:57Z
 
 [Typedef]
 id: contains
