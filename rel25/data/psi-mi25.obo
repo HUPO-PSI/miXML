@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:07:2015 16:43
+date: 11:08:2015 17:29
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -12583,7 +12583,7 @@ creation_date: 2015-06-15T11:26:33Z
 [Term]
 id: MI:2195
 name: clash
-def: "This method is a variation of CRAC where after combined cross-linking and affinity purification of protein-RNA complexes, RNA-RNA interactions are specifically detected. Base-paired RNA molecules can be linked together during while tagging RNA with oligonucleotides, generating chimeric RNAs that allow identification of RNA-RNA pairs." [PMID:21610164]
+def: "This method is a variation of CRAC where after combined cross-linking and affinity purification of protein-RNA complexes, RNA-RNA interactions are specifically detected. Base-paired RNA molecules can be linked together while tagging RNA with oligonucleotides, generating chimeric RNAs that allow identification of RNA-RNA pairs." [PMID:21610164]
 subset: PSI-MI_slim
 synonym: "clash" EXACT PSI-MI-short []
 synonym: "CLASH" EXACT PSI-MI-alternate []
@@ -12643,6 +12643,40 @@ synonym: "PRIMESDB" EXACT PSI-MI-alternate []
 is_a: MI:0461 ! interaction database
 created_by: ppm
 creation_date: 2015-07-13T16:36:21Z
+
+[Term]
+id: MI:2201
+name: DNA chemical modification
+def: "Chemical alterations occurring at the nucleotide level in the specific DNA molecule involved in an interaction. The process can involve covalent modifications (i.e. methylations) or other forms of chemical modification." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "dna chemical modification" EXACT PSI-MI-short []
+synonym: "DNA chemical modification" EXACT PSI-MI-alternate []
+synonym: "DNA epigenetic modification" EXACT PSI-MI-alternate []
+is_a: MI:0252 ! biological feature
+created_by: ppm
+creation_date: 2015-08-11T15:37:49Z
+
+[Term]
+id: MI:2202
+name: RNA chemical modification
+def: "Chemical alterations occurring at the nucleotide level in the specific RNA molecule involved in an interaction. The process can involve covalent modifications (i.e. 2'-O-methylation) or other forms of chemical modification, such as isomerizations (i.e. pseudouridylation)." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "post-transcriptional modification" EXACT PSI-MI-alternate []
+synonym: "rna chemical modification" EXACT PSI-MI-short []
+synonym: "RNA chemical modification" EXACT PSI-MI-alternate []
+is_a: MI:0252 ! biological feature
+created_by: ppm
+creation_date: 2015-08-11T15:55:40Z
+
+[Term]
+id: MI:2203
+name: primer extension assay
+def: "Primer extension can be used to determine the 3' end of a given sequence of RNA. This technique requires a radiolabelled primer which is complementary to a region near the 3' end of the RNA. The primer is allowed to anneal to the RNA and reverse transcriptase is used to synthesize  a strand of DNA from the RNA until it reaches the 5' end of the RNA. By denaturing the hybrid and using the extended primer DNA strand as a marker on an electrophoretic gel, it is possible to determine the transcriptional start site." [PMID:23378648]
+subset: PSI-MI_slim
+synonym: "primer extension assay" EXACT PSI-MI-short []
+is_a: MI:1193 ! partial RNA sequence identification
+created_by: ppm
+creation_date: 2015-08-11T17:22:38Z
 
 [Typedef]
 id: contains
