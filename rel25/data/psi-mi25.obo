@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:08:2015 17:29
+date: 03:12:2015 12:52
 saved-by: ppm
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Drugable "Drugable Genome Project"
@@ -3593,11 +3593,11 @@ is_a: MI:0444 ! database citation
 [Term]
 id: MI:0446
 name: pubmed
-def: "PubMed is designed to provide access to citations from biomedical literature.\nhttp://www.ncbi.nlm.nih.gov/entrez/query.fcgi" [PMID:14755292]
+def: "PubMed is designed to provide access to citations from biomedical literature. The data can be found at both NCBI PubMed and Europe PubMed Central. \nhttp://www.ncbi.nlm.nih.gov/entrez/query.fcgi\nhttp://europepmc.org" [PMID:14755292]
 subset: Drugable
 subset: PSI-MI_slim
 xref: id-validation-regexp:\"[0-9\]+\"
-xref: search-url: "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=${ac}&dopt=Abstract"
+xref: search-url: "http://europepmc.org/abstract/MED/${AC}"
 is_a: MI:0445 ! literature database
 
 [Term]
@@ -3801,7 +3801,7 @@ synonym: "Genome Knowledge Base" EXACT PSI-MI-alternate []
 synonym: "GKB" EXACT PSI-MI-alternate []
 synonym: "Reactome" EXACT PSI-MI-alternate []
 xref: id-validation-regexp:\"REACT_\\d+(\\.\\d+)?$\"
-xref: search-url: "http://www.reactome.org/cgi-bin/eventbrowser_st_id?FROM_REACTOME=1&ST_ID=${ac}"
+xref: search-url: "http://www.reactome.org/content/detail/${ac}"
 is_a: MI:1106 ! pathways database
 
 [Term]
@@ -5466,6 +5466,7 @@ name: imex
 def: "International Molecular Interaction Exchange." [PMID:22453911]
 subset: PSI-MI_slim
 synonym: "IMEx" EXACT PSI-MI-alternate []
+xref: search-url: "www.ebi.ac.uk/intact/imex/main.xhtml?query=${ac}"
 is_a: MI:0461 ! interaction database
 
 [Term]
@@ -7120,7 +7121,7 @@ id: MI:0917
 name: matrixdb
 def: "Knowledgebase of the extracellular matrix storing experimentally determined interactions involving extracellular biomolecules. It includes protein-protein, protein-polysaccharide, and protein-lipid interactions." [PMID:19147664]
 subset: PSI-MI_slim
-xref: url: "http://matrixdb.ibcp.fr/cgi-bin/current/newPort?type=biomolecule&value={ac}"
+xref: search-url: "http://matrixdb.ibcp.fr/cgi-bin/current/newPort?type=biomolecule&value=${ac}"
 is_a: MI:0461 ! interaction database
 is_a: MI:0973 ! imex source
 
@@ -7283,7 +7284,7 @@ def: "The Electron Microscopy Data Bank (EMDB) contains experimentally determine
 subset: PSI-MI_slim
 synonym: "Electron Microscopy Data Bank" EXACT PSI-MI-alternate []
 synonym: "eMDB" EXACT PSI-MI-short []
-xref: search-url: "http://www.pdbe.org/emd-${ac}"
+xref: search-url: "http://www.pdbe.org/${ac}"
 is_a: MI:0472 ! pdbe
 
 [Term]
