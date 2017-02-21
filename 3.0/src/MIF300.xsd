@@ -715,7 +715,7 @@
                         <xs:annotation>
                             <xs:documentation>The integer position gives the begin position of the feature. The first base or amino acid is position 1.
                                 In combination with the numeric value, the attribute 'status' allows to express fuzzy positions, e.g. 'less than 4'.
-                                Negative positions can be used to describe promotor regions when the interactor is a gene but should not be allowed for
+                                Negative positions can be used to describe promoter regions when the interactor is a gene but should not be allowed for
                                 proteins</xs:documentation>
                         </xs:annotation>
                     </xs:element>
@@ -723,7 +723,7 @@
                         <xs:annotation>
                             <xs:documentation>The begin position may be varying or unclear, but localisable to a certain range. Usually written as e.g.
                                 3..5.
-                                Negative positions can be used to describe promotor regions when the interactor is a gene but should not be allowed for
+                                Negative positions can be used to describe promoter regions when the interactor is a gene but should not be allowed for
                                 proteins</xs:documentation>
                         </xs:annotation>
                     </xs:element>
@@ -740,7 +740,7 @@
                         <xs:annotation>
                             <xs:documentation>The integer position gives the end position of the feature. The first base or amino acid is position 1.
                                 In combination with the numeric value, the attribute 'status' allows to express fuzzy positions, e.g. 'more than 400'.
-                                Negative positions can be used to describe promotor regions when the interactor is a gene but should not be allowed for
+                                Negative positions can be used to describe promoter regions when the interactor is a gene but should not be allowed for
                                 proteins</xs:documentation>
                         </xs:annotation>
                     </xs:element>
@@ -748,7 +748,7 @@
                         <xs:annotation>
                             <xs:documentation>The end position may be varying or unclear, but localisable to a certain range. Usually written as e.g.
                                 3..5.
-                                Negative positions can be used to describe promotor regions when the interactor is a gene but should not be allowed for
+                                Negative positions can be used to describe promoter regions when the interactor is a gene but should not be allowed for
                                 proteins</xs:documentation>
                         </xs:annotation>
                     </xs:element>
