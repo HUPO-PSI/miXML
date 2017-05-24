@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <xs:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:mif="http://psi.hupo.org/mi/mif300"
            targetNamespace="http://psi.hupo.org/mi/mif300" elementFormDefault="qualified"
@@ -1088,7 +1087,7 @@
                 </xs:annotation>
             </xs:element>
             <xs:element name="participantList" type="mif:abstractParticipantList"/>
-            <xs:element name="bindingFeatureList" type="mif:bindingFeaturesList" minOccurs="0"/>
+            <xs:element name="bindingFeatureList" type="mif:bindingFeatureList" minOccurs="0"/>
             <xs:element name="interactionType" type="mif:cvType" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>External controlled vocabulary characterising the interaction type,
@@ -1462,7 +1461,7 @@
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="bindingFeaturesList">
+    <xs:complexType name="bindingFeatureList">
         <xs:annotation>
             <xs:documentation>Show the topology of interactions within a complex.
             </xs:documentation>
