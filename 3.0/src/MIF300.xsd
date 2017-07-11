@@ -438,7 +438,7 @@
     <xs:complexType name="abstractConfidenceList">
         <xs:annotation>
             <xs:documentation>A list of confidence values for a complex or abstract interaction.
-                These confidences can refer to their original publications.></xs:documentation>
+                These confidences can refer to their original publications.</xs:documentation>
         </xs:annotation>
         <xs:sequence>
             <xs:element name="confidence" type="mif:abstractConfidence" maxOccurs="unbounded"/>
