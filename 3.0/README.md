@@ -5,3 +5,4 @@ Documentation is generated using Oxygen XML editor https://www.oxygenxml.com/. S
 3. Leave the default settings as they are, but change the path to `../doc/${cfn}.html`.
 4. Accept the prompt to overwrite the old file. 
 
+https://rawgit.com/HUPO-PSI/miXML/master/3.0/doc/MIF300.html
