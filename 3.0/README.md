@@ -1,3 +1,5 @@
+Schema file can be found under the 'src' folder (https://github.com/HUPO-PSI/miXML/blob/master/3.0/src/MIF300.xsd). 
+
 Documentation is generated using Oxygen XML editor https://www.oxygenxml.com/. Steps to generate docs as of Feb 2017: 
 
 1. Load `/src/MIF300.xsd` in Oxygen
